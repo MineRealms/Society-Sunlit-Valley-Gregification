@@ -1,0 +1,954 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "twilight_forest"
+	group: "457DCF55318282CA"
+	icon: "twilightforest:filled_magic_map"
+	id: "367BCDA1BC6451FF"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest4CFD3829B6E619BE.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest4CFD3829B6E619BE.description2}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest4CFD3829B6E619BE.description3}"
+			]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "4CFD3829B6E619BE"
+			rewards: [
+				{
+					id: "49A4C19820630DE3"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "402CCE37F0981803"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "FFA1580EF4A17B20"
+				title: "{ftbquests.chapter.twilight_forest.quest4CFD3829B6E619BE.task.FFA1580EF4A17B20.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest4CFD3829B6E619BE.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4CFD3829B6E619BE"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest6375031EC614E09B.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest6375031EC614E09B.description2}"
+			]
+			icon: "twilightforest:twilight_oak_log"
+			id: "6375031EC614E09B"
+			rewards: [
+				{
+					count: 4
+					id: "E89E9C5F81DE86BF"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "5C237A986C79A2D5"
+					item: "twilightforest:twilight_oak_sapling"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "D3664F5EED850ABC"
+					item: "twilightforest:twilight_oak_log"
+					type: "item"
+				}
+				{
+					id: "4050BD42D5B08F49"
+					item: "twilightforest:canopy_log"
+					type: "item"
+				}
+				{
+					id: "79BCB167ED5B75E4"
+					item: "twilightforest:mangrove_log"
+					type: "item"
+				}
+				{
+					id: "089EAF2CED6E1940"
+					item: "twilightforest:dark_log"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.quest6375031EC614E09B.title}"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6375031EC614E09B"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest32F8D6F32B8F1CB4.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest32F8D6F32B8F1CB4.description2}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest32F8D6F32B8F1CB4.description3}"
+			]
+			icon: "twilightforest:filled_magic_map"
+			id: "32F8D6F32B8F1CB4"
+			rewards: [
+				{
+					count: 8
+					id: "1D3B00876ABCE2C9"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "E8E652F05E1F833F"
+				item: "twilightforest:filled_magic_map"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest32F8D6F32B8F1CB4.title}"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["32F8D6F32B8F1CB4"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest021344151B763B49.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest021344151B763B49.description2}"
+			]
+			icon: "twilightforest:naga_trophy"
+			id: "021344151B763B49"
+			rewards: [
+				{
+					count: 12
+					id: "D86901477009230A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "ADF336FA74D93506"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest021344151B763B49.title}"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["021344151B763B49"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest30934AFA65F56683.description1}"
+			]
+			icon: "twilightforest:naga_chestplate"
+			id: "30934AFA65F56683"
+			rewards: [
+				{
+					count: 8
+					id: "B4FBD02DBB723426"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "976AE3F14FD58C3A"
+					item: "twilightforest:naga_chestplate"
+					type: "item"
+				}
+				{
+					id: "856EC22DC4A26935"
+					item: "twilightforest:naga_leggings"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.quest30934AFA65F56683.title}"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["30934AFA65F56683"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questC88B432328D9B944.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.questC88B432328D9B944.description2}"
+				""
+				"{ftbquests.chapter.twilight_forest.questC88B432328D9B944.description3}"
+			]
+			icon: "twilightforest:lich_trophy"
+			id: "C88B432328D9B944"
+			rewards: [
+				{
+					count: 20
+					id: "35C21C35D9C75CB7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "22ABF0695D7835AF"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.questC88B432328D9B944.title}"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["C88B432328D9B944"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest0D4130C468537BE0.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest0D4130C468537BE0.description2}"
+			]
+			icon: "twilightforest:twilight_scepter"
+			id: "0D4130C468537BE0"
+			rewards: [
+				{
+					id: "E5998178CACE3147"
+					item: "twilightforest:charm_of_life_1"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4CF628254F3B9584"
+					item: "twilightforest:twilight_scepter"
+					type: "item"
+				}
+				{
+					id: "1F2B498DD4D5EC06"
+					item: "twilightforest:zombie_scepter"
+					type: "item"
+				}
+				{
+					id: "6665E58CE048354A"
+					item: "twilightforest:lifedrain_scepter"
+					type: "item"
+				}
+				{
+					id: "C7813E258FF6A3B6"
+					item: "twilightforest:fortification_scepter"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.quest0D4130C468537BE0.title}"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0D4130C468537BE0"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest381AC769A7131275.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest381AC769A7131275.description2}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest381AC769A7131275.description3}"
+			]
+			icon: "twilightforest:minoshroom_trophy"
+			id: "381AC769A7131275"
+			rewards: [
+				{
+					count: 16
+					id: "25EBB133B320B44E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6369718BDC38B994"
+					item: "twilightforest:maze_map_focus"
+					type: "item"
+				}
+				{
+					id: "6DFB1FE4DF74DD74"
+					item: "twilightforest:minoshroom_trophy"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.quest381AC769A7131275.title}"
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["381AC769A7131275"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest6B2B60458AC5D46C.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest6B2B60458AC5D46C.description2}"
+			]
+			icon: "twilightforest:meef_stroganoff"
+			id: "6B2B60458AC5D46C"
+			rewards: [
+				{
+					count: 8
+					id: "5CD12E0CF62387F4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4B699329E23AA010"
+				item: "twilightforest:meef_stroganoff"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest6B2B60458AC5D46C.title}"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6B2B60458AC5D46C"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questCCAD3B0DACC6D32F.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.questCCAD3B0DACC6D32F.description2}"
+			]
+			icon: "twilightforest:hydra_trophy"
+			id: "CCAD3B0DACC6D32F"
+			rewards: [
+				{
+					count: 24
+					id: "1B9D0044ABF6EC4A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "019110BAB23C6FD6"
+					item: "twilightforest:hydra_trophy"
+					type: "item"
+				}
+				{
+					id: "7403AA11E34F3FC1"
+					item: "twilightforest:hydra_chop"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.questCCAD3B0DACC6D32F.title}"
+			x: 0.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["CCAD3B0DACC6D32F"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questF54E90A0E12A50CA.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.questF54E90A0E12A50CA.description2}"
+			]
+			icon: "twilightforest:alpha_yeti_trophy"
+			id: "F54E90A0E12A50CA"
+			rewards: [
+				{
+					count: 16
+					id: "0A334C2FB3C80150"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6D49C4745B05CD11"
+					item: "twilightforest:alpha_yeti_trophy"
+					type: "item"
+				}
+				{
+					id: "78E5351A9D0DD5D8"
+					item: "twilightforest:alpha_yeti_fur"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.questF54E90A0E12A50CA.title}"
+			x: 0.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["F54E90A0E12A50CA"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest105CF9FBAEB3BD89.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest105CF9FBAEB3BD89.description2}"
+			]
+			icon: "twilightforest:yeti_helmet"
+			id: "105CF9FBAEB3BD89"
+			optional: true
+			rewards: [
+				{
+					count: 12
+					id: "7B7210E1B21F83D7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6C760702C6021620"
+				item: "twilightforest:yeti_helmet"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest105CF9FBAEB3BD89.title}"
+			x: 2.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["F54E90A0E12A50CA"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest391F92AB97AA1DB3.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest391F92AB97AA1DB3.description2}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest391F92AB97AA1DB3.description3}"
+			]
+			icon: "twilightforest:snow_queen_trophy"
+			id: "391F92AB97AA1DB3"
+			rewards: [
+				{
+					count: 24
+					id: "A8CDC0FA869C1753"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "97632B4FBE40212F"
+					item: "twilightforest:snow_queen_trophy"
+					type: "item"
+				}
+				{
+					id: "C453731D0EC3EAEF"
+					item: "twilightforest:aurora_block"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.quest391F92AB97AA1DB3.title}"
+			x: 0.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["391F92AB97AA1DB3"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest17AC0067E172009C.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest17AC0067E172009C.description2}"
+			]
+			icon: "twilightforest:trophy_pedestal"
+			id: "17AC0067E172009C"
+			rewards: [
+				{
+					count: 8
+					id: "B4549F0FD156AD7A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "70E45466391A1EF9"
+				item: "twilightforest:trophy_pedestal"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest17AC0067E172009C.title}"
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["17AC0067E172009C"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questCDABA911C611379E.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.questCDABA911C611379E.description2}"
+				""
+				"{ftbquests.chapter.twilight_forest.questCDABA911C611379E.description3}"
+			]
+			icon: "twilightforest:knight_phantom_trophy"
+			id: "CDABA911C611379E"
+			rewards: [
+				{
+					count: 24
+					id: "2F4753C87BF7B0F8"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "8A3D22F149D33EF8"
+					item: "twilightforest:knight_phantom_trophy"
+					type: "item"
+				}
+				{
+					id: "C5C0FECB7C63DD25"
+					item: "twilightforest:knightmetal_ingot"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.questCDABA911C611379E.title}"
+			x: 0.0d
+			y: 32.5d
+		}
+		{
+			dependencies: ["CDABA911C611379E"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questEEB018742288FC9C.description1}"
+			]
+			icon: "twilightforest:ghast_trap"
+			id: "EEB018742288FC9C"
+			rewards: [
+				{
+					count: 16
+					id: "2C6F23E95FA13376"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "27DEEA8FC62ED1E4"
+				item: "twilightforest:carminite"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.questEEB018742288FC9C.title}"
+			x: 0.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["EEB018742288FC9C"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questB4998EC5E846BEB4.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.questB4998EC5E846BEB4.description2}"
+			]
+			icon: "twilightforest:ur_ghast_trophy"
+			id: "B4998EC5E846BEB4"
+			rewards: [
+				{
+					count: 32
+					id: "311F1AEFD887EC46"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "9CA7DEA569DC3820"
+					item: "twilightforest:ur_ghast_trophy"
+					type: "item"
+				}
+				{
+					id: "EC094783CD381055"
+					item: "twilightforest:fiery_tears"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.questB4998EC5E846BEB4.title}"
+			x: 0.0d
+			y: 37.5d
+		}
+		{
+			dependencies: ["B4998EC5E846BEB4"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questF66DD957C1A393E3.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.questF66DD957C1A393E3.description2}"
+			]
+			icon: "twilightforest:uberous_soil"
+			id: "F66DD957C1A393E3"
+			rewards: [
+				{
+					count: 32
+					id: "1520DBF906A819A1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "8EB4453F5B48817C"
+				title: "{ftbquests.chapter.twilight_forest.questF66DD957C1A393E3.task.8EB4453F5B48817C.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.questF66DD957C1A393E3.title}"
+			x: 0.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["F66DD957C1A393E3"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest98625B23A8117E90.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest98625B23A8117E90.description2}"
+			]
+			icon: "twilightforest:lamp_of_cinders"
+			id: "98625B23A8117E90"
+			rewards: [
+				{
+					count: 24
+					id: "DE8685CE30F87922"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4E35F1E1B9A03C36"
+				item: "twilightforest:lamp_of_cinders"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest98625B23A8117E90.title}"
+			x: 0.0d
+			y: 42.5d
+		}
+		{
+			dependencies: ["98625B23A8117E90"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest5B90564AEED856F5.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest5B90564AEED856F5.description2}"
+			]
+			icon: "twilightforest:huge_stalk"
+			id: "5B90564AEED856F5"
+			rewards: [
+				{
+					count: 16
+					id: "30ECC58DEA59024A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5C22745FD9B90398"
+				item: "twilightforest:magic_beans"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest5B90564AEED856F5.title}"
+			x: 0.0d
+			y: 45.0d
+		}
+		{
+			dependencies: ["5B90564AEED856F5"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest83A931BBA1569A34.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest83A931BBA1569A34.description2}"
+			]
+			icon: "twilightforest:giant_pickaxe"
+			id: "83A931BBA1569A34"
+			rewards: [
+				{
+					count: 32
+					id: "6635A3DBB64EA903"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3B5A2607E8ED254A"
+				item: "twilightforest:giant_pickaxe"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest83A931BBA1569A34.title}"
+			x: 0.0d
+			y: 47.5d
+		}
+		{
+			dependencies: ["83A931BBA1569A34"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest6BF811C9B89B6FC4.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest6BF811C9B89B6FC4.description2}"
+			]
+			icon: "twilightforest:giant_obsidian"
+			id: "6BF811C9B89B6FC4"
+			rewards: [
+				{
+					count: 64
+					id: "7FC08534EE72F76A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "C9A001A5C83C146A"
+				title: "{ftbquests.chapter.twilight_forest.quest6BF811C9B89B6FC4.task.C9A001A5C83C146A.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest6BF811C9B89B6FC4.title}"
+			x: 0.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["32F8D6F32B8F1CB4"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest96F8525E635C45B3.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest96F8525E635C45B3.description2}"
+			]
+			icon: "twilightforest:moonworm_queen"
+			id: "96F8525E635C45B3"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "FACD091149657B9D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "915C44E261D69341"
+				item: "twilightforest:moonworm_queen"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest96F8525E635C45B3.title}"
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["32F8D6F32B8F1CB4"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest618221A2EBDB2FC7.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest618221A2EBDB2FC7.description2}"
+			]
+			icon: "twilightforest:ore_magnet"
+			id: "618221A2EBDB2FC7"
+			rewards: [
+				{
+					count: 8
+					id: "3AEFD6477336342C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6E4F703B9313FE03"
+				item: "twilightforest:ore_magnet"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest618221A2EBDB2FC7.title}"
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["32F8D6F32B8F1CB4"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questE0DBED816C4E4AA9.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.questE0DBED816C4E4AA9.description2}"
+			]
+			icon: "twilightforest:transformation_powder"
+			id: "E0DBED816C4E4AA9"
+			rewards: [
+				{
+					count: 4
+					id: "958B59C5FA1EC7B6"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "841B41C73379EED5"
+				item: "twilightforest:transformation_powder"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.questE0DBED816C4E4AA9.title}"
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["381AC769A7131275"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest7473102F824BCEEC.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest7473102F824BCEEC.description2}"
+			]
+			icon: "twilightforest:uncrafting_table"
+			id: "7473102F824BCEEC"
+			rewards: [
+				{
+					count: 8
+					id: "C343DF1689EC7D30"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "737631E2F2B62BC3"
+				item: "twilightforest:uncrafting_table"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest7473102F824BCEEC.title}"
+			x: -2.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["32F8D6F32B8F1CB4"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest4CC391753E50C31A.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest4CC391753E50C31A.description2}"
+			]
+			icon: "twilightforest:quest_ram_trophy"
+			id: "4CC391753E50C31A"
+			rewards: [
+				{
+					id: "C3F67AB53DDBA26C"
+					item: "twilightforest:crumble_horn"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "E62F34E97B7ED64A"
+				item: "twilightforest:quest_ram_trophy"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest4CC391753E50C31A.title}"
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["32F8D6F32B8F1CB4"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest8D464FAB95CA3F9E.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest8D464FAB95CA3F9E.description2}"
+			]
+			icon: "twilightforest:time_sapling"
+			id: "8D464FAB95CA3F9E"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "E0F504080968458D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "10C9946CF98DEF04"
+					item: "twilightforest:time_sapling"
+					type: "item"
+				}
+				{
+					id: "1662008227B5CFA8"
+					item: "twilightforest:transformation_sapling"
+					type: "item"
+				}
+				{
+					id: "D1CEB0F1B96D900E"
+					item: "twilightforest:mining_sapling"
+					type: "item"
+				}
+				{
+					id: "EB4981264F4C7FD8"
+					item: "twilightforest:sorting_sapling"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.quest8D464FAB95CA3F9E.title}"
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["391F92AB97AA1DB3"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.quest6A520967AEC6617E.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.quest6A520967AEC6617E.description2}"
+			]
+			icon: "twilightforest:glass_sword"
+			id: "6A520967AEC6617E"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "D5A3FC5DE20EAD0F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4CF9F14DE115B99E"
+				item: "twilightforest:glass_sword"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.twilight_forest.quest6A520967AEC6617E.title}"
+			x: -5.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6BF811C9B89B6FC4"]
+			description: [
+				"{ftbquests.chapter.twilight_forest.questC08D574183D42FAD.description1}"
+				""
+				"{ftbquests.chapter.twilight_forest.questC08D574183D42FAD.description2}"
+			]
+			icon: "twilightforest:lich_trophy"
+			id: "C08D574183D42FAD"
+			rewards: [
+				{
+					id: "09AC4A31F6F485A9"
+					item: "twilightforest:charm_of_life_2"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "3654EB0DCCA02676"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "9E8C3EE02E4622D7"
+					item: "twilightforest:naga_trophy"
+					type: "item"
+				}
+				{
+					id: "301C6D3E7BCF8A83"
+					item: "twilightforest:lich_trophy"
+					type: "item"
+				}
+				{
+					id: "522A029841AE18F4"
+					item: "twilightforest:minoshroom_trophy"
+					type: "item"
+				}
+				{
+					id: "3F6EBABFA690F2FB"
+					item: "twilightforest:hydra_trophy"
+					type: "item"
+				}
+				{
+					id: "3BEF2200A3E216E3"
+					item: "twilightforest:knight_phantom_trophy"
+					type: "item"
+				}
+				{
+					id: "03261FE29A77EF22"
+					item: "twilightforest:ur_ghast_trophy"
+					type: "item"
+				}
+				{
+					id: "7DCCA820258336DD"
+					item: "twilightforest:alpha_yeti_trophy"
+					type: "item"
+				}
+				{
+					id: "10F4B8485D16DE82"
+					item: "twilightforest:snow_queen_trophy"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.twilight_forest.questC08D574183D42FAD.title}"
+			x: 2.5d
+			y: 50.0d
+		}
+	]
+}
