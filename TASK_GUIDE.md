@@ -39,6 +39,7 @@
 | 任务文本 | `kubejs/assets/ftbquestlocalizer/lang/zh_cn.json`、`en_us.json` |
 | 快速索引脚本 | 根目录 `analyze_ftb_quests.py`（产出 `ftb_quests_map.json` / `ftb_quests_report.md`） |
 | 暮色森林 jar | `mods/twilightforest-1.20.1-4.3.2508-universal.jar`（ID/进度/配方的第一手来源） |
+| TF ID 参考表 | `config/ftbquests/tools/twilightforest_ids.md`（645 物品/方块 + 101 实体，含中英名） |
 | TF 源码（可选） | 网络不佳时 clone 至 `H:\MinecraftMods\` 本地阅读 |
 
 ---
