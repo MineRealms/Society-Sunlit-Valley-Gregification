@@ -1,0 +1,6 @@
+#Render Worldshaper's Looking Glass phantom block previews.
+show_placement_mirror_preview = true
+#Distance from the bottom of the screen to the Soul Heart bar; matches the maintained source default.
+#Range: 0 ~ 256
+soul_heart_height = 39
+

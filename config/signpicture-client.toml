@@ -1,0 +1,40 @@
+
+#Render Settings
+[render]
+	#Overlay signpic!online
+	overlayPanel = true
+	#Overlay on GUI
+	guiOverlay = true
+	#Use Mipmap (Requires OpenGL 3.0 or later)
+	useMipmap = true
+	#Mipmap type: true = Nearest, false = Linear
+	mipmapTypeNearest = false
+
+#Render Opacity Settings
+[opacity]
+	#Opacity when viewing sign
+	#Range: 0.0 ~ 1.0
+	viewSign = 0.5
+	#Opacity for preview fixed sign
+	#Range: 0.0 ~ 1.0
+	previewFixed = 0.7
+	#Opacity for preview floated sign
+	#Range: 0.0 ~ 1.0
+	previewFloated = 0.49
+
+#Chat Picture Settings
+[chatpicture]
+	#Enable ChatPicture extension
+	enable = true
+	#How many lines does image use
+	#Range: 1 ~ 20
+	imageLines = 4
+	#Stack chat lines within interval ticks
+	#Range: 0 ~ 200
+	stackTicks = 50
+
+#Debug Settings
+[debug]
+	#Output debug log
+	debugLog = true
+

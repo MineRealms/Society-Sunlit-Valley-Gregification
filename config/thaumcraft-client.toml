@@ -1,0 +1,24 @@
+
+[general]
+	#Determines how fast notifications scroll downwards, in milliseconds.
+	#Range: > 1
+	notification_delay = 5000
+	#Maximum number of notifications displayed onscreen.
+	#Range: > 0
+	notification_max = 15
+	#Enables TC4's rare luminous overlay on fibrous taint.
+	glowing_taint = true
+	#Darkens selected animated colors for higher contrast, matching TC4's color-blind option.
+	color_blind = false
+	#Enables TC4's Death Gaze, Blurred Vision, Unnatural Hunger and Sun Scorned post-processing effects.
+	shaders = true
+	#Display the casting-wand dial at the bottom left instead of the top left.
+	wand_dial_bottom = false
+	#Always display scanned item aspects unless Shift is held; false keeps TC4's default Shift-to-display behavior.
+	display_aspects = false
+	#Segment density of golem marker links; values below four disable the effect as in TC4.
+	#Range: > 0
+	golem_link_quality = 16
+	#Use TC4's older blue grass and foliage palette in Magical Forest biomes.
+	blue_magical_forest = false
+
