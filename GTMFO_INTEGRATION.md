@@ -255,6 +255,38 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 ---
 
+## 12. 客户端启动崩溃分析（2026-09-14 06:27，首次出现）
+
+**崩溃**：`crash-2026-09-14_06.27.34-fml.txt`
+```
+Failed to create mod instance. ModID: farm_and_charm
+java.lang.ExceptionInInitializerError
+  at net.satisfy.farm_and_charm.FarmAndCharm.init(FarmAndCharm.java:13)
+Caused by: java.util.ConcurrentModificationException
+  at java.util.HashMap.computeIfAbsent(HashMap.java:1221)
+  at dev.architectury.registry.registries.forge.RegistrarManagerImpl$ForgeBackedRegistryImpl.register(RegistrarManagerImpl.java:525)
+  at net.satisfy.farm_and_charm.registry.EntityTypeRegistry.registerBlockEntity(EntityTypeRegistry.java:52)
+```
+
+**性质**：**Architectury 注册表在并行 mod 构造期（ForkJoinPool）的线程安全竞态** ——
+F&C 在静态初始化里注册 BlockEntity 时，Architectury 的内部 `HashMap` 正被另一个线程修改。
+整合包里有大量 Architectury 系 mod（全套 Let's Do：F&C/Bakery/Candlelight/Vinery/HerbalBrews…、KubeJS 也用 Architectury），
+并行构造时就会撞上（整合包还装了 **AllTheLeaks**，它本身就带 architectury 问题修复 → 说明这类竞态是已知问题）。
+
+**与我们的关系（事实）**：
+- GTMFO 源码**没有任何 Architectury API 调用**（`rg architectury src/main/java` → 0）
+- jar 的 `mods.toml` **只声明 forge/minecraft 依赖**，不依赖 architectury
+- `build.gradle` 里的 architectury 只是编译期 classpath（KubeJS 类型签名需要），运行期不要求
+- 我们的 KubeJS 脚本在构造期之后才跑，不可能影响 F&C 的静态初始化
+- → **不是内容冲突，是"新增一个 mod 改变了并行构造时序"把潜在的竞态暴露出来了**（所以是"第一次遇到"，且随机）
+
+**处理建议**：
+1. **直接重试启动**（竞态是随机的，多数情况下能进）
+2. 若反复崩：临时移除 `gtmfo-0.0.5.jar` 验证是否仍崩（若仍崩即与 GTMFO 无关，可反馈整合包作者）
+3. 长期修复在 Architectury / 整合包侧（升级 architectury 或让 F&C 用线程安全注册）
+
+---
+
 ## 4. R3 明细：加工配方（第一批 9 条）✅
 
 **文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`
