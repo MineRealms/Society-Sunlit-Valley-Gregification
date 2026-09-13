@@ -103,6 +103,15 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 **回滚**：删除该文件即可（不影响其它轮次）。
 
+**⚠️ 实机首测修复（2026-09-14 03:25）**：
+- 现象：`gtmfoTrades.js#19: TypeError: Cannot call method "push" of undefined`（1 个启动脚本错误）
+- 原因：**加载顺序**。`globalRegistry.js` 的优先级是 `-20`，而本脚本原为 `-10`；
+  KubeJS 规则是 **priority 数值越大越先加载**，所以 `-10` 反而比 `-20` 更早执行 →
+  此时 `global.crops` 尚未定义
+- 修复：优先级改为 **`-30`**（在 `-20` 之后加载）；已重新 `node --check` 通过
+- 教训：写文档时"依赖 globalRegistry.js 先执行"是**假设**，实际必须按包内脚本的真实 priority 排；
+  后续新增 startup 脚本一律先查依赖脚本的 priority 再定值
+
 ---
 
 ## 4. R3 明细：加工配方（第一批 9 条）✅

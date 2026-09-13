@@ -1,8 +1,9 @@
-// priority: -10
+// priority: -30
 // ============================================================
 // GTMFO × Sunlit Valley — R2: 经济数据（定价 + 可售）
 // 进度文档：GTMFO_INTEGRATION.md
-// 依赖：globalRegistry.js（priority 0）先执行，本脚本后执行（-10）
+// 依赖：globalRegistry.js 先执行（它是 priority -20），本脚本用 -30 保证在其之后
+// （KubeJS 规则：priority 数值越大越先加载；实测 -10 会比 -20 早加载导致 global.crops 未定义）
 // 效果：自动获得 society:sellable / farmer_product 等标签（由 handleItemBlockFluidTags.js 遍历 global.trades 生成）
 //       + 价格 tooltip（addPriceTooltips.js）+ Shipping Bin 售价 + 村民礼物
 // 定价参考：包内同类物品（见 GTMFO_INTEGRATION.md R2 明细）
