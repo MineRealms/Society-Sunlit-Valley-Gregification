@@ -684,6 +684,7 @@ def build_snbt():
         lines.append(f'\t\t\ty: {q["y"]}d')
         lines.append("\t\t}")
     lines.append("\t]")
+    lines.append(f'\ttitle: "{{ftbquests.chapter.{CHAPTER_FILENAME}.title}}"')
     lines.append("}")
     return "\n".join(lines) + "\n"
 

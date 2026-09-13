@@ -951,4 +951,5 @@
 			y: 50.0d
 		}
 	]
+	title: "{ftbquests.chapter.twilight_forest.title}"
 }

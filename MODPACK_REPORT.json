@@ -1,0 +1,3235 @@
+{
+  "meta": {
+    "pack_name": "Society: Sunlit Valley (Baopu Edition / 宝铺版)",
+    "minecraft": "1.20.1",
+    "forge": "47.4.23",
+    "java": "17 (Eclipse Adoptium jdk-17.0.18.8)",
+    "launcher": "HMCL 3.6.11.264",
+    "instance_dir": "G:\\MinecraftGames\\Sunlit Valley(BaopuEdition)\\.minecraft\\versions\\Society Sunlit Valley",
+    "mod_jars": 392,
+    "mod_ids_total": 434,
+    "quest_chapters": 30,
+    "quests": 1173,
+    "tasks": 1341,
+    "rewards": 487,
+    "core_mods": {
+      "society": "1.22",
+      "society_trading": "1.2.9",
+      "ftbquests": "2001.4.17",
+      "create": "6.0.8",
+      "botania": "1.20.1-454",
+      "refinedstorage": "1.12.4",
+      "twilightforest": "4.3.2508",
+      "numismatics": "1.1.0"
+    },
+    "theme": "田园/农场生活 + 村庄经济 + 收集养成（星露谷风格），科技线 Create、魔法线 Botania、存储线 Refined Storage",
+    "languages": [
+      "zh_cn",
+      "en_us",
+      "ko_kr",
+      "ja_jp",
+      "fr_fr",
+      "de_de",
+      "es_es",
+      "pt_br",
+      "ru_ru",
+      "th_th",
+      "zh_tw",
+      "zh_hk"
+    ],
+    "git": {
+      "tracked": [
+        "config/",
+        "kubejs/",
+        "MODS_BASELINE.md",
+        "TASK_GUIDE.md",
+        "MODPACK_REPORT.md",
+        "MODPACK_REPORT.json"
+      ],
+      "baseline_file": "MODS_BASELINE.md (392 jar, 日期+大小+SHA256)",
+      "commits": [
+        "ab54ed1 基准",
+        "8d565c5 暮色森林章节",
+        "a022d48 指南",
+        "c35c9b7 TF ID 参考表"
+      ]
+    }
+  },
+  "mods": [
+    {
+      "id": "mod id",
+      "name": "mod name",
+      "version": "mod version"
+    },
+    {
+      "id": "forge",
+      "name": "forge",
+      "version": "fmlloader-1.20.1-47.4.23.jar"
+    },
+    {
+      "id": "allmusic_client",
+      "name": "AllMusic Client",
+      "version": "3.9.2"
+    },
+    {
+      "id": "additional_attributes",
+      "name": "Additional Attributes",
+      "version": "1.3.6"
+    },
+    {
+      "id": "ali",
+      "name": "AdvancedLootInfo",
+      "version": "1.12.0"
+    },
+    {
+      "id": "advancementplaques",
+      "name": "Advancement Plaques",
+      "version": "1.6.7"
+    },
+    {
+      "id": "alltheleaks",
+      "name": "All The Leaks",
+      "version": "1.1.1+1.20.1-forge"
+    },
+    {
+      "id": "alternate_current",
+      "name": "Alternate Current",
+      "version": "1.7.0"
+    },
+    {
+      "id": "ambientsounds",
+      "name": "AmbientSounds",
+      "version": "6.1.11"
+    },
+    {
+      "id": "amendments",
+      "name": "Amendments",
+      "version": "1.20-2.2.5"
+    },
+    {
+      "id": "appleskin",
+      "name": "AppleSkin",
+      "version": "2.5.1+mc1.20.1"
+    },
+    {
+      "id": "appbot",
+      "name": "Applied Botanics",
+      "version": "1.5.2"
+    },
+    {
+      "id": "applied_greg",
+      "name": "Applied Greg",
+      "version": "1.0.3-fix1"
+    },
+    {
+      "id": "ae2",
+      "name": "Applied Energistics 2",
+      "version": "15.4.10"
+    },
+    {
+      "id": "aquaculture",
+      "name": "Aquaculture 2",
+      "version": "2.5.7"
+    },
+    {
+      "id": "architectury",
+      "name": "Architectury",
+      "version": "9.2.14"
+    },
+    {
+      "id": "armorstatues",
+      "name": "Armor Statues",
+      "version": "8.0.6"
+    },
+    {
+      "id": "puzzlesapi",
+      "name": "Puzzles Api",
+      "version": "8.1.4"
+    },
+    {
+      "id": "puzzlesaccessapi",
+      "name": "Puzzles Access Api",
+      "version": "8.0.7"
+    },
+    {
+      "id": "atmospheric",
+      "name": "Atmospheric",
+      "version": "6.1.1"
+    },
+    {
+      "id": "attributefix",
+      "name": "AttributeFix",
+      "version": "21.0.4"
+    },
+    {
+      "id": "automobility",
+      "name": "Automobility",
+      "version": "0.4.2+1.20.1-forge"
+    },
+    {
+      "id": "autumnity",
+      "name": "Autumnity",
+      "version": "5.0.2"
+    },
+    {
+      "id": "badpackets",
+      "name": "Bad Packets",
+      "version": "0.4.3"
+    },
+    {
+      "id": "balloonbox",
+      "name": "Balloon Box",
+      "version": "1.20.1-1.0.3"
+    },
+    {
+      "id": "balm",
+      "name": "Balm",
+      "version": "7.3.38"
+    },
+    {
+      "id": "kuma_api",
+      "name": "KumaAPI",
+      "version": "20.1.12"
+    },
+    {
+      "id": "beautify",
+      "name": "Beautify",
+      "version": "2.0.2"
+    },
+    {
+      "id": "betteradvancedtooltips",
+      "name": "Better Advanced Tooltips Backport",
+      "version": "1.20.1-1.2.1"
+    },
+    {
+      "id": "betteradvancements",
+      "name": "Better Advancements",
+      "version": "0.4.2.10"
+    },
+    {
+      "id": "betterarcheology",
+      "name": "Better Archeology",
+      "version": "1.2.1-1.20.1"
+    },
+    {
+      "id": "bcc",
+      "name": "Better Compatibility Checker",
+      "version": "4.0.8"
+    },
+    {
+      "id": "biomespawnpoint",
+      "name": "Biome Spawn Point",
+      "version": "2.3"
+    },
+    {
+      "id": "blueprint",
+      "name": "Blueprint",
+      "version": "7.1.3"
+    },
+    {
+      "id": "bobby",
+      "name": "Bobby Reforged",
+      "version": "5.0.0"
+    },
+    {
+      "id": "bookshelf",
+      "name": "Bookshelf",
+      "version": "20.2.13"
+    },
+    {
+      "id": "botania",
+      "name": "Botania",
+      "version": "1.20.1-454-FORGE"
+    },
+    {
+      "id": "botania_seeds",
+      "name": "Botania Seeds",
+      "version": "1.1.1"
+    },
+    {
+      "id": "bots_lib",
+      "name": "Bots Lib",
+      "version": "4.1"
+    },
+    {
+      "id": "bountiful",
+      "name": "Bountiful",
+      "version": "6.0.4+1.20.1"
+    },
+    {
+      "id": "braziliandelight",
+      "name": "Brazilian Delight",
+      "version": "1.1.0"
+    },
+    {
+      "id": "buildinggadgets2",
+      "name": "Building Gadgets 2",
+      "version": "1.0.7"
+    },
+    {
+      "id": "butchercraft",
+      "name": "Butchercraft",
+      "version": "2.4.1"
+    },
+    {
+      "id": "buzzier_bees",
+      "name": "Buzzier Bees",
+      "version": "6.0.1"
+    },
+    {
+      "id": "bwncr",
+      "name": "Bad Wither No Cookie Reloaded",
+      "version": "3.17.2"
+    },
+    {
+      "id": "caelus",
+      "name": "Caelus API",
+      "version": "3.2.0+1.20.1"
+    },
+    {
+      "id": "carryon",
+      "name": "Carry On",
+      "version": "2.1.2.7"
+    },
+    {
+      "id": "certain_questing_additions",
+      "name": "Certain Questing Additions",
+      "version": "1.2.0.2"
+    },
+    {
+      "id": "chat_heads",
+      "name": "Chat Heads",
+      "version": "0.13.7"
+    },
+    {
+      "id": "cherishedworlds",
+      "name": "Cherished Worlds",
+      "version": "6.1.7+1.20.1"
+    },
+    {
+      "id": "chimes",
+      "name": "Chimes",
+      "version": "2.1.1"
+    },
+    {
+      "id": "chunky",
+      "name": "Chunky",
+      "version": "1.3.146"
+    },
+    {
+      "id": "citadel",
+      "name": "Citadel",
+      "version": "2.6.3"
+    },
+    {
+      "id": "classicpipes",
+      "name": "Classic Pipes",
+      "version": "1.1.5"
+    },
+    {
+      "id": "clayworks",
+      "name": "Clayworks",
+      "version": "3.0.4"
+    },
+    {
+      "id": "cleanview",
+      "name": "CleanView",
+      "version": "1.20.1-v1"
+    },
+    {
+      "id": "cloth_config",
+      "name": "Cloth Config v10 API",
+      "version": "11.1.136"
+    },
+    {
+      "id": "clumps",
+      "name": "Clumps",
+      "version": "12.0.0.4"
+    },
+    {
+      "id": "cluttered",
+      "name": "Cluttered",
+      "version": "3.0.3-1.20.1"
+    },
+    {
+      "id": "collective",
+      "name": "Collective",
+      "version": "7.87"
+    },
+    {
+      "id": "colorfulhearts",
+      "name": "Colorful Hearts",
+      "version": "4.3.16"
+    },
+    {
+      "id": "colorwheel",
+      "name": "Colorwheel",
+      "version": "1.2.9+mc1.20.1"
+    },
+    {
+      "id": "colorwheel_patcher",
+      "name": "Colorwheel Patcher",
+      "version": "1.0.5+mc1.20.1"
+    },
+    {
+      "id": "comforts",
+      "name": "Comforts",
+      "version": "6.4.0+1.20.1"
+    },
+    {
+      "id": "spectrelib",
+      "name": "SpectreLib",
+      "version": "0.13.15+1.20.1"
+    },
+    {
+      "id": "commonnetworking",
+      "name": "Common Networking",
+      "version": "1.0.5-1.20.1"
+    },
+    {
+      "id": "connectivity",
+      "name": "Connectivity Mod",
+      "version": "1.20.1-7.2"
+    },
+    {
+      "id": "constructionwand",
+      "name": "Construction Wand",
+      "version": "1.20.1-2.11"
+    },
+    {
+      "id": "controllable",
+      "name": "Controllable",
+      "version": "0.21.9"
+    },
+    {
+      "id": "controlling",
+      "name": "Controlling",
+      "version": "12.0.2"
+    },
+    {
+      "id": "copycats",
+      "name": "Create: Copycats+",
+      "version": "3.0.7+mc.1.20.1-forge"
+    },
+    {
+      "id": "coroutil",
+      "name": "CoroUtil",
+      "version": "1.20.1-1.3.7"
+    },
+    {
+      "id": "cosmeticarmorreworked",
+      "name": "CosmeticArmorReworked",
+      "version": "1.20.1-v1a"
+    },
+    {
+      "id": "cozycafe",
+      "name": "Cozy Cafe",
+      "version": "1.10"
+    },
+    {
+      "id": "libtooltips",
+      "name": "wd's Tooltips Library",
+      "version": "2.3-FORGE-1.20.1"
+    },
+    {
+      "id": "crabbersdelight",
+      "name": "Crabber's Delight",
+      "version": "1.1.7d"
+    },
+    {
+      "id": "crafting_on_a_stick",
+      "name": "Crafting On A Stick",
+      "version": "1.1.5"
+    },
+    {
+      "id": "craftingtweaks",
+      "name": "CraftingTweaks",
+      "version": "18.2.8"
+    },
+    {
+      "id": "crash_assistant",
+      "name": "Crash Assistant",
+      "version": "1.11.10"
+    },
+    {
+      "id": "crash_assistant",
+      "name": "Crash Assistant",
+      "version": "1.11.10"
+    },
+    {
+      "id": "crashutilities",
+      "name": "Crash Utilities",
+      "version": "8.1.4"
+    },
+    {
+      "id": "create",
+      "name": "Create",
+      "version": "6.0.8"
+    },
+    {
+      "id": "ponder",
+      "name": "Ponder",
+      "version": "1.0.91"
+    },
+    {
+      "id": "flywheel",
+      "name": "Flywheel",
+      "version": "1.0.5"
+    },
+    {
+      "id": "create_central_kitchen",
+      "name": "Create: Central Kitchen",
+      "version": "1.5.0"
+    },
+    {
+      "id": "create_enchantment_industry",
+      "name": "Create Enchantment Industry",
+      "version": "1.3.3-for-create-6.0.6"
+    },
+    {
+      "id": "create_factory_logistics",
+      "name": "Create Factory Logistics",
+      "version": "1.4.7"
+    },
+    {
+      "id": "create_factory_abstractions",
+      "name": "Create Factory Abstractions",
+      "version": "1.4.7"
+    },
+    {
+      "id": "create_hypertube",
+      "name": "Create Hypertube",
+      "version": "0.4.0"
+    },
+    {
+      "id": "create_mechanical_extruder",
+      "name": "Create Mechanical Extruder",
+      "version": "1.20.1-1.6.10-6.0.6"
+    },
+    {
+      "id": "create_slime",
+      "name": "create_slime",
+      "version": "1.20"
+    },
+    {
+      "id": "createentitycontrol",
+      "name": "Create:Entity Control",
+      "version": "0.3.8.4-6.0"
+    },
+    {
+      "id": "numismatics",
+      "name": "Create: Numismatics",
+      "version": "1.1.0+forge-mc1.20.1"
+    },
+    {
+      "id": "createrailwaysnavigator",
+      "name": "Create Railways Navigator",
+      "version": "1.20.1-beta-0.8.5-C6"
+    },
+    {
+      "id": "dragonlib",
+      "name": "DragonLib",
+      "version": "1.20.1-2.2.24"
+    },
+    {
+      "id": "architectury",
+      "name": "Architectury",
+      "version": "9.1.12"
+    },
+    {
+      "id": "createschematicchecker",
+      "name": "Create:Schematic Checker",
+      "version": "0.21.18-6.0"
+    },
+    {
+      "id": "createutilities",
+      "name": "Create Utilities",
+      "version": "0.3.2+1.20.1"
+    },
+    {
+      "id": "creativecore",
+      "name": "CreativeCore",
+      "version": "2.12.32"
+    },
+    {
+      "id": "creeperconfetti",
+      "name": "Creeper Confetti",
+      "version": "4.3"
+    },
+    {
+      "id": "crittersandcompanions",
+      "name": "Critters and Companions",
+      "version": "1.20.1-2.3.5"
+    },
+    {
+      "id": "croptania",
+      "name": "Croptania",
+      "version": "0.3"
+    },
+    {
+      "id": "cupboard",
+      "name": "Cupboard utilities",
+      "version": "1.20.1-2.7"
+    },
+    {
+      "id": "curios",
+      "name": "Curios API",
+      "version": "5.14.1+1.20.1"
+    },
+    {
+      "id": "curious_armor_stands",
+      "name": "Curious Armor Stands",
+      "version": "1.20-5.1.0"
+    },
+    {
+      "id": "customskinloader",
+      "name": "CustomSkinLoader",
+      "version": "14.22"
+    },
+    {
+      "id": "dataanchor",
+      "name": "Data Anchor",
+      "version": "1.0.0.20"
+    },
+    {
+      "id": "decorative_blocks",
+      "name": "Decorative Blocks",
+      "version": "4.1.3"
+    },
+    {
+      "id": "deltaboxlib",
+      "name": "Deltabox Lib",
+      "version": "1.1.2"
+    },
+    {
+      "id": "dew_drop_daily_weather",
+      "name": "Dew Drop Daily Weather",
+      "version": "1.1.1"
+    },
+    {
+      "id": "dew_drop_farmland_growth",
+      "name": "Dew Drop Farmland - Growth Edition",
+      "version": "9.0"
+    },
+    {
+      "id": "dew_drop_watering_cans",
+      "name": "Dew Drop Watering Cans",
+      "version": "1.0.2"
+    },
+    {
+      "id": "diagonalfences",
+      "name": "Diagonal Fences",
+      "version": "8.1.5"
+    },
+    {
+      "id": "diagonalblocks",
+      "name": "Diagonal Blocks",
+      "version": "8.0.6"
+    },
+    {
+      "id": "diagonalwalls",
+      "name": "Diagonal Walls",
+      "version": "8.0.4"
+    },
+    {
+      "id": "diagonalblocks",
+      "name": "Diagonal Blocks",
+      "version": "8.0.6"
+    },
+    {
+      "id": "displaydelight",
+      "name": "Display Delight Lite",
+      "version": "0.0.1-lite"
+    },
+    {
+      "id": "domesticationinnovation",
+      "name": "Domestication Innovation (Fixed)",
+      "version": "1.7.2"
+    },
+    {
+      "id": "dramaticdoors",
+      "name": "Dramatic Doors",
+      "version": "1.20.1-3.3.3"
+    },
+    {
+      "id": "drippyloadingscreen",
+      "name": "Drippy Loading Screen",
+      "version": "3.0.12"
+    },
+    {
+      "id": "dsurround",
+      "name": "DynamicSurroundings-Forge",
+      "version": "0.3.3"
+    },
+    {
+      "id": "ears",
+      "name": "Ears",
+      "version": "1.4.7"
+    },
+    {
+      "id": "easy_npc",
+      "name": "Easy NPC",
+      "version": "6.1.0"
+    },
+    {
+      "id": "easyanvils",
+      "name": "Easy Anvils",
+      "version": "8.0.2"
+    },
+    {
+      "id": "embeddium",
+      "name": "Embeddium",
+      "version": "0.3.31+mc1.20.1"
+    },
+    {
+      "id": "emberstextapi",
+      "name": "Ember's Text API",
+      "version": "1.4.1"
+    },
+    {
+      "id": "emi",
+      "name": "EMI",
+      "version": "1.1.24+1.20.1+forge"
+    },
+    {
+      "id": "emojiful",
+      "name": "Emojiful",
+      "version": "4.2.0"
+    },
+    {
+      "id": "enchdesc",
+      "name": "EnchantmentDescriptions",
+      "version": "17.1.19"
+    },
+    {
+      "id": "entity_model_features",
+      "name": "Entity Model Features",
+      "version": "3.2.4"
+    },
+    {
+      "id": "entity_texture_features",
+      "name": "Entity Texture Features",
+      "version": "7.1"
+    },
+    {
+      "id": "entityjs",
+      "name": "EntityJS",
+      "version": "0.6.6-1.20.1"
+    },
+    {
+      "id": "etcetera",
+      "name": "Etcetera",
+      "version": "1.20.1-1.1.3"
+    },
+    {
+      "id": "etched",
+      "name": "Etched",
+      "version": "3.0.4"
+    },
+    {
+      "id": "everycomp",
+      "name": "Every Compat",
+      "version": "1.20-2.9.24"
+    },
+    {
+      "id": "expandability",
+      "name": "ExpandAbility",
+      "version": "9.0.4"
+    },
+    {
+      "id": "exposure",
+      "name": "Exposure",
+      "version": "1.7.16"
+    },
+    {
+      "id": "exposure_catalog",
+      "name": "Exposure Catalog",
+      "version": "1.0.3"
+    },
+    {
+      "id": "extra_gauges",
+      "name": "Create: Extra Gauges",
+      "version": "2.0.7"
+    },
+    {
+      "id": "extractinator",
+      "name": "Extractinator",
+      "version": "2.3.0"
+    },
+    {
+      "id": "extremesoundmuffler",
+      "name": "Extreme Sound Muffler",
+      "version": "3.48"
+    },
+    {
+      "id": "fallingleaves",
+      "name": "Fallingleaves",
+      "version": "2.1.2"
+    },
+    {
+      "id": "fallingtrees",
+      "name": "Panda's Falling Tree's",
+      "version": "0.13.2"
+    },
+    {
+      "id": "fancymenu",
+      "name": "FancyMenu",
+      "version": "3.7.0"
+    },
+    {
+      "id": "fantasyfurniture",
+      "name": "Fantasy's Furniture",
+      "version": "9.0.0"
+    },
+    {
+      "id": "apexcore",
+      "name": "ApexCore",
+      "version": "10.0.0"
+    },
+    {
+      "id": "commonality",
+      "name": "Commonality",
+      "version": "7.0.0"
+    },
+    {
+      "id": "farmersdelight",
+      "name": "Farmer's Delight",
+      "version": "1.20.1-1.3.2"
+    },
+    {
+      "id": "farmingforblockheads",
+      "name": "Farming for Blockheads",
+      "version": "14.0.2"
+    },
+    {
+      "id": "farmlife",
+      "name": "Farm Life",
+      "version": "1.20.1-1.1.0"
+    },
+    {
+      "id": "fasterladderclimbing",
+      "name": "Faster Ladder Climbing",
+      "version": "0.2.10"
+    },
+    {
+      "id": "fastfurnace",
+      "name": "FastFurnace",
+      "version": "8.0.2"
+    },
+    {
+      "id": "fastleafdecay",
+      "name": "Fast Leaf Decay",
+      "version": "32"
+    },
+    {
+      "id": "fastpaintings",
+      "name": "Fast Paintings",
+      "version": "1.20-1.2.7"
+    },
+    {
+      "id": "fastsuite",
+      "name": "Fast Suite",
+      "version": "5.1.2"
+    },
+    {
+      "id": "ferritecore",
+      "name": "Ferrite Core",
+      "version": "6.0.1"
+    },
+    {
+      "id": "findme",
+      "name": "FindMe",
+      "version": "3.2.3"
+    },
+    {
+      "id": "flerovium",
+      "name": "Flerovium",
+      "version": "1.2.18"
+    },
+    {
+      "id": "forbidden_magic",
+      "name": "Forbidden Magic",
+      "version": "0.574-1.20.1-port.0.1.0-20708"
+    },
+    {
+      "id": "fragmentum",
+      "name": "Fragmentum",
+      "version": "1.1.4"
+    },
+    {
+      "id": "framework",
+      "name": "Framework",
+      "version": "0.7.15"
+    },
+    {
+      "id": "ftbchunks",
+      "name": "FTB Chunks",
+      "version": "2001.3.6"
+    },
+    {
+      "id": "ftblibrary",
+      "name": "FTB Library",
+      "version": "2001.2.12"
+    },
+    {
+      "id": "ftbquests",
+      "name": "FTB Quests",
+      "version": "2001.4.17"
+    },
+    {
+      "id": "ftbteams",
+      "name": "FTB Teams",
+      "version": "2001.3.2"
+    },
+    {
+      "id": "ftbxmodcompat",
+      "name": "FTB XMod Compat",
+      "version": "2.1.3"
+    },
+    {
+      "id": "ftbbackups2",
+      "name": "FTB Backups 2",
+      "version": "1.0.23"
+    },
+    {
+      "id": "ftbquestlocalizer",
+      "name": "FTB Quests Localizer",
+      "version": "3.2.3"
+    },
+    {
+      "id": "functionalstorage",
+      "name": "Functional Storage",
+      "version": "1.20.1-1.2.13"
+    },
+    {
+      "id": "fusion",
+      "name": "Fusion",
+      "version": "1.2.11+c"
+    },
+    {
+      "id": "gag",
+      "name": "Gadgets Against Grind",
+      "version": "3.0.0-build.13"
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery",
+      "version": "1.0.3"
+    },
+    {
+      "id": "gamediscs",
+      "name": "Game Discs",
+      "version": "0.3.2-forge"
+    },
+    {
+      "id": "gcyr",
+      "name": "Gregicality Rocketry",
+      "version": "0.2.9"
+    },
+    {
+      "id": "geckojs",
+      "name": "GeckoJS",
+      "version": "2001forge-1.5.2"
+    },
+    {
+      "id": "geckolib",
+      "name": "GeckoLib 4",
+      "version": "4.8"
+    },
+    {
+      "id": "glitchcore",
+      "name": "GlitchCore",
+      "version": "0.0.1.1"
+    },
+    {
+      "id": "gnetum",
+      "name": "Gnetum",
+      "version": "2.4.6"
+    },
+    {
+      "id": "golemoverhaul",
+      "name": "Golem Overhaul",
+      "version": "1.1.0"
+    },
+    {
+      "id": "gpumemleakfix",
+      "name": "Gpu memory leak fix",
+      "version": "1.20.1-1.8"
+    },
+    {
+      "id": "gregic_tinkering",
+      "name": "Gregic Tinkering",
+      "version": "1.3.0"
+    },
+    {
+      "id": "gtceuterminal",
+      "name": "Gregtech Terminals",
+      "version": "6.8.5-fix"
+    },
+    {
+      "id": "gtca",
+      "name": "GT Community Additions",
+      "version": "2.2.0"
+    },
+    {
+      "id": "gtceu",
+      "name": "GregTech",
+      "version": "7.5.3"
+    },
+    {
+      "id": "configuration",
+      "name": "Configuration",
+      "version": "2.2.0"
+    },
+    {
+      "id": "ldlib",
+      "name": "LowDragLib",
+      "version": "1.0.40.b"
+    },
+    {
+      "id": "gtmadvancedhatch",
+      "name": "GTMAdvancedHatch-NOVAFork",
+      "version": "0.2.0"
+    },
+    {
+      "id": "patchouli",
+      "name": "Patchouli",
+      "version": "1.20.1-84.1-FORGE"
+    },
+    {
+      "id": "moldraw",
+      "name": "GregTech Molecule Drawings",
+      "version": "3.4.0"
+    },
+    {
+      "id": "gtmthings",
+      "name": "GTMThings",
+      "version": "1.6.0"
+    },
+    {
+      "id": "gtmutils",
+      "name": "GregTech Modern Utilities",
+      "version": "2.10.2"
+    },
+    {
+      "id": "gtnn",
+      "name": "GT--",
+      "version": "1.3.10"
+    },
+    {
+      "id": "kotlinforforge",
+      "name": "Kotlin For Forge",
+      "version": "4.20.0"
+    },
+    {
+      "id": "gtse",
+      "name": "Greg Tech Simple Extension",
+      "version": "1.3.1"
+    },
+    {
+      "id": "guiclock",
+      "name": "GUI Clock",
+      "version": "4.6"
+    },
+    {
+      "id": "guideme",
+      "name": "GuideME",
+      "version": "20.1.14"
+    },
+    {
+      "id": "hamsters",
+      "name": "Hamsters",
+      "version": "1.20.1-1.0.3"
+    },
+    {
+      "id": "hobbit_hill_village",
+      "name": "Hobbit Hill Village",
+      "version": "0.0.4"
+    },
+    {
+      "id": "hopo",
+      "name": "HopoBetterMineshaft",
+      "version": "1.2.2"
+    },
+    {
+      "id": "horseman",
+      "name": "Horseman",
+      "version": "1.3.15"
+    },
+    {
+      "id": "iceberg",
+      "name": "Iceberg",
+      "version": "1.1.25"
+    },
+    {
+      "id": "immediatelyfast",
+      "name": "ImmediatelyFast",
+      "version": "1.5.5+1.20.4"
+    },
+    {
+      "id": "immersive_paintings",
+      "name": "Immersive Paintings",
+      "version": "0.6.13+1.20.1"
+    },
+    {
+      "id": "incontrol",
+      "name": "InControl",
+      "version": "1.20-9.4.1"
+    },
+    {
+      "id": "irons_rpg_tweaks",
+      "name": "Iron's RPG Tweaks",
+      "version": "1.20-1.4.0"
+    },
+    {
+      "id": "itemfilters",
+      "name": "Item Filters",
+      "version": "2001.1.0-build.59"
+    },
+    {
+      "id": "jade",
+      "name": "Jade",
+      "version": "11.13.2+forge"
+    },
+    {
+      "id": "jadeaddons",
+      "name": "Jade Addons",
+      "version": "5.5.0+forge"
+    },
+    {
+      "id": "jeed",
+      "name": "Just Enough Effects Descriptions",
+      "version": "1.20-2.2.5"
+    },
+    {
+      "id": "jei",
+      "name": "Just Enough Items",
+      "version": "15.20.0.129"
+    },
+    {
+      "id": "jei",
+      "name": "Just Enough Items",
+      "version": "15.56.0.205"
+    },
+    {
+      "id": "jmi",
+      "name": "JourneyMap Integration",
+      "version": "1.20.1-0.14-48"
+    },
+    {
+      "id": "journeymap",
+      "name": "Journeymap",
+      "version": "5.10.3"
+    },
+    {
+      "id": "justhammers",
+      "name": "Just Hammers",
+      "version": "2.0.3+mc1.20.1"
+    },
+    {
+      "id": "kambrik",
+      "name": "Kambrik",
+      "version": "6.1.1+1.20.1"
+    },
+    {
+      "id": "kiwi",
+      "name": "Kiwi Library",
+      "version": "11.9.2+forge"
+    },
+    {
+      "id": "konkrete",
+      "name": "Konkrete",
+      "version": "1.8.0"
+    },
+    {
+      "id": "kotlinforforge",
+      "name": "Kotlin For Forge",
+      "version": "4.12.0"
+    },
+    {
+      "id": "kubejs",
+      "name": "KubeJS",
+      "version": "2001.6.5-build.16"
+    },
+    {
+      "id": "kubejs_curios",
+      "name": "KubeJSCurios",
+      "version": "1.0.4"
+    },
+    {
+      "id": "kubejsadditions",
+      "name": "KubeJS Addditions (Forge)",
+      "version": "4.3.3"
+    },
+    {
+      "id": "cataclysm",
+      "name": "Cataclysm Mod",
+      "version": "2.39"
+    },
+    {
+      "id": "labels",
+      "name": "Labels",
+      "version": "1.20-2.0.0"
+    },
+    {
+      "id": "ldlib",
+      "name": "LowDragLib",
+      "version": "1.0.52.a"
+    },
+    {
+      "id": "leavesbegone",
+      "name": "Leaves Be Gone",
+      "version": "8.0.0"
+    },
+    {
+      "id": "legendarycreatures",
+      "name": "Legendary Creatures",
+      "version": "1.20.1-1.1.1.3"
+    },
+    {
+      "id": "doapi",
+      "name": "[Let's Do] API",
+      "version": "1.2.15"
+    },
+    {
+      "id": "bakery",
+      "name": "[Let's Do] Bakery",
+      "version": "2.0.3"
+    },
+    {
+      "id": "beachparty",
+      "name": "[Let's Do] Beachparty",
+      "version": "1.1.5"
+    },
+    {
+      "id": "brewery",
+      "name": "[Let's Do] Brewery",
+      "version": "2.0.3"
+    },
+    {
+      "id": "candlelight",
+      "name": "[Let's Do] Candlelight",
+      "version": "2.0.2"
+    },
+    {
+      "id": "farm_and_charm",
+      "name": "[Let's Do] Farm & Charm",
+      "version": "1.0.4"
+    },
+    {
+      "id": "furniture",
+      "name": "[Let's Do] Furniture",
+      "version": "1.0.4"
+    },
+    {
+      "id": "herbalbrews",
+      "name": "[Let's Do] HerbalBrews",
+      "version": "1.0.12"
+    },
+    {
+      "id": "meadow",
+      "name": "[Let's Do] Meadow",
+      "version": "1.3.23"
+    },
+    {
+      "id": "nethervinery",
+      "name": "[Let's Do] NetherVinery",
+      "version": "1.2.19"
+    },
+    {
+      "id": "vinery",
+      "name": "[Let's Do] Vinery",
+      "version": "1.4.41"
+    },
+    {
+      "id": "wildernature",
+      "name": "[Let's Do] Wilder Nature",
+      "version": "1.0.5"
+    },
+    {
+      "id": "lionfishapi",
+      "name": "LionfishAPI",
+      "version": "2.4-Fix"
+    },
+    {
+      "id": "lithostitched",
+      "name": "Lithostitched",
+      "version": "1.4.11"
+    },
+    {
+      "id": "littlejoys",
+      "name": "Little Joys",
+      "version": "20.1.14"
+    },
+    {
+      "id": "liltractor",
+      "name": "Little Tractor",
+      "version": "1.20.1-1.2"
+    },
+    {
+      "id": "lmft",
+      "name": "Load My F***ing Tags",
+      "version": "1.0.4+1.20.1"
+    },
+    {
+      "id": "logbegone",
+      "name": "Log Begone",
+      "version": "1.0.8"
+    },
+    {
+      "id": "longwings",
+      "name": "Longwings",
+      "version": "0.9.5"
+    },
+    {
+      "id": "loot_journal",
+      "name": "Loot Journal",
+      "version": "6.1.2"
+    },
+    {
+      "id": "lootjs",
+      "name": "LootJS",
+      "version": "1.20.1-2.13.1"
+    },
+    {
+      "id": "lootr",
+      "name": "Lootr",
+      "version": "0.7.35.90"
+    },
+    {
+      "id": "mantle",
+      "name": "Mantle",
+      "version": "1.11.117"
+    },
+    {
+      "id": "maxenchantx",
+      "name": "Max Enchant X",
+      "version": "1.3"
+    },
+    {
+      "id": "mcef",
+      "name": "MCEF (Minecraft Chromium Embedded Framework)",
+      "version": "2.1.6-1.20.1"
+    },
+    {
+      "id": "rsmixin",
+      "name": "Refined Storage Mixin",
+      "version": "1.1.0-b431-release"
+    },
+    {
+      "id": "melody",
+      "name": "Melody",
+      "version": "1.0.2"
+    },
+    {
+      "id": "midnightlib",
+      "name": "MidnightLib",
+      "version": "1.9.2"
+    },
+    {
+      "id": "moblassos",
+      "name": "Mob Lassos",
+      "version": "8.0.1"
+    },
+    {
+      "id": "modernfix",
+      "name": "ModernFix",
+      "version": "5.27.8+mc1.20.1"
+    },
+    {
+      "id": "moogs_structures",
+      "name": "Moog's Structure Lib",
+      "version": "1.1.0-1.20-1.20.4"
+    },
+    {
+      "id": "mvs",
+      "name": "Moog's Voyager Structures",
+      "version": "5.0.4"
+    },
+    {
+      "id": "moonlight",
+      "name": "Moonlight Library",
+      "version": "1.20-2.16.34"
+    },
+    {
+      "id": "morejs",
+      "name": "MoreJS",
+      "version": "0.10.1"
+    },
+    {
+      "id": "moreminecarts",
+      "name": "More Minecarts and Rails",
+      "version": "1.8.3"
+    },
+    {
+      "id": "moreoverlays",
+      "name": "More Overlays Updated",
+      "version": "1.24.1"
+    },
+    {
+      "id": "mousetweaks",
+      "name": "Mouse Tweaks",
+      "version": "2.25.1"
+    },
+    {
+      "id": "myserveriscompatible",
+      "name": "MyServerIsCompatible",
+      "version": "1.0"
+    },
+    {
+      "id": "mysticaloaktree",
+      "name": "Mystical Oak Tree",
+      "version": "1.20-1.11"
+    },
+    {
+      "id": "naturescompass",
+      "name": "Nature's Compass",
+      "version": "1.20.1-1.11.2-forge"
+    },
+    {
+      "id": "neo_auth",
+      "name": "NeoAuth",
+      "version": "1.0.3"
+    },
+    {
+      "id": "netherdepthsupgrade",
+      "name": "Nether Depths Upgrade",
+      "version": "3.1.5-1.20"
+    },
+    {
+      "id": "netherportalfix",
+      "name": "NetherPortalFix",
+      "version": "13.0.1"
+    },
+    {
+      "id": "nightlights",
+      "name": "Night Lights",
+      "version": "1.1"
+    },
+    {
+      "id": "nochatreports",
+      "name": "No Chat Reports",
+      "version": "1.20.1-v2.2.2"
+    },
+    {
+      "id": "nochatrestrictions",
+      "name": "No Chat Restrictions",
+      "version": "1.20.1-v1.0.0"
+    },
+    {
+      "id": "nerb",
+      "name": "Not Enough Recipe Book",
+      "version": "0.4.1"
+    },
+    {
+      "id": "numismatics_utils",
+      "name": "Create: Numismatics Utils",
+      "version": "2.2"
+    },
+    {
+      "id": "observable",
+      "name": "Observable",
+      "version": "4.4.1"
+    },
+    {
+      "id": "octolib",
+      "name": "OctoLib",
+      "version": "0.5.0.1"
+    },
+    {
+      "id": "oculus",
+      "name": "Oculus",
+      "version": "1.8.0"
+    },
+    {
+      "id": "ok_zoomer",
+      "name": "Ok Zoomer",
+      "version": "5.4.0-beta.8"
+    },
+    {
+      "id": "wrench_wrapper",
+      "name": "Wrench Wrapper",
+      "version": "0.6.2"
+    },
+    {
+      "id": "online_detector",
+      "name": "Online Detector",
+      "version": "1.20-6.0.0"
+    },
+    {
+      "id": "oreganized",
+      "name": "Oreganized",
+      "version": "4.3.2"
+    },
+    {
+      "id": "galena_hats",
+      "name": "Galena Hats",
+      "version": "1.20.1-1.2.2"
+    },
+    {
+      "id": "multikulti_datagen_fixes",
+      "name": "Multi-Kulti",
+      "version": "1.20.1-1.1.5"
+    },
+    {
+      "id": "packetfixer",
+      "name": "PacketFixer",
+      "version": "3.3.1"
+    },
+    {
+      "id": "pamhc2trees",
+      "name": "Pam's HarvestCraft 2 - Trees",
+      "version": "1.0.2"
+    },
+    {
+      "id": "pandalib",
+      "name": "PandaLib",
+      "version": "0.5.2"
+    },
+    {
+      "id": "paraglider",
+      "name": "Paraglider",
+      "version": "20.1.3"
+    },
+    {
+      "id": "particlerain",
+      "name": "Particle Rain",
+      "version": "4.0.0-beta.10"
+    },
+    {
+      "id": "passablefoliage",
+      "name": "Passable Foliage",
+      "version": "8.2.1"
+    },
+    {
+      "id": "patchouli",
+      "name": "Patchouli",
+      "version": "1.20.1-85-FORGE"
+    },
+    {
+      "id": "perfectplushies",
+      "name": "Perfect Plushies",
+      "version": "1.13.3"
+    },
+    {
+      "id": "perfectplushieapi",
+      "name": "Perfect Plushie API",
+      "version": "1.0.7"
+    },
+    {
+      "id": "pipez",
+      "name": "Pipez",
+      "version": "1.20.1-1.2.21"
+    },
+    {
+      "id": "placebo",
+      "name": "Placebo",
+      "version": "8.6.3"
+    },
+    {
+      "id": "platform",
+      "name": "Platform",
+      "version": "1.3.4"
+    },
+    {
+      "id": "playeranimator",
+      "name": "Player Animator",
+      "version": "1.0.2-rc1+1.20"
+    },
+    {
+      "id": "plonk",
+      "name": "Plonk",
+      "version": "10.0.5"
+    },
+    {
+      "id": "polylib",
+      "name": "PolyLib",
+      "version": "2000.0.3-build.143"
+    },
+    {
+      "id": "ponderjs",
+      "name": "PonderJS",
+      "version": "2.1.0"
+    },
+    {
+      "id": "ponder",
+      "name": "Ponder",
+      "version": "1.0.92"
+    },
+    {
+      "id": "flywheel",
+      "name": "Flywheel",
+      "version": "1.0.0"
+    },
+    {
+      "id": "flywheel",
+      "name": "Flywheel",
+      "version": "1.0.6-beta-265"
+    },
+    {
+      "id": "portable_blueprints",
+      "name": "Portable blueprints",
+      "version": "2.0.11"
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "version": "1.20.1-1.5.0"
+    },
+    {
+      "id": "powerfuljs",
+      "name": "PowerfulJS",
+      "version": "1.6.1"
+    },
+    {
+      "id": "puffish_attributes",
+      "name": "Pufferfish's Attributes",
+      "version": "0.7.2"
+    },
+    {
+      "id": "puffish_skills",
+      "name": "Pufferfish's Skills",
+      "version": "0.16.1"
+    },
+    {
+      "id": "puzzleslib",
+      "name": "Puzzles Lib",
+      "version": "8.1.33"
+    },
+    {
+      "id": "puzzlesaccessapi",
+      "name": "Puzzles Access Api",
+      "version": "20.1.1"
+    },
+    {
+      "id": "quality_food",
+      "name": "Quality Food",
+      "version": "2.4.3"
+    },
+    {
+      "id": "quark",
+      "name": "Quark",
+      "version": "4.0-462"
+    },
+    {
+      "id": "questsadditions",
+      "name": "Quests Additions",
+      "version": "1.4.7"
+    },
+    {
+      "id": "radiantgear",
+      "name": "Radiant Gear",
+      "version": "2.2.0+1.20.1"
+    },
+    {
+      "id": "radium",
+      "name": "Radium",
+      "version": "0.12.4+git.26c9d8e"
+    },
+    {
+      "id": "rainbowoaks",
+      "name": "Rainbow Oaks",
+      "version": "1.0.0"
+    },
+    {
+      "id": "recipeessentials",
+      "name": "recipeessentials mod",
+      "version": "1.20.1-4.0"
+    },
+    {
+      "id": "refinedstorage",
+      "name": "Refined Storage",
+      "version": "1.12.4"
+    },
+    {
+      "id": "refinedstorageaddons",
+      "name": "Refined Storage Addons",
+      "version": "0.10.0"
+    },
+    {
+      "id": "refurbished_furniture",
+      "name": "MrCrayfish's Furniture Mod: Refurbished",
+      "version": "1.0.20"
+    },
+    {
+      "id": "rehooked",
+      "name": "ReHooked",
+      "version": "1.8.3-1.20.1"
+    },
+    {
+      "id": "relics",
+      "name": "Relics",
+      "version": "0.8.0.11"
+    },
+    {
+      "id": "remi",
+      "name": "Reliable EMI",
+      "version": "4.6.8"
+    },
+    {
+      "id": "resourcefulconfig",
+      "name": "Resourcefulconfig",
+      "version": "2.1.3"
+    },
+    {
+      "id": "resourcefullib",
+      "name": "Resourceful Lib",
+      "version": "2.1.29"
+    },
+    {
+      "id": "com_teamresourceful_yabn",
+      "name": "yabn",
+      "version": "1.0.3"
+    },
+    {
+      "id": "com_teamresourceful_bytecodecs",
+      "name": "bytecodecs",
+      "version": "1.0.2"
+    },
+    {
+      "id": "resourcepackoverrides",
+      "name": "Resource Pack Overrides",
+      "version": "8.0.3"
+    },
+    {
+      "id": "rhino",
+      "name": "Rhino",
+      "version": "2001.2.3-build.10"
+    },
+    {
+      "id": "ribbits",
+      "name": "Ribbits",
+      "version": "1.20.1-Forge-3.0.5"
+    },
+    {
+      "id": "rottencreatures",
+      "name": "Rotten Creatures",
+      "version": "1.1.0"
+    },
+    {
+      "id": "rsinfinitybooster",
+      "name": "RSInfinityBooster",
+      "version": "1.20.1-1.0+41"
+    },
+    {
+      "id": "sawmill",
+      "name": "Universal Sawmill",
+      "version": "1.20-1.4.10"
+    },
+    {
+      "id": "scholar",
+      "name": "Scholar",
+      "version": "1.2.5.1"
+    },
+    {
+      "id": "searchables",
+      "name": "Searchables",
+      "version": "1.0.3"
+    },
+    {
+      "id": "seasonhud",
+      "name": "SeasonHud",
+      "version": "2.0.4"
+    },
+    {
+      "id": "selectivebounds",
+      "name": "SelectiveBounds",
+      "version": "0.0.2"
+    },
+    {
+      "id": "sereneseasons",
+      "name": "Serene Seasons",
+      "version": "9.1.0.2"
+    },
+    {
+      "id": "sereneseasonsfix",
+      "name": "Serene Seasons Fix",
+      "version": "1.2.0"
+    },
+    {
+      "id": "serializer_debug",
+      "name": "Serializer Debug",
+      "version": "1.0.1"
+    },
+    {
+      "id": "serverconfigupdater",
+      "name": "ServerConfig Updater",
+      "version": "4.0.2"
+    },
+    {
+      "id": "servercore",
+      "name": "ServerCore",
+      "version": "1.5.2+1.20.1"
+    },
+    {
+      "id": "sewingkit",
+      "name": "Sewing Kit",
+      "version": "1.8.1"
+    },
+    {
+      "id": "shippingbin",
+      "name": "ShippingBin",
+      "version": "4"
+    },
+    {
+      "id": "shouldersurfing",
+      "name": "Shoulder Surfing Reloaded",
+      "version": "1.20.1-4.16.0"
+    },
+    {
+      "id": "signpicture",
+      "name": "SignPicture-Rebornified",
+      "version": "1.0.0"
+    },
+    {
+      "id": "sdrp",
+      "name": "Simple Discord Rich Presence",
+      "version": "4.0.3-build.40+mc1.20.1"
+    },
+    {
+      "id": "simplehats",
+      "name": "SimpleHats",
+      "version": "1.20.1-0.3.2"
+    },
+    {
+      "id": "simplemagnets",
+      "name": "Simple Magnets",
+      "version": "1.1.12"
+    },
+    {
+      "id": "simplerecall",
+      "name": "Simple Recall Potion",
+      "version": "1.0.2"
+    },
+    {
+      "id": "skillsexpnotifier",
+      "name": "SkillsEXPNotifier",
+      "version": "1.0-SNAPSHOT"
+    },
+    {
+      "id": "smallships",
+      "name": "Small Ships",
+      "version": "2.0.0-b1.4"
+    },
+    {
+      "id": "smartbrainlib",
+      "name": "SmartBrainLib",
+      "version": "1.15"
+    },
+    {
+      "id": "snowpig",
+      "name": "Snow Pig",
+      "version": "1.20.1-6.0.3"
+    },
+    {
+      "id": "snowrealmagic",
+      "name": "Snow! Real Magic!",
+      "version": "10.7.0"
+    },
+    {
+      "id": "fabric_api_base",
+      "name": "Fabric API Base",
+      "version": "0.4.32+ef105b4977"
+    },
+    {
+      "id": "fabric_renderer_api_v1",
+      "name": "Fabric Renderer API (v1)",
+      "version": "3.2.2+cf68abbe77"
+    },
+    {
+      "id": "fabric_renderer_indigo",
+      "name": "Fabric Renderer - Indigo",
+      "version": "1.5.3+b5b2da4177"
+    },
+    {
+      "id": "snowyspirit",
+      "name": "Snowy Spirit",
+      "version": "1.20-3.0.10"
+    },
+    {
+      "id": "snuffles",
+      "name": "Snuffles",
+      "version": "1.2.0.1"
+    },
+    {
+      "id": "society",
+      "name": "Society",
+      "version": "1.22"
+    },
+    {
+      "id": "society_trading",
+      "name": "Society Trading",
+      "version": "1.2.9"
+    },
+    {
+      "id": "sodiumdynamiclights",
+      "name": "Sodium Dynamic Lights",
+      "version": "1.0.9"
+    },
+    {
+      "id": "fabric_api_base",
+      "name": "Fabric API Base",
+      "version": "0.4.31+ef105b4977"
+    },
+    {
+      "id": "sodiumoptionsapi",
+      "name": "Sodium Options API",
+      "version": "1.0.10"
+    },
+    {
+      "id": "fabric_api_base",
+      "name": "Fabric API Base",
+      "version": "0.4.31+ef105b4977"
+    },
+    {
+      "id": "solonion",
+      "name": "Spice of Life Onion",
+      "version": "1.4.5"
+    },
+    {
+      "id": "sophisticatedbackpacks",
+      "name": "Sophisticated Backpacks",
+      "version": "3.24.60.1982"
+    },
+    {
+      "id": "sophisticatedcore",
+      "name": "Sophisticated Core",
+      "version": "1.3.71.2181"
+    },
+    {
+      "id": "sophisticatedstorage",
+      "name": "Sophisticated Storage",
+      "version": "1.4.74.1997"
+    },
+    {
+      "id": "sophisticatedstoragecreateintegration",
+      "name": "Sophisticated Storage Create Integration",
+      "version": "0.1.22.190"
+    },
+    {
+      "id": "spark",
+      "name": "spark",
+      "version": "1.10.53"
+    },
+    {
+      "id": "species",
+      "name": "Species",
+      "version": "3.5"
+    },
+    {
+      "id": "splendid_slimes",
+      "name": "Splendid Slimes",
+      "version": "0.20.5"
+    },
+    {
+      "id": "squidnoglitch",
+      "name": "Squid No Glitch",
+      "version": "1.0.3"
+    },
+    {
+      "id": "stardew_fishing",
+      "name": "Stardew Fishing",
+      "version": "3.7"
+    },
+    {
+      "id": "railways",
+      "name": "Create: Steam 'n' Rails",
+      "version": "1.7.2+forge-mc1.20.1"
+    },
+    {
+      "id": "strawstatues",
+      "name": "Straw Statues",
+      "version": "8.0.3"
+    },
+    {
+      "id": "puzzlesapi",
+      "name": "Puzzles Api",
+      "version": "8.1.4"
+    },
+    {
+      "id": "puzzlesaccessapi",
+      "name": "Puzzles Access Api",
+      "version": "8.0.7"
+    },
+    {
+      "id": "structureessentials",
+      "name": "Structure Essentials mod",
+      "version": "1.20.1-4.8"
+    },
+    {
+      "id": "structurify",
+      "name": "Structurify",
+      "version": "1.0.21"
+    },
+    {
+      "id": "supermartijn642configlib",
+      "name": "SuperMartijn642's Config Library",
+      "version": "1.1.8"
+    },
+    {
+      "id": "supermartijn642corelib",
+      "name": "SuperMartijn642's Core Lib",
+      "version": "1.1.19"
+    },
+    {
+      "id": "supplementaries",
+      "name": "Supplementaries",
+      "version": "1.20-3.1.43"
+    },
+    {
+      "id": "dialog",
+      "name": "SVDialog",
+      "version": "0.6"
+    },
+    {
+      "id": "tainted_magic",
+      "name": "Tainted Magic",
+      "version": "8.1.1-1.20.1-port.0.1.0-20708"
+    },
+    {
+      "id": "tanukidecor",
+      "name": "Tanuki Decor",
+      "version": "20.1.1.0"
+    },
+    {
+      "id": "tconstruct",
+      "name": "Tinkers' Construct",
+      "version": "3.12.0.220"
+    },
+    {
+      "id": "terrablender",
+      "name": "TerraBlender",
+      "version": "3.0.1.10"
+    },
+    {
+      "id": "thaumcraft",
+      "name": "Thaumcraft 4R",
+      "version": "4.2.3.5-1.20.1-port.0.1.0-20708"
+    },
+    {
+      "id": "thaumictinkerer",
+      "name": "Thaumic Tinkerer",
+      "version": "2.5-1.20.1-port.0.1.0-20708"
+    },
+    {
+      "id": "tipsmod",
+      "name": "Tips",
+      "version": "12.1.9"
+    },
+    {
+      "id": "titanium",
+      "name": "Titanium",
+      "version": "3.8.32"
+    },
+    {
+      "id": "toastcontrol",
+      "name": "Toast Control",
+      "version": "8.0.3"
+    },
+    {
+      "id": "toofast",
+      "name": "Too Fast",
+      "version": "0.4.3.5"
+    },
+    {
+      "id": "toolbelt",
+      "name": "Tool Belt",
+      "version": "1.20.02"
+    },
+    {
+      "id": "tooltipoverhaul",
+      "name": "Tooltip Overhaul",
+      "version": "1.5.0"
+    },
+    {
+      "id": "torchmaster",
+      "name": "Torchmaster",
+      "version": "20.1.9"
+    },
+    {
+      "id": "trashslot",
+      "name": "TrashSlot",
+      "version": "15.1.3"
+    },
+    {
+      "id": "treechop",
+      "name": "HT's TreeChop",
+      "version": "0.19.0"
+    },
+    {
+      "id": "trials",
+      "name": "Trials Chambers Reuploaded",
+      "version": "2.3.3"
+    },
+    {
+      "id": "trofers",
+      "name": "Trofers",
+      "version": "5.0.2"
+    },
+    {
+      "id": "twigs",
+      "name": "Twigs",
+      "version": "1.20.1-3.1.1"
+    },
+    {
+      "id": "twilightdelight",
+      "name": "Twilight's Flavor & Delight",
+      "version": "2.0.13"
+    },
+    {
+      "id": "l2library",
+      "name": "L2 Library",
+      "version": "2.4.16"
+    },
+    {
+      "id": "twilightforest",
+      "name": "The Twilight Forest",
+      "version": "4.3.2508"
+    },
+    {
+      "id": "untitledduckmod",
+      "name": "Untitled Duck Mod",
+      "version": "1.5.2"
+    },
+    {
+      "id": "unusualfishmod",
+      "name": "Unusual Fish Mod",
+      "version": "1.1.10"
+    },
+    {
+      "id": "vanillabackport",
+      "name": "VanillaBackport",
+      "version": "1.1.7.10"
+    },
+    {
+      "id": "veggiesdelight",
+      "name": "Veggies Delight",
+      "version": "1.9.3"
+    },
+    {
+      "id": "verdantvibes",
+      "name": "Verdant Vibes",
+      "version": "1.0.3-1.20.1"
+    },
+    {
+      "id": "via_romana",
+      "name": "Via Romana",
+      "version": "2.2.2+1.20.1-forge"
+    },
+    {
+      "id": "vintagedelight",
+      "name": "Vintage Delight",
+      "version": "0.1.6"
+    },
+    {
+      "id": "visual_keybinder",
+      "name": "Raw's Visual Keybinder",
+      "version": "1.20.1 - 0.1.7"
+    },
+    {
+      "id": "waterframes",
+      "name": "WaterFrames",
+      "version": "2.1.20"
+    },
+    {
+      "id": "watermedia",
+      "name": "WaterMedia",
+      "version": "2.1.34"
+    },
+    {
+      "id": "watervision",
+      "name": "WaterVision",
+      "version": "0.1.0-alpha"
+    },
+    {
+      "id": "watut",
+      "name": "What Are They Up To",
+      "version": "1.20.1-1.2.3"
+    },
+    {
+      "id": "waystones",
+      "name": "Waystones",
+      "version": "14.1.17"
+    },
+    {
+      "id": "webdisplays",
+      "name": "WebDisplays",
+      "version": "2.0.1-1.20.1"
+    },
+    {
+      "id": "whimsy_deco",
+      "name": "Whimsy Deco",
+      "version": "1.2"
+    },
+    {
+      "id": "windswept",
+      "name": "Windswept",
+      "version": "3.0.4"
+    },
+    {
+      "id": "worldedit",
+      "name": "WorldEdit",
+      "version": "7.2.15+6463-5ca4dff"
+    },
+    {
+      "id": "fabric-api-base",
+      "name": "Fabric API Base",
+      "version": "0.4.29+b04edc7a27"
+    },
+    {
+      "id": "fabric-command-api-v2",
+      "name": "Fabric Command API (v2)",
+      "version": "2.2.11+b3afc78b27"
+    },
+    {
+      "id": "fabric-events-interaction-v0",
+      "name": "Fabric Events Interaction (v0)",
+      "version": "0.6.0+b3afc78b27"
+    },
+    {
+      "id": "fabric-lifecycle-events-v1",
+      "name": "Fabric Lifecycle Events (v1)",
+      "version": "2.2.20+b3afc78b27"
+    },
+    {
+      "id": "fabric-networking-api-v1",
+      "name": "Fabric Networking API (v1)",
+      "version": "1.3.8+b3afc78b27"
+    },
+    {
+      "id": "xlpackets",
+      "name": "XXL Packets",
+      "version": "1.0.5"
+    },
+    {
+      "id": "yet_another_config_lib_v3",
+      "name": "YetAnotherConfigLib",
+      "version": "3.6.6+1.20.1-forge"
+    },
+    {
+      "id": "yungsapi",
+      "name": "YUNG's API",
+      "version": "1.20-Forge-4.0.6"
+    },
+    {
+      "id": "ywzj_midi",
+      "name": "Limitless Concert",
+      "version": "1.20.1-forge-1.9.1"
+    },
+    {
+      "id": "zeta",
+      "name": "Zeta",
+      "version": "1.0-31"
+    },
+    {
+      "id": "zetter",
+      "name": "Zetter",
+      "version": "0.21.7"
+    }
+  ],
+  "categories": {
+    "核心 / 经济": [
+      "society",
+      "society_trading",
+      "numismatics",
+      "numismatics_utils",
+      "shippingbin",
+      "bountiful"
+    ],
+    "农业 / 种植": [
+      "farmersdelight",
+      "farm_and_charm",
+      "veggiesdelight",
+      "pamhc2trees",
+      "croptania",
+      "botania_seeds",
+      "dew_drop_farmland_growth",
+      "dew_drop_watering_cans",
+      "farmingforblockheads",
+      "supplementaries",
+      "snowyspirit",
+      "etcetera",
+      "quality_food"
+    ],
+    "食物 / 烹饪": [
+      "vintagedelight",
+      "crabbersdelight",
+      "bakery",
+      "candlelight",
+      "cozycafe",
+      "meadow",
+      "beachparty",
+      "braziliandelight",
+      "butchercraft",
+      "displaydelight",
+      "farmlife",
+      "farm_and_charm",
+      "farmersdelight",
+      "veggiesdelight",
+      "windswept",
+      "atmospheric",
+      "autumnity"
+    ],
+    "饮品": [
+      "vinery",
+      "brewery",
+      "herbalbrews",
+      "nethervinery"
+    ],
+    "渔业": [
+      "aquaculture",
+      "unusualfishmod",
+      "netherdepthsupgrade",
+      "stardew_fishing",
+      "crabbersdelight"
+    ],
+    "季节 / 天气": [
+      "sereneseasons",
+      "sereneseasonsfix",
+      "dew_drop_daily_weather",
+      "particlerain"
+    ],
+    "科技 / Create": [
+      "create",
+      "create_central_kitchen",
+      "create_enchantment_industry",
+      "create_factory_logistics",
+      "create_hypertube",
+      "create_mechanical_extruder",
+      "create_slime",
+      "createutilities",
+      "railways",
+      "createrailwaysnavigator",
+      "copycats",
+      "extra_gauges",
+      "createentitycontrol",
+      "ponderjs"
+    ],
+    "存储 / 物流": [
+      "refinedstorage",
+      "refinedstorageaddons",
+      "rsinfinitybooster",
+      "classicpipes",
+      "pipez",
+      "functionalstorage",
+      "sophisticatedbackpacks",
+      "sophisticatedstorage",
+      "sophisticatedstoragecreateintegration",
+      "labels",
+      "trashslot",
+      "toolbelt"
+    ],
+    "魔法": [
+      "botania",
+      "botania_seeds",
+      "croptania"
+    ],
+    "探索 / 冒险": [
+      "twilightforest",
+      "betterarcheology",
+      "relics",
+      "species",
+      "windswept",
+      "atmospheric",
+      "autumnity",
+      "legendarycreatures",
+      "rottencreatures",
+      "golemoverhaul",
+      "domesticationinnovation",
+      "paraglider",
+      "waystones",
+      "simplerecall",
+      "crittersandcompanions"
+    ],
+    "建筑 / 装饰": [
+      "furniture",
+      "refurbished_furniture",
+      "fantasyfurniture",
+      "tanukidecor",
+      "whimsy_deco",
+      "cluttered",
+      "beautify",
+      "chimes",
+      "amendments",
+      "decorative_blocks",
+      "diagonalfences",
+      "diagonalwalls",
+      "twigs",
+      "clayworks",
+      "supplementaries"
+    ],
+    "生物 / 宠物": [
+      "crittersandcompanions",
+      "buzzier_bees",
+      "ribbits",
+      "snowpig",
+      "snuffles",
+      "untitledduckmod",
+      "domesticationinnovation",
+      "golemoverhaul",
+      "legendarycreatures",
+      "hamsters",
+      "snowyspirit",
+      "species",
+      "windswept"
+    ],
+    "收藏 / 趣味": [
+      "longwings",
+      "splendid_slimes",
+      "trofers",
+      "simplehats",
+      "perfectplushies",
+      "gamediscs",
+      "exposure",
+      "exposure_catalog",
+      "portfolio",
+      "gallery",
+      "etched",
+      "signpicture",
+      "immersive_paintings",
+      "waterframes",
+      "webdisplays",
+      "simplemagnets"
+    ],
+    "交通": [
+      "moreminecarts",
+      "automobility",
+      "smallships",
+      "waystones",
+      "simplerecall",
+      "createrailwaysnavigator",
+      "railways",
+      "paraglider",
+      "create_hypertube"
+    ],
+    "任务 / 队伍": [
+      "ftbquests",
+      "ftbquestlocalizer",
+      "ftbchunks",
+      "ftbteams",
+      "ftblibrary",
+      "questsadditions",
+      "certain_questing_additions",
+      "ftbxmodcompat",
+      "ftbbackups2"
+    ],
+    "旅行 / 世界": [
+      "journeymap",
+      "naturescompass",
+      "biomespawnpoint",
+      "lithostitched",
+      "terrablender",
+      "chunky",
+      "moonlight",
+      "mysticaloaktree",
+      "hobbit_hill_village",
+      "moogs_structures",
+      "yungsapi"
+    ],
+    "未使用 / 乘客 mod": [
+      "gtceu",
+      "gtmutils",
+      "gtse",
+      "gtnn",
+      "moldraw",
+      "gcyr",
+      "gregic_tinkering",
+      "applied_greg",
+      "gtceuterminal",
+      "gtca",
+      "thaumcraft",
+      "thaumictinkerer",
+      "forbidden_magic",
+      "tainted_magic",
+      "ae2",
+      "appbot",
+      "cataclysm"
+    ]
+  },
+  "unused_mods": [
+    "gtceu",
+    "gtmutils",
+    "gtse",
+    "gtnn",
+    "moldraw",
+    "gcyr",
+    "gregic_tinkering",
+    "applied_greg",
+    "gtceuterminal",
+    "gtca",
+    "thaumcraft",
+    "thaumictinkerer",
+    "forbidden_magic",
+    "tainted_magic",
+    "ae2",
+    "appbot",
+    "cataclysm"
+  ],
+  "quests": {
+    "totals": {
+      "chapters": 30,
+      "quests": 1173,
+      "tasks": 1341,
+      "rewards": 487
+    },
+    "chapters": [
+      {
+        "file": "armor_weapons__tools",
+        "title": "装备",
+        "group": "指南",
+        "quests": 38,
+        "icon": "rehooked:diamond_hook"
+      },
+      {
+        "file": "creatures",
+        "title": "生物",
+        "group": "指南",
+        "quests": 10,
+        "icon": "minecraft:allay_spawn_egg"
+      },
+      {
+        "file": "tools",
+        "title": "建筑工具",
+        "group": "指南",
+        "quests": 18,
+        "icon": null
+      },
+      {
+        "file": "transportation",
+        "title": "交通",
+        "group": "指南",
+        "quests": 20,
+        "icon": "minecraft:minecart"
+      },
+      {
+        "file": "villagers",
+        "title": "村民",
+        "group": "指南",
+        "quests": 14,
+        "icon": null
+      },
+      {
+        "file": "artifacts",
+        "title": "文物",
+        "group": "收藏",
+        "quests": 28,
+        "icon": "society:heart_of_neptunium"
+      },
+      {
+        "file": "banners",
+        "title": "烹饪",
+        "group": "收藏",
+        "quests": 214,
+        "icon": null
+      },
+      {
+        "file": "crops",
+        "title": "作物",
+        "group": "收藏",
+        "quests": 91,
+        "icon": "minecraft:carrot"
+      },
+      {
+        "file": "drinks",
+        "title": "精酿",
+        "group": "收藏",
+        "quests": 85,
+        "icon": null
+      },
+      {
+        "file": "fishing",
+        "title": "鱼获",
+        "group": "收藏",
+        "quests": 80,
+        "icon": null
+      },
+      {
+        "file": "gems",
+        "title": "宝石",
+        "group": "收藏",
+        "quests": 15,
+        "icon": "society:prismatic_shard"
+      },
+      {
+        "file": "longwings",
+        "title": "蝴蝶 \\& 飞蛾",
+        "group": "收藏",
+        "quests": 85,
+        "icon": null
+      },
+      {
+        "file": "minerals",
+        "title": "矿产",
+        "group": "收藏",
+        "quests": 48,
+        "icon": "society:fire_opal"
+      },
+      {
+        "file": "perfection",
+        "title": "至善至美",
+        "group": "收藏",
+        "quests": 22,
+        "icon": "society:golden_clock"
+      },
+      {
+        "file": "relics",
+        "title": "遗物",
+        "group": "收藏",
+        "quests": 26,
+        "icon": null
+      },
+      {
+        "file": "slimes",
+        "title": "史莱姆",
+        "group": "收藏",
+        "quests": 25,
+        "icon": null
+      },
+      {
+        "file": "botania",
+        "title": "IV.II - 神秘农业",
+        "group": "教程",
+        "quests": 32,
+        "icon": "society:mana_fruit"
+      },
+      {
+        "file": "getting_started",
+        "title": "I - 旅程伊始",
+        "group": "教程",
+        "quests": 23,
+        "icon": "shippingbin:basic_shipping_bin"
+      },
+      {
+        "file": "ii__building_up_the_farm",
+        "title": "II - 建设农场",
+        "group": "教程",
+        "quests": 67,
+        "icon": "farmersdelight:tomato"
+      },
+      {
+        "file": "iii__advanced_farming",
+        "title": "III - 高级农业",
+        "group": "教程",
+        "quests": 50,
+        "icon": "society:ancient_fruit"
+      },
+      {
+        "file": "iv__prismatic_farming",
+        "title": "IV - 五彩农业",
+        "group": "教程",
+        "quests": 66,
+        "icon": "society:prismatic_shard"
+      },
+      {
+        "file": "ivi__mechanical_farming",
+        "title": "IV.I - 动力农业",
+        "group": "教程",
+        "quests": 42,
+        "icon": "create:wrench"
+      },
+      {
+        "file": "twilight_forest",
+        "title": "V - 暮色森林",
+        "group": "教程",
+        "quests": 30,
+        "icon": "twilightforest:filled_magic_map"
+      },
+      {
+        "file": "welcome",
+        "title": "欢迎",
+        "group": "未分组",
+        "quests": 14,
+        "icon": "betterarcheology:growth_totem"
+      },
+      {
+        "file": "abandoned_farm",
+        "title": "废弃农场",
+        "group": "社区中心",
+        "quests": 2,
+        "icon": "farm_and_charm:supply_cart"
+      },
+      {
+        "file": "boiler_room",
+        "title": "锅炉房",
+        "group": "社区中心",
+        "quests": 5,
+        "icon": "furniture:tool_box"
+      },
+      {
+        "file": "crafts_room",
+        "title": "工坊",
+        "group": "社区中心",
+        "quests": 6,
+        "icon": "furniture:sewing_kit"
+      },
+      {
+        "file": "fish_tank",
+        "title": "鱼缸",
+        "group": "社区中心",
+        "quests": 6,
+        "icon": "furniture:iron_fish_tank"
+      },
+      {
+        "file": "pantry",
+        "title": "储藏室",
+        "group": "社区中心",
+        "quests": 6,
+        "icon": "furniture:explorers_box"
+      },
+      {
+        "file": "vault",
+        "title": "金库",
+        "group": "社区中心",
+        "quests": 5,
+        "icon": "furniture:cash_register"
+      }
+    ]
+  },
+  "food": {
+    "crops_by_mod": {
+      "atmospheric": [
+        "aloe_leaves",
+        "blood_orange",
+        "currant",
+        "orange",
+        "passion_fruit",
+        "yucca_fruit"
+      ],
+      "autumnity": [
+        "foul_berries"
+      ],
+      "beachparty": [
+        "coconut"
+      ],
+      "brewery": [
+        "hops"
+      ],
+      "etcetera": [
+        "cotton_flower"
+      ],
+      "farm_and_charm": [
+        "barley",
+        "corn",
+        "lettuce",
+        "oat",
+        "onion",
+        "strawberry"
+      ],
+      "farmersdelight": [
+        "cabbage",
+        "rice",
+        "tomato"
+      ],
+      "herbalbrews": [
+        "coffee_beans",
+        "green_tea_leaf",
+        "rooibos_leaf",
+        "yerba_mate_leaf"
+      ],
+      "minecraft": [
+        "apple",
+        "beetroot",
+        "brown_mushroom",
+        "cactus",
+        "carrot",
+        "chorus_fruit",
+        "cocoa_beans",
+        "glow_berries",
+        "melon_slice",
+        "nether_wart",
+        "pitcher_plant",
+        "potato",
+        "pumpkin",
+        "red_mushroom",
+        "sugar_cane",
+        "sweet_berries",
+        "torchflower",
+        "wheat"
+      ],
+      "moreminecarts": [
+        "glass_cactus"
+      ],
+      "nethervinery": [
+        "crimson_grape",
+        "warped_grape"
+      ],
+      "pamhc2trees": [
+        "bananaitem",
+        "cinnamonitem",
+        "dragonfruititem",
+        "hazelnutitem",
+        "lemonitem",
+        "lycheeitem",
+        "mangoitem",
+        "pawpawitem",
+        "peachitem",
+        "plumitem",
+        "starfruititem"
+      ],
+      "quark": [
+        "ancient_fruit"
+      ],
+      "snowyspirit": [
+        "ginger"
+      ],
+      "society": [
+        "ancient_fruit",
+        "blueberry",
+        "boysenberry",
+        "cranberry",
+        "crystalberry",
+        "eggplant",
+        "mana_fruit",
+        "mossberry",
+        "salmonberry",
+        "sparkpod",
+        "tubabacco_leaf"
+      ],
+      "supplementaries": [
+        "flax"
+      ],
+      "veggiesdelight": [
+        "bellpepper",
+        "broccoli",
+        "cauliflower",
+        "garlic",
+        "sweet_potato",
+        "turnip",
+        "zucchini"
+      ],
+      "vinery": [
+        "cherry",
+        "jungle_grapes_red",
+        "jungle_grapes_white",
+        "red_grape",
+        "savanna_grapes_red",
+        "savanna_grapes_white",
+        "taiga_grapes_red",
+        "taiga_grapes_white",
+        "white_grape"
+      ],
+      "vintagedelight": [
+        "cucumber",
+        "gearo_berry",
+        "ghost_pepper",
+        "peanut"
+      ],
+      "windswept": [
+        "wild_berries"
+      ]
+    },
+    "cooking_by_mod": {
+      "bakery": [
+        "apple_cupcake",
+        "apple_pie",
+        "baguette",
+        "braided_bread",
+        "bread",
+        "bread_with_jam",
+        "bun",
+        "bundt_cake",
+        "chocolate_cake",
+        "chocolate_donut",
+        "chocolate_gateau",
+        "chocolate_glazed_cookie",
+        "chocolate_tart",
+        "cornet",
+        "croissant",
+        "crusty_bread",
+        "glowberry_tart",
+        "grilled_bacon_sandwich",
+        "grilled_salmon_sandwich",
+        "jam_roll",
+        "linzer_tart",
+        "misslilitu_biscuit",
+        "pudding",
+        "sandwich",
+        "strawberry_cake",
+        "strawberry_cupcake",
+        "strawberry_glazed_cookie",
+        "sweetberry_cake",
+        "sweetberry_cupcake",
+        "sweetberry_glazed_cookie",
+        "toast",
+        "waffle"
+      ],
+      "candlelight": [
+        "beef_tartare",
+        "beef_wellington",
+        "beef_with_mushroom_in_wine_and_potatoes",
+        "beetroot_salad",
+        "bolognese",
+        "chicken_alfredo",
+        "chicken_teriyaki",
+        "chicken_with_vegetables",
+        "chocolate_mousse",
+        "fillet_steak",
+        "fresh_garden_salad",
+        "harvest_plate",
+        "khinkali",
+        "lasagne",
+        "mozzarella",
+        "mushroom_soup",
+        "omelet",
+        "pasta_with_bolognese",
+        "pasta_with_lettuce",
+        "pasta_with_mozzarella",
+        "pork_ribs",
+        "roastbeef_with_glazed_carrots",
+        "roasted_lamb_with_lettuce",
+        "salad",
+        "salmon_on_white_wine",
+        "tomato_mozzarella_salad",
+        "tomato_soup",
+        "tropical_fish_supreme"
+      ],
+      "crabbersdelight": [
+        "bisque",
+        "clam_bake",
+        "clam_chowder",
+        "coral_crunch",
+        "crab_cakes",
+        "crab_legs",
+        "fish_stick",
+        "frog_leg_kebob",
+        "jar_of_pickles",
+        "seafood_gumbo",
+        "shrimp_fried_rice",
+        "shrimp_skewer",
+        "squid_kebob",
+        "stuffed_nautilus_shell",
+        "surf_and_turf"
+      ],
+      "farm_and_charm": [
+        "bacon_with_eggs",
+        "baked_lamb_ham",
+        "barley_patties_with_potatoes",
+        "barley_soup",
+        "beef_patty_with_vegetables",
+        "chicken_wrapped_in_bacon",
+        "cooked_cod",
+        "cooked_salmon",
+        "corn_grits",
+        "farmer_salad",
+        "farmers_bread",
+        "farmers_breakfast",
+        "goulash",
+        "grandmothers_strawberry_cake",
+        "lamb_with_corn",
+        "nettle_tea",
+        "oat_pancake",
+        "oatmeal_with_strawberries",
+        "onion_soup",
+        "pasta_with_onion_sauce",
+        "potato_soup",
+        "potato_with_roast_meat",
+        "ribwort_tea",
+        "roasted_chicken",
+        "roasted_corn",
+        "sausage_with_oat_patty",
+        "simple_tomato_soup",
+        "strawberry_tea",
+        "stuffed_chicken",
+        "stuffed_rabbit"
+      ],
+      "farmersdelight": [
+        "apple_pie",
+        "bacon_sandwich",
+        "baked_cod_stew",
+        "barbecue_stick",
+        "beef_stew",
+        "bone_broth",
+        "cabbage_rolls",
+        "chicken_sandwich",
+        "chicken_soup",
+        "chocolate_pie",
+        "cod_roll",
+        "cooked_rice",
+        "dumplings",
+        "egg_sandwich",
+        "fish_stew",
+        "fried_rice",
+        "fruit_salad",
+        "glow_berry_custard",
+        "grilled_salmon",
+        "hamburger",
+        "honey_cookie",
+        "honey_glazed_ham_block",
+        "kelp_roll",
+        "melon_popsicle",
+        "mixed_salad",
+        "mushroom_rice",
+        "mutton_wrap",
+        "nether_salad",
+        "noodle_soup",
+        "pasta_with_meatballs",
+        "pasta_with_mutton_chop",
+        "pumpkin_soup",
+        "ratatouille",
+        "rice_roll_medley_block",
+        "roast_chicken_block",
+        "roasted_mutton_chops",
+        "salmon_roll",
+        "shepherds_pie_block",
+        "squid_ink_pasta",
+        "steak_and_potatoes",
+        "stuffed_potato",
+        "stuffed_pumpkin_block",
+        "sweet_berry_cheesecake",
+        "sweet_berry_cookie",
+        "tomato_sauce",
+        "vegetable_noodles",
+        "vegetable_soup"
+      ],
+      "minecraft": [
+        "cake"
+      ],
+      "veggiesdelight": [
+        "beetroot_brownie_tray",
+        "broccoli_salad",
+        "broccoli_soup",
+        "cacciatore",
+        "carrot_cake",
+        "carrot_juice",
+        "cauliflower_bread",
+        "cauliflower_kuku",
+        "cauliflower_soup",
+        "cesar_salad",
+        "chicken_fajitas_wrap",
+        "dandelion_and_eggs",
+        "fermented_garlic_honey",
+        "fish_and_chips",
+        "garlic_baked_cod",
+        "garlic_bread",
+        "garlic_rice_with_cauliflower",
+        "garlic_stuffed_mushrooms",
+        "mashed_potatoes",
+        "mhadjeb",
+        "pasta_with_broccoli",
+        "potato_noodles",
+        "rice_and_vegetables",
+        "roasted_vegetables",
+        "shakshouka",
+        "steak_and_broccoli",
+        "stuffed_bellpeppers_block",
+        "stuffed_zucchini_boat",
+        "stuffed_zucchinis",
+        "sweet_potato_cupcake",
+        "sweet_potato_pancakes",
+        "sweet_potato_pie",
+        "turnip_beef_stew",
+        "turnip_cake",
+        "turnip_mutton_skewer",
+        "turnip_salad",
+        "turnip_water",
+        "vegetables_wrap",
+        "vegetarian_burger",
+        "zucchini_quiche",
+        "zucchini_sandwich"
+      ],
+      "vintagedelight": [
+        "century_egg",
+        "cheese_burger",
+        "cheese_pasta",
+        "chocolate_nut_granola_bar",
+        "cucumber_salad",
+        "deluxe_burger",
+        "deluxe_granola_bar",
+        "fruity_granola_bar",
+        "ghostly_chili",
+        "oatmeal_cookie",
+        "overnight_oats",
+        "pad_thai",
+        "pb_j",
+        "pickle_soup",
+        "stuffed_burrito"
+      ]
+    },
+    "drinks_by_mod": {
+      "brewery": [
+        "beer_barley",
+        "beer_haley",
+        "beer_hops",
+        "beer_nettle",
+        "beer_oat",
+        "beer_wheat",
+        "dark_brew",
+        "whiskey_ak",
+        "whiskey_carrasconlabel",
+        "whiskey_cristelwalker",
+        "whiskey_highland_hearth",
+        "whiskey_jamesons_malt",
+        "whiskey_jojannik",
+        "whiskey_lilitusinglemalt",
+        "whiskey_maggoallan",
+        "whiskey_smokey_reverie"
+      ],
+      "herbalbrews": [
+        "black_tea",
+        "chai_tea",
+        "cinnamon_coffee",
+        "coffee",
+        "green_tea",
+        "hazelnut_coffee",
+        "hibiscus_tea",
+        "lavender_tea",
+        "milk_coffee",
+        "oolong_tea",
+        "rooibos_tea",
+        "yerba_mate_tea"
+      ],
+      "nethervinery": [
+        "blazewine_pinot",
+        "ghastly_grenache",
+        "improved_lava_fizz",
+        "improved_nether_fizz",
+        "lava_fizz",
+        "nether_fizz",
+        "netherite_nectar"
+      ],
+      "society": [
+        "ancient_cider",
+        "ancient_vespertine",
+        "beer_attunecore",
+        "beer_london",
+        "bowl_of_soul",
+        "dewy_star",
+        "dirty_chai",
+        "espresso",
+        "forks_of_blue",
+        "good_catawba",
+        "laputa_franc",
+        "latte",
+        "mana_king",
+        "mocha",
+        "nutty_basil",
+        "sparkling_le_roy",
+        "star_coquito",
+        "starcardi",
+        "truffle_tea",
+        "violet_moon"
+      ],
+      "vinery": [
+        "aegis_wine",
+        "apple_cider",
+        "apple_wine",
+        "bolvar_wine",
+        "bottle_mojang_noir",
+        "chenet_wine",
+        "cherry_wine",
+        "chorus_wine",
+        "clark_wine",
+        "creepers_crush",
+        "cristel_wine",
+        "eiswein",
+        "glowing_wine",
+        "jellie_wine",
+        "jo_special_mixture",
+        "kelp_cider",
+        "lilitu_wine",
+        "magnetic_wine",
+        "mead",
+        "mellohi_wine",
+        "noir_wine",
+        "red_wine",
+        "solaris_wine",
+        "stal_wine",
+        "strad_wine",
+        "villagers_fright"
+      ]
+    },
+    "fishing_by_mod": {
+      "aquaculture": [
+        "arapaima",
+        "arrau_turtle",
+        "atlantic_cod",
+        "atlantic_halibut",
+        "atlantic_herring",
+        "bayad",
+        "blackfish",
+        "bluegill",
+        "boulti",
+        "box_turtle",
+        "brown_shrooma",
+        "brown_trout",
+        "capitaine",
+        "carp",
+        "catfish",
+        "gar",
+        "goldfish",
+        "jellyfish",
+        "leech",
+        "minnow",
+        "muskellunge",
+        "pacific_halibut",
+        "perch",
+        "pink_salmon",
+        "piranha",
+        "pollock",
+        "rainbow_trout",
+        "red_grouper",
+        "red_shrooma",
+        "smallmouth_bass",
+        "starshell_turtle",
+        "synodontis",
+        "tambaqui",
+        "tuna"
+      ],
+      "crabbersdelight": [
+        "clam",
+        "clawster",
+        "crab",
+        "shrimp"
+      ],
+      "crittersandcompanions": [
+        "koi_fish"
+      ],
+      "minecraft": [
+        "cod",
+        "pufferfish",
+        "salmon",
+        "tropical_fish"
+      ],
+      "netherdepthsupgrade": [
+        "blazefish",
+        "bonefish",
+        "eyeball_fish",
+        "fortress_grouper",
+        "glowdine",
+        "lava_pufferfish",
+        "magmacubefish",
+        "obsidianfish",
+        "searing_cod",
+        "soulsucker",
+        "wither_bonefish"
+      ],
+      "society": [
+        "neptuna",
+        "nether_jelly",
+        "ocean_jelly",
+        "river_jelly"
+      ],
+      "unusualfishmod": [
+        "raw_aero_mono",
+        "raw_amber_goby",
+        "raw_bark_angelfish",
+        "raw_beaked_herring",
+        "raw_blind_sailfin",
+        "raw_circus_fish",
+        "raw_copperflame_anthias",
+        "raw_demon_herring",
+        "raw_drooping_gourami",
+        "raw_duality_damselfish",
+        "raw_eyelash",
+        "raw_forkfish",
+        "raw_hatchetfish",
+        "raw_picklefish",
+        "raw_sailor_barb",
+        "raw_sneep_snorp",
+        "raw_snowflake",
+        "raw_spindlefish",
+        "raw_triple_twirl_pleco"
+      ]
+    }
+  }
+}
