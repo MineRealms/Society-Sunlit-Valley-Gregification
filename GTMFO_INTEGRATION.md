@@ -35,7 +35,7 @@
 |---|---|---|---|---|---|
 | R1 | 标签合并（forge 标准标签 + 季节标签） | ✅ 完成 | `kubejs/server_scripts/tags/handleGtmfoTags.js` | `node --check` | 见 git log |
 | R2 | 经济数据（`global.trades` 定价，可卖/价格提示/村民礼物） | ✅ 完成 | `kubejs/startup_scripts/gtmfoTrades.js` | `node --check` + 121 个 ID 静态核对 | 见 git log |
-| R3 | 加工配方（Create/FD/Farm&Charm 加工 GTMFO 物品） | ⏳ 计划 | `kubejs/server_scripts/recipes/addGtmfoRecipes.js`（拟） | `node --check` | |
+| R3 | 加工配方（Create/FD 加工 GTMFO 物品，第一批 9 条） | ✅ 完成 | `kubejs/server_scripts/recipes/addGtmfoRecipes.js` | `node --check` + ID 核对 | 见 git log |
 | R4 | GT 配方（GTMFO 机器加工整合包物品，可选） | ⏳ 计划 | `kubejs/server_scripts/recipes/addGtmfoGtRecipes.js`（拟） | `node --check` | |
 
 ---
@@ -105,18 +105,40 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 ---
 
-## 4. R3 计划：加工配方（Create / Farmer's Delight / Farm & Charm）
+## 4. R3 明细：加工配方（第一批 9 条）✅
 
-目标：用整合包的机器加工 GTMFO 物品，给玩家**非 GT 电力**路径。
+**文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`
 
-拟做（照抄包内 `addMillingRecipes.js` 的写法）：
-- Create 研磨：`gtmfo:cocoa_beans_roasted`→`gtmfo:cocoa_nibs`、`gtmfo:soybean`→豆粉 等
-- Create 压块：奶酪类（马苏里拉/切达）成型
-- Create 混合：`gtmfo:juice_*`、面团类
-- FD 切菜板：`gtmfo:cheddar_block`→切片、面包→面包片
-- Farm & Charm mincer：GTMFO 肉 → `gtmfo:mince_meat_cooked` 前置（生肉末）
+**配方 schema 来源（事实核对，非推测）**：
+- `farmersdelight:cutting`：包内 `recipes/addMillingRecipes.js` 的 `addKnifeRecipe` 写法；
+  另核对 `FarmersDelight-1.20.1-1.3.2.jar` 的 `data/farmersdelight/recipes/cutting/*.json`（含 `tool` 字段）
+- `create:milling`：包内 `addMillingRecipes.js` 的 `addMillRecipe`；另核对 `create-1.20.1-6.0.8.jar`
+  自带 `data/create/recipes/milling/*.json`（`processingTime` 为合法字段，支持 `chance`）
+- `create:compacting`：包内 `recipes/addPressingRecipes.js`；另核对 `create-1.20.1-6.0.8.jar`
+  的 `data/create/recipes/compacting/*.json`（**无** `processingTime` 字段，故不写）
 
-原则：只加配方，不动物品；每个配方独立小条目，便于单独回滚。
+**数值来源（镜像 GTMFO 自身配方，保证与 GT 路径同比例）**：
+| 整合包配方 | 输入 → 输出 | 镜像的 GTMFO 配方 |
+|---|---|---|
+| FD 切菜板 | `gtmfo:cheddar_block` → `gtmfo:cheddar_slice` ×9 | `CheeseRecipes.cheddar_slice`（切片机 1→9） |
+| FD 切菜板 | `gtmfo:gorgonzola_wheel_fully_cured` → `gtmfo:gorgonzola_triangular_slice` ×16 | `CheeseRecipes.gorgonzola_triangular_slice`（切片机 1→16） |
+| FD 切菜板 | `minecraft:bread` → `gtmfo:bread_slice` ×4 | `BreadsRecipes.bread_slice_by_hand`（手搓刀 1→4） |
+| FD 切菜板 | `gtmfo:bun` → `gtmfo:bun_sliced` ×1 | `BreadsRecipes.bun_sliced_by_hand` |
+| FD 切菜板 | `gtmfo:baguette` → `gtmfo:baguette_sliced` ×1 | `BreadsRecipes.baguette_sliced_by_hand` |
+| Create 研磨 | `gtmfo:cocoa_beans_hulled` → `gtmfo:cocoa_nibs` ×1（200t） | `ChocolateRecipes.cocoa_nibs`（研磨机 1→1） |
+| Create 研磨 | `minecraft:potato` → `gtmfo:potato_mashed` ×1（200t） | `CoreChain.mashed_potato`（研磨机 1→1） |
+| Create 研磨 | `gtmfo:apple_candy` → `gtmfo:apple_candy_crushed` ×2（400t） | `AppleRecipes.apple_candy_crushed_2`（研磨机 1→2） |
+| Create 压块 | `gtmfo:cheddar_curd_mold` → `gtmfo:cheddar_aged_mold` ×1 | `CheeseRecipes.aged_cheddar_mold`（压缩机） |
+
+**静态核对**：`node --check` 通过；9 条配方调用；16 个 `gtmfo:` ID 全部存在于物品清单。
+
+**回滚**：删除该文件即可（不影响 R1/R2）。
+
+### R3 后续批次（待办）
+- Create 混合（流体）：果汁/巧克力/面团类（需核对 `create:mixing` 的流体字段写法）
+- Create 压制（`create:pressing`）：马苏里拉/奶酪成型
+- Farm & Charm `farm_and_charm:mincer`：GTMFO 肉 → 肉末
+- 面团类：`create:mixing`（水+面粉 → 面团），需先核对 GTMFO 现有面团配方数值
 
 ---
 
