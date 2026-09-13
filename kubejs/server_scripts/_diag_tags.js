@@ -10,7 +10,9 @@ ServerEvents.tags("item", (e) => {
 
   const resolve = (id, depth) => {
     if (depth > 32 || visiting[id]) return [];
-    if (cache[id]) return cache[id];
+    // 注意：只在顶层（depth===0）缓存结果。循环引用下，带栈计算出的结果是"部分结果"，
+    // 缓存它会导致后续解析出错（这正是静态分析两次结果不一致的原因）
+    if (depth === 0 && cache[id]) return cache[id];
     visiting[id] = true;
     const out = [];
     const w = e.get(id);
@@ -28,7 +30,7 @@ ServerEvents.tags("item", (e) => {
       }
     }
     visiting[id] = false;
-    cache[id] = out;
+    if (depth === 0) cache[id] = out;
     return out;
   };
 
