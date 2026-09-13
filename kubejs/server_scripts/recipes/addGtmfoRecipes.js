@@ -69,4 +69,59 @@ ServerEvents.recipes((e) => {
   // ===== Create 压块 =====
   // 数值镜像 GTMFO 压缩机（CheeseRecipes.aged_cheddar_mold：cheddar_curd_mold → cheddar_aged_mold）
   compact("gtmfo:cheddar_curd_mold", "gtmfo:cheddar_aged_mold", 1);
+
+  // ===== Create 混合（R3 第二批）=====
+  // schema 核对：包内 recipes/addMixerRecipes.js + create-1.20.1-6.0.8.jar 自带
+  //   data/create/recipes/mixing/chocolate.json（支持 fluid / fluidTag 输入、fluid 输出、heatRequirement）
+  // 流体 ID 核对：GTMFO 材料用 GTCEu.id() 注册，故为 gtceu: 命名空间
+  //   （证据：开发实例 JEI 导出 H:\tools\jei_names.json 中 gtceu:apple_extract / gtceu:molten_dark_chocolate）
+  const mix = (ingredients, results, heated) => {
+    const recipe = {
+      type: "create:mixing",
+      ingredients: ingredients,
+      results: results,
+    };
+    if (heated) recipe.heatRequirement = "heated";
+    e.custom(recipe);
+  };
+
+  // 面团：镜像 GTCEu 混合器（MiscRecipeLoader.flour_to_dough：2×forge:grain/wheat + 250mB 水 → 3×面团）
+  mix(
+    [{ tag: "forge:grain/wheat" }, { tag: "forge:grain/wheat" }, { amount: 250, fluid: "minecraft:water" }],
+    [{ item: "gtceu:dough", count: 3 }],
+    false
+  );
+
+  // 苹果汁 / 橙汁：镜像 CoreChain 罐装机（玻璃瓶 + 100mB 提取液 → 果汁）
+  mix(
+    [{ item: "minecraft:glass_bottle" }, { amount: 100, fluid: "gtceu:apple_extract" }],
+    [{ item: "gtmfo:juice_apple", count: 1 }],
+    false
+  );
+  mix(
+    [{ item: "minecraft:glass_bottle" }, { amount: 100, fluid: "gtceu:orange_extract" }],
+    [{ item: "gtmfo:juice_orange", count: 1 }],
+    false
+  );
+
+  // 熔融黑巧克力：镜像 ChocolateRecipes.molten_dark_chocolate（糖 + 144mB 可可脂 + 1008mB 无糖巧克力 → 1152mB）
+  mix(
+    [
+      { item: "minecraft:sugar" },
+      { amount: 144, fluid: "gtceu:cocoa_butter" },
+      { amount: 1008, fluid: "gtceu:molten_unsweetened_chocolate" },
+    ],
+    [{ amount: 1152, fluid: "gtceu:molten_dark_chocolate" }],
+    true
+  );
+
+  // 熔融牛奶巧克力：镜像 ChocolateRecipes.molten_milk_chocolate（864mB 黑巧 + 288mB 奶 → 1152mB）
+  mix(
+    [
+      { amount: 864, fluid: "gtceu:molten_dark_chocolate" },
+      { amount: 288, fluidTag: "forge:milk" },
+    ],
+    [{ amount: 1152, fluid: "gtceu:molten_milk_chocolate" }],
+    true
+  );
 });

@@ -35,7 +35,7 @@
 |---|---|---|---|---|---|
 | R1 | 标签合并（forge 标准标签 + 季节标签） | ✅ 完成 | `kubejs/server_scripts/tags/handleGtmfoTags.js` | `node --check` | 见 git log |
 | R2 | 经济数据（`global.trades` 定价，可卖/价格提示/村民礼物） | ✅ 完成 | `kubejs/startup_scripts/gtmfoTrades.js` | `node --check` + 121 个 ID 静态核对 | 见 git log |
-| R3 | 加工配方（Create/FD 加工 GTMFO 物品，第一批 9 条） | ✅ 完成 | `kubejs/server_scripts/recipes/addGtmfoRecipes.js` | `node --check` + ID 核对 | 见 git log |
+| R3 | 加工配方（Create/FD 加工 GTMFO 物品，两批共 14 条） | ✅ 完成 | `kubejs/server_scripts/recipes/addGtmfoRecipes.js` | `node --check` + ID 核对 | 见 git log |
 | R4 | GT 配方（GTMFO 机器加工整合包物品，可选） | ⏳ 计划 | `kubejs/server_scripts/recipes/addGtmfoGtRecipes.js`（拟） | `node --check` | |
 
 ---
@@ -134,11 +134,29 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 **回滚**：删除该文件即可（不影响 R1/R2）。
 
+### R3 第二批：Create 混合（5 条）✅
+
+**schema 核对**：包内 `recipes/addMixerRecipes.js` + `create-1.20.1-6.0.8.jar` 自带
+`data/create/recipes/mixing/chocolate.json`（支持 `fluid` / `fluidTag` 输入、fluid 输出、`heatRequirement`）。
+
+**流体 ID 核对**：GTMFO 材料以 `GTCEu.id()` 注册 → 命名空间是 **`gtceu:`** 而不是 `gtmfo:`。
+证据：开发实例 JEI 导出 `H:\tools\jei_names.json` 中存在 `gtceu:apple_extract`、`gtceu:cocoa_butter`、
+`gtceu:molten_dark_chocolate`、`gtceu:molten_milk_chocolate`。
+
+| Create 混合配方 | 输入 → 输出 | 镜像的 GTMFO 配方 |
+|---|---|---|
+| 面团 | `#forge:grain/wheat` ×2 + 水 250 → `gtceu:dough` ×3 | GTCEu `MiscRecipeLoader.flour_to_dough`（混合器同数值） |
+| 苹果汁 | 玻璃瓶 + `gtceu:apple_extract` 100 → `gtmfo:juice_apple` ×1 | `CoreChain.apple_juice_bottling`（罐装机 100mB） |
+| 橙汁 | 玻璃瓶 + `gtceu:orange_extract` 100 → `gtmfo:juice_orange` ×1 | `CoreChain.orange_juice_bottling`（罐装机 100mB） |
+| 熔融黑巧克力 | 糖 + `gtceu:cocoa_butter` 144 + `gtceu:molten_unsweetened_chocolate` 1008 → `gtceu:molten_dark_chocolate` 1152（需加热） | `ChocolateRecipes.molten_dark_chocolate` |
+| 熔融牛奶巧克力 | `gtceu:molten_dark_chocolate` 864 + `#forge:milk`(fluidTag) 288 → `gtceu:molten_milk_chocolate` 1152（需加热） | `ChocolateRecipes.molten_milk_chocolate` |
+
+**静态核对**：`node --check` 通过；18 个 `gtmfo:` ID 全部存在；文件内共 14 条配方调用。
+
 ### R3 后续批次（待办）
-- Create 混合（流体）：果汁/巧克力/面团类（需核对 `create:mixing` 的流体字段写法）
-- Create 压制（`create:pressing`）：马苏里拉/奶酪成型
-- Farm & Charm `farm_and_charm:mincer`：GTMFO 肉 → 肉末
-- 面团类：`create:mixing`（水+面粉 → 面团），需先核对 GTMFO 现有面团配方数值
+- Create 压制（`create:pressing`）：马苏里拉/奶酪成型（需先核对 GTMFO 对应配方数值）
+- Farm & Charm `farm_and_charm:mincer`：GTMFO 肉 → 肉末（schema 已核对：`recipe_type: "STONE"`，来自包内 `addMillingRecipes.js`）
+- 意面面团 / 披萨面团等中间品（需先核对 GTMFO 现有配方）
 
 ---
 
