@@ -212,6 +212,26 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 ---
 
+## 10. 归属判定：删标签是谁干的（git 证据，2026-09-14）
+
+**结论：是整合包自己原本就有的行为，不是 GTMFO 模组、也不是我们写的 KubeJS。**
+
+| 证据 | 命令/结果 |
+|---|---|
+| 删除逻辑（`e.removeAllTagsFrom` 循环 + `"farmersdelight:onion"`）出现在**初始提交** `ab54ed1`（09-13 07:21，作者 CARIERX），早于我们的第一个提交 `7082806` | `git show ab54ed1:...handleItemBlockFluidTags.js` 里能直接搜到 `removeAllTagsFrom` 与 `"farmersdelight:onion"` |
+| 这两个文件的**完整历史只有初始提交**，我们从未改过 | `git log -- <file>` 只列出 ab54ed1 |
+| 我们的提交**从未触碰**删除逻辑与标签数据 | `git log --name-only 7082806..HEAD -- <那三个路径>` → **空** |
+| 我们在整合包里的全部改动 = 6 个新文件 | `GTMFO_INTEGRATION.md`、`_diag_tags.js`、`addGtmfoRecipes.js`、`addGtmfoGtRecipes.js`、`handleGtmfoTags.js`、`gtmfoTrades.js`（另有 .gitignore 加 1 行白名单） |
+| 我们的 4 个脚本里**没有任何 `remove`/`removeAllTagsFrom`** | `rg "removeAllTagsFrom\|e\.remove\("` 在这 4 个文件里 → **0 命中** |
+| GTMFO 模组自带的标签文件**没有洋葱、没有 `replace: true`** | git 跟踪的标签只有：`forge:berries`/`poisonous_berry`/`berry:sweet|tart`、原版 leaves/logs/planks/saplings/mineable、`gtceu:mineable/pickaxe_or_wrench`、世界生成 biome 标签 |
+
+**机制澄清**：`removeAllTagsFrom(item)` 是"把该物品从所有标签里移除"，**不会删除标签本身**；
+只有当某个标签的成员被移空、且没人补回替代品时，才会在 JEI 里显示 `Empty Tag`。
+整合包为洋葱写了桥接文件（`#forge:onion` + `#forge:vegetables/onion` → F&C 洋葱），
+按静态解析应当**非空**；最终以游戏内 `[TAGDIAG]` 输出为准。
+
+---
+
 ## 4. R3 明细：加工配方（第一批 9 条）✅
 
 **文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`
