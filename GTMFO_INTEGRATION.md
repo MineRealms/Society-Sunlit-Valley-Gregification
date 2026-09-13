@@ -287,6 +287,44 @@ F&C 在静态初始化里注册 BlockEntity 时，Architectury 的内部 `HashMa
 
 ---
 
+## 13. 确证为空的标签清单（2026-09-14，方法可复现）
+
+**方法（重要）**：静态解析循环引用时结果依赖遍历顺序（连原版 TagLoader 都是顺序相关的），
+所以之前的"空标签列表"两次结果矛盾、已作废。现在只统计**方法上必然为空**的标签：
+**直接成员全部被 `removeAllTagsFrom` 移除，且没有任何 `#标签引用`**（无引用 = 无人能补回）→ 必然为空，与顺序无关。
+
+**有配方引用的（真正会坏东西）**：
+| 标签 | 引用配方数 | 被移除的成员 |
+|---|---|---|
+| `forge:flour/wheat` | **9** | `create:wheat_flour`（整合包用 farm_and_charm:flour 替代但没加回该标签） |
+| `forge:crops/walnut` | 3 | `pamhc2trees:walnutitem` |
+| `forge:crops/pistachio` | 3 | `pamhc2trees:pistachioitem` |
+| `forge:crops/pinenut` | 3 | `pamhc2trees:pinenutitem` |
+| `forge:crops/pecan` | 3 | `pamhc2trees:pecanitem` |
+| `forge:crops/chestnut` | 3 | `pamhc2trees:chestnutitem` |
+| `forge:crops/cashew` | 3 | `pamhc2trees:cashewitem` |
+| `forge:crops/almond` | 3 | `pamhc2trees:almonditem` |
+| `forge:crops/acorn` | 3 | `pamhc2trees:acornitem` |
+| `forge:pasta/raw_pasta` | 2 | `farmersdelight:raw_pasta`（替代品加到了 `forge:food/raw_pasta`，没加这个） |
+
+**无配方引用（仅信息性）**：`vinery:{white,red}_{taiga,savanna,jungle}_grapejuice`、
+`stardew_fishing:legendary_fish`（10 条传说鱼全被移除）、`meadow:milk_bucket`/`meadow:wooden_milk_bucket`、
+`forge:vinegar_ingredients/{passionfruit,jackfruit,grapefruit,gooseberry,breadfruit}`、
+`forge:vegetables/{olive,avocado}`、`forge:storage_blocks/onion`（FD 洋葱箱）、
+`forge:seeds/{tomato,hops}`、`forge:nuts/{walnut,pistachio,pinenut,pecan,chestnut,...}`
+
+**注意**：`forge:crops/onion` **不在**此清单里（它有 `#forge:onion` + `#forge:vegetables/onion` 引用，
+按整合包桥接应当非空）—— 洋葱的最终状态仍需游戏内 `_diag_tags.js` 确认。
+
+**建议修复（整合包侧，一行一个）**：
+```js
+e.add("forge:flour/wheat", "farm_and_charm:flour");
+e.add("forge:pasta/raw_pasta", "farm_and_charm:raw_pasta");
+// pam 坚果类：整合包有意移除 pam 物品的话，应同步删掉引用这些标签的配方；否则把保留品种加回
+```
+
+---
+
 ## 4. R3 明细：加工配方（第一批 9 条）✅
 
 **文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`
