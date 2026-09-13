@@ -124,4 +124,38 @@ ServerEvents.recipes((e) => {
     [{ amount: 1152, fluid: "gtceu:molten_milk_chocolate" }],
     true
   );
+
+  // ===== R3 第三批：Create 压制 + Farm & Charm 绞肉机 =====
+  // create:pressing schema 核对：包内 recipes/addPressingRecipes.js（createPressingRecipe）
+  const press = (input, output, count) => {
+    e.custom({
+      type: "create:pressing",
+      ingredients: [{ item: input }],
+      results: [{ count: count, item: output }],
+    });
+  };
+
+  // farm_and_charm:mincer schema 核对：包内 addMillingRecipes.js +
+  //   letsdo-farm_and_charm-forge-1.0.4.jar 的 data/farm_and_charm/recipes/mincer/*.json
+  //   （recipe_type 合法值：MEAT / STONE / METAL / WOOD）
+  const mincer = (input, output, count, type) => {
+    e.custom({
+      type: "farm_and_charm:mincer",
+      ingredient: { item: input },
+      recipe_type: type,
+      result: { count: count, item: output },
+    });
+  };
+
+  // 平摊面团：镜像 GTMFORecipes.dough_flat（锻锤：GTCEu 面团 → 平摊面团 1→1）
+  press("gtceu:dough", "gtmfo:flat_dough", 1);
+
+  // 绞肉：镜像 GTFO 手搓肉末（臼+肉 → 肉末 1→1；肉末即 gtceu:meat_dust，
+  //   证据：开发实例 JEI 导出 gtceu:meat_dust = "Mince Meat"）
+  mincer("minecraft:beef", "gtceu:meat_dust", 1, "MEAT");
+  mincer("minecraft:porkchop", "gtceu:meat_dust", 1, "MEAT");
+  mincer("minecraft:chicken", "gtceu:meat_dust", 1, "MEAT");
+  mincer("minecraft:mutton", "gtceu:meat_dust", 1, "MEAT");
+  mincer("minecraft:rabbit", "gtceu:meat_dust", 1, "MEAT");
+  mincer("meadow:raw_buffalo_meat", "gtceu:meat_dust", 1, "MEAT");
 });

@@ -35,8 +35,8 @@
 |---|---|---|---|---|---|
 | R1 | 标签合并（forge 标准标签 + 季节标签） | ✅ 完成 | `kubejs/server_scripts/tags/handleGtmfoTags.js` | `node --check` | 见 git log |
 | R2 | 经济数据（`global.trades` 定价，可卖/价格提示/村民礼物） | ✅ 完成 | `kubejs/startup_scripts/gtmfoTrades.js` | `node --check` + 121 个 ID 静态核对 | 见 git log |
-| R3 | 加工配方（Create/FD 加工 GTMFO 物品，两批共 14 条） | ✅ 完成 | `kubejs/server_scripts/recipes/addGtmfoRecipes.js` | `node --check` + ID 核对 | 见 git log |
-| R4 | GT 配方（GTMFO 机器加工整合包物品，可选） | ⏳ 计划 | `kubejs/server_scripts/recipes/addGtmfoGtRecipes.js`（拟） | `node --check` | |
+| R3 | 加工配方（Create/FD/Farm&Charm 加工 GTMFO 物品，三批共 21 条） | ✅ 完成 | `kubejs/server_scripts/recipes/addGtmfoRecipes.js` | `node --check` + ID 核对 | 见 git log |
+| R4 | GT 配方（GTMFO 机器加工整合包物品，8 条） | ✅ 完成 | `kubejs/server_scripts/recipes/addGtmfoGtRecipes.js` | `node --check` + ID 核对 | 见 git log |
 
 ---
 
@@ -153,10 +153,53 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 **静态核对**：`node --check` 通过；18 个 `gtmfo:` ID 全部存在；文件内共 14 条配方调用。
 
-### R3 后续批次（待办）
-- Create 压制（`create:pressing`）：马苏里拉/奶酪成型（需先核对 GTMFO 对应配方数值）
-- Farm & Charm `farm_and_charm:mincer`：GTMFO 肉 → 肉末（schema 已核对：`recipe_type: "STONE"`，来自包内 `addMillingRecipes.js`）
+### R3 第三批：Create 压制 + Farm & Charm 绞肉机（7 条）✅
+
+**schema 核对**：
+- `create:pressing`：包内 `recipes/addPressingRecipes.js`（`createPressingRecipe`）
+- `farm_and_charm:mincer`：包内 `addMillingRecipes.js` + `letsdo-farm_and_charm-forge-1.0.4.jar` 的
+  `data/farm_and_charm/recipes/mincer/*.json`；**合法 `recipe_type`：MEAT / STONE / METAL / WOOD**（统计自 jar 内 56 条配方）
+
+| 配方 | 输入 → 输出 | 镜像的 GTMFO 配方 |
+|---|---|---|
+| Create 压制 | `gtceu:dough` → `gtmfo:flat_dough` ×1 | `GTMFORecipes.dough_flat`（锻锤） |
+| 绞肉机 ×6 | 牛肉/猪肉/鸡肉/羊肉/兔肉/生水牛肉 → `gtceu:meat_dust` ×1（MEAT） | GTFO 手搓肉末（臼+肉 → 肉末 1:1）；`gtceu:meat_dust` = "Mince Meat"（证据：JEI 导出） |
+
+> 说明：肉末进 GTMFO 烘焙炉即得 `gtmfo:mince_meat_cooked`（GTFO 原有链）✓
+
+### R3 后续批次（可选待办）
 - 意面面团 / 披萨面团等中间品（需先核对 GTMFO 现有配方）
+- Create 压制：马苏里拉/帕尔玛等奶酪成型（需先核对 GTMFO 对应配方数值）
+
+---
+
+## 4.5 R4 明细：GT 配方（GTMFO 机器加工整合包物品，8 条）✅
+
+**文件**：`kubejs/server_scripts/recipes/addGtmfoGtRecipes.js`
+
+**事实依据（源码核对，非推测）**：
+- GTCEu 7.5.2 `integration/kjs/GregTechKubeJSPlugin.registerRecipeSchemas`：
+  每个 GT 配方类型注册为 `event.recipes.<namespace>.<path>`
+- GTMFO 自定义配方类型经 `GTRecipeTypes.register("slicer"/"extractor", ...)` 注册，
+  内部用 `GTCEu.id(name)` → **命名空间是 `gtceu:`**（证据：JEI 导出分类 `gtceu:slicer` 等）
+- 方法来自 `GTRecipeSchema.GTRecipeJS`：`itemInputs` / `itemOutputs("Nx id")` / `notConsumable` /
+  `outputFluids` / `duration` / `EUt`；id 会自动加 `<类型路径>/` 前缀
+- `Fluid.of("id", mB)`：与包内 `globalBlockEntityHandlers.js` 写法一致（KubeJS 自动转换字符串）
+
+| GT 配方 | 输入 → 输出 | 镜像的 GTMFO 配方 |
+|---|---|---|
+| 切片机 | `farm_and_charm:onion` → `gtmfo:onion_slice` ×8 | `CoreChain.slice_onion`（EUt18/30t，平板刀片） |
+| 切片机 | `farmersdelight:tomato` → `gtmfo:tomato_slice` ×8 | `CoreChain.tomato_slice` |
+| 切片机 | `vintagedelight:cucumber` → `gtmfo:cucumber_slice` ×8 | `CoreChain.slice_cucumber` |
+| 切片机 | `society:eggplant` → `gtmfo:eggplant_slice` ×8 | `CoreChain.slice_eggplant` |
+| 提取机 | `pamhc2trees:orangeitem` → 碎皮粉 + `gtceu:orange_extract` 100 | `CoreChain.orange_zest`（EUt5/100t） |
+| 提取机 | `atmospheric:orange` → 同上 | 同上 |
+| 提取机 | `pamhc2trees:lemonitem` → 碎皮粉 + `gtceu:lemon_extract` 100 | `CoreChain.lemon_zest` |
+| 提取机 | `farmersdelight:tomato` → `gtceu:tomato_sauce` 100 | `CoreChain.tomato_sauce`（EUt2/10t；GTFO 用番茄片，此处用整番茄） |
+
+**静态核对**：`node --check` 通过；5 个 `gtmfo:` ID 全部存在；8 条配方。
+
+**注意**：GT 配方需要玩家有 GT 电力（LV+）；R3 的 Create/FD 配方已提供非 GT 路径。
 
 ---
 
