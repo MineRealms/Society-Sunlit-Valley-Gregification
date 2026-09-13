@@ -232,6 +232,29 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 ---
 
+## 11. 服务器日志核对（2026-09-14 06:21 最新服务器日志）
+
+**服务器已同步我们的脚本** ✅（`202609140621最新服务器日志/latest.log` + `debug.log`）：
+- `gtmfoTrades.js loaded (R2 trades)` → **`GTMFO mod not installed, skipping trades (R2)`** ✅ 守卫生效
+- `handleGtmfoTags.js loaded (R1 tags)` → **`GTMFO mod not installed, skipping tag merge (R1)`** ✅ 守卫生效
+- R3/R4 配方脚本同样加载并按守卫跳过 ✅
+- → **服务器的标签完全没有被我们触碰**（模组不在时脚本不写任何 `gtmfo:*`）✅
+
+**客户端/服务端不一致**：
+- 服务器**没有** gtmfo 模组
+- 玩家客户端（Handshake modlist）**有** `gtmfo`（我此前把 jar 放进了客户端 mods）
+- 后果：客户端单机/JEI 能看到模组物品，但**服务器端没有该模组、也没有它的配方/标签**
+  → 在服务器上玩时模组等于"仅客户端显示"；要让服务器也生效，需把 `gtmfo-0.0.5.jar`
+  放进服务器的 `mods/` 并重启
+
+**标签错误**：服务器 TagLoader 报错与客户端完全一致（classicpipes/zhopo/et cetera 等无关项），
+**没有任何洋葱相关标签错误**，也没有 `Empty Tag` 字样；`TAGDIAG` 尚未出现（诊断脚本还没跑过）。
+
+**下一步**：在服务器（或本地单人）跑 `_diag_tags.js` 看 `forge:crops/onion` 的真实内容，
+即可对"JEI 显示 Empty Tag"给出最终定性。
+
+---
+
 ## 4. R3 明细：加工配方（第一批 9 条）✅
 
 **文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`
