@@ -34,7 +34,7 @@
 | 轮次 | 主题 | 状态 | 新增/修改文件 | 验证方式 | commit |
 |---|---|---|---|---|---|
 | R1 | 标签合并（forge 标准标签 + 季节标签） | ✅ 完成 | `kubejs/server_scripts/tags/handleGtmfoTags.js` | `node --check` | 见 git log |
-| R2 | 经济数据（`global.trades` 定价，可卖/价格提示/村民礼物） | ⏳ 计划 | `kubejs/startup_scripts/gtmfoTrades.js`（拟） | `node --check` + 静态核对 | |
+| R2 | 经济数据（`global.trades` 定价，可卖/价格提示/村民礼物） | ✅ 完成 | `kubejs/startup_scripts/gtmfoTrades.js` | `node --check` + 121 个 ID 静态核对 | 见 git log |
 | R3 | 加工配方（Create/FD/Farm&Charm 加工 GTMFO 物品） | ⏳ 计划 | `kubejs/server_scripts/recipes/addGtmfoRecipes.js`（拟） | `node --check` | |
 | R4 | GT 配方（GTMFO 机器加工整合包物品，可选） | ⏳ 计划 | `kubejs/server_scripts/recipes/addGtmfoGtRecipes.js`（拟） | `node --check` | |
 
@@ -77,17 +77,31 @@ SoLOnion 饮食多样性对所有食物自动生效，无需标签 ✅
 
 ---
 
-## 3. R2 计划：经济数据
+## 3. R2 明细：经济数据 ✅
 
-目标：让 GTMFO 的作物/料理可卖、有价格提示、能当村民礼物。
+**文件**：`kubejs/startup_scripts/gtmfoTrades.js`（`// priority: -10`，保证在 `globalRegistry.js` 之后执行）
 
-做法（`kubejs/startup_scripts/gtmfoTrades.js`，`// priority: -10` 保证在 `globalRegistry.js` 之后加载）：
-- 把 GTMFO 作物 push 进 `global.crops`、料理 push 进 `global.cooking`、肉制品 push 进 `global.animalProducts`
-- `value` 参考包内同类物品（先读取 `globalRegistry.js` 现有数值表再定）
-- 自动效果：`society:sellable`/`farmer_product` 标签（由 `handleItemBlockFluidTags.js` 遍历 `global.trades` 生成）、
-  价格 tooltip（`addPriceTooltips.js`）、Shipping Bin 售价、村民礼物
+机制：同时 push 进对应数组（供 wikigen/悬赏等系统）+ 写入 `global.trades`（真正的交易表），
+`value` 经 `global.getConfiguredValue(value, kind)` 按包内倍率换算；乘数沿用包内语义：
+作物/肉/料理 → `shippingbin:crop_sell_multiplier`，酒/酿造 → `shippingbin:wood_sell_multiplier`。
 
-风险：定价会影响经济平衡 → 先少量、保守定价；独立文件便于回滚。
+**121 条定价**（参考包内同类，全部为保守值）：
+- `global.crops`（39）：洋葱12、番茄24、黄瓜30、茄子42、紫/白蒜27、洋蓟30、生菜24、辣根20、
+  罗勒12、牛至12、黑胡椒24、咖啡果12、玉米穗28、大米16、大豆14、豌豆荚10、啤酒花12、棉花16、
+  葡萄/白葡萄20、香蕉16、杏24、柠檬40、青柠32、芒果48、橙48、椰子32、橄榄24、
+  黑莓20、蓝莓24、树莓20、草莓18、黑/红/白醋栗16、越橘20、接骨木20、蔓越莓18
+- `global.animalProducts`（7）：牛肉片16、生培根20、生香肠24、生香肠卷32、调味猪肉36、巴尔格肉48、碎肉3
+- `global.cooking`（69）：面包/三明治/汉堡/披萨切片/意面/英式菜/炸物/奶酪/甜点/饮品，
+  参考包内（面包16、三明治114-171、派切片150-165、巧克力棒30）
+- `global.wines`（2）：红/白葡萄酒 400；`global.brews`（3）：啤酒80、伏特加120、列宁汽水90
+
+自动效果（无需额外代码）：`society:sellable` / `society:farmer_product` 等标签
+（`handleItemBlockFluidTags.js` 遍历 `global.trades` 生成）、价格 tooltip（`addPriceTooltips.js`）、
+Shipping Bin 售价、村民礼物（`#society:sellable`）。
+
+**静态核对**：`node --check` 通过；121 个条目全部唯一且 ID 均存在于 GTMFO 物品清单。
+
+**回滚**：删除该文件即可（不影响其它轮次）。
 
 ---
 
