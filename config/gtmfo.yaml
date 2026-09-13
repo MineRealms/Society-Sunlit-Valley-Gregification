@@ -1,0 +1,173 @@
+# Development/debug options.
+devConfigs:
+  # Enable the nutrient (dairy/fruit/grain/protein/vegetable) system.
+  nutrientMode: false
+
+  # Export every recipe JEI can display to a JSON file after the recipe set is loaded (client-side, for external recipe graph tooling).
+  exportJeiRecipes: false
+
+  # Export path. Relative paths resolve against the game directory; absolute paths (e.g. H:/tools/jei_recipes.json) are used as-is.
+  jeiRecipeExportPath: gtmfo/jei_recipes.json
+
+  # Name/language-key export path (machines, materials, items, fluids). Same path rules as jeiRecipeExportPath.
+  jeiNameExportPath: gtmfo/jei_names.json
+
+  # Also export recipes that JEI hides by default.
+  jeiExportHiddenRecipes: false
+
+# Recipe chain options.
+gtfoChainsConfig:
+  # Delete vanilla bread recipe?
+  deleteBreadRecipe: false
+
+  # Force chains to be harder? (Most of the content of the hard chains will still exist, but less efficient and easier routes will exist without this configuration.)
+  makeChainsHarder: false
+
+# Vanilla override options.
+gtfoVanillaOverridesConfig:
+  # Enable most GTFO Vanilla Overrides features, usually adding small chains to food items while removing normal recipes?
+  vanillaOverrideChain: false
+
+  # Make Baking Oven Recipes for Meats in the Vanilla Overrides chain (and delete normal furnace recipes for them), if the chain itself is enabled?
+  useBakingOvenForMeats: false
+
+  # Replace manual paper recipe with one with a Rolling Pin?
+  useRollingPinForPaper: false
+
+# Options for other food mods.
+gtfoOtherFoodModConfig:
+  # Should AppleCore compatibility be turned on? (unused - mod not present)
+  appleCoreCompat: false
+
+  # Should all foods not from GregTech Food Option have reduced hunger and saturation stats, to incentivize using the foods from GTFO?
+  reduceForeignFoodStats: false
+
+  # Use the default GregTech Food Option food stats reduction (a logistic curve)?
+  useDefaultForeignFoodStatsReduction: false
+
+  # If the above is false, you can set this to divide all vanilla food items by some value.
+  constantFoodStatsDivisor: 1
+
+  # Turn on default GTFO compat for Nutrition: Unofficial Extended Life? (unused - mod not present)
+  enableGTFONutrition: true
+
+# NuclearCraft compatibility options (unused - mod not present).
+gtfoNCConfig:
+  # Should NuclearCraft compatibility be turned on? (unused - mod not present)
+  nuclearCompat: true
+
+  # Add NuclearCraft S'more recipes?
+  smoreChain: true
+
+  # Add NuclearCraft S'more extensions?
+  addSmogus: true
+
+# ActuallyAdditions compatibility options (unused - mod not present).
+gtfoAAConfig:
+  # Should ActuallyAdditions compatibility be turned on? (unused - mod not present)
+  actuallyCompat: true
+
+  # Disable AA Coffee Maker's recipe? (unused - mod not present)
+  disableCoffeeMaker: true
+
+# Food stats options.
+gtfoFoodConfig:
+  # Popcorn hunger
+  popcornHunger: 5
+
+  # Popcorn saturation
+  popcornSaturation: 0.4
+
+  # Mineral Water hunger
+  mineralWaterHunger: 0
+
+  # Mineral Water saturation
+  mineralWaterSaturation: 0.0
+
+  # Lime hunger
+  limeHunger: 1
+
+  # Lime saturation
+  limeSaturation: 0.5
+
+  # Lemon hunger
+  lemonHunger: 1
+
+  # Lemon saturation
+  lemonSaturation: 0.5
+
+  # Etirps hunger
+  etirpsHunger: 0
+
+  # Etirps saturation
+  etirpsSaturation: 0.0
+
+  # Hard candy hunger
+  hardCandyHunger: 1
+
+  # Hard candy saturation
+  hardCandySaturation: 1.0
+
+  # Sparkling water hunger
+  sparklingWaterHunger: 1
+
+  # Sparkling water saturation
+  sparklingWaterSaturation: 1.0
+
+  # French fries hunger
+  friesHunger: 3
+
+  # French fries saturation
+  friesSaturation: 0.0
+
+  # Chip hunger (also affects the hunger of the other chip items)
+  chipHunger: 2
+
+  # Chip saturation (also affects the hunger of the other chip items)
+  chipSaturation: 0.5
+
+  # Baguette hunger
+  baguetteHunger: 2
+
+  # Baguette saturation
+  baguetteSaturation: 1.0
+
+# Potion effect options.
+gtfoPotionConfig:
+  # Apply effects of Creativity?
+  creativity: true
+
+  # Apply effects of Step Assist?
+  stepAssist: true
+
+  # Apply effects of Snow Golem Spawner?
+  snowGolemSpawner: true
+
+# Miscellaneous features for GTFO.
+gtfoMiscConfig:
+  # Create methane centrifuging recipes for GTFO seeds?
+  centrifugeSeeds: true
+
+  # Greenhouse replacements for dirt (use block names like minecraft:dirt)
+  greenhouseDirts:
+
+  # Add furnace recipes for each baking oven recipe?
+  bakingOvenReplacement: false
+
+  # Add GTFO foods to dungeons?
+  addDungeonFoods: true
+
+  # Add GTFO foods laced with cyanide to dungeons?
+  addLacedDungeonFoods: true
+
+  # Weight of unknown seeds from grass drops
+  unknownSeedsWeight: 5
+
+# World generation options.
+gtfoWorldGenConfig:
+  # Turn on GTFO tree generation? Required for many mod features.
+  enableGTFOTrees: true
+
+  # Turn on GTFO berry generation? Required for some mod features.
+  enableGTFOBerries: true
+

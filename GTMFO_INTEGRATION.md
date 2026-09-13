@@ -318,6 +318,33 @@ e.add("forge:pasta/raw_pasta", "farm_and_charm:raw_pasta"); // 语义修复（�
 
 ---
 
+## 14. Mod 侧兼容层（2026-09-14，gtmfo-0.0.6）
+
+本轮把部分兼容从 KubeJS 下沉到模组本体（**无新物品**），整合包侧无需改动即可生效：
+
+1. **SereneSeasons 季节系统**（数据包标签 + 客户端 tooltip）：
+   - 模组自带 `sereneseasons:{spring,summer,autumn,winter}_crops` 的 item/block 标签
+     （19 作物方块 + 对应种子/产物，按真实农时分配）；
+   - `gtmfo:greenhouse_glass` 加入 `sereneseasons:greenhouse_glass`（被识别为温室玻璃，全年可种）；
+   - 游戏内 GTMFO 种子/产物显示"适宜季节"提示（移植原版 `GTFOSSTooltipHandler`，
+     Spring 绿 / Summer 黄 / Autumn 金 / Winter 青 / 全年 淡紫）。
+   - 与包内 `handleGtmfoTags.js` 的季节标签**重复但不冲突**（标签是并集）；包内
+     `handleSeasonTags.js` 的 remove 仍在其后执行，平衡调整不受影响。
+2. **forge 标准标签**（模组自带）：`forge:seeds`、`forge:crops(+子标签 ×19)`、
+   `forge:vegetables(+子标签 ×8)`、`forge:fruits`、`forge:berries`、`forge:raw_meat`、
+   `forge:cooked_meat`、`forge:dough`、`forge:cheeses`、`c:cheeses`、`farmersdelight:sweets`
+   —— FD/Create/F&C 等使用这些标签的配方自动接受 GTMFO 物品。
+3. **条件兼容配方**（`forge:mod_loaded` 门控，与包内 KubeJS 配方**不重复**，16 条）：
+   - Farmer's Delight 切菜板 ×10：番茄/洋葱/黄瓜/茄子/苹果/胡萝卜/意式烤猪肉 → 对应切片；
+     3 种披萨方块 → 4 片披萨切片；
+   - Farm & Charm 绞肉机 ×6：GTMFO 生肉（beef_slice/seasoned_pork/bacon_raw/sausage_raw/
+     scrap_meat/barg_meat）→ `gtceu:meat_dust`（MEAT 类型）。
+4. **jar 更新**：`mods/gtmfo-0.0.5.jar` → `mods/gtmfo-0.0.6.jar`（含上述内容 + 事件总线 API 修复：
+   `context.getModEventBus()` 替代已弃用调用、`RegistryObject.isPresent()` 防御）。
+   模组侧完整记录见 `PORTING_TODO.md` §16.11 与 `docs/REGISTRY_AUDIT.md`。
+
+---
+
 ## 4. R3 明细：加工配方（第一批 9 条）✅
 
 **文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`
