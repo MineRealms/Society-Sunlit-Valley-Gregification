@@ -293,19 +293,12 @@ F&C 在静态初始化里注册 BlockEntity 时，Architectury 的内部 `HashMa
 所以之前的"空标签列表"两次结果矛盾、已作废。现在只统计**方法上必然为空**的标签：
 **直接成员全部被 `removeAllTagsFrom` 移除，且没有任何 `#标签引用`**（无引用 = 无人能补回）→ 必然为空，与顺序无关。
 
-**有配方引用的（真正会坏东西）**：
-| 标签 | 引用配方数 | 被移除的成员 |
-|---|---|---|
-| `forge:flour/wheat` | **9** | `create:wheat_flour`（整合包用 farm_and_charm:flour 替代但没加回该标签） |
-| `forge:crops/walnut` | 3 | `pamhc2trees:walnutitem` |
-| `forge:crops/pistachio` | 3 | `pamhc2trees:pistachioitem` |
-| `forge:crops/pinenut` | 3 | `pamhc2trees:pinenutitem` |
-| `forge:crops/pecan` | 3 | `pamhc2trees:pecanitem` |
-| `forge:crops/chestnut` | 3 | `pamhc2trees:chestnutitem` |
-| `forge:crops/cashew` | 3 | `pamhc2trees:cashewitem` |
-| `forge:crops/almond` | 3 | `pamhc2trees:almonditem` |
-| `forge:crops/acorn` | 3 | `pamhc2trees:acornitem` |
-| `forge:pasta/raw_pasta` | 2 | `farmersdelight:raw_pasta`（替代品加到了 `forge:food/raw_pasta`，没加这个） |
+**有配方引用的（逐条追到消费方，区分"真坏"与"无害"）**：
+| 标签 | 引用配方 | 被移除的成员 | 现状（已核对消费方是否也被移除） |
+|---|---|---|---|
+| `forge:flour/wheat` | 6（Create 4 + Create中央厨房 2） | `create:wheat_flour`（替代品 `farm_and_charm:flour` 没加回该标签） | **真坏 2 条**：Create 自家 dough/洗矿 4 条已被整合包移除（`removeByOutput("create:dough")` + `global.removedItems`），但 **CCK `compacting/cookie` 与 `compacting/cake` 仍生效且依赖此标签**（createaddition 未装 → cake 条件通过） |
+| `forge:crops/{walnut,pistachio,pinenut,pecan,chestnut,cashew,almond,acorn}` | 各 3（全部来自 pamhc2trees 自己的烤坚果配方） | `pamhc2trees:*item` | 无害：`removeRecipes.js` 有 `e.remove({ mod: "pamhc2trees" })`，这些消费配方被整包移除 |
+| `forge:pasta/raw_pasta` | 2（VeggiesDelight 的 moredelight 兼容菜谱） | `farmersdelight:raw_pasta`（替代品只加到了 `forge:food/raw_pasta`） | 无害：moredelight 未安装 → 配方不加载；加回只为语义正确 |
 
 **无配方引用（仅信息性）**：`vinery:{white,red}_{taiga,savanna,jungle}_grapejuice`、
 `stardew_fishing:legendary_fish`（10 条传说鱼全被移除）、`meadow:milk_bucket`/`meadow:wooden_milk_bucket`、
@@ -316,12 +309,12 @@ F&C 在静态初始化里注册 BlockEntity 时，Architectury 的内部 `HashMa
 **注意**：`forge:crops/onion` **不在**此清单里（它有 `#forge:onion` + `#forge:vegetables/onion` 引用，
 按整合包桥接应当非空）—— 洋葱的最终状态仍需游戏内 `_diag_tags.js` 确认。
 
-**建议修复（整合包侧，一行一个）**：
+**修复（已执行）**：新增 `kubejs/server_scripts/tags/fixEmptyTags.js`（`ServerEvents.tags("item")` + `Item.exists` 守卫）：
 ```js
-e.add("forge:flour/wheat", "farm_and_charm:flour");
-e.add("forge:pasta/raw_pasta", "farm_and_charm:raw_pasta");
-// pam 坚果类：整合包有意移除 pam 物品的话，应同步删掉引用这些标签的配方；否则把保留品种加回
+e.add("forge:flour/wheat", "farm_and_charm:flour");        // 修 CCK 曲奇/蛋糕 2 条配方
+e.add("forge:pasta/raw_pasta", "farm_and_charm:raw_pasta"); // 语义修复（当前消费方未加载）
 ```
+**有意不修**：pam 坚果类标签 —— 消费方是 pam 自己的配方且已被整合包整包移除，把 pam 物品加回标签会违背整合包移除意图。
 
 ---
 
