@@ -177,6 +177,41 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 ---
 
+## 9. ⚠️ 标签分析更正（2026-09-14，重要）
+
+**撤回**：本文件/对话中曾给出的"149 个空标签"、"`forge:crops/onion` 为空"结论 **不成立**。
+原因：我写的静态标签解析器有缺陷（同一批文件两次运行结果矛盾：第二次 `forge:crops/wheat`
+解析出 5 个物品，第一次却是空），没有正确处理 `replace`、`required`、循环引用、模组缺失与加载顺序。
+
+**更正后的解析结果（本地整合包数据）**：
+- `forge:crops/onion` = `[farm_and_charm:onion]` ✅ **非空**
+  （链路：整合包 `data/forge/tags/items/vegetables/onion.json` 写入 farm_and_charm:onion →
+  `crops/onion.json` 桥接 `#forge:onion` + `#forge:vegetables/onion`）
+- `forge:onion` = `[farm_and_charm:onion]` ✅、`forge:crops/wheat`、`forge:crops/corn` 等同样非空
+- 整合包确实 `removeAllTagsFrom("farmersdelight:onion")`，但 F&C 洋葱通过桥接补上了
+
+**日志事实（服务器 `debug-1.log.gz`）**：
+- 服务器 `Loaded 97/97 startup scripts` + `188/188 server scripts` = 本地（98/191）**减去我们的 4 个脚本**
+  → 服务器**没有**我们的脚本、也没有 gtmfo 模组
+- 服务器与客户端的 TagLoader 错误完全一致（19 条，全是 classicpipes/zhopo/et cetera 等无关项），
+  **没有任何洋葱相关标签错误**
+
+**结论**：无法从现有数据/日志复现"`forge:crops/onion` 为空"。需要在游戏内确认，已放置临时诊断脚本
+`kubejs/server_scripts/_diag_tags.js`（进存档或 `/reload` 后在 `logs/latest.log` 搜 `[TAGDIAG]`，
+会打印关键标签的真实内容；查完删除）。
+
+**教训（写进纪律）**：
+- **静态标签解析不可靠**：必须处理 `replace`/`required`/循环/模组缺失/加载顺序/KubeJS 运行时修改，
+  结论一律以**游戏内诊断输出**为准，不要用自写解析器的结果下判断
+- 给用户结论前先自检方法（同一输入跑两次是否一致）
+
+**整合包 git 历史（应你要求核查）**：
+- 该仓库只有 **1 个初始提交** `ab54ed1`（CARIERX，2026-09-13 07:21，快照式导入 config/kubejs + 基准表），
+  之后才是暮色森林章节等提交；`globalRemovedItems.js`、`handleItemBlockFluidTags.js`、
+  3 个洋葱桥接文件**全部只出现在这个初始提交里** → 没有更早历史可追，也没有远程仓库
+
+---
+
 ## 4. R3 明细：加工配方（第一批 9 条）✅
 
 **文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`
