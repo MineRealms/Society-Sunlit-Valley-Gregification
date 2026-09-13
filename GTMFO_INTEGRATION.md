@@ -111,6 +111,12 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 - 修复：优先级改为 **`-30`**（在 `-20` 之后加载）；已重新 `node --check` 通过
 - 教训：写文档时"依赖 globalRegistry.js 先执行"是**假设**，实际必须按包内脚本的真实 priority 排；
   后续新增 startup 脚本一律先查依赖脚本的 priority 再定值
+- **验证结果（2026-09-14 03:31 重启后）**：`Loaded 98/98 KubeJS startup scripts ... 0 errors and 0 warnings`，
+  `gtmfoTrades.js` 正常加载，无 gtmfo 相关报错 ✅
+
+**待验证（需进存档，服务器脚本在进世界时加载）**：
+- R1 `handleGtmfoTags.js`：`[GTMFO-INTEGRATION] handleGtmfoTags.js loaded (R1 tags)` + 标签生效（F3 或 JEI）
+- R3/R4 配方脚本：`addGtmfoRecipes.js` / `addGtmfoGtRecipes.js` 加载日志 + JEI 中可查
 
 ---
 
