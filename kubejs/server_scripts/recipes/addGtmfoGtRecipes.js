@@ -26,7 +26,7 @@ ServerEvents.recipes((e) => {
       .notConsumable("gtmfo:slicer_blade_flat")
       .itemOutputs("8x " + output)
       .duration(30)
-      .EUt(18);
+      .EUt(18, 1);
   };
   slicer("gtmfo:compat/slice_onion", "farm_and_charm:onion", "gtmfo:onion_slice");
   slicer("gtmfo:compat/slice_tomato", "farmersdelight:tomato", "gtmfo:tomato_slice");
@@ -41,7 +41,7 @@ ServerEvents.recipes((e) => {
       .itemOutputs("gtceu:zest_dust")
       .outputFluids(Fluid.of(fluid, 100))
       .duration(100)
-      .EUt(5);
+      .EUt(5, 1);
   };
   zest("gtmfo:compat/zest_orange_pam", "pamhc2trees:orangeitem", "gtceu:orange_extract");
   zest("gtmfo:compat/zest_orange_atmospheric", "atmospheric:orange", "gtceu:orange_extract");
@@ -52,5 +52,5 @@ ServerEvents.recipes((e) => {
     .itemInputs("farmersdelight:tomato")
     .outputFluids(Fluid.of("gtceu:tomato_sauce", 100))
     .duration(10)
-    .EUt(2);
+    .EUt(2, 1);
 });

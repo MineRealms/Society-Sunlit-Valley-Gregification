@@ -120,6 +120,26 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 ---
 
+## 7. 实机首测错误与修复（2026-09-14 04:13 进存档）
+
+服务器脚本 191/191 加载 0 错误，但**事件处理器内**报了 2 个运行时错误（KubeJS 会单独记录，不计入加载错误）：
+
+| # | 报错 | 原因（事实核对） | 修复 |
+|---|---|---|---|
+| 1 | `handleGtmfoTags.js#165: TypeError: Cannot find function flat` | **KubeJS 的 Rhino JS 引擎不支持 `Array.prototype.flat()`**（ES2019 方法） | 改为逐项 `forEach` 循环（不用 `.flat()`） |
+| 2 | `addGtmfoGtRecipes.js#29: TypeError: Cannot find default value for object` | GTCEu 的 KubeJS `EUt()` **只有 `EUt(EnergyStack.WithIO)` 和 `EUt(long, long)` 两个重载**，没有单参版本；Rhino 找不到可填充的默认值 | 全部改为 `.EUt(电压, 电流)`，如 `.EUt(18, 1)` |
+
+**顺带加固**：R1 中 `Object.entries(...).forEach(([k, v]) => ...)` 的**参数解构**改为索引访问
+（`(entry) => entry[0]/entry[1]`），避免 Rhino 解构兼容性风险（包内 `const {item, value} = x` 可用，
+但参数位解构未验证，保守处理）。
+
+**教训（写进纪律）**：
+- 写 KubeJS 脚本前，**JS 特性按 Rhino 可用范围选**（无 `.flat()`、`?.`、`??` 等新语法）
+- 调用 GTCEu KubeJS API 前，**先读 `GTRecipeSchema.GTRecipeJS` 的重载列表**，不要凭直觉写单参调用
+- 验证方式：进存档（或 `/reload`）后看日志 `Error in 'ServerEvents.*'` 行
+
+---
+
 ## 4. R3 明细：加工配方（第一批 9 条）✅
 
 **文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`

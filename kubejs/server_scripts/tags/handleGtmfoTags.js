@@ -162,9 +162,12 @@ ServerEvents.tags("item", (e) => {
   sweets.forEach((id) => e.add("farmersdelight:sweets", g(id)));
 
   // 蔬菜 + 子标签（forge:vegetables/<name>）
-  e.add("forge:vegetables", Object.values(vegetables).flat().map(g));
-  Object.entries(vegetables).forEach(([name, ids]) => {
-    e.add("forge:vegetables/" + name, ids.map(g));
+  // 注意：KubeJS 的 Rhino 不支持 Array.prototype.flat()，这里逐项循环
+  Object.entries(vegetables).forEach((entry) => {
+    entry[1].forEach((id) => {
+      e.add("forge:vegetables", g(id));
+      e.add("forge:vegetables/" + entry[0], g(id));
+    });
   });
 
   // 作物子标签（forge:crops/<name>）
@@ -174,14 +177,14 @@ ServerEvents.tags("item", (e) => {
   needSeeds.forEach((id) => e.add("society:need_seeds", g(id)));
 
   // ---- 季节标签（item）----
-  Object.entries(seasons).forEach(([season, data]) => {
-    data.items.forEach((id) => e.add("sereneseasons:" + season + "_crops", g(id)));
+  Object.entries(seasons).forEach((entry) => {
+    entry[1].items.forEach((id) => e.add("sereneseasons:" + entry[0] + "_crops", g(id)));
   });
 });
 
 ServerEvents.tags("block", (e) => {
   // ---- 季节标签（block，Serene Seasons 生长判定）----
-  Object.entries(seasons).forEach(([season, data]) => {
-    data.blocks.forEach((id) => e.add("sereneseasons:" + season + "_crops", g(id)));
+  Object.entries(seasons).forEach((entry) => {
+    entry[1].blocks.forEach((id) => e.add("sereneseasons:" + entry[0] + "_crops", g(id)));
   });
 });
