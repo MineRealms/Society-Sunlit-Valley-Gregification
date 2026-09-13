@@ -16,6 +16,9 @@
 console.info("[GTMFO-INTEGRATION] addGtmfoRecipes.js loaded (R3 recipes)");
 
 ServerEvents.recipes((e) => {
+  // ⚠️ 防御：模组未安装时不要注册 gtmfo:* 配方（无效输入会让配方无法合成）
+  if (!Platform.isLoaded("gtmfo")) return;
+
   // Farmer's Delight 切菜板（工具：#forge:tools/knives）
   const knife = (input, output, count) => {
     e.custom({

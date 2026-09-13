@@ -18,6 +18,9 @@
 console.info("[GTMFO-INTEGRATION] addGtmfoGtRecipes.js loaded (R4 gt recipes)");
 
 ServerEvents.recipes((e) => {
+  // ⚠️ 防御：模组未安装时不要注册 gtmfo:* 配方（无效输入会让配方无法合成）
+  if (!Platform.isLoaded("gtmfo")) return;
+
   // ===== 切片机（gtceu:slicer）：整合包蔬菜 → GTMFO 切片 =====
   // 镜像 CoreChain.slice_*：平板刀片，1 → 8，EUt 18 / 30t
   const slicer = (id, input, output) => {

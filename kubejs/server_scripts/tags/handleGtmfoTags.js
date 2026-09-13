@@ -6,6 +6,13 @@
 // ============================================================
 console.info("[GTMFO-INTEGRATION] handleGtmfoTags.js loaded (R1 tags)");
 
+// ⚠️ 防御：模组未安装时，脚本绝不能往标签里加 gtmfo:*（不存在的 ID 会让整个标签解析为空！
+// 2026-09-14 事故：mod 未安装 + 脚本运行 → forge:crops/onion 等标签被清空）
+const GTMFO_LOADED = Platform.isLoaded("gtmfo");
+if (!GTMFO_LOADED) {
+  console.info("[GTMFO-INTEGRATION] GTMFO mod not installed, skipping tag merge (R1)");
+}
+
 const GTMFO = "gtmfo:";
 const g = (id) => GTMFO + id;
 
@@ -144,6 +151,7 @@ const seasons = {
 };
 
 ServerEvents.tags("item", (e) => {
+  if (!GTMFO_LOADED) return; // 模组未安装：不加任何 gtmfo:* 条目
   // ---- forge 标准标签 ----
   seeds.forEach((id) => e.add("forge:seeds", id));
   crops.forEach((id) => e.add("forge:crops", g(id)));
@@ -183,6 +191,7 @@ ServerEvents.tags("item", (e) => {
 });
 
 ServerEvents.tags("block", (e) => {
+  if (!GTMFO_LOADED) return; // 模组未安装：不加任何 gtmfo:* 条目
   // ---- 季节标签（block，Serene Seasons 生长判定）----
   Object.entries(seasons).forEach((entry) => {
     entry[1].blocks.forEach((id) => e.add("sereneseasons:" + entry[0] + "_crops", g(id)));

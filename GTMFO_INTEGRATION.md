@@ -140,6 +140,43 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 ---
 
+## 8. ⚠️ 重大事故：Empty Tag（2026-09-14）
+
+**现象**：玩家在 JEI 中看到部分配方的材料显示 `Empty Tag: forge:crops/onion`，
+并且用任何洋葱都无法合成；`forge:onion`（桥接到 `#forge:crops/onion`）也一并失效。
+
+**根因（三步叠加）**：
+1. **GTMFO 模组未安装**（`mods/` 无 jar、服务器日志无 gtmfo 加载记录）——已核实；
+   而 R1/R2 的 KubeJS 脚本在运行 → 脚本往标签/交易里写入 **不存在的 `gtmfo:*` ID**
+2. 旧版 R1 脚本在 `.flat()` 处崩溃（见第 7 节），崩溃点之后的 `forge:crops/<name>` 子标签写入也没执行
+3. 结果：被脚本触碰过的标签（`forge:crops/onion`、`forge:onion` 等）解析为空
+
+**为什么"模组没装"会导致标签被清空**：KubeJS 的 `ServerEvents.tags` 会重写它触碰过的标签文件，
+脚本写入的条目若全部是无效 ID，该标签就会解析为空（详情见 KubeJS `TagLoaderKJS.kjs$customTags` 行为）。
+配合整合包自带的循环桥接文件（`kubejs/data/forge/tags/items/onion.json` ↔ `crops/onion.json`），
+影响面被放大到 `forge:onion` 也空。
+
+**修复（已执行）**：
+1. **装上模组**：`gradlew build` 成功产出 `gtmfo-0.0.5.jar`（期间修了 build.gradle 的 refmap 重复问题），
+   已复制到整合包 `mods/`
+2. **脚本防御**：4 个脚本全部加 `Platform.isLoaded("gtmfo")` 守卫——
+   模组不在时整体跳过，**绝不写入任何 `gtmfo:*` ID**（这是本事故的核心教训）
+3. **服务器**：若另开服务器，需同步 jar + 4 个脚本（服务器上可能是旧脚本）
+
+**教训（写进纪律）**：
+- **KubeJS 联动脚本必须与被联动的模组同生共死**：脚本首行检查 `Platform.isLoaded("<modid>")`，
+  否则"脚本在跑、模组不在"会产生无效 ID，污染标签/交易/配方
+- 部署顺序：先装模组、再放脚本；升级脚本时服务器与客户端都要同步
+- 标签被清空不会持久化（每次加载重建），装上模组后即可恢复
+
+**受影响标签清单（本次脚本触碰过的）**：`forge:seeds`、`forge:crops`、`forge:crops/*`、
+`forge:vegetables`、`forge:vegetables/*`、`forge:fruits`、`forge:berries`、`forge:raw_meat`、
+`forge:cooked_meat`、`forge:cheeses`、`c:cheeses`、`forge:dough`、`farmersdelight:sweets`、
+`society:need_seeds`、`sereneseasons:{spring,summer,autumn,winter}_crops`（item+block）、
+`society:sellable` 等（经 global.trades）—— 装模组后全部恢复。
+
+---
+
 ## 4. R3 明细：加工配方（第一批 9 条）✅
 
 **文件**：`kubejs/server_scripts/recipes/addGtmfoRecipes.js`

@@ -14,7 +14,14 @@ const GTMFO = "gtmfo:";
 const CROP_MULT = "shippingbin:crop_sell_multiplier";
 const WOOD_MULT = "shippingbin:wood_sell_multiplier";
 
+// ⚠️ 防御：模组未安装时不要写入 gtmfo:* 交易（否则 society:sellable 等标签会被写成空）
+const GTMFO_LOADED = Platform.isLoaded("gtmfo");
+if (!GTMFO_LOADED) {
+  console.info("[GTMFO-INTEGRATION] GTMFO mod not installed, skipping trades (R2)");
+}
+
 const addTrades = (list, kind, entries, multiplier) => {
+  if (!GTMFO_LOADED) return;
   entries.forEach(([id, value]) => {
     const item = GTMFO + id;
     list.push({ item: item, value: value });
