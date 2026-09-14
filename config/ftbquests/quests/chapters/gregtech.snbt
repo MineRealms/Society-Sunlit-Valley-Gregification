@@ -1,0 +1,1325 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gregtech"
+	group: "457DCF55318282CA"
+	icon: "gtceu:lv_machine_hull"
+	id: "DEB0B9691B5A733B"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{ftbquests.chapter.gregtech.quest8FE1E26A7C5491C4.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest8FE1E26A7C5491C4.description2}"
+				""
+				"{ftbquests.chapter.gregtech.quest8FE1E26A7C5491C4.description3}"
+			]
+			icon: "gtceu:steam_grinder"
+			id: "8FE1E26A7C5491C4"
+			rewards: [
+				{
+					count: 4
+					id: "208F8B84B41B78DD"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "FE33FAE9B28F310C"
+				title: "{ftbquests.chapter.gregtech.quest8FE1E26A7C5491C4.task.FE33FAE9B28F310C.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest8FE1E26A7C5491C4.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["8FE1E26A7C5491C4"]
+			description: [
+				"{ftbquests.chapter.gregtech.questAAFF8C443EA3B023.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questAAFF8C443EA3B023.description2}"
+			]
+			icon: "gtceu:iron_bolt"
+			id: "AAFF8C443EA3B023"
+			rewards: [
+				{
+					count: 4
+					id: "215BB85719D018FA"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "DD3E46EA2429C2B6"
+				title: "{ftbquests.chapter.gregtech.questAAFF8C443EA3B023.task.DD3E46EA2429C2B6.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gregtech.questAAFF8C443EA3B023.title}"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["AAFF8C443EA3B023"]
+			description: [
+				"{ftbquests.chapter.gregtech.questF26DF52FC142855E.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questF26DF52FC142855E.description2}"
+			]
+			icon: "gtceu:iron_plate"
+			id: "F26DF52FC142855E"
+			rewards: [
+				{
+					count: 6
+					id: "DB965F82617C0CBB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "3FD2A6DDDD6FC1DC"
+					item: "gtceu:iron_plate"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "B464B241C8AF9F7A"
+					item: "gtceu:iron_bolt"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6AE1DC8405E8B7BE"
+					item: "gtceu:steel_rod"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.questF26DF52FC142855E.title}"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["F26DF52FC142855E"]
+			description: [
+				"{ftbquests.chapter.gregtech.questE4FDEE7DD7AD56DA.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questE4FDEE7DD7AD56DA.description2}"
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "E4FDEE7DD7AD56DA"
+			rewards: [
+				{
+					count: 6
+					id: "51619170E62020C5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "827907D696C3BAF6"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.questE4FDEE7DD7AD56DA.title}"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["E4FDEE7DD7AD56DA"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest76F9ED9391019396.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest76F9ED9391019396.description2}"
+			]
+			icon: "gtceu:lp_steam_macerator"
+			id: "76F9ED9391019396"
+			rewards: [
+				{
+					count: 8
+					id: "1E87E42788050B42"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "539E5D0B9EB0DC98"
+					item: "gtceu:lp_steam_macerator"
+					type: "item"
+				}
+				{
+					id: "9972AB9FD8CE627E"
+					item: "gtceu:lp_steam_forge_hammer"
+					type: "item"
+				}
+				{
+					id: "009F038271462E29"
+					item: "gtceu:lp_steam_alloy_smelter"
+					type: "item"
+				}
+				{
+					id: "21DCEA26B9BA0EC2"
+					item: "gtceu:lp_steam_compressor"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest76F9ED9391019396.title}"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["76F9ED9391019396"]
+			description: [
+				"{ftbquests.chapter.gregtech.questBD751D7FE140340D.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questBD751D7FE140340D.description2}"
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "BD751D7FE140340D"
+			rewards: [
+				{
+					count: 8
+					id: "681894100844F900"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F2FC7BAA5713948A"
+				item: "gtceu:primitive_blast_furnace"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.questBD751D7FE140340D.title}"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["BD751D7FE140340D"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest099D3C63BA8A85D9.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest099D3C63BA8A85D9.description2}"
+			]
+			icon: "gtceu:steel_ingot"
+			id: "099D3C63BA8A85D9"
+			rewards: [
+				{
+					count: 8
+					id: "F51C9ACFF61D9B4A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "4245CFED83908481"
+					item: "gtceu:steel_ingot"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1D72E2956CD421AB"
+					item: "gtceu:steel_plate"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest099D3C63BA8A85D9.title}"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["099D3C63BA8A85D9"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest8A227306FB8A083A.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest8A227306FB8A083A.description2}"
+			]
+			icon: "gtceu:coke_oven"
+			id: "8A227306FB8A083A"
+			rewards: [
+				{
+					count: 8
+					id: "98793376ABF73D9D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "653A4A8D9B1F1535"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest8A227306FB8A083A.title}"
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["8A227306FB8A083A"]
+			description: [
+				"{ftbquests.chapter.gregtech.questF157F03A8C8B2F48.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questF157F03A8C8B2F48.description2}"
+			]
+			icon: "gtceu:lv_steam_turbine"
+			id: "F157F03A8C8B2F48"
+			rewards: [
+				{
+					count: 10
+					id: "49B8507F3604F167"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4224FF79816EE5A1"
+					item: "gtceu:lv_steam_turbine"
+					type: "item"
+				}
+				{
+					id: "4AB8372D4923EB79"
+					item: "gtceu:lv_combustion"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.questF157F03A8C8B2F48.title}"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["F157F03A8C8B2F48"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest150D217525CEB718.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest150D217525CEB718.description2}"
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "150D217525CEB718"
+			rewards: [
+				{
+					count: 10
+					id: "00498F1DCBF49DEB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "46652F9A9F60025A"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest150D217525CEB718.title}"
+			x: 0.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["150D217525CEB718"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest7BD96A538ABED8BB.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest7BD96A538ABED8BB.description2}"
+			]
+			icon: "gtceu:lv_macerator"
+			id: "7BD96A538ABED8BB"
+			rewards: [
+				{
+					count: 10
+					id: "3FB6C3DDFB1760C3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "C0992E5D06C1A1C7"
+					item: "gtceu:lv_macerator"
+					type: "item"
+				}
+				{
+					id: "F246368D781AF664"
+					item: "gtceu:lv_electric_furnace"
+					type: "item"
+				}
+				{
+					id: "09982FE8CD1BAB6F"
+					item: "gtceu:lv_assembler"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest7BD96A538ABED8BB.title}"
+			x: 0.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["7BD96A538ABED8BB"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest69A64273C8627542.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest69A64273C8627542.description2}"
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "69A64273C8627542"
+			rewards: [
+				{
+					count: 10
+					id: "CDA7B8D6730BA6E5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "E908A372EC4E1475"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "303D7E501EA6144B"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest69A64273C8627542.title}"
+			x: 0.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["69A64273C8627542"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest894E845D8A649A95.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest894E845D8A649A95.description2}"
+			]
+			icon: "gtceu:mv_machine_hull"
+			id: "894E845D8A649A95"
+			rewards: [
+				{
+					count: 12
+					id: "7245BD68AFC769AB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "8F33BBD62C89D3D1"
+					item: "gtceu:mv_machine_hull"
+					type: "item"
+				}
+				{
+					id: "81979A3605EC64E2"
+					item: "gtceu:mv_assembler"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "C6D1271DB83E2207"
+					item: "gtceu:good_electronic_circuit"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest894E845D8A649A95.title}"
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["894E845D8A649A95"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest560FC9160DFCC9C9.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest560FC9160DFCC9C9.description2}"
+			]
+			icon: "gtceu:hv_machine_hull"
+			id: "560FC9160DFCC9C9"
+			rewards: [
+				{
+					count: 12
+					id: "A2D7DEEEDDF38072"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "EB5B7C58DFE7E061"
+					item: "gtceu:hv_machine_hull"
+					type: "item"
+				}
+				{
+					id: "1DBA6DEADFCDE051"
+					item: "gtceu:hv_assembler"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "8AA908C483880471"
+					item: "gtceu:advanced_integrated_circuit"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest560FC9160DFCC9C9.title}"
+			x: 0.0d
+			y: 32.5d
+		}
+		{
+			dependencies: ["560FC9160DFCC9C9"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest70F82E45339A6D33.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest70F82E45339A6D33.description2}"
+			]
+			icon: "gtceu:ev_machine_hull"
+			id: "70F82E45339A6D33"
+			rewards: [
+				{
+					count: 14
+					id: "6CB067EF6E2E159B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4BDB317BBDF61981"
+					item: "gtceu:ev_machine_hull"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "27F63493F0CC2C16"
+					item: "gtceu:micro_processor"
+					type: "item"
+				}
+				{
+					id: "8BD5B01BE676D029"
+					item: "gtceu:epoxy_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest70F82E45339A6D33.title}"
+			x: 0.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["70F82E45339A6D33"]
+			description: [
+				"{ftbquests.chapter.gregtech.questB577B7F1C71BB1AF.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questB577B7F1C71BB1AF.description2}"
+			]
+			icon: "gtceu:iv_machine_hull"
+			id: "B577B7F1C71BB1AF"
+			rewards: [
+				{
+					count: 16
+					id: "EE5BEE8DAA200B8E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "01B0EEE089FEB553"
+					item: "gtceu:iv_machine_hull"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "87A70D8883C494F5"
+					item: "gtceu:nano_processor"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.questB577B7F1C71BB1AF.title}"
+			x: 0.0d
+			y: 37.5d
+		}
+		{
+			dependencies: ["B577B7F1C71BB1AF"]
+			description: [
+				"{ftbquests.chapter.gregtech.questCF9FE85C95F0E0B9.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questCF9FE85C95F0E0B9.description2}"
+			]
+			icon: "gtceu:luv_machine_hull"
+			id: "CF9FE85C95F0E0B9"
+			rewards: [
+				{
+					count: 18
+					id: "56263BBA40A1EF68"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2F94221B9D1E0F9F"
+					item: "gtceu:luv_machine_hull"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "88EC78650ECA0320"
+					item: "gtceu:quantum_processor"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.questCF9FE85C95F0E0B9.title}"
+			x: 0.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["CF9FE85C95F0E0B9"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest0D251BD59EAECA92.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest0D251BD59EAECA92.description2}"
+			]
+			icon: "gtceu:zpm_machine_hull"
+			id: "0D251BD59EAECA92"
+			rewards: [
+				{
+					count: 20
+					id: "A2F6E985536D0AA1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0A8850F0416AD81D"
+					item: "gtceu:zpm_machine_hull"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7653DC7DF2912490"
+					item: "gtceu:crystal_processor"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest0D251BD59EAECA92.title}"
+			x: 0.0d
+			y: 42.5d
+		}
+		{
+			dependencies: ["0D251BD59EAECA92"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest5E227BD546F253AF.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest5E227BD546F253AF.description2}"
+			]
+			icon: "gtceu:uv_machine_hull"
+			id: "5E227BD546F253AF"
+			rewards: [
+				{
+					count: 24
+					id: "F8FB32F00EC6FA59"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "291D97C744BBAE47"
+					item: "gtceu:uv_machine_hull"
+					type: "item"
+				}
+				{
+					id: "C9E695DE574BB8EE"
+					item: "gtceu:wetware_processor"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest5E227BD546F253AF.title}"
+			x: 0.0d
+			y: 45.0d
+		}
+		{
+			dependencies: ["5E227BD546F253AF"]
+			description: [
+				"{ftbquests.chapter.gregtech.questB1E81BE1BF1CB02F.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questB1E81BE1BF1CB02F.description2}"
+			]
+			icon: "gtceu:wetware_processor_mainframe"
+			id: "B1E81BE1BF1CB02F"
+			rewards: [
+				{
+					count: 32
+					id: "5EAB6A9555090458"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F1A8B3AD3C6F6D76"
+				title: "{ftbquests.chapter.gregtech.questB1E81BE1BF1CB02F.task.F1A8B3AD3C6F6D76.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gregtech.questB1E81BE1BF1CB02F.title}"
+			x: 0.0d
+			y: 47.5d
+		}
+		{
+			dependencies: ["099D3C63BA8A85D9"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest41882E0C59881DB4.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest41882E0C59881DB4.description2}"
+			]
+			icon: "gtceu:maintenance_hatch"
+			id: "41882E0C59881DB4"
+			rewards: [
+				{
+					count: 8
+					id: "92DF39C2860CBD02"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3C1538E5C7D4E7B6"
+				title: "{ftbquests.chapter.gregtech.quest41882E0C59881DB4.task.3C1538E5C7D4E7B6.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest41882E0C59881DB4.title}"
+			x: 4.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["41882E0C59881DB4"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest9364C1EB9B9AACD8.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest9364C1EB9B9AACD8.description2}"
+			]
+			icon: "gtceu:steam_grinder"
+			id: "9364C1EB9B9AACD8"
+			rewards: [
+				{
+					count: 10
+					id: "0C4A99E1032B1790"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "FAF8BE528CA2DDF0"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest9364C1EB9B9AACD8.title}"
+			x: 4.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["7BD96A538ABED8BB"]
+			description: [
+				"{ftbquests.chapter.gregtech.questD0162BDF0C393D1C.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questD0162BDF0C393D1C.description2}"
+				""
+				"{ftbquests.chapter.gregtech.questD0162BDF0C393D1C.description3}"
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "D0162BDF0C393D1C"
+			rewards: [
+				{
+					count: 12
+					id: "706363A560957C0D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "9F6747A4C80DBC48"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "43006E667B5D0604"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.questD0162BDF0C393D1C.title}"
+			x: 4.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["894E845D8A649A95"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest53F425094A026293.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest53F425094A026293.description2}"
+			]
+			icon: "gtceu:large_chemical_reactor"
+			id: "53F425094A026293"
+			rewards: [
+				{
+					count: 14
+					id: "9BD29879DBDBBAB9"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "635A12AAE8222D3E"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest53F425094A026293.title}"
+			x: 4.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["53F425094A026293"]
+			description: [
+				"{ftbquests.chapter.gregtech.questE0BD85D8AC4BFAE9.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questE0BD85D8AC4BFAE9.description2}"
+			]
+			icon: "gtceu:distillation_tower"
+			id: "E0BD85D8AC4BFAE9"
+			rewards: [
+				{
+					count: 14
+					id: "D3303A8F9FCB7AC0"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F9B38ADCFFEF62DC"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.questE0BD85D8AC4BFAE9.title}"
+			x: 4.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["E0BD85D8AC4BFAE9"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest49E2D89F2136CA38.description1}"
+			]
+			icon: "gtceu:pyrolyse_oven"
+			id: "49E2D89F2136CA38"
+			rewards: [
+				{
+					count: 14
+					id: "B438A53EFEF01B6F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "27DD13BF5A1DC3A3"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest49E2D89F2136CA38.title}"
+			x: 4.5d
+			y: 32.5d
+		}
+		{
+			dependencies: ["560FC9160DFCC9C9"]
+			description: [
+				"{ftbquests.chapter.gregtech.questAF2AF321669EC376.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questAF2AF321669EC376.description2}"
+			]
+			icon: "gtceu:implosion_compressor"
+			id: "AF2AF321669EC376"
+			rewards: [
+				{
+					count: 16
+					id: "E76E6DE431C03E65"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5126AD154592BEE2"
+				item: "gtceu:implosion_compressor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.questAF2AF321669EC376.title}"
+			x: 4.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["AF2AF321669EC376"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest6E8A4EEB3BECE3C8.description1}"
+			]
+			icon: "gtceu:vacuum_freezer"
+			id: "6E8A4EEB3BECE3C8"
+			rewards: [
+				{
+					count: 16
+					id: "23DEEC5DF10B9D31"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1E8E0EB4E056E441"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest6E8A4EEB3BECE3C8.title}"
+			x: 4.5d
+			y: 37.5d
+		}
+		{
+			dependencies: ["B577B7F1C71BB1AF"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest79C48AC616890D0A.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest79C48AC616890D0A.description2}"
+			]
+			icon: "gtceu:assembly_line"
+			id: "79C48AC616890D0A"
+			rewards: [
+				{
+					count: 18
+					id: "166A46C540ACAC31"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2B66A54B71018EEC"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest79C48AC616890D0A.title}"
+			x: 4.5d
+			y: 40.0d
+		}
+		{
+			dependencies: ["79C48AC616890D0A"]
+			description: [
+				"{ftbquests.chapter.gregtech.questF2F12D578D664E5B.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questF2F12D578D664E5B.description2}"
+			]
+			icon: "gtceu:research_station"
+			id: "F2F12D578D664E5B"
+			rewards: [
+				{
+					count: 18
+					id: "0D957E2183C27157"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3B23E54801C5B70D"
+				item: "gtceu:research_station"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.questF2F12D578D664E5B.title}"
+			x: 4.5d
+			y: 42.5d
+		}
+		{
+			dependencies: ["CF9FE85C95F0E0B9"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest6A6DCD8E3CCF41B5.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest6A6DCD8E3CCF41B5.description2}"
+			]
+			icon: "gtceu:luv_fusion_reactor"
+			id: "6A6DCD8E3CCF41B5"
+			rewards: [
+				{
+					count: 20
+					id: "009EB6FA6638BD1B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "BCFA57DD36970D22"
+					item: "gtceu:luv_fusion_reactor"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0A5905DFB516F326"
+					item: "gtceu:fusion_casing"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest6A6DCD8E3CCF41B5.title}"
+			x: 4.5d
+			y: 45.0d
+		}
+		{
+			dependencies: ["560FC9160DFCC9C9"]
+			description: [
+				"{ftbquests.chapter.gregtech.questCF8DD8DA6095F03D.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questCF8DD8DA6095F03D.description2}"
+			]
+			icon: "gtceu:steam_large_turbine"
+			id: "CF8DD8DA6095F03D"
+			rewards: [
+				{
+					count: 16
+					id: "F7B8F0EF3B746ED5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "257EE58038F36EC9"
+					item: "gtceu:steam_large_turbine"
+					type: "item"
+				}
+				{
+					id: "71B38DE4A49AA180"
+					item: "gtceu:gas_large_turbine"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.questCF8DD8DA6095F03D.title}"
+			x: 4.5d
+			y: 47.5d
+		}
+		{
+			dependencies: ["70F82E45339A6D33"]
+			description: [
+				"{ftbquests.chapter.gregtech.questC0F2231CB4AAAE0D.description1}"
+			]
+			icon: "gtceu:large_combustion_engine"
+			id: "C0F2231CB4AAAE0D"
+			rewards: [
+				{
+					count: 18
+					id: "9D2A7826AFC88ECF"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2C3CC579CE317FA5"
+					item: "gtceu:large_combustion_engine"
+					type: "item"
+				}
+				{
+					id: "293F8BE80DFFD1A9"
+					item: "gtceu:extreme_combustion_engine"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.questC0F2231CB4AAAE0D.title}"
+			x: 4.5d
+			y: 50.0d
+		}
+		{
+			dependencies: ["F157F03A8C8B2F48"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest440601914FC4D949.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest440601914FC4D949.description2}"
+				""
+				"{ftbquests.chapter.gregtech.quest440601914FC4D949.description3}"
+			]
+			icon: "gtceu:raw_tin"
+			id: "440601914FC4D949"
+			rewards: [
+				{
+					count: 8
+					id: "F3E55B668F5A45CA"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "C5883016D50CCFA7"
+				title: "{ftbquests.chapter.gregtech.quest440601914FC4D949.task.C5883016D50CCFA7.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest440601914FC4D949.title}"
+			x: -4.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["440601914FC4D949"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest27A3A63BD605A990.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest27A3A63BD605A990.description2}"
+			]
+			icon: "gtceu:prospector.lv"
+			id: "27A3A63BD605A990"
+			rewards: [
+				{
+					count: 10
+					id: "373F66F1D6BDC375"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "8EC2ADBC8EB60403"
+				item: "gtceu:prospector.lv"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest27A3A63BD605A990.title}"
+			x: -4.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["440601914FC4D949"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest4590512FFD72C37C.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest4590512FFD72C37C.description2}"
+			]
+			icon: "gtceu:crushed_gold_ore"
+			id: "4590512FFD72C37C"
+			rewards: [
+				{
+					count: 10
+					id: "318C0EB3ED306FEF"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "C58EB373D0008DD6"
+					item: "gtceu:crushed_gold_ore"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "610F28A2783B5B15"
+					item: "gtceu:purified_gold_ore"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest4590512FFD72C37C.title}"
+			x: -4.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["4590512FFD72C37C"]
+			description: [
+				"{ftbquests.chapter.gregtech.questE4BE6378216F5837.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questE4BE6378216F5837.description2}"
+			]
+			icon: "gtceu:pure_redstone_dust"
+			id: "E4BE6378216F5837"
+			rewards: [
+				{
+					count: 10
+					id: "54F7F9B89E2A33D1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "44BE0C49128D3AFB"
+				item: "gtceu:pure_redstone_dust"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.questE4BE6378216F5837.title}"
+			x: -4.5d
+			y: 27.5d
+		}
+		{
+			dependencies: ["440601914FC4D949"]
+			description: [
+				"{ftbquests.chapter.gregtech.questDE56EBC15D49D50E.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questDE56EBC15D49D50E.description2}"
+				""
+				"{ftbquests.chapter.gregtech.questDE56EBC15D49D50E.description3}"
+			]
+			icon: "gtceu:raw_lead"
+			id: "DE56EBC15D49D50E"
+			rewards: [
+				{
+					count: 10
+					id: "A6E78CDF5B70A567"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "CE0CF335C01763AE"
+				title: "{ftbquests.chapter.gregtech.questDE56EBC15D49D50E.task.CE0CF335C01763AE.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gregtech.questDE56EBC15D49D50E.title}"
+			x: -4.5d
+			y: 30.0d
+		}
+		{
+			dependencies: ["DE56EBC15D49D50E"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest6BC7D38604C89E5C.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest6BC7D38604C89E5C.description2}"
+			]
+			icon: "gtceu:raw_silver"
+			id: "6BC7D38604C89E5C"
+			rewards: [
+				{
+					count: 10
+					id: "CD31E393A13E03B4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "B53A893475A69062"
+				title: "{ftbquests.chapter.gregtech.quest6BC7D38604C89E5C.task.B53A893475A69062.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest6BC7D38604C89E5C.title}"
+			x: -4.5d
+			y: 32.5d
+		}
+		{
+			dependencies: ["E4BE6378216F5837"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest42C3CD698D011553.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest42C3CD698D011553.description2}"
+			]
+			icon: "gtceu:lv_electromagnetic_separator"
+			id: "42C3CD698D011553"
+			rewards: [
+				{
+					count: 12
+					id: "A3ACC644D6D1EE2F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6BAF2B400442FE00"
+					item: "gtceu:lv_thermal_centrifuge"
+					type: "item"
+				}
+				{
+					id: "77320A9C95AA47FD"
+					item: "gtceu:lv_electromagnetic_separator"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.quest42C3CD698D011553.title}"
+			x: -4.5d
+			y: 35.0d
+		}
+		{
+			dependencies: ["894E845D8A649A95"]
+			description: [
+				"{ftbquests.chapter.gregtech.questE63A8BAF2C70D00C.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questE63A8BAF2C70D00C.description2}"
+			]
+			icon: "gtca:green_house"
+			id: "E63A8BAF2C70D00C"
+			rewards: [
+				{
+					count: 16
+					id: "7D970C932B21AB94"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "631F013A7C3F861A"
+					item: "gtca:green_house"
+					type: "item"
+				}
+				{
+					id: "33A3F226E0D24588"
+					item: "gtmfo:greenhouse"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gregtech.questE63A8BAF2C70D00C.title}"
+			x: 9.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["E63A8BAF2C70D00C"]
+			description: [
+				"{ftbquests.chapter.gregtech.questC1876F3F936E52D7.description1}"
+				""
+				"{ftbquests.chapter.gregtech.questC1876F3F936E52D7.description2}"
+			]
+			icon: "gtse:lv_harvester"
+			id: "C1876F3F936E52D7"
+			rewards: [
+				{
+					count: 16
+					id: "AF4186481916C26B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "BC5AA3922A4B5DE3"
+				item: "gtse:lv_harvester"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.questC1876F3F936E52D7.title}"
+			x: 9.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["C1876F3F936E52D7"]
+			description: [
+				"{ftbquests.chapter.gregtech.quest23221821B9EA1BB7.description1}"
+				""
+				"{ftbquests.chapter.gregtech.quest23221821B9EA1BB7.description2}"
+			]
+			icon: "gtceu:me_pattern_buffer"
+			id: "23221821B9EA1BB7"
+			rewards: [
+				{
+					count: 18
+					id: "30A49E9813C17942"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "AFE6893C11B190CF"
+				item: "gtceu:me_stocking_input_bus"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gregtech.quest23221821B9EA1BB7.title}"
+			x: 9.0d
+			y: 32.5d
+		}
+	]
+	title: "{ftbquests.chapter.gregtech.title}"
+}
