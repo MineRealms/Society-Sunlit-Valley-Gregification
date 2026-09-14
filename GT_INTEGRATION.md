@@ -143,6 +143,33 @@ python config/ftbquests/tools/port_gregtech_quests.py
 python config/ftbquests/tools/translate_gregtech_quests.py
 ```
 
+### 3.4 服务端下发汉化（资源包方案）
+
+**结论**：直接把 lang 文件放进服务端 `kubejs/assets/` **无效**（客户端资源不会跨端同步）。
+服务端要"下发"汉化，需用 **服务端资源包**：
+
+```bash
+# 生成资源包（把 kubejs 的 12 个语言文件打包到 assets/minecraft/lang/）
+python config/ftbquests/tools/build_server_pack.py
+# 产出: <启动器根目录>\server-pack\GT-Quests-Localization.zip（固定时间戳，SHA1 可复现）
+```
+
+服务端 `server.properties`：
+
+```properties
+resource-pack=<资源包直链 URL>
+resource-pack-sha1=<脚本输出的 SHA1>
+require-resource-pack=false          # true = 玩家拒绝下载则踢出
+resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下载）","color":"gold"}
+```
+
+- 原理：`ftbquestlocalizer` 的任务文本最终由**原版/Forge 语言系统**解析
+  （mod 自身的 `/ftblang export` 也是生成 `assets/minecraft/lang/` 的资源包），
+  因此资源包里的 lang 会被加载，任务书的 `{ftbquests.chapter...}` 键即可解析。
+- 资源包可上传到 GitHub Release（`MineRealms/UpdateRepo` 的 `latest` 标签）或任意 HTTP 直链。
+- **注意**：每次改动任务文本/汉化后需重跑脚本，并把新 SHA1 填回 `server.properties`。
+- 备选方案：更新器镜像里已包含这两个 lang 文件，发布后客户端启动时自动更新（无需资源包）。
+
 ---
 
 ## 4. 验证记录
