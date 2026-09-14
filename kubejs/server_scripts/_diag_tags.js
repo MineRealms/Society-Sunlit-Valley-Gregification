@@ -41,9 +41,9 @@ ServerEvents.tags("item", (e) => {
   });
 
   for (let i = 0; i < all.length; i++) {
-    const t = all[i];
-    const items = resolve(t, 0);
-    if (items.length === 0) empty.push(t);
+    const tagName = all[i];
+    const items = resolve(tagName, 0);
+    if (items.length === 0) empty.push(tagName);
   }
 
   console.info("[TAGDIAG] TOTAL_TAGS = " + all.length + " | EMPTY_TAGS = " + empty.length);
@@ -56,8 +56,8 @@ ServerEvents.tags("item", (e) => {
 
   // 关键标签内容（复核洋葱）
   ["forge:crops/onion", "forge:onion", "forge:vegetables/onion", "forge:crops", "forge:seeds",
-   "forge:flour/wheat", "forge:pasta/raw_pasta"].forEach((t) => {
-    const items = resolve(t, 0);
-    console.info("[TAGDIAG] CHECK " + t + " = [" + items.join(", ") + "]");
+   "forge:flour/wheat", "forge:pasta/raw_pasta"].forEach((tag) => {
+    const items = resolve(tag, 0);
+    console.info("[TAGDIAG] CHECK " + tag + " = [" + items.join(", ") + "]");
   });
 });
