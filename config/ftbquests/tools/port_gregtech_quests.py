@@ -38,7 +38,7 @@ WORK_DIR = os.path.join(TOOLS_DIR, "gt_port")
 
 DEFAULT_SRC = r"G:\MinecraftGames\GregTech Odyssey(BaopuEdition)\.minecraft\versions\GregTech CEu Modern Community Pack\config\ftbquests\quests"
 
-GROUP_ID = "9F2C7A5E1B3D4C60"
+GROUP_ID = "4A46A5E1358A80A6"
 GROUP_TITLE = ("格雷科技", "GregTech")
 
 # 章节顺序（按电压等级 → 资源 → 多方块 → 里程碑）

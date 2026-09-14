@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "lv__low_voltage"
-	group: "9F2C7A5E1B3D4C60"
+	group: "4A46A5E1358A80A6"
 	icon: "gtceu:lv_electric_motor"
 	id: "7D50771C3FE033D7"
 	order_index: 2

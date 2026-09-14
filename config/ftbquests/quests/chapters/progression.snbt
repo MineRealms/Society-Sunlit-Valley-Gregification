@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	disable_toast: true
 	filename: "progression"
-	group: "9F2C7A5E1B3D4C60"
+	group: "4A46A5E1358A80A6"
 	icon: "gtceu:basic_electronic_circuit"
 	id: "28EBC0FF82EFD94B"
 	order_index: 15

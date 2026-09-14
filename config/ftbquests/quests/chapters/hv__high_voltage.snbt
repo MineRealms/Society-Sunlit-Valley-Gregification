@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "hv__high_voltage"
-	group: "9F2C7A5E1B3D4C60"
+	group: "4A46A5E1358A80A6"
 	icon: "gtceu:hv_electric_motor"
 	id: "237BDB19A9495869"
 	order_index: 4

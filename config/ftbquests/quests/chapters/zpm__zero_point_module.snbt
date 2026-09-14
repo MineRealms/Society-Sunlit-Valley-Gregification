@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "zpm__zero_point_module"
-	group: "9F2C7A5E1B3D4C60"
+	group: "4A46A5E1358A80A6"
 	icon: "gtceu:zpm_electric_motor"
 	id: "0945247E83444D90"
 	order_index: 8

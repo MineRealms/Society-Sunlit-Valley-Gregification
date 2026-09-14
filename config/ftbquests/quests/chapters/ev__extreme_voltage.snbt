@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ev__extreme_voltage"
-	group: "9F2C7A5E1B3D4C60"
+	group: "4A46A5E1358A80A6"
 	icon: "gtceu:ev_electric_motor"
 	id: "7FB9F636D95820A3"
 	order_index: 5

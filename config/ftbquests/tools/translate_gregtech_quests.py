@@ -226,7 +226,7 @@ def insert_lang(path, entries):
 
     # 移除旧的移植章节键（可重复执行）
     prefixes = tuple(f"ftbquests.chapter.{p}." for p in PORTED_FILES) + (
-        "ftbquests.chapter_groups.11469676895608327264.",)
+        "ftbquests.chapter_groups.5352147593860907174.",)
     parsed = [(k, l) for (k, l) in parsed if not k.startswith(prefixes)]
 
     new_items = []
@@ -363,8 +363,8 @@ def main():
         group = json.load(open(GROUP_PATH, encoding="utf-8"))
         en_all = dict(en_entries)
         zh_all = dict(zh_entries)
-        en_all["ftbquests.chapter_groups.11469676895608327264.title"] = group["en"]
-        zh_all["ftbquests.chapter_groups.11469676895608327264.title"] = group["zh"]
+        en_all["ftbquests.chapter_groups.5352147593860907174.title"] = group["en"]
+        zh_all["ftbquests.chapter_groups.5352147593860907174.title"] = group["zh"]
         insert_lang(os.path.join(LANG_DIR, "zh_cn.json"), zh_all)
         insert_lang(os.path.join(LANG_DIR, "en_us.json"), en_all)
         print("lang files updated: zh_cn.json / en_us.json")
