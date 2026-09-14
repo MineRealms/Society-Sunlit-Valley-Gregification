@@ -17,50 +17,54 @@
 	quests: [
 		{
 			description: [
-				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description1}"
+				"本整合包旨在指导你体验 &b&l格雷科技:社区版非官方现代版&r&r(也称为 &aGTCEu现代版&r 或 &aCEu现代版&r),这是 &aGTCE&r 的延续——而GTCE本身又是格雷科技的一个分支版本."
 				""
-				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description2}"
+				"每个电压等级都加入了新内容,甚至延伸至 &3终极电压&r,同时还新增了不可忽视的 &d生活质量优化&r."
 				""
-				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description3}"
-				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description4}"
-				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description5}"
+				"&aCEu现代版&r 使该模组适配了 Minecraft 的 &e最新版本&r&o(截至撰写时)&r.你可以使用默认快捷键 &eF4&r 打开任务书,若不习惯可随时更改按键设置."
+				"{@pagebreak}"
+				"这是款 &2纯 &l科技&r&2 向整合包&r,以 &d格雷科技&f 及其进阶体系为核心.要了解该模组及其全部新增特性,这里绝对是 &e绝佳起点&r!"
 				""
-				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description6}"
+				"你正在阅读的任务书 &e满载指引信息&r,助你畅游整合包.若感到迷茫,不妨多查阅——我们兼顾了 &d资深老玩家&r 与 &b新手&r 的需求而编写."
 			]
-			icon: "kubejs:greg_icon"
+			icon: "gtceu:iron_wrench"
 			id: "25289F9E8AE01C29"
-			rewards: [{
-				auto: "invisible"
-				icon: "minecraft:cooked_beef"
-				id: "6FD85EC9BD99C866"
-				item: "gtceu:sus_record"
-				title: "{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.reward.6FD85EC9BD99C866.title}"
-				type: "item"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					icon: "minecraft:cooked_beef"
+					id: "6FD85EC9BD99C866"
+					item: "gtceu:sus_record"
+					title: "牛排"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.subtitle}"
-			tasks: [{
-				id: "6C1F570DB9013DE7"
-				title: "{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.task.6C1F570DB9013DE7.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.title}"
+			subtitle: "愿你享受这段旅程"
+			tasks: [
+				{
+					id: "6C1F570DB9013DE7"
+					title: "欢迎!"
+					type: "checkmark"
+				}
+			]
+			title: "欢迎来到 &d格雷科技&f CEu!"
 			x: -0.75d
 			y: -1.5d
 		}
 		{
 			dependencies: ["25289F9E8AE01C29"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.description1}"
+				"若熟悉 &d格雷科技&f,你或许知道它对原版合成配方有 &c大量削弱&r.&bGTCEu&r 同样不会手软——看看 &e桶&r 或 &e纸&r 的合成配方便知.不过前期我们会适当放宽限制,1根原木将产出4块木板.&a欢呼吧!&r"
 				""
-				"{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.description2}"
+				"&o&8“我的冒险要从徒手撸树开始!？呃,我以为 &d格雷科技&f 会带来些新花样呢...“&r"
 			]
 			icon: "minecraft:oak_log"
 			id: "0EAF2C5B5EB755C5"
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.subtitle}"
+			subtitle: "循惯例开启你的旅程"
 			tasks: [
 				{
 					count: 6L
@@ -73,7 +77,7 @@
 						}
 					}
 					match_nbt: false
-					title: "{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.task.34F2867EAF0914BF.title}"
+					title: "任意原木"
 					type: "item"
 				}
 				{
@@ -82,30 +86,32 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.title}"
+			title: "一切的开始"
 			x: -0.75d
 			y: -3.0d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.description1}"
+				"这是一份 &e实用&r 的资源清单,列举了前期需要大量收集的材料.请获取比本任务要求更多的数量——否则很快便会耗尽.在 &a&d格雷科技&f&r 中,养成超额采集的习惯总是明智的."
 				""
-				"{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.description2}"
+				"我们建议先 &e完成此任务&r,以便领取 &b奖励&r.这样就能在被逼下矿前,先进行一小段主线(即 &o有趣&r 的)进阶流程."
 				""
-				"{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.description3}"
+				"若刚接触 &a&d格雷科技&f&r,八台熔炉或许显得 &c过于夸张&r,但请相信…再多也不嫌多."
 			]
 			icon: "minecraft:sugar_cane"
 			id: "0436F7B60BDEB091"
-			rewards: [{
-				count: 24
-				id: "2D2C971E9E651C2C"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 24
+					id: "2D2C971E9E651C2C"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.subtitle}"
+			subtitle: "收集些资源吧!"
 			tasks: [
 				{
 					count: 4L
@@ -138,47 +144,49 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.title}"
+			title: "进阶所需何物？"
 			x: -0.75d
 			y: -4.5d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description1}"
+				"&2&d格雷科技&f&r 中的 &a矿石&f 生成机制与原版或其他常规模组截然不同.所有矿石均以 &e巨型矿脉&r 形式生成,单条矿脉可包含 &d数百个&o&r 矿石方块."
 				""
-				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description2}"
-				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description3}"
-				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description4}"
+				"GTCEu现已内置 &d可视勘探&r 功能,可将已发现的矿脉标注在地图上.&9&a右键点击&f&r 矿脉中的矿石方块或地表岩石即可添加标记.在全屏地图左下角可切换矿脉视图显示."
+				"{@pagebreak}"
+				"矿石生成的 &a完整机制&f 详见“技巧与提示”栏目,以下是需掌握的重点:"
 				""
-				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description5}"
+				"&9-&r 矿脉按 &4网格&r 生成.每个矿脉在基轴方向上 &9间隔约3区块&r."
 				""
-				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description6}"
+				"&9-&r 为每个已发现矿脉设置 &d路径点&r(默认按键 &4N&r)并标注类型是良好习惯——你可能需多次重返矿脉."
 			]
 			icon: "gtceu:cobaltite_ore"
 			id: "0C690272ED4FB1C3"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.subtitle}"
-			tasks: [{
-				id: "3FA401CACE8BBE5D"
-				title: "{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.task.3FA401CACE8BBE5D.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.title}"
+			subtitle: "说是矿石生成,不如叫催眠生成!"
+			tasks: [
+				{
+					id: "3FA401CACE8BBE5D"
+					title: "哇,矿石听起来真令人兴奋"
+					type: "checkmark"
+				}
+			]
+			title: "&a银矿生成&f"
 			x: -2.25d
 			y: -3.0d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest13354F24F80F65FB.description1}"
+				"你是否知道&a&d格雷科技&f&r拥有专属工具套装？若不清楚,接下来这个消息会更让你惊喜:它们&e&l全面超越&r原版工具."
 				""
-				"{ftbquests.chapter.gtceu.quest13354F24F80F65FB.description2}"
+				"以&d格雷科技&f斧为例.当你用它砍伐树木时,它能为你放倒&2整棵树&r.名副其实的伐木工!"
 				""
-				"{ftbquests.chapter.gtceu.quest13354F24F80F65FB.description3}"
+				"持续不断的“伐木作业“会飞速消耗斧头的&9耐久度&r,建议选用&e更坚固的材料&r(例如&b钻石&r)制作斧头.注意别误做成原版&a钻石斧&f."
 				""
-				"{ftbquests.chapter.gtceu.quest13354F24F80F65FB.description4}"
+				"作为奖励,这些&2云杉树苗&r可用来培育参天大树.近期你需要大量熔炼操作,木板将作为&d高效&r燃料来源助你渡过难关!"
 			]
 			icon: {
 				Count: 1
@@ -189,487 +197,497 @@
 				}
 			}
 			id: "13354F24F80F65FB"
-			rewards: [{
-				count: 8
-				id: "60E07F9D0763E8E1"
-				item: "minecraft:spruce_sapling"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "60E07F9D0763E8E1"
+					item: "minecraft:spruce_sapling"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest13354F24F80F65FB.subtitle}"
-			tasks: [{
-				id: "3880A08A72884627"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:aluminium_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 767
-										ToolSpeed: 8.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:vanadium_steel_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 3
-										MaxDamage: 1535
-										ToolSpeed: 5.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:naquadah_alloy_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										RelocateMinedBlocks: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 5
-										MaxDamage: 3071
-										ToolSpeed: 42.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:flint_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 63
-										ToolSpeed: 3.5f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:red_steel_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 3
-										MaxDamage: 2559
-										ToolSpeed: 9.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:blue_steel_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 3
-										MaxDamage: 1023
-										ToolSpeed: 17.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:rose_gold_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									Enchantments: [{
-										id: "minecraft:fortune"
-										lvl: 2s
-									}]
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 767
-										ToolSpeed: 14.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:hsse_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 4
-										MaxDamage: 3071
-										ToolSpeed: 7.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:iron_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 255
-										ToolSpeed: 4.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:titanium_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 3
-										MaxDamage: 1535
-										ToolSpeed: 10.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:neutronium_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										RelocateMinedBlocks: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 6
-										MaxDamage: 65534
-										ToolSpeed: 182.0f
-									}
-									HideFlags: 2
-									Unbreakable: 1b
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:duranium_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										RelocateMinedBlocks: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 5
-										MaxDamage: 8191
-										ToolSpeed: 16.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:bronze_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
-									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 191
-										ToolSpeed: 5.0f
-									}
-									HideFlags: 2
-								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:invar_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									Enchantments: [
-										{
-											id: "minecraft:efficiency"
-											lvl: 1s
+			subtitle: "谁还需要矿脉连锁？"
+			tasks: [
+				{
+					id: "3880A08A72884627"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:aluminium_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
 										}
-										{
-											id: "minecraft:bane_of_arthropods"
-											lvl: 3s
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 767
+											ToolSpeed: 8.0f
 										}
-									]
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 383
-										ToolSpeed: 6.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:sterling_silver_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									Enchantments: [{
-										id: "minecraft:smite"
-										lvl: 3s
-									}]
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:vanadium_steel_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 3
+											MaxDamage: 1535
+											ToolSpeed: 5.0f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 767
-										ToolSpeed: 5.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:cobalt_brass_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:naquadah_alloy_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											RelocateMinedBlocks: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 5
+											MaxDamage: 3071
+											ToolSpeed: 42.0f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 1023
-										ToolSpeed: 4.5f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:tungsten_steel_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:flint_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 63
+											ToolSpeed: 3.5f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 4
-										MaxDamage: 2047
-										ToolSpeed: 11.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:damascus_steel_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									Enchantments: [{
-										id: "minecraft:fortune"
-										lvl: 3s
-									}]
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:red_steel_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 3
+											MaxDamage: 2559
+											ToolSpeed: 9.0f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 3
-										MaxDamage: 1023
-										ToolSpeed: 8.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:tungsten_carbide_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:blue_steel_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 3
+											MaxDamage: 1023
+											ToolSpeed: 17.0f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 4
-										MaxDamage: 1023
-										ToolSpeed: 62.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:wrought_iron_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:rose_gold_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										Enchantments: [
+											{
+												id: "minecraft:fortune"
+												lvl: 2s
+											}
+										]
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 767
+											ToolSpeed: 14.0f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 2
-										MaxDamage: 383
-										ToolSpeed: 4.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:ultimet_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:hsse_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 4
+											MaxDamage: 3071
+											ToolSpeed: 7.0f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 4
-										MaxDamage: 2047
-										ToolSpeed: 12.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:steel_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:iron_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 255
+											ToolSpeed: 4.0f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 3
-										MaxDamage: 511
-										ToolSpeed: 7.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:stainless_steel_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:titanium_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 3
+											MaxDamage: 1535
+											ToolSpeed: 10.0f
+										}
+										HideFlags: 2
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 3
-										MaxDamage: 1023
-										ToolSpeed: 9.0f
-									}
-									HideFlags: 2
 								}
-							}
-							{
-								Count: 1b
-								id: "gtceu:diamond_axe"
-								tag: {
-									DisallowContainerItem: 0b
-									GT.Behaviours: {
-										DisableShields: 1b
-										TreeFelling: 1b
+								{
+									Count: 1b
+									id: "gtceu:neutronium_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											RelocateMinedBlocks: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 6
+											MaxDamage: 65534
+											ToolSpeed: 182.0f
+										}
+										HideFlags: 2
+										Unbreakable: 1b
 									}
-									GT.Tool: {
-										Damage: 0
-										HarvestLevel: 3
-										MaxDamage: 767
-										ToolSpeed: 8.0f
-									}
-									HideFlags: 2
 								}
-							}
-						]
+								{
+									Count: 1b
+									id: "gtceu:duranium_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											RelocateMinedBlocks: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 5
+											MaxDamage: 8191
+											ToolSpeed: 16.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:bronze_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 191
+											ToolSpeed: 5.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:invar_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										Enchantments: [
+											{
+												id: "minecraft:efficiency"
+												lvl: 1s
+											}
+											{
+												id: "minecraft:bane_of_arthropods"
+												lvl: 3s
+											}
+										]
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 383
+											ToolSpeed: 6.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:sterling_silver_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										Enchantments: [
+											{
+												id: "minecraft:smite"
+												lvl: 3s
+											}
+										]
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 767
+											ToolSpeed: 5.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:cobalt_brass_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 1023
+											ToolSpeed: 4.5f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:tungsten_steel_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 4
+											MaxDamage: 2047
+											ToolSpeed: 11.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:damascus_steel_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										Enchantments: [
+											{
+												id: "minecraft:fortune"
+												lvl: 3s
+											}
+										]
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 3
+											MaxDamage: 1023
+											ToolSpeed: 8.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:tungsten_carbide_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 4
+											MaxDamage: 1023
+											ToolSpeed: 62.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:wrought_iron_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 2
+											MaxDamage: 383
+											ToolSpeed: 4.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:ultimet_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 4
+											MaxDamage: 2047
+											ToolSpeed: 12.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:steel_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 3
+											MaxDamage: 511
+											ToolSpeed: 7.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:stainless_steel_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 3
+											MaxDamage: 1023
+											ToolSpeed: 9.0f
+										}
+										HideFlags: 2
+									}
+								}
+								{
+									Count: 1b
+									id: "gtceu:diamond_axe"
+									tag: {
+										DisallowContainerItem: 0b
+										GT.Behaviours: {
+											DisableShields: 1b
+											TreeFelling: 1b
+										}
+										GT.Tool: {
+											Damage: 0
+											HarvestLevel: 3
+											MaxDamage: 767
+											ToolSpeed: 8.0f
+										}
+										HideFlags: 2
+									}
+								}
+							]
+						}
 					}
+					title: "拿任意伐木斧!"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.gtceu.quest13354F24F80F65FB.task.3880A08A72884627.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest13354F24F80F65FB.title}"
+			]
+			title: "伐木进行时"
 			x: -2.25d
 			y: -4.5d
 		}
@@ -677,98 +695,106 @@
 			dependencies: ["36DD94945D5B4A80"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.gtceu.quest563C96885A227C9F.description1}"
+				"&a锻铁&f虽含碳量极低,但足以让它比普通铁&b更坚韧&r."
 				""
-				"{ftbquests.chapter.gtceu.quest563C96885A227C9F.description2}"
+				"用&a锻铁&f制作的&a&d格雷科技&f&r工具比铁质工具&e耐用50%&r.在获得&2更高级材料&r前,建议优先使用&a锻铁&f."
 				""
-				"{ftbquests.chapter.gtceu.quest563C96885A227C9F.description3}"
+				"可通过&e熔炼&r&a铁粒&f获得&a锻铁粒&r,再合成锻铁锭.注意两者&4&l无法&r相互替代,请勿转换全部铁储备."
 				""
-				"{ftbquests.chapter.gtceu.quest563C96885A227C9F.description4}"
+				"这个过程或许耗时,但请放心,很快你就能解锁&e更高效&r的&a锻铁&f生产方式."
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "563C96885A227C9F"
-			rewards: [{
-				count: 5
-				id: "3CDB383AFEBDB519"
-				item: "gtceu:wrought_iron_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "3CDB383AFEBDB519"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest563C96885A227C9F.subtitle}"
-			tasks: [{
-				id: "3DAB1D757B3B049D"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/wrought_iron"
+			subtitle: "锻造谋杀案"
+			tasks: [
+				{
+					id: "3DAB1D757B3B049D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/wrought_iron"
+						}
 					}
+					title: "&a锻铁锭&f"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.gtceu.quest563C96885A227C9F.task.3DAB1D757B3B049D.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest563C96885A227C9F.title}"
+			]
+			title: "&a胜于钢铁&f"
 			x: 0.75d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1ECBA1CBFFB9F625"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.description1}"
+				"恭喜——这是你的首把&o正牌&r&a&d格雷科技&f&r工具,也是&d众多&r工具中的第一件."
 				""
-				"{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.description2}"
+				"格雷科技工具可用多种材料制作.在合成配方中使用时&b不会消耗&r工具本身,仅损失耐久度.建议从铁质工具起步,若已完成前置任务,也可选择&a锻铁&f材质."
 				""
-				"{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.description3}"
+				"&9&l锻造锤&f:&r 常见于早期配方的基础合成工具,次要功能是通过右键&m敲击&r使机器静音."
 				""
-				"{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.description4}"
+				"所有&a&d格雷科技&f&r工具都支持在铁砧上用对应材料修复(与原版工具机制相同).若缺乏经验值,现可合成&e附魔瓶&r."
 			]
 			id: "7DEB73FD649BDFB6"
-			rewards: [{
-				id: "6C50A2A3D43D3FEE"
-				item: "gtceu:iron_plate"
-				random_bonus: 2
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6C50A2A3D43D3FEE"
+					item: "gtceu:iron_plate"
+					random_bonus: 2
+					type: "item"
+				}
+			]
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.subtitle}"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "gtceu:steel_hammer"
-					tag: {
-						Damage: 0
-						GT.Tool: { }
+			subtitle: "你的首件GT工具!"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:steel_hammer"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
 					}
-				}
-				id: "1A4DDB914D7D2F3C"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/hammers"
+					id: "1A4DDB914D7D2F3C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/hammers"
+						}
 					}
+					title: "任意锤子!"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.task.1A4DDB914D7D2F3C.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.title}"
+			]
+			title: "停!锤子时间到!"
 			x: 2.25d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description1}"
+				"这把锤子与合成用锤截然不同,它实际上是&d3x3范围采掘&r的镐类工具!"
 				""
-				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description2}"
+				"若熟悉&a&l匠魂模组&r,你会发现其运作方式与该模组的锤子&e高度相似&r."
 				""
-				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description3}"
+				"手持采矿锤时按住Shift+右键可调整作用范围."
 				""
-				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description4}"
+				"请&b善加利用&r这些锤子!它们能助你以&e破纪录速度&r清空整个矿脉."
 				""
-				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description5}"
+				"&e注:&r所有涉及&d格雷科技&f工具的任务皆可用任意材料制作的工具完成,不仅限于示例材质."
 			]
 			icon: {
 				Count: 1
@@ -781,117 +807,123 @@
 			id: "4A365A7CC9E374F9"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.subtitle}"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "gtceu:steel_mining_hammer"
-					tag: {
-						Damage: 0
-						GT.Tool: { }
+			subtitle: "高效采矿新时代"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "gtceu:steel_mining_hammer"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
 					}
-				}
-				id: "4F372C393ADC6CE2"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:tools/mining_hammers"
+					id: "4F372C393ADC6CE2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mining_hammers"
+						}
 					}
+					title: "任意采矿锤均可"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.task.4F372C393ADC6CE2.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.title}"
+			]
+			title: "重锤出击!"
 			x: 2.25d
 			y: -4.5d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description1}"
+				"现实世界中,铁并非仅以纯净的&a铁矿石&f形式存在,而是以多种&a氧化形态&r或&e矿物&r形式出现."
 				""
-				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description2}"
+				"你需要收集大量&a铁质材料&f,因为很快你就会需要&9一大批&r.若寻找困难,可在&a&a银矿生成&f&r任务页查看关于&e矿脉&r的详细信息,也可查阅&2EMI&r中的&a矿物生成信息&f和&a矿物副产列表&f页面."
 				""
-				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description3}"
+				"我们所需的任何原矿都能直接熔炼成铁,总计有&d四种不同矿脉&r可提供铁资源."
 				""
-				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description4}"
-				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description5}"
-				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description6}"
+				"最后要注意,时运附魔&c无法&r作用于&d格雷科技&f的矿石,&7这很遗憾&r."
+				"{@pagebreak}"
+				"虽然在&b模组版Minecraft&r中,玩家常习惯在&a解锁&f某种&a矿石倍增产线&r前囤积矿石,但现阶段无需担心加工问题.鉴于&e采矿之旅&r能轻松获取大量矿石,直接熔炼在很长&o很长&r一段时间内仍是最高效的方式."
 				""
-				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description7}"
+				"收集任意&l&c要求的&d&a粗矿&f&r即可完成本任务!"
 			]
 			icon: "minecraft:iron_ingot"
 			id: "1ECBA1CBFFB9F625"
-			rewards: [{
-				count: 32
-				id: "6A8A7B57C7372740"
-				item: "gtceu:raw_magnetite"
-				type: "item"
-			}]
-			size: 0.75d
-			subtitle: "{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.subtitle}"
-			tasks: [{
-				id: "063705687ED657F5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:raw_iron"
-							}
-							{
-								Count: 1b
-								id: "gtceu:raw_yellow_limonite"
-							}
-							{
-								Count: 1b
-								id: "gtceu:raw_magnetite"
-							}
-							{
-								Count: 1b
-								id: "gtceu:raw_basaltic_mineral_sand"
-							}
-							{
-								Count: 1b
-								id: "gtceu:raw_granitic_mineral_sand"
-							}
-							{
-								Count: 1b
-								id: "gtceu:raw_pyrite"
-							}
-							{
-								Count: 1b
-								id: "gtceu:raw_goethite"
-							}
-							{
-								Count: 1b
-								id: "gtceu:raw_hematite"
-							}
-						]
-					}
+			rewards: [
+				{
+					count: 32
+					id: "6A8A7B57C7372740"
+					item: "gtceu:raw_magnetite"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.task.063705687ED657F5.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.title}"
+			]
+			size: 0.75d
+			subtitle: "这难道不讽刺吗……你不觉得？"
+			tasks: [
+				{
+					id: "063705687ED657F5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:raw_iron"
+								}
+								{
+									Count: 1b
+									id: "gtceu:raw_yellow_limonite"
+								}
+								{
+									Count: 1b
+									id: "gtceu:raw_magnetite"
+								}
+								{
+									Count: 1b
+									id: "gtceu:raw_basaltic_mineral_sand"
+								}
+								{
+									Count: 1b
+									id: "gtceu:raw_granitic_mineral_sand"
+								}
+								{
+									Count: 1b
+									id: "gtceu:raw_pyrite"
+								}
+								{
+									Count: 1b
+									id: "gtceu:raw_goethite"
+								}
+								{
+									Count: 1b
+									id: "gtceu:raw_hematite"
+								}
+							]
+						}
+					}
+					title: "含铁矿石"
+					type: "item"
+				}
+			]
+			title: "铁,铁,还是铁!"
 			x: 0.75d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7DEB73FD649BDFB6"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description1}"
+				"推进进度需要更多&d格雷科技&f工具——以下是需要关注的品类."
 				""
-				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description2}"
+				"&9&l扳手:&r不仅是合成工具,更是操作&d格雷科技&f机器的专用工具……若觉得用镐拆卸不道德,它是最佳选择.也可兼作其他模组的&e通用扳手&r.右键设置机器输出面,潜行右键旋转机器方向."
 				""
-				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description3}"
+				"&9&l锉刀:&r纯合成工具……仅此而已.耶!"
 				""
-				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description4}"
-				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description5}"
-				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description6}"
+				"&9&l锯子:&r又一件合成工具.若设计更苛刻些,会强制要求用锯才能从木材配方中获取4块木板和4根木棍.当然,你仍可用它实现&a每原木得6块木板&r的高效产出."
+				"{@pagebreak}"
+				"&e注意:&r所有涉及&d格雷科技&f工具的任务,可用任意材料版本完成,不限于图示材质."
 			]
 			icon: {
 				Count: 1
@@ -914,7 +946,7 @@
 							value: "forge:tools/wrenches"
 						}
 					}
-					title: "{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.task.54E092F42DA65B86.title}"
+					title: "任意扳手!"
 					type: "item"
 				}
 				{
@@ -926,7 +958,7 @@
 							value: "forge:tools/files"
 						}
 					}
-					title: "{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.task.4D6B7E2B4C8E5747.title}"
+					title: "任意锉刀!"
 					type: "item"
 				}
 				{
@@ -938,56 +970,58 @@
 							value: "forge:tools/saws"
 						}
 					}
-					title: "{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.task.23D6CF49FC7E82A9.title}"
+					title: "任意锯子!"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.title}"
+			title: "重要工具"
 			x: 3.75d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description1}"
+				"更多工具——现阶段虽非关键,但后续仍需制作."
 				""
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description2}"
+				"&9&l螺丝刀:&r合成工具,用于机器与覆盖板的特殊配置."
 				""
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description3}"
+				"&9&l剪线钳:&r合成工具,配置线缆连接时必备.右键线缆可启用或禁用与其他方块的连接."
 				""
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description4}"
+				"&9&l研钵:&r合成工具,能将多种材料研磨成粉末."
 				""
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description5}"
+				"&9&l小刀:&r性能平庸的武器,更适合作为——&o你猜对了&r——合成工具!"
 				""
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description6}"
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description7}"
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description8}"
+				"&9&l软锤:&r通过右键点击即可&a切换&f机器运行模式的工具."
+				"{@pagebreak}"
+				"还有若干特殊用途工具值得提及."
 				""
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description9}"
+				"&9&l撬棍:&r实用工具,右键机器侧面可移除&a&d格雷科技&f&r机器的覆盖板."
 				""
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description10}"
+				"&9&l镰刀:&r强力农业工具,能大范围自动补种作物,同时也是出色的武器!"
 				""
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description11}"
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description12}"
-				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description13}"
+				"&9&l疏通器:&r用于清除&d格雷科技&f &a机器&r内残留流体的工具."
+				""
+				"&9&l屠刀:&r自带&e&a抢夺III&f&r附魔的武器,适合收集皮革与食物."
+				"{@pagebreak}"
+				"&e&l注意:&r本任务奖励&3&a大马士革钢&f&r是仅生成于主世界战利品的稀有材料,性能远超当前所有材质,请务必善用."
 			]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_screwdriver"
 				tag: {
 					Damage: 0
-					GT.Tool: {
-						DefaultEnchantments: [ ]
-					}
+					GT.Tool: { }
 				}
 			}
 			id: "5C3501DD3B4788FA"
-			rewards: [{
-				count: 16
-				id: "433F0ED89B586383"
-				item: "gtceu:damascus_steel_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "433F0ED89B586383"
+					item: "gtceu:damascus_steel_ingot"
+					type: "item"
+				}
+			]
 			size: 0.75d
 			tasks: [
 				{
@@ -999,7 +1033,7 @@
 							value: "forge:tools/screwdrivers"
 						}
 					}
-					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.4055931FAD6A5087.title}"
+					title: "任意螺丝刀!"
 					type: "item"
 				}
 				{
@@ -1011,7 +1045,7 @@
 							value: "forge:tools/wire_cutters"
 						}
 					}
-					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.0CB546DCA11BB335.title}"
+					title: "任意剪线钳!"
 					type: "item"
 				}
 				{
@@ -1023,7 +1057,7 @@
 							value: "forge:tools/mortars"
 						}
 					}
-					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.4DF1C23D7DD1FAD6.title}"
+					title: "任意研钵!"
 					type: "item"
 				}
 				{
@@ -1035,7 +1069,7 @@
 							value: "forge:tools/knives"
 						}
 					}
-					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.397DD831CA0665E7.title}"
+					title: "任意小刀!"
 					type: "item"
 				}
 				{
@@ -1047,245 +1081,269 @@
 							value: "forge:tools/mallets"
 						}
 					}
-					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.1BFE642ED0595A93.title}"
+					title: "任意软锤!"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.title}"
+			title: "更多工具"
 			x: 5.25d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description1}"
+				"&e&l&a焦炉&f&r很可能是你的第一个&a&d格雷科技&f&r多方块结构.恭喜!"
 				""
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description2}"
+				"它用于将&e煤炭&r转化为&a焦炭&r,或将&e木材&r转化为&a木炭&r,同时还会产生&d木焦油液&r作为&3额外&r产出."
 				""
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description3}"
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description4}"
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description5}"
+				"查看EMI中的&e多方块预览&r标签页(在任何多方块结构的控制器方块上按&dU&r键!)以查看结构图案."
+				"{@pagebreak}"
+				"&9注意:&r &l任何&r砖块都可以用&3&a焦炉仓&f&r替换.最多可放置五个."
 				""
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description6}"
+				"&a舱口&f支持自动化——它会&d自动导出&r流体和物品!也可用于向&a焦炉&f输入(可使用漏斗)."
 				""
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description7}"
+				"如果&a焦炉&f因未被使用的&e木焦油&r而完全填满,请破坏并替换&a焦炉&f方块.&3流体自动销毁&r功能将在游戏后期解锁."
 				""
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description8}"
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description9}"
-				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description10}"
+				"&l提示:&r一桶木焦油可为熔炉燃烧&c32&r个物品!充分利用这一点,别再烧木板了."
+				"{@pagebreak}"
+				"&l&3背景知识:&r&o多方块结构的概念是模组版Minecraft的经典设计.想想IC2的&a核反应堆&f,或&d铁路&f的&a焦炉&f——在当时真是革命性的!&r"
 			]
 			icon: "gtceu:coke_oven"
 			id: "4946FC5BCA4CCA88"
 			min_required_dependencies: 1
-			rewards: [{
-				id: "60891A0DEF29E9A1"
-				item: "gtceu:exquisite_coke_gem"
-				random_bonus: 2
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "60891A0DEF29E9A1"
+					item: "gtceu:exquisite_coke_gem"
+					random_bonus: 2
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.subtitle}"
-			tasks: [{
-				id: "3545479A7C09CDFC"
-				item: "gtceu:coke_oven"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.title}"
+			subtitle: "你的第一个大项目……希望如此"
+			tasks: [
+				{
+					id: "3545479A7C09CDFC"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+			]
+			title: "&a焦炉&f"
 			x: 5.25d
 			y: -4.5d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.description1}"
+				"更多资源总是好的.你即将进入&e蒸汽时代&r——许多&e蒸汽时代&r机器都需要铜和锡,所以查看矿石标签页了解它们的矿脉分布,然后开始挖掘吧!"
 				""
-				"{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.description2}"
+				"如果不同的矿石名称让你&b困惑&r,可以通过查看物品提示中的&d分子式&r快速识别矿石所含元素.铜是&oCu&r,锡是&oSn&r,铁是&oFe&r,其他元素可查阅&3元素周期表&r.是时候复习化学知识了——&l后期&r会用到."
 				""
-				"{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.description3}"
+				"此任务可用&9任意一种金属&r完成,因此你可以将缺失的金属作为奖励领取.务必尽快找到两种金属的来源,因为需要&a&o某种&r&a铜锡合金&r才能度过&e蒸汽时代&r."
 			]
 			icon: "minecraft:copper_ingot"
 			id: "45969FFBF88F4FBB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2C28FA1A5275D24E"
-				table_id: 1702176335602373230L
-				type: "choice"
-			}]
-			size: 0.75d
-			subtitle: "{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.subtitle}"
-			tasks: [{
-				count: 32L
-				id: "616556ECE4DB6103"
-				item: {
-					Count: 32
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:copper_ingot"
-							}
-							{
-								Count: 1b
-								id: "gtceu:tin_ingot"
-							}
-						]
-					}
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2C28FA1A5275D24E"
+					table_id: 1702176335602373230L
+					type: "choice"
 				}
-				title: "{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.task.616556ECE4DB6103.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.title}"
+			]
+			size: 0.75d
+			subtitle: "收集更多资源!"
+			tasks: [
+				{
+					count: 32L
+					id: "616556ECE4DB6103"
+					item: {
+						Count: 32
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:copper_ingot"
+								}
+								{
+									Count: 1b
+									id: "gtceu:tin_ingot"
+								}
+							]
+						}
+					}
+					title: "32个铜或锡"
+					type: "item"
+				}
+			]
+			title: "迈向青铜时代!"
 			x: 3.75d
 			y: -1.5d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description1}"
+				"&e青铜&r是铜和锡的&2合金&r.将3份铜和1份锡研磨成粉,混合后熔炼.如果操作方式不清楚,请查看&o“&d更多工具&r&o“&r任务."
 				""
-				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description2}"
+				"现在不要将所有的铜和锡都用于制作青铜!很快你就能以更优比例生产青铜."
 				""
-				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description3}"
-				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description4}"
-				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description5}"
+				"&e&l进程现将继续在蒸汽时代章节中展开.&r"
+				"{@pagebreak}"
+				"&l&3背景知识:&r&o现实中的青铜铜锡比例更接近7:1.这里(以及大多数模组版Minecraft中)出于游戏平衡考虑并&4非&f如此.类似需要调整的设定还有很多——&e这里没有 realism&f."
 			]
 			icon: "gtceu:bronze_ingot"
 			id: "315DBB3B23F95E0D"
-			rewards: [{
-				count: 32
-				id: "5F229B651404DF0E"
-				item: "minecraft:clay_ball"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "5F229B651404DF0E"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.subtitle}"
-			tasks: [{
-				count: 24L
-				id: "39AEA2923971A2B5"
-				item: "gtceu:bronze_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.title}"
+			subtitle: "人类的第一种合金——也是你的!"
+			tasks: [
+				{
+					count: 24L
+					id: "39AEA2923971A2B5"
+					item: "gtceu:bronze_ingot"
+					type: "item"
+				}
+			]
+			title: "青铜时代？不,是&e蒸汽时代&r!"
 			x: 5.25d
 			y: -1.5d
 		}
 		{
 			dependencies: ["7DEB73FD649BDFB6"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.description1}"
+				"桶的合成配方已被&d&l更改.&r现在需要板材——&owahoo&r."
 				""
-				"{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.description2}"
+				"板材在&a&d格雷科技&f&r中&b无处不在&r.在工作台中用新&9锤子&r将两个锭组合即可制成板材.这个比例有点&c昂贵&r,但后续会有更好的板材配方."
 				""
-				"{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.description3}"
+				"将这桶装满&b水&r的&e&a木桶&f&r作为奖励.嗯……这奖励是不是有点奇怪？我们只是想告诉你所有&aGTCEu&r储罐都是可携带的."
 			]
 			icon: "minecraft:bucket"
 			id: "592BD683A48C2AA2"
-			rewards: [{
-				id: "68D4ECFA9AD5349A"
-				item: {
-					Count: 1
-					id: "gtceu:wood_drum"
-					tag: {
-						Fluid: {
-							Amount: 16000L
-							FluidName: "minecraft:water"
+			rewards: [
+				{
+					id: "68D4ECFA9AD5349A"
+					item: {
+						Count: 1
+						id: "gtceu:wood_drum"
+						tag: {
+							Fluid: {
+								Amount: 16000L
+								FluidName: "minecraft:water"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.subtitle}"
-			tasks: [{
-				id: "5DD165E4EB34C022"
-				item: "minecraft:bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.title}"
+			subtitle: "#真实感"
+			tasks: [
+				{
+					id: "5DD165E4EB34C022"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			title: "格雷出手了"
 			x: 2.25d
 			y: -1.5d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.description1}"
+				"好吧,我们足够慷慨地保留了原木与木板的转化比例,但这里是&d格雷科技&f——在普通熔炉中&4&l无法烧制&r木炭.你需要制作一个&d&l&a焦炉&f&r才能弄到些&e木炭&r."
 				""
-				"{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.description2}"
+				"木板作为&e熔炉燃料&r仍然相当不错,尤其是一块原木能产出&l&3四块&r木板."
 				""
-				"{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.description3}"
+				"若对此不满——通常你可以在&aGTCEu&r配置中&b恢复&r为原版设定，但目前该配置选项存在故障。若要&e撤销&r此削弱，你可以删除&bkubejs/server_scripts&r中的\"charcoal.js\"脚本！"
 			]
 			icon: "minecraft:charcoal"
 			id: "36DD94945D5B4A80"
-			rewards: [{
-				count: 16
-				id: "5408859E43668198"
-				item: "minecraft:coal"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "5408859E43668198"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.subtitle}"
-			tasks: [{
-				count: 48L
-				id: "3DF01E4FACBB1D53"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
+			subtitle: "这里不行!"
+			tasks: [
+				{
+					count: 48L
+					id: "3DF01E4FACBB1D53"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
 					}
+					title: "我们需要更多原木"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.task.3DF01E4FACBB1D53.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.title}"
+			]
+			title: "木炭？"
 			x: 0.75d
 			y: -1.5d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description1}"
+				"这款&b轻量级&r整合包已包含足够的生活质量改进(&o希望&r)满足你的需求,且当前版本&a完全可玩&r."
 				""
-				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description2}"
-				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description3}"
-				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description4}"
+				"&d&d储物抽屉&f&r和&d&d应用能源2&f&r的加入有助于&e存储&r和&e物流&r管理.它们的合成配方已适配进程规划,但你应该不需要花费50小时才能造出第一个&5&a分子装配室&f&r.此外还有其它模组可提供&a实用的生活质量优化&r."
+				"{@pagebreak}"
+				"但或许你需要……&o更多内容&r？"
 				""
-				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description5}"
+				"单人游戏时,可随意&a添加模组&r.更多&b生活质量改进&r会很不错……更多&3科技类&r模组能满足你的渴望……甚至一些&5魔法模组&r也行,只要别添加&e&d等价交换重制版&f&r.说好了？"
 				""
-				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description6}"
+				"在1.12.2版本的&aGregtech: CEu&r中,曾有多个&a&d格雷科技&f&r扩展模组,未来可能移植至1.20.1.请放心,若有模组登陆此版本,本整合包会尽&d最大努力&r支持!"
 			]
 			icon: "minecraft:structure_void"
 			id: "1283B4D7B5D82193"
-			rewards: [{
-				id: "460EC827273306A5"
-				item: "functionalstorage:configuration_tool"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "460EC827273306A5"
+					item: "storagedrawers:quantify_key"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.subtitle}"
-			tasks: [{
-				id: "70C69E5432F6C3BE"
-				title: "{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.task.70C69E5432F6C3BE.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.title}"
+			subtitle: "正在安装DecoCraft"
+			tasks: [
+				{
+					id: "70C69E5432F6C3BE"
+					title: "我愿承担所有模组冲突的责任;)"
+					type: "checkmark"
+				}
+			]
+			title: "更多模组？"
 			x: 2.25d
 			y: 0.0d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.description1}"
+				"别担心,这些合成物其实很有用——你将来需要制作&e数百个&r这类零件.现在正是养成习惯的好时机."
 				""
-				"{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.description2}"
+				"最好熟悉&o\"&b批量合成&r&o\"&r的概念:如果需要1个板,试着做8个等等.这样你就会有大量&d中间材料&r为后续合成做准备.早期就合成&a成组的杆&r或&a螺丝&r可能看似不合理,但它们最终都会被用掉,为你省去未来大量琐碎的合成工作."
 				""
-				"{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.description3}"
+				"若需&e更多&r说服力,不妨看看此任务的&d奖励&r."
 			]
 			icon: "minecraft:bone_meal"
 			id: "49A04E63F40D65C0"
@@ -1345,7 +1403,7 @@
 			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.subtitle}"
+			subtitle: "展现你的微合成才华!"
 			tasks: [
 				{
 					count: 16L
@@ -1360,16 +1418,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.title}"
+			title: "小小的强度测试"
 			x: 3.75d
 			y: 0.0d
 		}
 		{
 			dependencies: ["45969FFBF88F4FBB"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest62212F2B51AC779E.description1}"
+				"铁、铜和锡只能支撑你走这么远.&e蒸汽时代&r期间偶尔会需要&4红石&r和&b钻石&r,而镍、铅和银也是值得储备的资源.所有这些&a很快&r都会派上用场."
 				""
-				"{ftbquests.chapter.gtceu.quest62212F2B51AC779E.description2}"
+				"&o&8若寻找这些材料有困难,请查阅矿石标签页!&r"
 			]
 			icon: "gtceu:silver_ingot"
 			id: "62212F2B51AC779E"
@@ -1419,7 +1477,7 @@
 			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest62212F2B51AC779E.subtitle}"
+			subtitle: "有时,低效是为了更高效!"
 			tasks: [
 				{
 					count: 64L
@@ -1452,189 +1510,203 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.gtceu.quest62212F2B51AC779E.title}"
+			title: "早期投资"
 			x: 5.25d
 			y: 0.0d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description1}"
+				"请务必&a认真&r阅读&l本&r任务——其中包含一些&d关键信息&r,这些信息将在整个游戏过程中持续有效."
 				""
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description2}"
+				"此类指导性任务会在其解锁的章节中出现.若担心遗漏内容,也可随时查阅&b“指南与更多“&r任务标签页."
 				""
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description3}"
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description4}"
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description5}"
+				"任务体系旨在引导您完成&a&d格雷科技&f&r进程中的所有重要阶段.每个任务都应具有&2参考价值&r——若存在完全可选的内容,我们会特别说明,因此无需担心错过关键内容."
+				"{@pagebreak}"
+				"在&d和平模式&r下游玩本整合包毫无弊端——事实上我们极力推荐此模式,因为敌对生物几乎不会带来收益.请随意使用&o/keepInventory&r、&o/sethome&r指令,并按需利用迷你地图传送功能."
 				""
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description6}"
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description7}"
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description8}"
+				"虽然不会强制要求这些设置,但我们&4不&r打算让本整合包提供惩罚性的&e生存模式&r体验,而是更侧重于帮助您掌握&a&d格雷科技&f CEu&r的细节要领."
+				"{@pagebreak}"
+				"最后建议熟练掌握&eEMI&r的使用.&a&d格雷科技&f&r物品通常拥有多种合成配方,切勿假定&eEMI&r显示的首个配方是最优方案.“专业级“ &eEMI&r运用需要&b识别自动生成配方中的规律&r(例如:所有铁相关物品经&e研磨&r都会得到&a铁粉&f)."
 				""
-				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description9}"
+				"当遇到复杂配方时——坦白说&aGTCEu&r可能令人望而生畏——我们会确保指引您选择更&5高效的路径&r.但仍鼓励自主探索,机械式跟随任务手册岂不太无趣？"
 			]
 			icon: "ftbquests:book"
 			id: "13E9DF7E980CFC5B"
 			shape: "circle"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.subtitle}"
-			tasks: [{
-				id: "04CC2E592A648F06"
-				title: "{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.task.04CC2E592A648F06.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.title}"
+			subtitle: "读一遍,再读一遍!"
+			tasks: [
+				{
+					id: "04CC2E592A648F06"
+					title: "此页我已阅读多次"
+					type: "checkmark"
+				}
+			]
+			title: "重要信息"
 			x: -2.25d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2001CB4968D3E0A2"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest411AB552514EA14C.description1}"
+				"手工合成很快会变得&e繁琐&r.何不用您的&2新锯子&r制作这个合成台？"
 				""
-				"{ftbquests.chapter.gtceu.quest411AB552514EA14C.description2}"
+				"它允许您直接使用相邻容器的物品进行合成,让经典的&a&d格雷科技&f&r微型合成不再&4枯燥&r."
 				""
-				"{ftbquests.chapter.gtceu.quest411AB552514EA14C.description3}"
+				"再次锯切合成台可获得低矮的板岩版本."
 			]
 			icon: "crafting_on_a_stick:crafting_table"
 			id: "411AB552514EA14C"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest411AB552514EA14C.subtitle}"
-			tasks: [{
-				id: "30D40010C8E6E115"
-				item: "crafting_on_a_stick:crafting_table"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest411AB552514EA14C.title}"
+			subtitle: "注意:本整合包不含匠魂模组"
+			tasks: [
+				{
+					id: "30D40010C8E6E115"
+					item: "crafting_on_a_stick:crafting_table"
+					type: "item"
+				}
+			]
+			title: "合成站"
 			x: 3.75d
 			y: -4.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.gtceu.quest008ABF78E56209F7.description1}"
+				"本次更新新增了&d指南与更多&r板块.其中&a信息&f可随时查阅,但当相关内容触发时,系统会&e引导您&r进行简要阅读."
 				""
-				"{ftbquests.chapter.gtceu.quest008ABF78E56209F7.description2}"
+				"若您希望&a深入理解&r部分&bGTCEu机制&r,板块内的&a信息&f或许能引起您的兴趣——某些情况下这些内容至关重要."
 				""
-				"{ftbquests.chapter.gtceu.quest008ABF78E56209F7.description3}"
+				"解锁教程节点的任务会在描述末尾标注&e橙色提示符&r."
 				""
-				"{ftbquests.chapter.gtceu.quest008ABF78E56209F7.description4}"
+				"开始阅读吧!"
 			]
 			icon: "minecraft:lectern"
 			id: "008ABF78E56209F7"
 			shape: "circle"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.gtceu.quest008ABF78E56209F7.subtitle}"
-			tasks: [{
-				id: "382566FB9E8CFE29"
-				title: "{ftbquests.chapter.gtceu.quest008ABF78E56209F7.task.382566FB9E8CFE29.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest008ABF78E56209F7.title}"
+			subtitle: "助您快速上手的技巧与诀窍"
+			tasks: [
+				{
+					id: "382566FB9E8CFE29"
+					title: "好了好了,我明白了"
+					type: "checkmark"
+				}
+			]
+			title: "教程系统"
 			x: -0.75d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0EAF2C5B5EB755C5"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest5193DD03C0742548.description1}"
+				"&a橡胶树&f常见于&a森林&r、&2丛林&r或&a沼泽&r生物群系."
 				""
-				"{ftbquests.chapter.gtceu.quest5193DD03C0742548.description2}"
+				"破坏&a橡胶树木&f可获得&e&a粘性树脂&f&r,这是后续发展的重要资源."
 				""
-				"{ftbquests.chapter.gtceu.quest5193DD03C0742548.description3}"
+				"&a原木&f通过后续加工还能提供&d实用资源&r."
 			]
 			id: "5193DD03C0742548"
-			rewards: [{
-				id: "4D70B6467A188FDD"
-				item: "gtceu:sticky_resin"
-				random_bonus: 3
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4D70B6467A188FDD"
+					item: "gtceu:sticky_resin"
+					random_bonus: 3
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.gtceu.quest5193DD03C0742548.subtitle}"
-			tasks: [{
-				count: 8L
-				id: "76851CD51E99CA38"
-				item: "gtceu:rubber_sapling"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest5193DD03C0742548.title}"
+			subtitle: "重申:这不是工业2模组"
+			tasks: [
+				{
+					count: 8L
+					id: "76851CD51E99CA38"
+					item: "gtceu:rubber_sapling"
+					type: "item"
+				}
+			]
+			title: "在&a橡胶树&f下乘凉"
 			x: 0.75d
 			y: -4.5d
 		}
 		{
 			description: [
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description1}"
+				"觉得这个整合包&a太简单&r？想要尝试一些独特的体验来大展身手？"
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description2}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description3}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description4}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description5}"
+				"我们在此任务中收集了一些带有GTCEu现代风格推荐的整合包."
+				"{@pagebreak}"
+				"&l工业工厂&r"
+				"&dMonifactory&r是一个基于&eNomifactory CEu&r(原版在1.12.2!)的1.20.1整合包.它旨在简化和优化&d格雷科技&f的前期内容,同时将其他科技模组与GTCEu Modern的进程交织在一起.还为追求挑战的玩家提供了&2困难&r和&a专家&r模式!"
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description6}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description7}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description8}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description9}"
+				"目前,该整合包即将迎来一个改变游戏版本的更新,0.13.任何处于&c&a高压&f&r或更高阶段的世界很可能需要重新开始."
+				"{@pagebreak}"
+				"&l宇宙前沿&r"
+				"- &7Ghostipedia等"
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description10}"
+				"&dCosmic Frontiers&r是一个1.20.1整合包,其玩法比这个整合包&b稍难一些&r,并侧重于许多模组与GTCEu Modern之间的互动.你将探索上方的星辰并深入下方的深渊,同时应对&e错综复杂&r的进程,将&7机械&r与&5神秘&r融为一体."
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description11}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description12}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description13}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description14}"
+				"目前,该整合包被认为处于&2早期alpha&r阶段.然而,进度已经通过&3LuV&r进行了策划.这是一次无与伦比的体验!"
+				"{@pagebreak}"
+				"&lATM:引力2&r"
+				"- &7ATM团队"
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description15}"
+				"从&e原始的石器时代技术&r开始,手工制作工具并觅食,你需要跨越多个时代,涵盖许多&b经典和新兴&r的模组.这与&d群峦传说&f、&a新建&f Age、&a星门之旅&f和&8(显然)&r &d格雷科技&f等模组无缝衔接."
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description16}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description17}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description18}"
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description19}"
+				"你将发现自己从一个&2原始的开端&r,&a破坏&f岩石,到&a破坏&f原子,很快&d为你的航行提供动力&r,前往星辰及更远的地方!"
+				"{@pagebreak}"
+				"&l星际科技&r"
+				"- &7绝无此事"
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description20}"
+				"&eStar Technology&r更像是一个轻松的&d格雷科技&f &d空岛整合包&r,你扮演一位科学家,在一次维度旅行实验&4灾难性失败&r后被困在一个&b替代维度&r中."
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description21}"
+				"这个整合包的进程将带你超越&3UHV&r,制作许多独特的&a星门&r,甚至还有一个混音版的&o“Gregified“&r &d神秘农业&f."
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description22}"
+				"再次强调,这个整合包包含困难模式和一个沙漠模组(称为Abydos!)."
 				""
-				"{ftbquests.chapter.gtceu.quest63DC162144871509.description23}"
+				"请注意,该整合包仍处于&e大力开发&r中,但截至Zeta版本,你应该能够实现&o“&a经典星门&f“&r!"
 			]
 			icon: "minecraft:netherite_upgrade_smithing_template"
 			id: "63DC162144871509"
 			shape: "circle"
 			size: 0.75d
-			tasks: [{
-				id: "3E3D67B53234AD1A"
-				title: "{ftbquests.chapter.gtceu.quest63DC162144871509.task.3E3D67B53234AD1A.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest63DC162144871509.title}"
+			tasks: [
+				{
+					id: "3E3D67B53234AD1A"
+					title: "哇,这些听起来很酷"
+					type: "checkmark"
+				}
+			]
+			title: "还能玩什么？"
 			x: -2.25d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0C690272ED4FB1C3"]
 			description: [
-				"{ftbquests.chapter.gtceu.quest3296B815876C3181.description1}"
+				"在地表嬉戏时,你可能已经注意到了一些&d地表岩石&r."
 				""
-				"{ftbquests.chapter.gtceu.quest3296B815876C3181.description2}"
-				"{ftbquests.chapter.gtceu.quest3296B815876C3181.description3}"
-				"{ftbquests.chapter.gtceu.quest3296B815876C3181.description4}"
+				"这些小东西指示了它们下方的矿脉类型.只需右键点击&7(或挖掘!)&r地表岩石,即可获得相应的&a&a小撮粉末&f&r.这也会将矿脉添加到你的小地图中."
+				"{@pagebreak}"
+				"现在你可以使用&2EMI&r来了解更多关于脚下矿脉的信息.只需在你从岩石中挖掘出的&a小撮粉末&f上按&dU&r键,找到相应的原矿,然后按&dR&r键.从那里,导航到&e矿脉图&r.该页面包含关于与之生成的&b矿石类型&r、它们的&3生成模式&r、它们的&e生成维度&r和&dY层级范围&r,以及它们的&a生成权重&r(即生成几率)的详细信息."
 			]
 			icon: "gtceu:cobalt_indicator"
 			id: "3296B815876C3181"
 			shape: "circle"
 			size: 0.5d
-			subtitle: "{ftbquests.chapter.gtceu.quest3296B815876C3181.subtitle}"
-			tasks: [{
-				id: "3C54F075FEE53897"
-				title: "{ftbquests.chapter.gtceu.quest3296B815876C3181.task.3C54F075FEE53897.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.gtceu.quest3296B815876C3181.title}"
+			subtitle: "唤醒你内心的地质学家"
+			tasks: [
+				{
+					id: "3C54F075FEE53897"
+					title: "我超爱勘探!"
+					type: "checkmark"
+				}
+			]
+			title: "这太棒了!"
 			x: -2.25d
 			y: -2.25d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.gtceu.subtitle0}"]
-	title: "{ftbquests.chapter.gtceu.title}"
+	subtitle: ["欢迎来到 &6GTCP&r!很高兴您的加入"]
+	title: "入门指南"
 }

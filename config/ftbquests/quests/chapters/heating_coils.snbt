@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:cupronickel_coil_block"
 	id: "7C1306341997601D"
-	order_index: 14
+	order_index: 1
 	quest_links: [
 		{
 			id: "709FB8C1561E7BB8"
@@ -95,19 +95,21 @@
 				"5B2696206205CB2E"
 			]
 			description: [
-				"{ftbquests.chapter.heating_coils.quest70432F650591353C.description1}"
+				"不得不说,白铜锭看起来相当诱人."
 				""
-				"{ftbquests.chapter.heating_coils.quest70432F650591353C.description2}"
+				"&l&3背景知识:&r&o 现实中,白铜通常含有铁或锰等元素以增强其强度.&d格雷科技&f中的&a白铜&f可能更接近康铜(铜镍比例55:45)."
 			]
 			id: "70432F650591353C"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.heating_coils.quest70432F650591353C.subtitle}"
-			tasks: [{
-				id: "77875BBDC0A937A9"
-				item: "gtceu:cupronickel_ingot"
-				type: "item"
-			}]
+			subtitle: "法律意义上区别于康铜"
+			tasks: [
+				{
+					id: "77875BBDC0A937A9"
+					item: "gtceu:cupronickel_ingot"
+					type: "item"
+				}
+			]
 			x: -2.5d
 			y: -6.5d
 		}
@@ -117,35 +119,39 @@
 				"4A92AFD2532EED26"
 			]
 			description: [
-				"{ftbquests.chapter.heating_coils.quest66805BB78A828C00.description1}"
+				"&l&3背景知识:&r&o 你可能会在家中看到坎塔尔合金.因其优异的导热性和中等电阻,坎塔尔常见于烤面包机和加热器中!"
 				""
-				"{ftbquests.chapter.heating_coils.quest66805BB78A828C00.description2}"
+				"&o没想到你的烤面包机竟能达到&b中压&f级别吧？"
 			]
 			id: "66805BB78A828C00"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.heating_coils.quest66805BB78A828C00.subtitle}"
-			tasks: [{
-				id: "76206DC9E7ABD07A"
-				item: "gtceu:kanthal_ingot"
-				type: "item"
-			}]
+			subtitle: "这就是我铁铝铬合金的独特之处"
+			tasks: [
+				{
+					id: "76206DC9E7ABD07A"
+					item: "gtceu:kanthal_ingot"
+					type: "item"
+				}
+			]
 			x: -1.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["6958029B5514D4EC"]
-			description: ["Nichrome will require your &aElectric Blast Furnace&r to be at least &6EV&r, with &bKanthal&r coils to boot."]
+			description: ["镍铬合金要求你的&a&a电力高炉&f&r至少达到&eEV&r级别,并配备&b坎塔尔&r线圈."]
 			id: "1CBA5477CB7C45E7"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.heating_coils.quest1CBA5477CB7C45E7.subtitle}"
-			tasks: [{
-				id: "1104AC52E0A0A472"
-				item: "gtceu:nichrome_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.heating_coils.quest1CBA5477CB7C45E7.title}"
+			subtitle: "镍铬穹顶行动"
+			tasks: [
+				{
+					id: "1104AC52E0A0A472"
+					item: "gtceu:nichrome_ingot"
+					type: "item"
+				}
+			]
+			title: "镍铬合金"
 			x: 0.5d
 			y: -6.5d
 		}
@@ -154,20 +160,22 @@
 				"2F9D9AAB27E6534D"
 				"0B25A282F677744B"
 			]
-			description: ["You're gonna need to start on your &dPlatinum&r processing, or \"&bPlatline&r\", if you want to get your hands on these."]
+			description: ["你需要开始进行&d铂&r处理,或者按照“&b铂线流程&r“操作,才能获得这些材料."]
 			id: "3856DBCCAA6D2A58"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.heating_coils.quest3856DBCCAA6D2A58.subtitle}"
-			tasks: [{
-				id: "76DE4924186D83C2"
-				item: "gtceu:rtm_alloy_ingot"
-				type: "item"
-			}]
+			subtitle: "钨钢已成过去,RTM永存"
+			tasks: [
+				{
+					id: "76DE4924186D83C2"
+					item: "gtceu:rtm_alloy_ingot"
+					type: "item"
+				}
+			]
 			x: 2.0d
 			y: -6.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.heating_coils.subtitle0}"]
-	title: "{ftbquests.chapter.heating_coils.title}"
+	subtitle: ["线圈专题"]
+	title: "加热线圈"
 }

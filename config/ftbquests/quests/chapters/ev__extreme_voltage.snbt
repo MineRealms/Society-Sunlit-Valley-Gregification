@@ -6,7 +6,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:ev_electric_motor"
 	id: "7FB9F636D95820A3"
-	order_index: 5
+	order_index: 4
 	quest_links: [
 		{
 			id: "2E99A771FCA40E15"
@@ -49,31 +49,33 @@
 		{
 			dependencies: ["16B735F9C391D260"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description1}"
+				"是时候直说了——蒸汽作为能源选项已经不够看了.如果你打算硬撑到最后一刻,我们祝你好运...请继续阅读."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description2}"
+				"&3&a大型蒸汽涡轮&f&r是用于&e高压&r电力的多方块&a蒸气轮机&f.建造这个庞然大物仅获得1024 EU/t的微薄收益确实昂贵,但它具备&9提升发电量与效率&r的强大扩展能力."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description5}"
+				"&8(我们真的在努力推销了,行了吧？!)"
+				"{@pagebreak}"
+				"若配置&3输出仓&r,&a涡轮机&f会产出&d&a蒸馏水&f&r,可循环输回&3大型锅炉&r.我们不完全推荐此操作,因为系统故障可能导致锅炉爆炸."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description6}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description7}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description8}"
+				"每台大型涡轮机需要&a&a涡轮转子&f&r和&3转子支架&r.更多涡轮机制详解请见&l下一章&r任务."
+				"{@pagebreak}"
+				"&9注意:&r本任务&e仅&r需控制器,但建造涡轮机仍需所有多方块部件."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.description9}"
+				"涡轮机若无法输出能量会&c损耗&r能源.若计划用于&e高压&r电力,请选用功率值接近100%的转子."
 			]
 			icon: "gtceu:steam_large_turbine"
 			id: "189F84D6C76CDC8B"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.subtitle}"
-			tasks: [{
-				id: "793B9FC5F9ACCCC7"
-				item: "gtceu:steam_large_turbine"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest189F84D6C76CDC8B.title}"
+			subtitle: "如果你还在用蒸汽发电...伙计,我们可有个解决方案!"
+			tasks: [
+				{
+					id: "793B9FC5F9ACCCC7"
+					item: "gtceu:steam_large_turbine"
+					type: "item"
+				}
+			]
+			title: "&a大型蒸汽涡轮&f"
 			x: 1.1530612244897895d
 			y: 4.494897959183675d
 		}
@@ -84,11 +86,11 @@
 				"4E9DED9569AA17F5"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest188A8C3DD38C2762.description1}"
+				"&a大型&f涡轮机是当前GTCEu中最复杂的多方块发电机."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest188A8C3DD38C2762.description2}"
+				"让我们深入探索涡轮机!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest188A8C3DD38C2762.description3}"
+				"&e本任务将在&l技巧与窍门&r&e标签页解锁涡轮机制新教程——快去看看吧!&r"
 			]
 			icon: {
 				Count: 1
@@ -103,82 +105,88 @@
 			min_required_dependencies: 1
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest188A8C3DD38C2762.subtitle}"
-			tasks: [{
-				id: "2CE74616CF080BF9"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest188A8C3DD38C2762.title}"
+			subtitle: "我的机制...很复杂"
+			tasks: [
+				{
+					id: "2CE74616CF080BF9"
+					type: "checkmark"
+				}
+			]
+			title: "大型涡轮机制"
 			x: 2.25d
 			y: 4.5d
 		}
 		{
 			dependencies: ["35E7E45987D9B1F6"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest7820DF52516344F4.description1}"
+				"从此阶段起,你可制作&d超高压&r&3能源仓&r与&3发电仓&r!超高压能源仓现提供4A、16A、32A甚至64A版本!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest7820DF52516344F4.description2}"
+				"这对多方块发电机或强化GCYM机械极为重要."
 			]
 			icon: "gtceu:ev_energy_input_hatch"
 			id: "7820DF52516344F4"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest7820DF52516344F4.subtitle}"
-			tasks: [{
-				id: "1696F760B75B3544"
-				item: "gtceu:ev_energy_input_hatch"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest7820DF52516344F4.title}"
+			subtitle: "标准进阶之路"
+			tasks: [
+				{
+					id: "1696F760B75B3544"
+					item: "gtceu:ev_energy_input_hatch"
+					type: "item"
+				}
+			]
+			title: "升级你的电炉III"
 			x: 2.25d
 			y: 2.25d
 		}
 		{
 			dependencies: ["35E7E45987D9B1F6"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest0F539EC8D2361791.description1}"
+				"&3&a大型燃气涡轮&f&r在&5超高压&r阶段或许不起眼,但其可突破基础4096 EU/t实现&9更高产出&r,并拥有比烦人的单方块发电机&9更优的效率&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest0F539EC8D2361791.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest0F539EC8D2361791.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest0F539EC8D2361791.description4}"
+				"每台大型涡轮机需要&a&a涡轮转子&f&r和&3转子支架&r.涡轮机制详解请见&l下一章&r任务."
+				"{@pagebreak}"
+				"&9注意:&r本任务&e仅&r需控制器,但显然建造涡轮机仍需所有多方块部件."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest0F539EC8D2361791.description5}"
+				"涡轮机若无法输出能量会&c损耗&r能源.若计划用于高压电力,请选用功率值接近100%的转子."
 			]
 			icon: "gtceu:gas_large_turbine"
 			id: "0F539EC8D2361791"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest0F539EC8D2361791.subtitle}"
-			tasks: [{
-				id: "7243C47692B04E81"
-				item: "gtceu:gas_large_turbine"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest0F539EC8D2361791.title}"
+			subtitle: "&a瓶装毒气&f"
+			tasks: [
+				{
+					id: "7243C47692B04E81"
+					item: "gtceu:gas_large_turbine"
+					type: "item"
+				}
+			]
+			title: "&a大型燃气涡轮&f"
 			x: 2.25d
 			y: 3.375d
 		}
 		{
 			dependencies: ["7A55CC71442CC854"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.description1}"
+				"今天议程有什么？"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.description2}"
+				"新型&a金属剪切机&f？&a✓&r"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.description3}"
+				"新型透镜？&a✓&r"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.description4}"
+				"新型&a功率电路&f？&a✓&r"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.description5}"
+				"需要新电炉金属？&a✓&r"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.description6}"
+				"能源仓新线圈？&a✓&r"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.description7}"
+				"&9注意:&r若未找到丛林,可&a离心处理&a石粉&f&r获得&d金属混合粉&r.此产物亦可作&a棕色染料&f使用."
 			]
 			icon: "gtceu:mpic_chip"
 			id: "35E7E45987D9B1F6"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.subtitle}"
+			subtitle: "岂有一机独揽如此威能!"
 			tasks: [
 				{
 					id: "2475364829C80B50"
@@ -188,10 +196,11 @@
 				{
 					id: "1225B9C57910A98A"
 					item: "gtceu:brown_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest35E7E45987D9B1F6.title}"
+			title: "&a功率电路&f"
 			x: 3.375d
 			y: 2.25d
 		}
@@ -201,17 +210,17 @@
 				"14D277A164202FF8"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest1AD309112ADD8D8D.description1}"
+				"&3大型内燃机&r是一种多方块结构,可通过燃烧&d内燃燃料&r产生更强大的...发电能力!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1AD309112ADD8D8D.description2}"
+				"默认情况下,这台机器输出2048 EU/t,相当于4台&3涡轮&a内燃发电机&f&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1AD309112ADD8D8D.description3}"
+				"虽然单方块发电机无法比拟,但通过注入&a氧气&r可&e提升其效能&r:燃料消耗&c翻倍&r的同时,发电量将&a提升至三倍&r.最终实现6144 EU/t的输出功率,并保持&e150%的燃料效率&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1AD309112ADD8D8D.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest1AD309112ADD8D8D.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest1AD309112ADD8D8D.description6}"
+				"运行期间需持续供应少量&a润滑液&r——用量控制在合理范围内."
+				"{@pagebreak}"
+				"与大型涡轮机不同,&3大型内燃机&r具备能量无损特性.当输出受阻时,多方块结构将自动暂停运行."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1AD309112ADD8D8D.description7}"
+				"若要完全驾驭6144 EU/t的狂暴能量输出,需配备&34A EV级动力舱口&r或&3IV级动力舱口&r."
 			]
 			icon: "gtceu:large_combustion_engine"
 			id: "1AD309112ADD8D8D"
@@ -225,10 +234,11 @@
 				{
 					id: "38A33D0B4E9CD811"
 					item: "gtceu:ev_energy_output_hatch"
+					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest1AD309112ADD8D8D.title}"
+			title: "大型内燃机"
 			x: 2.25d
 			y: 1.125d
 		}
@@ -238,31 +248,33 @@
 				"478B0D55369C0F7F"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description1}"
+				"以消耗4倍钻探功率为代价,&3高级&a流体钻&f探平台&r可获得&e16倍流体产出&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description2}"
+				"矿脉枯竭速度同时减半.这意味着从基岩流体矿脉中最终可获得&e32倍&r的石油(或其他流体)!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description3}"
+				"即使矿脉枯竭后,该设备仍能保持稳定的正能源收益."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description6}"
+				"单台&3高级&a流体钻&f探平台&r即可满足直至&dLuV&r级别基地的能源需求…甚至更高!"
+				"{@pagebreak}"
+				"&9温馨提示&r(自&bMV&r阶段起生效):"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description7}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description8}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.description9}"
+				"&9-&r &a&a轻质油&f&r可提炼为&d液化石油气&r和&d甲烷&r,用于驱动&3&a大型燃气轮机&f&r"
+				"&9-&r &a原油&r可提炼为&d柴油&r和&d&a高十六烷值柴油&f&r,用于驱动&3大型内燃机&r"
+				"&9-&r &a&a重油&f&r可提炼为&d硝基苯&r,用于驱动&3&a大型燃气轮机&f&r"
 			]
 			icon: "gtceu:hv_fluid_drilling_rig"
 			id: "10987A49F647279E"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.subtitle}"
-			tasks: [{
-				id: "3FE1F17DD37F0A56"
-				item: "gtceu:hv_fluid_drilling_rig"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest10987A49F647279E.title}"
+			subtitle: "\"极致”一词恰如其分"
+			tasks: [
+				{
+					id: "3FE1F17DD37F0A56"
+					item: "gtceu:hv_fluid_drilling_rig"
+					type: "item"
+				}
+			]
+			title: "极致&a流体钻&f探"
 			x: 3.375d
 			y: 3.375d
 		}
@@ -274,24 +286,25 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.description1}"
+				"如何获取铂金？"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.description4}"
+				"&9-&r 作为&a&a镍矿石&f&r加工的副产品,可通过&3&a化学浸洗机&f&r或&3HV级研磨机&r获得"
+				"&9-&r 开采&a末地&f中的&a谢尔顿矿脉&r"
+				"&9-&r 从&a&a铂族矿泥&f&r中提取(复杂工艺链可获取所有铂族金属,&cIV阶段前极不推荐&r,但后期必需)"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.description6}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.description7}"
+				"铂金主要用于制造&d&a贴片二极管&f&r,并从&5EV&r阶段起参与大量合成配方."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o &d通用机械&f曾计划以铂金作为主要材料,但GregoriusT认为这种稀有金属遍布全球的设定不符合逻辑.最终&d通用机械&f开发组选择锇作为主要材料."
 			]
 			icon: "gtceu:platinum_ingot"
 			id: "3398FC108D9DCB46"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.subtitle}"
+			subtitle: "钻石与珍珠"
 			tasks: [
 				{
 					id: "422782D7BAC8024B"
 					item: "gtceu:platinum_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -300,7 +313,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest3398FC108D9DCB46.title}"
+			title: "铂金"
 			x: 4.5d
 			y: 3.75d
 		}
@@ -310,26 +323,28 @@
 				"7A55CC71442CC854"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest16E7CAC7BC8BFD8E.description1}"
+				"是的,我们承认...这个多方块结构完全是&d可选&r的.许多测试玩家一直使用他们的&e高压&r单方块采矿机,并且在处理量方面没有遇到任何问题."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest16E7CAC7BC8BFD8E.description2}"
+				"然而,&3&a大型采矿场&f&r在从矿脉收集矿石时会进一步提高你的收益.矿石会被当作&a被粉碎&r一样开采,但产出&e三倍&r数量的&d粉碎矿石&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest16E7CAC7BC8BFD8E.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest16E7CAC7BC8BFD8E.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest16E7CAC7BC8BFD8E.description5}"
+				"在运行此设备前,你需要自动化&a&a钻井平台流体产出&f&r.你可能还想使用来自AE2的&3量子隧道&r和&3GT&aP2P通道 - EU&f&r来传输物品并提供电力."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o当我们从Gregicality移植这个结构时,出现了一些有趣的副作用,因为这个多方块结构实际上源自&d格雷科技&f 5."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest16E7CAC7BC8BFD8E.description6}"
+				"&o它目前的实现并不完美,因为通过升级这个采矿机到高级版本,你并不会获得太多好处.我们曾考虑对每个层级的能耗和产出进行重新平衡."
 			]
 			icon: "gtceu:ev_large_miner"
 			id: "16E7CAC7BC8BFD8E"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [{
-				id: "4576F08E8AE8C110"
-				item: "gtceu:ev_large_miner"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest16E7CAC7BC8BFD8E.title}"
+			tasks: [
+				{
+					id: "4576F08E8AE8C110"
+					item: "gtceu:ev_large_miner"
+					type: "item"
+				}
+			]
+			title: "多方块结构采矿机"
 			x: 5.625d
 			y: 3.375d
 		}
@@ -339,26 +354,28 @@
 				"7FA0ACB7F161F378"
 				"4AFD3073C731A1E4"
 			]
-			description: ["You know the drill by now. It's an Assembler - what else do you need to know?"]
+			description: ["你现在应该已经熟悉流程了.它是个组装机——你还需要知道什么别的呢？"]
 			icon: "gtceu:ev_assembler"
 			id: "7A55CC71442CC854"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest7A55CC71442CC854.subtitle}"
-			tasks: [{
-				id: "2F60DE9B52FDEFFC"
-				item: "gtceu:ev_assembler"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest7A55CC71442CC854.title}"
+			subtitle: "进军EV阶段"
+			tasks: [
+				{
+					id: "2F60DE9B52FDEFFC"
+					item: "gtceu:ev_assembler"
+					type: "item"
+				}
+			]
+			title: "EV组装机"
 			x: 4.5d
 			y: 2.25d
 		}
 		{
 			dependencies: ["7A55CC71442CC854"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest69E384F389B0D07B.description1}"
+				"适用于&5EV&r的最佳类电池物品!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest69E384F389B0D07B.description2}"
+				"制作一个&a&a兰波顿水晶&f&r将需要相当多的嵌套合成,所以大批量制作这些——或者,当然,用&bAE2&r的模式自动化一切."
 			]
 			icon: "gtceu:lapotron_crystal"
 			id: "69E384F389B0D07B"
@@ -373,10 +390,11 @@
 				{
 					id: "486FD2A6FCEFDFEF"
 					item: "gtceu:ev_lapotronic_battery"
+					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest69E384F389B0D07B.title}"
+			title: "极端电压电池"
 			x: 3.375d
 			y: 1.125d
 		}
@@ -390,19 +408,19 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description1}"
+				"本任务将涵盖钨处理链.&a钨&r可以从&e钨酸盐&r或&e白钨矿&r中获得,它们在&a末地&f中属于同一矿脉."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description4}"
+				"就像&d金红石&r处理链一样,你只需要输入一种物品类型,其他所有东西都会完美循环!"
+				"{@pagebreak}"
+				"你将需要:"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description6}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description7}"
+				"&9-&r 一个&3&a化学浸洗器&f&r,用于制作&d&a钨酸&f&r."
+				"&9-&r 一个&3电解机&r,用于电解&o两者&r浴槽输出."
+				"&9-&r 一个&3&a化学反应器&f&r,用于将&d氢气&r和&d氯气&r循环回&a&a盐酸&f&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description8}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description9}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.description10}"
+				"你将获得钙或&a锂&f作为副产品——这是免费的!"
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在GTCE中,钨酸盐或白钨矿需要40秒和4,000mB的氢气@1920 EU/t来电解成1&a钨粉&f.即使更简单,但也昂贵得多!"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:tungsten_dust"
@@ -422,58 +440,63 @@
 				}
 			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.subtitle}"
-			tasks: [{
-				id: "6BA811C086B5CF00"
-				item: "gtceu:tungsten_dust"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest271CE5C2B78A1EDC.title}"
+			subtitle: "一体化解决方案!"
+			tasks: [
+				{
+					id: "6BA811C086B5CF00"
+					item: "gtceu:tungsten_dust"
+					type: "item"
+				}
+			]
+			title: "钨处理链"
 			x: 6.75d
 			y: 3.375d
 		}
 		{
 			dependencies: ["271CE5C2B78A1EDC"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest478B0D55369C0F7F.description1}"
+				"&3EV混合机&r是制造更多合金所必需的."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest478B0D55369C0F7F.description2}"
+				"如果你想获得一些&d钨钢&r,这很重要."
 			]
 			hide_dependency_lines: false
 			hide_dependent_lines: true
 			icon: "gtceu:ev_mixer"
 			id: "478B0D55369C0F7F"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest478B0D55369C0F7F.subtitle}"
-			tasks: [{
-				id: "0E0232ACC9B93FE4"
-				item: "gtceu:ev_mixer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest478B0D55369C0F7F.title}"
+			subtitle: "开始注意到规律了吗？"
+			tasks: [
+				{
+					id: "0E0232ACC9B93FE4"
+					item: "gtceu:ev_mixer"
+					type: "item"
+				}
+			]
+			title: "极端混合"
 			x: 5.625d
 			y: 2.25d
 		}
 		{
 			dependencies: ["478B0D55369C0F7F"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest30A6EDDF25A5E5F8.description1}"
+				"&a钨钢&r的50%成分是钢...足以说明,你将需要大量的&a铁&r和&a钨&r!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest30A6EDDF25A5E5F8.description2}"
+				"目前,&a钨&r是下一级线圈的关键成分.你离摆脱那些烦人的单方块发电机又近了一步!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest30A6EDDF25A5E5F8.description3}"
+				"在&3&a电力高炉&f&r中提升熔炼配方需要&e氦气&r.你可以通过&a提取独居石&r或&a离心末地石&r来获得初始供应."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest30A6EDDF25A5E5F8.description4}"
+				"长期来看,你将希望通过&a&a液态空气&f蒸馏&r来获取氦气."
 			]
 			icon: "gtceu:tungsten_steel_ingot"
 			id: "30A6EDDF25A5E5F8"
 			shape: "gear"
 			size: 1.3d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest30A6EDDF25A5E5F8.subtitle}"
+			subtitle: "主要的&9IV&r材料!"
 			tasks: [
 				{
 					id: "4BEA3166CD486845"
 					item: "gtceu:tungsten_steel_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -482,74 +505,80 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest30A6EDDF25A5E5F8.title}"
+			title: "钨钢"
 			x: 6.75d
 			y: 2.25d
 		}
 		{
 			dependencies: ["271CE5C2B78A1EDC"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest0B25A282F677744B.description1}"
+				"瑞典语中的Tungsten直译为“重石“,这相当有趣.你可能也知晓这种元素被称为Wolfram(钨),因此其化学符号为W."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest0B25A282F677744B.description2}"
+				"&a钨&r将成为主要的&1IV&r级电缆材料,但也将在其他领域崭露头角!"
 			]
 			icon: "gtceu:tungsten_ingot"
 			id: "0B25A282F677744B"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest0B25A282F677744B.subtitle}"
-			tasks: [{
-				id: "5D897ADB4F7D9920"
-				item: "gtceu:tungsten_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest0B25A282F677744B.title}"
+			subtitle: "沃尔夫勒姆阿尔法"
+			tasks: [
+				{
+					id: "5D897ADB4F7D9920"
+					item: "gtceu:tungsten_ingot"
+					type: "item"
+				}
+			]
+			title: "钨"
 			x: 6.75d
 			y: 4.5d
 		}
 		{
 			dependencies: ["30A6EDDF25A5E5F8"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest39E7997F3080250A.description1}"
+				"即便没有频道系统,&aP2P通道&f仍是极其重要的自动化工具!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest39E7997F3080250A.description2}"
+				"&9注意:&r网络上有大量优质资源讲解&aP2P通道&f的工作原理.简而言之,它们允许将物品从1个输入端传输至无限个输出端.你可以使用&a内存卡&f进行链接."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest39E7997F3080250A.description3}"
+				"本任务将指导你如何利用&aP2P通道&f为自己创造效益."
 			]
 			icon: "ae2:me_p2p_tunnel"
 			id: "39E7997F3080250A"
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest39E7997F3080250A.subtitle}"
-			tasks: [{
-				id: "578F4D24289C544E"
-				item: "ae2:me_p2p_tunnel"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest39E7997F3080250A.title}"
+			subtitle: "别担心,频道系统已移除"
+			tasks: [
+				{
+					id: "578F4D24289C544E"
+					item: "ae2:me_p2p_tunnel"
+					type: "item"
+				}
+			]
+			title: "&aP2P通道&f"
 			x: 7.875d
 			y: 3.375d
 		}
 		{
 			dependencies: ["069FD86133D7D582"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest3B2D2C47BEBCFFA7.description1}"
+				"若想大幅提升处理能力,这些强大的多方块结构正是您所需!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest3B2D2C47BEBCFFA7.description2}"
+				"此前称为&2格雷工艺多方块&r的扩展模组现已完全集成至&d格雷科技社区版&f现代版!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest3B2D2C47BEBCFFA7.description3}"
+				"你需要运用多种新型&9合金&r来建造这些多方块结构.太棒了,更多新内容!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest3B2D2C47BEBCFFA7.description4}"
+				"&e本任务将在&l技巧与窍门&r&e标签页解锁GCYM机制的新教程——前往查看以了解更多!&r"
 			]
 			icon: "gtceu:vibration_safe_casing"
 			id: "3B2D2C47BEBCFFA7"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest3B2D2C47BEBCFFA7.subtitle}"
-			tasks: [{
-				id: "02739BCF3877B446"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest3B2D2C47BEBCFFA7.title}"
+			subtitle: "我们已前行至此..."
+			tasks: [
+				{
+					id: "02739BCF3877B446"
+					type: "checkmark"
+				}
+			]
+			title: "格雷工艺多方块结构"
 			x: 9.0d
 			y: 6.6d
 		}
@@ -562,25 +591,27 @@
 				"3856DBCCAA6D2A58"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest069FD86133D7D582.description1}"
+				"&aRTM合金线圈&r将&a热容&f提升至灼热的&d4,500K&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest069FD86133D7D582.description2}"
+				"这些线圈将在&9IV&r阶段必需,但一如既往,你应该提前获取它们以获得&e线圈增益&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest069FD86133D7D582.description3}"
+				"&l&3背景故事:&r&o这些线圈曾由钨钢制成.但这使得EV阶大部分内容极易跳过并推迟至IV阶,因此改为采用新型RTM合金.GTNH最早实施此变更,并使用由钛、铂和钒制成的TPV合金替代."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest069FD86133D7D582.description4}"
+				"&o&7你更青睐哪种线圈？"
 			]
 			icon: "gtceu:rtm_alloy_coil_block"
 			id: "069FD86133D7D582"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest069FD86133D7D582.subtitle}"
-			tasks: [{
-				count: 16L
-				id: "16A26A909A8CE527"
-				item: "gtceu:rtm_alloy_coil_block"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest069FD86133D7D582.title}"
+			subtitle: "我的钨钢线圈去哪了!？"
+			tasks: [
+				{
+					count: 16L
+					id: "16A26A909A8CE527"
+					item: "gtceu:rtm_alloy_coil_block"
+					type: "item"
+				}
+			]
+			title: "RTM合金线圈"
 			x: 9.0d
 			y: 2.25d
 		}
@@ -590,46 +621,48 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest4B8D66A65F102D7E.description1}"
+				"&3二极管&r(指方块而非元件)可从5个面接收能量,但仅通过单面输出."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4B8D66A65F102D7E.description2}"
+				"其主要功能是&d限制安培数&r.它能帮助调节集中式发电系统,使电力可安全分配至各处,无需根据用电设备计算安全电缆规格..."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4B8D66A65F102D7E.description3}"
+				"当电缆(或GTEU P2P通道——后续详述!)的电压损耗&a过高&f时,亦可作为红石中继器的电力等效方案使用."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4B8D66A65F102D7E.description4}"
+				"可使用&5软锤&r调整输出端的安培数限制."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4B8D66A65F102D7E.description5}"
+				"&e任意&r列出的二极管均可完成此任务."
 			]
 			icon: "gtceu:ev_diode"
 			id: "4B8D66A65F102D7E"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [{
-				id: "4BCA4F8ED0041BF6"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:hv_diode"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_diode"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_diode"
-							}
-						]
+			tasks: [
+				{
+					id: "4BCA4F8ED0041BF6"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:hv_diode"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_diode"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_diode"
+								}
+							]
+						}
 					}
+					title: "任意一种二极管"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.ev__extreme_voltage.quest4B8D66A65F102D7E.task.4BCA4F8ED0041BF6.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest4B8D66A65F102D7E.title}"
+			]
+			title: "二极管"
 			x: 2.25d
 			y: 5.625d
 		}
@@ -639,32 +672,33 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest249FA99AADAC3710.description1}"
+				"&a&a大型钛锅炉&f&r是又一种蒸汽锅炉.它比之前的锅炉效率更高,产生的蒸汽也更多.然而,在此电压下,蒸汽&c几乎无法按比例放大&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest249FA99AADAC3710.description2}"
+				"这东西完全不值得,而且到了这个阶段有太多更好的能源选择,所以你应该避免制造它.更好的选择需要&9EV能量仓&r,这将在本章节稍后部分介绍."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest249FA99AADAC3710.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest249FA99AADAC3710.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest249FA99AADAC3710.description5}"
+				"&e注意&r:LTB(大型钛锅炉)实在太糟糕,我们允许你通过点击勾选框跳过这个任务(以完成进度).你实际上不需要制作一个."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o 在GT5u中,玩家可以建造另一个多方块结构——&a大型热交换器&f.它也是用钛建造的,但使用热的IC2冷却剂或熔岩产生过热蒸汽.这比普通蒸汽好得多,并且实际上可行!未来它可能会加入CEu."
 			]
 			icon: "gtceu:titanium_large_boiler"
 			id: "249FA99AADAC3710"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest249FA99AADAC3710.subtitle}"
+			subtitle: "我们需要更多木炭"
 			tasks: [
 				{
 					id: "7D2406F7A603AAAE"
 					item: "gtceu:titanium_large_boiler"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7A6913316A12A7DB"
-					title: "{ftbquests.chapter.ev__extreme_voltage.quest249FA99AADAC3710.task.7A6913316A12A7DB.title}"
+					title: "反正我也没打算合成这个"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest249FA99AADAC3710.title}"
+			title: "更糟的燃烧"
 			x: 3.375d
 			y: 5.625d
 		}
@@ -674,19 +708,19 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest26575D4FEB3D3F62.description1}"
+				"制造&aEV马达&r需要大量&d坎塔尔合金&r.当你处于&5EV&r边缘时,这可能会让你感到痛苦,但之后就不会是问题了——相信我们."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest26575D4FEB3D3F62.description2}"
+				"&d钕&r是用于制造&a磁化杆&r的金属."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest26575D4FEB3D3F62.description3}"
+				"&a铝电缆&r需要&dPVC&r进行绝缘处理."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest26575D4FEB3D3F62.description4}"
+				"最后,在&a发射器&r配方中,制造&d量子之眼&r需要&4氡气&r."
 			]
 			icon: "gtceu:ev_electric_motor"
 			id: "26575D4FEB3D3F62"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest26575D4FEB3D3F62.subtitle}"
+			subtitle: "等等,别,别走!"
 			tasks: [
 				{
 					id: "0D12376158C00640"
@@ -724,29 +758,56 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest26575D4FEB3D3F62.title}"
-			x: 5.625d
+			title: "\"乐趣”永不停歇"
+			x: 3.375d
 			y: 6.75d
 		}
 		{
 			dependencies: ["7FA0ACB7F161F378"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest681F1423A36FD4FF.description1}"
+				"&3ME接口仓&r直接连接到你的&aAE系统&r,让你可以跳过在总线和接口仓上直接放置接口的步骤."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest681F1423A36FD4FF.description2}"
+				"&l&3背景故事:&r&o 这个功能最初来自GTNH!"
 			]
 			id: "681F1423A36FD4FF"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest681F1423A36FD4FF.subtitle}"
-			tasks: [{
-				id: "69FC6941E6C83799"
-				item: "gtceu:me_input_bus"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest681F1423A36FD4FF.title}"
+			subtitle: "总线上的接口不再需要"
+			tasks: [
+				{
+					id: "69FC6941E6C83799"
+					item: "gtceu:me_input_bus"
+					type: "item"
+				}
+			]
+			title: "ME接口仓"
 			x: 5.625d
 			y: 4.5d
+		}
+		{
+			dependencies: [
+				"40408FFD02134148"
+				"4AFD3073C731A1E4"
+				"7FA0ACB7F161F378"
+			]
+			description: [
+				"你可能在&2EMI&r中悬停在额外产出上时注意到了&9“每级几率“&r.每个超过所需等级的超频都会为该几率产出增加相应的百分比加成!"
+				""
+				"这意味着使用&3EV研磨机&r将产生&e更多副产物&r!"
+			]
+			id: "7B23AF5B6B62BC19"
+			size: 0.75d
+			subtitle: "一个方块中的贪婪与享乐"
+			tasks: [
+				{
+					id: "4EC5F44332F7533B"
+					item: "gtceu:ev_macerator"
+					type: "item"
+				}
+			]
+			title: "更多副产物"
+			x: 5.625d
+			y: 6.75d
 		}
 		{
 			dependencies: [
@@ -757,19 +818,21 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest383B789B654C4094.description1}"
+				"到达这里是一段相当长的旅程."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest383B789B654C4094.description2}"
+				"&3EV电路组装&r “解锁“ 下一等级的电路,&5纳米电路&r."
 			]
 			id: "383B789B654C4094"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest383B789B654C4094.subtitle}"
-			tasks: [{
-				id: "544E19AF6D2630DC"
-				item: "gtceu:ev_circuit_assembler"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest383B789B654C4094.title}"
+			subtitle: "认为自己正式进入EV阶段!"
+			tasks: [
+				{
+					id: "544E19AF6D2630DC"
+					item: "gtceu:ev_circuit_assembler"
+					type: "item"
+				}
+			]
+			title: "EV电路组装"
 			x: 4.5d
 			y: 7.875d
 		}
@@ -779,35 +842,37 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest7D15EEE81B1A3100.description1}"
+				"请注意,理论上可以通过使用&3&a大型化学反应釜&f&r来跳过&3EV &a化学反应器&f&r,但我们足够邪恶,强迫你制作这个."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest7D15EEE81B1A3100.description2}"
+				"&7由于其紧凑的尺寸,它仍然有用!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest7D15EEE81B1A3100.description3}"
+				"&8老实说,如果在材料方面制作这个是个大问题,检查一下你的基础设施."
 			]
 			id: "7D15EEE81B1A3100"
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest7D15EEE81B1A3100.subtitle}"
-			tasks: [{
-				id: "0AF5929611BCDF2C"
-				item: "gtceu:ev_chemical_reactor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest7D15EEE81B1A3100.title}"
+			subtitle: "化学变得更难"
+			tasks: [
+				{
+					id: "0AF5929611BCDF2C"
+					item: "gtceu:ev_chemical_reactor"
+					type: "item"
+				}
+			]
+			title: "极端化学反应"
 			x: 5.625d
 			y: 5.625d
 		}
 		{
 			dependencies: ["7D15EEE81B1A3100"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest63A87C9303D54487.description1}"
+				"&a&a纳米CPU晶圆&f&r是通过将普通的&a&aCPU晶圆&f&r与&d荧石&r和&9&a粗制碳网&f&r融合制成的."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest63A87C9303D54487.description2}"
+				"在制造&5纳米&r系列电路时,将需要大量它们."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest63A87C9303D54487.description3}"
+				"更高级的聚合物将增加你的&9&a粗制碳网&f&r产量.一个&d环氧树脂&r就足够一整组了."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest63A87C9303D54487.description4}"
+				"&9提示:&r 不喜欢挖&d荧石&r？查看红石矿石处理."
 			]
 			icon: "gtceu:nano_cpu_wafer"
 			id: "63A87C9303D54487"
@@ -817,11 +882,13 @@
 					count: 16L
 					id: "1276318CB2F198F7"
 					item: "gtceu:carbon_fibers"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "47E901701A935F9D"
 					item: "gtceu:nano_cpu_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -830,7 +897,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest63A87C9303D54487.title}"
+			title: "&a纳米CPU晶圆&f"
 			x: 6.75d
 			y: 6.75d
 		}
@@ -842,65 +909,71 @@
 				"4C3805F75C9EE3DD"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest196FC518F744B983.description1}"
+				"制作顶级的&e高压&r电路能让您的按需自动化更轻松地运行&e高压&r机器.非常方便!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest196FC518F744B983.description2}"
+				"从这里开始,所有电路生产线将保持一致直至游戏终局."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest196FC518F744B983.description3}"
+				"每个等级直到&cZPM&r级,在获取新型优质电路时都会呈现独特的挑战."
 			]
 			id: "196FC518F744B983"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest196FC518F744B983.subtitle}"
-			tasks: [{
-				id: "028DC1BC1D3E1381"
-				item: "gtceu:nano_processor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest196FC518F744B983.title}"
+			subtitle: "&a标记&f巅峰...至高之境"
+			tasks: [
+				{
+					id: "028DC1BC1D3E1381"
+					item: "gtceu:nano_processor"
+					type: "item"
+				}
+			]
+			title: "最佳高压电路!"
 			x: 6.75d
 			y: 7.875d
 		}
 		{
 			dependencies: ["117FBB18DEE6F08B"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest5E6BA54E8A5BEBDE.description1}"
+				"现在您拥有&a环氧树脂&r,可以制作&a&a进阶电路板&f&r!距离下一级电路仅一步之遥,请继续努力."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest5E6BA54E8A5BEBDE.description2}"
+				"&9&l小贴士:&r"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest5E6BA54E8A5BEBDE.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5E6BA54E8A5BEBDE.description4}"
+				"- 考虑采用&d电金分解&r和&d矿石处理&r获取&e银铜合金&r."
+				"- 考虑通过&3&a化学浸洗器&f&r配合&d水银&r从多种矿石中提取&e黄金&r."
 			]
 			id: "5E6BA54E8A5BEBDE"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest5E6BA54E8A5BEBDE.subtitle}"
-			tasks: [{
-				id: "27C6D1AB82DA805D"
-				item: "gtceu:epoxy_printed_circuit_board"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest5E6BA54E8A5BEBDE.title}"
+			subtitle: "相当昂贵的黄金成本..."
+			tasks: [
+				{
+					id: "27C6D1AB82DA805D"
+					item: "gtceu:epoxy_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "&a进阶电路板&f"
 			x: 5.625d
 			y: 7.875d
 		}
 		{
 			dependencies: ["383B789B654C4094"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest6781213726919716.description1}"
+				"&e系统级芯片&r(或称&bSoC&r)是一种特殊组件,可将所有典型电路元件(如SMD)微型化集成到单一芯片上."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest6781213726919716.description2}"
+				"这类芯片极其有用,能解锁制造&e精炼&r、&e微型&r及&e&a纳米电路板&f&r的最高效配方."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest6781213726919716.description3}"
+				"每个基于SoC的电路配方需要不同最低等级的&a&a控制电路加工厂&f&r,其中&a纳米电路板&f要求达到&dLuV&r级.&a系统级芯片&r同时解锁&d低压电路&r的最佳配方."
 			]
 			id: "6781213726919716"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest6781213726919716.subtitle}"
-			tasks: [{
-				id: "29BA6B4E01C4AFB6"
-				item: "gtceu:soc"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest6781213726919716.title}"
+			subtitle: "系统上的芯片在哪儿？"
+			tasks: [
+				{
+					id: "29BA6B4E01C4AFB6"
+					item: "gtceu:soc"
+					type: "item"
+				}
+			]
+			title: "系统级芯片"
 			x: 7.875d
 			y: 7.875d
 		}
@@ -910,19 +983,21 @@
 				"7F272A099E65F848"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest0017FFFAD7CD2EFE.description1}"
+				"此处无需多言."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest0017FFFAD7CD2EFE.description2}"
+				"干得漂亮,我们觉得."
 			]
 			id: "0017FFFAD7CD2EFE"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest0017FFFAD7CD2EFE.subtitle}"
-			tasks: [{
-				id: "658F8D1F068928CE"
-				item: "gtceu:nano_processor_assembly"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest0017FFFAD7CD2EFE.title}"
+			subtitle: "更强,更好,更快,更稳"
+			tasks: [
+				{
+					id: "658F8D1F068928CE"
+					item: "gtceu:nano_processor_assembly"
+					type: "item"
+				}
+			]
+			title: "更多极压电路!"
 			x: 7.875d
 			y: 9.0d
 		}
@@ -931,51 +1006,57 @@
 				"0017FFFAD7CD2EFE"
 				"2D5BECC0AC0E316B"
 			]
-			description: ["Entering &1IV&r with these Circuits shouldn't be too painful."]
+			description: ["通过这些电路&a进入&f&1超高压&r时代应该不会太艰难."]
 			id: "5CC9B0E832545569"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest5CC9B0E832545569.subtitle}"
-			tasks: [{
-				id: "2E0E4FF63368E44C"
-				item: "gtceu:nano_processor_computer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest5CC9B0E832545569.title}"
+			subtitle: "扬帆起航,超高压已现曙光"
+			tasks: [
+				{
+					id: "2E0E4FF63368E44C"
+					item: "gtceu:nano_processor_computer"
+					type: "item"
+				}
+			]
+			title: "更多超高压电路"
 			x: 7.875d
 			y: 10.125d
 		}
 		{
 			dependencies: ["017019EB38F7A18C"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest2D5BECC0AC0E316B.description1}"
+				"或非门接收两个输入信号,仅当两个输入信号均为低电平时才会输出高电平信号."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest2D5BECC0AC0E316B.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest2D5BECC0AC0E316B.description3}"
+				"目前这并不重要,它只是更复杂的晶圆组件."
+				"用于制造&a&a数据球&f&r(进入&3科研&r阶段的关键组件)以及&5纳米&r电路生产."
 			]
 			id: "2D5BECC0AC0E316B"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [{
-				id: "6D561B2E5375B013"
-				item: "gtceu:nor_memory_chip"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest2D5BECC0AC0E316B.title}"
+			tasks: [
+				{
+					id: "6D561B2E5375B013"
+					item: "gtceu:nor_memory_chip"
+					type: "item"
+				}
+			]
+			title: "&a或非门&f"
 			x: 6.75d
 			y: 10.125d
 		}
 		{
 			dependencies: ["5CC9B0E832545569"]
-			description: ["Save two of these for the &3IV Circuit Assembler&r."]
+			description: ["请预留两个用于&3超高压 &a电路组装机&f&r."]
 			id: "58BBD540D7D4FF01"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest58BBD540D7D4FF01.subtitle}"
-			tasks: [{
-				id: "40A35927E6D7848D"
-				item: "gtceu:nano_processor_mainframe"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest58BBD540D7D4FF01.title}"
+			subtitle: "我爱&d格雷科技&f"
+			tasks: [
+				{
+					id: "40A35927E6D7848D"
+					item: "gtceu:nano_processor_mainframe"
+					type: "item"
+				}
+			]
+			title: "首批LuV电路!"
 			x: 7.875d
 			y: 11.25d
 		}
@@ -984,17 +1065,19 @@
 				"06B4AAC7DD796182"
 				"069FD86133D7D582"
 			]
-			description: ["Amperage goes up - we're now at a whopping &e6A&r per Superconductor."]
+			description: ["载流量提升——现在每根超导体可承载惊人的&e6安培&r电流."]
 			id: "4A96337843BAC13A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest4A96337843BAC13A.subtitle}"
-			tasks: [{
-				id: "478E2D7B59664F86"
-				item: "gtceu:uranium_triplatinum_double_wire"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest4A96337843BAC13A.title}"
+			subtitle: "性能迭代"
+			tasks: [
+				{
+					id: "478E2D7B59664F86"
+					item: "gtceu:uranium_triplatinum_double_wire"
+					type: "item"
+				}
+			]
+			title: "&a极压超导体&f"
 			x: 9.0d
 			y: 11.25d
 		}
@@ -1004,43 +1087,45 @@
 				"16B735F9C391D260"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.description1}"
+				"&a末影流体链接覆盖板&r是&d格雷科技&r的&3末影蓄水槽&r.每个覆盖板通过&e8位十六进制数字&r(每位数字范围为0-9及A-F)定义的频率传输流体,为您提供&e42.9亿&r个可用频道!只要所在区块已加载,末影流体链接覆盖板即可正常工作——无视距离或维度限制."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.description2}"
+				"设置为输入模式时,将从附着的世界位置&o&c抽取&r流体；输出模式则会向世界&o&9输送&r流体.每个频道拥有&d64桶&r的缓冲容量."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.description3}"
+				"您还可以制作类似的&3末影物品链接覆盖板&r来运输物品,其机制与流体版本相同.制作任意一种即可完成本任务."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.description6}"
+				"最后,点击界面中的&e锁定&r按钮可将覆盖板绑定到您的&d私人频道&r,这在服务器游玩时非常实用."
+				"{@pagebreak}"
+				"您可为每个频道添加描述并查看列表.建议建立管理系统来整理所有频道,同时强烈建议在任何情况下都不要使用默认频道(FFFFFFFF)."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.description7}"
+				"&l&3背景故事:&r&o在加入GTm前,本整合包一直使用&d末影存储&r.若您仍在使用旧系统,我们&l强烈建议&r&o将其更换为&a格雷科技&r覆盖板&r&o,该操作可在工作台中完成."
 			]
 			id: "23A7E6D95549B1F8"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.subtitle}"
-			tasks: [{
-				id: "063E326F5BEA79A5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ender_fluid_link_cover"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ender_item_link_cover"
-							}
-						]
+			subtitle: "末影？我还没——好吧,这个梗过时了"
+			tasks: [
+				{
+					id: "063E326F5BEA79A5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ender_fluid_link_cover"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ender_item_link_cover"
+								}
+							]
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest23A7E6D95549B1F8.title}"
+			]
+			title: "&a末影流体链接覆盖板&f"
 			x: 6.75d
 			y: 9.0d
 		}
@@ -1050,24 +1135,26 @@
 				"4024C831C77101CA"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest7F2FE3AF6F0C1190.description1}"
+				"&a高级能量探测覆盖板&r是能源控制的RS锁存器."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest7F2FE3AF6F0C1190.description2}"
+				"将其安装于&3电池缓冲器&r,设置接近0的最小EU值和接近最大容量的最大EU值."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest7F2FE3AF6F0C1190.description3}"
+				"&a背板&f将持续输出&4红石&r信号直至达到高阈值,随后会等待至低阈值时再次输出红石信号."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest7F2FE3AF6F0C1190.description4}"
+				"这是自动化基于惯性的发电设备(如锅炉)的关键部件,更重要的是用于&3大型涡轮机&r."
 			]
 			id: "7F2FE3AF6F0C1190"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest7F2FE3AF6F0C1190.subtitle}"
-			tasks: [{
-				id: "305731DA47087165"
-				item: "gtceu:advanced_energy_detector_cover"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest7F2FE3AF6F0C1190.title}"
+			subtitle: "节省红石装置成本"
+			tasks: [
+				{
+					id: "305731DA47087165"
+					item: "gtceu:advanced_energy_detector_cover"
+					type: "item"
+				}
+			]
+			title: "高级&a能量探测覆盖板&f"
 			x: 5.625d
 			y: 9.0d
 		}
@@ -1077,14 +1164,14 @@
 				"45F9AAE4ABE32033"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest46C7E1D5E37B1ED2.description1}"
+				"若需迁移基地,现在可远程扩展您的AE2网络."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest46C7E1D5E37B1ED2.description2}"
+				"制作一对完整的&3量子通道&r并非易事,需要付出相当的努力才能完成."
 			]
 			icon: "ae2:quantum_link"
 			id: "46C7E1D5E37B1ED2"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest46C7E1D5E37B1ED2.subtitle}"
+			subtitle: "[-h^2/2m∇^2 + V(x,t)]ψ(x,t) = iht'ψ(x,t)"
 			tasks: [
 				{
 					count: 2L
@@ -1105,7 +1192,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest46C7E1D5E37B1ED2.title}"
+			title: "量子通道"
 			x: 3.375d
 			y: 10.125d
 		}
@@ -1115,20 +1202,20 @@
 				"42FB276AB16258D9"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.description1}"
+				"&a铀&r在&2GTCEu&r中目前用途有限,因为我们&4尚未&r实装&3核反应堆&r(已在计划中!)."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.description4}"
+				"从&a沥青铀矿&r制备&d六氟化铀&f&r,此举可分离铀-238与铀-235同位素."
+				"{@pagebreak}"
+				"反应中&9氟&r会被完全回收,但启动阶段仍需约40桶的用量."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.description5}"
+				"&9氢&r会被消耗,因此需要大量储备.建议使用多台&3低压电解机&r电解水以获得最佳能效,或回收未使用的&d碳氢化合物&r(如甲烷)."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.description6}"
+				"&9提示:&r可通过单个&3离心机&r配合&e流体调节器&r(设置为&d精确补给1,000&r)来实现紧凑型布局."
 			]
 			icon: "gtceu:uranium_dust"
 			id: "06B4AAC7DD796182"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.subtitle}"
+			subtitle: "希望这个任务不会让您上监控名单"
 			tasks: [
 				{
 					count: 3L
@@ -1140,12 +1227,14 @@
 							value: "forge:dusts/uraninite"
 						}
 					}
-					title: "{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.task.1BE01DA0E8A143FB.title}"
+					optional_task: true
+					title: "铀矿粉"
 					type: "item"
 				}
 				{
 					id: "19027B3E2E43BAFF"
 					item: "gtceu:uranium_hexafluoride_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1154,7 +1243,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest06B4AAC7DD796182.title}"
+			title: "铀浓缩工艺"
 			x: 4.5d
 			y: 11.25d
 		}
@@ -1164,19 +1253,19 @@
 				"528CE69DA4358B2E"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest73E8283634E5E33A.description1}"
+				"别担心,这跟运行一台&aEBF&f比起来根本不算什么."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest73E8283634E5E33A.description2}"
+				"幸运的是,&3LCR&r合成配方在&2EMI&r中关于&a氡&r的部分应该能让你一目了然地设置流程."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest73E8283634E5E33A.description3}"
+				"输入一些&a铀&r,用&3&a电力炉&f&r将&d钚&r循环回系统,然后静待奇迹发生."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest73E8283634E5E33A.description4}"
+				"&l&3背景知识:&r&o这条既受诅咒又迷人的\"链条\"继承自&d格雷科技&f5.&a钚-239&f以矿石形式存在,某种程度上是为了避免通过复杂手段获取而设置的占位符."
 			]
 			icon: "gtceu:radon_bucket"
 			id: "73E8283634E5E33A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest73E8283634E5E33A.subtitle}"
+			subtitle: "200秒？!不会吧？!"
 			tasks: [
 				{
 					count: 8L
@@ -1188,7 +1277,7 @@
 							value: "forge:ingots/plutonium"
 						}
 					}
-					title: "{ftbquests.chapter.ev__extreme_voltage.quest73E8283634E5E33A.task.767C47FF351DAE3B.title}"
+					title: "&a钚锭&f"
 					type: "item"
 				}
 				{
@@ -1197,7 +1286,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest73E8283634E5E33A.title}"
+			title: "氡"
 			x: 4.5d
 			y: 9.0d
 		}
@@ -1209,139 +1298,147 @@
 				"40018C0546454CD9"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description1}"
+				"&a环氧树脂&r是游戏中所有后续&a电路板&f的制造基础.准备好大量生产它吧."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description4}"
+				"&9&l注意:&r这条任务线相当复杂,所以在尝试制造环氧树脂前,请先完成其他所有内容.你会需要所有能得到的帮助!"
+				"{@pagebreak}"
+				"获取&a环氧树脂&r原料有几种方法."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description5}"
+				"我们将忽略涉及甘油的配方,除非模组包开发者进行调整,否则这些配方从来都不划算.&m暗示一下,如果你在制作自己的模组包!&r"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description6}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description7}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description8}"
+				"尝试使用&3&a大型化学反应釜&f&r来简化配方流程."
+				"{@pagebreak}"
+				"&d氯气&r只能部分回收,因此你需要持续供应.初期手动添加应该就足够了."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description9}"
+				"涉及&d&a氢氧化钠&f&r的配方可以通过电解&9&a盐水&f&r副产物来实现循环."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description10}"
+				"这样做可能需要你制作一些四重管道、泵覆盖板、&a流体过滤器&f...或者使用AE2来规划所有物流."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.description11}"
+				"总的来说,闭环设置能有效防止过度生产或消耗,但请选择你觉得更有趣的方式."
 			]
 			id: "117FBB18DEE6F08B"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.subtitle}"
-			tasks: [{
-				id: "35EAB019D81FD0A6"
-				item: "gtceu:epoxy_plate"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest117FBB18DEE6F08B.title}"
+			subtitle: "顶级电路板材料"
+			tasks: [
+				{
+					id: "35EAB019D81FD0A6"
+					item: "gtceu:epoxy_plate"
+					type: "item"
+				}
+			]
+			title: "环氧树脂"
 			x: 3.375d
 			y: 7.875d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest1F571B9E1555DA04.description1}"
+				"首次制造&a环氧氯丙烷&r时,建议采用&3LCR&r配方."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1F571B9E1555DA04.description2}"
+				"该配方需要&a丙烯&r,这意味着现在必须进行&d&a原油处理&f&r和&d燃料裂解&r.如果你之前一直在拖延,我们深感抱歉!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1F571B9E1555DA04.description3}"
+				"在向&a右&f推进科技树之前,建造第一座&3&a蒸馏塔&f&r至关重要."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1F571B9E1555DA04.description4}"
+				"最后,如果你还没注意到,可以通过循环&d&a盐水&f&r副产物来启动&d&a氢氧化钠&f&r的生产线."
 			]
 			id: "1F571B9E1555DA04"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest1F571B9E1555DA04.subtitle}"
-			tasks: [{
-				id: "45620325962A91D0"
-				item: "gtceu:epichlorohydrin_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest1F571B9E1555DA04.title}"
+			subtitle: "\"环氧”一词中的\"传奇”"
+			tasks: [
+				{
+					id: "45620325962A91D0"
+					item: "gtceu:epichlorohydrin_bucket"
+					type: "item"
+				}
+			]
+			title: "环氧氯丙烷"
 			x: 2.25d
 			y: 7.875d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description1}"
+				"获取 &a苯酚&r 的方法:"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description2}"
+				"&91 -&r 通过 &a&a木焦油&f&r 蒸馏获得."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description3}"
+				"&92 -&r 在 &3LCR&r 中使 &a苯&r 与 &d氯气&r 和 &d&a氢氧化钠&f&r 反应,且氯气可完美循环利用."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description4}"
+				"&93 -&r 省略 &d&a氢氧化钠&f&r 的快捷配方,但会导致 &d氯气&r 净损耗."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description6}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description7}"
+				"&94 -&r 使用少量 &4&a磷酸&f&r(通常作为催化剂,此处微量消耗)使 &a苯&r、&d丙烯&r 和 &d氧气&r 反应——即异丙苯法."
+				"{@pagebreak}"
+				"若难以抉择方案,可参考各路线优势:"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description8}"
+				"&91 -&r 适合已搭建 &3&a热解炉&f&r + &3&a蒸馏塔&f&r 组合的情况."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description9}"
+				"&92 -&r 推荐方案!可用 &d盐&r 制取更多 &d&a盐水&f&r,电解后形成循环."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description10}"
+				"&93 -&r 拥有无限 &d氯气&r 供应时极具吸引力(例如在 &a盐水&f 矿脉部署 &3&a流体钻机&f&r)."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description11}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description12}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.description13}"
+				"&94 -&r ...&4&a磷酸&f&r 制备繁琐,不建议考虑."
+				"{@pagebreak}"
+				"&l&3背景说明:&r&o GTCE 曾添加 &a苯&f + 氧气 配方以弥补缺失的化学反应,因当时无 &a大型化学反应釜&f.CEu 提供更现实方案后,此配方未来可能移除."
 			]
 			id: "4CD9F6D1B4CC7D81"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.subtitle}"
-			tasks: [{
-				id: "5F713348547742D9"
-				item: "gtceu:phenol_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest4CD9F6D1B4CC7D81.title}"
+			subtitle: "但这就是我的苯酚之道"
+			tasks: [
+				{
+					id: "5F713348547742D9"
+					item: "gtceu:phenol_bucket"
+					type: "item"
+				}
+			]
+			title: "苯酚"
 			x: 2.25d
 			y: 6.75d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest40018C0546454CD9.description1}"
+				"蒸馏 &a&a木醋酸&f&r 虽可获 &a丙酮&r,但产率低且可能不足."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest40018C0546454CD9.description2}"
+				"建议直接通过 &a&a乙酸&f&r 在 &3LCR&r 中制取 &a丙酮&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest40018C0546454CD9.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest40018C0546454CD9.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest40018C0546454CD9.description5}"
+				"若追求高效,可采用经典循环:&a&a乙酸&f&r&d&a乙酸钙溶液&f&r&a丙酮&r,无需 &3LCR&r 且钙化合物可完全回收."
+				"{@pagebreak}"
+				"虽多次提及 &a乙酸&f,但尚未说明其获取方式——现在正合适:"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest40018C0546454CD9.description6}"
+				"&a&a乙酸&f&r 可在 &3&a化学反应器&f&r 中合成,推荐以 &d乙烯&r 为原料的配方."
 			]
 			id: "40018C0546454CD9"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [{
-				id: "78BFA0425B39316A"
-				item: "gtceu:acetone_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest40018C0546454CD9.title}"
+			tasks: [
+				{
+					id: "78BFA0425B39316A"
+					item: "gtceu:acetone_bucket"
+					type: "item"
+				}
+			]
+			title: "丙酮"
 			x: 2.25d
 			y: 9.0d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.description1}"
+				"&a硅橡胶&f 可用于电缆绝缘、传送带配方等场景."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.description4}"
+				"建议暂缓研究此内容,因制备 &a硅橡胶&f 会大量消耗 &d氯气&r."
+				"{@pagebreak}"
+				"&9注:&r &1IV&r 级电缆最终需用 &a&a硅橡胶&f&r 或 &a丁苯橡胶&f&r 替代普通橡胶."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.description5}"
+				"进入 &dLuV&r 阶段后两种橡胶均为必需材料."
 			]
 			icon: "gtceu:silicone_rubber_plate"
 			id: "1A4AD56965407DC5"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.subtitle}"
+			subtitle: "替代橡胶方案"
 			tasks: [
 				{
 					id: "3E2FBCED1C782E7C"
@@ -1352,7 +1449,8 @@
 							value: "forge:ingots/silicone_rubber"
 						}
 					}
-					title: "{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.task.3E2FBCED1C782E7C.title}"
+					optional_task: true
+					title: "&a硅橡胶&f锭"
 					type: "item"
 				}
 				{
@@ -1364,36 +1462,38 @@
 							value: "forge:plates/silicone_rubber"
 						}
 					}
-					title: "{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.task.3CF87D26761354C4.title}"
+					title: "&a硅橡胶&f板"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest1A4AD56965407DC5.title}"
+			title: "&a硅橡胶&f"
 			x: 1.125d
 			y: 6.75d
 		}
 		{
 			dependencies: ["390E59F05132FCB8"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest77070668969E31BF.description1}"
+				"&7&a丁苯橡胶&f (SBR)&r 是一种强化橡胶."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest77070668969E31BF.description2}"
+				"可替代多数配方中的普通橡胶,且 &e电缆绝缘效率提升四倍&r,部分高阶配方强制要求使用."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest77070668969E31BF.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest77070668969E31BF.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest77070668969E31BF.description5}"
+				"拥有 &3&a蒸馏塔&f&r 前性价比不高,但随 &d燃油裂化&r 技术发展会逐步简化."
+				"{@pagebreak}"
+				"&9注:&r &1IV&r 级电缆最终需用 &a&a硅橡胶&f&r 或 &a丁苯橡胶&f&r 替代普通橡胶."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest77070668969E31BF.description6}"
+				"进入 &dLuV&r 阶段后两种橡胶均为必需材料."
 			]
 			id: "77070668969E31BF"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest77070668969E31BF.subtitle}"
-			tasks: [{
-				id: "7D952AF37FC51956"
-				item: "gtceu:styrene_butadiene_rubber_plate"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest77070668969E31BF.title}"
+			subtitle: "钢珠奔流"
+			tasks: [
+				{
+					id: "7D952AF37FC51956"
+					item: "gtceu:styrene_butadiene_rubber_plate"
+					type: "item"
+				}
+			]
+			title: "&a丁苯橡胶&f"
 			x: 0.0d
 			y: 7.875d
 		}
@@ -1403,43 +1503,47 @@
 				"48141DBA683F6B5A"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest00E2BAEDB8199E4E.description1}"
+				"&a汽油&r是一种极其强效的燃烧燃料.其能量密度是&d柴油&r的&e&a3倍以上&f&r!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest00E2BAEDB8199E4E.description2}"
+				"&9注意:&r该燃烧燃料仅作为一项&e挑战&r存在,供有意者突破自我."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest00E2BAEDB8199E4E.description3}"
+				"它完全属于&d可选内容&r,因此我们将让您自行探索获取方式,不再提供额外提示."
 			]
 			id: "00E2BAEDB8199E4E"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [{
-				id: "2D073A538A19BCDD"
-				item: "gtceu:gasoline_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest00E2BAEDB8199E4E.title}"
+			tasks: [
+				{
+					id: "2D073A538A19BCDD"
+					item: "gtceu:gasoline_bucket"
+					type: "item"
+				}
+			]
+			title: "汽油"
 			x: 1.125d
 			y: 9.0d
 		}
 		{
 			dependencies: ["00E2BAEDB8199E4E"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest046B4A0B2639B16A.description1}"
+				"将能量密度乘以2&r,您就得到了&a&a高辛烷值汽油&f&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest046B4A0B2639B16A.description2}"
+				"&9注意:&r自动化生产需要大量&3&a蒸馏塔&f&r!基地的很大一部分将专门用于持续生产,且不能出现任何瓶颈."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest046B4A0B2639B16A.description3}"
+				"若您的基地成功运行&a高辛烷值汽油&r系统,欢迎在我们的&8Discord&r上分享截图炫耀成果."
 			]
 			id: "046B4A0B2639B16A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest046B4A0B2639B16A.subtitle}"
-			tasks: [{
-				id: "5C03BCF778B6293A"
-				item: "gtceu:high_octane_gasoline_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest046B4A0B2639B16A.title}"
+			subtitle: "快给我拿龙晶来!"
+			tasks: [
+				{
+					id: "5C03BCF778B6293A"
+					item: "gtceu:high_octane_gasoline_bucket"
+					type: "item"
+				}
+			]
+			title: "&a高辛烷值汽油&f"
 			x: 0.0d
 			y: 9.0d
 		}
@@ -1449,36 +1553,40 @@
 				"16A6AE5C770DB83A"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description1}"
+				"&3&a蒸馏塔&f&r是一种能帮助您从流体中最大化提取产物的多方块结构.在&3分馏厂&r中,您只能选择输出一种产物,而蒸馏塔可&e同时输出所有产物&r!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description4}"
+				"&9注意特殊放置规则:&r能量、物品和流体输入口只能置于底层.维护舱可任意放置.流体输出口从第二层开始放置,且每层仅允许一个."
+				"{@pagebreak}"
+				"&3蒸馏塔&r的高度可从&c&c3&r至&c13&r格不等,支持2到12个流体输出口.流体始终会在与&2EMI&r中配方对应的层级输出."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description5}"
+				"&3蒸馏塔&r还有一条&9特殊&r规则:可故意建造过矮的结构,这将导致本应在顶层输出的流体被&c虚空吞噬&r.此特性在某些特殊场景中很有用."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description6}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description7}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description8}"
+				"建议每层输出都使用&3超级储罐&r."
+				"{@pagebreak}"
+				"&c注意:&r使用&3&a蒸馏塔&f&r处理石油→燃料→柴油的流程&c不划算&r!多方块结构加速消耗的能量将超过产物收益.最好等待能制造&3大型分馏厂&r(&1IV级&r)时再进行大规模柴油生产."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.description9}"
+				"但蒸馏塔在提取裂化燃料和热解产物时&e极具价值&r."
 			]
 			id: "48141DBA683F6B5A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2893ECAD2905293A"
-				table_id: 4190763620137969664L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2893ECAD2905293A"
+					table_id: 4190763620137969664L
+					type: "choice"
+				}
+			]
 			shape: "gear"
 			size: 1.3d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.subtitle}"
-			tasks: [{
-				id: "53541406691632A9"
-				item: "gtceu:distillation_tower"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest48141DBA683F6B5A.title}"
+			subtitle: "是时候建真正的炼油厂了!"
+			tasks: [
+				{
+					id: "53541406691632A9"
+					item: "gtceu:distillation_tower"
+					type: "item"
+				}
+			]
+			title: "&a蒸馏塔&f"
 			x: 1.125d
 			y: 10.125d
 		}
@@ -1488,11 +1596,11 @@
 				"48141DBA683F6B5A"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest1030A9F4AAC685ED.description1}"
+				"&a&a液态空气&f&r是以更高能耗(相比&3LV离心机&r)获取大量&a氮气&r和&a氧气&r的绝佳方式."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1030A9F4AAC685ED.description2}"
+				"此法还可同时产出&e氦气&r和&e氩气&r——这些气体能显著提升&3&a电力高炉&f&r的冶炼效率."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1030A9F4AAC685ED.description3}"
+				"&c注意:&r运行此配方至少需要&3HV级输入输出舱&r."
 			]
 			icon: "gtceu:air_bucket"
 			id: "1030A9F4AAC685ED"
@@ -1520,48 +1628,50 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest1030A9F4AAC685ED.title}"
+			title: "真实蒸馏:空气"
 			x: 2.25d
 			y: 11.25d
 		}
 		{
 			dependencies: ["6958029B5514D4EC"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest6D12CE80F92FC485.description1}"
+				"某些特定流体具有&d低温特性&r,其温度过低会导致普通管道无法运输."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest6D12CE80F92FC485.description2}"
+				"因此...需要选择专用管道进行输送."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest6D12CE80F92FC485.description3}"
+				"支持低温流体的管道种类有限,建议尝试&a不锈钢&r或&a铱&r材质管道.后期可获得&a娜夸达&r或大部分聚变材料来制造相应管道."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest6D12CE80F92FC485.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest6D12CE80F92FC485.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest6D12CE80F92FC485.description6}"
+				"&c警告:&r&r错误管道输送低温流体将引发&c流体消失&r、&c管道冻结&r及极高&c死亡率&r!请务必谨慎."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o这是&d格雷科技社区版&f首次引入低温机制,此为GTCEu原创特色!"
 			]
 			icon: "gtceu:stainless_steel_large_fluid_pipe"
 			id: "6D12CE80F92FC485"
 			shape: "circle"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest6D12CE80F92FC485.subtitle}"
-			tasks: [{
-				id: "5C8340E344B1EA59"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest6D12CE80F92FC485.title}"
+			subtitle: "此处寻觅无门"
+			tasks: [
+				{
+					id: "5C8340E344B1EA59"
+					type: "checkmark"
+				}
+			]
+			title: "这不是极寒之凛冰!"
 			x: 3.375d
 			y: 11.25d
 		}
 		{
 			dependencies: ["48141DBA683F6B5A"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest46367A76755866D9.description1}"
+				"以下是蒸馏蒸汽裂解燃料时最关键的四种&d碳氢化合物&r产物."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest46367A76755866D9.description2}"
+				"建议在进入&1IV&r工业阶段&l之前&r完成该装置搭建."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest46367A76755866D9.description3}"
+				"选用&a&a蒸汽裂解轻燃料&f&r作为原料或许是最佳选择,但欢迎尝试其他方案."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest46367A76755866D9.description4}"
+				"我们猜您正在想:\"&7&o这个副产碳输出太气人了!完全破坏自动化流程!&r\""
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest46367A76755866D9.description5}"
+				"若不想安装输出总线,可在控制器图形界面启用物品销毁功能."
 			]
 			icon: "gtceu:oil_bucket"
 			id: "46367A76755866D9"
@@ -1589,31 +1699,31 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest46367A76755866D9.title}"
+			title: "真·分馏工艺:燃料篇"
 			x: 2.25d
 			y: 10.125d
 		}
 		{
 			dependencies: ["48141DBA683F6B5A"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description1}"
+				"本任务需使用&3&a热解炉&f&r,属于&d可选&r但便捷的流程."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description6}"
+				"前四种流体是&a&a木焦油&f&r分馏的重要产物:"
+				"&9-&r 苯酚:用于生产环氧树脂和聚苯并咪唑"
+				"&9-&r 苯:重要碳氢化合物"
+				"&9-&r 甲苯:TNT制备原料"
+				"&9-&r 二甲苯:聚苯并咪唑生产原料"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description7}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description8}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description9}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description10}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description11}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description12}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description13}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description14}"
+				"与原油不同,将&a&a木焦油&f&r注入&3&a蒸馏塔&f&r获取副产品,并用&d硝基苯&r发电是值得的."
+				"{@pagebreak}"
+				"&a底部&f三层产物来自&a&a木醋酸&f&r分馏:"
+				"&9-&r &a乙酸&f:用于增产丙酮"
+				"&9-&r 甲醇:中等重要性的碳氢化合物"
+				"&9-&r 丙酮:用于制造环氧树脂和汽油"
+				"{@pagebreak}"
+				"也可采用\"四联组合\"方案:将&a&a木炭副产物&f&r输入首座蒸馏塔,分离为&a&a木焦油&f&r、&a&a木炭气&f&r和&a&a木醋酸&f&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.description15}"
+				"虽非最高效的投入产出比,但可为枯燥流程提供备选方案."
 			]
 			icon: "gtceu:seed_oil_bucket"
 			id: "5742702B8021B1F5"
@@ -1656,94 +1766,136 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest5742702B8021B1F5.title}"
+			title: "真·分馏工艺:有机物篇"
 			x: 1.125d
 			y: 11.25d
 		}
 		{
 			dependencies: ["48141DBA683F6B5A"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest24866E83B280C9AB.description1}"
+				"&3裂解装置&r是专为流体裂解设计的多方块结构,具备&3&a化学反应器&f&r所有裂解配方且&e零损耗&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest24866E83B280C9AB.description2}"
+				"长期运行可显著节省燃料消耗!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest24866E83B280C9AB.description3}"
+				"更高级线圈能提供小幅能耗折扣——顶级线圈最高可达70%."
 			]
 			id: "24866E83B280C9AB"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest24866E83B280C9AB.subtitle}"
-			tasks: [{
-				id: "4307AF60A80EE9FC"
-				item: "gtceu:cracker"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest24866E83B280C9AB.title}"
+			subtitle: "裂解专家"
+			tasks: [
+				{
+					id: "4307AF60A80EE9FC"
+					item: "gtceu:cracker"
+					type: "item"
+				}
+			]
+			title: "多方块裂解装置"
 			x: 0.0d
 			y: 10.125d
 		}
 		{
+			dependencies: ["39E7997F3080250A"]
+			description: [
+				"将&aP2P通道&f转换为&a物品P2P通道&f&r需用&d原版箱子&r对其右键点击."
+				""
+				"物品&aP2P通道&f的实用性较为抽象,以下为例解:"
+				"{@pagebreak}"
+				"&e示例:&r在&3组装机&r内制作&9高压&a机械外壳&f&r需配套&3流体提取装置&r,这意味着需管理两个机器的库存."
+				""
+				"可被动向组装机输入聚乙烯,&l或&r将其以2根锭的形式纳入&d样板&r配置."
+				""
+				"若试图用缓冲仓配管道运输,该系统终将因与AE2接口阻塞模式冲突而&4卡死&r!"
+				"{@pagebreak}"
+				"解决方案:将&a物品P2P&r输入端连接&3&aME接口&f&r,两个输出端分别接至&3流体提取装置&r和&3组装机&r."
+				""
+				"在输出端配置过滤盖板.推荐使用&d物品&a标签过滤器&f&r,将其设置为&9锭类&r:提取装置端用&e白名单&r,组装机端用&e黑名单&r(因&d格雷科技&f中所有组装配方均不需锭材)."
+				""
+				"切记开启接口的&d&a阻塞模式&f&r."
+				""
+				"看——这就是为何推荐将聚合物(聚乙烯、聚四氟乙烯、聚苯并咪唑)存储为锭状的又一理由!"
+			]
+			icon: "ae2:item_p2p_tunnel"
+			id: "7EF57E379F736FBB"
+			shape: "rsquare"
+			size: 0.5d
+			subtitle: "物品与P2P通道入门指南"
+			tasks: [
+				{
+					id: "3CF9C3527F11EDA1"
+					type: "checkmark"
+				}
+			]
+			title: "物品&aP2P通道&f"
+			x: 7.653061224489797d
+			y: 4.464285714285715d
+		}
+		{
 			dependencies: ["3B2D2C47BEBCFFA7"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest5979B0E13A1EDC9C.description1}"
+				"&a合金高炉冶炼&fe&r是&5EV&r阶段唯一可用的主要&2GCYM&r机器.你可以用它生产通常需要混合器制作的所有合金."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest5979B0E13A1EDC9C.description2}"
+				"与产出&e热锭&r不同,当配方温度“足够高“时,ABS会产出&9熔融流体&r.这些流体需要通过&b&a真空冷冻机&f&r进行冷却,否则将产出常规液体."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest5979B0E13A1EDC9C.description3}"
+				"不必被漫长的冶炼时间吓退.该设备将&d混合步骤&r直接整合进冶炼配方,相比在EBF中冶炼矿粉实际能节省大量时间!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest5979B0E13A1EDC9C.description4}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5979B0E13A1EDC9C.description5}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest5979B0E13A1EDC9C.description6}"
+				"几乎所有的&2GCYM&r材料都由此设备生产,若找不到混合器配方,不妨寻找熔融流体配方!"
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o该多方块结构灵感源自GT++.它无需加热线圈,没有温度要求,且所有材料都产出常规液体.当年堪称破坏平衡,最终被限制仅能连接单个能源仓以作平衡.不知为何,它甚至能熔解任何矿粉...转化为液体...？"
 			]
 			id: "5979B0E13A1EDC9C"
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest5979B0E13A1EDC9C.subtitle}"
-			tasks: [{
-				id: "1493AF342D999313"
-				item: "gtceu:alloy_blast_smelter"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest5979B0E13A1EDC9C.title}"
+			subtitle: "GT++的遗影"
+			tasks: [
+				{
+					id: "1493AF342D999313"
+					item: "gtceu:alloy_blast_smelter"
+					type: "item"
+				}
+			]
+			title: "如此多的合金!"
 			x: 7.875d
 			y: 6.75d
 		}
 		{
 			dependencies: ["3B2D2C47BEBCFFA7"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest6FEF59B8F571359D.description1}"
+				"你大概有些闲置的旧机器吧？"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest6FEF59B8F571359D.description2}"
+				"现在你应该知道&a电弧炉&f可以回收机器,而到&5EV&r阶段,它们会升级为&a9槽位&r版本!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest6FEF59B8F571359D.description3}"
+				"&e注意&r:本任务接受&5EV&r或&9IV&r级别的&a电弧炉&f,无需同时制作两种."
 			]
 			icon: "gtceu:iv_arc_furnace"
 			id: "6FEF59B8F571359D"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest6FEF59B8F571359D.subtitle}"
-			tasks: [{
-				id: "35CAC76B502E12FF"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ev_arc_furnace"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_arc_furnace"
-							}
-						]
+			subtitle: "反正我一直不喜欢它们..."
+			tasks: [
+				{
+					id: "35CAC76B502E12FF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ev_arc_furnace"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_arc_furnace"
+								}
+							]
+						}
 					}
+					title: "&a电弧炉&f"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.ev__extreme_voltage.quest6FEF59B8F571359D.task.35CAC76B502E12FF.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest6FEF59B8F571359D.title}"
+			]
+			title: "淘汰旧机器"
 			x: 7.955102040816328d
 			y: 5.611224489795916d
 		}
@@ -1753,44 +1905,46 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest6BB13E775A579F2E.description1}"
+				"需要处理&e多重&r流体输入输出？无需他寻——这些&a&a液体舱口&fes&r可同时处理多种流体!"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest6BB13E775A579F2E.description2}"
+				"虽不能用于&b&a蒸馏塔&f&r,但在&5&a大型化学反应釜&f&r中尤为实用."
 			]
 			id: "6BB13E775A579F2E"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest6BB13E775A579F2E.subtitle}"
-			tasks: [{
-				id: "3B898812B1C35440"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ev_input_hatch_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_input_hatch_9x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_output_hatch_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_output_hatch_9x"
-							}
-						]
+			subtitle: "一对多,多对一"
+			tasks: [
+				{
+					id: "3B898812B1C35440"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ev_input_hatch_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_input_hatch_9x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_output_hatch_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_output_hatch_9x"
+								}
+							]
+						}
 					}
+					title: "多个&a液体舱口&f"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.ev__extreme_voltage.quest6BB13E775A579F2E.task.3B898812B1C35440.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest6BB13E775A579F2E.title}"
+			]
+			title: "多重&a液体舱口&f"
 			x: 6.75d
 			y: 5.625d
 		}
@@ -1800,41 +1954,45 @@
 				"5BACED5AE350EAB1"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description1}"
+				"&a铂系金属&r是六种具有催化特性的稀有金属,按随机顺序分别为:&3钌&r、&d铑&r、&7钯&r、&9锇&r、&b铱&r和&e铂&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description2}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description3}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description4}"
+				"你需要&4自动化&r其生产线,因所有这些金属在游戏后期都将被大量使用."
+				"{@pagebreak}"
+				"首先用&d&a硫酸&f&r处理含铂族元素的&a&a纯化&f&a粉碎矿石&f&r,生成&a&a铂系矿泥渣&f&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description5}"
+				"再用&d&a王水&f&r进行离心处理,产出各类铂系金属盐."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description6}"
+				"可从&e原始&a铂粉&f&r中完美回收&d氯气&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description7}"
+				"通过&d氨水&r处理&7&a粗钯金&f粉末&r可&o部分&r回收&d&a硫酸&f&r,但建议将多余氨水留作他用(如&a火箭燃料&f和PBI)."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description8}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description9}"
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description10}"
+				"其他铂系金属盐各有专属微型生产链——后续任务将详细说明."
+				"{@pagebreak}"
+				"&9注:&r&e铂金&r和&7钯金&r也可通过&a末地&f采矿或常规矿石处理获取."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.description11}"
+				"&l&3背景故事：&r&o是否听过Gregicality或&d格雷科技&f：&a新视野&f中恶名昭彰的\"铂金生产线\"？这条极其复杂的生产链通过Bartworks引入GT:NH。概念虽精彩，但我们大幅简化了流程，使GTCEu晚期游戏体验更顺畅。"
 			]
 			icon: "gtceu:platinum_group_sludge_dust"
 			id: "57D4E09A9CAB150C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "766886CFFF5CDC23"
-				table_id: 1971029833527055160L
-				title: "{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.reward.766886CFFF5CDC23.title}"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "766886CFFF5CDC23"
+					table_id: 1971029833527055160L
+					title: "含铂矿石"
+					type: "choice"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.subtitle}"
-			tasks: [{
-				id: "7A55DBCFDA2131AD"
-				item: "gtceu:platinum_group_sludge_dust"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest57D4E09A9CAB150C.title}"
+			subtitle: "50小时铂金线"
+			tasks: [
+				{
+					id: "7A55DBCFDA2131AD"
+					item: "gtceu:platinum_group_sludge_dust"
+					type: "item"
+				}
+			]
+			title: "铂系金属处理"
 			x: 4.5d
 			y: 1.125d
 		}
@@ -1845,17 +2003,17 @@
 				"5DBBD9B1F5B01F4E"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest2F9D9AAB27E6534D.description1}"
+				"该生产链的起始原料为&a惰性金属混合物&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest2F9D9AAB27E6534D.description2}"
+				"&d&a硫酸&f&r将被完全回收利用,同时还会生成可储存的过量&d氧气&r和&d氢气&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest2F9D9AAB27E6534D.description3}"
+				"&a钌&r和&a铑&r分别是通往&9IV级&r与&dLuV级&r的关键材料.若现在实现自动化生产,后续阶段就无需重复建设!"
 			]
 			hide_dependency_lines: false
 			icon: "gtceu:ruthenium_ingot"
 			id: "2F9D9AAB27E6534D"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest2F9D9AAB27E6534D.subtitle}"
+			subtitle: "钌-铑,铑哥们"
 			tasks: [
 				{
 					id: "2A321C86ED69AA1A"
@@ -1873,28 +2031,30 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest2F9D9AAB27E6534D.title}"
+			title: "钌与铑"
 			x: 7.875d
 			y: 1.125d
 		}
 		{
 			dependencies: ["2F9D9AAB27E6534D"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest28ED66F775111A17.description1}"
+				"注意:关于&a铱&r和&a锇&r的快速说明"
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest28ED66F775111A17.description2}"
+				"虽然现阶段技术上已可获取这些材料,但建议等到&9IV级&r后再进行生产.这些材料的制备过程将消耗大量宝贵电力,且必须达到&9IV级&r才能熔铸成锭!"
 			]
 			icon: "gtceu:iridium_dust"
 			id: "28ED66F775111A17"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest28ED66F775111A17.subtitle}"
-			tasks: [{
-				id: "3680AE17E8BA3E4E"
-				title: "{ftbquests.chapter.ev__extreme_voltage.quest28ED66F775111A17.task.3680AE17E8BA3E4E.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest28ED66F775111A17.title}"
+			subtitle: "暂且按兵不动"
+			tasks: [
+				{
+					id: "3680AE17E8BA3E4E"
+					title: "当然,我可以等"
+					type: "checkmark"
+				}
+			]
+			title: "铱、锇与EV级"
 			x: 6.75d
 			y: 1.125d
 		}
@@ -1906,11 +2066,11 @@
 				"124B32A0583A636A"
 			]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest2423918C4C6A18A5.description1}"
+				"高级纳米胸甲集防护、个人能源核心与强化喷气背包&r功能于一体."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest2423918C4C6A18A5.description2}"
+				"需启用充电功能&r时,手持装备潜行右键点击后佩戴(偶尔可能出现拒绝充电的故障,但您会原谅我们的,对吧？)."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest2423918C4C6A18A5.description3}"
+				"请注意该装备存储巨量&r能量且消耗较快,建议搭配&3HV涡轮充电器&r使用."
 			]
 			icon: {
 				Count: 1
@@ -1923,89 +2083,97 @@
 			min_required_dependencies: 1
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest2423918C4C6A18A5.subtitle}"
-			tasks: [{
-				id: "3D2600C788928F76"
-				item: {
-					Count: 1
-					id: "gtceu:advanced_nanomuscle_chestplate"
-					tag: {
-						Damage: 0
+			subtitle: "相当复杂的微缩工程...但物超所值"
+			tasks: [
+				{
+					id: "3D2600C788928F76"
+					item: {
+						Count: 1
+						id: "gtceu:advanced_nanomuscle_chestplate"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest2423918C4C6A18A5.title}"
+			]
+			title: "进阶飞行!"
 			x: 3.2346938775510097d
 			y: 4.086734693877553d
 		}
 		{
 			dependencies: ["39E7997F3080250A"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest1722813F617DF39B.description1}"
+				"&a样板P2P通道&f是&9物品/&a流体P2P通道&f的升级版本."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1722813F617DF39B.description2}"
+				"输入端需连接存有样板的样板供应器,可设置多个输出端连接至物品栏."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1722813F617DF39B.description3}"
+				"当单个样板需要批量合成时,&aP2P通道&f会将合成任务均匀分配至所有连接的输出端."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest1722813F617DF39B.description4}"
+				"&a样板&f&aP2P通道&f同时遵循样板界面中设置的&e&a阻塞模式&f&r."
 			]
-			icon: "ae2:me_p2p_tunnel"
+			icon: "mae2:pattern_p2p_tunnel"
 			id: "1722813F617DF39B"
 			shape: "rsquare"
 			size: 0.5d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest1722813F617DF39B.subtitle}"
-			tasks: [{
-				id: "40B572EB6B1D083E"
-				item: "ae2:me_p2p_tunnel"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest1722813F617DF39B.title}"
+			subtitle: "样板到样板"
+			tasks: [
+				{
+					id: "40B572EB6B1D083E"
+					item: "mae2:pattern_p2p_tunnel"
+					type: "item"
+				}
+			]
+			title: "样板&aP2P通道&f"
 			x: 8.428571428571423d
 			y: 4.178571428571431d
 		}
 		{
 			dependencies: ["3398FC108D9DCB46"]
-			description: ["This hatch acts like an infinite water source for multiblocks! It can make some setups much more convenient, and also has effectively infinite throughput, so it doesn't have the limitations of the &9Infinite Water Source Cover&r not being fast enough."]
+			description: ["此舱口可为多方块结构提供无限水源!既能简化设备布局,又具备近乎无限的传输速率,彻底解决了&9无限水源凹槽&r流速不足的限制."]
 			icon: "gtceu:reservoir_hatch"
 			id: "117926D919A97E73"
 			min_required_dependencies: 1
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest117926D919A97E73.subtitle}"
-			tasks: [{
-				id: "211321BEC7585909"
-				item: "gtceu:reservoir_hatch"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest117926D919A97E73.title}"
+			subtitle: "水,到处都是水!"
+			tasks: [
+				{
+					id: "211321BEC7585909"
+					item: "gtceu:reservoir_hatch"
+					type: "item"
+				}
+			]
+			title: "蓄水库舱口"
 			x: 3.806122448979586d
 			y: 4.658163265306122d
 		}
 		{
 			dependencies: ["39E7997F3080250A"]
 			description: [
-				"{ftbquests.chapter.ev__extreme_voltage.quest40FB56274D296BFC.description1}"
+				"使用&d导线&r或&d电缆&r右键点击世界中的&aP2P通道&f即可转换为&aGT&aP2P通道 - EU&f&r."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest40FB56274D296BFC.description2}"
+				"后期游戏中使用可有效避免电缆或变压器过度堆砌.还可结合AE2量子桥为基地外的高阶采矿机与钻机供电."
 				""
-				"{ftbquests.chapter.ev__extreme_voltage.quest40FB56274D296BFC.description3}"
+				"P2P通道输出端存在&45%电压税&r,会导致5%的能量损耗."
 			]
-			icon: "ae2:me_p2p_tunnel"
+			icon: "mae2:pattern_p2p_tunnel"
 			id: "40FB56274D296BFC"
 			shape: "rsquare"
 			size: 0.5d
-			subtitle: "{ftbquests.chapter.ev__extreme_voltage.quest40FB56274D296BFC.subtitle}"
-			tasks: [{
-				id: "74B6B5BE046E9810"
-				item: "ae2:me_p2p_tunnel"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ev__extreme_voltage.quest40FB56274D296BFC.title}"
+			subtitle: "遗憾的是,英国玩家无法使用"
+			tasks: [
+				{
+					id: "74B6B5BE046E9810"
+					item: "mae2:eu_p2p_tunnel"
+					type: "item"
+				}
+			]
+			title: "&aP2P通道 - EU&f"
 			x: 8.418367346938766d
 			y: 2.7806122448979593d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.ev__extreme_voltage.subtitle0}"]
-	title: "{ftbquests.chapter.ev__extreme_voltage.title}"
+	subtitle: ["升级基础设施并实现产线并行化"]
+	title: "&5EV&r - 极限电压"
 }

@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:luv_electric_motor"
 	id: "262A03F6F4EC713C"
-	order_index: 7
+	order_index: 6
 	quest_links: [
 		{
 			id: "7F8B55C8510200AF"
@@ -73,9 +73,9 @@
 				"78277DBC07D3C45C"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest52D00CD3E8D1E293.description1}"
+				"&aUHPIC电路&r可解锁&3ZPM能量舱口&r、&3动态能量单元&r以及主动变压器."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest52D00CD3E8D1E293.description2}"
+				"你或许熟悉钻头,但可了解螺丝刀的妙用？"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:uhpic_chip"
@@ -94,27 +94,29 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest52D00CD3E8D1E293.title}"
+			title: "超高&a功率电路&f"
 			x: 2.25d
 			y: 0.0d
 		}
 		{
 			dependencies: ["00C14E3B8009DF7F"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest35549F0404C87BCA.description1}"
+				"&3介电PCB冷却液&r用于维持某些高端终局机器的运转."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest35549F0404C87BCA.description2}"
+				"在&dLuV&r阶段仅需少量,但进入&cZPM&r阶段后建议实现自动化生产."
 			]
 			id: "35549F0404C87BCA"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest35549F0404C87BCA.subtitle}"
-			tasks: [{
-				id: "10FAF765725C7790"
-				item: "gtceu:pcb_coolant_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest35549F0404C87BCA.title}"
+			subtitle: "绝对环境友好型"
+			tasks: [
+				{
+					id: "10FAF765725C7790"
+					item: "gtceu:pcb_coolant_bucket"
+					type: "item"
+				}
+			]
+			title: "介电PCB冷却液"
 			x: 2.25d
 			y: 1.125d
 		}
@@ -125,22 +127,24 @@
 				"5ED7707B0ECF2207"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.description1}"
+				"&3主动变压器&r是用于大规模能量转换的多方块结构.例如:可通过配置相应能量舱口直接将&e高压&r转换为&7低压&r能源."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.description4}"
+				"它还具有第二项功能(详见上方任务说明)."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o此功能源自TecTech模组,曾要求对电缆进行涂色.虽然涂色后视觉效果极佳,但在CEu中此为可选操作."
 			]
 			id: "1AD003487B4EC2EF"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.subtitle}"
-			tasks: [{
-				id: "39CDBE6B4B973868"
-				item: "gtceu:active_transformer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.title}"
+			subtitle: "不仅是大型变压器"
+			tasks: [
+				{
+					id: "39CDBE6B4B973868"
+					item: "gtceu:active_transformer"
+					type: "item"
+				}
+			]
+			title: "主动变压器"
 			x: 3.375d
 			y: 0.0d
 		}
@@ -151,96 +155,104 @@
 				"52D952ADBEB67454"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description1}"
+				"&3&a档案印制机&f&r是能存储海量数据的多方块设备.可通过添加&a数据访问舱口&r并填充&a数据存储单元&r来扩容."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description4}"
+				"需接通能源后,通过&3光纤电缆&r连接至组装线——此类电缆可链接&3光学数据舱口&r."
+				"{@pagebreak}"
+				"&9光学传输舱口&r用于发送数据(如输出端),&9光学接收舱口&r则用于接收数据(如输入端)."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description5}"
+				"光纤电缆存在限制:仅支持&e单输入对单输出&r连接.&a档案印制机&f通过配置多个舱口可实现数据灵活路由."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description6}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description7}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description8}"
+				"此特性支持&e级联&r多个&a档案印制机&f:将两台设备对接后,任一设备连接组装线即可同时访问两个数据库!"
+				"{@pagebreak}"
+				"&e注意:&r此多方块结构虽为后期必备设备,但提前建设将大有裨益."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description9}"
+				"&l&3背景故事:&r&o该结构同样源自TecTech模组,其部分机制曾要求对光缆涂色.虽非强制,但涂色后视觉效果极佳!"
 			]
 			id: "42760D3A86EFDCA3"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.subtitle}"
-			tasks: [{
-				id: "01188385BE2DB3B3"
-				item: "gtceu:data_bank"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.title}"
+			subtitle: "服务器机房筹备中"
+			tasks: [
+				{
+					id: "01188385BE2DB3B3"
+					item: "gtceu:data_bank"
+					type: "item"
+				}
+			]
+			title: "海量数据存储"
 			x: 4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1AD003487B4EC2EF"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.description1}"
+				"&3活性变压器&r具备第二项功能——&e激光能量传输&r.激光如同超导体,但运作方式略有不同.它们能在所有连接的活性变压器间共享能量输入,实现广域电力配送.您可使用&3活性变压器&r在常规EU电能与激光能量之间进行转换."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.description4}"
+				"与光缆类似,激光仅能连接&e一个输入源和一个输出端&r,且只能沿&e直线路径&r传输.若需改变方向,必须使用配备激光源舱口(输出端)和目标舱口(输入端)的&3活性变压器&r."
+				"{@pagebreak}"
+				"&l&3背景知识:&r&o这仍是TecTech的特性,但此次更为深入.TecTech的激光按电压分阶,可承载数千安培电流.而CEu无需纠结分阶问题,这里仅需一种激光类型!"
 			]
 			id: "07159FCD9744DD98"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.subtitle}"
-			tasks: [{
-				id: "3BA3AA8746044DC1"
-				item: "gtceu:normal_laser_pipe"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.title}"
+			subtitle: "是时候体验激光了!"
+			tasks: [
+				{
+					id: "3BA3AA8746044DC1"
+					item: "gtceu:normal_laser_pipe"
+					type: "item"
+				}
+			]
+			title: "激光能量传输"
 			x: 3.375d
 			y: -1.125d
 		}
 		{
 			dependencies: ["78277DBC07D3C45C"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.description1}"
+				"将&9硅&r与&9镎&r进行掺杂可获得更优质的&a&a硅晶&f&r."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.description2}"
+				"用于提高&d晶圆&r的产量."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.description3}"
+				"此举还将解锁&3LuV &a电路组装机&f&r中&eHV&r电路的&e最佳配方&r.您可能需要大规模生产此类电路,以满足后续对大量&d&a兰波顿能量球&f&r的需求."
 			]
 			id: "3F31E99D0284A60A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.subtitle}"
-			tasks: [{
-				id: "2F8C92A86CAF338F"
-				item: "gtceu:naquadah_boule"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.title}"
+			subtitle: "前所未有的掺杂技术"
+			tasks: [
+				{
+					id: "2F8C92A86CAF338F"
+					item: "gtceu:naquadah_boule"
+					type: "item"
+				}
+			]
+			title: "掺镎&a硅晶&f"
 			x: 0.0d
 			y: 1.125d
 		}
 		{
 			dependencies: ["7A1E3C3A2D699C5B"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.description1}"
+				"&a镎&r是后期多种用途的材料,例如建造&a湮灭反应堆&f和升级至&cZPM&r均需此物."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.description2}"
+				"其流体呈现耀眼的&a绿色&r——原因恕难奉告."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.description3}"
+				"&l&3背景知识:&r&o镎最初源自《星际之门》系列."
 			]
 			hide_dependency_lines: true
 			id: "78277DBC07D3C45C"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.subtitle}"
-			tasks: [{
-				id: "36833D5050F81992"
-				item: "gtceu:naquadah_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.title}"
+			subtitle: "难道不该叫星际镎？"
+			tasks: [
+				{
+					id: "36833D5050F81992"
+					item: "gtceu:naquadah_ingot"
+					type: "item"
+				}
+			]
+			title: "镎"
 			x: 1.125d
 			y: 1.125d
 		}
@@ -250,24 +262,26 @@
 				"7A1E3C3A2D699C5B"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description1}"
+				"&a镎线圈&r可将&a热容&f提升至&d7,200K&r."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description4}"
+				"进阶至&dLuV&r后半阶段及更高级别需此线圈."
+				"{@pagebreak}"
+				"&l&3背景知识:&r&o虽然不像\"鲜活的&d格雷科技&f背景\"那般有趣,但有个酷炫的太空事实:您的电弧炉正超越太阳表面温度.太阳表面温度为5,800K(我们将其视作有效温度,即假设太阳为完美\"黑体\"时的辐射温度).若对基础天体物理感兴趣,可查阅斯特藩-玻尔兹曼定律."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description5}"
+				"&o对了,所谓“光球层“(即我们所说的太阳表面)？其厚度达400公里,相当于250英里.惊人!"
 			]
 			id: "2FCBA0D780DBDA9E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.subtitle}"
-			tasks: [{
-				count: 16L
-				id: "28332FC9FCA83E41"
-				item: "gtceu:naquadah_coil_block"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.title}"
+			subtitle: "比太阳表面更炽热!"
+			tasks: [
+				{
+					count: 16L
+					id: "28332FC9FCA83E41"
+					item: "gtceu:naquadah_coil_block"
+					type: "item"
+				}
+			]
+			title: "镎线圈"
 			x: 3.375d
 			y: 1.125d
 		}
@@ -277,85 +291,93 @@
 				"2FCBA0D780DBDA9E"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5ED7707B0ECF2207.description1}"
+				"若您计划建造&9&a湮灭反应堆&f&r,&a&aLuV超导体&f&r必不可少."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5ED7707B0ECF2207.description2}"
+				"请谨记我们的警告——您将需要&e大量&r&r此类超导体.所幸镎生产线将解决任何&5铟&r短缺问题."
 			]
 			id: "5ED7707B0ECF2207"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest5ED7707B0ECF2207.subtitle}"
-			tasks: [{
-				id: "10FB849CE994B1A5"
-				item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest5ED7707B0ECF2207.title}"
+			subtitle: "庆幸这些不需要泵吧"
+			tasks: [
+				{
+					id: "10FB849CE994B1A5"
+					item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
+					type: "item"
+				}
+			]
+			title: "&aLuV超导体&f"
 			x: 4.5d
 			y: 1.125d
 		}
 		{
 			dependencies: ["546CC03435E763CF"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description1}"
+				"&c警告&r:&9等离子体&r具有&c极高温度&r,超过&d3万开尔文&r!"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description2}"
+				"但&e&l这并不意味着&r输送等离子体需要特殊管道.等离子体的处理方式略有不同,且在一定程度上突破常规限制."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description3}"
+				"能够处理等离子体的流体管道(如&a钨&r、&aNaquadah&r或&a二铀合金&r)可容纳&e任何温度&r的等离子体,这意味着它们&l不会&r因等离子体的高温而熔化!"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description4}"
+				"警告:&r在不兼容管道中使用等离子体会导致&c虚空化&r、&c管道烧毁&r及&l异常高发&r的&c致命事故&r.务必谨慎!"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description5}"
+				"&l&3背景设定:&r&o该机制源自GT6,与酸液处理同源!"
 			]
 			icon: "gtceu:argon_plasma_bucket"
 			id: "173C1FA72301B5E7"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.subtitle}"
-			tasks: [{
-				id: "062ECB2F9C9D741D"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.title}"
+			subtitle: "星辰在召唤..."
+			tasks: [
+				{
+					id: "062ECB2F9C9D741D"
+					type: "checkmark"
+				}
+			]
+			title: "星辰流体"
 			x: 5.625d
 			y: 1.125d
 		}
 		{
 			dependencies: ["173C1FA72301B5E7"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.description1}"
+				"使用该涡轮可从等离子体中提取巨量能源!"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.description2}"
+				"&a氦等离子体&f&r是性价比最高的燃料."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.description3}"
+				"若您质疑&a等离子涡轮发电机&f的现实可行性...不妨查阅磁流体动力发电机的相关资料,见证现实与科幻的碰撞."
 			]
 			id: "4E9DED9569AA17F5"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.subtitle}"
-			tasks: [{
-				id: "13230F892A8F6FA1"
-				item: "gtceu:plasma_large_turbine"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.title}"
+			subtitle: "等离子？涡轮？!如何实现？"
+			tasks: [
+				{
+					id: "13230F892A8F6FA1"
+					item: "gtceu:plasma_large_turbine"
+					type: "item"
+				}
+			]
+			title: "&a大型等离子体涡轮&f"
 			x: 6.75d
 			y: 1.125d
 		}
 		{
 			dependencies: ["378F0AFCF95354B2"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest24F0454B9A090C44.description1}"
+				"这是制造&c零点模块(ZPM)&r的核心材料.储备该材料将对您的铂金处理能力提出考验,故在此发出&e预先警告&r:务必持续开采含铂族金属(PGS)的矿石."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest24F0454B9A090C44.description2}"
+				"在完成&9聚变反应&r与&9晶体电路&r研发后,请准备大规模生产此材料.建议优先完成前述科技再尝试制造本产品."
 			]
 			id: "24F0454B9A090C44"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest24F0454B9A090C44.subtitle}"
-			tasks: [{
-				id: "16895659E44B65B5"
-				item: "gtceu:naquadah_alloy_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest24F0454B9A090C44.title}"
+			subtitle: "星际之门最强材料"
+			tasks: [
+				{
+					id: "16895659E44B65B5"
+					item: "gtceu:naquadah_alloy_ingot"
+					type: "item"
+				}
+			]
+			title: "&a硅岩合金&f"
 			x: 0.0d
 			y: 2.25d
 		}
@@ -365,42 +387,44 @@
 				"48DEABA155605D23"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description1}"
+				"将&9Naquadah&r精炼成进阶产品是您接下来的自动化挑战.该产线主要产出&a富集硅岩&f&r、&aNaquadria&r及&aTrinium&r."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description4}"
+				"此生产线(被亲切称为“Naqline“)还会产生许多有用副产品,如钛和铟."
+				"{@pagebreak}"
+				"&a富集硅岩&f&r目前用途有限,但未来将成为发电系统的核心材料."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description5}"
+				"&aNaquadria&r是终局阶段材料,建议为&3超高压(UV)&r组件进行储备."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description6}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description7}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description8}"
+				"&aTrinium&r是当前最急需的材料,首批&a湮灭反应堆&f的建造、新一代线圈制造以及多数&cZPM&r配方都会大量消耗该材料."
+				"{@pagebreak}"
+				"&e注意&r:该精炼链的化学处理复杂度远超您以往接触的任何体系."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description9}"
+				"&a常规操作&f中,后续工序的产出物可循环至前段流程...但需注意每次循环会损失少量流体."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description10}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description11}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description12}"
+				"实现全自动化将极具挑战性.祝您好运!"
+				"{@pagebreak}"
+				"&l&3背景沿革:&r&o多个&d格雷科技&f版本都包含Naquadah处理体系."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description13}"
+				"&o最初可能是Impact模组开创了原创的Naquadah燃料流程."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description14}"
+				"&oGregicality Legacy紧随其后,开发了Naquadah材料(及其变体)与燃料的制备工艺."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description15}"
+				"&o之后GTNH模组增添了自研的Naquadah材料与燃料处理体系."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description16}"
+				"&o最终GTCEu模组引入了您即将搭建的这套系统!"
 			]
 			icon: "gtceu:naquadah_dust"
 			id: "378F0AFCF95354B2"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.subtitle}"
-			tasks: [{
-				id: "1D674C3951223E8C"
-				item: "gtceu:fluoroantimonic_acid_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.title}"
+			subtitle: "请勿触碰酸液"
+			tasks: [
+				{
+					id: "1D674C3951223E8C"
+					item: "gtceu:fluoroantimonic_acid_bucket"
+					type: "item"
+				}
+			]
+			title: "Naquadah精炼链"
 			x: 1.125d
 			y: 2.25d
 		}
@@ -411,21 +435,22 @@
 				"00C14E3B8009DF7F"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.description1}"
+				"&a三钛合金&r是发展进程中至关重要的材料.制造&9&a湮灭反应堆&f&r需要它,且在&cZPM&r阶段始终不可或缺.我们&7(好吧,特指这本任务书的编写者!)&r对这种材料永远不嫌多."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.description4}"
+				"冶炼它还需要&dLuV&r级电力高炉!建议专设生产线处理此材料,除非您确信现有设施能应对需求."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在《星际之门》中,三钛合金的强度足以抵挡C4炸药零距离爆炸.其强度是钢铁的百倍,重量却仅为百分之一."
 			]
 			icon: "gtceu:trinium_ingot"
 			id: "0DC999F79A685194"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.subtitle}"
+			subtitle: "又一种&a星际之门材料&f!"
 			tasks: [
 				{
 					id: "48F555D3FC7EA449"
 					item: "gtceu:trinium_sulfide_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -434,29 +459,31 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.title}"
+			title: "三钛合金"
 			x: 3.375d
 			y: 2.25d
 		}
 		{
 			dependencies: ["4F6E351C5F676618"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.description1}"
+				"&a钚-241&r是制造&9&a湮灭反应堆&f&r的另一项必需材料.获取方式非常简单:只需离心处理&9钚-239&r即可缓慢分离得出."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.description4}"
+				"未来版本中将需要&d&a核反应堆&f&r来生产此材料,但该功能尚未加入GTCEu."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在GT Impact中,制备钚-241曾是项挑战.首批钚-241必须通过耗资巨大的Naquadah燃料流程副产品获得,独立生产则需等到聚变科技之后!"
 			]
 			id: "2BBD3BC7D1B955C2"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.subtitle}"
-			tasks: [{
-				id: "757053C4979D8B08"
-				item: "gtceu:plutonium_241_dust"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.title}"
+			subtitle: "高能钚同位素"
+			tasks: [
+				{
+					id: "757053C4979D8B08"
+					item: "gtceu:plutonium_241_dust"
+					type: "item"
+				}
+			]
+			title: "钚-241"
 			x: 4.5d
 			y: 2.25d
 		}
@@ -469,82 +496,86 @@
 				"327C3E02CD751453"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description1}"
+				"首要任务——在&aEMI&r中建造使用&a聚变玻璃&f的版本,当前成本最低."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description2}"
+				"为节省&3&a聚变仓壁&f&r材料,请参照结构图示尽可能安装输入/输出仓."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description3}"
+				"&b&a湮灭反应堆&f&r会自动从多个输出仓中选择空闲接口.若需“&e强制&r“反应堆使用特定输出仓,可通过注入无关流体(通常使用&9水&r)&a锁定所有仓口&r."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description4}"
+				"本次我们将尝试新形式:同步讲解&3背景设定&r与运行机制."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description5}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description6}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description7}"
+				"敬请体验!"
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o &d格雷科技&f 5的&3&a湮灭反应堆&f&f会将输入的EU电能储存至内部缓冲器,最大容量由结构中的&3能量仓&f数量决定."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description8}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description9}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description10}"
+				"&o只有当&9“启动所需EU“&f存入内部后(该能量将被消耗&f),配方才能开始运行.借助存储的能量,反应堆可持续处理配方直至进入待机状态,此时需补充EU才能重新启动."
+				"{@pagebreak}"
+				"&o格雷科技&3&a湮灭反应堆&f&f的升级版(即现GTCEu的&a湮灭反应堆&f)新增了&4热力学&f机制."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description11}"
+				"&o反应堆运行时,&9启动所需EU&f会转化为&4热量&f.热量将持续累积直至反应堆待机,随后缓慢消散."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description12}"
+				"&o当再次执行配方时,系统会充分利用现存热量,并抵扣&9启动所需EU&f,从而实现短暂停机时的能量节约."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description13}"
+				"&o&3&a湮灭反应堆&f I&f最高仅支持160 MEU启动需求的配方,即使升级ZPM级仓口,超频上限仍为&dLuV&f级别,请勿强行突破此限制."
 			]
 			id: "546CC03435E763CF"
 			shape: "gear"
 			size: 1.3d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.subtitle}"
-			tasks: [{
-				id: "48A4D39ED0E11EBC"
-				item: "gtceu:luv_fusion_reactor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.title}"
+			subtitle: "星辰之力"
+			tasks: [
+				{
+					id: "48A4D39ED0E11EBC"
+					item: "gtceu:luv_fusion_reactor"
+					type: "item"
+				}
+			]
+			title: "&a湮灭反应堆&f I"
 			x: 5.625d
 			y: 2.25d
 		}
 		{
 			dependencies: ["546CC03435E763CF"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.description1}"
+				"&a铕&r是首个重要的聚变材料.后续你将频繁使用它."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.description4}"
+				"&e注意&r:液态铕的&a温度&f极高,但它并非等离子体.请据此规划管道系统!"
+				"{@pagebreak}"
+				"&l&3背景故事&r&o:在Gregicality Legacy中,铕曾被钌取代作为首个聚变材料,因为现实中铕属于&a稀土元素&f且无法通过聚变产生."
 			]
 			id: "7A74F692F14F0FF8"
 			shape: "gear"
 			size: 1.1d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.subtitle}"
-			tasks: [{
-				id: "220305C9DA0F512B"
-				item: "gtceu:europium_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.title}"
+			subtitle: "聚变产生铕... 不会吧？!"
+			tasks: [
+				{
+					id: "220305C9DA0F512B"
+					item: "gtceu:europium_ingot"
+					type: "item"
+				}
+			]
+			title: "铕"
 			x: 6.75d
 			y: 2.25d
 		}
 		{
 			dependencies: ["7A74F692F14F0FF8"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description1}"
+				"&a&a晶体CPU&f&r用于制造&9晶体电路&r——这谁想得到呢？"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description2}"
+				"其生产过程与先前的电路元件截然不同.它们不使用标准硅晶圆,而是依赖&9绿宝石&r或&9橄榄石&r."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description3}"
+				"获取首批晶体芯片将颇具挑战,建议投资高阶高压釜.若使用&e高压&r级高压釜...嗯,我们可不认为你是冒险主义者."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description4}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description5}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description6}"
+				"获得首枚芯片后,可用&9铕&r进行复制.暂无需关注其他配方,那些是&cZPM&r阶段的内容."
+				"{@pagebreak}"
+				"&e注意&r:&9高级物品检测覆盖板&r对此类自动化生产很有帮助,其功能类似高级&a能量探测覆盖板&f."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description7}"
+				"&l&3背景故事&r&o:在GT5u模组包中,制造首枚晶体芯片要求高压釜处于低重力环境,这意味着需要在Galacticraft的&a空间站&f或月球上完成!"
 			]
 			icon: "gtceu:crystal_cpu"
 			id: "764091A111FB4DA6"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.subtitle}"
+			subtitle: "这根本不合常理!"
 			tasks: [
 				{
 					id: "3B9666A5C3CBDCD6"
@@ -557,7 +588,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.title}"
+			title: "&a晶体CPU&f"
 			x: 7.875d
 			y: 2.25d
 		}
@@ -567,11 +598,11 @@
 				"4F6E351C5F676618"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest00C14E3B8009DF7F.description1}"
+				"本任务需为多方块发电机安装&3LuV能源仓&r或&3LuV动力仓&r来完成."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest00C14E3B8009DF7F.description2}"
+				"从&dLuV&r级别开始,更多多方块结构需要升级,这意味着需要更多能源仓!&9电弧炉&r和&9组装线&r都需要能源升级."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest00C14E3B8009DF7F.description3}"
+				"别忘了还存在&d4安培&r的变体型号!"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:luv_energy_input_hatch"
@@ -590,7 +621,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest00C14E3B8009DF7F.title}"
+			title: "组装线升级"
 			x: 2.25d
 			y: 2.25d
 		}
@@ -599,81 +630,89 @@
 				"77B7B1EDD19831E0"
 				"46C7E1D5E37B1ED2"
 			]
-			description: ["The &aWireless Connector&r will help with logistics, giving &9Wireless Transfer&r for your ME Network with unlimited range. The energy cost scales exponentially with transfer distance."]
+			description: ["&a无线连接器&r可优化物流系统,为你的ME网络提供无限范围的&9无线传输&r功能.&a能量&f消耗随传输距离呈指数级增长."]
 			id: "7E2076D45F83D9C3"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest7E2076D45F83D9C3.subtitle}"
-			tasks: [{
-				id: "3AC7E29D373750F8"
-				item: "ae2:wireless_access_point"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest7E2076D45F83D9C3.title}"
+			subtitle: "穿越无限,超越极限!"
+			tasks: [
+				{
+					id: "3AC7E29D373750F8"
+					item: "expatternprovider:wireless_connect"
+					type: "item"
+				}
+			]
+			title: "&a无线&f之力"
 			x: 3.96d
 			y: 5.94d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest79192BA29BE69170.description1}"
+				"若配方规模令你困扰,请放心——&2应用能源2&r现允许在处理模式中放置无限数量的物品."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest79192BA29BE69170.description2}"
+				"凭借此项革新,你可实现所有&3组装线&r配方的自动化生产."
 			]
-			icon: "ae2:interface"
+			icon: "expatternprovider:ex_interface"
 			id: "79192BA29BE69170"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [{
-				id: "3DFCDF1B24506A8A"
-				title: "{ftbquests.chapter.luv__ludicrous_voltage.quest79192BA29BE69170.task.3DFCDF1B24506A8A.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest79192BA29BE69170.title}"
+			tasks: [
+				{
+					id: "3DFCDF1B24506A8A"
+					title: "哇嘿!"
+					type: "checkmark"
+				}
+			]
+			title: "打包什么？"
 			x: 3.3d
 			y: 4.62d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.description1}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.description2}"
+				"以消耗16倍钻探功率为代价,&3高级流体钻探平台II&r将获得&e64倍&r的流体产出."
+				"矿脉枯竭速度同时降至先前的八分之一.这意味着从基岩流体矿脉中,相比普通钻机最终可获得&e128倍&r的石油(或其他流体)!"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.description3}"
+				"即使矿脉枯竭,该设备仍能保持高效正功率运作."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.description4}"
+				"单台&3高级流体钻探平台II&r足以支撑你直至游戏终局,无论钻探何种流体."
 			]
 			id: "4AEAC79007790BD8"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.subtitle}"
-			tasks: [{
-				id: "5904009DC40731D6"
-				item: "gtceu:ev_fluid_drilling_rig"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.title}"
+			subtitle: "这玩意儿简直离谱!"
+			tasks: [
+				{
+					id: "5904009DC40731D6"
+					item: "gtceu:ev_fluid_drilling_rig"
+					type: "item"
+				}
+			]
+			title: "荒谬的&a流体钻&f探"
 			x: 5.61d
 			y: 4.62d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest1BE779AF4487E3EB.description1}"
+				"这座&a大型采矿场&f与常规版本几乎完全相同,只是作业范围更广且消耗更多钻井液."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest1BE779AF4487E3EB.description2}"
+				"属于可选侧向升级——甚至可能是你根本不需要的升级项."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest1BE779AF4487E3EB.description3}"
+				"&l&3背景故事:&r&o未来版本可能会对这些设备进行重新平衡。详情请参阅多方块结构采矿机任务。"
 			]
 			id: "1BE779AF4487E3EB"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [{
-				id: "414C3982BED7EA0D"
-				item: "gtceu:luv_large_miner"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest1BE779AF4487E3EB.title}"
+			tasks: [
+				{
+					id: "414C3982BED7EA0D"
+					item: "gtceu:luv_large_miner"
+					type: "item"
+				}
+			]
+			title: "荒谬的&a矿钻&f"
 			x: 5.28d
 			y: 5.28d
 		}
@@ -684,14 +723,14 @@
 				"5B07279B08BF8DDE"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.description1}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.description3}"
+				"&aLuV级拉普顿能量球&r比&1IV级&r的更强大!当然,如此强大的能量储存意味着高昂的造价..."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在GT旧版本（如过往的GTNH或GCYL）中，这类能量球的造价荒谬至极！需要消耗8个低一级的能量球！值得庆幸的是，那种日子早已过去。"
 			]
 			icon: "gtceu:lapotronic_energy_orb_cluster"
 			id: "0D7C978F9CDF771B"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.subtitle}"
+			subtitle: "更强动力!"
 			tasks: [
 				{
 					id: "6D1376BF3CEA87A7"
@@ -701,44 +740,49 @@
 				{
 					id: "66D5D76676D27388"
 					item: "gtceu:luv_lapotronic_battery"
+					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.title}"
+			title: "荒谬级电池"
 			x: 6.75d
 			y: 4.5d
 		}
 		{
 			dependencies: ["42CD789B8C40E424"]
-			description: ["Cheaper &dLuV&r circuits! These'll take some of the edge out of those brutal Robot Arm recipes."]
+			description: ["成本更低的&dLuV&r电路!这些将缓解那些残酷的&a机械臂&f合成配方带来的压力."]
 			id: "47087361D6DE7DCF"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest47087361D6DE7DCF.subtitle}"
-			tasks: [{
-				id: "3CF7F369F390A3E5"
-				item: "gtceu:crystal_processor_assembly"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest47087361D6DE7DCF.title}"
+			subtitle: "没错...又一轮电路升级"
+			tasks: [
+				{
+					id: "3CF7F369F390A3E5"
+					item: "gtceu:crystal_processor_assembly"
+					type: "item"
+				}
+			]
+			title: "更多LuV级电路"
 			x: 7.875d
 			y: 4.5d
 		}
 		{
 			dependencies: ["47087361D6DE7DCF"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest7AE681E2AB31EA0D.description1}"
+				"并非大型主机级别的&cZPM&r电路!"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest7AE681E2AB31EA0D.description2}"
+				"老实说——&b晶体超级计算机&r听起来超酷对吧？"
 			]
 			id: "7AE681E2AB31EA0D"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest7AE681E2AB31EA0D.subtitle}"
-			tasks: [{
-				id: "0E274B445A95250A"
-				item: "gtceu:crystal_processor_computer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest7AE681E2AB31EA0D.title}"
+			subtitle: "...等等,为什么到这里就没了？"
+			tasks: [
+				{
+					id: "0E274B445A95250A"
+					item: "gtceu:crystal_processor_computer"
+					type: "item"
+				}
+			]
+			title: "更多ZPM级电路"
 			x: 7.875d
 			y: 5.625d
 		}
@@ -747,17 +791,19 @@
 				"77B7B1EDD19831E0"
 				"7CFC112B8F460549"
 			]
-			description: ["The &aLuV Electric Prospector&r is a major upgrade from the &eHV&r one. With its huge range, it'll make finding Fluid and Ore veins very easy."]
+			description: ["&aLuV电力勘探仪&r是&eHV级&r的重大升级版.凭借其超大探测范围,寻找流体矿脉与矿石矿脉将变得异常轻松."]
 			id: "7033A24F37F9B9B9"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest7033A24F37F9B9B9.subtitle}"
-			tasks: [{
-				id: "718BA09242A22550"
-				item: "gtceu:prospector.luv"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest7033A24F37F9B9B9.title}"
+			subtitle: "若你尚未发现金矿,现在就能找到了"
+			tasks: [
+				{
+					id: "718BA09242A22550"
+					item: "gtceu:prospector.luv"
+					type: "item"
+				}
+			]
+			title: "LuV级矿脉勘探仪"
 			x: 4.5d
 			y: 3.375d
 		}
@@ -768,40 +814,44 @@
 				"764091A111FB4DA6"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42CD789B8C40E424.description1}"
+				"&9晶体&r系列的首款电路."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest42CD789B8C40E424.description2}"
+				"&l&3背景故事:&r&o晶体电路的概念自&d格雷科技&f远古版本便已存在。我们至今仍不确定现实世界中是否存在此类晶体电路。"
 			]
 			id: "42CD789B8C40E424"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest42CD789B8C40E424.subtitle}"
-			tasks: [{
-				id: "6357389871CE70C2"
-				item: "gtceu:crystal_processor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest42CD789B8C40E424.title}"
+			subtitle: "我猜到后续发展了!"
+			tasks: [
+				{
+					id: "6357389871CE70C2"
+					item: "gtceu:crystal_processor"
+					type: "item"
+				}
+			]
+			title: "顶级IV级电路!"
 			x: 7.875d
 			y: 3.375d
 		}
 		{
 			dependencies: ["0338C9219DC2F819"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.description1}"
+				"如果你对着镜子连说三遍&a可用3次&f,就会召唤出CEu开发者."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.description4}"
+				"&a多层纤维增强型印刷电路板&r是你电路进阶之路的下一站.与先前电路板&a比较&f并无特别之处:只是将两块先前的板子粘合在一起."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在Gregicality Legacy版本中,这些电路板的制作工艺复杂得多,需要聚酰亚胺(一种双聚合物材料).至少可以说这是个挑战.未来GTCEu团队可能会让这些电路板的生产流程更具深度."
 			]
 			id: "6C241455C5434C2E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.subtitle}"
-			tasks: [{
-				id: "5B8C1C15E5413CEC"
-				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.title}"
+			subtitle: "ML-FR型PCB"
+			tasks: [
+				{
+					id: "5B8C1C15E5413CEC"
+					item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "多层纤维增强型&a印刷电路板&f"
 			x: 9.0d
 			y: 3.375d
 		}
@@ -816,17 +866,17 @@
 				"3A7491323AC5C70C"
 			]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.description1}"
+				"&dLuV&r元件的制作难度显著高于前代产品.需要&9组装线&r、多种不同形态的材料以及大量流体!"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.description4}"
+				"你会注意到&aLuV+级电机&r需要&9钐&r.钐本身获取难度不高,但冶炼过程稍复杂,需要在冷冻机中使用&9&a液氦&f&r进行冷却.若你制造过&9&aIV级超导体&f&r,应该已经接触过这个流程."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在原版&d格雷科技&f5中，这些元件根本无法制作！达到这个进度本应可以脱离GT苦海！真是时过境迁啊。"
 			]
 			icon: "gtceu:luv_electric_motor"
 			id: "11D3B21A177B0E14"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.subtitle}"
+			subtitle: "快乐指数——临界状态"
 			tasks: [
 				{
 					id: "0BA1015B5C7A0BD5"
@@ -864,115 +914,121 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.title}"
+			title: "极致愉悦"
 			x: 1.125d
 			y: 4.5d
 		}
 		{
 			dependencies: ["0425179329ED1B72"]
-			description: ["A requirement for &dLuV&r+ cables."]
+			description: ["制作&dLuV&r+级电缆的必备材料."]
 			id: "12FEE0A47E4658D5"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest12FEE0A47E4658D5.subtitle}"
-			tasks: [{
-				id: "4CAD2BE5558D7501"
-				item: "gtceu:polyphenylene_sulfide_foil"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest12FEE0A47E4658D5.title}"
+			subtitle: "电缆现在需要更优质的护套"
+			tasks: [
+				{
+					id: "4CAD2BE5558D7501"
+					item: "gtceu:polyphenylene_sulfide_foil"
+					type: "item"
+				}
+			]
+			title: "&a聚苯硫醚&f"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["4F6E351C5F676618"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description1}"
+				"您在使用该整合包时出现TPS问题的可能性很小——本任务更适用于后期拥有&d格雷科技&f和AE2的基地."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description2}"
+				"若执行&9/forge tps&r命令,将显示当前&4TPS&r数值及以毫秒为单位的&4tick time&r(运算周期耗时)."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description3}"
+				"若tick time超过50毫秒,说明服务器负载过高,无法稳定维持20 TPS."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description4}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description5}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description6}"
+				"任何机器都会增加tick time,但不必过度担忧添加机器.卡顿通常源于未优化的设置."
+				"{@pagebreak}"
+				"需&c避免&r的常见情况:"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description7}"
+				"&9-&r 实体类物品负面影响较大.应始终保持地面物品或生物实体数量最小化.幸运的是,本整合包中此问题已得到控制."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description8}"
+				"&9-&r 将所有设备密集建于狭小空间.请注意这虽&o不&r影响TPS,但会导致帧率下降."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description9}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description10}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description11}"
+				"&9-&r 巨型抽屉墙,因为对每个抽屉进行存取操作时的遍历计算会显著增加负载."
+				"{@pagebreak}"
+				"AE2系统中需&c避免&r的事项:"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description12}"
+				"&9-&r 在大型网络中使用ME输入/输出总线.建议改用&aME接口&f."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description13}"
+				"&9-&r 使用合成卡被动处理大批量请求."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description14}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description15}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description16}"
+				"&9-&r 通过子网络进行递归式存取.使用子网络时应限定其专项目标,避免与其他AE2网络交互."
+				"{@pagebreak}"
+				"&d格雷科技&f系统中需&c避免&r的事项(GTCEu虽较GTCE有重大改进,但仍可能像其他模组一样严重影响TPS):"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description17}"
+				"&9-&r 将多个EU发电设备与多个用电设备直连同一线路.建议使用二极管或电池缓冲器隔离发电线路与用电线路."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description18}"
+				"&9-&r &a大量&f使用&a流体传输管道&f.单条管道&o不&r会造成卡顿,但数千条管道叠加会产生显著影响."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description19}"
+				"&9-&r 大型物品管道网络.小型网络更利于减少库存遍历次数."
 			]
 			icon: "minecraft:mud"
 			id: "63F9531F391040B2"
 			shape: "circle"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.subtitle}"
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.title}"
+			subtitle: "人称007——0娜夸达、0EU/t、7TPS"
+			title: "解决卡顿问题"
 			x: 2.25d
 			y: 3.375d
 		}
 		{
 			dependencies: ["5CA86A333670A55C"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest35D4F93EFB6EACB6.description1}"
+				"制作&dLuV&r级组件所需的&a磁性钐&r需通过&3IV级磁化仪&r处理."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest35D4F93EFB6EACB6.description2}"
+				"即便如此,我们希望您并非仅靠单个&eHV级磁化仪&r完成所有磁化处理.对吗？"
 			]
 			id: "35D4F93EFB6EACB6"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest35D4F93EFB6EACB6.subtitle}"
-			tasks: [{
-				id: "1CAACC2FAABE68A1"
-				item: "gtceu:iv_polarizer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest35D4F93EFB6EACB6.title}"
+			subtitle: "感受到吸引力了吗？"
+			tasks: [
+				{
+					id: "1CAACC2FAABE68A1"
+					item: "gtceu:iv_polarizer"
+					type: "item"
+				}
+			]
+			title: "IV级磁化技术"
 			x: 0.375d
 			y: 3.75d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]
-			description: ["The &aQuantum Bridge Card&r is an upgrade to the &9Quantum Link Tunnel&r, which gives &9Wireless Terminals&r access to your AE system with unlimited range, and from any dimension."]
-			icon: "ae2:wireless_receiver"
+			description: ["&a量子桥接卡&f&r是&9量子连接通道&r的升级组件,可使&9无线终端&r跨维度无限范围接入AE系统."]
+			icon: "ae2wtlib:quantum_bridge_card"
 			id: "602DA4B4820E9088"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest602DA4B4820E9088.subtitle}"
-			tasks: [{
-				id: "280DF4E4A7E5FC2A"
-				item: "ae2:wireless_receiver"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest602DA4B4820E9088.title}"
+			subtitle: "危难中的桥梁"
+			tasks: [
+				{
+					id: "280DF4E4A7E5FC2A"
+					item: "ae2wtlib:quantum_bridge_card"
+					type: "item"
+				}
+			]
+			title: "无限无线范围"
 			x: 3.63d
 			y: 5.28d
 		}
 		{
 			dependencies: ["0D7C978F9CDF771B"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.description1}"
+				"&a进阶量子胸甲&f将防护系统、个人能源核心与&e终极喷气背包&r融合为一件强力装备."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.description2}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.description4}"
+				"请注意其储存能量&o极多&r,建议配套使用&3LuV涡轮充电设备&r."
+				"{@pagebreak}"
+				"&l&3背景说明:&r&o 此护甲设计灵感源于工业经典mod格雷维套件(Gravisuite)中的重力套装,功能与本胸甲类似."
 			]
 			icon: {
 				Count: 1
@@ -984,127 +1040,135 @@
 			id: "0A884622985A7417"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.subtitle}"
-			tasks: [{
-				id: "23AF5E66858C1950"
-				item: {
-					Count: 1
-					id: "gtceu:advanced_quarktech_chestplate"
-					tag: {
-						Damage: 0
+			subtitle: "我们天际相见!"
+			tasks: [
+				{
+					id: "23AF5E66858C1950"
+					item: {
+						Count: 1
+						id: "gtceu:advanced_quarktech_chestplate"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.title}"
+			]
+			title: "终极飞行装备"
 			x: 6.758503401360549d
 			y: 5.621173469387756d
 		}
 		{
 			dependencies: ["4F6E351C5F676618"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.description1}"
+				"&a1.4版本更新&r新增的双联仓口将极大助力多方块结构的自动化运作."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.description2}"
+				"可同时容纳&e流体与物品&r的特性,意味着只需连接&b样板供应器&r即可投入生产,无需再为P2P通道或缓冲装置手忙脚乱!"
 			]
 			icon: "gtceu:luv_dual_input_hatch"
 			id: "0960C894446A786C"
 			shape: "circle"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.subtitle}"
-			tasks: [{
-				id: "0089B7D781622D68"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:luv_dual_input_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uv_dual_input_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uhv_dual_input_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:luv_dual_output_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:zpm_dual_output_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uv_dual_output_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uhv_dual_output_hatch"
-							}
-						]
+			subtitle: "紧凑实用"
+			tasks: [
+				{
+					id: "0089B7D781622D68"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:luv_dual_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:uv_dual_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:uhv_dual_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:luv_dual_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:zpm_dual_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:uv_dual_output_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:uhv_dual_output_hatch"
+								}
+							]
+						}
 					}
+					title: "双I/O舱口"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.task.0089B7D781622D68.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.title}"
+			]
+			title: "一石二鸟的双联仓口"
 			x: 2.2414965986394577d
 			y: 5.631377551020407d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description1}"
+				"以下是它的核心功能详解!"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description2}"
+				"&2空白 &a样板终端&f:&r"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description3}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description4}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description5}"
+				"手持本工具右键可打开操作界面,可插入&9&a空白样板&f&r.提供海量存储空间便于样板运输!"
+				"{@pagebreak}"
+				"&2批量样板修改:&r"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description6}"
+				"插入&9&a编码样板&f&r时可进行批量乘除运算.特别适用于为并行按需生产设备快速复制样板."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description7}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description8}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description9}"
+				"点击“清除“按钮可批量清空样板(无二次确认,请谨慎操作)."
+				"{@pagebreak}"
+				"&2物品搜索替换:&r"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description10}"
+				"右键点击&a&a转换模式&f按钮&r开启新界面,可批量替换&9&a编码样板&f&r内所有指定物品."
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description11}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description12}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description13}"
+				"该功能对&e升级格雷科技电路&r尤为实用,例如将纳米电路批量替换为量子&5EV&r电路."
+				"{@pagebreak}"
+				"&2便捷样板传输:&r"
 				""
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description14}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description15}"
-				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description16}"
+				"Shift+左键点击可在玩家库存与修改器间快速转移样板,轻松实现接口终端与设备间的样板流转,避免库存拥堵."
+				"{@pagebreak}"
+				"&b背景故事&r:模组作者Neeve建议将此物品定为&eUXV&r级,因为\"它赋予玩家过强的掌控力\".注:&eUXV&r比&3UV&r高四级,仅次于&c&lMAX&r电压两级."
 			]
-			icon: "ae2:blank_pattern"
+			icon: "expatternprovider:pattern_modifier"
 			id: "5CE0B928479D8535"
-			rewards: [{
-				count: 64
-				id: "597FE2E43C76B1E0"
-				item: "ae2:blank_pattern"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 64
+					id: "597FE2E43C76B1E0"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.subtitle}"
-			tasks: [{
-				id: "77D0C17BBE681C85"
-				item: "ae2:blank_pattern"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.title}"
+			subtitle: "&a样板修改器&r功能超群!"
+			tasks: [
+				{
+					id: "77D0C17BBE681C85"
+					item: "expatternprovider:pattern_modifier"
+					type: "item"
+				}
+			]
+			title: "样板修改器"
 			x: 4.95d
 			y: 5.94d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.luv__ludicrous_voltage.subtitle0}"]
-	title: "{ftbquests.chapter.luv__ludicrous_voltage.title}"
+	subtitle: ["探索科学原理与元素融合"]
+	title: "&dLuV&r - 荒谬电压"
 }

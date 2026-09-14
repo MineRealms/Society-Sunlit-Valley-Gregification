@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:zpm_electric_motor"
 	id: "0945247E83444D90"
-	order_index: 8
+	order_index: 7
 	quest_links: [
 		{
 			id: "6BE70146903B5CBD"
@@ -27,23 +27,24 @@
 		{
 			dependencies: ["24F0454B9A090C44"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest75905E3672399A63.description1}"
+				"&a&a零点模块&f&r(物品)是不可充电的超级电池,蕴含巨量能源.此前你可能已获得过此物品,但唯有达到&cZPM&r等级才能释放其能量"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest75905E3672399A63.description2}"
+				"该物品仅能通过&e&a丛林神庙&f&r战利品获取,极为罕见——不必刻意寻找"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest75905E3672399A63.description3}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest75905E3672399A63.description4}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest75905E3672399A63.description5}"
+				"此任务为&e可选&r内容,仅作娱乐.若只为完成点数可直接勾选复选框!"
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o &a零点模块&f作为ZPM等级的全称,同样源自《星际之门》.其同名的装置能产生惊人的能量."
 			]
 			icon: "gtceu:zero_point_module"
 			id: "75905E3672399A63"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest75905E3672399A63.subtitle}"
+			subtitle: "无限能源!"
 			tasks: [
 				{
 					id: "10AC8DC9332D084C"
 					item: "gtceu:zero_point_module"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -51,27 +52,29 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest75905E3672399A63.title}"
+			title: "&a零点模块&f"
 			x: -6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4C7C0F6A6598BC24"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest2587BFD0D9F3FF4A.description1}"
+				"&a&aZPM超导体&f&r是建造&9&a湮灭反应堆&f Mk2&r的主要门槛,该反应堆的结构块需要大量此类材料"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest2587BFD0D9F3FF4A.description2}"
+				"也可用于制作成本更低的&9超导线圈&r."
 			]
 			id: "2587BFD0D9F3FF4A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest2587BFD0D9F3FF4A.subtitle}"
-			tasks: [{
-				id: "5688605649CC30C3"
-				item: "gtceu:uranium_rhodium_dinaquadide_single_wire"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest2587BFD0D9F3FF4A.title}"
+			subtitle: "开始厌倦这些漆黑如墨的锭了吗？"
+			tasks: [
+				{
+					id: "5688605649CC30C3"
+					item: "gtceu:uranium_rhodium_dinaquadide_single_wire"
+					type: "item"
+				}
+			]
+			title: "&aZPM超导体&f"
 			x: -4.875d
 			y: 1.125d
 		}
@@ -81,15 +84,15 @@
 				"24F0454B9A090C44"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest5BBFE222190891DE.description1}"
+				"值得庆幸的是,&cZPM&r元件的制作难度并未比&dLuV&r高出太多"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest5BBFE222190891DE.description2}"
+				"需消耗大量&9锇铱合金&r,请确保你的铂金精炼生产线能满足需求."
 			]
 			icon: "gtceu:zpm_electric_motor"
 			id: "5BBFE222190891DE"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest5BBFE222190891DE.subtitle}"
+			subtitle: "准备好你的铂金产线!"
 			tasks: [
 				{
 					id: "17E45B64101F2249"
@@ -127,26 +130,27 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest5BBFE222190891DE.title}"
+			title: "极致欢欣"
 			x: -6.0d
 			y: 1.125d
 		}
 		{
 			dependencies: ["378F0AFCF95354B2"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest74B037D7031F4A78.description1}"
+				"&a&a富集硅岩&f&r是Nq-528同位素形态的Naquadah矿,具有放射性,拟用于(尚未实装的)核反应堆"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest74B037D7031F4A78.description2}"
+				"目前仅需用它制作&9三相合金线圈&r."
 			]
 			icon: "gtceu:enriched_naquadah_ingot"
 			id: "74B037D7031F4A78"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest74B037D7031F4A78.subtitle}"
+			subtitle: "Naquadah矿,但是带放射性!"
 			tasks: [
 				{
 					id: "4598D1D78A71E514"
 					item: "gtceu:enriched_naquadah_sulfate_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -155,7 +159,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest74B037D7031F4A78.title}"
+			title: "&a富集硅岩&f"
 			x: -4.875d
 			y: -1.125d
 		}
@@ -166,20 +170,22 @@
 				"2FCBA0D780DBDA9E"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest4C7C0F6A6598BC24.description1}"
+				"&a三相合金线圈&r将&a热容上限&f提升至&d9,001K&r"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest4C7C0F6A6598BC24.description2}"
+				"这些线圈是进军&cZPM&r后半阶段及更高级阶段的必备组件."
 			]
 			id: "4C7C0F6A6598BC24"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest4C7C0F6A6598BC24.subtitle}"
-			tasks: [{
-				count: 16L
-				id: "11CD2F83031C6706"
-				item: "gtceu:trinium_coil_block"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest4C7C0F6A6598BC24.title}"
+			subtitle: "战斗力超过9000!!!"
+			tasks: [
+				{
+					count: 16L
+					id: "11CD2F83031C6706"
+					item: "gtceu:trinium_coil_block"
+					type: "item"
+				}
+			]
+			title: "三相合金线圈"
 			x: -4.875d
 			y: 0.0d
 		}
@@ -189,25 +195,27 @@
 				"2587BFD0D9F3FF4A"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest468EEFD9D2F69014.description1}"
+				"&3研究站&r是扫描仪的升级版本.它用于更高级的研究形式,最终将允许你执行需要&a数据球&f和模块&r的研究."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest468EEFD9D2F69014.description2}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest468EEFD9D2F69014.description3}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest468EEFD9D2F69014.description4}"
+				"运行&3研究站&r时,需要能量和&9计算力&r.后者通过&9高性能计算阵列(HPCA)&r提供,这将在下一个任务中说明.计算力通过&3计算数据接收舱口&r接收.请注意,一个研究站中只允许存在一个接收舱口."
+				"{@pagebreak}"
+				"这个多方块结构需要&d间歇性&r计算力,这意味着如果你供应不足,配方进度不会倒退,而是会原地暂停.但机器仍会持续消耗能量,即使没有接收计算力时也是如此."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest468EEFD9D2F69014.description5}"
+				"扫描物品的过程相对类似.在&3物体固定器&r中,将目标物品放在中心槽位,数据存储物品放在另一个槽位.然后提供计算力,完成后数据存储物品将会更新.运行时,目标物品会被锁定且无法取出."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest468EEFD9D2F69014.description6}"
+				"&e注意&r:构成这个多方块结构时,&3物体固定器&r必须朝向控制器."
 			]
 			id: "468EEFD9D2F69014"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest468EEFD9D2F69014.subtitle}"
-			tasks: [{
-				id: "148C1C60A855B61E"
-				item: "gtceu:research_station"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest468EEFD9D2F69014.title}"
+			subtitle: "你的研究之旅继续!"
+			tasks: [
+				{
+					id: "148C1C60A855B61E"
+					item: "gtceu:research_station"
+					type: "item"
+				}
+			]
+			title: "研究站"
 			x: -4.875d
 			y: 2.25d
 		}
@@ -217,65 +225,71 @@
 				"7AE681E2AB31EA0D"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest79E4E53E9DF45549.description1}"
+				"要进入&3聚变MK2&r阶段,需要&a紫外级主机&r."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest79E4E53E9DF45549.description2}"
+				"它同样在组装线上制造."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest79E4E53E9DF45549.description3}"
+				"除了我们已经见过的材料外,请特别注意&e高速钢-E框架&r."
 			]
 			id: "79E4E53E9DF45549"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest79E4E53E9DF45549.subtitle}"
-			tasks: [{
-				id: "226973A23C89BDD2"
-				item: "gtceu:crystal_processor_mainframe"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest79E4E53E9DF45549.title}"
+			subtitle: "……啊,终于来了!"
+			tasks: [
+				{
+					id: "226973A23C89BDD2"
+					item: "gtceu:crystal_processor_mainframe"
+					type: "item"
+				}
+			]
+			title: "首批紫外级电路!"
 			x: -3.75d
 			y: 3.375d
 		}
 		{
 			dependencies: ["1D6CC3C7F6BE4055"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest29B7D93D7F32DBA9.description1}"
+				"&a晶体SoC&f&r用于制造更便宜的&9晶体电路&r.享受折扣吧!"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest29B7D93D7F32DBA9.description2}"
+				"&a晶体SoC&f需要&9ZPM发射器&r,这意味着你需要&9数据球&f&r来进行相关研究."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest29B7D93D7F32DBA9.description3}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest29B7D93D7F32DBA9.description4}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest29B7D93D7F32DBA9.description5}"
+				"未来这些的制作可能会变得更加困难."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在GT5u版本中,这个物品的材质是红色的,且没有特殊设计.曾有一个带此设计的\"原始\"版本,但被用于其他不相关的内容.谁知道为什么呢？"
 			]
 			id: "29B7D93D7F32DBA9"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest29B7D93D7F32DBA9.subtitle}"
-			tasks: [{
-				id: "488A759013AF2680"
-				item: "gtceu:crystal_soc"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest29B7D93D7F32DBA9.title}"
+			subtitle: "当一次雕刻还不够时"
+			tasks: [
+				{
+					id: "488A759013AF2680"
+					item: "gtceu:crystal_soc"
+					type: "item"
+				}
+			]
+			title: "&a晶体SoC&f"
 			x: -3.75d
 			y: 1.125d
 		}
 		{
 			dependencies: ["1D6CC3C7F6BE4055"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest72740001958E929A.description1}"
+				"这个舱口比基础版本能存储更多&a数据存储物品&r."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest72740001958E929A.description2}"
+				"别忘了研究这个舱口需要&9数据球&f&r."
 			]
 			id: "72740001958E929A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest72740001958E929A.subtitle}"
-			tasks: [{
-				id: "0EC657B81458D697"
-				item: "gtceu:advanced_data_access_hatch"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest72740001958E929A.title}"
+			subtitle: "存储密度提升!"
+			tasks: [
+				{
+					id: "0EC657B81458D697"
+					item: "gtceu:advanced_data_access_hatch"
+					type: "item"
+				}
+			]
+			title: "高级数据访问舱口"
 			x: -2.625d
 			y: 1.125d
 		}
@@ -284,16 +298,17 @@
 				"378F0AFCF95354B2"
 				"4C7C0F6A6598BC24"
 			]
-			description: ["&aNaquadria&r is an isotope of Naquadah, Nq-522. It's highly unstable, but it'll still be used for &3UV&r components, &9Fusion Mk2&r, and when fusing Neutronium."]
+			description: ["&a超密中子素&r是Nq-522同位素,为超密合金的不稳定变体.虽然极不稳定,但仍将用于&3紫外级&r组件、&9聚变MK2&r以及中子素合成."]
 			icon: "gtceu:naquadria_ingot"
 			id: "6D1F10543A391940"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest6D1F10543A391940.subtitle}"
+			subtitle: "超密合金,但放射性更强!"
 			tasks: [
 				{
 					id: "4A49FE8B35B48D97"
 					item: "gtceu:naquadria_sulfate_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -302,38 +317,40 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest6D1F10543A391940.title}"
+			title: "超密中子素"
 			x: -2.625d
 			y: 0.0d
 		}
 		{
 			dependencies: ["690E013DFCB060ED"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description1}"
+				"目前,&a无菌生长培养基&r的生产是GTCEu中的最终加工线."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description2}"
+				"你的首个&4湿件电路&r将需要它."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description3}"
+				"生产它不会像PBI那样麻烦,但几乎每一步都需要无菌洁净室.这意味着你必须巧妙利用空间."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description4}"
+				"务必仔细检查生产链的每一步,有些配方远比其他的更高效!"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description5}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description6}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description7}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description8}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description9}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description10}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.description11}"
+				"&e专业提示&r:如果想要更多空间,你也可以通过在中间设置门来共享洁净室的墙壁."
+				"{@pagebreak}"
+				"&l&3背景知识:&r&o GTCEu的无菌生长培养基链大致基于GTNH中的Bartworks.主要区别在于GTNH需要细菌缸多方块结构,这比有序组装线更复杂.GTCEu考虑在未来添加类似的多方块结构,但会有自己的特色."
+				"{@pagebreak}"
+				"&l&3更多背景:&r&o 在Gregicality Legacy中,无菌生长培养基的生产链非常不同.它是该模组中最困难的流程之一,有超过30个复杂步骤!它基于生产不同的现实生活中的维生素和营养素."
+				"{@pagebreak}"
+				"&l&3还有更多背景:&r&o 在Shadows of Greg中,这仅用&a蒸馏水&f和&a肉末&f制作.我们已经走了多远……"
 			]
 			id: "6AFDA523304711DB"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.subtitle}"
-			tasks: [{
-				id: "5FFC06116E025936"
-				item: "gtceu:sterilized_growth_medium_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest6AFDA523304711DB.title}"
+			subtitle: "终于到了最终加工线!"
+			tasks: [
+				{
+					id: "5FFC06116E025936"
+					item: "gtceu:sterilized_growth_medium_bucket"
+					type: "item"
+				}
+			]
+			title: "无菌生长培养基"
 			x: -0.375d
 			y: 1.125d
 		}
@@ -343,14 +360,14 @@
 				"0D7C978F9CDF771B"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest690A51204DF5D469.description1}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest690A51204DF5D469.description2}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest690A51204DF5D469.description3}"
+				"&aZPM拉普顿球&r甚至比&dLuV&r级别的更好!当然,代价也很高……"
+				"{@pagebreak}"
+				"&l&3背景知识:&r&o 想象一下,制作64个&1IV&f或8个&dLuV&f球才能换一个这样的!详情请参阅&dLuV&f球的背景知识."
 			]
 			icon: "gtceu:energy_module"
 			id: "690A51204DF5D469"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest690A51204DF5D469.subtitle}"
+			subtitle: "能量奇点!"
 			tasks: [
 				{
 					id: "41813C4D68B991D7"
@@ -360,10 +377,11 @@
 				{
 					id: "705422BF26C76199"
 					item: "gtceu:zpm_lapotronic_battery"
+					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest690A51204DF5D469.title}"
+			title: "巨型电池"
 			x: -1.5d
 			y: 1.125d
 		}
@@ -376,11 +394,11 @@
 				"24F0454B9A090C44"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest64EA73FAB2A51850.description1}"
+				"完成此任务需要为你的多方块发电机安装&e eithe&r一个&3ZPM能量舱&r&r...或一个&3ZPM动力舱&r."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest64EA73FAB2A51850.description2}"
+				"别忘了还有&d16安培&r的变体!"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest64EA73FAB2A51850.description3}"
+				"别忘了这些舱需要&9&a数据球&f&r进行研究."
 			]
 			icon: "gtceu:zpm_energy_input_hatch"
 			id: "64EA73FAB2A51850"
@@ -398,7 +416,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest64EA73FAB2A51850.title}"
+			title: "升级你的组装线II"
 			x: -2.625d
 			y: 2.25d
 		}
@@ -408,258 +426,280 @@
 				"3568BC9742092FC5"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest690E013DFCB060ED.description1}"
+				"生产下一级电路需要&a无菌洁净室&r.几乎每一步都必须在其中进行.祝你好运,在如此有限的空间内安排一切!"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest690E013DFCB060ED.description2}"
+				"如果你只有一个&3洁净室&r,你将需要另一个用于&a无菌&r配方."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest690E013DFCB060ED.description3}"
+				"&e注意&r:普通洁净室配方无法在无菌洁净室中运行,因此你不能仅仅 “升级“ 你的旧洁净室."
 			]
 			id: "690E013DFCB060ED"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest690E013DFCB060ED.subtitle}"
-			tasks: [{
-				count: 8L
-				id: "6A4C78385FF8019A"
-				item: "gtceu:sterilizing_filter_casing"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest690E013DFCB060ED.title}"
+			subtitle: "附带消毒剂!"
+			tasks: [
+				{
+					count: 8L
+					id: "6A4C78385FF8019A"
+					item: "gtceu:sterilizing_filter_casing"
+					type: "item"
+				}
+			]
+			title: "无菌洁净室"
 			x: -0.375d
 			y: 2.25d
 		}
 		{
 			dependencies: ["468EEFD9D2F69014"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description1}"
+				"&3高性能计算阵列&r(简称&3HPCA&r)是用于生成&9计算值&r的多方块结构,其产出以CWU/t(计算工作单位 &a每刻&f)为计量单位."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description2}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description3}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description4}"
+				"HPCA采用模块化多方块结构,包含多种您可能从未见过的独特组件.共提供&a9个插槽&r用于安装不同组件,EMI预览界面中展示了一些示例布局,若感到困惑可参考这些示例."
+				"{@pagebreak}"
+				"组件主要分为两类:"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description5}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description6}"
+				"- &9计算组件&r:生成CWU/t,需要消耗EU/t电力并需散热"
+				"- &9散热组件&r:提供特定散热值,需要消耗EU/t电力"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description7}"
+				"当前可用组件:"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description8}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description9}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description10}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description11}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description12}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description13}"
+				"- &9空置&r:占位组件,无实际功能"
+				"-&9 &a散热片&f&r:无需电力,提供1点散热值"
+				"- &9主动散热器&r:需要电力与PCB冷却剂,提供2点散热值"
+				"- &9计算单元&r:生成4 CWU/t,但需大量电力和散热支持"
+				"{@pagebreak}"
+				"HPCA待机时会消耗基础电力.其实际电力与散热需求将根据计算负载动态变化,范围从待机维持值到最大值不等."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description14}"
+				"若散热不足,当温度超过&c100°C&r时(待机温度为&a20°C&r),计算组件可能&4损坏&r.请注意仅计算组件会受损,其他组件不受影响!"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description15}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description16}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description17}"
+				"HPCA最多只能安装1个&3计算用&a数据传输&f舱口&r.可通过光缆连接至&9研究站&r的接收舱口以传输计算值."
+				"{@pagebreak}"
+				"ZPM阶级基础CWU/t需求:"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description18}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description19}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description20}"
+				"- &cZPM&r传感器、发射器、场发生器需&a4 CWU/t&r"
+				"- &cZPM&r能量舱需&a8 CWU/t&r"
+				"- &3UV&r及以上等级电路需&a16 CWU/t&r"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description21}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description22}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.description23}"
+				"无需强求立即达到16 CWU/t,这些阶段目标之间仍有大量可探索内容."
 			]
 			id: "1D6CC3C7F6BE4055"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.subtitle}"
-			tasks: [{
-				id: "5F20D430C26D3BE4"
-				item: "gtceu:high_performance_computation_array"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest1D6CC3C7F6BE4055.title}"
+			subtitle: "这可不是&a量子计算机&f..."
+			tasks: [
+				{
+					id: "5F20D430C26D3BE4"
+					item: "gtceu:high_performance_computation_array"
+					type: "item"
+				}
+			]
+			title: "高性能计算阵列"
 			x: -3.75d
 			y: 2.25d
 		}
 		{
 			dependencies: ["6AFDA523304711DB"]
-			description: ["&aStem Cells&r are a major component of &4Wetware Circuits&r. Just don't question why these use Osmiridium."]
+			description: ["&a干细胞&f&r是制作&4湿件电路&r的核心材料——虽然不必深究为何需要锇铱合金."]
 			id: "33A1FF5C31EAF716"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest33A1FF5C31EAF716.subtitle}"
-			tasks: [{
-				id: "1E31342D5310ED6D"
-				item: "gtceu:stem_cells"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest33A1FF5C31EAF716.title}"
+			subtitle: "这个材质曾经非常难看..."
+			tasks: [
+				{
+					id: "1E31342D5310ED6D"
+					item: "gtceu:stem_cells"
+					type: "item"
+				}
+			]
+			title: "&a干细胞&f"
 			x: -0.375d
 			y: 0.0d
 		}
 		{
 			dependencies: ["33A1FF5C31EAF716"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest678CABA03E17516A.description1}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest678CABA03E17516A.description2}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest678CABA03E17516A.description3}"
+				"终极电路板——终于等到它!如您所见,这块板子比其他电路板&c昂贵得多&r,但您肯定能应对.现在的您已是专家了!"
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在GTNH中,此类电路板需要LuV级传感器而非IV级.这意味着湿件LuV电路需要其他(晶体)LuV电路作为材料!"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest678CABA03E17516A.description4}"
+				"此外由于湿件过于昂贵,除非需要UHV湿件电路,否则更推荐使用晶体电路.庆幸的是,CEu版本不存在此问题,LuV湿件电路值得投入制作."
 			]
 			id: "678CABA03E17516A"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest678CABA03E17516A.subtitle}"
-			tasks: [{
-				id: "0097D7805D82EDEC"
-				item: "gtceu:wetware_printed_circuit_board"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest678CABA03E17516A.title}"
+			subtitle: "生命本身的电路板"
+			tasks: [
+				{
+					id: "0097D7805D82EDEC"
+					item: "gtceu:wetware_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "湿件&a电路板&f"
 			x: -0.375d
 			y: -1.125d
 		}
 		{
 			dependencies: ["678CABA03E17516A"]
-			description: ["The &aNeuro Processing Unit&r serves as the CPU for &4Wetware&r. It also takes a circuit board in its recipe, but don't let that scare you."]
+			description: ["&a神经元CPU&f&r是&4湿件&r的中央处理器.其合成配方也需要电路板,但请不必为此担心."]
 			id: "3BD68E5909A97532"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest3BD68E5909A97532.subtitle}"
-			tasks: [{
-				id: "06AE61C5F174F4E7"
-				item: "gtceu:neuro_processing_unit"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest3BD68E5909A97532.title}"
+			subtitle: "用于计算的神经元"
+			tasks: [
+				{
+					id: "06AE61C5F174F4E7"
+					item: "gtceu:neuro_processing_unit"
+					type: "item"
+				}
+			]
+			title: "它活了!"
 			x: 0.75d
 			y: -1.125d
 		}
 		{
 			dependencies: ["082AB255886E73C2"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest370FC1CDF5F9A9CC.description1}"
+				"&4湿件&r产线的&a终极&f电路."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest370FC1CDF5F9A9CC.description2}"
+				"同时也是最优秀的&cZPM&r级电路!"
 			]
 			id: "370FC1CDF5F9A9CC"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest370FC1CDF5F9A9CC.subtitle}"
-			tasks: [{
-				id: "31DF7507733F3EE0"
-				item: "gtceu:wetware_processor_assembly"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest370FC1CDF5F9A9CC.title}"
+			subtitle: "刚才这电路是在对我眨眼吗？"
+			tasks: [
+				{
+					id: "31DF7507733F3EE0"
+					item: "gtceu:wetware_processor_assembly"
+					type: "item"
+				}
+			]
+			title: "最佳ZPM电路!"
 			x: 0.75d
 			y: 1.125d
 		}
 		{
 			dependencies: ["3BD68E5909A97532"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest082AB255886E73C2.description1}"
+				"&4湿件&r系列的首款电路."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest082AB255886E73C2.description2}"
+				"&e恭喜&r!"
 			]
 			id: "082AB255886E73C2"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest082AB255886E73C2.subtitle}"
-			tasks: [{
-				id: "0B12A1F63822CF8A"
-				item: "gtceu:wetware_processor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest082AB255886E73C2.title}"
+			subtitle: "哇,它活过来了!"
+			tasks: [
+				{
+					id: "0B12A1F63822CF8A"
+					item: "gtceu:wetware_processor"
+					type: "item"
+				}
+			]
+			title: "最佳LuV电路!"
 			x: 0.75d
 			y: 0.0d
 		}
 		{
 			dependencies: ["24366846FDA52CE3"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest6988AE94BE7B461F.description1}"
+				"还记得&3格雷科技社区版&r里的&a鐽&r工具吗？现在...猜猜谁回来了？"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest6988AE94BE7B461F.description2}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest6988AE94BE7B461F.description3}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest6988AE94BE7B461F.description4}"
+				"&a鐽&r是制作&3UV&r级机器外壳的主要材料,需通过聚变反应合成."
+				"{@pagebreak}"
+				"&b冷知识&r:砷在标准条件下不存在液态,会直接升华成气态!\"真实性\",纯属扯淡."
 			]
 			id: "6988AE94BE7B461F"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest6988AE94BE7B461F.subtitle}"
-			tasks: [{
-				id: "798EFE8E18E79C0C"
-				item: "gtceu:darmstadtium_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest6988AE94BE7B461F.title}"
+			subtitle: "把我的粒子加速器还回来..."
+			tasks: [
+				{
+					id: "798EFE8E18E79C0C"
+					item: "gtceu:darmstadtium_ingot"
+					type: "item"
+				}
+			]
+			title: "鐽"
 			x: -2.625d
 			y: 4.5d
 		}
 		{
 			dependencies: ["546CC03435E763CF"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest2CB8FCE09920042C.description1}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest2CB8FCE09920042C.description2}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest2CB8FCE09920042C.description3}"
+				"&a杜拉铝&r源自《星际迷航》,在格雷科技中有多种用途.它能制作性能卓越的管道,但目前阶段需求不多."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o 在部分GT5u版本中,这种材料完全呈白色.实际上多数聚变材料及后续产物都是如此.真无趣!"
 			]
 			id: "2CB8FCE09920042C"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest2CB8FCE09920042C.subtitle}"
-			tasks: [{
-				id: "0933A476B9F87E66"
-				item: "gtceu:duranium_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest2CB8FCE09920042C.title}"
+			subtitle: "谁还需要《星际之门》呢？"
+			tasks: [
+				{
+					id: "0933A476B9F87E66"
+					item: "gtceu:duranium_ingot"
+					type: "item"
+				}
+			]
+			title: "杜拉铝"
 			x: -0.375d
 			y: 4.5d
 		}
 		{
 			dependencies: ["24366846FDA52CE3"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest762C48F0C2EA6B81.description1}"
+				"&a镅&r是二级聚变材料,在社区版发展进程中需求量巨大!"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest762C48F0C2EA6B81.description2}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest762C48F0C2EA6B81.description3}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest762C48F0C2EA6B81.description4}"
+				"需要两个聚变步骤:镧与硅合成&b镥&r,再将&b镥&r与铬结合获得&a镅&r."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o 在Gregicality Legacy中,镅被𬭊取代.由于镅仅能从核反应堆获取,GCYL将其改为人工合成元素𬭊."
 			]
 			id: "762C48F0C2EA6B81"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest762C48F0C2EA6B81.subtitle}"
-			tasks: [{
-				id: "5D597AE565A54388"
-				item: "gtceu:americium_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest762C48F0C2EA6B81.title}"
+			subtitle: "要是能在核反应堆里制造就好了..."
+			tasks: [
+				{
+					id: "5D597AE565A54388"
+					item: "gtceu:americium_ingot"
+					type: "item"
+				}
+			]
+			title: "镅"
 			x: -1.5d
 			y: 3.375d
 		}
 		{
 			dependencies: ["370FC1CDF5F9A9CC"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest359121584E056022.description1}"
+				"&4湿件&r系列的第三款电路.需要准备些&b铕&r来制作."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest359121584E056022.description2}"
+				"这也是最优质的&3UV&r级电路!"
 			]
 			id: "359121584E056022"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest359121584E056022.subtitle}"
-			tasks: [{
-				id: "5F54BE8467A5C882"
-				item: "gtceu:wetware_processor_computer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest359121584E056022.title}"
+			subtitle: "电路形态的感知能力"
+			tasks: [
+				{
+					id: "5F54BE8467A5C882"
+					item: "gtceu:wetware_processor_computer"
+					type: "item"
+				}
+			]
+			title: "最佳UV电路!"
 			x: 0.75d
 			y: 2.25d
 		}
 		{
 			dependencies: ["79E4E53E9DF45549"]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest0199DBC46D7BC2B9.description1}"
+				"&3高级HPCA组件&r是标准组件的升级版,可提升HPCA的计算能力."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest0199DBC46D7BC2B9.description2}"
+				"&3HPCA高级计算组件&r仅需&a2倍&r冷却消耗即可提供&a4倍&r计算效能!"
 			]
 			id: "0199DBC46D7BC2B9"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest0199DBC46D7BC2B9.subtitle}"
-			tasks: [{
-				id: "761AFCD5742F9A03"
-				item: "gtceu:hpca_advanced_computation_component"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest0199DBC46D7BC2B9.title}"
+			subtitle: "计算技术进阶时刻!"
+			tasks: [
+				{
+					id: "761AFCD5742F9A03"
+					item: "gtceu:hpca_advanced_computation_component"
+					type: "item"
+				}
+			]
+			title: "高级HPCA组件"
 			x: -4.875d
 			y: 3.375d
 		}
@@ -670,24 +710,26 @@
 				"79E4E53E9DF45549"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest24366846FDA52CE3.description1}"
+				"使用&a聚变玻璃&f按&aEMI&r显示的结构搭建."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest24366846FDA52CE3.description2}"
+				"为节省&a聚变仓壁&f材料,尽量在结构各处安装输入输出舱口(如图示)."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest24366846FDA52CE3.description3}"
+				"&a湮灭反应堆&f Mk2&r造价比Mk1更高!关键区别在于其&e启动能耗&r更高,可运行新配方."
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest24366846FDA52CE3.description4}"
+				"它还能超频运行低电压配方(包括Mk1反应堆的配方),具体机制请参阅Mk1任务说明."
 			]
 			id: "24366846FDA52CE3"
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest24366846FDA52CE3.subtitle}"
-			tasks: [{
-				id: "0D45B9FFF6BA13FE"
-				item: "gtceu:zpm_fusion_reactor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest24366846FDA52CE3.title}"
+			subtitle: "聚变变得更烧钱了..."
+			tasks: [
+				{
+					id: "0D45B9FFF6BA13FE"
+					item: "gtceu:zpm_fusion_reactor"
+					type: "item"
+				}
+			]
+			title: "&a湮灭反应堆&f II"
 			x: -2.625d
 			y: 3.375d
 		}
@@ -697,25 +739,27 @@
 				"24366846FDA52CE3"
 			]
 			description: [
-				"{ftbquests.chapter.zpm__zero_point_module.quest35F13B6D60361904.description1}"
+				"&a三钛合金&r源自《星际迷航》,在格雷科技中有特殊用途.与&9镅&r类似,需要两个聚变步骤!"
 				""
-				"{ftbquests.chapter.zpm__zero_point_module.quest35F13B6D60361904.description2}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest35F13B6D60361904.description3}"
-				"{ftbquests.chapter.zpm__zero_point_module.quest35F13B6D60361904.description4}"
+				"这是制造下一阶电路和&3UV&r组件的必备材料."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o 在部分GT5u版本中,仅三钛流体呈红色,材料本身为白色.在GTCEu中我们决定将其全部改为红色,美观多了!"
 			]
 			id: "35F13B6D60361904"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.zpm__zero_point_module.quest35F13B6D60361904.subtitle}"
-			tasks: [{
-				id: "6C5B3B1C0B85C003"
-				item: "gtceu:tritanium_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.zpm__zero_point_module.quest35F13B6D60361904.title}"
+			subtitle: "《星际迷航》再度来袭!"
+			tasks: [
+				{
+					id: "6C5B3B1C0B85C003"
+					item: "gtceu:tritanium_ingot"
+					type: "item"
+				}
+			]
+			title: "三钛合金"
 			x: -0.375d
 			y: 3.375d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.zpm__zero_point_module.subtitle0}"]
-	title: "{ftbquests.chapter.zpm__zero_point_module.title}"
+	subtitle: ["驾驭宇宙能量并掌控生物科技"]
+	title: "&cZPM&r - 零点能源模块"
 }

@@ -5,145 +5,167 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:lv_electric_motor"
 	id: "7D50771C3FE033D7"
-	order_index: 2
-	quest_links: [{
-		id: "376725077649D2CC"
-		linked_quest: "5A8F0124E07D5025"
-		shape: "gear"
-		size: 1.2d
-		x: 2.25d
-		y: 0.0d
-	}]
+	order_index: 1
+	quest_links: [
+		{
+			id: "376725077649D2CC"
+			linked_quest: "5A8F0124E07D5025"
+			shape: "gear"
+			size: 1.2d
+			x: 2.25d
+			y: 0.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["2F7617C0C4B330DE"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest47D4545452F05E37.description1}"
+				"&a&a流体调节器&f&r堪称流体版的&9&a机械臂&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest47D4545452F05E37.description2}"
+				"除传输流体外,还具备两种实用模式:"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest47D4545452F05E37.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest47D4545452F05E37.description4}"
+				"&9-&r &d&a精确补给&f&r:每刻精确传输指定量的流体(不多不少)"
+				"&9-&r &d&a保持补给&f&r:确保被连接设备始终维持特定流体存量"
 			]
 			id: "47D4545452F05E37"
-			rewards: [{
-				id: "64CB7F650D8CE198"
-				item: "gtceu:lv_electric_pump"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "64CB7F650D8CE198"
+					item: "gtceu:lv_electric_pump"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest47D4545452F05E37.subtitle}"
-			tasks: [{
-				id: "5E8D784C83A4F672"
-				item: "gtceu:lv_fluid_regulator"
-				type: "item"
-			}]
+			subtitle: "一种覆盖板!"
+			tasks: [
+				{
+					id: "5E8D784C83A4F672"
+					item: "gtceu:lv_fluid_regulator"
+					type: "item"
+				}
+			]
 			x: -1.125d
 			y: 1.125d
 		}
 		{
 			dependencies: ["38993B4697B0E16C"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest3DE7A2B91CFF48F6.description1}"
+				"装配于机器时,&a机械臂&f是传送带模块的高配版本,支持按特定批量、速率传输物品,或维持特定库存量."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3DE7A2B91CFF48F6.description2}"
+				"具体应用将在后续任务中以教程形式详解."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3DE7A2B91CFF48F6.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest3DE7A2B91CFF48F6.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest3DE7A2B91CFF48F6.description5}"
+				"&9注意:&r&a机械臂&f的功能&l仅在执行必要操作时&r激活."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o &d格雷科技&f 5曾用缓冲器、过滤器和类型过滤器实现物品精细管控,而GTCE中所有这些都被全能的&a机械臂&f与各类过滤覆盖板取代——更加紧凑高效!"
 			]
 			id: "3DE7A2B91CFF48F6"
-			rewards: [{
-				id: "372D894C29C4513C"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "372D894C29C4513C"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest3DE7A2B91CFF48F6.subtitle}"
-			tasks: [{
-				id: "7D7A9CBE1E368E53"
-				item: "gtceu:lv_robot_arm"
-				type: "item"
-			}]
+			subtitle: "制作过程会让你抓狂"
+			tasks: [
+				{
+					id: "7D7A9CBE1E368E53"
+					item: "gtceu:lv_robot_arm"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5A8F0124E07D5025"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest288CE4AA4C5AA8BF.description1}"
+				"虽非常用组件,却是多个关键机器的核心部件."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest288CE4AA4C5AA8BF.description2}"
+				"装配于机器时,传送带模块负责物品传输,可配置为导入或导出模式."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest288CE4AA4C5AA8BF.description3}"
+				"同时兼容多种&9物品过滤器&r."
 			]
 			id: "288CE4AA4C5AA8BF"
-			rewards: [{
-				id: "16807937144E5F61"
-				item: "gtceu:rubber_nugget"
-				random_bonus: 7
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "16807937144E5F61"
+					item: "gtceu:rubber_nugget"
+					random_bonus: 7
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest288CE4AA4C5AA8BF.subtitle}"
-			tasks: [{
-				id: "064169E7E2772387"
-				item: "gtceu:lv_conveyor_module"
-				type: "item"
-			}]
+			subtitle: "既是合成材料,也是覆盖板!"
+			tasks: [
+				{
+					id: "064169E7E2772387"
+					item: "gtceu:lv_conveyor_module"
+					type: "item"
+				}
+			]
 			x: 1.125d
 			y: 1.125d
 		}
 		{
 			dependencies: ["5A8F0124E07D5025"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest2F7617C0C4B330DE.description1}"
+				"当安装在机器上时,抽机可传输流体.可配置为导入或导出模式."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest2F7617C0C4B330DE.description2}"
+				"支持安装&9&a流体过滤器&f&r."
 			]
 			id: "2F7617C0C4B330DE"
-			rewards: [{
-				id: "204B2C6507063DF7"
-				item: "gtceu:lv_electric_motor"
-				random_bonus: 1
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "204B2C6507063DF7"
+					item: "gtceu:lv_electric_motor"
+					random_bonus: 1
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest2F7617C0C4B330DE.subtitle}"
-			tasks: [{
-				id: "7A37B370D2D40E6A"
-				item: "gtceu:lv_electric_pump"
-				type: "item"
-			}]
+			subtitle: "既是合成组件,也可作为覆盖板使用!"
+			tasks: [
+				{
+					id: "7A37B370D2D40E6A"
+					item: "gtceu:lv_electric_pump"
+					type: "item"
+				}
+			]
 			x: -1.125d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5A8F0124E07D5025"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest38993B4697B0E16C.description1}"
+				"制造特定机器所需的专用马达."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest38993B4697B0E16C.description2}"
+				"作为较复杂的合成组件之一,需以马达为原材料制作."
 			]
 			id: "38993B4697B0E16C"
-			rewards: [{
-				count: 4
-				id: "05D8932AEED073F8"
-				item: "gtceu:small_steel_gear"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "05D8932AEED073F8"
+					item: "gtceu:small_steel_gear"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest38993B4697B0E16C.subtitle}"
-			tasks: [{
-				id: "70FEF63FB9A58B02"
-				item: "gtceu:lv_electric_piston"
-				type: "item"
-			}]
+			subtitle: "合成组件而已——难道你还期待更花哨的东西？"
+			tasks: [
+				{
+					id: "70FEF63FB9A58B02"
+					item: "gtceu:lv_electric_piston"
+					type: "item"
+				}
+			]
 			x: 1.125d
 			y: 0.0d
 		}
@@ -153,48 +175,52 @@
 				"5A8F0124E07D5025"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest6E186F9C57155BFA.description1}"
+				"&3&a蒸汽轮机&f&r是&7低压阶段&r唯一实用的发电设备.&2后续将解锁更有趣的能源方案&r,例如天然气或石油发电."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6E186F9C57155BFA.description2}"
+				"通入蒸汽时,涡轮机将以&d2单位蒸汽=1单位EU&r的比例发电."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6E186F9C57155BFA.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest6E186F9C57155BFA.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest6E186F9C57155BFA.description5}"
+				"&e此任务将在&l技巧与提示&r&e标签页解锁电力与电缆教程——前往查看详情!&r"
+				"{@pagebreak}符"
+				"若使用单个&3&a蒸汽轮机&f&r,仅需&a1条锡制电缆&r.若升级至&32台&a蒸汽轮机&f&r,则需使用&a2条锡制电缆&r——否则可能导致&c电缆熔毁&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6E186F9C57155BFA.description6}"
+				"这是由于&9电流强度&r机制…具体说明将后续推出,请先安心享受游戏!"
 			]
 			id: "6E186F9C57155BFA"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest6E186F9C57155BFA.subtitle}"
-			tasks: [{
-				id: "155BC745245BCBAF"
-				item: "gtceu:lv_steam_turbine"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest6E186F9C57155BFA.title}"
+			subtitle: "必须建造更多涡轮机"
+			tasks: [
+				{
+					id: "155BC745245BCBAF"
+					item: "gtceu:lv_steam_turbine"
+					type: "item"
+				}
+			]
+			title: "&a发电装置&f"
 			x: 3.375d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6431381FBE07D6EF"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest7B0FF43022F6C2EC.description1}"
+				"本任务线是&9&d格雷科技&f电流强度&r的快速指南.关于&d电压&r机制,将在进入&b中压阶段&r后详解."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7B0FF43022F6C2EC.description2}"
+				"&e&l简明指南:&r为安全起见,请确保电缆的电流承载上限不低于能源发生器输出的最大安培数."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7B0FF43022F6C2EC.description3}"
+				"&e此任务将在&l技巧与提示&r&e标签页解锁电流强度教程——前往查看详情!&r"
 			]
 			id: "7B0FF43022F6C2EC"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest7B0FF43022F6C2EC.subtitle}"
-			tasks: [{
-				count: 4L
-				id: "1C81FD3C54CC2274"
-				item: "gtceu:tin_quadruple_cable"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest7B0FF43022F6C2EC.title}"
+			subtitle: "安培与你:操作指南"
+			tasks: [
+				{
+					count: 4L
+					id: "1C81FD3C54CC2274"
+					item: "gtceu:tin_quadruple_cable"
+					type: "item"
+				}
+			]
+			title: "但什么是安培？"
 			x: 6.75d
 			y: 1.125d
 		}
@@ -204,48 +230,52 @@
 				"45B71324028F6E68"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest7567E885B7166603.description1}"
+				"那么…能给我们展示&b中压电路&r吗？"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7567E885B7166603.description2}"
+				"&a铝&r是&b中压&r机器的主要材料.若尚未获得&a&a铝粉&f&r,请查看任务列表另一端的&2蓝宝石任务&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7567E885B7166603.description3}"
+				"搭建&3中压电解机&r后,可通过多种矿石获取&a铝&r.本任务所有奖励均含&a铝&r,采矿时请留意收集."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7567E885B7166603.description4}"
+				"使用&9氮气&r(通过离心机处理&3&a集气装置&f&r收集的&9空气&r获得)可缩短约三分之一的铝冶炼时间."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7567E885B7166603.description5}"
+				"&e制造中压机器仍需中压电路!&r"
 			]
 			id: "7567E885B7166603"
-			rewards: [{
-				count: 8
-				id: "19987707822BC176"
-				item: "gtceu:aluminium_dust"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "19987707822BC176"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest7567E885B7166603.subtitle}"
-			tasks: [{
-				id: "161B5813936E5E42"
-				item: "gtceu:aluminium_ingot"
-				type: "item"
-			}]
+			subtitle: "我们现在算进入中压阶段了吧？"
+			tasks: [
+				{
+					id: "161B5813936E5E42"
+					item: "gtceu:aluminium_ingot"
+					type: "item"
+				}
+			]
 			x: 9.393452380952382d
 			y: 3.360459183673477d
 		}
 		{
 			dependencies: ["4B979482EF026BFF"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest6D9D54FAB21EC086.description1}"
+				"制作用于电池外壳的&a电池合金&f."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6D9D54FAB21EC086.description2}"
+				"锑矿分布于&c下界&r,请记得查阅矿石图鉴."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6D9D54FAB21EC086.description3}"
+				"&9注意:&r此任务&l不包含&r功能性电池——相关内容请向下查看."
 			]
 			icon: "gtceu:battery_alloy_ingot"
 			id: "6D9D54FAB21EC086"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest6D9D54FAB21EC086.subtitle}"
+			subtitle: "电池超棒!"
 			tasks: [
 				{
 					count: 2L
@@ -257,7 +287,7 @@
 							value: "forge:ingots/battery_alloy"
 						}
 					}
-					title: "{ftbquests.chapter.lv__low_voltage.quest6D9D54FAB21EC086.task.02A2F0C2179EB4E3.title}"
+					title: "任意 #forge:锭/电池合金"
 					type: "item"
 				}
 				{
@@ -266,32 +296,36 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.lv__low_voltage.quest6D9D54FAB21EC086.title}"
+			title: "电池准备!"
 			x: 3.96d
 			y: 2.64d
 		}
 		{
 			dependencies: ["1C767009F505A813"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest7CCC1BDDE0C67F16.description1}"
+				"板条箱是箱子的直接升级版.单格空间存储更多物品——还能要求什么呢？"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7CCC1BDDE0C67F16.description2}"
+				"其突出优势在于&e可加载覆盖板&r,使之成为自动化系统中缓冲器的理想选择."
 			]
 			id: "7CCC1BDDE0C67F16"
-			rewards: [{
-				id: "1CADDD995C2DD509"
-				item: "ae2:sky_stone_chest"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1CADDD995C2DD509"
+					item: "ae2:sky_stone_chest"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest7CCC1BDDE0C67F16.subtitle}"
-			tasks: [{
-				id: "6FE87ED832BF40D1"
-				item: "gtceu:steel_crate"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest7CCC1BDDE0C67F16.title}"
+			subtitle: "前期游戏缓冲方案"
+			tasks: [
+				{
+					id: "6FE87ED832BF40D1"
+					item: "gtceu:steel_crate"
+					type: "item"
+				}
+			]
+			title: "&d格雷科技&f存储设备"
 			x: 0.0d
 			y: 2.25d
 		}
@@ -302,67 +336,73 @@
 				"2F7617C0C4B330DE"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description1}"
+				"手持覆盖件对机器表面右键点击即可安装,使用&5撬棍&r可移除覆盖件(直接挖掘机器也可移除,但效率极低)."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description2}"
+				"几乎所有&d格雷科技&f “机器“都能安装覆盖件,即使某些覆盖件并不提供实际功能."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description5}"
+				"潜行状态下用&5空手&r右键点击可打开覆盖件界面,也可使用&5螺丝刀&r右键操作,或在网格界面中潜行右键对应面."
+				"{@pagebreak}"
+				"具有物品/流体传输功能的覆盖件会提供切换按钮,用于控制其他传输形式的启用状态:"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description6}"
+				"&9- &r禁用:仅允许通过该覆盖件进行传输"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description7}"
+				"&9-&r 过滤允许(需配置过滤器!):仅允许符合过滤条件的传输"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description8}"
+				"&9-&r 无过滤允许:允许该机器面上的所有传输形式"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.description9}"
+				"为机器安装低电压等级的覆盖件是&9安全&r的."
 			]
 			icon: "gtceu:storage_cover"
 			id: "1C767009F505A813"
-			rewards: [{
-				id: "7A6A74FF4B058BA3"
-				item: "gtceu:storage_cover"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7A6A74FF4B058BA3"
+					item: "gtceu:storage_cover"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.subtitle}"
-			tasks: [{
-				id: "7C7A8A26D3FF0E96"
-				title: "{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.task.7C7A8A26D3FF0E96.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest1C767009F505A813.title}"
+			subtitle: "额外功能不占空间!"
+			tasks: [
+				{
+					id: "7C7A8A26D3FF0E96"
+					title: "我现在是覆盖板专家了,别担心"
+					type: "checkmark"
+				}
+			]
+			title: "覆盖件使用指南"
 			x: 0.0d
 			y: 1.125d
 		}
 		{
 			dependencies: ["32EA7E81885C8E87"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.description1}"
+				"所有机器通常包含一个&7正面&r和一个&9输出面&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.description2}"
+				"&7正面&r可通过外观判断.\\n&9输出面&r带有圆点或孔洞标记,默认位于机器背面."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.description5}"
+				"机器可通过输出面实现自动输出&r功能.在图形界面点击对应按钮启用该功能,流体与物品的自动输出需分别设置.通过&d过滤器&r和&d覆盖件&r可实现更精细的控制(详见本任务左上角相关任务说明)."
+				"{@pagebreak}"
+				"使用&5扳手&r右键机器可更改输出面,Shift+右键则更改正面.注意:正面不可同时&r作为输出面!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.description6}"
+				"默认情况下无法通过输出面输入物品或流体,但可用&5螺丝刀&r切换此设定:直接右键输出面,或在网格界面Shift+右键对应面."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.description7}"
+				"特殊功能机器(如&3泵机&r、&3矿机&r、&3捕鱼机&r、&3物品收集器&r等)不处理合成配方,它们将通过&7正面&r进行输出(该面仍保留圆点标记)."
 			]
 			icon: "minecraft:hopper"
 			id: "64E1E87B8AF72968"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.subtitle}"
-			tasks: [{
-				id: "6A4DFF7493955B8D"
-				title: "{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.task.6A4DFF7493955B8D.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest64E1E87B8AF72968.title}"
+			subtitle: "知识就是力量"
+			tasks: [
+				{
+					id: "6A4DFF7493955B8D"
+					title: "嗯,真有趣!"
+					type: "checkmark"
+				}
+			]
+			title: "机器自动输出机制"
 			x: 1.125d
 			y: 2.25d
 		}
@@ -372,107 +412,123 @@
 				"5A8F0124E07D5025"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.description1}"
+				"虽然可以制造其他&7LV&r机器,但从最实用的设备着手最为便捷.我们理解您想先制造更复杂的设备,但请相信这是最佳起点."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.description2}"
+				"线材轧机能将&e一根金属锭制成两根线材&r,比现有制作方式成本降低三分之二!&8&o何况您不厌倦制作剪线钳吗？&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.description5}"
+				"在本任务右侧可找到若干重要机器,它们能提供更廉价的中间产物."
+				"{@pagebreak}"
+				"&9注:&r&3&aLV机器&f&r内配方最高能耗为&a32 EU/t(LV阶)&r,更高能耗需使用&bMV&r(或更高级)机器.当然,我们目前尚未达到该阶段."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.description6}"
+				"部分配方需要&d&a编程电路&f&r.相信您不愿消耗珍贵电路来制作,请&e阅读专项任务获取关键信息&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.description7}"
+				"成功制造此机器后——欢迎进入电气化时代!"
 			]
 			id: "32EA7E81885C8E87"
-			rewards: [{
-				count: 4
-				id: "2B736C4992CDC8D1"
-				item: "gtceu:copper_single_wire"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "2B736C4992CDC8D1"
+					item: "gtceu:copper_single_wire"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.subtitle}"
-			tasks: [{
-				id: "2B5BF6F3ED693B9E"
-				item: "gtceu:lv_wiremill"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest32EA7E81885C8E87.title}"
+			subtitle: "告别繁琐线材制作"
+			tasks: [
+				{
+					id: "2B5BF6F3ED693B9E"
+					item: "gtceu:lv_wiremill"
+					type: "item"
+				}
+			]
+			title: "基础线材轧机"
 			x: 2.25d
 			y: 1.125d
 		}
 		{
 			dependencies: ["32EA7E81885C8E87"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest10ECB471A77F5136.description1}"
+				"可以说是第二好用的&7低压&r机器,当然您若有异议我们也接受反驳."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest10ECB471A77F5136.description2}"
+				"解锁后将&e一个锭加工成一个板&r,这比&a锻造锤&f的转化效率更高."
 			]
 			id: "10ECB471A77F5136"
-			rewards: [{
-				count: 4
-				id: "6DF60970CB48982D"
-				item: "gtceu:steel_plate"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "6DF60970CB48982D"
+					item: "gtceu:steel_plate"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest10ECB471A77F5136.subtitle}"
-			tasks: [{
-				id: "3AC3A8728EE60E4C"
-				item: "gtceu:lv_bender"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest10ECB471A77F5136.title}"
+			subtitle: "&a弯曲&f万物皆可弯!"
+			tasks: [
+				{
+					id: "3AC3A8728EE60E4C"
+					item: "gtceu:lv_bender"
+					type: "item"
+				}
+			]
+			title: "基础弯板机"
 			x: 4.5d
 			y: 1.125d
 		}
 		{
 			dependencies: ["32EA7E81885C8E87"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest07E7678095258EDB.description1}"
+				"&a车床&f是塑造金属的重要设备,可将&e一个锭加工成两根杆&r,&e一个螺栓加工成一个螺丝&r,相比手动合成效率提升一倍."
+				"{@pagebreak}"
+				"&l&3考据:&r&o &d格雷科技&f5的车床每个锭产出一根杆和两小堆粉尘.GTCEu模组也保留此设定但默认关闭."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest07E7678095258EDB.description2}"
-				""
-				"{ftbquests.chapter.lv__low_voltage.quest07E7678095258EDB.description3}"
+				"&oGT6车床行为类似GT5,但每个螺栓车削成一个螺丝和1/72堆粉尘——简直离谱!"
 			]
 			id: "07E7678095258EDB"
-			rewards: [{
-				count: 4
-				id: "09FC4530E70B9105"
-				item: "gtceu:steel_rod"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "09FC4530E70B9105"
+					item: "gtceu:steel_rod"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest07E7678095258EDB.subtitle}"
-			tasks: [{
-				id: "6781D0241D0564A5"
-				item: "gtceu:lv_lathe"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest07E7678095258EDB.title}"
+			subtitle: "&a车床&f车削万物!"
+			tasks: [
+				{
+					id: "6781D0241D0564A5"
+					item: "gtceu:lv_lathe"
+					type: "item"
+				}
+			]
+			title: "基础车床"
 			x: 3.375d
 			y: 1.125d
 		}
 		{
 			dependencies: ["32EA7E81885C8E87"]
-			description: ["One of the cheapest - if not the cheapest - &7LV&r machine. Use this to make &6Redstone-free Magnetic Rods&r for your Motors. Whenever you start to batch your Motors, this machine will save you stacks and stacks of Redstone."]
+			description: ["这是最廉价的&7低压&r机器之一(甚至没有之一),用于制造&e无红石磁化杆&r来生产电机.批量生产电机时,本设备能为您节省大量红石."]
 			id: "29379C91D6E00436"
-			rewards: [{
-				count: 16
-				id: "47F3A37E7A315A1D"
-				item: "minecraft:redstone"
-				random_bonus: 16
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "47F3A37E7A315A1D"
+					item: "minecraft:redstone"
+					random_bonus: 16
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest29379C91D6E00436.subtitle}"
-			tasks: [{
-				id: "5EC42A72DEC6F9FC"
-				item: "gtceu:lv_polarizer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest29379C91D6E00436.title}"
+			subtitle: "&a两极磁化机&f磁化万物!"
+			tasks: [
+				{
+					id: "5EC42A72DEC6F9FC"
+					item: "gtceu:lv_polarizer"
+					type: "item"
+				}
+			]
+			title: "基础磁化机"
 			x: 5.625d
 			y: 1.125d
 		}
@@ -482,65 +538,68 @@
 				"3E6DC423FE4A99F7"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest3ECD9C9B909CCCCC.description1}"
+				"手持时&d潜行右击&r启动吸附功能,再次点击关闭.&a电池&f容量取决于制作时使用的电池类型."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3ECD9C9B909CCCCC.description2}"
+				"若担心圆石或下界岩过多,可用FTB Utilities的垃圾桶(物品栏左上角)销毁"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3ECD9C9B909CCCCC.description3}"
+				"&9注意:&r&a磁力&f功能默认启用白名单过滤(即不吸附任何物品).右击设备可调整物品过滤设置,甚至支持&c标签过滤&r——例如仅吸附&b原始矿石&r!"
 			]
 			id: "3ECD9C9B909CCCCC"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest3ECD9C9B909CCCCC.subtitle}"
-			tasks: [{
-				id: "14E4C5F6C88F5358"
-				item: "gtceu:lv_item_magnet"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest3ECD9C9B909CCCCC.title}"
+			subtitle: "为什么这些矿物不能自觉进我背包!？"
+			tasks: [
+				{
+					id: "14E4C5F6C88F5358"
+					item: "gtceu:lv_item_magnet"
+					type: "item"
+				}
+			]
+			title: "磁力吸物器"
 			x: 5.61d
 			y: 2.31d
 		}
 		{
 			dependencies: ["6431381FBE07D6EF"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description1}"
+				"&o大型锅炉&r是小型锅炉的&e可选&r升级版,支持固体或液体燃料."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description2}"
+				"若选择蒸汽动力体系,这将是您的首选设备.其他动力方案详见&b中压&r章节."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description3}"
+				"需注意当前版本的LBB表现欠佳,建议暂时使用其他燃料源(或批量使用&d单体锅炉&r).后续版本将进行&2平衡性调整&r,您也可直接&c勾选跳过此任务&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description6}"
+				"&c重要:&r与传统锅炉类似,本设备&l可能&r发生&c爆炸&r!虽然爆炸威力巨大,但本整合包已配置为不破坏方块与实体."
+				"{@pagebreak}"
+				"&c供水系统至关重要&r,需在锅炉&l同区块内&r配置&3原始泵&r与&7低压&r输出仓,任何生物群系的水源均能满足需求."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description7}"
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description8}"
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description9}"
+				"完全加热后,&3LBB&r每秒产生800单位蒸汽(&a每游戏刻&f),可转化为&d400EU/刻&r电能,驱动12.5个基础&a蒸汽轮机&f.如此巨大的能量消耗的燃料量也&l十分惊人&r."
+				"{@pagebreak}"
+				"&5&l考虑到这点&r,GUI界面允许您将锅炉功率&9调节&r至25%,此时产生200蒸汽&a每刻&f(即&d100EU/刻&r),略超3个基础&a蒸汽轮机&f的需求."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description10}"
-				""
-				"{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.description11}"
+				"&9注:&r关于多方块结构的详细教程将在获得&3&a电力高炉&f&r后解锁,建议优先完成该目标."
 			]
 			icon: "gtceu:bronze_large_boiler"
 			id: "33263404ED38C6D2"
-			rewards: [{
-				id: "1BEF1D97E033F1B1"
-				item: "gtceu:steam_bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1BEF1D97E033F1B1"
+					item: "gtceu:steam_bucket"
+					type: "item"
+				}
+			]
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.subtitle}"
+			subtitle: "砰,砰,砰,砰"
 			tasks: [
 				{
 					id: "560D4D0D6BECE006"
 					item: "gtceu:bronze_large_boiler"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "49958803B3B2E387"
-					title: "{ftbquests.chapter.lv__low_voltage.quest33263404ED38C6D2.task.49958803B3B2E387.title}"
+					title: "算了,我还是跳过吧..."
 					type: "checkmark"
 				}
 			]
@@ -550,127 +609,141 @@
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.description1}"
+				"&e超导线路&r是各电压等级专用的特殊导线.它们没有对应的电缆版本,但这并不必要,因为其具有绝对的&e零线损&r特性."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.description2}"
+				"触碰时不会对玩家造成伤害.这使其成为布线的最佳选择,尽管相比其他导线略显昂贵."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.description3}"
+				"若您还未被其折服,1x规格的版本还可承载2安培电流.这难道不令人惊喜吗？"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.description6}"
+				"现在正是替换劣质&a锡制电缆&r的好时机.通过&3打包机&r回收可获取制造时使用的锡和橡胶."
+				"{@pagebreak}"
+				"不知如何制作？提示:&e磷酸三钙&r与&2软锰矿&r或许能提供帮助."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.description7}"
-				"{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.description8}"
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在Gregicality和GTCEu出现之前,所有版本的&d格雷科技&f都未实装&7LV&f级别的真实超导线路,尽管某些整合包包含无损电缆."
 			]
 			id: "46AD7A6F3B6775F5"
-			rewards: [{
-				id: "3F8346637D7277E1"
-				item: "gtceu:manganese_phosphide_single_wire"
-				random_bonus: 3
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3F8346637D7277E1"
+					item: "gtceu:manganese_phosphide_single_wire"
+					random_bonus: 3
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.subtitle}"
-			tasks: [{
-				id: "4477AB06651827D6"
-				item: "gtceu:manganese_phosphide_single_wire"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest46AD7A6F3B6775F5.title}"
+			subtitle: "一安培电流都不许流失"
+			tasks: [
+				{
+					id: "4477AB06651827D6"
+					item: "gtceu:manganese_phosphide_single_wire"
+					type: "item"
+				}
+			]
+			title: "LV超导线路"
 			x: 7.875d
 			y: 2.25d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest772F7CD63D31966A.description1}"
-				"{ftbquests.chapter.lv__low_voltage.quest772F7CD63D31966A.description2}"
-				"{ftbquests.chapter.lv__low_voltage.quest772F7CD63D31966A.description3}"
+				"&3&a热能离心机&f&r是矿石&a处理&f设备中能耗最高的机器.它处理&a&a粉碎矿石&f&r或&a&a纯化矿石&f&r可产生与&3&a洗矿厂&f&r不同的&e副产品&r,但产出率相同."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o GT5版本的&a热能离心机&f需要48EU/t能耗.虽然超过32EU/t,但GT5存在&d特殊机制&f,允许此类机器承受超过1安培的电流."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest772F7CD63D31966A.description4}"
+				"&o在GTCE中,&a热能离心机&f被改为仅在&bMV&f阶段以60EU/t配方运行.坦白说...这简直是&4完全浪费时间&f!根本不值得.幸运的是,我们已强化该机器使其更具实用价值."
 			]
 			hide_dependent_lines: true
 			id: "772F7CD63D31966A"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest772F7CD63D31966A.subtitle}"
-			tasks: [{
-				id: "10AB20A316EA688F"
-				item: "gtceu:lv_thermal_centrifuge"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest772F7CD63D31966A.title}"
+			subtitle: "此热非彼热"
+			tasks: [
+				{
+					id: "10AB20A316EA688F"
+					item: "gtceu:lv_thermal_centrifuge"
+					type: "item"
+				}
+			]
+			title: "基础型&a热能离心机&f"
 			x: -0.375d
 			y: 3.375d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest7A64425597F58015.description1}"
+				"&a动力筛&f通过筛分&d宝石类&r&a&a纯化矿石&f&r来获取&a精美&r和&a无瑕&r品质的宝石,这些可切割为普通宝石.同时还能筛出该宝石的&a&a纯化矿粉&r.总体而言,此法相比其他方式具有&e更高产出率&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7A64425597F58015.description2}"
+				"&bMV&r阶段需要少量&d无瑕绿宝石&r,通过&3筛选机&r处理矿石即可获得."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7A64425597F58015.description3}"
+				"每提升一级&3筛选&r等级都会增加所有宝石类型的发现概率,但能耗也会相应增加."
+				""
+				"&9注意:&r若破碎了宝石矿石(如钻石),必须使用本机器以非粉末形式回收真实宝石.但此过程较为缓慢,建议直接将此类矿石熔炼成宝石."
 			]
 			id: "7A64425597F58015"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest7A64425597F58015.subtitle}"
-			tasks: [{
-				id: "2D87ADACFE1EF8E5"
-				item: "gtceu:lv_sifter"
-				type: "item"
-			}]
+			subtitle: "您与筛出的宝石同样精美!"
+			tasks: [
+				{
+					id: "2D87ADACFE1EF8E5"
+					item: "gtceu:lv_sifter"
+					type: "item"
+				}
+			]
 			x: 0.75d
 			y: 5.625d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.description1}"
+				"&l非矿石处理用途:&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.description2}"
+				"可将木材制成&e纸张&r,从此不再依赖&a&a拐杖糖&f&9*&r.如果您玩过Nomifactory,可能早已对此感到厌烦."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.description3}"
+				"还有其他次要配方,如为物品和方块着色或进行漂白."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.description6}"
+				"&9*&r &a糖&r在&eHV&r阶段&cTNT&r生产中仍有需求,请勿拆除相关设备."
+				"{@pagebreak}"
+				"&l矿石处理用途:&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.description7}"
+				"部分&a&a粉碎矿石&f&r经浸洗变成&a&a纯化矿石&f&r时存在替代路径,需使用&a水银&r或&a&a过硫酸钠&f&r进行浸泡.除非急需特定&e副产品&r,此步骤并非必需,但可作为黄金的替代获取渠道(提示!)."
 			]
 			id: "330BDB559A7BAB35"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.subtitle}"
-			tasks: [{
-				id: "526A5FF9B5DBB129"
-				item: "gtceu:lv_chemical_bath"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest330BDB559A7BAB35.title}"
+			subtitle: "&a化学浸洗器&f正在浸洗..."
+			tasks: [
+				{
+					id: "526A5FF9B5DBB129"
+					item: "gtceu:lv_chemical_bath"
+					type: "item"
+				}
+			]
+			title: "基础型&a化学浸洗器&f"
 			x: 1.125d
 			y: 3.375d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest58BA62A3A8A32C24.description1}"
+				"此设备兼具简易自动化清洗与高精度副产物清洗功能."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest58BA62A3A8A32C24.description2}"
+				"清洗&a&a粉碎矿石&f&r可获得能进一步精炼的&a&a纯净矿石&r、无用岩石,更重要的是获得首个&e副产物&r!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest58BA62A3A8A32C24.description3}"
+				"任何矿石通过清洗至少能产出&9三分之二份副产物粉尘&r,请优先进行此步骤."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest58BA62A3A8A32C24.description4}"
+				"使用&a蒸馏水&f替代普通水可使处理时长减半,但生产成本更高."
 			]
 			id: "58BA62A3A8A32C24"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest58BA62A3A8A32C24.subtitle}"
-			tasks: [{
-				id: "1C03C5F3E5196342"
-				item: "gtceu:lv_ore_washer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest58BA62A3A8A32C24.title}"
+			subtitle: "彻底清洗矿石"
+			tasks: [
+				{
+					id: "1C03C5F3E5196342"
+					item: "gtceu:lv_ore_washer"
+					type: "item"
+				}
+			]
+			title: "基础&a洗矿机&f"
 			x: 1.5d
 			y: 5.25d
 		}
@@ -680,15 +753,15 @@
 				"10ECB471A77F5136"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest59F0060B55307311.description1}"
+				"通过点击机器中的&e电路配置槽位&r,您可以创建一个&b虚拟&a编程电路&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest59F0060B55307311.description2}"
+				"这是一个“&7模拟电路&r“,允许您为合成配方选择配置.无需再消耗实际电路来制作&b&a编程电路&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest59F0060B55307311.description3}"
+				"该虚拟电路旨在避免&d配方冲突&r——例如,同一个线材轧机可以使用相同材料生产不同粗细的线材!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest59F0060B55307311.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest59F0060B55307311.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest59F0060B55307311.description6}"
+				"&d电力机器&r和&d物品输入总线&r将配备虚拟电路槽位."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o 此功能最初源自GTNH模组."
 			]
 			icon: {
 				Count: 1
@@ -700,37 +773,43 @@
 			id: "59F0060B55307311"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest59F0060B55307311.subtitle}"
-			tasks: [{
-				id: "7C04F3247B0C0BCB"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest59F0060B55307311.title}"
+			subtitle: "不想消耗实际电路来选配方？"
+			tasks: [
+				{
+					id: "7C04F3247B0C0BCB"
+					type: "checkmark"
+				}
+			]
+			title: "&a编程电路&f"
 			x: 3.375d
 			y: 1.98d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest37307A46E70011D3.description1}"
+				"当您认为需要投资电池产业时,便可制造此机器."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest37307A46E70011D3.description2}"
+				"若想用&b&d应用能源2&f&r模组的材料制作存储磁盘,此机器亦是必备设备."
 			]
 			id: "37307A46E70011D3"
-			rewards: [{
-				count: 2
-				id: "25A57A151B7E8FEB"
-				item: "gtceu:lithium_dust"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "25A57A151B7E8FEB"
+					item: "gtceu:lithium_dust"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest37307A46E70011D3.subtitle}"
-			tasks: [{
-				id: "5521E4E26119E152"
-				item: "gtceu:lv_canner"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest37307A46E70011D3.title}"
+			subtitle: "这台机器并无惊艳功能"
+			tasks: [
+				{
+					id: "5521E4E26119E152"
+					item: "gtceu:lv_canner"
+					type: "item"
+				}
+			]
+			title: "基础封装机"
 			x: 3.375d
 			y: 3.375d
 		}
@@ -740,82 +819,86 @@
 				"6D9D54FAB21EC086"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest3E6DC423FE4A99F7.description1}"
+				"&a电池&r可放入机器GUI中底部中央的能量槽,或置于&3电池缓冲器&r中."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3E6DC423FE4A99F7.description2}"
+				"在背包中时,可通过潜行右键点击让电池为您的EU耗电设备&d充电&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3E6DC423FE4A99F7.description3}"
+				"&7低压&r、&b中压&r和&e高压&r电池各有三种类型,您可根据现有材料选择最合适的.&d锂&r电池容量最高,其次是&d镉&r电池,再次是&d钠&r电池."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3E6DC423FE4A99F7.description4}"
+				"我们的建议？找到盐矿脉后,可通过&a电解盐&r获得&d钠&r,或通过&a水洗粉碎锂云母&r获得&d锂&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3E6DC423FE4A99F7.description5}"
+				"获得&e任意&r&a电池&r即可完成此任务."
 			]
 			id: "3E6DC423FE4A99F7"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest3E6DC423FE4A99F7.subtitle}"
-			tasks: [{
-				icon: "gtceu:lv_sodium_battery"
-				id: "47D0D12A26963702"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "gtceu:batteries/lv"
+			subtitle: "用于存储能量的电池!"
+			tasks: [
+				{
+					icon: "gtceu:lv_sodium_battery"
+					id: "47D0D12A26963702"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:batteries/lv"
+						}
 					}
+					title: "Any &a低压电池&f"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest3E6DC423FE4A99F7.task.47D0D12A26963702.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest3E6DC423FE4A99F7.title}"
+			]
+			title: "电池!"
 			x: 4.875d
 			y: 3.375d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.description1}"
+				"电池缓冲器本身不具备功能,但若在其内部存储槽放置电池,它将作为能量缓冲区工作."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.description2}"
+				"&3电池缓冲器&r每格电池槽支持&9输入2A&r且&9输出1A&r.带圆点的一面为输出面,其余各面均作为输入面."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.description3}"
+				"建议将发电机接入输入面,从输出面为机器供电.因为电池缓冲器充电时会要求大电流输入,若将其设置为可从其他机器分流能量,可能导致您的其他设备无法正常运行."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.description4}"
+				"&e它同时能为内部存放的&lEU和RF工具&r充电."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.description6}"
-				"{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.description7}"
+				"若您没有无限能源,此设备必不可少.获得&e任意&r&7低压&r电池缓冲器即可完成任务,但16槽版本在当前阶段可能性能过剩."
+				"{@pagebreak}"
+				"&9注意:&r 切勿让有损耗的电缆形成回流至电池缓冲器的闭环!仔细想想,这只会导致能量白白流失."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.description8}"
+				"&l&3背景故事:&r&o 坦白说,GTCE版本的电池缓冲器表现...平平.GTCEu版本对其进行了重构,融合了GT5和GTCE的功能特性.现在能量会在所有电池间平均分配!"
 			]
 			icon: "gtceu:lv_battery_buffer_4x"
 			id: "6431381FBE07D6EF"
 			size: 0.75d
-			tasks: [{
-				id: "35FEF4BB8295416C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_battery_buffer_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lv_battery_buffer_8x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lv_battery_buffer_16x"
-							}
-						]
+			tasks: [
+				{
+					id: "35FEF4BB8295416C"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_battery_buffer_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_battery_buffer_8x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_battery_buffer_16x"
+								}
+							]
+						}
 					}
+					title: "&a低压电池&f缓冲器"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.task.35FEF4BB8295416C.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest6431381FBE07D6EF.title}"
+			]
+			title: "电池缓冲器"
 			x: 6.75d
 			y: 3.375d
 		}
@@ -825,115 +908,127 @@
 				"6431381FBE07D6EF"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest1E9BE8D3F8A602DC.description1}"
+				"本任务将讲解&3&a电力高炉&f&r的核心机制,而下方任务则会探讨您同样需要的多方块结构部件运作原理.请务必参考这两个部分."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1E9BE8D3F8A602DC.description2}"
+				"总之,&3EBF&r是您的&e首个电力多方块结构&r!恭喜.它用于高温加工材料."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1E9BE8D3F8A602DC.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest1E9BE8D3F8A602DC.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest1E9BE8D3F8A602DC.description5}"
+				"您将通过EBF制造&a铝&r并进阶到&d&bMV时代&r.它还能比PBF更快地生产&7钢&r."
+				"{@pagebreak}"
+				"需要特别注意:EBF是个耗电大户.运行配方的最低能耗为&9120 EU/t&r!略低于4台&7LV&r发电机的输出.这就是为什么此前需要通过电池任务解锁.建议您专门铺设独立供电线路,配置专用发电机和电池缓冲器来运行动力."
 			]
 			id: "1E9BE8D3F8A602DC"
-			rewards: [{
-				count: 16
-				id: "0DBE03823EE6616B"
-				item: "gtceu:invar_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "0DBE03823EE6616B"
+					item: "gtceu:invar_ingot"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest1E9BE8D3F8A602DC.subtitle}"
-			tasks: [{
-				id: "10F6305A7E5D186D"
-				item: "gtceu:electric_blast_furnace"
-				type: "item"
-			}]
+			subtitle: "重大里程碑!"
+			tasks: [
+				{
+					id: "10F6305A7E5D186D"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+			]
 			x: 7.875d
 			y: 3.375d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest22A1A629AF754066.description1}"
+				"&a高压灭菌室&f通常是宝石处理的最终环节,用于将特定&a宝石粉末&r还原为完整宝石."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest22A1A629AF754066.description2}"
+				"过程极其缓慢——因此通常不建议粉碎宝石矿石,因回收成本过于高昂."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest22A1A629AF754066.description3}"
+				"&9注意:&r在本整合包中,若要在应用能源2模组中进阶,必须通过高压灭菌室制作&5&a福鲁伊克斯水晶&f&r.敬请知悉."
 			]
 			id: "22A1A629AF754066"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest22A1A629AF754066.subtitle}"
-			tasks: [{
-				id: "30C94122AD446D9B"
-				item: "gtceu:lv_autoclave"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest22A1A629AF754066.title}"
+			subtitle: "\"糟糕,我把钻石变成粉末了”"
+			tasks: [
+				{
+					id: "30C94122AD446D9B"
+					item: "gtceu:lv_autoclave"
+					type: "item"
+				}
+			]
+			title: "基础高压灭菌室"
 			x: -1.125d
 			y: 4.125d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
-			description: ["A rarely used machine. It uses magnetism to separate some Magnetic ores and gain additional &6Byproducts&r you would not obtain otherwise."]
+			description: ["一种较少使用的设备.利用磁性分离某些磁性矿物,获取常规方法无法获得的&e副产物&r."]
 			id: "24B4D9608718EE27"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest24B4D9608718EE27.subtitle}"
-			tasks: [{
-				id: "3162F3E3D12E00FB"
-				item: "gtceu:lv_electromagnetic_separator"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest24B4D9608718EE27.title}"
+			subtitle: "磁铁…究竟如何工作？"
+			tasks: [
+				{
+					id: "3162F3E3D12E00FB"
+					item: "gtceu:lv_electromagnetic_separator"
+					type: "item"
+				}
+			]
+			title: "基础&a电磁选矿机&f"
 			x: 0.375d
 			y: 3.375d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest701BCADAE5CF6CA5.description1}"
+				"本任务将简要介绍&d常规矿石处理的全流程&r.为何强调“常规“？部分矿石需要特殊处理,但那属于后期内容.哎呀,我们说得太远啦!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest701BCADAE5CF6CA5.description2}"
+				"围绕本任务的每个任务都会提供参与矿石处理的不同机器."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest701BCADAE5CF6CA5.description3}"
+				"&c注意:&r不必过度关注矿石处理!现阶段效率极低且耗能较高.约90%的矿石副产品不值得专门投入精力获取.&7顺便说一句,这可是真实数据.&r"
 			]
 			icon: "gtceu:crushed_sulfur_ore"
 			id: "701BCADAE5CF6CA5"
 			shape: "circle"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest701BCADAE5CF6CA5.subtitle}"
-			tasks: [{
-				id: "3A7506F2C9145157"
-				title: "{ftbquests.chapter.lv__low_voltage.quest701BCADAE5CF6CA5.task.3A7506F2C9145157.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest701BCADAE5CF6CA5.title}"
+			subtitle: "你逃不开格雷的魔掌..."
+			tasks: [
+				{
+					id: "3A7506F2C9145157"
+					title: "我同意失去理智"
+					type: "checkmark"
+				}
+			]
+			title: "这堆东西是什么？:第二部分"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["32EA7E81885C8E87"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest648BCF486E16CCB2.description1}"
+				"&7LV&r阶段需要制作大量不同机器!同种机器制作多台并设置不同程序电路值也会很有帮助."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest648BCF486E16CCB2.description2}"
+				"若目标设定有困难:可从后期任务中的某个物品反向推导需求链."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest648BCF486E16CCB2.description3}"
+				"既然如此...何不从&5&a湮灭反应堆&f&r开始？算了,这个目标过于远大——还是先看个近期的目标.对了,&3&a电力高炉&f&r作为&7LV&r阶段的“终极目标“就很合适."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest648BCF486E16CCB2.description4}"
+				"EBF造价&a昂贵&r,因此初期应优先制作能降低组件材料成本的机器.我们将通过这些任务引导你朝正确方向前进."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest648BCF486E16CCB2.description5}"
+				"其他重要目标包括制作&3LV组装机&r和首批&aMV电路&r."
 			]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "648BCF486E16CCB2"
 			shape: "circle"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest648BCF486E16CCB2.subtitle}"
-			tasks: [{
-				id: "07CE2766ECA4B0D8"
-				title: "{ftbquests.chapter.lv__low_voltage.quest648BCF486E16CCB2.task.07CE2766ECA4B0D8.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest648BCF486E16CCB2.title}"
+			subtitle: "选择太多,时间太少!"
+			tasks: [
+				{
+					id: "07CE2766ECA4B0D8"
+					title: "我...现在可能有点方向感了"
+					type: "checkmark"
+				}
+			]
+			title: "LV阶段发展指南"
 			x: 2.25d
 			y: 4.5d
 		}
@@ -941,48 +1036,54 @@
 			dependencies: ["3D98819A799D2E64"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest581CDF545E1EA1FD.description1}"
+				"将此机器放置在&3&a化学反应器&f&r旁可自动将橡胶凝固成&a&a橡胶片&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest581CDF545E1EA1FD.description2}"
+				"用&d扳手&r右键&3&a化学反应器&f&r侧面开启流体&9自动输出&r功能即可实现自动运作."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest581CDF545E1EA1FD.description3}"
+				"后续还有更多流体需要凝固,你可以在非橡胶生产时段改造&3&a流体凝固造石机&f&r的用途——或者再造一台!"
 			]
 			id: "581CDF545E1EA1FD"
-			rewards: [{
-				id: "2B85DCFFF22770D8"
-				item: "gtceu:rubber_bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2B85DCFFF22770D8"
+					item: "gtceu:rubber_bucket"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest581CDF545E1EA1FD.subtitle}"
-			tasks: [{
-				id: "20B1CA4DB2750E84"
-				item: "gtceu:lv_fluid_solidifier"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest581CDF545E1EA1FD.title}"
+			subtitle: "&a流体凝固造石机&f专门凝固..."
+			tasks: [
+				{
+					id: "20B1CA4DB2750E84"
+					item: "gtceu:lv_fluid_solidifier"
+					type: "item"
+				}
+			]
+			title: "基础型&a流体凝固造石机&f"
 			x: 4.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest2E36E5755B2F551C.description1}"
+				"&a勘探仪&f能快速定位矿脉,堪称神器."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest2E36E5755B2F551C.description2}"
+				"其图形界面支持交互:右键点击可扫描矿石并在动态地图上显示."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest2E36E5755B2F551C.description3}"
+				"&l&3轶闻:&r&o我们那时候便携式勘探仪要&dLuV&f级才能用.现在的年轻人可真轻松."
 			]
 			id: "2E36E5755B2F551C"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest2E36E5755B2F551C.subtitle}"
-			tasks: [{
-				id: "1AC97E61EF4958C8"
-				item: "gtceu:prospector.lv"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest2E36E5755B2F551C.title}"
+			subtitle: "(好吧,可能不算)"
+			tasks: [
+				{
+					id: "1AC97E61EF4958C8"
+					item: "gtceu:prospector.lv"
+					type: "item"
+				}
+			]
+			title: "这算作弊吗"
 			x: 4.642304421768699d
 			y: 2.165391156462583d
 		}
@@ -992,13 +1093,13 @@
 				"70432F650591353C"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest1646BF9194100E57.description1}"
+				"准备&a128个白铜&r、&a32个青铜&r和&a16个&a锡铁合金&f&r来制作首个&a电力高炉&f所需加热线圈."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1646BF9194100E57.description2}"
+				"这还不到整个EBF原材料成本的一半(!).你还需要各约一组因瓦合金和钢,快去挖矿吧."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1646BF9194100E57.description3}"
+				"&a白铜&f线圈可使EBF处理温度达&d1,800K&r(不计电压加成).说实话这温度相当惊人."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1646BF9194100E57.description4}"
+				"&e本任务将在&l技巧与窍门&r&e标签页解锁线圈教程——快去看看吧!&r"
 			]
 			icon: {
 				Count: 1
@@ -1023,46 +1124,52 @@
 				}
 			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest1646BF9194100E57.subtitle}"
-			tasks: [{
-				count: 16L
-				id: "4F19FBED1E1766AC"
-				item: "gtceu:cupronickel_coil_block"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest1646BF9194100E57.title}"
+			subtitle: "初阶加热线圈制造"
+			tasks: [
+				{
+					count: 16L
+					id: "4F19FBED1E1766AC"
+					item: "gtceu:cupronickel_coil_block"
+					type: "item"
+				}
+			]
+			title: "白铜线圈"
 			x: 6.75d
 			y: 4.5d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.description1}"
+				"&5你:&r &o够了,我要卸载!这个整合包太蠢了!我们才刚进入&7低压阶段&r&o,你却让我造&e高压&r&o机器!？&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.description2}"
-				"{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.description4}"
+				"没错!现阶段确实无法完成,这也是为什么该任务会出现在&e高压&r章节中."
+				"{@pagebreak}"
+				"还记得不能从打粉机获取副产物有多令人失望吗？这种失望感将持续到你解锁&e高压&r阶段."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.description5}"
+				"&e&a打粉机&f将在高压阶段解锁第二和第三槽位.相信我们——这对矿石处理是重大利好.实际上有个副产物完全依赖此功能(需先通过&a热能离心机&f阶段)."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.description6}"
+				"&c注意:&r与GTCE不同,GTCEu中的&b中压&r打粉机&4没有&r第二槽位."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.description7}"
+				"&5撰写者:&r &o待你更强之时再来找我,年轻的蟋蟀.&r"
 			]
 			id: "1DA54DA70E12F499"
-			rewards: [{
-				id: "19F7BE0EE2221321"
-				item: "gtceu:tiny_stainless_steel_dust"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "19F7BE0EE2221321"
+					item: "gtceu:tiny_stainless_steel_dust"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.subtitle}"
-			tasks: [{
-				id: "5580AE2868E0E451"
-				item: "gtceu:hv_macerator"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest1DA54DA70E12F499.title}"
+			subtitle: "什么？为什么？!"
+			tasks: [
+				{
+					id: "5580AE2868E0E451"
+					item: "gtceu:hv_macerator"
+					type: "item"
+				}
+			]
+			title: "通用打粉机"
 			x: -1.125d
 			y: 3.375d
 		}
@@ -1072,71 +1179,75 @@
 				"5263F866638D875C"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest15928F50AE80A5CF.description1}"
+				"&a集气器&f可收集空气,经离心分离后获得&a氧气&r与&a氮气&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest15928F50AE80A5CF.description2}"
+				"&l&3考据:&r&o &d格雷科技&f5老玩家都记得当年需用压缩机配合IC2单元来制取&a压缩空气&f...如今不再需要单元化学体系了."
 			]
 			id: "15928F50AE80A5CF"
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest15928F50AE80A5CF.subtitle}"
-			tasks: [{
-				id: "5710E0C2A7441809"
-				item: "gtceu:lv_gas_collector"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest15928F50AE80A5CF.title}"
+			subtitle: "是时候卖空气了"
+			tasks: [
+				{
+					id: "5710E0C2A7441809"
+					item: "gtceu:lv_gas_collector"
+					type: "item"
+				}
+			]
+			title: "基础&a集气器&f"
 			x: -1.125d
 			y: 6.75d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.description1}"
+				"&3打包机&r可将&a&a小撮粉末&f&r和&a&a小堆粉末&f&r压缩成&a完整粉末&r,这些粉末可进一步压制成锭."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.description2}"
+				"它也能执行反向操作、转换线缆尺寸等等..."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.description5}"
+				"当你重构&a能量网络&f时,将线缆拆解回导线和橡胶的功能将&e极其有用&r."
+				"{@pagebreak}"
+				"&o是的,我们明白...&r 3x3压缩配方看似无用,因为工作台也能完成.但我们希望您考虑该机器在&9自动化&r生产中的价值."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.description6}"
+				"要实现&9自动化&r粉末生产,请将&a&a小撮粉末&f&r输送至打包机旁的缓冲容器(箱子即可)."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.description7}"
+				"接着放置&3&a机械臂&f&r并设置为“&d导入&r“和“&d&a精确补给9个&r“.最后让机器从另一侧自动输出."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.description8}"
+				"&l&3考据:&r&o 在GTCE中,反向操作需要单独的解包机."
 			]
 			id: "3F123950216DF93B"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.subtitle}"
-			tasks: [{
-				id: "33AEA84A406741FF"
-				item: "gtceu:lv_packer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest3F123950216DF93B.title}"
+			subtitle: "看看谁在打包"
+			tasks: [
+				{
+					id: "33AEA84A406741FF"
+					item: "gtceu:lv_packer"
+					type: "item"
+				}
+			]
+			title: "基础打包机"
 			x: -1.125d
 			y: 4.875d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.description1}"
+				"&3&a化学反应器&f&r将是&l众多&r合成配方必备设备."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.description2}"
-				"{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.description4}"
+				"让我们试运行——何不用新造的&a化学反应器&f&a解锁&f更优的&e橡胶合成配方&r？液态橡胶&d无法直接使用&r,您需要另造机器进行加工."
+				"{@pagebreak}"
+				"仅靠&a化学反应器&f无法完成橡胶制作,以下&a其他机器&r可供选择:"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.description5}"
+				"&3固化机&r可直接将橡胶固化为&a&a橡胶片&f&r,后续生产会用到这些胶片."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.description6}"
+				"随后可用&3组装机&r将熔融橡胶制成&a线缆&r.虽然锡电缆不需要此步骤,但更高级的线缆&e必须&r通过组装机制造."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.description7}"
+				"&e注意:&r提交流体需将其装在&l桶&r内存放于物品栏.抱歉——这是&aFTB任务&f系统的特殊设定."
 			]
 			icon: "gtceu:lv_chemical_reactor"
 			id: "3D98819A799D2E64"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.subtitle}"
+			subtitle: "给新手看的化学课"
 			tasks: [
 				{
 					id: "108424445D0F748A"
@@ -1149,35 +1260,37 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.lv__low_voltage.quest3D98819A799D2E64.title}"
+			title: "基础&a化学反应器&f"
 			x: 3.375d
 			y: 4.5d
 		}
 		{
 			dependencies: ["10ECB471A77F5136"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest292938760AB9A12B.description1}"
+				"细胞是一种流体存储的替代形式.所有类型相同且内部流体量相同的细胞可以&e堆叠&r.它们可以通过&3&a装罐机&f&r自动填充."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest292938760AB9A12B.description2}"
-				"{ftbquests.chapter.lv__low_voltage.quest292938760AB9A12B.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest292938760AB9A12B.description4}"
+				"细胞可容纳&d一桶&r流体."
+				"{@pagebreak}"
+				"通用细胞最多可容纳&d一桶&r流体,但也能存储&9不足一桶&r的量.如果你想存储剩余的流体而不制作整个桶,它们尤其理想."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest292938760AB9A12B.description5}"
+				"由更高级材料制成的细胞可以容纳更多流体,但到那时&9桶&r和&9超级储罐&r将能容纳更多."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest292938760AB9A12B.description6}"
+				"与桶类似,细胞可以放入合成网格中以清空其内容."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:fluid_cell"
 			id: "292938760AB9A12B"
-			rewards: [{
-				count: 2
-				id: "7CF6A679E3781C09"
-				item: "gtceu:universal_fluid_cell"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "7CF6A679E3781C09"
+					item: "gtceu:universal_fluid_cell"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest292938760AB9A12B.subtitle}"
+			subtitle: "GTCE扼杀了细胞化学... GTCE扼杀了细胞!"
 			tasks: [
 				{
 					id: "48507FA04651418B"
@@ -1190,7 +1303,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.lv__low_voltage.quest292938760AB9A12B.title}"
+			title: "&a死亡细胞&f"
 			x: 4.5d
 			y: 5.61d
 		}
@@ -1200,23 +1313,25 @@
 				"5B2696206205CB2E"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest115C4226F6473F0C.description1}"
+				"使用你的两台新机器将材料转化为流体,再将其固化回转子!这种组合使转子的制作变得容易得多——每个转子只需&e四个锭&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest115C4226F6473F0C.description2}"
+				"你也可以对&e齿轮&r和&e小齿轮&r进行同样的操作,当你制作&3MV挤出机&r时,这些将被取代."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest115C4226F6473F0C.description3}"
+				"&9注意:&r一些金属,如钢,需要比&7LV&r更高的电压进行流体提取,因此请确保在EMI中注意配方等级."
 			]
 			icon: "gtceu:rotor_casting_mold"
 			id: "115C4226F6473F0C"
-			rewards: [{
-				count: 2
-				id: "7162E47A4FB3EDB1"
-				item: "gtceu:empty_mold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "7162E47A4FB3EDB1"
+					item: "gtceu:empty_mold"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest115C4226F6473F0C.subtitle}"
+			subtitle: "是时候结束手工制作转子的痛苦了!"
 			tasks: [
 				{
 					id: "4A68C6BC78CB07E2"
@@ -1230,29 +1345,31 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.lv__low_voltage.quest115C4226F6473F0C.title}"
+			title: "连-连-连击!"
 			x: 5.625d
 			y: 4.5d
 		}
 		{
 			dependencies: ["199361B5FEC959EA"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest713C8D6A20BF3A0E.description1}"
+				"&a&a焊锡&f&r仅作为&9流体&r使用,并且在大多数电路配方中与锡&r&d可互换&r,作为一种更便宜的替代品."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest713C8D6A20BF3A0E.description2}"
+				"选择权在你手中.节省更多材料？制作&a焊锡&f.花更少时间制作材料？锡是更好的选择."
 			]
 			hide_dependent_lines: true
 			icon: "gtceu:soldering_alloy_ingot"
 			id: "713C8D6A20BF3A0E"
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest713C8D6A20BF3A0E.subtitle}"
-			tasks: [{
-				id: "67F9F84D66E32728"
-				item: "gtceu:soldering_alloy_dust"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest713C8D6A20BF3A0E.title}"
+			subtitle: "我有灵魂,但我不是焊锡"
+			tasks: [
+				{
+					id: "67F9F84D66E32728"
+					item: "gtceu:soldering_alloy_dust"
+					type: "item"
+				}
+			]
+			title: "&a焊锡&f"
 			x: 5.625d
 			y: 9.0d
 		}
@@ -1262,67 +1379,74 @@
 				"4B979482EF026BFF"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest2F1CCFEBAB71B1F3.description1}"
+				"在&7LV&r电力阶段,获取&a&a铝粉&f&r的主要方式是通过电解&9蓝宝石&r或&2绿宝石&r.铝是&bMV&r阶段的主要材料,类似于钢在&7LV&r中的关键作用,以及青铜在&e蒸汽时代&r中的重要性."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest2F1CCFEBAB71B1F3.description2}"
+				"通过处理如&e漂白土&r等矿石也可以获得铝,但要达到类似的产量所需的投入比从&3蓝宝石&r中获取铝更多.因此,你可以通过复选框&5跳过该任务&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest2F1CCFEBAB71B1F3.description3}"
+				"获取足够的蓝宝石电解成整组&a&a铝粉&f&r是明智的选择——它&l很快&r就会派上用场.此外,额外的氧气总是好的."
 			]
 			icon: "gtceu:sapphire_dust"
 			id: "2F1CCFEBAB71B1F3"
-			rewards: [{
-				count: 12
-				id: "6ED23A377745D74A"
-				item: "gtceu:green_sapphire_ore"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 12
+					id: "6ED23A377745D74A"
+					item: "gtceu:green_sapphire_ore"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest2F1CCFEBAB71B1F3.subtitle}"
+			subtitle: "离MV更近一步"
 			tasks: [
 				{
 					count: 6L
 					id: "3B6DC3146DB686BF"
 					item: "gtceu:sapphire_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "1AF7F9E162724B49"
-					title: "{ftbquests.chapter.lv__low_voltage.quest2F1CCFEBAB71B1F3.task.1AF7F9E162724B49.title}"
+					title: "我可找不到蓝宝石,谢了"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.lv__low_voltage.quest2F1CCFEBAB71B1F3.title}"
+			title: "蓝宝石"
 			x: -2.25d
 			y: 5.625d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.description1}"
+				"&l矿石处理之外:&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.description2}"
-				"{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.description4}"
+				"与离心机类似,这台机器功能繁多——我们无法一一列举!幸运的是,它是最便宜的&7LV&r机器之一,所以一旦需要就尽快获取它."
+				"{@pagebreak}"
+				"&l对于矿石处理:&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.description6}"
-				"{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.description7}"
+				"好吧,我们撒谎了.它并不&o完全&r用于矿石处理,实际上用于&a分解粉尘&r.然而,大多数有用的电解配方在&bMV&r阶段才解锁.你可以在粉尘的提示信息中查看&e分子式&r,以了解通过电解可以获得什么."
+				"{@pagebreak}"
+				"&c小心!&r由于矿石的工作原理,直接将粉尘熔炼成锭可能比电解获得更高的金属产量.但这意味着你会失去粉尘中的其他产物.你必须决定是优先考虑直接价值,还是副产品的数量."
 			]
 			id: "32B08E6F414A00C0"
-			rewards: [{
-				count: 2
-				id: "63E578C8E82CB9DC"
-				item: "gtceu:lv_electric_motor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "63E578C8E82CB9DC"
+					item: "gtceu:lv_electric_motor"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.subtitle}"
-			tasks: [{
-				id: "536874A8C35E1C86"
-				item: "gtceu:lv_electrolyzer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest32B08E6F414A00C0.title}"
+			subtitle: "分离你能想到的任何东西"
+			tasks: [
+				{
+					id: "536874A8C35E1C86"
+					item: "gtceu:lv_electrolyzer"
+					type: "item"
+				}
+			]
+			title: "基础电解机"
 			x: -1.125d
 			y: 5.625d
 		}
@@ -1332,75 +1456,83 @@
 				"45B71324028F6E68"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest3A8D7FC6F316C38C.description1}"
+				"若尚未制作&e混合机&r,你需要先制作它才能合成此设备."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3A8D7FC6F316C38C.description2}"
+				"目前,建议使用&9水&r作为配方材料,而非尝试获取润滑液."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3A8D7FC6F316C38C.description3}"
+				"&3&a金属剪切机&f&r额外支持将&e金属棒转化为四个螺栓&r的功能."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3A8D7FC6F316C38C.description4}"
+				"该设备是获取&d宝石板&r的唯一途径,此材料用于制作过滤器,进而合成&3&a集气器&f&r."
 			]
 			id: "3A8D7FC6F316C38C"
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest3A8D7FC6F316C38C.subtitle}"
-			tasks: [{
-				id: "662DB818821C4EAE"
-				item: "gtceu:lv_cutter"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest3A8D7FC6F316C38C.title}"
+			subtitle: "&a切削燧石刃&f...切割中..."
+			tasks: [
+				{
+					id: "662DB818821C4EAE"
+					item: "gtceu:lv_cutter"
+					type: "item"
+				}
+			]
+			title: "基础剪切机"
 			x: 1.125d
 			y: 6.75d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.description1}"
+				"&l非矿石处理用途:&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.description2}"
+				"天哪,有什么是这台机器做不到的？分解配方分离粉尘类型、分离空气、计算税务等等..."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.description5}"
+				"功能多到列不完!简而言之&c你需要离心机&r."
+				"{@pagebreak}"
+				"&l矿石处理用途:&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.description6}"
-				"{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.description7}"
-				"{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.description8}"
+				"可将&a&a含杂尘晶&f&r或&a&a纯化&f粉尘&r转化为洁净粉尘,并产生微量&e副产物&r粉尘.虽非副产物最优生产链环节,但这是当前阵列中运行成本最低、最易小规模搭建的矿石&a处理&f设备."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o 在基础GTCE中,这曾是性能最强的矿石&a处理&f设备——操作简便且能产出三份微量粉尘,如同&a洗矿厂&f或&a热能离心机&f.为促进多样性,我们削弱了其性能."
 			]
 			id: "5263F866638D875C"
-			rewards: [{
-				id: "525C65CA6AFD3C11"
-				item: "minecraft:cauldron"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "525C65CA6AFD3C11"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.subtitle}"
-			tasks: [{
-				id: "20EDB55B8D5CDAD6"
-				item: "gtceu:lv_centrifuge"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest5263F866638D875C.title}"
+			subtitle: "万能多面手"
+			tasks: [
+				{
+					id: "20EDB55B8D5CDAD6"
+					item: "gtceu:lv_centrifuge"
+					type: "item"
+				}
+			]
+			title: "基础离心机"
 			x: 0.0d
 			y: 6.75d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest257DB4B39B2A928E.description1}"
+				"建议&e暂缓制作&r此设备,待流程真正需要时再启用——若刚进入&7LV&r阶段请先探索其他内容."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest257DB4B39B2A928E.description2}"
+				"部分曾需手动合成的合金现可通过混合机制作,且能获得&a更高产出&r."
 			]
 			id: "257DB4B39B2A928E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest257DB4B39B2A928E.subtitle}"
-			tasks: [{
-				id: "4A0B4A206ED30212"
-				item: "gtceu:lv_mixer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest257DB4B39B2A928E.title}"
+			subtitle: "&a混合刀片&f混合中..."
+			tasks: [
+				{
+					id: "4A0B4A206ED30212"
+					item: "gtceu:lv_mixer"
+					type: "item"
+				}
+			]
+			title: "基础混合机"
 			x: 2.25d
 			y: 6.75d
 		}
@@ -1411,47 +1543,49 @@
 				"292938760AB9A12B"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest5AD9884E7BFB2510.description1}"
+				"遗憾的是,这仅是&l空&r&a喷漆罐&f,使用前需注入化学染料."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest5AD9884E7BFB2510.description2}"
+				"&a&a喷漆罐&f&r不提供机器功能相关用途,但具有极佳的&b视觉效果与实用性&r!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest5AD9884E7BFB2510.description3}"
+				"任何&7(或几乎所有)&r&d格雷科技&f方块实体&7(机器、管道、电缆等)&r均可&e喷涂&r为16种颜色之一.这非常适合截图留念,或在多人基地中区分不同设备布局.同时有助于分辨管道与电缆系统."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest5AD9884E7BFB2510.description4}"
+				"副手持&a&a喷漆罐&f&r时,放置的任何方块将自动喷涂."
 			]
 			id: "5AD9884E7BFB2510"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest5AD9884E7BFB2510.subtitle}"
-			tasks: [{
-				id: "28CFFA0F7A33E02F"
-				item: "gtceu:empty_spray_can"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest5AD9884E7BFB2510.title}"
+			subtitle: "服务器标签大战时刻"
+			tasks: [
+				{
+					id: "28CFFA0F7A33E02F"
+					item: "gtceu:empty_spray_can"
+					type: "item"
+				}
+			]
+			title: "&a喷漆罐&f"
 			x: 3.375d
 			y: 5.625d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description1}"
+				"虽是流程中极其&9重要&r的设备,但因其&c造价昂贵&r而&9&l无法立即发挥作用&r.多数目标配方需消耗&c流体&r,建议先完善基础设施再着手制作."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description2}"
+				"尽管如此,&3组装机&r仍是核心设备,其重要性堪比工作台——只不过...嗯,这是台机器(废话)."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description5}"
+				"作为“整合包开发者“,我们常借此添加各类自定义配方.说到自定义配方,组装机现已支持&d&d应用能源2&f&r内容!"
+				"{@pagebreak}"
+				"当基础设施完备时,可解锁更高效的配方:"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description6}"
+				"&9-&r &e&a真空管&f&r产量提升至两倍以上"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description7}"
+				"&9-&r &e电阻&r每次合成产出4个!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description8}"
+				"&9-&r &e&a电路板&f&r大幅减少铜耗量"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description9}"
+				"哇哦!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.description10}"
+				"&l&3背景故事:&r&o 在&d格雷科技&f2时代,&a控制电路加工厂&f仅有两个插槽,主要用于替代电路和外壳的配方."
 			]
 			id: "63CD0236B337EAAD"
 			rewards: [
@@ -1469,12 +1603,14 @@
 			]
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest63CD0236B337EAAD.subtitle}"
-			tasks: [{
-				id: "6B5537B80EB05B30"
-				item: "gtceu:lv_assembler"
-				type: "item"
-			}]
+			subtitle: "组装机,集结!"
+			tasks: [
+				{
+					id: "6B5537B80EB05B30"
+					item: "gtceu:lv_assembler"
+					type: "item"
+				}
+			]
 			x: 3.375d
 			y: 6.75d
 		}
@@ -1484,51 +1620,55 @@
 				"713C8D6A20BF3A0E"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.description1}"
+				"&3虚空覆盖板&r可安装在&d格雷科技&f机器、板条箱或储罐上,用于清除不需要的物品.多么方便!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.description2}"
+				"对于机器而言,它只会清除输出槽中的物品,输入槽不会被影响."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.description5}"
+				"可搭配&a过滤覆盖板&r实现更精确的清除功能."
+				"{@pagebreak}"
+				"存在需要&dMV电路&r的高级版本,可设置清除阈值——非常适合溢流控制."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.description6}"
+				"&9注意:&r默认处于关闭状态以防误清,使用&5软槌&r右键点击激活."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.description7}"
+				"获得&e任意&r虚空覆盖板即可完成此任务."
 			]
 			icon: "gtceu:item_voiding_cover"
 			id: "249B9E104CAF5FE6"
-			rewards: [{
-				count: 32
-				id: "7B4720913F7D4D6E"
-				item: "minecraft:cactus"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "7B4720913F7D4D6E"
+					item: "minecraft:cactus"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.subtitle}"
-			tasks: [{
-				id: "4AA56628D87A3AF9"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:fluid_voiding_cover"
-							}
-							{
-								Count: 1b
-								id: "gtceu:item_voiding_cover"
-							}
-						]
+			subtitle: "最佳机制——让物品或流体消失!"
+			tasks: [
+				{
+					id: "4AA56628D87A3AF9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:fluid_voiding_cover"
+								}
+								{
+									Count: 1b
+									id: "gtceu:item_voiding_cover"
+								}
+							]
+						}
 					}
+					title: "虚空覆盖板"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.task.4AA56628D87A3AF9.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest249B9E104CAF5FE6.title}"
+			]
+			title: "虚空覆盖板"
 			x: 4.5d
 			y: 6.75d
 		}
@@ -1539,22 +1679,24 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest5B2696206205CB2E.description1}"
+				"&8等等,我们已经不在蒸汽时代了!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest5B2696206205CB2E.description2}"
+				"未推出&7LV&r级&e蒸汽&r机器的原因在于它们&4并非&r必需品.您可能不想投资几乎无提升的升级——但&o此项除外&r,因为它相较&e蒸汽时代&r有重大改进."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest5B2696206205CB2E.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest5B2696206205CB2E.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest5B2696206205CB2E.description5}"
+				"&3基础提取机&r获得流体处理能力,可实现&a流体提取&r.用于融化先前固化的橡胶、为电路&d熔化&a焊锡&f&r,以及在&3组装机&r中通过&ebest&a真空管&f配方&r&d熔化&a红色合金&f&r!"
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o是否注意到此机器兼具提取机和&a流体提取器&f功能？在旧版&d格雷科技&f中,&a两&f者是独立的机器."
 			]
 			id: "5B2696206205CB2E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest5B2696206205CB2E.subtitle}"
-			tasks: [{
-				id: "5CD363C839475426"
-				item: "gtceu:lv_extractor"
-				type: "item"
-			}]
+			subtitle: "&a蒸汽提取机&f可提取……"
+			tasks: [
+				{
+					id: "5CD363C839475426"
+					item: "gtceu:lv_extractor"
+					type: "item"
+				}
+			]
 			x: 5.625d
 			y: 5.625d
 		}
@@ -1564,82 +1706,94 @@
 				"5B2696206205CB2E"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest199361B5FEC959EA.description1}"
+				"从现在起,所有电路都应在&3&a电路组装机&f&r中制作.立即使用以享受&e更廉价的LV和MV电路&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest199361B5FEC959EA.description2}"
+				"每次升级到新等级的&3&a电路组装机&f&r时,都能制作更&d先进主题&r的电路.这些电路会使用复杂&r且&m&7有时&r陌生的材料,但整体制作效率更高."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest199361B5FEC959EA.description3}"
+				"&l&3背景故事:&r&o&a电路组装机&f在&d格雷科技&f版本中历经变迁.GT5未包含此机器,后在GT5 Unofficial重新加入.GTCE决定不移植,而GTCEu是否包含它仍是拉锯战."
 			]
 			id: "199361B5FEC959EA"
-			rewards: [{
-				id: "0418E257FEDA52B7"
-				item: "gtceu:good_electronic_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0418E257FEDA52B7"
+					item: "gtceu:good_electronic_circuit"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest199361B5FEC959EA.subtitle}"
-			tasks: [{
-				id: "6287E8A7C254ECA7"
-				item: "gtceu:lv_circuit_assembler"
-				type: "item"
-			}]
+			subtitle: "希望这是您的首笔MV电路支出"
+			tasks: [
+				{
+					id: "6287E8A7C254ECA7"
+					item: "gtceu:lv_circuit_assembler"
+					type: "item"
+				}
+			]
 			x: 5.625d
 			y: 7.875d
 		}
 		{
 			dependencies: ["1A77CA35F054F988"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest63256ED95F17B242.description1}"
+				"&3&a电弧炉&f&r消耗少量&9氧气&r,以不同于普通熔炉的方式冶炼物品."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63256ED95F17B242.description2}"
+				"可用它更轻松制作&a&a锻铁&f&r、使&a玻璃&r产量翻倍,并获得&a&a退火铜&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63256ED95F17B242.description3}"
+				"还能将各种组件和机器回收为原始材料."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63256ED95F17B242.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest63256ED95F17B242.description5}"
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o旧版本同时存在&a电弧炉&f和&b&a等离子电弧炉&f&f.为何不合并功能？我们确实考虑过——但最终决定&a移除&f两个&b等离子&f配方之一,随后另一个&b等离子&f配方也被移除."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest63256ED95F17B242.description6}"
+				"&o简而言之,&b&a等离子电弧炉&f&f已&4消失&f.安息吧."
 			]
 			id: "63256ED95F17B242"
-			rewards: [{
-				id: "2DF03194A80B3F4B"
-				item: "gtceu:oxygen_bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2DF03194A80B3F4B"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest63256ED95F17B242.subtitle}"
-			tasks: [{
-				id: "2374C06C5E1EFC24"
-				item: "gtceu:lv_arc_furnace"
-				type: "item"
-			}]
+			subtitle: "此处长眠着等离子熔炉"
+			tasks: [
+				{
+					id: "2374C06C5E1EFC24"
+					item: "gtceu:lv_arc_furnace"
+					type: "item"
+				}
+			]
 			x: -3.375d
 			y: 6.75d
 		}
 		{
 			dependencies: ["3A8D7FC6F316C38C"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest0DAD0A6360448B39.description1}"
+				"帮助基地建设的精巧工具.此装置有多种模式,可通过按住相应热键查看(默认&eG&r键)."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0DAD0A6360448B39.description2}"
+				"务必查看&3&a破坏小帮手&f&r和&3复制粘贴工具&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0DAD0A6360448B39.description3}"
+				"本&e应&r能通过任何&b&d格雷科技&f机器&r的充电槽充电,但目前存在&c故障&r.如需充电,请查看本页右上角的&d涡轮充电&r任务."
 			]
 			id: "0DAD0A6360448B39"
-			rewards: [{
-				count: 64
-				id: "754F6E206D20BC31"
-				item: "minecraft:bricks"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 64
+					id: "754F6E206D20BC31"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest0DAD0A6360448B39.subtitle}"
-			tasks: [{
-				id: "65100C599DB0F30C"
-				item: "buildinggadgets2:gadget_building"
-				type: "item"
-			}]
+			subtitle: "格雷领域的熟悉面孔"
+			tasks: [
+				{
+					id: "65100C599DB0F30C"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+			]
 			x: 1.65d
 			y: 6.0d
 		}
@@ -1650,61 +1804,67 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description1}"
+				"你本可在EMI中耗费&o&e宝贵数年时光&r寻找最优氧气制取配方,毕竟获取途径如此多样.多种矿物经电解后都能产生氧气."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description2}"
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description4}"
+				"要是任务书能提供更多信息就好了!"
+				"{@pagebreak}"
+				"获取&b氧气&r的最佳方式是电解&b&a二氧化硅&f&r.&a二氧化硅&f可通过多种途径获得,最主要是玻璃粉.我们&c强烈&r建议通过此法建立自动化被动式氧气生产流水线!初期机器会消耗大量电力,但当机器缓冲槽填满后,设备将极少启动."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description6}"
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description7}"
+				"关于如何获取可再生玻璃材料,请查阅&e可再生能源 \\\\\\ 你&r章节的相关任务."
+				"{@pagebreak}"
+				"另一种方法是制造&d&a集气器&f&r后&a离心处理空气&r——目前你可能尚未具备制造条件.此法同时产出&a氮气&r,能加速某些&3&a电力高炉&f&r配方&r,相当实用."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description8}"
+				"技术上也可通过&a电解水&r获取.但实际上因能耗较高,水电解更适用于&a氢气制备&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description9}"
+				"请尽量避免&c浪费&r氧气!这在&d格雷科技&f中适用于多数流体与化学品,是个值得养成的好习惯.&a减少&f氧气浪费意味着节省更多能源与时间."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.description10}"
+				"&e注意:&r提交流体需将其装在&l桶&r内存于物品栏.抱歉——这是&aFTB任务&f的特殊设定."
 			]
 			icon: "gtceu:oxygen_bucket"
 			id: "1A77CA35F054F988"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.subtitle}"
-			tasks: [{
-				id: "1F76ED94CDBD13E1"
-				item: "gtceu:oxygen_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest1A77CA35F054F988.title}"
+			subtitle: "严格来说应是双氧分子..."
+			tasks: [
+				{
+					id: "1F76ED94CDBD13E1"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+			]
+			title: "清新氧气"
 			x: -2.25d
 			y: 6.75d
 		}
 		{
 			dependencies: ["5263F866638D875C"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest0EAC071414AEC07E.description1}"
+				"现在你可通过&3离心处理&a树脂&r,仍会获得&a橡胶原料&f——但此次同时产出&a粘合剂&r(及用途较少的植物球)."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0EAC071414AEC07E.description2}"
+				"抢占先机开始生产粘合剂吧!可用于制作&e廉价电阻&r,以及在&3&a控制电路加工厂&f&r中生产&e廉价&a电路板&f&r(&o在不久的将来&r尤其重要)."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0EAC071414AEC07E.description3}"
+				"&e注意:&r提交流体需将其装在&l桶&r内存于物品栏.抱歉——这是&aFTB任务&f的特殊设定."
 			]
 			icon: "gtceu:glue_bucket"
 			id: "0EAC071414AEC07E"
-			rewards: [{
-				count: 4
-				id: "3134ECF63472A855"
-				item: "gtceu:rubber_log"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "3134ECF63472A855"
+					item: "gtceu:rubber_log"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest0EAC071414AEC07E.subtitle}"
-			tasks: [{
-				id: "284F6584EEEF3AD6"
-				item: "gtceu:glue_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest0EAC071414AEC07E.title}"
+			subtitle: "提取器？我才刚认识它!"
+			tasks: [
+				{
+					id: "284F6584EEEF3AD6"
+					item: "gtceu:glue_bucket"
+					type: "item"
+				}
+			]
+			title: "粘合之道"
 			x: 0.0d
 			y: 9.0d
 		}
@@ -1715,34 +1875,38 @@
 				"772F7CD63D31966A"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.description1}"
-				"{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.description2}"
-				"{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.description3}"
+				"后续许多材料无法直接熔炼矿石获得!它们需通过处理其他矿石的副产品形式获取.镓和砷正是&4其中&r两种典型材料."
+				"{@pagebreak}"
+				"获取&d镓&r的方法按优劣排序(综合考虑难度与产出):"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.description4}"
+				"&9-&3电解&a闪锌矿&r有小概率获得粉末.注意会损失直接熔炼价值."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.description5}"
+				"&9-&r将&a粉碎铝土矿&r放入&3&a化学浸洗器&f&r.此法需要&9&a过硫酸钠&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.description6}"
+				"&9-&r作为&a闪锌矿&r在&3&a热能离心机&f&r或&3离心机&r中&a处理&r的副产品获取."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.description7}"
+				"获取&d砷&r需开采并&3离心处理&a雄黄矿&r."
 			]
 			id: "4073577B7EF9B593"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "57A62DC036C223CF"
-				table_id: 2116922005162849828L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "57A62DC036C223CF"
+					table_id: 2116922005162849828L
+					type: "choice"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.subtitle}"
-			tasks: [{
-				id: "0FDC60275B1959C3"
-				item: "gtceu:gallium_arsenide_dust"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest4073577B7EF9B593.title}"
-			x: 2.25d
+			subtitle: "我讨厌副产品,但它们实在太棒了"
+			tasks: [
+				{
+					id: "0FDC60275B1959C3"
+					item: "gtceu:gallium_arsenide_dust"
+					type: "item"
+				}
+			]
+			title: "&a砷化镓&f"
+			x: 1.125d
 			y: 7.875d
 		}
 		{
@@ -1751,79 +1915,87 @@
 				"0EAC071414AEC07E"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest3647B1B964A15E4E.description1}"
+				"这款&a电路板&f用于制造&dMV电路&r!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3647B1B964A15E4E.description2}"
+				"&9注意:&r制作酚醛&a电路板&f时有&ltwo&r种选择.若使用&a&a过硫酸钠&f&r或&a三氯化铁&r,所需银用量仅为合成配方的&e四分之一&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3647B1B964A15E4E.description3}"
+				"&l但&r考虑到当前获取这些化学品的难度,您也可以直接开采更多闪锌矿脉来获取额外白银..."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3647B1B964A15E4E.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest3647B1B964A15E4E.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest3647B1B964A15E4E.description6}"
+				"关于&a&a过硫酸钠&f&r的任务位于&bMV&r章节,若您有兴趣可提前参阅."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o在GTCEu 1.12.2版本中,这些电路板被称为“&2优质&a电路板&f&f“.这个命名并不贴切,因为它们的合成过程实在&4堪称魔鬼&f."
 			]
 			id: "3647B1B964A15E4E"
-			rewards: [{
-				id: "2B815290D1F7D038"
-				item: "gtceu:resin_printed_circuit_board"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2B815290D1F7D038"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest3647B1B964A15E4E.subtitle}"
-			tasks: [{
-				id: "2DE7B75F25A4AB9E"
-				item: "gtceu:phenolic_printed_circuit_board"
-				type: "item"
-			}]
+			subtitle: "&a一块优质基板&f"
+			tasks: [
+				{
+					id: "2DE7B75F25A4AB9E"
+					item: "gtceu:phenolic_printed_circuit_board"
+					type: "item"
+				}
+			]
 			x: 3.375d
 			y: 9.0d
 		}
 		{
 			dependencies: ["63CD0236B337EAAD"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description1}"
+				"现阶段涉足应用能源2系统虽可行,但需要较多准备工作..."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description2}"
+				"您需要制造大量&7LV&r级机器,且部分AE2物品的&7LV级&r配方在没有更先进技术时相对昂贵."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description3}"
+				"在&7LV&r阶段,您可以制造:"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description4}"
+				"&e-&r &a能源接收器&f"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description5}"
+				"&e-&r &aME终端&f"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description6}"
+				"&e-&r 1k ME存储元件"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description7}"
+				"&e-&r &aME存储箱&f"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description8}"
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description9}"
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description10}"
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description11}"
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description12}"
+				"&b通道系统已在本整合包中禁用&r,可并行放置多个配备1k存储单元的&aME箱子&f来扩展存储容量!通过&aME终端&f可同时访问所有箱内物品."
+				"{@pagebreak}"
+				"&9注意:&r本包包含&5&a福鲁伊克斯水晶&f&r,但它们是作为GT材料生成,而非AE2默认的&a福鲁伊克斯水晶&f.获取方法:将&d&a福鲁伊克斯粉&f&r放入&a高压釜&r(由&7&a赛特斯石英粉&f&r、&e&a下界石英粉&f&o&r和&c红石&r在&a搅拌机&r中制成)处理.无需预先给&a赛特斯石英&f充能——它会在搅拌过程中自动充能...或者说类似的效果."
+				"{@pagebreak}"
+				"欢迎随时查阅AE2内置指南!您也可以参考:"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description13}"
+				"&a官&f方&d&d应用能源2&f&r网站：&9https://appliedenergistics.org/guides&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description14}"
-				"{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.description15}"
+				"由&aPansmith&r制作的&b教学视频&r,虽然基于&eMinecraft 1.12.2&r版本,但核心机制仍基本一致:"
+				"&9https://www.youtube.com/watch?v=u0ouTWgdcXk&r"
 			]
 			id: "0E72017800A9766C"
-			rewards: [{
-				id: "73455D7AB7929E27"
-				item: {
-					Count: 1
-					id: "ae2:item_storage_cell_1k"
-					tag: { }
+			rewards: [
+				{
+					id: "73455D7AB7929E27"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_1k"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			shape: "square"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.subtitle}"
-			tasks: [{
-				id: "2080D5BB367332D3"
-				item: "ae2:cell_component_1k"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest0E72017800A9766C.title}"
+			subtitle: "是时候告别那些箱子了"
+			tasks: [
+				{
+					id: "2080D5BB367332D3"
+					item: "ae2:cell_component_1k"
+					type: "item"
+				}
+			]
+			title: "&a数字时代&f？这么快!？"
 			x: 4.5d
 			y: 7.875d
 		}
@@ -1833,26 +2005,30 @@
 				"4073577B7EF9B593"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest7BE7DE4C0109D788.description1}"
+				"别被EMI误导...目前原始二极管只有唯一配方."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7BE7DE4C0109D788.description2}"
+				"二极管以其&4魔鬼配方&r著称,但当您能获取&e聚乙烯&r后,其制作会变得更经济便捷."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest7BE7DE4C0109D788.description3}"
+				"这是制造&dMV电路&r的必要组件."
 			]
 			id: "7BE7DE4C0109D788"
-			rewards: [{
-				count: 8
-				id: "7E08419FB2E4B575"
-				item: "gtceu:gallium_dust"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "7E08419FB2E4B575"
+					item: "gtceu:gallium_dust"
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest7BE7DE4C0109D788.subtitle}"
-			tasks: [{
-				id: "0FE8CA1C2D212378"
-				item: "gtceu:diode"
-				type: "item"
-			}]
+			subtitle: "不要被EMI迷惑!"
+			tasks: [
+				{
+					id: "0FE8CA1C2D212378"
+					item: "gtceu:diode"
+					type: "item"
+				}
+			]
 			x: 3.375d
 			y: 7.875d
 		}
@@ -1863,393 +2039,419 @@
 				"4B979482EF026BFF"
 			]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest0DBC148D92A9F69F.description1}"
+				"嗯...已经获得&a铝锭&f了吗？"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0DBC148D92A9F69F.description2}"
+				"每个电力时代都有对应其等级的电路.&a优质电子电路板&f是你能从三级&b中压&r电路系统中制作出的&d首个中压电路&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0DBC148D92A9F69F.description3}"
+				"时刻留意更经济的电路制作方式——每当你制作出新一级的&2&a电路组装机&f&r时,就会解锁新的配方组合.幸运的是,这一级电路现在就能解锁一个!其配方成本远低于手工制作电路."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest0DBC148D92A9F69F.description4}"
+				"&e拥有这个和铝材料后,你将能够使用&a中压机器&f.&r"
 			]
 			id: "0DBC148D92A9F69F"
 			progression_mode: "linear"
-			rewards: [{
-				count: 4
-				id: "052E7DFC7E0B9EEF"
-				item: "gtceu:basic_electronic_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "052E7DFC7E0B9EEF"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest0DBC148D92A9F69F.subtitle}"
-			tasks: [{
-				id: "70313E1917121E14"
-				item: "gtceu:good_electronic_circuit"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest0DBC148D92A9F69F.title}"
+			subtitle: "这是否意味着我们已进入中压阶段？"
+			tasks: [
+				{
+					id: "70313E1917121E14"
+					item: "gtceu:good_electronic_circuit"
+					type: "item"
+				}
+			]
+			title: "首个中压电路!"
 			x: 4.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["2F1CCFEBAB71B1F3"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest45B71324028F6E68.description1}"
+				"正如前一个任务所述,电解&1蓝宝石粉&r可获得&b&a铝粉&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest45B71324028F6E68.description2}"
+				"现在你只需要一个电弧炉(EBF)!如果尚未开始制作,请在此任务页面向&a右&f移动,即可找到相关指引."
 			]
 			hide_dependent_lines: true
 			id: "45B71324028F6E68"
-			rewards: [{
-				count: 4
-				id: "31AC09707A10129B"
-				item: "gtceu:aluminium_dust"
-				random_bonus: 4
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "31AC09707A10129B"
+					item: "gtceu:aluminium_dust"
+					random_bonus: 4
+					type: "item"
+				}
+			]
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest45B71324028F6E68.subtitle}"
-			tasks: [{
-				id: "144F4F8EF61BEEA5"
-				item: "gtceu:aluminium_dust"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest45B71324028F6E68.title}"
+			subtitle: "是Aluminium,而非Aluminum"
+			tasks: [
+				{
+					id: "144F4F8EF61BEEA5"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+			]
+			title: "&a铝粉&f"
 			x: -3.375d
 			y: 5.625d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest2FC7B1E867E4194E.description1}"
+				"多方块结构包含大量有趣的机制,可能看起来令人望而生畏,但别担心——我们已编写指南助你学习."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest2FC7B1E867E4194E.description2}"
+				"&e此任务将在&l技巧与窍门&r&e标签页解锁一系列多方块结构教程,查阅它们以了解更多!&r"
 			]
 			hide_text_until_complete: false
 			icon: "gtceu:heatproof_machine_casing"
 			id: "2FC7B1E867E4194E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest2FC7B1E867E4194E.subtitle}"
-			tasks: [{
-				id: "2AA5580CDD655FBC"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest2FC7B1E867E4194E.title}"
+			subtitle: "完成本节后,你将成为专家"
+			tasks: [
+				{
+					id: "2AA5580CDD655FBC"
+					type: "checkmark"
+				}
+			]
+			title: "多方块结构技术"
 			x: 7.875d
 			y: 4.5d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.description1}"
+				"&o&7此任务主题为可选内容,但可能仍会引起你的兴趣.为保持完整性,我们将其放置于此.&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.description2}"
+				"&3&a碎石机&f&r可生成不同类型的火成岩.运行时需确保&9水&r与&c熔岩&r(无需源方块)均与其相邻.这些岩石可被粉碎并电解为特定材料."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.description3}"
+				"某些岩石(如&b&c&a红花岗岩&f&r)至少需要&5EV&r级电力才能生成."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.description6}"
+				"&e任意&a碎石机&f均可完成此任务."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o黑曜石需要红石才能生成的设定,源自Minecraft的一个古老漏洞&7MC-4239&f.在圆石生成器中本应生成圆石的位置放置红石,会导致其生成黑曜石.此漏洞已在9年多前(截至撰写时)的Minecraft 1.8版本快照14w25b中修复!"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_rock_crusher"
 			id: "1F2359106FC95603"
-			rewards: [{
-				id: "1140542401ED7AAB"
-				item: "minecraft:cobblestone"
-				random_bonus: 63
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1140542401ED7AAB"
+					item: "minecraft:cobblestone"
+					random_bonus: 63
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.subtitle}"
-			tasks: [{
-				id: "10F588EB061EB2EA"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_rock_crusher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_rock_crusher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_rock_crusher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_rock_crusher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_rock_crusher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:luv_rock_crusher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:zpm_rock_crusher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uv_rock_crusher"
-							}
-						]
+			subtitle: "这难道是空岛生存？"
+			tasks: [
+				{
+					id: "10F588EB061EB2EA"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_rock_crusher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_rock_crusher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_rock_crusher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_rock_crusher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_rock_crusher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:luv_rock_crusher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:zpm_rock_crusher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:uv_rock_crusher"
+								}
+							]
+						}
 					}
+					title: "&a碎石机&f"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.task.10F588EB061EB2EA.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest1F2359106FC95603.title}"
+			]
+			title: "圆石即生命"
 			x: 4.29d
 			y: 0.0d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest2DB259568F347C0E.description1}"
+				"&o&7此任务主题为可选内容,但可能仍会引起你的兴趣.为保持完整性,我们将其放置于此.&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest2DB259568F347C0E.description2}"
-				"{ftbquests.chapter.lv__low_voltage.quest2DB259568F347C0E.description3}"
+				"&3涡轮充电器&r可极速充能&eRF和EU&r设备(如&9钻头&r)."
+				"它为每个充电物品提供最高4安培电流,速度是&3电池缓冲器&r的&e两倍&r,但无法进行放电操作."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest2DB259568F347C0E.description4}"
+				"&e任意&r充电器均可完成此任务."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_charger_4x"
 			id: "2DB259568F347C0E"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest2DB259568F347C0E.subtitle}"
-			tasks: [{
-				id: "07BF7F14849A3027"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:ulv_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lv_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:luv_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:zpm_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uv_charger_4x"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uhv_charger_4x"
-							}
-						]
+			subtitle: "100%电量"
+			tasks: [
+				{
+					id: "07BF7F14849A3027"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:ulv_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:lv_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:luv_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:zpm_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:uv_charger_4x"
+								}
+								{
+									Count: 1b
+									id: "gtceu:uhv_charger_4x"
+								}
+							]
+						}
 					}
+					title: "涡轮增压器"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest2DB259568F347C0E.task.07BF7F14849A3027.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest2DB259568F347C0E.title}"
+			]
+			title: "涡轮充电器"
 			x: 5.28d
 			y: 0.0d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest3B26CA44EA955B07.description1}"
+				"&o&7此任务主题为可选内容,但可能仍会引起你的兴趣.为保持完整性,我们将其放置于此.&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3B26CA44EA955B07.description2}"
+				"&3捕鱼机&r可从水中捕获鱼类.它需要正下方5x5范围的水域才能运作,使用与普通钓鱼相同的战利品表,因此可捕获&d&a附魔书&f&r等物品.每次操作消耗1根线和与其等级对应的EU电力(&7LV&r级为32EU,依此类推).大致如此."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3B26CA44EA955B07.description3}"
+				"可从鱼类中提取&e&a鱼油&f&r,用于制造&e&a生物柴油&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest3B26CA44EA955B07.description4}"
+				"获取&e任意&r等级的捕鱼机即可完成此任务.(最高仅至&5EV&r级.若预估需要大量鱼类而需&1IV&r或更高级捕鱼机,请在我们的GitHub或Discord提交功能请求.)"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_fisher"
 			id: "3B26CA44EA955B07"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest3B26CA44EA955B07.subtitle}"
-			tasks: [{
-				id: "07BA97A0F04F0876"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_fisher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_fisher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_fisher"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_fisher"
-							}
-						]
+			subtitle: "女人迷恋我,鱼群畏惧我"
+			tasks: [
+				{
+					id: "07BA97A0F04F0876"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_fisher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_fisher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_fisher"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_fisher"
+								}
+							]
+						}
 					}
+					title: "捕鱼器"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest3B26CA44EA955B07.task.07BA97A0F04F0876.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest3B26CA44EA955B07.title}"
+			]
+			title: "捕鱼50级"
 			x: 6.2700000000000005d
 			y: 0.0d
 		}
 		{
 			dependencies: ["46AD7A6F3B6775F5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest113F3D2E48F62CBB.description1}"
+				"&o&7本任务主题为可选内容,但仍可能引起你的兴趣.为保持内容完整性,我们将其放置于此.&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest113F3D2E48F62CBB.description2}"
+				"&3世界加速器&r...顾名思义,能够加速世界进程.放置并供能后,它会加速周围所有Tile Entities的运作速率.使用螺丝刀切换模式后,还可加速区域内随机方块(如耕地)的运作."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest113F3D2E48F62CBB.description3}"
+				"请注意&d格雷科技&f系列机器已被列入加速黑名单——这是明智之举,因为加速&d格雷科技&f机器会导致其瞬间消耗大量电流(Amps),从而摧毁你的电力系统."
 			]
 			hide_dependency_lines: false
 			icon: "gtceu:lv_world_accelerator"
 			id: "113F3D2E48F62CBB"
-			rewards: [{
-				id: "1237B670A2484C9A"
-				item: "minecraft:clock"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1237B670A2484C9A"
+					item: "minecraft:clock"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest113F3D2E48F62CBB.subtitle}"
-			tasks: [{
-				id: "5924F0A33AD22EC9"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_world_accelerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_world_accelerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_world_accelerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_world_accelerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_world_accelerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:luv_world_accelerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:zpm_world_accelerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:uv_world_accelerator"
-							}
-						]
+			subtitle: "我即时空之主"
+			tasks: [
+				{
+					id: "5924F0A33AD22EC9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_world_accelerator"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_world_accelerator"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_world_accelerator"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_world_accelerator"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_world_accelerator"
+								}
+								{
+									Count: 1b
+									id: "gtceu:luv_world_accelerator"
+								}
+								{
+									Count: 1b
+									id: "gtceu:zpm_world_accelerator"
+								}
+								{
+									Count: 1b
+									id: "gtceu:uv_world_accelerator"
+								}
+							]
+						}
 					}
+					title: "世界加速器"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest113F3D2E48F62CBB.task.5924F0A33AD22EC9.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest113F3D2E48F62CBB.title}"
+			]
+			title: "以&a光速&f前行"
 			x: 7.875d
 			y: 1.125d
 		}
 		{
 			dependencies: ["46AD7A6F3B6775F5"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest11989C3388C969DF.description1}"
+				"建筑爱好者们&b无需再叹息&r——这个通过&dKubeJS&r技术全新定制的多方块结构专为你们打造."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest11989C3388C969DF.description2}"
+				"只需投入微量&e&a建筑泡沫&f&r,即可获得多种建筑方块&r的增产效果,让你的基地焕发新生机."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest11989C3388C969DF.description3}"
+				"但切记保持理性!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest11989C3388C969DF.description4}"
+				"&8(理性？我曾理性过一回!)&r"
 			]
 			hide_dependency_lines: false
 			icon: "gtceu:construction_core"
 			id: "11989C3388C969DF"
-			rewards: [{
-				id: "66853B9C5CC8EF26"
-				item: "gtceu:light_concrete"
-				random_bonus: 15
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "66853B9C5CC8EF26"
+					item: "gtceu:light_concrete"
+					random_bonus: 15
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest11989C3388C969DF.subtitle}"
-			tasks: [{
-				id: "5635E327260121C3"
-				item: "gtceu:construction_core"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest11989C3388C969DF.title}"
+			subtitle: "筑其物,必有人来"
+			tasks: [
+				{
+					id: "5635E327260121C3"
+					item: "gtceu:construction_core"
+					type: "item"
+				}
+			]
+			title: "建筑资源"
 			x: 8.91d
 			y: 1.65d
 		}
 		{
 			dependencies: ["3E6DC423FE4A99F7"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.description1}"
+				"&9钻机&r是分等级的电动力工具.&7低压&r钻机已表现不俗:可开采3x3x1区域.更高级钻机能开采3x3x3、5x5x5,直至9x9x9区域,轻松开辟巨型矿洞!"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.description2}"
+				"当前推荐的钻石钻头可能是现阶段最佳材质选择."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.description3}"
+				"&9注1:&r所有电动工具的实际耐久度远高于显示值,因为它们通过消耗能量避免损耗!此外,它们还能像镐一样附魔."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.description4}"
+				"&9注2:&r钻机现在可配置多种开采范围,不仅限于最大或单格模式."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.description5}"
-				"{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.description6}"
-				"{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.description7}"
+				"&9注3:&r现已可合成其他电动工具!再也不用频繁制作线钳啦!"
+				"{@pagebreak}符"
+				"&l&3背景故事:&r&o在GTCEu版本之前,电动工具需要不锈钢材质,导致玩家直到&e高压&f阶段才能体验其优越性能!"
 			]
 			icon: {
 				Count: 1
@@ -2278,7 +2480,7 @@
 			id: "70BBF00528C68A05"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.subtitle}"
+			subtitle: "现在要钻探？现在就钻探."
 			tasks: [
 				{
 					id: "0D2407D27B875AC3"
@@ -2306,6 +2508,7 @@
 							MaxCharge: 2147483647L
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2313,116 +2516,120 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.lv__low_voltage.quest70BBF00528C68A05.title}"
+			title: "没错,我们在钻探"
 			x: 5.94d
 			y: 2.97d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest12DF2E5269BE87D5.description1}"
+				"&o&7本任务主题为可选内容,但仍可能引起你的兴趣.为保持内容完整性,我们将其放置于此.&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest12DF2E5269BE87D5.description2}"
+				"&3方块破坏器&r的功能...还是&d留待你自己&r探索吧.巧妙运用这个机器(尤其是结合1.12.2至1.20.1版本新增的&e诸多原版机制&r)或许能打造出&a精妙农场&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest12DF2E5269BE87D5.description3}"
+				"更高级的&3方块破坏器&r会提供额外速度加成."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest12DF2E5269BE87D5.description4}"
+				"&e任意等级&r的方块破坏器均可完成本任务."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_block_breaker"
 			id: "12DF2E5269BE87D5"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest12DF2E5269BE87D5.subtitle}"
-			tasks: [{
-				id: "3FF25D11627A1D05"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_block_breaker"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_block_breaker"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_block_breaker"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_block_breaker"
-							}
-						]
+			subtitle: "我受够这些方块了!"
+			tasks: [
+				{
+					id: "3FF25D11627A1D05"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_block_breaker"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_block_breaker"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_block_breaker"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_block_breaker"
+								}
+							]
+						}
 					}
+					title: "方块破坏器"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest12DF2E5269BE87D5.task.3FF25D11627A1D05.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest12DF2E5269BE87D5.title}"
+			]
+			title: "击碎目标!"
 			x: 7.26d
 			y: 0.0d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest112189FE1A12537A.description1}"
+				"&o&7本任务主题为可选内容,但仍可能引起你的兴趣.为保持内容完整性,我们将其放置于此.&r"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest112189FE1A12537A.description2}"
+				"&3物品收集器&r能自动拾取物品——类似于你在&d其他模组&r中熟悉的各类&a&a虚空箱子&f&r."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest112189FE1A12537A.description3}"
+				"更高级的&3收集器&r能扩大&e收集半径&r至多个区块.对于依赖实体掉落物的农场(如&b&a拐杖糖&f&r或...&7呃,奇葩的&r&8鸡蛋&r收集)尤为实用."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest112189FE1A12537A.description4}"
+				"&e任意等级&r的物品收集器均可完成本任务."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_item_collector"
 			id: "112189FE1A12537A"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest112189FE1A12537A.subtitle}"
-			tasks: [{
-				id: "4FB4D157D57EF9C8"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_item_collector"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_item_collector"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_item_collector"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_item_collector"
-							}
-						]
+			subtitle: "哎呀,我的镐子掉了"
+			tasks: [
+				{
+					id: "4FB4D157D57EF9C8"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:lv_item_collector"
+								}
+								{
+									Count: 1b
+									id: "gtceu:mv_item_collector"
+								}
+								{
+									Count: 1b
+									id: "gtceu:hv_item_collector"
+								}
+								{
+									Count: 1b
+									id: "gtceu:ev_item_collector"
+								}
+							]
+						}
 					}
+					title: "物品收集器"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest112189FE1A12537A.task.4FB4D157D57EF9C8.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest112189FE1A12537A.title}"
+			]
+			title: "统统收集起来"
 			x: 8.25d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest237EEDF8D3F170DA.description1}"
+				"&5软锤&r的一项特性你可能已经知道:它能&e暂停机器运行&r.但你是否了解,若在暂停机器时&b潜行操作&r,将会指令机器持续运行直至完成当前配方？"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest237EEDF8D3F170DA.description2}"
+				"当你需要调整多方块结构又不想&e损失物品&r时,这招&2堪称完美&r——因为解散多方块结构会清空所有输入物品."
 			]
 			icon: {
 				Count: 1
@@ -2440,170 +2647,73 @@
 			id: "237EEDF8D3F170DA"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest237EEDF8D3F170DA.subtitle}"
-			tasks: [{
-				id: "05610A3CFF3805F3"
-				title: "{ftbquests.chapter.lv__low_voltage.quest237EEDF8D3F170DA.task.05610A3CFF3805F3.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest237EEDF8D3F170DA.title}"
+			subtitle: "致谢Yung Onion"
+			tasks: [
+				{
+					id: "05610A3CFF3805F3"
+					title: "好了,现在让我玩吧"
+					type: "checkmark"
+				}
+			]
+			title: "我这就去拿我的软锤!"
 			x: 8.91d
 			y: 4.5d
 		}
 		{
 			dependencies: ["648BCF486E16CCB2"]
 			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest59BEB2AA9598A21D.description1}"
+				"这是个&4玩梗&r任务——看看泰迪熊的合成要求吧."
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest59BEB2AA9598A21D.description2}"
+				"没错...用&7低压&r压缩机得花整整一年才能合成.若以最高超频速度制作,又需要多久呢？"
 				""
-				"{ftbquests.chapter.lv__low_voltage.quest59BEB2AA9598A21D.description3}"
-				"{ftbquests.chapter.lv__low_voltage.quest59BEB2AA9598A21D.description4}"
-				"{ftbquests.chapter.lv__low_voltage.quest59BEB2AA9598A21D.description5}"
+				"&7现在绝对别急着做这个...听话等后期强力超频再说."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o本整合包主开发者花了太长时间修复模型文件才定制出这东西&7.&8.若好奇为什么会出现宝可梦玩偶,因为那是我的MC皮肤!"
 			]
 			hide_dependency_lines: true
-			icon: "minecraft:cookie"
+			icon: "expatternprovider:fishbig"
 			id: "59BEB2AA9598A21D"
-			rewards: [{
-				id: "03A3C108D5BCE712"
-				item: "minecraft:cookie"
-				random_bonus: 63
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "03A3C108D5BCE712"
+					item: "expatternprovider:fishbig"
+					random_bonus: 63
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest59BEB2AA9598A21D.subtitle}"
-			tasks: [{
-				id: "783D21E963174609"
-				item: "minecraft:cookie"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest59BEB2AA9598A21D.title}"
+			subtitle: "你时间够用吗？"
+			tasks: [
+				{
+					id: "783D21E963174609"
+					item: "expatternprovider:fishbig"
+					type: "item"
+				}
+			]
+			title: "居然有人说&d格雷科技&f肝度太高..."
 			x: -1.125d
 			y: 2.25d
 		}
 		{
 			dependencies: ["15928F50AE80A5CF"]
-			description: ["&bNitrogen&r is commonly obtained from centrifuging air. It's very useful, speeding up recipes in many multiblocks like the &bElectric Blast Furnace&r and the &6Pyrolyse Oven&r. We would &chighly&r recommend setting up a dedicated passive line to generate Nitrogen!"]
+			description: ["&b氮气&r通常通过空气离心获得.它能显著加速许多多方块设备的运作,例如&b&a电力高炉&f&r和&e&a热解炉&f&r,非常实用.我们&c强烈&r建议搭建专用自动化产线来生成氮气!"]
 			id: "7D7A4CC66A3C193F"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest7D7A4CC66A3C193F.subtitle}"
-			tasks: [{
-				id: "0C95F5A0FEC594A3"
-				item: "gtceu:nitrogen_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest7D7A4CC66A3C193F.title}"
+			subtitle: "免费加速剂？"
+			tasks: [
+				{
+					id: "0C95F5A0FEC594A3"
+					item: "gtceu:nitrogen_bucket"
+					type: "item"
+				}
+			]
+			title: "氮气"
 			x: -2.25d
 			y: 7.875d
 		}
-		{
-			dependencies: [
-				"257DB4B39B2A928E"
-				"581CDF545E1EA1FD"
-			]
-			description: [
-				"{ftbquests.chapter.lv__low_voltage.quest41DD503169987D50.description1}"
-				""
-				"{ftbquests.chapter.lv__low_voltage.quest41DD503169987D50.description2}"
-			]
-			hide_dependency_lines: true
-			icon: "gtceu:light_concrete"
-			id: "41DD503169987D50"
-			shape: "rsquare"
-			size: 0.66d
-			subtitle: "{ftbquests.chapter.lv__low_voltage.quest41DD503169987D50.subtitle}"
-			tasks: [{
-				id: "755F679F2DA97A4F"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:light_concrete"
-							}
-							{
-								Count: 1b
-								id: "gtceu:dark_concrete"
-							}
-							{
-								Count: 1b
-								id: "gtceu:white_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:orange_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:magenta_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:light_blue_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:yellow_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:lime_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:pink_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:gray_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:light_gray_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:cyan_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:purple_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:blue_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:brown_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:green_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:red_studs"
-							}
-							{
-								Count: 1b
-								id: "gtceu:black_studs"
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.lv__low_voltage.quest41DD503169987D50.task.755F679F2DA97A4F.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.lv__low_voltage.quest41DD503169987D50.title}"
-			x: 1.12d
-			y: 7.875d
-		}
 	]
-	subtitle: ["{ftbquests.chapter.lv__low_voltage.subtitle0}"]
-	title: "{ftbquests.chapter.lv__low_voltage.title}"
+	subtitle: ["驾驭电力并制造初始机器"]
+	title: "&7LV&r - 低压"
 }

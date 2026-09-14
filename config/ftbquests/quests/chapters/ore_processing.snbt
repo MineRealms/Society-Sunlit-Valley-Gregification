@@ -5,46 +5,50 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:crushed_gold_ore"
 	id: "72E9EAAA24C77C22"
-	order_index: 11
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["730043448A9ADBB6"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest012BF60FBD5D41AC.description1}"
+				"所有优秀的矿石加工流程都始于破碎阶段,根据你的情况,你可以选择破碎 &5原矿&r 或矿石块(若使用 &d&a精准采集&f&r 附魔!)"
 				""
-				"{ftbquests.chapter.ore_processing.quest012BF60FBD5D41AC.description2}"
+				"当你能建造大型多方块结构采矿机时,矿石产量将进一步提升至近乎 &a四倍&r,且无需进行初始破碎——&b&a大型采矿场&f&r 会直接输出经过破碎处理的矿石."
 			]
 			icon: "gtceu:lv_macerator"
 			id: "012BF60FBD5D41AC"
 			size: 1.1d
-			subtitle: "{ftbquests.chapter.ore_processing.quest012BF60FBD5D41AC.subtitle}"
-			tasks: [{
-				id: "037584D32CBC5D8D"
-				title: "{ftbquests.chapter.ore_processing.quest012BF60FBD5D41AC.task.037584D32CBC5D8D.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest012BF60FBD5D41AC.title}"
+			subtitle: "总得有个开始嘛!"
+			tasks: [
+				{
+					id: "037584D32CBC5D8D"
+					title: "我现在感觉被压得喘不过气"
+					type: "checkmark"
+				}
+			]
+			title: "&a冷杉木&f 破碎处理"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["012BF60FBD5D41AC"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest228379C559E390B8.description1}"
+				"此步骤并无特别之处.任何未使用特殊化学剂清洗的矿石,只需通过 &d&a洗矿厂&f&r 用水清洗即可.推荐使用 &a蒸馏水&f,它能将处理时间缩短 &e50%&r.在现场配置若干蒸馏装置,并将产物储存至合适容量的 &a超级储罐&r 中."
 				""
-				"{ftbquests.chapter.ore_processing.quest228379C559E390B8.description2}"
+				"若不在意本阶段的副产品,可用 &b普通水&r 清洗矿石(无需配置电路),处理速度提升 &25倍&r,但会 &4损失&r 副产品."
 			]
 			icon: "gtceu:distilled_water_bucket"
 			id: "228379C559E390B8"
 			size: 1.1d
-			subtitle: "{ftbquests.chapter.ore_processing.quest228379C559E390B8.subtitle}"
-			tasks: [{
-				id: "2E2ABD36FCFF1CC5"
-				title: "{ftbquests.chapter.ore_processing.quest228379C559E390B8.task.2E2ABD36FCFF1CC5.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest228379C559E390B8.title}"
+			subtitle: "\"尊贵版”水"
+			tasks: [
+				{
+					id: "2E2ABD36FCFF1CC5"
+					title: "不,我选择&a蒸馏水&f"
+					type: "checkmark"
+				}
+			]
+			title: "使用 &a蒸馏水&f 清洗"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -54,90 +58,96 @@
 				"4353AB0E20601AEC"
 			]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description1}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description2}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description3}"
+				"&a过硫酸钠&f 的获取虽不如水银简便,但在制作 &a电路板&f 时可能会顺带生产.可通过 &e&a化学反应器&f&r/&b电解机&r 组合装置(配合等级发射器维持库存)进行制备,之后即可用 &a&a化学浸洗器&f&r 清洗任何 &a粉碎矿石&f."
+				"{@pagebreak}"
+				"以下矿石推荐使用 &3&a过硫酸钠&f&r 处理:"
 				""
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description4}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description5}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description6}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description7}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description8}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description9}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description10}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description11}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description12}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description13}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description14}"
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description15}"
+				"- &a锡矿石&f"
+				"- &a铝矿石&f"
+				"- &a钴矿石&f"
+				"- &a辉钴矿矿石&f"
+				"- &a铝土矿石&f"
+				"- 黝铜矿石"
+				"- &a镍黄铁矿矿石&f"
+				"- &a方铅矿石&f"
+				"- &a辉锑矿矿石&f"
+				"- &a黄褐铁矿石&f"
+				"- &a孔雀石矿石&f"
+				"- &a铁矿石&f"
 				""
-				"{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.description16}"
+				"尽情享受副产品吧!"
 			]
 			icon: "gtceu:sodium_persulfate_bucket"
 			id: "5AB202F6C0B34BF3"
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.subtitle}"
-			tasks: [{
-				id: "04D48CBAD6DA788D"
-				title: "{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.task.04D48CBAD6DA788D.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest5AB202F6C0B34BF3.title}"
+			subtitle: "过硫酸钠"
+			tasks: [
+				{
+					id: "04D48CBAD6DA788D"
+					title: "&a过硫酸钠&f太硬核了!"
+					type: "checkmark"
+				}
+			]
+			title: "使用 &a过硫酸钠&f 清洗"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["012BF60FBD5D41AC"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description1}"
+				"在适用情况下用水银替代 &3&a蒸馏水&f&r 清洗矿石,可获得其他途径难以获取的独特副产品.此举通常物超所值,因为水银极易通过离心处理 &c红石&r 或 &4朱砂&r &7(事实上,水银是朱砂 &l唯一&r&7 的实际用途!)&r 获得."
 				""
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description2}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description3}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description4}"
+				"只需用 &a化学浸洗器&f 清洗任何 &e&a粉碎矿石&f&r 即可."
+				"{@pagebreak}"
+				"以下为推荐用水银清洗的矿石列表(非完整):"
 				""
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description5}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description6}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description7}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description8}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description9}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description10}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description11}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description12}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description13}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description14}"
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description15}"
+				"- &a方铅矿石&f"
+				"- 钨酸盐矿石"
+				"- &a银矿石&f"
+				"- 斑铜矿石"
+				"- &a磁铁矿石&f"
+				"- &a铜矿石&f"
+				"- &a金矿石&f"
+				"- &a镍矿石&f"
+				"- &a铂矿石&f"
+				"- 黄铜矿石"
+				"- &a月光石&f"
 				""
-				"{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.description16}"
+				"这些替代性 “&b清洗路线&r“ 将显著提升金、银及铂族金属的产量!"
 			]
 			icon: "gtceu:mercury_bucket"
 			id: "2E0777FBD0476D75"
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.subtitle}"
-			tasks: [{
-				id: "6508774C6A27D5D9"
-				title: "{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.task.6508774C6A27D5D9.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest2E0777FBD0476D75.title}"
+			subtitle: "与金星共浴"
+			tasks: [
+				{
+					id: "6508774C6A27D5D9"
+					title: "与木星共淋浴"
+					type: "checkmark"
+				}
+			]
+			title: "使用水银清洗"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["478A7F7565AFC8A8"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest3C36AA80FE51DA45.description1}"
+				"此阶段处理矿石的默认方式通常是使用 &e&a热能离心机&f&r 以获取其 &b专属副产品&r,但请仔细查阅前序任务,确保没有遗漏重要内容."
 				""
-				"{ftbquests.chapter.ore_processing.quest3C36AA80FE51DA45.description2}"
+				"&9万&r事&4如意!"
 			]
 			icon: "gtceu:lv_thermal_centrifuge"
 			id: "3C36AA80FE51DA45"
-			subtitle: "{ftbquests.chapter.ore_processing.quest3C36AA80FE51DA45.subtitle}"
-			tasks: [{
-				id: "77457ABAEFF7707B"
-				title: "{ftbquests.chapter.ore_processing.quest3C36AA80FE51DA45.task.77457ABAEFF7707B.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest3C36AA80FE51DA45.title}"
+			subtitle: "这可不是热力膨胀..."
+			tasks: [
+				{
+					id: "77457ABAEFF7707B"
+					title: "这太烫了"
+					type: "checkmark"
+				}
+			]
+			title: "&a热能离心机&f"
 			x: 0.0d
 			y: 6.0d
 		}
@@ -147,17 +157,19 @@
 				"228379C559E390B8"
 				"2E0777FBD0476D75"
 			]
-			description: ["From now onwards, you'll be sending &ball of your ores&r towards &6all kinds of places&r, depending on how far you are through your playthrough. Quests will unlock around this node when you &aunlock the ability&r to deal with them, so check back occasionally if you're feeling bored."]
+			description: ["从现在起,你将根据游戏进度将 &b所有矿石&r 输送至 &e各类加工设施&r.相关任务会随处理能力的 &a解锁&r 而逐步开放,若感到迷茫可随时回来查看."]
 			icon: "gtceu:purified_gold_ore"
 			id: "478A7F7565AFC8A8"
 			size: 1.1d
-			subtitle: "{ftbquests.chapter.ore_processing.quest478A7F7565AFC8A8.subtitle}"
-			tasks: [{
-				id: "6A094CE2872E8DA3"
-				title: "{ftbquests.chapter.ore_processing.quest478A7F7565AFC8A8.task.6A094CE2872E8DA3.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest478A7F7565AFC8A8.title}"
+			subtitle: "从原矿起步,至此成就"
+			tasks: [
+				{
+					id: "6A094CE2872E8DA3"
+					title: "好了,我已经读完了!"
+					type: "checkmark"
+				}
+			]
+			title: "我们获得了 &a纯化&f 矿石——下一步？"
 			x: 0.0d
 			y: 4.0d
 		}
@@ -168,20 +180,22 @@
 				"517B6A6E04F4E4C8"
 			]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest797EB7DF0C07F327.description1}"
+				"从现在开始？这就是&5矿石处理设备&r的基础了.你可以检查过滤器、制造更多机器,并整体提升效率.若已&e大致&r遵循本页所有指引,你应该处于&b良好状态&r!"
 				""
-				"{ftbquests.chapter.ore_processing.quest797EB7DF0C07F327.description2}"
+				"&m&7希望这里的部分信息能对你有所帮助.&r"
 			]
 			icon: "gtceu:gold_dust"
 			id: "797EB7DF0C07F327"
 			size: 1.1d
-			subtitle: "{ftbquests.chapter.ore_processing.quest797EB7DF0C07F327.subtitle}"
-			tasks: [{
-				id: "554BFDB6C8AB1132"
-				title: "{ftbquests.chapter.ore_processing.quest797EB7DF0C07F327.task.554BFDB6C8AB1132.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest797EB7DF0C07F327.title}"
+			subtitle: "现在看起来也没那么糟嘛."
+			tasks: [
+				{
+					id: "554BFDB6C8AB1132"
+					title: "耶!真的真的太有趣了"
+					type: "checkmark"
+				}
+			]
+			title: "我们做到了!接下来呢？"
 			x: 0.0d
 			y: 8.0d
 		}
@@ -191,74 +205,82 @@
 				"390E59F05132FCB8"
 			]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest3D9E045B8D3F2B85.description1}"
+				"部分宝石矿石——即&c红宝石&r、&9蓝宝石&r和&2绿宝石&r——可在粉碎形态下与&a王水&f混合制成浆液."
 				""
-				"{ftbquests.chapter.ore_processing.quest3D9E045B8D3F2B85.description2}"
+				"电解浆液时会产生一些有趣的副产品,尤其是无需粉碎钛锭即可获得&d&a钛粉&f&r的少数方法之一!"
 			]
 			icon: "gtceu:ruby_slurry_bucket"
 			id: "3D9E045B8D3F2B85"
 			shape: "rsquare"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_processing.quest3D9E045B8D3F2B85.subtitle}"
-			tasks: [{
-				id: "412357F4B4B8FB48"
-				title: "{ftbquests.chapter.ore_processing.quest3D9E045B8D3F2B85.task.412357F4B4B8FB48.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest3D9E045B8D3F2B85.title}"
+			subtitle: "与&d通用机械&f不太一样"
+			tasks: [
+				{
+					id: "412357F4B4B8FB48"
+					title: "快点快点,浆液"
+					type: "checkmark"
+				}
+			]
+			title: "浆液处理"
 			x: 1.7938775510203726d
 			y: 0.019897959183666103d
 		}
 		{
 			dependencies: ["797EB7DF0C07F327"]
-			description: ["Some dusts in &bGregTech&r have little use other than to be processed in an &3Electrolyser&r for some nice bonus chemical outputs. You can either set a manual filter for the desired items in a &aStorage Bus&r, or provide the most vital dusts via ME Interface, for example."]
+			description: ["&b&d格雷科技&f&r中的某些粉末除通过&3电解器&r处理获得优质化学副产品外几无他用.你可以在&a存储总线&r中为所需物品设置手动过滤器,或通过&aME接口&f供应最关键粉末."]
 			icon: "gtceu:lv_electrolyzer"
 			id: "3B72CFB9F466DD76"
-			subtitle: "{ftbquests.chapter.ore_processing.quest3B72CFB9F466DD76.subtitle}"
-			tasks: [{
-				id: "1C9515F37AD27BA9"
-				title: "{ftbquests.chapter.ore_processing.quest3B72CFB9F466DD76.task.1C9515F37AD27BA9.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest3B72CFB9F466DD76.title}"
+			subtitle: "我们不需要这么多钴矿对吧？"
+			tasks: [
+				{
+					id: "1C9515F37AD27BA9"
+					title: "每一滴都至关重要"
+					type: "checkmark"
+				}
+			]
+			title: "电解剩余物!"
 			x: -1.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["797EB7DF0C07F327"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest433BE663989445B9.description1}"
+				"本页列出的某些阶段会产出少量/&a小撮粉末&f或碎粒.这些形态实用价值低,因此将其导入&d打包机&r通过“&7压缩&r“恢复完整形态总是明智之举."
 				""
-				"{ftbquests.chapter.ore_processing.quest433BE663989445B9.description2}"
+				"若因碎粒过少导致打包机堵塞缓冲区,可考虑使用&e&d格雷科技&f &a机械臂&f&r设置为“&a精确补给&f“模式.每次投入9个碎粒,即可解决此问题!"
 			]
 			icon: "gtceu:lv_packer"
 			id: "433BE663989445B9"
 			shape: "rsquare"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_processing.quest433BE663989445B9.subtitle}"
-			tasks: [{
-				id: "7433795785B315B3"
-				title: "{ftbquests.chapter.ore_processing.quest433BE663989445B9.task.7433795785B315B3.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest433BE663989445B9.title}"
+			subtitle: "合力之下..."
+			tasks: [
+				{
+					id: "7433795785B315B3"
+					title: "就叫我亚马逊送货司机吧,看我打包的方式"
+					type: "checkmark"
+				}
+			]
+			title: "需要打包吗？"
 			x: 0.8891156462584675d
 			y: 9.970918367346947d
 		}
 		{
 			dependencies: ["478A7F7565AFC8A8"]
-			description: ["Gemstones deserve to be sifted. In &2earlier stages&r of the game, this is slow and has poor yields, but when overclocked, sifting quickly becomes a great way to &dmaximise&r your gemstone yield."]
+			description: ["宝石值得被筛取.游戏&2前期阶段&r此过程缓慢且产出低下,但经过超频升级后,筛矿迅速成为&d最大化&r宝石产量的高效途径."]
 			icon: "gtceu:lv_sifter"
 			id: "1069BF4C1771A4F6"
 			shape: "rsquare"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_processing.quest1069BF4C1771A4F6.subtitle}"
-			tasks: [{
-				id: "28C312E791DF4125"
-				title: "{ftbquests.chapter.ore_processing.quest1069BF4C1771A4F6.task.28C312E791DF4125.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest1069BF4C1771A4F6.title}"
+			subtitle: "伟大的&a灰狼&r筛矿者"
+			tasks: [
+				{
+					id: "28C312E791DF4125"
+					title: "在这么多垃圾中筛选..."
+					type: "checkmark"
+				}
+			]
+			title: "筛矿"
 			x: 1.5d
 			y: 5.5d
 		}
@@ -268,21 +290,23 @@
 				"0F192D1F44B9B599"
 			]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest38D1336DC84E03FE.description1}"
+				"如任务书主体部分所述,该&5铟处理设备&r具有使用期限,不必纠结于优化每个细节."
 				""
-				"{ftbquests.chapter.ore_processing.quest38D1336DC84E03FE.description2}"
+				"只需将&d&a纯化&f方铅矿&r和&e闪锌矿&r与少量&a&a硫酸&f&r混合获得&9&a铟富集溶液&f&r,再于&a化学反应器&f中与&a铝粉&f结合即可收获成果!"
 			]
 			icon: "gtceu:indium_dust"
 			id: "38D1336DC84E03FE"
 			shape: "rsquare"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_processing.quest38D1336DC84E03FE.subtitle}"
-			tasks: [{
-				id: "22926D3453E03389"
-				title: "{ftbquests.chapter.ore_processing.quest38D1336DC84E03FE.task.22926D3453E03389.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest38D1336DC84E03FE.title}"
+			subtitle: "获取首份铟从未如此有趣"
+			tasks: [
+				{
+					id: "22926D3453E03389"
+					title: "我不会对我的铟设备投入太多感情"
+					type: "checkmark"
+				}
+			]
+			title: "铟处理"
 			x: 2.011564625850305d
 			y: 4.01173469387755d
 		}
@@ -292,193 +316,209 @@
 				"57D4E09A9CAB150C"
 			]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description1}"
+				"请将下列矿石送入&a铂族处理流程&r:"
 				""
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description2}"
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description3}"
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description4}"
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description5}"
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description6}"
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description7}"
+				"- &a纯化&f黄铜矿"
+				"- &a纯化&f黝铜矿"
+				"- &a纯化&f辉铜矿"
+				"- &a纯化&f斑铜矿"
+				"- &a纯化&f&a月光石&f"
+				"- &a纯化&f&a镍黄铁矿&f"
 				""
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description8}"
+				"用&e&a硫酸&f&r处理这些矿石可获得&5铂族污泥&r及硫酸副产品流体.如何利用这些&b产出物&r...就需要你自己探索了!"
 				""
-				"{ftbquests.chapter.ore_processing.quest427E6091713399FE.description9}"
+				"&8(提示:详见EV章节)"
 			]
 			icon: "gtceu:platinum_group_sludge_dust"
 			id: "427E6091713399FE"
 			shape: "rsquare"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_processing.quest427E6091713399FE.subtitle}"
-			tasks: [{
-				id: "2AA030AFC90A1E7B"
-				title: "{ftbquests.chapter.ore_processing.quest427E6091713399FE.task.2AA030AFC90A1E7B.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest427E6091713399FE.title}"
+			subtitle: "真是值得深入探索的领域..."
+			tasks: [
+				{
+					id: "2AA030AFC90A1E7B"
+					title: "&a树人&f铂金线50小时"
+					type: "checkmark"
+				}
+			]
+			title: "铂族处理"
 			x: -2.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["478A7F7565AFC8A8"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description1}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description2}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description3}"
+				"&a电磁选矿机&f是一种能跳过&e两个加工阶段&r的趣味设备,通常还会产生&2独特&r的副产物,这些副产物通常不易获取.使用时需将矿石提纯为纯净粉末——因此请务必&b确保&r正确引导所需矿石的加工路径."
+				"{@pagebreak}"
+				"以下矿石特别适合进行此阶段加工:"
 				""
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description4}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description5}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description6}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description7}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description8}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description9}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description10}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description11}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description12}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description13}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description14}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description15}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description16}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description17}"
-				"{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.description18}"
+				"- 氟碳铈矿 &7(对钕元素提取尤为高效!)&r"
+				"- &a硅岩矿&f &7(其副产物&a富集硅岩&f价值极高!)&r"
+				"- &a镍矿石&f"
+				"- &a锡矿石&f"
+				"- 针铁矿"
+				"- &a赤铁矿石&f"
+				"- &a铬铁矿矿石&f"
+				"- &a木卫三钛铁矿石&f"
+				"- &a黄铁矿石&f"
+				"- &a黄褐铁矿&f"
+				"- &a海绿石矿砂&f"
+				"- &a磁铁矿石&f"
+				"- &a钒磁铁矿&f"
+				"- &a花岗岩矿砂&f"
+				"- &a玄武岩矿砂&f"
 			]
 			icon: "gtceu:lv_electromagnetic_separator"
 			id: "46B3BB368D86D931"
 			shape: "rsquare"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.subtitle}"
-			tasks: [{
-				id: "089637EE7F1154FF"
-				title: "{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.task.089637EE7F1154FF.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest46B3BB368D86D931.title}"
+			subtitle: "最大化利用Naquadah矿"
+			tasks: [
+				{
+					id: "089637EE7F1154FF"
+					title: "我正在利用磁力!"
+					type: "checkmark"
+				}
+			]
+			title: "&a电磁选矿机&f"
 			x: -1.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["701BCADAE5CF6CA5"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest730043448A9ADBB6.description1}"
+				"您好!您可能正打算建立&a基础矿石处理系统&r.本任务线将引导您完成必要流程.请务必注意,这并非唯一&o“最优“&r处理方式——高效的矿石处理设施需根据&b&d格雷科技&f&r工厂需求针对性处理每种矿石.请勿将此指南视为绝对标准."
 				""
-				"{ftbquests.chapter.ore_processing.quest730043448A9ADBB6.description2}"
+				"准备好深入&2探索细节&r了吗？"
 			]
 			icon: "gtceu:gold_ore"
 			id: "730043448A9ADBB6"
 			shape: "square"
 			size: 1.3d
-			subtitle: "{ftbquests.chapter.ore_processing.quest730043448A9ADBB6.subtitle}"
-			tasks: [{
-				id: "23C471A620644954"
-				title: "{ftbquests.chapter.ore_processing.quest730043448A9ADBB6.task.23C471A620644954.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest730043448A9ADBB6.title}"
+			subtitle: "一矿入,众粉出..."
+			tasks: [
+				{
+					id: "23C471A620644954"
+					title: "矿石的一小步..."
+					type: "checkmark"
+				}
+			]
+			title: "从这里开始!"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["1069BF4C1771A4F6"]
-			description: ["A side product of sifting is the production of &dpure dusts&r. These shouldn't be sent back to your main storage, because they can't be used in recipes... and &3centrifuging&r them will give you a sweet, sweet extra byproduct."]
+			description: ["筛矿过程中会产生&d纯净粉末&r副产物.这些不应送回主存储系统,因为它们无法直接用于合成配方…但通过&3离心机处理&r将获得额外的珍贵副产物."]
 			icon: "gtceu:lv_centrifuge"
 			id: "517B6A6E04F4E4C8"
 			shape: "rsquare"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_processing.quest517B6A6E04F4E4C8.subtitle}"
-			tasks: [{
-				id: "7F9EF449A760D102"
-				title: "{ftbquests.chapter.ore_processing.quest517B6A6E04F4E4C8.task.7F9EF449A760D102.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest517B6A6E04F4E4C8.title}"
+			subtitle: "别担心!我们有解决方案!"
+			tasks: [
+				{
+					id: "7F9EF449A760D102"
+					title: "没关系,没我想的那么糟"
+					type: "checkmark"
+				}
+			]
+			title: "纯净粉末怎么办？"
 			x: 1.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["730043448A9ADBB6"]
-			description: ["Multiple &don-tier machines&r are never a bad idea, but you should definitely consider using the Large multiblock variants of the singleblock machines from &aGregicality Multiblocks&r. They're significantly easier to upgrade as you progress through the later tiers of the mod (would you rather make a &616A LuV Energy Hatch&r, or &b16 LuV Macerators&r?!), and plus... they look rad as hell."]
+			description: ["配置多个&d同等级机器&r始终是明智之举,但强烈建议使用&a格雷科技多方块结构&r中的大型多方块设备替代单方块机器.这些设备在模组后期升级更便捷(您愿意制作&e16A卢瓦能源舱口&r还是&b16台卢瓦研磨机&r？),而且…它们看起来酷炫至极."]
 			icon: "gtceu:large_maceration_tower"
 			id: "42F91220B6FA66FC"
-			tasks: [{
-				id: "7C4D7E44B6CDFBAC"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest42F91220B6FA66FC.title}"
+			tasks: [
+				{
+					id: "7C4D7E44B6CDFBAC"
+					type: "checkmark"
+				}
+			]
+			title: "如何提升处理能力？"
 			x: 1.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["730043448A9ADBB6"]
-			description: ["Whilst the majority &7(if not all)&r of the listed steps can be automated &3using GregTech alone&r, savvy players may wish to use &dAE2&r for all their logistics needs. Here, we'll cover some methods you may not be aware of to help you elevate your &aOre Processing&r to the next level."]
+			description: ["虽然列出的所有步骤均可通过&3纯&d格雷科技&f&r实现自动化,但精明的玩家可能会选择用&dAE2&r满足所有物流需求.此处我们将介绍一些可能被忽略的技巧,助您将&a矿石处理&r提升至新高度."]
 			icon: "ae2:controller"
 			id: "3CCD98E7139BA564"
-			subtitle: "{ftbquests.chapter.ore_processing.quest3CCD98E7139BA564.subtitle}"
-			tasks: [{
-				id: "67AB1263C1AA0EB2"
-				title: "{ftbquests.chapter.ore_processing.quest3CCD98E7139BA564.task.67AB1263C1AA0EB2.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest3CCD98E7139BA564.title}"
+			subtitle: "看看AE2能为您做什么!"
+			tasks: [
+				{
+					id: "67AB1263C1AA0EB2"
+					title: "是的,我明白了!"
+					type: "checkmark"
+				}
+			]
+			title: "&d应用能源2&f"
 			x: -1.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3CCD98E7139BA564"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest23B078514FB4A215.description1}"
+				"&3ME标签存储总线&r是将标记物品输送至目标位置的关键设备.功能如其名——点击设置筛选条件后,所有进入AE网络且&e符合预设物品标签&r的物资都会被导向总线连接的容器."
 				""
-				"{ftbquests.chapter.ore_processing.quest23B078514FB4A215.description2}"
+				"当您想用&a过滤子网络&r处理矿石时,此功能尤为实用."
 				""
-				"{ftbquests.chapter.ore_processing.quest23B078514FB4A215.description3}"
+				"若需优先处理矿石,记得设置&5高优先级&r!"
 			]
 			id: "23B078514FB4A215"
 			shape: "rsquare"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ore_processing.quest23B078514FB4A215.subtitle}"
-			tasks: [{
-				id: "4CEE717792412E0C"
-				item: "ae2:storage_bus"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest23B078514FB4A215.title}"
+			subtitle: "构建更广物流网络"
+			tasks: [
+				{
+					id: "4CEE717792412E0C"
+					item: "expatternprovider:tag_storage_bus"
+					type: "item"
+				}
+			]
+			title: "标签物流大师"
 			x: -1.5198979591836874d
 			y: -2.8428571428571487d
 		}
 		{
 			dependencies: ["3CCD98E7139BA564"]
 			description: [
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description1}"
+				"子网络 &7(简称 “子网“)&r 可定义为独立于主网络之外的任何网络体系."
 				""
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description2}"
+				"创建子网的 &a简易&f 方法是将 &b&aME接口&f&r 连接至 &a存储总线&r.此时存储总线会将接口视作可读取的存储容器——即能获取接口所连网络中的 &5全部物品&r."
 				""
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description3}"
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description4}"
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description5}"
+				"由于主网络数据 &4不会&r 通过存储总线传输,需使用 &e石英纤维&r 从主网向子网输送能源.注意避免使用普通线缆意外连接两套网络."
+				"{@pagebreak}"
+				"关键在于:这对玩家有何 &a益处&r？子网络带来的物流效能提升巨大,以下简要举例说明 &9(浅析)&r,其余应用场景留给读者自行探索!"
 				""
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description6}"
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description7}"
+				"- 为矿石处理系统设立子网,可 &b自动处理&r 所有中间副产品,避免它们持续进出主网络!"
+				"- 对于 &d大型加工链&r(如 &e铂金处理&r),子网尤为实用.它能确保副产品被合理循环利用,同时降低系统负载."
 				""
 				""
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description8}"
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description9}"
+				"{@pagebreak}"
+				"子网支持无限嵌套,但在 &b模组化 Minecraft&r 中需谨慎操作(最好避免),过多嵌套层级会在计算网络时引发 &4性能问题&r."
 				""
-				"{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.description10}"
+				"注意:若在整合包中启用了频道功能,子网仅消耗主网的单个频道.性价比极高!"
 			]
 			icon: "ae2:storage_bus"
 			id: "1CB9A26C3296858E"
 			shape: "rsquare"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.subtitle}"
-			tasks: [{
-				id: "24ECAB4EA2E82FE7"
-				title: "{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.task.24ECAB4EA2E82FE7.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_processing.quest1CB9A26C3296858E.title}"
+			subtitle: "社交隔离式网络"
+			tasks: [
+				{
+					id: "24ECAB4EA2E82FE7"
+					title: "我觉得听起来很棒"
+					type: "checkmark"
+				}
+			]
+			title: "子网基础入门"
 			x: -1.5d
 			y: -1.125d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.ore_processing.subtitle0}"]
-	title: "{ftbquests.chapter.ore_processing.title}"
+	subtitle: ["如何实现最大化提取..."]
+	title: "矿物处理"
 }

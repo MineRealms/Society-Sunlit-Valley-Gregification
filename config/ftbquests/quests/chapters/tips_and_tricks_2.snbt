@@ -5,367 +5,389 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:computer_monitor_cover"
 	id: "6049B9A595052948"
-	order_index: 16
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["03DBF1961AE21C76"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description1}"
+				"您可能已经熟悉EU(能量单元)作为电力设备的能源——但蒸汽呢？"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description4}"
+				"蒸汽设备将以1:1的EU与蒸汽比例运行所需蒸汽量，具体数值可在您选择的配方查看器中查阅。"
+				"{@pagebreak}"
+				"每次完成配方后,蒸汽设备会从带有方形标记的一侧排出冷却蒸汽(伴有炫酷粒子效果).此为排气口."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description5}"
+				"重要提示:保持排气口畅通——这既不是输入槽也不是输出槽!若设备无法排出蒸汽,将会停止工作."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description8}"
+				"提醒:使用扳手右键点击可更改排气口朝向."
+				"{@pagebreak}"
+				"普通蒸汽设备完成配方的速度是EMI显示速度的两倍.若想提升设备效率,可考虑升级至&a高压蒸汽&f设备."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description9}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description10}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description11}"
+				"&a高压蒸汽&f设备的速度与EMI指示一致,但蒸汽消耗量会调整.获得钢材料后即可解锁此类设备."
+				"{@pagebreak}"
+				"提示!若您不在极限模式世界中,欢迎尝试站在输送蒸汽的管道上方,或在设备运行配方时直面排气口体验蒸汽喷涌效果."
 			]
 			icon: "gtceu:steam_machine_casing"
 			id: "7FB2D6C9A3763A47"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.subtitle}"
-			tasks: [{
-				id: "488F188E55E06B11"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.title}"
+			subtitle: "https://store.steampowered.com/"
+			tasks: [
+				{
+					id: "488F188E55E06B11"
+					type: "checkmark"
+				}
+			]
+			title: "蒸汽动力"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6E186F9C57155BFA"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description1}"
+				"你现在可能已经意识到,&2&d格雷科技&f&r中的能量系统&c远不如&r你在模组版Minecraft中习惯使用的&1RF&r那么简单."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description2}"
+				"&d格雷科技&f的&a能量&f单位是EU."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description3}"
+				"&1EU&r机制具有独特的设计风格,与现实世界的电力系统有相似之处.如果操作不当,它们可能&4危险且具有惩罚性&r.然而,当熟练掌握后,这套能源系统能给&d格雷科技&f玩家带来极大的&e满足感&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description6}"
+				"&l&3背景知识:&r&o 1.12.2版本GTCE中的&a电流&f漏洞/特性(随你怎么称呼!)已在GTCEu中&l修复&r&o.&a能量&f网络现在能按设计意图正常工作."
+				"{@pagebreak}"
+				"让我们回顾一些基础物理知识:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description8}"
+				"° &9功率&r = &2电压&r * &d电流&r"
+				"° &1能量&r = &9功率&r * &e时间&r"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description9}"
+				"&8电阻&r概念在&d格雷科技&f中被简化,部分通过电缆损耗模拟."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description10}"
+				"&a基本概念&f定义如下:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description11}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description12}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description13}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description14}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description15}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description16}"
+				"- &1EU&r是&1能量&r单位"
+				"- &9EU/t&r表示&9功率&r"
+				"- &dA&r或&dAmp&r表示&d电流&r"
+				"- &2V&r&o原本&r表示&2电压&r,但我们更倾向于使用&7低压&r、&b中压&r、&e高压&r...等游戏相关等级(技术参数:&7低压&r = 32V = 32EU/t/A)"
+				"{@pagebreak}"
+				"&d格雷科技&f中的电力以“数据包“形式传输.每个数据包的&a规模&f等同于其电压等级."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description17}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description18}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description19}"
+				"以低压数据包为例,每个“数据包“携带32EU.多个方块能产生这些EU数据包,但仅当存在可连接的接收端时才会产生数据包."
+				"{@pagebreak}"
+				"每个&e游戏刻&r,&1EU&r&a数据包&r会尝试从能源生产者传输至消费者.这些&a数据包&r具有两个参数:由生产者等级决定的&2电压&r等级,以及&d电流&r值.这决定了实际可传输的&9功率&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description20}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description21}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description22}"
+				"电流不支持部分传输,意味着只有当完整电流&a数据包&r能被接收时能量才会传输.你可能会注意到机器在EU容量将满未满时的情况——只有当输入电压缺少至少1A电流时才会接收EU."
+				"{@pagebreak}"
+				"若&3机器&r接收到超过其等级的&2更高电压&r,将会发生&c爆炸&r.轰!任何多余的&d电流&r不会产生负面影响,因为机器仅按需消耗能量."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description23}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description24}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description25}"
+				"机器爆炸通常也会破坏地形,但我们在本整合包中已禁用该特性."
+				"{@pagebreak}"
+				"总结来说,能量以数据包形式传输:&7低压&r为&132EU&r/包,&b中压&r为&128EU&r/包...依此类推.由于电缆损耗,机器实际接收的能量可能低于发送值."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description26}"
+				"机器能量输入受&2电压&r限制(&a过高&f会导致&e爆炸&r!)和&d电流&r限制.因此,连接在&7低压&r线路上的&b中压&r机器(&d2A&r输入)最多接受&964EU/t&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description27}"
+				"仍可在&7低压&r线路上运行&b中压&r机器,但前提是配方所需&9功率&r足够低,或在&a充电&f槽放置&3&a中压电池&f&r.空闲时机器仅接受&d1A&r电流,因此&3电池&r最大充电速率为&932EU/t&r."
 			]
 			icon: "gtceu:lv_battery_hull"
 			id: "61FED75EFA6555EC"
 			size: 0.66d
-			tasks: [{
-				id: "10F1D268436EA85C"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.title}"
+			tasks: [
+				{
+					id: "10F1D268436EA85C"
+					type: "checkmark"
+				}
+			]
+			title: "电力系统"
 			x: 0.99d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6E186F9C57155BFA"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description1}"
+				"传输EU需要通过直接连接,使用&a导线&r或&a线缆&r实现."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description2}"
+				"导线是较次的选择,因为它们会&c电击&r你,且电流通过导线时会&c损耗更多能量&r,因此建议使用绝缘线缆.请注意,线缆无法合并成更粗的变体,请确保选择正确粗细的绝缘线缆以避免麻烦."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description5}"
+				"&c线缆损耗&r意味着你需要将机器紧靠发电机放置,但这只是前期的问题.查阅任务书后,你终将获得&e超导体&r来解决这个问题!"
+				"{@pagebreak}"
+				"请注意&d格雷科技&f的线缆存在“线缆损耗“.EU数据包每经过一格线缆,其储存的EU就会减少."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description8}"
+				"例如：传输&7低压&r电流经过6根线缆（每根损耗5EU/t），最终到达目的地的数据包仅剩2EU/t（32 - [6*5]）。因此，在获得更好的替代方案前，请保持线缆短距离连接。"
+				"{@pagebreak}"
+				"&e超导体&r是各电压层级特有的特殊导线。它们没有对应的线缆版本，但这并不必要，因为它们具有完全&e零损耗&r的特性！接触时也不会造成伤害。"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description9}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description10}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description11}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description12}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description13}"
+				"这是所有层级中最理想的布线选择，尽管相比其他导线略显昂贵。"
+				"{@pagebreak}"
+				"已启用&dGT6风格线缆&r。这意味着放置线缆时仅会与其接触的方块连接。需要更多连接时，请使用&5剪线钳&r在网格上操作。"
+				"{@pagebreak}"
+				"&2GTCEu&r线缆现已支持&e原生RF能源&r！可将任何RF设备接入EU电源并自动转换，转换比例为&a4:1&r（RF:EU）。虽然本整合包无法生产RF能源，但可供自行改造参考！"
 			]
 			icon: "gtceu:copper_double_cable"
 			id: "0F2A7F519B3C67FB"
 			size: 0.75d
-			tasks: [{
-				id: "41F15814196EECFC"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.task.41F15814196EECFC.title}"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "41F15814196EECFC"
+					title: "线缆"
+					type: "checkmark"
+				}
+			]
 			x: 1.98d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7B0FF43022F6C2EC"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description1}"
+				"1个数据包&a每刻&f的量被称为安培(简称1A)."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description2}"
+				"&d格雷科技&f中每个单方块发电机会产生其电压层级的&91A&r电流.在&7低压&r层级下,即产生&232EU/t&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description3}"
+				"若机器需要16EU/t,则会每隔一刻发送一个“数据包“(含32EU)——不多不少(假设无线路损耗)."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description4}"
+				"配备&94节电池&r的缓冲电池组可产生高达&94安培&r的&7低压&r电力(即&2128EU/t&r),这对&3&a电力高炉&f&r或同时运行多台机器至关重要."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description7}"
+				"通用机器默认最多抽取&92安培&r以应对线缆损耗.其他机器的具体&9输入安培数&r会在其悬浮提示中说明."
+				"{@pagebreak}"
+				"最关键的要点是:&a线缆&r存在&9安培&c上限&r.尝试传输超过此限制的安培数将&4烧毁线缆&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description8}"
+				"安培仅通过直接连接生产端与消耗端的&a线缆&r抽取,且仅在消耗端运行时才会抽取."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description9}"
+				"这意味着你可以在特定位置安全地降低线缆规格——尽管大胆尝试!"
 			]
 			icon: "gtceu:ulv_transformer_2a"
 			id: "2BE355672E638CF2"
 			size: 0.66d
-			tasks: [{
-				id: "7D5CFA20478CB9C8"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.task.7D5CFA20478CB9C8.title}"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7D5CFA20478CB9C8"
+					title: "安培数"
+					type: "checkmark"
+				}
+			]
 			x: 2.97d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1BE0349B8F3890D3"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description1}"
+				"为什么每台机器在每个层级都有无数种变体？我们来透露一个行业秘密——超频是主要原因之一."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description2}"
+				"超频是一种机制,当你尝试在机器中运行一个配方时,若该机器的层级高于配方本身的层级,就会触发此机制.配方将消耗更多能量,但配方时间会根据你超频的层级数而缩短."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description5}"
+				"&l&3背景知识:&r&o GTCE的超频机制非常别扭.如果配方消耗16EU/t或更低,它会进行经典的2.0倍超频.但如果配方消耗超过16EU/t,每次超频都会使速度提升2.8倍!GTCEu有一个配置选项来选择超频速度加成."
+				"{@pagebreak}"
+				"专业提示——对于自动化设置,尽量少进行超频!"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description8}"
+				"机器有一个侧边菜单,用于设置它将超频到的最大电压层级.点击它以循环浏览所有可用的电压并选择一个限制."
+				"{@pagebreak}"
+				"每高于配方层级一个层级,允许一次超频.每次超频意味着:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description9}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description10}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description11}"
+				"&9-&r &a2倍&r 配方速度"
+				"&9-&r &a4倍&r 能量消耗"
+				"&9->&r &c2倍&r 总能量成本"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description12}"
+				"如你所见,这有利有弊.这是一个平衡的游戏:问问自己是否愿意以更高的能量消耗为代价来获得更快的配方."
 			]
 			icon: "minecraft:clock"
 			id: "54DE75E97153E455"
 			size: 0.75d
-			tasks: [{
-				id: "5E35ABFDCB703A38"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.task.5E35ABFDCB703A38.title}"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5E35ABFDCB703A38"
+					title: "超频"
+					type: "checkmark"
+				}
+			]
 			x: 3.96d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2FC7B1E867E4194E"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description1}"
+				"在建造多方块结构时,有两个非常重要的因素需要了解."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description4}"
+				"检查EMI,并记住保持灵活性."
+				"{@pagebreak}"
+				"第一条规则——检查EMI!"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description5}"
+				"这一点可能很明显,但EMI不仅仅是一张展示多方块结构建成后样子的可爱图片!用鼠标&d旋转&r预览,并&9悬停在使用的方块上&r以查看任何额外信息."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description8}"
+				"EMI页面还包含所需方块的成分列表.你也可以在预览中&d右键点击&r一个方块,以显示所有适用于该特定位置的方块."
+				"{@pagebreak}"
+				"第二条规则——多方块结构是灵活的!"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description9}"
+				"没有“固定的“方式来形成多方块结构.大多数时候,你可以完全自由地选择使用的&9总线/舱口的层级&r,并且你还可以&d选择输入/输出的位置&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description10}"
+				"以电炉为例,可以使用任何层级的能量/总线/舱口,并且它们可以放置在任何代替外壳的位置.&a液体舱口&fes也是可选的,但如果你需要处理涉及流体的配方,你可能需要它们."
 			]
 			icon: "gtceu:heatproof_machine_casing"
 			id: "1647E0C649E2131C"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.subtitle}"
-			tasks: [{
-				id: "4C9F42B0E4A2E0DB"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.task.4C9F42B0E4A2E0DB.title}"
-				type: "checkmark"
-			}]
+			subtitle: "多方块结构大学"
+			tasks: [
+				{
+					id: "4C9F42B0E4A2E0DB"
+					title: "构建多方块结构"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: 0.99d
 		}
 		{
 			dependencies: ["2FC7B1E867E4194E"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description1}"
+				"&9-&r 若配方未启动,请检查多方块结构是否正确连接电源(大家都犯过这种错!)"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description2}"
+				"&9-&r 记得始终在对应仓口执行首次维护“流程“"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description5}"
+				"&9-&r 确认配方EU/t耗电量——输入多方块结构的最大EU/t需高于配方需求"
+				"{@pagebreak}"
+				"&9- &r核查配方可能存在的特殊要求(若有此类条件,EMI总会给出提示).例如是否需要处于洁净室环境？"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description6}"
+				"&9-&r 确保将正确物品输入总线/仓口.这比普通机器更易出错,因为需在输入总线和输入仓口之间协调操作"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description7}"
+				"&9-&r 确保留有输出空间.可能已形成多方块结构但遗漏了输出仓.另一常见问题是输出仓等级过低导致容量不足——这点在温室结构中尤其容易让人困惑!"
 			]
 			icon: "gtceu:robust_machine_casing"
 			id: "331F2C12C652D268"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.subtitle}"
-			tasks: [{
-				id: "1E55AB139D9E3539"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.task.1E55AB139D9E3539.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.title}"
+			subtitle: "结构无法形成？我们都经历过"
+			tasks: [
+				{
+					id: "1E55AB139D9E3539"
+					title: "确认标记"
+					type: "checkmark"
+				}
+			]
+			title: "多方块结构故障排除"
 			x: 0.99d
 			y: 0.99d
 		}
 		{
 			dependencies: ["2FC7B1E867E4194E"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description1}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description3}"
+				"&d格雷科技&f中的维护并没有想象中复杂(郑重承诺!),给多方块结构添加&a维护仓&f会让它们更具工业美感!"
+				"{@pagebreak}"
+				"绝大多数多方块结构都需要配置&3&a维护仓&f&r.必须执行维护操作后多方块结构才能启动运行"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description8}"
+				"操作方式:背包备齐&9扳手&r、&9螺丝刀&r、&9软槌&r、&9锤子&r、&9钢丝钳&r和&9撬棍&r后,打开&a维护仓&f并&e点击中心区域一次&r.&c无需单独移动工具&r"
+				"{@pagebreak}"
+				"也可在&a维护仓&f中放置&9胶带&r规避维护,但很多人会急切地告诉你胶带是&o“非正规手段“&r——况且胶带需要从&b中型电压&r阶段解锁聚合物才能制作"
+				"{@pagebreak}"
+				"多方块结构每运行&d1小时&r有&d5%&r概率出现维护问题.毋庸置疑这些故障极其罕见&r.每个维护问题会使配方耗时增加&c10%&r.修复方式与上述方法相同"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description9}"
+				"到&e高压&r阶段时,将解锁其他无需手动维修的&a维护仓&f类型"
 			]
 			id: "6644AAD403127EFB"
 			size: 0.66d
-			tasks: [{
-				id: "3FF4710150014FB0"
-				item: "gtceu:maintenance_hatch"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.title}"
+			tasks: [
+				{
+					id: "3FF4710150014FB0"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+			]
+			title: "&a维护仓&f"
 			x: 1.98d
 			y: 0.99d
 		}
 		{
 			dependencies: ["1646BF9194100E57"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description1}"
+				"&3&a电力高炉&f&r、&3&a热解炉&f、&b&a工业熔炉&f&r以及&3&a石油裂化机&f&r均需使用加热线圈.但为何要费心升级更高级别的线圈呢？"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description6}"
+				"线圈的升级进程可在里程碑标签页中查看."
+				"{@pagebreak}"
+				"对于电力高炉而言,情况稍显复杂.电力高炉在特定&d温度&r下熔炼物品,该温度主要取决于所用加热线圈的等级——&r&e铜镍合金&r线圈对应&d1800K&r,&b坎塔尔合金&r线圈对应&d2700K&r,以此类推.此外,从&e高压&r级别开始,每提升一级能源等级都会增加&d100K&r温度."
+				"{@pagebreak}"
+				"这如何影响操作？每个电力高炉配方都有其基础温度要求.例如,&b铝&r的熔炼温度为&d1700K&r.若电力高炉温度不足,配方将无法执行.若温度足够,则会触发两种增益效果:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description8}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description9}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description10}"
+				"&9-&r 每超出配方温度&d900K&r,所需能量消耗将乘以&a0.95倍&r——此效果可叠加."
+				"&9-&r 每超出配方温度&d1800K&r,单次超频将实现&e100%效率&r；换言之,配方速度将提升至&5四倍&r,而非两倍."
+				"{@pagebreak}"
+				"&a热解炉&f的机制相比电力高炉更为简单."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description11}"
+				"铜镍合金线圈会使配方耗时增加&c25%惩罚&r——即实际处理速度比标称值更慢."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description12}"
+				"坎塔尔合金线圈可将配方耗时恢复至标准时长."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description13}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description14}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description15}"
+				"而高于坎塔尔等级的线圈则会为配方耗时带来&a叠加式-50%增益&r!"
+				"{@pagebreak}"
+				"&a工业熔炉&f的机制更为简明."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description16}"
+				"铜镍合金之后的每个线圈等级都会降低10%能耗."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description17}"
+				"&a工业熔炉&f中的线圈既能减少&a每次&f处理的能量消耗,同时还能增加可并行处理的物品数量."
 			]
 			icon: "gtceu:tritanium_coil_block"
 			id: "6C8789A7B8946CFF"
 			size: 0.75d
-			tasks: [{
-				id: "3434AF20FA598211"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.task.3434AF20FA598211.title}"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "3434AF20FA598211"
+					title: "线圈特性"
+					type: "checkmark"
+				}
+			]
 			x: 3.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["2FC7B1E867E4194E"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description1}"
+				"&3&a电力高炉&f&r需要配备&3消音舱盖&r才能运行.该舱盖必须保持&c无遮挡&r状态,以便释放其绚丽的烟雾粒子效果."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description2}"
+				"&l&3背景设定:&r&o在&d格雷科技5&f中,会产生污染的多方块结构需安装消音舱盖.舱盖等级&a越&f高,污染输出量越低."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description7}"
+				"&o污染会引发……有趣……的效果,例如将草块和泥土转化为沙砾."
+				"{@pagebreak}"
+				"执行配方时,&3消音舱盖&r有概率产出额外物品——通常是微量的灰烬粉尘.这些物品可进一步加工获取实用资源."
+				"{@pagebreak}"
+				"请&o勿尝试&r自动化提取&3消音舱盖&r中的物品!此设计并非自动化挑战,因为舱满载时会自动清除多余内容,无需担心因此导致机器停运."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description8}"
+				"GTCEu中的消音舱盖更侧重于纯粹的美学表现(得承认那些粒子效果确实很炫!)和微量奖励,而非惩罚性机制."
 			]
 			id: "20B98506962B8B17"
 			size: 0.66d
-			tasks: [{
-				id: "1FEB8E12A60DE853"
-				item: "gtceu:lv_muffler_hatch"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.title}"
+			tasks: [
+				{
+					id: "1FEB8E12A60DE853"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+			]
+			title: "消音舱盖"
 			x: 4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["2FC7B1E867E4194E"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.description1}"
+				"多方块结构在尝试合成时不会检查配方的电压.它们只会简单地检查是否获得了足够的能量输入."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.description4}"
+				"&9注意:&r 需警惕电缆&c损耗&r导致实际输入能量低于配方要求!我们&l强烈&r建议将&3电池缓冲器&r紧邻&3能量仓&r放置以缩短电缆长度,或查阅本任务书寻找更好的电缆替代方案."
+				"{@pagebreak}"
+				"电力高炉最低需要&4120EU/t&r的能量输入才能运行配方.可通过&3两个低压能量仓&r实现,每个能量仓可传输2A低压电流,因此4A低压电流可提供最高128EU/t的功率."
 			]
 			id: "5F320AFEF6F41AAF"
 			size: 0.75d
-			tasks: [{
-				count: 2L
-				id: "692DAFF49E94F293"
-				item: "gtceu:lv_energy_input_hatch"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.title}"
+			tasks: [
+				{
+					count: 2L
+					id: "692DAFF49E94F293"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			title: "为多方块结构供能"
 			x: 5.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["2FC7B1E867E4194E"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest0C09F89291D29EF8.description1}"
+				"与蒸汽多方块结构类似(希望你已经制作过这些!),若要进行物品传输,你将需要一些&3总线&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest0C09F89291D29EF8.description2}"
+				"流体传输则需要&3仓口&r.更高级的&3仓口/总线&r拥有更多槽位."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest0C09F89291D29EF8.description3}"
+				"&9提示:&r 手持&2螺丝刀&r(且副手为空)时,可&a潜行+右击&f已放置的&3仓口&r或&3总线&r来切换其输入/输出方向"
 			]
 			icon: "gtceu:lv_input_bus"
 			id: "0C09F89291D29EF8"
@@ -382,174 +404,180 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest0C09F89291D29EF8.title}"
+			title: "多方块结构输入/输出"
 			x: 6.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["3568BC9742092FC5"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description1}"
+				"首先请务必查看&9悬浮提示&r——其中包含大量重要信息!"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description2}"
+				"别忘了使用&3&a维护仓&f&r.若结构无法成型,尝试旋转或更换控制器,它可能有些挑剔.不必担心——洁净室不要求必须是立方体结构."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description3}"
+				"&a控制器&f必须始终位于中心位置.顶层其余部分必须使用&d过滤机壳&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description4}"
+				"所有边缘必须采用&d等离子混凝土&r,侧面可使用&d洁净玻璃&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description7}"
+				"内部放置&3发电机&r或&3消音器&r是&c被禁止的&r.这些设备会产生污染,导致洁净室解除成型."
+				"{@pagebreak}"
+				"组装完成后,洁净室初始状态为&4污染中&r.污染状态下,内部机器将无法运行."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description8}"
+				"&a洁净&f室会持续消耗30EU/t电力,逐步提升洁净度直至达到100%."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description9}"
+				"达到&9洁净&r状态后即可运行配方.此时仅需消耗4EU/t电力.请保持持续供电,否则会重新被污染!"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description10}"
+				"洁净室体积越大,达到洁净状态所需时间越长."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description11}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description12}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description13}"
+				"&9注意&r:后续阶段的多方块结构也需置于洁净室内才能运行洁净级配方!"
+				"{@pagebreak}"
+				"需要传输电力？可尝试使用&3线缆外壳&r或&3二极管&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description14}"
+				"物品与流体传输可通过&3贯通接口&r实现."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description15}"
+				"&3&a机械外壳&f&r还可“兼任“&eME线缆&r功能,在洁净室内扩展ME网络."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description16}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description17}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description18}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description19}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description20}"
+				"若结构中使用了&d门&r,可保持开启状态.虽不符合现实逻辑,但确实方便!"
+				"{@pagebreak}"
+				"&9&e配置选项：&r若不喜欢洁净室机制，可通过配置文件中的&5\"B:enableCleanroom\"&r选项关闭。使用&5\"B:cleanMultiblocks\"&r可让多方块结构忽略洁净要求。建议先体验再决定是否调整。"
+				"{@pagebreak}"
+				"现实中的洁净室是高度隔离的空间,能维持极低的尘埃和空气微粒浓度,通常用于科学研究及半导体制造.其特殊设计能最大限度阻隔空气中的悬浮粒子."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description21}"
+				"洁净室有时也用于防止材料外泄,这在制药、核工业及危险生物研究领域尤为常见."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description22}"
+				"&a又&f学到新知识了吧!"
 			]
 			icon: "gtceu:cleanroom"
 			id: "1E5EFC5880605DD4"
 			size: 0.75d
-			tasks: [{
-				id: "315F143FB070D17F"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.task.315F143FB070D17F.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.title}"
+			tasks: [
+				{
+					id: "315F143FB070D17F"
+					title: "&a清空&f空间"
+					type: "checkmark"
+				}
+			]
+			title: "洁净室全解析"
 			x: 0.0d
 			y: 1.98d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description1}"
+				"实现有序物品自动化有多种方式:GT物品管道、红石、其他模组等等!本任务将指导你搭建基于&3AE2&r的自动化系统."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description2}"
+				"让样板供应器朝向&3物品P2P接口&r.设置两个输出端:一个接入首台&3输入总线&r,另一个接入&3物品管道&r.确保物品管道连接所有输入总线(包含第一个).别忘了设置&d&a阻塞模式&f&r!"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description5}"
+				"此配置可实现组装物品的完全自动化!"
+				"{@pagebreak}"
+				"物品自动化相对简单,流体自动化则稍复杂."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description6}"
+				"&a流体传输管道&f的运行机制与物品管道&a有所&f不同,因此&4无法&r直接套用上述方案."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description7}"
+				"因默认关闭此功能,本任务不完整讲解流体自动化方案,留待读者自行探索完成."
 			]
 			icon: "gtceu:assembly_line"
 			id: "2C70E297DBE3BDF2"
 			size: 0.66d
-			tasks: [{
-				id: "0CC1BD3E61E14F18"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.title}"
+			tasks: [
+				{
+					id: "0CC1BD3E61E14F18"
+					type: "checkmark"
+				}
+			]
+			title: "组装线运作原理"
 			x: 0.99d
 			y: 1.98d
 		}
 		{
 			dependencies: ["77B7B1EDD19831E0"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description1}"
+				"扫描是研究的第一步.将EMI中显示的物品与&3&a闪存&f&r一同放入以进行扫描.这将&4消耗&r该物品并将数据存入&a闪存&f.很简单对吧？"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description6}"
+				"你需要至少&e高压扫描仪&r来升级至&d卢森堡电压级&r,&5极端电压扫描仪&r用于&a卢森堡电压能量仓&r,以及&1绝缘电压扫描仪&r用于&a&a湮灭反应堆&f&r."
+				"{@pagebreak}"
+				"后续配方将需要不同的&a数据存储物品&r进行研究,例如&3&a数据球&f&r.流程保持不变,但会使用不同的数据存储物品.它们同样可以复制,但不可在不同类型的存储物品间互相复制."
+				"{@pagebreak}"
+				"最终你会需要多条组装线,但不必为每项研究重新扫描.因此你也可以使用&3扫描仪&r进行&d数据复制&r.将需要复制的数据闪存放于一侧槽位,空白闪存放于另一侧即可将第一个闪存的内容完整复制到第二个!"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description7}"
+				"&4重要提示&r:若同时使用两个存有数据的不同闪存,会导致其中一个&4覆盖&r另一个.请务必小心!"
 			]
 			icon: "gtceu:data_orb"
 			id: "6DA28F169CED9C7D"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.subtitle}"
-			tasks: [{
-				id: "5626378FBFA6241A"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.task.5626378FBFA6241A.title}"
-				type: "checkmark"
-			}]
+			subtitle: "终获实装"
+			tasks: [
+				{
+					id: "5626378FBFA6241A"
+					title: "研究"
+					type: "checkmark"
+				}
+			]
 			x: 1.98d
 			y: 1.98d
 		}
 		{
 			dependencies: ["188A8C3DD38C2762"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description1}"
+				"&a转子&r具有基于工具属性的&9功率&r、&d效率&r和&4耐久度&r"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description2}"
+				"&9功率&r是作用于&3涡轮机&r产出的倍增系数,该系数与&3转子支架&r进行乘算叠加"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description3}"
+				"&d效率&r可降低燃料消耗,同样与&3转子支架&r进行乘算叠加"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description8}"
+				"当&3涡轮机&r运行时,&4耐久度&r代表&a转子&r以秒为单位的生命周期"
+				"{@pagebreak}"
+				"高于&3大型涡轮机&r等级的&3转子支架&r每提升一级可使产出进行乘算&e翻倍&r,同时每级以加算形式提升10%效率"
+				"{@pagebreak}"
+				"&l大型涡轮机的优势:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description9}"
+				"&9-&r 借助分级&3转子支架&r,涡轮机能将&9功率&r产出提升至远超基础输出的水平"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description10}"
+				"&9-&r &a转子&r可大幅提升&d燃料效率&r和&9功率&r产出"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description11}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description12}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description13}"
+				"&9-&r 正确设置后会获得极大成就感(耶!)"
+				"{@pagebreak}"
+				"&l大型涡轮机的劣势:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description14}"
+				"&9-&r 涡轮机依赖&e惯性&r运转,需要持续运行才能达到最大功率"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description15}"
+				"&9-&r 超额产生的能量将被&c清除&r.若要保持效率,需使用大型&a能量缓冲器&f和&3高级能量探测覆盖板&f&r"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description16}"
+				"&9-&r 需要&a转子&r持续工作,其耐久度会随时间衰减并最终&c损坏&r"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description17}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description18}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description19}"
+				"&9-&r 需进行少量数学计算才能获得预期结果"
+				"{@pagebreak}"
+				"涡轮机的&9功率&r输出同时影响燃料消耗和EU/t生成,计算公式如下:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description20}"
+				"&e产出 = 基础EU/t × 转子功率 × 2^(转子支架等级 - 涡轮机等级)&r"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description21}"
+				"&d效率&r可降低燃料消耗但不改变EU/t生成,计算公式如下:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description22}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description23}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description24}"
+				"&e效率 = 转子&a效率&f × (1 + 0.1 × (转子支架等级 - 涡轮机等级))&r"
+				"{@pagebreak}"
+				"模拟&a大型蒸汽涡轮&f搭配Ultimet转子和&5EV&r转子支架:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description25}"
+				"产出 = 1024 × 1.60 × 2 = 3276 EU/t"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description26}"
+				"&a效率&f = 1.30 × 1.10 = 143%"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description27}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description28}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description29}"
+				"(蒸汽消耗量将为4582升/刻——超过钛锅炉或节流阀开度约70%的钨钢锅炉)"
+				"{@pagebreak}"
+				"分析搭配铬转子和&5EV&r转子支架的燃气涡轮机:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description30}"
+				"产出 = 4096 × 1.70 × 1 = 5325 EU/t"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description31}"
+				"&a效率&f = 1.55 × 1.00 = 155%"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description32}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description33}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description34}"
+				"(同等燃料消耗下,6.7个&a涡轮燃气轮机&f可产出3435 EU/t!)"
+				"{@pagebreak}"
+				"最后查看&a等离子涡轮&f搭配HSS-S转子和&cZPM&r转子支架:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description35}"
+				"产出 = 16834 × 2.50 × 4 = 168340 EU/t"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description36}"
+				"&a效率&f = 1.80 × 1.20 = 216%"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description37}"
+				"(超越ZPM级放大器!)"
 			]
 			icon: {
 				Count: 1
@@ -562,89 +590,95 @@
 			}
 			id: "1366981BD8CD98E1"
 			size: 0.75d
-			tasks: [{
-				id: "2E9A0EE7DBA81C4D"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.task.2E9A0EE7DBA81C4D.title}"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2E9A0EE7DBA81C4D"
+					title: "大型涡轮机原理"
+					type: "checkmark"
+				}
+			]
 			x: 3.97d
 			y: 1.98d
 		}
 		{
 			dependencies: ["3B2D2C47BEBCFFA7"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description1}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description8}"
+				"简而言之,格雷科技多方块机器是您可能熟悉的&d格雷科技&f机器的放大版本.虽然资源成本明显增加,但值得投入时间,因为它们可以通过升级获得并行处理配方能力."
+				"{@pagebreak}"
+				"这些机器还引入了机器模式——根据配置的机器模式,多方块机器在处理材料时会使用不同的配方类型.您可以通过点击机器图形界面中的&a机械臂&f按钮来更改此设置."
+				"{@pagebreak}"
+				"通过在格雷科技多方块机器中加入并行控制仓,您可以赋予它们并行处理能力.共有4个等级的仓,每提升一级,并行能力增加4倍."
+				"{@pagebreak}"
+				"可以启用多方块机器的批量模式,将一定数量的同一配方合并为一个最多持续5秒的配方.这不像超频那样改变单个配方的总体速度,但有助于避免机器频繁启停."
+				"此功能虽不仅限于格雷科技多方块机器,但与它们配合使用极为有效."
 			]
 			icon: "gtceu:mega_blast_furnace"
 			id: "57DE7059D524FAE9"
 			size: 0.66d
-			tasks: [{
-				id: "7E9FB8A674944C72"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.task.7E9FB8A674944C72.title}"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "7E9FB8A674944C72"
+					title: "格雷科技多方块结构"
+					type: "checkmark"
+				}
+			]
 			x: 4.95d
 			y: 1.98d
 		}
 		{
 			dependencies: ["3B2D2C47BEBCFFA7"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.description1}"
+				"&l为何选择并行？"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.description2}"
+				"&9-&r &4并行化优于超频!&r在被动设置如矿石&a处理&f或石油蒸馏中充分利用这一优势."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.description3}"
+				"&9-&r &e独立总线&r:&3GCYM机械&r可接受多个&3输入总线&r.适用于&3挤压&r、&3雕刻&r及许多其他模式的自动化生产."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.description4}"
+				"能耗基于当前运行的配方乘以&4并行&r执行的数量."
 			]
 			icon: "gtceu:zpm_parallel_hatch"
 			id: "255929EB845E200D"
 			size: 0.75d
-			tasks: [{
-				id: "71990F9CE8E29F73"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.title}"
+			tasks: [
+				{
+					id: "71990F9CE8E29F73"
+					type: "checkmark"
+				}
+			]
+			title: "并行化"
 			x: 5.94d
 			y: 1.98d
 		}
 		{
 			dependencies: ["7813F183681E0342"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description1}"
+				"&l为何处理矿石？"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description4}"
+				"&d格雷科技&f矿石&a处理&f的主要目的是在初始产物之外提供&a副产品&r.在蒸汽时代,尚无法获得任何副产品,但这很快会变得重要."
+				"{@pagebreak}"
+				"&l我该如何开始？"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description5}"
+				"蒸汽时代可用的步骤如下:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description6}"
+				"一个矿石(块)&9->&r两个&a粉碎矿石&f(破碎机)"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description7}"
+				"一个&a粉碎矿石&f &9->&r一个&a含杂尘晶&f(锤子)"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description8}"
+				"一个&a含杂尘晶&f &9->&r一个粉尘(世界中合成)"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description9}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description10}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description11}"
+				"一个粉尘&9->&r一个锭(熔炉,您应该知道这个)"
+				"{@pagebreak}"
+				"附有锤击附魔的镐或矿锤，或直接使用&d格雷科技&f锤，破坏矿石块时可获得&a粉碎矿石&f，但仅为1:1的比例。"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description12}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description13}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description14}"
+				"&a精准采集&f对于获得矿石块至关重要——本整合包包含书籍的合成配方."
+				"{@pagebreak}"
+				"&a规则&f对产出超过两个粉尘的矿石(如&c红石&r)以及无法熔炼的粉尘(又是&c红石&r!)有所调整."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description15}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description16}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description17}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description18}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description19}"
+				"然而,您仍可直接熔炼矿石,获得完整处理过程&9一半的量&r."
+				"{@pagebreak}"
+				"&dEMI不显示&a含杂尘晶&f到洁净粉尘的转换&r,请记住您可以&a将它们扔进装满水的炼药锅&r."
+				"{@pagebreak}"
+				"这是您耐心听我们絮叨而不打瞌睡的奖励!"
 			]
 			icon: "gtceu:crushed_redstone_ore"
 			id: "189612F2C7C60E81"
@@ -675,93 +709,97 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.title}"
+			title: "初级矿石处理"
 			x: 4.95d
 			y: 0.0d
 		}
 		{
 			dependencies: ["724FB950CC472BB4"]
 			description: [
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description1}"
+				"为想要大规模自动化&e矿石处理&r的玩家准备的采购清单:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description2}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description3}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description4}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description5}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description6}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description7}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description8}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description9}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description10}"
+				"&9-&r 一台或多台&3IV级研磨机&r(等级越高,获得副产品的几率越大!)."
+				"&9-&r &3&a大型离心机&f&r.将其设置为&a热能离心机&f模式,即可开始运作."
+				"&9-&r 一台或多台&3MV级电解机&r - 如果需求足够大,也可以制作大型版本."
+				"&9-&r 一台&3&a工业熔炉&f&r."
+				"&9-&r 任意等级的&3打包机&r,用于处理烦人的小撮/&a小撮粉末&f(比如&a稀土&f!)"
+				"&9-&r 用作大型缓冲区的库存,例如&3&a钨钢板条箱&f&r."
+				"&9-&r &3ME存储总线&r,或大量&3物品管道&r + &a过滤覆盖板&r,或&a物品&a标签过滤器&f&r."
+				"{@pagebreak}"
+				"您可能&e还想要&r添加:"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description11}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description12}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description13}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description14}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description15}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description16}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description17}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description18}"
+				"&9-&r 几台&3LV级&a洗矿厂&f&r,用于快速清洗."
+				"&9-&r 或者,一台&3大型&a洗矿厂&f&r,配有一套用于生产&d&a蒸馏水&f&r的&3蒸馏器&r."
+				"&9-&r 第二台&3&a大型离心机&f&r...这次设置为离心模式,用于处理不纯/纯净粉尘."
+				"&9-&r &3&a化学浸洗器&f&r,用于需要&d水银&r或&d&a过硫酸钠&f&r才能获得的特殊副产品."
+				"&9-&r 任意等级的&3筛矿机&r(等级越高,产出几率越好),用于宝石矿石."
+				"&9-&r &3&a电磁选矿机&f&r."
+				"{@pagebreak}"
+				"如果您不喜欢大型机器,可以尝试使用大量&7LV级&r机械,并通过巧妙的管道进行布线."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description19}"
+				"超频并不&c节能&r,这就是为什么在&3被动配置&r中通常最好选择&e低阶机器&r.也可以说它们更便宜."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description20}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description21}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description22}"
+				"在旧版&d格雷科技&f中,您可以直接使用&3&a处理阵列&f&r,因为它们能将多个低级机器压缩为&a单个高速多方块结构&r.如今追求&e相近处理效率&r的玩家应当关注&bGCYM机械&r——它不仅速度快,升级便捷(&d能源舱&r通常比16台低级机器更便宜!),而且说实话...这些机械的外观非常酷炫."
+				"{@pagebreak}"
+				"&o&7“我是否应该选择获取副产物？“"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description23}"
+				"是的."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description24}"
+				"不过,矿石加工的“路径“完全由您决定.想因为偏好其他副产物而进行两次粉碎？请便!"
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description25}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description26}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description27}"
+				"请注意&3热能离心&r通常是值得采用的步骤,它能从粉碎阶段解锁&e独特副产物&r."
+				"{@pagebreak}"
+				"黄铜矿、辉铜矿、斑铜矿、黝铜矿、镍黄铁矿及硫钼矿都应转化为&d&a纯化&f粉碎&r形态,并送入&e铂系金属&r加工链."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description28}"
+				"&a纯化&f方铅矿/闪锌矿粉碎料应保留用于铟生产,直至建立娜夸达产线.届时您将获得远超需求的铟资源."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description29}"
+				"&a镓&r、&a铬&r、&a铌&r、&a&a稀土&f&r与&a荧石&r都是值得优先关注的&e副产物&r."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description30}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description31}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description32}"
+				"若发现我们遗漏了重要产物,请通过Discord联系我们,我们将把您喜爱的产物加入此清单."
+				"{@pagebreak}"
+				"您可能已经意识到,&d应用能源2&f在实现全自动化过程中将发挥极其重要的作用."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description33}"
+				"&3ME存储总线&r能高效引导物品进入ME网络,并支持大规模白名单/黑名单配置.可将其连接至&3&a钨钢板条箱&f&r缓冲中间产物,或搭建专用AE2子网络."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description34}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description35}"
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description36}"
+				"若需将&a&a小堆粉末&f&r合并为完整&a粉尘&r,可配置高优先级&3存储总线&r并设置&d物品标签&r过滤器为&e&ldusts/small&r.请注意&a小堆粉末&f可用于制作晶球,且PBI产线需少量&a小撮粉末&f,可根据需要将其加入过滤器黑名单."
+				"{@pagebreak}"
+				"对于需要快速处理但不追求副产物的矿石(因完整“路径“耗时过长),可优先配置过滤器进行快速洗矿."
 				""
-				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description37}"
+				"标准\"最优\"路径为:粉碎机→洗矿机→&a热能离心机&f→粉碎机.若因故偏离此路径,需&e手动&r设置过滤器——天哪!"
 			]
 			icon: "gtceu:crushed_diamond_ore"
 			id: "7FCFE4C40837CF5E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.subtitle}"
-			tasks: [{
-				id: "36276D923D83323C"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.task.36276D923D83323C.title}"
-				type: "checkmark"
-			}]
+			subtitle: "终于能彻底挖掘矿石的全部潜力了!"
+			tasks: [
+				{
+					id: "36276D923D83323C"
+					title: "\"专家级\"矿石处理"
+					type: "checkmark"
+				}
+			]
 			x: 5.94d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5AD9884E7BFB2510"]
-			description: ["Spraying &3Input Buses&r and &3Hatches&r the same color will treat them as one &3Hatch&r in the &5Multiblock&r. With distinct mode enabled on the &3Buses/Hatches&r, the &5Multiblock&r will only search for a recipe using ingredients from one color group. With this enabled the &5Multiblock&r will try to match the color of the &3Output Hatch&r to the color group used for the inputs."]
+			description: ["将&3输入总线&r和&3仓&r喷涂为相同颜色时,&5多方块机器&r会将它们视为一个&3仓&r.在&3总线/仓&r上启用独立模式后,&5多方块机器&r仅会使用同一颜色组的原料搜索配方."]
 			icon: "gtceu:cyan_dye_spray_can"
 			id: "57EC19AF87A32930"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest57EC19AF87A32930.subtitle}"
-			tasks: [{
-				id: "5F4FB0D81F0772F9"
-				title: "{ftbquests.chapter.tips_and_tricks_2.quest57EC19AF87A32930.task.5F4FB0D81F0772F9.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.tips_and_tricks_2.quest57EC19AF87A32930.title}"
+			subtitle: "按数字着色的多方块"
+			tasks: [
+				{
+					id: "5F4FB0D81F0772F9"
+					title: "彩色总线"
+					type: "checkmark"
+				}
+			]
+			title: "彩色总线"
 			x: 3.0d
 			y: 1.98d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.tips_and_tricks_2.subtitle0}"]
-	title: "{ftbquests.chapter.tips_and_tricks_2.title}"
+	subtitle: ["面向现代我的世界玩家"]
+	title: "技巧与窍门"
 }

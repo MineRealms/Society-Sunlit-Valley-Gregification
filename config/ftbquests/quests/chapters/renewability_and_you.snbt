@@ -5,28 +5,30 @@
 	group: "4A46A5E1358A80A6"
 	icon: "minecraft:water_bucket"
 	id: "4C3D68FB57D3CC02"
-	order_index: 12
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["25289F9E8AE01C29"]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest4D7A771B67DAFC6F.description1}"
+				"你可能想知道如何在&b&d格雷科技&f&r中获取&e大量&r常用资源.这对资深玩家来说或许是老生常谈,但实际上可以通过建立&d被动化流程&r让各种材料和化学品变得&2完全可再生&r."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest4D7A771B67DAFC6F.description2}"
+				"我们新增本章节旨在引导你搭建一些&7&o可能&r需要的装置.显然无需完成所有内容,但谁不喜欢&2“免费“资源&r呢？"
 				""
-				"{ftbquests.chapter.renewability_and_you.quest4D7A771B67DAFC6F.description3}"
+				"&9&l附注:&r我们无法记录&b&d格雷科技&f&r中所有可再生途径.本任务页面仅作为引导&e新玩家&r了解可选方案的入门指南.书中列出的并非都是最优方案,我们鼓励你大胆尝试!"
 			]
 			icon: "minecraft:big_dripleaf"
 			id: "4D7A771B67DAFC6F"
 			size: 1.2d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest4D7A771B67DAFC6F.subtitle}"
-			tasks: [{
-				id: "10D096D6F4770F24"
-				title: "{ftbquests.chapter.renewability_and_you.quest4D7A771B67DAFC6F.task.10D096D6F4770F24.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.renewability_and_you.quest4D7A771B67DAFC6F.title}"
+			subtitle: "很有环保意识嘛!"
+			tasks: [
+				{
+					id: "10D096D6F4770F24"
+					title: "我超爱可再生资源!"
+					type: "checkmark"
+				}
+			]
+			title: "推动可持续化流程"
 			x: 1.2d
 			y: -0.6d
 		}
@@ -36,122 +38,134 @@
 				"1F2359106FC95603"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest55D8E30978CBBC0D.description1}"
+				"啊,&a碎石机&f——这个看似朴实的机器最初似乎只是建筑师的挚友.谁能拒绝无限的圆石、深板岩或黑曜石呢？"
 				""
-				"{ftbquests.chapter.renewability_and_you.quest55D8E30978CBBC0D.description2}"
+				"但别被表象迷惑,当你将岩石研磨成粉末时,这台小机器能实现多种材料的可再生化,绝对会让你震惊.周边任务会为你揭示奥秘."
 			]
 			icon: "gtceu:lv_rock_crusher"
 			id: "55D8E30978CBBC0D"
 			shape: "circle"
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest55D8E30978CBBC0D.subtitle}"
-			tasks: [{
-				id: "21A653703F408934"
-				title: "{ftbquests.chapter.renewability_and_you.quest55D8E30978CBBC0D.task.21A653703F408934.title}"
-				type: "checkmark"
-			}]
+			subtitle: "说是游戏机制破坏者也不为过吧？"
+			tasks: [
+				{
+					id: "21A653703F408934"
+					title: "岩石破碎"
+					type: "checkmark"
+				}
+			]
 			x: 2.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["55D8E30978CBBC0D"]
-			description: ["Cobblestone is just the start of things. Let's make a Cobbleworks!"]
+			description: ["圆石只是起点.让我们建个圆石工厂吧!"]
 			id: "54D73D049F8CD9FE"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest54D73D049F8CD9FE.subtitle}"
-			tasks: [{
-				consume_items: false
-				count: 64L
-				id: "72A52930F1754ABF"
-				item: "minecraft:cobblestone"
-				title: "{ftbquests.chapter.renewability_and_you.quest54D73D049F8CD9FE.task.72A52930F1754ABF.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.renewability_and_you.quest54D73D049F8CD9FE.title}"
+			subtitle: "哦,这才刚刚开始呢."
+			tasks: [
+				{
+					consume_items: false
+					count: 64L
+					id: "72A52930F1754ABF"
+					item: "minecraft:cobblestone"
+					title: "圆石"
+					type: "item"
+				}
+			]
+			title: "圆石的乐趣"
 			x: 0.33d
 			y: -1.65d
 		}
 		{
 			dependencies: ["54D73D049F8CD9FE"]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest668A8BDDEE17865E.description1}"
+				"&e&a石粉&f&r可在&b中型电压&r离心机中分离出多种杂项材料.这个过程缓慢且昂贵,但或许值得一试."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest668A8BDDEE17865E.description2}"
+				"石英岩就是石英岩.但你知道吗？多余的石英岩可提取为&e&a液态玻璃&f&r"
 				""
-				"{ftbquests.chapter.renewability_and_you.quest668A8BDDEE17865E.description3}"
+				"&a&a钾长石&f&r电解后可获得极其有用的资源."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest668A8BDDEE17865E.description4}"
+				"还有(较低)几率获得&d黑云母&r,其电解后可缓慢产生&b氟&r."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest668A8BDDEE17865E.description5}"
+				"最后,&a金属混合粉&r在&5极端电压&r离心前毫无用处,但其离心产物几乎都大有用途."
 			]
 			id: "668A8BDDEE17865E"
 			shape: "rsquare"
 			size: 0.5d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest668A8BDDEE17865E.subtitle}"
-			tasks: [{
-				id: "3C1B921715553377"
-				item: "gtceu:stone_dust"
-				type: "item"
-			}]
+			subtitle: "&a小石子&f,大副产"
+			tasks: [
+				{
+					id: "3C1B921715553377"
+					item: "gtceu:stone_dust"
+					type: "item"
+				}
+			]
 			x: -0.33d
 			y: -1.65d
 		}
 		{
 			dependencies: ["54D73D049F8CD9FE"]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest52868F643F0A1007.description1}"
+				"只需用&a锻造锤&f处理圆石即可获得&d沙砾&r."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest52868F643F0A1007.description2}"
+				"沙砾可研磨成&e&a石粉&f&r,但在&e高压研磨机&r&a或更高等级&f设备中有低几率获得燧石.反正你可能更想用筛子获取燧石!"
 				""
-				"{ftbquests.chapter.renewability_and_you.quest52868F643F0A1007.description3}"
+				"&a燧石粉&f经离心可得&a&a二氧化硅&f&r,电解后可获得硅和氧."
 			]
 			id: "52868F643F0A1007"
 			shape: "rsquare"
 			size: 0.5d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest52868F643F0A1007.subtitle}"
-			tasks: [{
-				id: "3850F80F95B8E520"
-				item: "minecraft:gravel"
-				type: "item"
-			}]
+			subtitle: "沙砾坑风云"
+			tasks: [
+				{
+					id: "3850F80F95B8E520"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -2.31d
 		}
 		{
 			dependencies: ["52868F643F0A1007"]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest10FD7C65FC83ADD6.description1}"
+				"再次使用&b&a锻造锤&f&r处理,你将实现&d沙子&r可再生.有了可再生沙子就意味着可再生玻璃(记得尝试用&9&a电弧炉&f&r实现&a双倍&r产出哦!)"
 				""
-				"{ftbquests.chapter.renewability_and_you.quest10FD7C65FC83ADD6.description2}"
+				"&a石英沙&r粉离心后有机会获得&3&a赛特斯石英&f&r粉."
 			]
 			id: "10FD7C65FC83ADD6"
 			shape: "rsquare"
 			size: 0.55d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest10FD7C65FC83ADD6.subtitle}"
-			tasks: [{
-				id: "6724DCD56A7592FF"
-				item: "minecraft:sand"
-				type: "item"
-			}]
+			subtitle: "巍峨石柱的双足..."
+			tasks: [
+				{
+					id: "6724DCD56A7592FF"
+					item: "minecraft:sand"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -2.97d
 		}
 		{
 			dependencies: ["10FD7C65FC83ADD6"]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest471B85B964C578A7.description1}"
+				"没错——&b可再生&r玻璃."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest471B85B964C578A7.description2}"
+				"玻璃在整个游戏流程的各种配方中始终不可或缺."
 			]
 			id: "471B85B964C578A7"
 			shape: "rsquare"
 			size: 0.5d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest471B85B964C578A7.subtitle}"
-			tasks: [{
-				id: "71A450692F1DC98D"
-				item: "minecraft:glass"
-				type: "item"
-			}]
+			subtitle: "玻璃扎手,不是吗..."
+			tasks: [
+				{
+					id: "71A450692F1DC98D"
+					item: "minecraft:glass"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: -3.63d
 		}
@@ -162,19 +176,21 @@
 				"0DBC148D92A9F69F"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest43D5A5F95EEB339C.description1}"
+				"将闪长岩粉碎成粉后离心,可获得芒硝粉和&a粘土粉&f."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest43D5A5F95EEB339C.description2}"
+				"芒硝仅产出少量硫磺,但&a粘土粉&f才是真正的宝藏.电解后可得铝材,相当划算!"
 			]
 			id: "43D5A5F95EEB339C"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest43D5A5F95EEB339C.subtitle}"
-			tasks: [{
-				id: "6358C3084C675965"
-				item: "minecraft:diorite"
-				type: "item"
-			}]
+			subtitle: "芒硝与粘土..."
+			tasks: [
+				{
+					id: "6358C3084C675965"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+			]
 			x: 0.99d
 			y: -2.31d
 		}
@@ -185,19 +201,21 @@
 				"0DBC148D92A9F69F"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest0089AA3A92C02334.description1}"
+				"&a花岗岩粉&f 通过离心可得到红岩粉和常见的 &a二氧化硅&f 粉末."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest0089AA3A92C02334.description2}"
+				"&a二氧化硅&f 通常非常实用,而红岩粉离心后可获得方解石(即可再生钙)和燧石."
 			]
 			id: "0089AA3A92C02334"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest0089AA3A92C02334.subtitle}"
-			tasks: [{
-				id: "7D054563301323A4"
-				item: "minecraft:granite"
-				type: "item"
-			}]
+			subtitle: "红岩、&a二氧化硅&f..."
+			tasks: [
+				{
+					id: "7D054563301323A4"
+					item: "minecraft:granite"
+					type: "item"
+				}
+			]
 			x: 1.65d
 			y: -2.64d
 		}
@@ -208,19 +226,21 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest3B436487305AEE38.description1}"
+				"深板岩离心后可得... 你猜对了... &a二氧化硅&f!建议为此设置产线以确保黑云母的稳定产出,因为黑云母电解后可得氟."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest3B436487305AEE38.description2}"
+				"这显然是比 &a石粉&f 更好的黑云母来源.希望你没有浪费时间折腾那个!"
 			]
 			id: "3B436487305AEE38"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest3B436487305AEE38.subtitle}"
-			tasks: [{
-				id: "64EF28C6902C7083"
-				item: "minecraft:deepslate"
-				type: "item"
-			}]
+			subtitle: "&a二氧化硅&f、氟..."
+			tasks: [
+				{
+					id: "64EF28C6902C7083"
+					item: "minecraft:deepslate"
+					type: "item"
+				}
+			]
 			x: 2.31d
 			y: -2.64d
 		}
@@ -231,19 +251,21 @@
 				"0DBC148D92A9F69F"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest3BCA8923DF575D5D.description1}"
+				"&a安山岩粉&f 可产出珍贵的石棉粉,同时附带一些 &a硝石粉&f."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest3BCA8923DF575D5D.description2}"
+				"石棉是镁的缓慢来源,而硝石在化学领域有多种用途."
 			]
 			id: "3BCA8923DF575D5D"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest3BCA8923DF575D5D.subtitle}"
-			tasks: [{
-				id: "74AEE715BE76C0CF"
-				item: "minecraft:andesite"
-				type: "item"
-			}]
+			subtitle: "石棉、硝石...(无机械动力)"
+			tasks: [
+				{
+					id: "74AEE715BE76C0CF"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+			]
 			x: 2.97d
 			y: -2.31d
 		}
@@ -254,19 +276,21 @@
 				"16A6AE5C770DB83A"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest71972471AFB97BB2.description1}"
+				"将 &a红石粉&f 放入 &a碎石机&f 中,你会发现自己正在制造黑曜石."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest71972471AFB97BB2.description2}"
+				"&a黑曜石粉&f 非常有用,因其电解后可获得铁."
 			]
 			id: "71972471AFB97BB2"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest71972471AFB97BB2.subtitle}"
-			tasks: [{
-				id: "3C423DE1EB48AFF5"
-				item: "minecraft:obsidian"
-				type: "item"
-			}]
+			subtitle: "辐射:新维加斯、铁..."
+			tasks: [
+				{
+					id: "3C423DE1EB48AFF5"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+			]
 			x: 3.3d
 			y: -1.65d
 		}
@@ -277,19 +301,21 @@
 				"16A6AE5C770DB83A"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest1937057C27596942.description1}"
+				"&a玄武岩粉&f 离心后可获得橄榄石,这种材料可在少量配方中替代绿宝石——例如制作 &a刻蚀水晶芯片&f 时."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest1937057C27596942.description2}"
+				"同时还会得到少量黑色灰烬."
 			]
 			id: "1937057C27596942"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest1937057C27596942.subtitle}"
-			tasks: [{
-				id: "6F2F8349BF8AF29C"
-				item: "minecraft:basalt"
-				type: "item"
-			}]
+			subtitle: "橄榄石、&a黑色灰烬&f..."
+			tasks: [
+				{
+					id: "6F2F8349BF8AF29C"
+					item: "minecraft:basalt"
+					type: "item"
+				}
+			]
 			x: 3.3d
 			y: -0.99d
 		}
@@ -302,19 +328,21 @@
 				"7FA0ACB7F161F378"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest789E2DC829DD1828.description1}"
+				"不要与普通花岗岩混淆,&a红花岗岩&f 的粉末加工后具有实用价值."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest789E2DC829DD1828.description2}"
+				"电解它可获得铝,比可再生粘土电解的步骤稍少."
 			]
 			id: "789E2DC829DD1828"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest789E2DC829DD1828.subtitle}"
-			tasks: [{
-				id: "10A533EC38D279DA"
-				item: "gtceu:red_granite"
-				type: "item"
-			}]
+			subtitle: "铝..."
+			tasks: [
+				{
+					id: "10A533EC38D279DA"
+					item: "gtceu:red_granite"
+					type: "item"
+				}
+			]
 			x: 2.97d
 			y: -0.33d
 		}
@@ -324,16 +352,18 @@
 				"26394C1290D70AB6"
 				"16A6AE5C770DB83A"
 			]
-			description: ["Marble Dust isn't anything to write home about, yielding Calcite and Magnesium."]
+			description: ["&a大理石粉&f 并无特别之处,可产出方解石和镁."]
 			id: "3E3EB69F34F50A9C"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest3E3EB69F34F50A9C.subtitle}"
-			tasks: [{
-				id: "0DED39C9E1966F0B"
-				item: "gtceu:marble"
-				type: "item"
-			}]
+			subtitle: "方解石、镁..."
+			tasks: [
+				{
+					id: "0DED39C9E1966F0B"
+					item: "gtceu:marble"
+					type: "item"
+				}
+			]
 			x: 2.31d
 			y: 0.0d
 		}
@@ -343,20 +373,22 @@
 				"48141DBA683F6B5A"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest24A90D07C3A35370.description1}"
+				"用 &e&a集气器&f&r 收集空气,通过 &3&a真空冷冻机&f&r 冷却为液态,随后蒸馏液态空气即可获得大量珍贵资源."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest24A90D07C3A35370.description2}"
+				"你以为就这样？空气收集不仅限于 &2主世界&r——虽然需要更高级的 &a蒸馏塔&f 来蒸馏 “更高级“ 的液态空气,但你还可以处理来自 &4下界&r 和 &5末地&r 的空气.这个过程基本是可选的,但绝对会带来丰厚回报."
 			]
 			icon: "gtceu:distillation_tower"
 			id: "24A90D07C3A35370"
 			shape: "circle"
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest24A90D07C3A35370.subtitle}"
-			tasks: [{
-				id: "2DE291473F207BF8"
-				title: "{ftbquests.chapter.renewability_and_you.quest24A90D07C3A35370.task.2DE291473F207BF8.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.renewability_and_you.quest24A90D07C3A35370.title}"
+			subtitle: "现在事情还未定局..."
+			tasks: [
+				{
+					id: "2DE291473F207BF8"
+					title: "空气真是美妙无比"
+					type: "checkmark"
+				}
+			]
+			title: "各类空气(蒸馏)"
 			x: -0.1499999999999999d
 			y: -0.7d
 		}
@@ -366,27 +398,29 @@
 				"7820DF52516344F4"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.description1}"
+				"&5末影空气&r可能是三种可蒸馏空气中最有趣的一种.它需要&9IV级蒸馏塔&f&r并以20万升为单位进行批量蒸馏,你需要为蒸馏塔配备至少&9IV级输入舱&r(或根据偏好使用&5ME接口&r)."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.description2}"
-				"{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.description3}"
-				"{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.description4}"
+				"你将获得大量氮气、氧气、氦气和氘气——其中氘气常用于&a核聚变&r.氚气则用于制造&e&a氦等离子体&f&r,这被公认为&2发电&r的最佳等离子体."
+				"{@pagebreak}"
+				"氪气与氙气是常见的&a提升电弧炉效率&r的稀有气体.至此,建议将大部分(若非全部)电弧炉配方切换至&b&a2级电路板&f&r以享受更快的处理速度."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.description5}"
+				"看——还能获得&d氡气&r!虽然过程缓慢(你的旧设备是否已实现自循环？),但&d更多氡气&r总是好事."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.description6}"
+				"最重要的是,你有较低概率获得&3&a末影珍珠粉&f&r.虽然概率极低,尚不值得为此&a放弃&f搅拌机配方…但再说一次,更多&3&a末影珍珠&f&r总是好的!"
 			]
 			icon: "gtceu:liquid_ender_air_bucket"
 			id: "77BBAB9CA586BB36"
 			shape: "rsquare"
 			size: 0.7d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.subtitle}"
-			tasks: [{
-				id: "37E57DD2AD97DD10"
-				title: "{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.task.37E57DD2AD97DD10.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.renewability_and_you.quest77BBAB9CA586BB36.title}"
+			subtitle: "氮气、氧气、氦气、氪气、氙气、氡气、&a末影珍珠&f..."
+			tasks: [
+				{
+					id: "37E57DD2AD97DD10"
+					title: "真惊讶我能在&a末地&f呼吸"
+					type: "checkmark"
+				}
+			]
+			title: "液态末影空气"
 			x: -3.15d
 			y: -0.7d
 		}
@@ -397,25 +431,27 @@
 				"6958029B5514D4EC"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest213211A0BC475C32.description1}"
+				"&5EV阶段&r曾简要提及此内容,此处将重点说明其蒸馏产物."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest213211A0BC475C32.description2}"
-				"{ftbquests.chapter.renewability_and_you.quest213211A0BC475C32.description3}"
-				"{ftbquests.chapter.renewability_and_you.quest213211A0BC475C32.description4}"
+				"&a氮气&f产量&b极大&r,可维持&e&a热解炉&f&r持续运行.建议储备部分氮气用于&a提升电弧炉效率&r——更快的处理速度既能节省能源又能保持理智."
+				"{@pagebreak}"
+				"氦气与氩气产量较低,但理想情况下可通过定期进行&d被动式空气蒸馏&r来补充库存.两者均能用于&a提升电弧炉速度&r."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest213211A0BC475C32.description5}"
+				"&b&a碎冰&f&r…嗯,就是&b&a碎冰&f&r.或许你可以开个鸡尾酒吧？"
 			]
 			icon: "gtceu:liquid_air_bucket"
 			id: "213211A0BC475C32"
 			shape: "rsquare"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest213211A0BC475C32.subtitle}"
-			tasks: [{
-				id: "3964A8A27402A11B"
-				title: "{ftbquests.chapter.renewability_and_you.quest213211A0BC475C32.task.3964A8A27402A11B.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.renewability_and_you.quest213211A0BC475C32.title}"
+			subtitle: "氮气、氦气、氩气..."
+			tasks: [
+				{
+					id: "3964A8A27402A11B"
+					title: "我保证不会把空气当商品卖!"
+					type: "checkmark"
+				}
+			]
+			title: "&a液态空气&f"
 			x: -1.15d
 			y: -0.7d
 		}
@@ -426,49 +462,53 @@
 				"6958029B5514D4EC"
 			]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest38E5B595C33A071C.description1}"
+				"&a一氧化碳&f在&9IV后期&r制造层压玻璃所需的&e丁醛&r时非常有用."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest38E5B595C33A071C.description2}"
+				"&e煤炭气体&r可通过&a蒸馏塔&f处理获得多种有用产物."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest38E5B595C33A071C.description3}"
+				"氦-3仅用于&b核聚变&r,氖气则用于提升唯一&a&a爆裂熔炉&f&r配方——&4UHV超导体&r!"
 				""
-				"{ftbquests.chapter.renewability_and_you.quest38E5B595C33A071C.description4}"
+				"灰烬总能提供多种资源,始终具有实用价值."
 			]
 			icon: "gtceu:liquid_nether_air_bucket"
 			id: "38E5B595C33A071C"
 			shape: "rsquare"
 			size: 0.7d
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest38E5B595C33A071C.subtitle}"
-			tasks: [{
-				id: "074BDDF3F1AE08AA"
-				title: "{ftbquests.chapter.renewability_and_you.quest38E5B595C33A071C.task.074BDDF3F1AE08AA.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.renewability_and_you.quest38E5B595C33A071C.title}"
+			subtitle: "碳、煤炭气体、氦-3..."
+			tasks: [
+				{
+					id: "074BDDF3F1AE08AA"
+					title: "&a下界&f也不全是地狱景象"
+					type: "checkmark"
+				}
+			]
+			title: "液态下界空气"
 			x: -2.15d
 			y: -0.7d
 		}
 		{
 			dependencies: ["4D7A771B67DAFC6F"]
 			description: [
-				"{ftbquests.chapter.renewability_and_you.quest7ECD974215E77432.description1}"
+				"请注意:本整合包已&4禁用&r原版农场机制(如&7&a铁傀儡&f&r或&e猪灵&r农场).虽然存在取巧方式(例如利用原版&a资本运作&r机制,&m如果你明白我们的暗示&r),但我们鼓励玩家避免使用某些 notorious vanilla “&o机制漏洞&r“."
 				""
-				"{ftbquests.chapter.renewability_and_you.quest7ECD974215E77432.description2}"
+				"未来我们可能为整合包制作核心模组，以允许玩家重新启用被禁用的生物掉落物。目前是通过&5KubeJS脚本&r实现禁用，熟悉脚本的玩家可删除&o&7server_scripts/vanilla/loot_drops.js&r文件。"
 			]
 			icon: "minecraft:iron_golem_spawn_egg"
 			id: "7ECD974215E77432"
 			shape: "circle"
-			subtitle: "{ftbquests.chapter.renewability_and_you.quest7ECD974215E77432.subtitle}"
-			tasks: [{
-				id: "19F0161CE47673EE"
-				title: "{ftbquests.chapter.renewability_and_you.quest7ECD974215E77432.task.19F0161CE47673EE.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.renewability_and_you.quest7ECD974215E77432.title}"
+			subtitle: "这样安全吗？没问题吗？"
+			tasks: [
+				{
+					id: "19F0161CE47673EE"
+					title: "哦,该死.这可真糟糕"
+					type: "checkmark"
+				}
+			]
+			title: "我的生物农场怎么办？"
 			x: 1.0d
 			y: 0.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.renewability_and_you.subtitle0}"]
-	title: "{ftbquests.chapter.renewability_and_you.title}"
+	subtitle: ["我们很快就能富可敌国!"]
+	title: "可再生资源指南"
 }

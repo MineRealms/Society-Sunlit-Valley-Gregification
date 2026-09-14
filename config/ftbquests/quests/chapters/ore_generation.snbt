@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "minecraft:iron_ore"
 	id: "6A809CAE287B97BA"
-	order_index: 10
+	order_index: 2
 	quest_links: [
 		{
 			id: "4B68740C721D04D5"
@@ -52,48 +52,50 @@
 		{
 			dependencies: ["0C690272ED4FB1C3"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description1}"
+				"部分细节与引导任务重复,但我们认为若您想了解全部细节,需要扩展说明!"
 				""
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description2}"
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description3}"
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description4}"
+				"准备好进行一些“轻松“阅读了吗？"
+				"{@pagebreak}"
+				"每个矿脉最多可包含四种不同矿石."
 				""
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description5}"
+				"矿脉以&4网格&r形式生成.每个矿脉在基本方向上彼此间隔3区块.每个矿脉以独特的“形态“生成——有些呈&e圆形&r,有些呈&a蛇形&r,其他形态待您亲自探索."
 				""
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description6}"
+				"它们生成于区块&4中心&r,其X和Z坐标需满足&b1加上3的倍数&r(-8、-5、-2、1、4、7...).通常会在选定区块发现两条矿脉——一条位于岩石层,另一条深嵌于深板岩层."
 				""
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description7}"
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description8}"
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description9}"
+				"但矿脉可能因洞穴、石油沉积或试图在地表生成而被清除."
+				"{@pagebreak}"
+				"为每个发现的矿脉设置&d路径点&r并标注类型是良好实践,您可能需要多次返回勘探."
 				""
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description10}"
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description11}"
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description12}"
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description13}"
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description14}"
+				"标准矿脉高&d7格&r,矿石按4种模式生成:"
+				"- &9顶部矿石&r生成于矿脉上部4层"
+				"- &9底部矿石&r生成于矿脉下部3层"
+				"- &9中层矿石&r生成于矿脉中间3层"
+				"- &9零星矿石&r在矿脉任意位置生成,该矿石数量最为稀少"
 				""
-				"{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.description15}"
+				"同种矿石可存在两种生成模式,例如锡石矿脉."
 			]
 			icon: "gtceu:cobalt_ore"
 			id: "41730E340B3D8EDA"
 			shape: "square"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.subtitle}"
-			tasks: [{
-				id: "502C58F19FF7DE24"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.ore_generation.quest41730E340B3D8EDA.title}"
+			subtitle: "读完本文您将成为专家!"
+			tasks: [
+				{
+					id: "502C58F19FF7DE24"
+					type: "checkmark"
+				}
+			]
+			title: "&a银矿生成&f"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
-			description: ["A standard Iron vein. It's a good target when you need to replenish your supply."]
+			description: ["标准铁矿脉.需要补充铁储备时的理想目标."]
 			icon: "gtceu:yellow_limonite_ore"
 			id: "692F4312B3F73FAF"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest692F4312B3F73FAF.subtitle}"
+			subtitle: "来源 &a铁甲&f, 铜"
 			tasks: [
 				{
 					id: "6BF52C2246A0844E"
@@ -116,23 +118,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest692F4312B3F73FAF.title}"
+			title: "褐铁矿"
 			x: 1.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest260E516A219825A2.description1}"
+				"该矿脉是主世界少数直接获取黄金的渠道之一."
 				""
-				"{ftbquests.chapter.ore_generation.quest260E516A219825A2.description2}"
+				"&d格雷科技&f中虽存在其他黄金来源,但通过加工其他资源通常可获得更高产量."
 				""
-				"{ftbquests.chapter.ore_generation.quest260E516A219825A2.description3}"
+				"&a钒磁铁矿&f在&bMV阶段&r变得更重要,可通过离心提取钒元素制造钒钢."
 			]
 			icon: "gtceu:magnetite_ore"
 			id: "260E516A219825A2"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest260E516A219825A2.subtitle}"
+			subtitle: "来源 &a铁甲&f, 黄金, 钒"
 			tasks: [
 				{
 					id: "2814C224F95FA845"
@@ -150,21 +152,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest260E516A219825A2.title}"
+			title: "磁铁矿"
 			x: 2.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest03FBBA4A693011A8.description1}"
+				"优质的铁铜混合矿脉."
 				""
-				"{ftbquests.chapter.ore_generation.quest03FBBA4A693011A8.description2}"
+				"在游戏后期寻求获取&a铂系矿泥渣&f时,黄铜矿将发挥关键作用."
 			]
 			icon: "gtceu:pyrite_ore"
 			id: "03FBBA4A693011A8"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest03FBBA4A693011A8.subtitle}"
+			subtitle: "来源 铜, 铁"
 			tasks: [
 				{
 					id: "21D9BE0CDF8D20D0"
@@ -187,21 +189,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest03FBBA4A693011A8.title}"
+			title: "黄铁矿"
 			x: 3.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest4826DCD2FC457EA5.description1}"
-				"{ftbquests.chapter.ore_generation.quest4826DCD2FC457EA5.description2}"
-				"{ftbquests.chapter.ore_generation.quest4826DCD2FC457EA5.description3}"
+				"游戏前期的优质矿脉.含制造青铜的铜与锡,提供砷元素的雄黄,以及...用途有限的沸石."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o由于&d格雷科技&f曾自动生成配方,沸石电解一度每次需处理141堆粉末.哎呀!"
 			]
 			icon: "gtceu:chalcopyrite_ore"
 			id: "4826DCD2FC457EA5"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest4826DCD2FC457EA5.subtitle}"
+			subtitle: "来源 铜, 锡"
 			tasks: [
 				{
 					id: "21B8E250B773443C"
@@ -224,17 +226,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest4826DCD2FC457EA5.title}"
+			title: "黄铜矿"
 			x: 4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
-			description: ["A pure, very rich Tin vein - excellent for early game. You'll be over the moon to find one of these in the &6Steam Age&r."]
+			description: ["纯净且富集的锡矿脉——游戏前期极品.在&e蒸汽时代&r发现此矿脉会令人欣喜若狂."]
 			icon: "gtceu:cassiterite_ore"
 			id: "3B379794A3030C73"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest3B379794A3030C73.subtitle}"
+			subtitle: "锡元素第一来源"
 			tasks: [
 				{
 					id: "46C302CBE74092FC"
@@ -247,21 +249,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest3B379794A3030C73.title}"
+			title: "锡石"
 			x: 5.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest41616C31D9C08648.description1}"
+				"若未发现纯锡矿脉,这是不错的替代选择."
 				""
-				"{ftbquests.chapter.ore_generation.quest41616C31D9C08648.description2}"
+				"其他矿石仅适合作为装饰品."
 			]
 			icon: "gtceu:cassiterite_sand_ore"
 			id: "41616C31D9C08648"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest41616C31D9C08648.subtitle}"
+			subtitle: "来源 锡"
 			tasks: [
 				{
 					id: "281CC5BB43AB6FBC"
@@ -284,45 +286,47 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest41616C31D9C08648.title}"
+			title: "&a锡石矿砂&f"
 			x: 5.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest1E27C654E2F6FFF2.description1}"
+				"作为一种矿石,煤炭几乎不值得大规模加工,因为将其转化为可用燃料需要太多额外步骤.不过随身备一些总没错."
 				""
-				"{ftbquests.chapter.ore_generation.quest1E27C654E2F6FFF2.description2}"
+				"只需放入熔炉处理即可."
 			]
 			icon: "minecraft:coal_ore"
 			id: "1E27C654E2F6FFF2"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest1E27C654E2F6FFF2.subtitle}"
-			tasks: [{
-				id: "5FC26FB906B6F0A2"
-				item: "minecraft:coal"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ore_generation.quest1E27C654E2F6FFF2.title}"
+			subtitle: "污染源"
+			tasks: [
+				{
+					id: "5FC26FB906B6F0A2"
+					item: "minecraft:coal"
+					type: "item"
+				}
+			]
+			title: "煤炭"
 			x: 5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest1B45DB5C85B68182.description1}"
+				"钻石的唯一来源!"
 				""
-				"{ftbquests.chapter.ore_generation.quest1B45DB5C85B68182.description2}"
+				"钻石工具的耐久度是铁的&e五倍&r.但需要注意:部分工具需要&a钻石板&f,而这需要先解锁&a金属剪切机&f."
 				""
-				"{ftbquests.chapter.ore_generation.quest1B45DB5C85B68182.description3}"
+				"钻石和石墨电解后都能产生大量碳.懂的都懂？"
 				""
-				"{ftbquests.chapter.ore_generation.quest1B45DB5C85B68182.description4}"
+				"&c注意:&r游戏前期避免将钻石粉碎.短时间内无法将宝石粉末还原为完整宝石——即便后期能实现,该过程也缓慢耗时..."
 			]
 			icon: "gtceu:graphite_ore"
 			id: "1B45DB5C85B68182"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest1B45DB5C85B68182.subtitle}"
+			subtitle: "钻石与碳的来源"
 			tasks: [
 				{
 					id: "774FD60E5F9C5225"
@@ -340,21 +344,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest1B45DB5C85B68182.title}"
+			title: "石墨"
 			x: 5.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest5289D5049A236D55.description1}"
+				"获取氯元素的一站式矿源."
 				""
-				"{ftbquests.chapter.ore_generation.quest5289D5049A236D55.description2}"
+				"若需要锂元素,请注意可通过&a鳞云母矿石&f加工获得."
 			]
 			icon: "gtceu:salt_ore"
 			id: "5289D5049A236D55"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest5289D5049A236D55.subtitle}"
+			subtitle: "盐、氯、锂、氟的来源"
 			tasks: [
 				{
 					id: "13B468D35939891B"
@@ -377,21 +381,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest5289D5049A236D55.title}"
+			title: "玩家怒矿"
 			x: 5.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest7C1B5559A03F6E02.description1}"
+				"从中期开始,该矿脉的镁元素产出逐渐凸显价值."
 				""
-				"{ftbquests.chapter.ore_generation.quest7C1B5559A03F6E02.description2}"
+				"橄榄石还有多种用途,可在部分合成配方中替代&a绿宝石&r."
 			]
 			icon: "gtceu:olivine_ore"
 			id: "7C1B5559A03F6E02"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest7C1B5559A03F6E02.subtitle}"
+			subtitle: "镁元素来源"
 			tasks: [
 				{
 					id: "0428A9705DCDEBC2"
@@ -414,21 +418,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest7C1B5559A03F6E02.title}"
+			title: "橄榄石"
 			x: 4.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest178285129CEA9F9F.description1}"
+				"亮闪闪的!仅此而已!"
 				""
-				"{ftbquests.chapter.ore_generation.quest178285129CEA9F9F.description2}"
+				"是啊,你肯定想用它做首饰."
 			]
 			icon: "gtceu:red_garnet_ore"
 			id: "178285129CEA9F9F"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest178285129CEA9F9F.subtitle}"
+			subtitle: "项链来源"
 			tasks: [
 				{
 					id: "50787547A7F0A72E"
@@ -451,23 +455,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest178285129CEA9F9F.title}"
+			title: "石榴石"
 			x: 3.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest70252B72F7728EFD.description1}"
+				"嘿,还有人记得&d林业mod&f吗？"
 				""
-				"{ftbquests.chapter.ore_generation.quest70252B72F7728EFD.description2}"
+				"这是获取磷元素的主要矿脉,但需要经过多道加工程序."
 				""
-				"{ftbquests.chapter.ore_generation.quest70252B72F7728EFD.description3}"
+				"烧绿石最终会变得极具价值,因为它是铌元素的重要来源."
 			]
 			icon: "gtceu:apatite_ore"
 			id: "70252B72F7728EFD"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest70252B72F7728EFD.subtitle}"
+			subtitle: "钙、磷、铌的来源"
 			tasks: [
 				{
 					id: "1091719F41C151CE"
@@ -485,21 +489,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest70252B72F7728EFD.title}"
+			title: "磷灰石"
 			x: 2.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest2E5A71CED4B01657.description1}"
+				"经典的红石矿脉."
 				""
-				"{ftbquests.chapter.ore_generation.quest2E5A71CED4B01657.description2}"
+				"红宝石因其含铬而非常重要.你会很快发现铬永远不嫌多!"
 			]
 			icon: "minecraft:redstone_ore"
 			id: "2E5A71CED4B01657"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest2E5A71CED4B01657.subtitle}"
+			subtitle: "红石、红宝石、铬、汞的来源"
 			tasks: [
 				{
 					id: "2CE255679DBEF5D8"
@@ -517,21 +521,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest2E5A71CED4B01657.title}"
+			title: "红石"
 			x: 1.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest6EFE154D32A2155E.description1}"
+				"在解锁&b中级电压&r的其他电解配方前,两种蓝宝石变体都是铝的主要来源."
 				""
-				"{ftbquests.chapter.ore_generation.quest6EFE154D32A2155E.description2}"
+				"另外两种宝石作用较为普通."
 			]
 			icon: "gtceu:sapphire_ore"
 			id: "6EFE154D32A2155E"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest6EFE154D32A2155E.subtitle}"
+			subtitle: "铝来源"
 			tasks: [
 				{
 					id: "1318A25CD8DF8CC8"
@@ -554,41 +558,43 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest6EFE154D32A2155E.title}"
+			title: "蓝宝石"
 			x: 0.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest7C35B6B0B4CFFEB2.description1}"
+				"&e&a重油&f&r的良好来源,对早期&e柴油&r设备很有用."
 				""
-				"{ftbquests.chapter.ore_generation.quest7C35B6B0B4CFFEB2.description2}"
+				"若不想通过设备处理油砂,可直接用&b离心机&r分离获取&a重油&f."
 			]
 			icon: "gtceu:oilsands_ore"
 			id: "7C35B6B0B4CFFEB2"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest7C35B6B0B4CFFEB2.subtitle}"
-			tasks: [{
-				id: "301C4CD1E47E2D02"
-				item: "gtceu:raw_oilsands"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.ore_generation.quest7C35B6B0B4CFFEB2.title}"
+			subtitle: "美国梦之源"
+			tasks: [
+				{
+					id: "301C4CD1E47E2D02"
+					item: "gtceu:raw_oilsands"
+					type: "item"
+				}
+			]
+			title: "油砂"
 			x: -0.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest676667089653641C.description1}"
+				"纯属玩梗矿脉.字面意思就是润滑剂矿脉."
 				""
-				"{ftbquests.chapter.ore_generation.quest676667089653641C.description2}"
+				"话虽如此,润滑剂始终对&e&a金属剪切机&f&r很有用,能保持工厂平稳运行."
 			]
 			icon: "gtceu:soapstone_ore"
 			id: "676667089653641C"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest676667089653641C.subtitle}"
+			subtitle: "润滑剂来源"
 			tasks: [
 				{
 					id: "4E280784AE8DC125"
@@ -611,21 +617,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest676667089653641C.title}"
+			title: "皂石"
 			x: -1.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest39A58AFE2E0C13EB.description1}"
+				"是否知道天青石和方钠石可替代&9青金石&r用于附魔？"
 				""
-				"{ftbquests.chapter.ore_generation.quest39A58AFE2E0C13EB.description2}"
+				"方钠石是此处最有价值的矿石,因在&b中级电压&r阶段拥有实用的电解配方."
 			]
 			icon: "gtceu:lapis_ore"
 			id: "39A58AFE2E0C13EB"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest39A58AFE2E0C13EB.subtitle}"
+			subtitle: "&a青金岩&f、铝、钠、氯的来源"
 			tasks: [
 				{
 					id: "3E903B26B6E0D98E"
@@ -648,21 +654,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest39A58AFE2E0C13EB.title}"
+			title: "青金石"
 			x: -1.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest2C75A50B17AA9AF1.description1}"
+				"软锰矿是多数玩家在此的主要目标.它可直接冶炼成锰,而你将需要大量锰来制造&e高压&r设备."
 				""
-				"{ftbquests.chapter.ore_generation.quest2C75A50B17AA9AF1.description2}"
+				"钽铁矿因其副产品铌以及制作&bSMD元件&r时的实用性,最终会变得极其珍贵."
 			]
 			icon: "gtceu:pyrolusite_ore"
 			id: "2C75A50B17AA9AF1"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest2C75A50B17AA9AF1.subtitle}"
+			subtitle: "锰的来源"
 			tasks: [
 				{
 					id: "10FC904696261AF3"
@@ -685,17 +691,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest2C75A50B17AA9AF1.title}"
+			title: "软锰矿"
 			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
-			description: ["The most consistent source of Lead and Silver."]
+			description: ["最稳定的铅和银来源."]
 			icon: "gtceu:galena_ore"
 			id: "14587AE142D84E12"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest14587AE142D84E12.subtitle}"
+			subtitle: "铅、银的来源"
 			tasks: [
 				{
 					id: "4E3A072619DD0ADD"
@@ -713,21 +719,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest14587AE142D84E12.title}"
+			title: "方铅矿"
 			x: -1.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest38C955F6CBDD95BD.description1}"
+				"唯一可靠的镍来源."
 				""
-				"{ftbquests.chapter.ore_generation.quest38C955F6CBDD95BD.description2}"
+				"钴矿还能制作相当实用的早期物品管道!"
 			]
 			icon: "gtceu:nickel_ore"
 			id: "38C955F6CBDD95BD"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest38C955F6CBDD95BD.subtitle}"
+			subtitle: "镍、钴的来源"
 			tasks: [
 				{
 					id: "2B48BE1948B21FA3"
@@ -750,23 +756,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest38C955F6CBDD95BD.title}"
+			title: "镍矿"
 			x: -1.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest0B4BA438FE7F3640.description1}"
+				"获取首批钛所需铝土矿的来源."
 				""
-				"{ftbquests.chapter.ore_generation.quest0B4BA438FE7F3640.description2}"
+				"蓝晶石和云母通过电解可分解出有用产物,但存在更优选择,若需副产品不必刻意采集."
 				""
-				"{ftbquests.chapter.ore_generation.quest0B4BA438FE7F3640.description3}"
+				"&8(这条矿脉大概会让GTNH普通玩家感到恼火...)&r"
 			]
 			icon: "gtceu:mica_ore"
 			id: "0B4BA438FE7F3640"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest0B4BA438FE7F3640.subtitle}"
+			subtitle: "铝、氟、钛的来源"
 			tasks: [
 				{
 					id: "7296DE6280CBC6A1"
@@ -789,21 +795,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest0B4BA438FE7F3640.title}"
+			title: "云母"
 			x: -0.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest5295C4AEFA8417F3.description1}"
+				"最差的铁矿脉.前期有帮助,但仅此而已."
 				""
-				"{ftbquests.chapter.ore_generation.quest5295C4AEFA8417F3.description2}"
+				"矿砂矿脉,我们依然爱你!"
 			]
 			icon: "gtceu:granitic_mineral_sand_ore"
 			id: "5295C4AEFA8417F3"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest5295C4AEFA8417F3.subtitle}"
+			subtitle: "&a铁&f的来源"
 			tasks: [
 				{
 					id: "0A9878360139CD46"
@@ -826,21 +832,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest5295C4AEFA8417F3.title}"
+			title: "矿砂"
 			x: 0.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest2171AF09E76A5968.description1}"
+				"&5电动时代&r及后续阶段实际意义上的&a稀土&f矿脉."
 				""
-				"{ftbquests.chapter.ore_generation.quest2171AF09E76A5968.description2}"
+				"&l&3背景故事:&r&o该矿脉曾长期存在错误——其实从未含任何独居石,但多月以来无人察觉(也无人提出!).你发现了吗？"
 			]
 			icon: "gtceu:netherrack_bastnasite_ore"
 			id: "2171AF09E76A5968"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest2171AF09E76A5968.subtitle}"
+			subtitle: "&a稀土&f、钕、氟的来源"
 			tasks: [
 				{
 					id: "7628A17F2E48C5E7"
@@ -858,17 +864,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest2171AF09E76A5968.title}"
+			title: "氟碳铈矿"
 			x: 7.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
-			description: ["Emerald is the useful ore here. It's used in small quantities in &bMV&r, and is a part of the Crystal process for Crystal and Wetware circuits much later on."]
+			description: ["绿宝石是这里的实用矿物.&b中压时代&r需少量使用,后期还将用于晶体处理器和湿件电路的晶体制造流程."]
 			icon: "gtceu:netherrack_emerald_ore"
 			id: "594D84730913698A"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest594D84730913698A.subtitle}"
+			subtitle: "铍、绿宝石、钍的来源"
 			tasks: [
 				{
 					id: "14C64BEBBC783475"
@@ -886,23 +892,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest594D84730913698A.title}"
+			title: "绿宝石"
 			x: 8.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest63CB3C9F5A61E0C4.description1}"
+				"此矿脉极为罕见!恭喜你偶然发现一处."
 				""
-				"{ftbquests.chapter.ore_generation.quest63CB3C9F5A61E0C4.description2}"
+				"&8(至少...本该很稀有.)&r"
 				""
-				"{ftbquests.chapter.ore_generation.quest63CB3C9F5A61E0C4.description3}"
+				"可将本矿脉内容视为“&7&o主要是钼,附带其他物质&r“.没错,钼才是重点."
 			]
 			icon: "gtceu:netherrack_molybdenum_ore"
 			id: "63CB3C9F5A61E0C4"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest63CB3C9F5A61E0C4.subtitle}"
+			subtitle: "钼的来源"
 			tasks: [
 				{
 					id: "382A7CC243D7042E"
@@ -925,21 +931,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest63CB3C9F5A61E0C4.title}"
+			title: "钼矿"
 			x: 9.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest517D50E748A129AB.description1}"
+				"通往&b&d应用能源2&f&r的门票深藏于&a赛特斯石英&f矿脉中."
 				""
-				"{ftbquests.chapter.ore_generation.quest517D50E748A129AB.description2}"
+				"此外请注意,重晶石电解后可获钡,这是制造高阶超导体的必备材料."
 			]
 			icon: "gtceu:netherrack_certus_quartz_ore"
 			id: "517D50E748A129AB"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest517D50E748A129AB.subtitle}"
+			subtitle: "应用能源2、钡的来源"
 			tasks: [
 				{
 					id: "753C65ED1CA407C7"
@@ -957,23 +963,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest517D50E748A129AB.title}"
+			title: "&a赛特斯石英&f"
 			x: 10.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest1F572D638AAACA21.description1}"
+				"电气石对&e高压时代&r发展至关重要.可离心得到金银合金(金与银的来源)与红石."
 				""
-				"{ftbquests.chapter.ore_generation.quest1F572D638AAACA21.description2}"
-				"{ftbquests.chapter.ore_generation.quest1F572D638AAACA21.description3}"
-				"{ftbquests.chapter.ore_generation.quest1F572D638AAACA21.description4}"
+				"硝石用于某些反应...此处另外两种矿石较为普通."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o\"镍石\"这个词耳熟吗？它堪称电气石的曾祖父级矿物,源自红石力量模组."
 			]
 			icon: "gtceu:netherrack_saltpeter_ore"
 			id: "1F572D638AAACA21"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest1F572D638AAACA21.subtitle}"
+			subtitle: "钾、金银合金的来源"
 			tasks: [
 				{
 					id: "5483A769AEEA0FA0"
@@ -996,21 +1002,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest1F572D638AAACA21.title}"
+			title: "硝石"
 			x: 11.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest37EC97FB0FC6C56D.description1}"
+				"两种黄玉矿都是理想的电解材料."
 				""
-				"{ftbquests.chapter.ore_generation.quest37EC97FB0FC6C56D.description2}"
+				"这使该矿脉成为最佳氟来源之一."
 			]
 			icon: "gtceu:netherrack_topaz_ore"
 			id: "37EC97FB0FC6C56D"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest37EC97FB0FC6C56D.subtitle}"
+			subtitle: "铜、氟的来源"
 			tasks: [
 				{
 					id: "29303BBBF186EA1B"
@@ -1033,21 +1039,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest37EC97FB0FC6C56D.title}"
+			title: "黄玉"
 			x: 10.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest45B62B35180593EA.description1}"
+				"几乎是纯铜矿脉.该死的辉锑矿,破坏了我们的纯度!"
 				""
-				"{ftbquests.chapter.ore_generation.quest45B62B35180593EA.description2}"
+				"不过你很难抱怨它的存在——辉锑矿可直接熔炼成锑,这在&7低压&r阶段制造电池时会用到."
 			]
 			icon: "gtceu:netherrack_tetrahedrite_ore"
 			id: "45B62B35180593EA"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest45B62B35180593EA.subtitle}"
+			subtitle: "铜、锑来源"
 			tasks: [
 				{
 					id: "65BB3345F5602A55"
@@ -1065,21 +1071,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest45B62B35180593EA.title}"
+			title: "黄铜矿"
 			x: 9.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest0AFADD21454D968E.description1}"
+				"不要小看这下界褐铁矿变种."
 				""
-				"{ftbquests.chapter.ore_generation.quest0AFADD21454D968E.description2}"
+				"得益于下界矿石&a双倍产出&r的特性,这是&a铁&f和黄金的绝佳来源."
 			]
 			icon: "gtceu:netherrack_yellow_limonite_ore"
 			id: "0AFADD21454D968E"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest0AFADD21454D968E.subtitle}"
+			subtitle: "&a铁&f、黄金来源"
 			tasks: [
 				{
 					id: "0C549A9F07E02FA6"
@@ -1097,21 +1103,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest0AFADD21454D968E.title}"
+			title: "褐铁矿"
 			x: 8.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest030E299F75640977.description1}"
+				"你的首次下界探险应该寻找&e硫磺&r——它就在这矿脉中!注意,该矿脉通常生成于Y轴10至30层,记得携带&a火焰保护&f药水!"
 				""
-				"{ftbquests.chapter.ore_generation.quest030E299F75640977.description2}"
+				"闪锌矿极具价值,其矿石处理可得镓,也可直接熔炼成锌."
 			]
 			icon: "gtceu:netherrack_sulfur_ore"
 			id: "030E299F75640977"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest030E299F75640977.subtitle}"
+			subtitle: "硫磺、铁、锌来源"
 			tasks: [
 				{
 					id: "022CC6EDF95C7696"
@@ -1129,21 +1135,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest030E299F75640977.title}"
+			title: "硫磺矿"
 			x: 7.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["7CAD6FF241A827F7"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest0269FCDE2628904A.description1}"
+				"经典的&a下界石英&f矿脉."
 				""
-				"{ftbquests.chapter.ore_generation.quest0269FCDE2628904A.description2}"
+				"硅并不难获取,但石英岩也是个不错的来源."
 			]
 			icon: "gtceu:netherrack_nether_quartz_ore"
 			id: "0269FCDE2628904A"
 			size: 0.9d
-			subtitle: "{ftbquests.chapter.ore_generation.quest0269FCDE2628904A.subtitle}"
+			subtitle: "&a下界石英&f、硅来源"
 			tasks: [
 				{
 					id: "3ABB4181FEA31D22"
@@ -1156,20 +1162,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest0269FCDE2628904A.title}"
+			title: "石英矿"
 			x: 7.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest4FC668EF2BF294ED.description1}"
+				"抵达此处时你可能已拥有大量&a铁&f,但别忽视此矿脉的实用性."
 				""
-				"{ftbquests.chapter.ore_generation.quest4FC668EF2BF294ED.description2}"
+				"铬铁矿是铬的绝佳来源,而钒在游戏后期需求量极大."
 			]
 			icon: "gtceu:endstone_magnetite_ore"
 			id: "4FC668EF2BF294ED"
-			subtitle: "{ftbquests.chapter.ore_generation.quest4FC668EF2BF294ED.subtitle}"
+			subtitle: "&a铁&f、钒、金、铬来源"
 			tasks: [
 				{
 					id: "221E6D04EBEC9DDE"
@@ -1192,22 +1198,22 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest4FC668EF2BF294ED.title}"
+			title: "磁铁矿"
 			x: 8.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest143B1AE1F3CF53EF.description1}"
+				"资深科幻迷可能从&d《星际之门》&r系列认得&2Naquadah&r!你会发现这是&d卢瓦级&r之后的核心材料."
 				""
-				"{ftbquests.chapter.ore_generation.quest143B1AE1F3CF53EF.description2}"
+				"Naquadah可在&d卢瓦级&r处理获得钛、Trinium、钡、镓、铟、磷、&a富集硅岩&f及Naquadria,用途广泛!"
 				""
-				"{ftbquests.chapter.ore_generation.quest143B1AE1F3CF53EF.description3}"
+				"另一种矿石&c钚&r用于启动氡循环,&9中压&r阶段必需."
 			]
 			icon: "gtceu:endstone_naquadah_ore"
 			id: "143B1AE1F3CF53EF"
-			subtitle: "{ftbquests.chapter.ore_generation.quest143B1AE1F3CF53EF.subtitle}"
+			subtitle: "大量资源来源"
 			tasks: [
 				{
 					id: "310ED3BE9C7FD9E2"
@@ -1220,22 +1226,22 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest143B1AE1F3CF53EF.title}"
+			title: "Naquadah矿"
 			x: 10.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest4D76C334B251EB3A.description1}"
+				"铂在&5高压&r阶段开始使用."
 				""
-				"{ftbquests.chapter.ore_generation.quest4D76C334B251EB3A.description2}"
-				"{ftbquests.chapter.ore_generation.quest4D76C334B251EB3A.description3}"
-				"{ftbquests.chapter.ore_generation.quest4D76C334B251EB3A.description4}"
+				"&a铂系矿泥渣&r处理链是&1中压&r阶段必备,而谢尔顿矿是启动处理的最佳矿石."
+				"{@pagebreak}符"
+				"&l&3考据:&r&o 现实中谢尔顿矿真名为Cooperite.GregoriusT觉得引用谢尔顿·库珀“哈哈,有趣“很逗趣,尽管&l并非&r&o实际命名由来!我们延续了这个“哈哈,有趣“的玩笑."
 			]
 			icon: "gtceu:endstone_cooperite_ore"
 			id: "4D76C334B251EB3A"
-			subtitle: "{ftbquests.chapter.ore_generation.quest4D76C334B251EB3A.subtitle}"
+			subtitle: "又是大量资源来源"
 			tasks: [
 				{
 					id: "4547E85950CB15E4"
@@ -1258,20 +1264,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest4D76C334B251EB3A.title}"
+			title: "谢尔顿矿"
 			x: 8.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest5AA98D1298FD90BA.description1}"
+				"唯一&9钨&r来源!虽然理论上可通过粉碎&e末地石&r获取钨酸盐,但产量极低.建议直接处理这些矿石!"
 				""
-				"{ftbquests.chapter.ore_generation.quest5AA98D1298FD90BA.description2}"
+				"重要矿脉,钨在&9中压&r及之后阶段消耗量巨大."
 			]
 			icon: "gtceu:endstone_scheelite_ore"
 			id: "5AA98D1298FD90BA"
-			subtitle: "{ftbquests.chapter.ore_generation.quest5AA98D1298FD90BA.subtitle}"
+			subtitle: "钨、锂来源"
 			tasks: [
 				{
 					id: "30446661E519BD77"
@@ -1289,20 +1295,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest5AA98D1298FD90BA.title}"
+			title: "白钨矿"
 			x: 10.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest40B40DF0D1295A90.description1}"
+				"心智健全者采集&b铝&r和&d钛&r的&a首选矿脉&f."
 				""
-				"{ftbquests.chapter.ore_generation.quest40B40DF0D1295A90.description2}"
+				"抛弃那些云母矿脉——铝土矿才是未来!"
 			]
 			icon: "gtceu:endstone_bauxite_ore"
 			id: "40B40DF0D1295A90"
-			subtitle: "{ftbquests.chapter.ore_generation.quest40B40DF0D1295A90.subtitle}"
+			subtitle: "铝、钛、镓来源"
 			tasks: [
 				{
 					id: "165615C81FEAE3C3"
@@ -1320,22 +1326,22 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest40B40DF0D1295A90.title}"
+			title: "铝土矿"
 			x: 7.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["41D32C5178760F47"]
 			description: [
-				"{ftbquests.chapter.ore_generation.quest5ED483A04095EFA3.description1}"
+				"铀的&a唯一&f矿脉!"
 				""
-				"{ftbquests.chapter.ore_generation.quest5ED483A04095EFA3.description2}"
+				"铀在&5高压&r及之后阶段有些次要用途."
 				""
-				"{ftbquests.chapter.ore_generation.quest5ED483A04095EFA3.description3}"
+				"可知&a核反应堆&f未来可能加入&bGTCEu&r？"
 			]
 			icon: "gtceu:endstone_pitchblende_ore"
 			id: "5ED483A04095EFA3"
-			subtitle: "{ftbquests.chapter.ore_generation.quest5ED483A04095EFA3.subtitle}"
+			subtitle: "铀、钍、铅来源"
 			tasks: [
 				{
 					id: "6174FF347A1D09AE"
@@ -1348,11 +1354,11 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.ore_generation.quest5ED483A04095EFA3.title}"
+			title: "沥青铀矿"
 			x: 11.0d
 			y: 3.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.ore_generation.subtitle0}"]
-	title: "{ftbquests.chapter.ore_generation.title}"
+	subtitle: ["丰富矿藏及其他资源"]
+	title: "矿物生成"
 }

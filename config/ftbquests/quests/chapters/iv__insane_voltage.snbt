@@ -5,62 +5,68 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:iv_electric_motor"
 	id: "32EF20533F323E02"
-	order_index: 6
-	quest_links: [{
-		id: "050247AED8C803F9"
-		linked_quest: "30A6EDDF25A5E5F8"
-		shape: "gear"
-		size: 1.2d
-		x: 0.375d
-		y: 4.875d
-	}]
+	order_index: 5
+	quest_links: [
+		{
+			id: "050247AED8C803F9"
+			linked_quest: "30A6EDDF25A5E5F8"
+			shape: "gear"
+			size: 1.2d
+			x: 0.375d
+			y: 4.875d
+		}
+	]
 	quests: [
 		{
 			dependencies: [
 				"300348B1238BCB9A"
 				"7A1E3C3A2D699C5B"
 			]
-			description: ["This Superconductor will be required for progression during &dLuV&r... when you delve deeper into &bResearch&r."]
+			description: ["这种超导体将在&dLuV阶&r的进程中被需要……当你深入&b研究&r时."]
 			icon: "gtceu:samarium_iron_arsenic_oxide_double_wire"
 			id: "52D952ADBEB67454"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest52D952ADBEB67454.subtitle}"
-			tasks: [{
-				icon: "gtceu:samarium_iron_arsenic_oxide_single_wire"
-				id: "3789CEDA4AEEBD91"
-				item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest52D952ADBEB67454.title}"
+			subtitle: "所以你是说一个常春藤传导了这个超级？"
+			tasks: [
+				{
+					icon: "gtceu:samarium_iron_arsenic_oxide_single_wire"
+					id: "3789CEDA4AEEBD91"
+					item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
+					type: "item"
+				}
+			]
+			title: "&aIV超导体&f"
 			x: -0.75d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7FA0ACB7F161F378"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description1}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description2}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description3}"
+				"如果你已经制作并离心了&a&a稀土&f&r,那太好了!如果还没有,你可以从各种矿石中作为&9副产品&r获得,或者通过离心&d独居石&r获得."
+				"{@pagebreak}"
+				"你可以获得的元素有:"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description4}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description5}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description6}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description7}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description8}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description9}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description10}"
-				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description11}"
+				"&9-&r &a镧&r用于&3聚变&r&r——你最终会需要很多!"
+				"&9-&r &a钇&r用于&d钇钡铜氧化物&r(YBCO),一种&3UV阶&r的线材材料."
+				"&9-&r &a铈&r不是特别有用."
+				"&9-&r &a钐&r用于&d&aIV超导体&f&r和&d磁棒&r,用于&dLuV阶&r及以上的马达."
+				"&9-&r &a钕&r通常制造最强的磁铁,但游戏平衡……你懂的."
+				"&9-&r &a镉&r不是特别有用."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o &a稀土&f元素(REE)包含的金属远不止这些,但我们已经在尽力给它们找用途了."
 			]
 			id: "300348B1238BCB9A"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.subtitle}"
-			tasks: [{
-				count: 64L
-				id: "0BC7D23CA52A619D"
-				item: "gtceu:rare_earth_dust"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.title}"
+			subtitle: "它的名字里有\"稀有”……哦不."
+			tasks: [
+				{
+					count: 64L
+					id: "0BC7D23CA52A619D"
+					item: "gtceu:rare_earth_dust"
+					type: "item"
+				}
+			]
+			title: "&a稀土&f"
 			x: -1.875d
 			y: 1.5d
 		}
@@ -71,69 +77,78 @@
 				"069FD86133D7D582"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.description1}"
+				"&a高速钢-G线圈&r可将&a热容&f提升至&d5,400K&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.description2}"
+				"诱人的&e线圈加成&r足以激励玩家尽早制作,因为直到&dLuV阶段&r它们才会成为必需品."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.description3}"
+				"至此您可能会发现,整个基地仅需一台&3&a电力高炉&f&r即可运转,只需提供您能承受的最高电压."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.description4}"
+				"&e熔融金属&r的冷却时间将开始延长——与电力高炉不同,&3&a真空冷冻机&f&r无法实现完美超频.因此建议配置双联&7(或四联)&r&3&a真空冷冻机&f&r."
 			]
 			icon: "gtceu:hssg_coil_block"
 			id: "7A1E3C3A2D699C5B"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.subtitle}"
-			tasks: [{
-				icon: { Count: 16, id: "gtceu:hssg_coil_block" }
-				id: "544762609C1B9613"
-				item: "gtceu:hssg_coil_block"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.title}"
+			subtitle: "逼近太阳温度"
+			tasks: [
+				{
+					icon: {
+						Count: 16
+						id: "gtceu:hssg_coil_block"
+					}
+					id: "544762609C1B9613"
+					item: "gtceu:hssg_coil_block"
+					type: "item"
+				}
+			]
+			title: "高速钢-G线圈"
 			x: 0.375d
 			y: 1.5d
 		}
 		{
 			dependencies: ["069FD86133D7D582"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.description1}"
+				"&7高速钢&r(HSS)是耐磨损的钢合金,常用于铁轨制造."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.description2}"
+				"若您曾因故制作过&d超强合金&r,则已获取&a钼&r.否则需在下界矿脉中寻找."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.description3}"
+				"请确保储备足量&9钨钢&r——高速钢合金(此处指&a高速钢-G&r)的制备需要大量消耗该材料."
 			]
 			hide_dependency_lines: true
 			id: "1776FA1F3255731E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.subtitle}"
-			tasks: [{
-				id: "7F7D77145AC8197E"
-				item: "gtceu:hssg_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.title}"
+			subtitle: "这次我们要全速前进!"
+			tasks: [
+				{
+					id: "7F7D77145AC8197E"
+					item: "gtceu:hssg_ingot"
+					type: "item"
+				}
+			]
+			title: "高速钢-G"
 			x: 1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7A1E3C3A2D699C5B"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.description1}"
+				"严格来说现实中的高速钢-E不含锰,但某些高速钢变体含锰元素...算得上殊途同归吧？"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.description2}"
+				"&a高速钢-E&r在科技进程中有特定用途."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.description3}"
+				"该合金制造的工具兼具卓越耐久与伤害属性.作为&3大型涡轮机&r的&d转子&r时,其功率系数为当前最佳(直至中子ium阶段!),虽效率略逊于&a高速钢-S&r."
 			]
 			id: "1783D89CE81C8E2E"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.subtitle}"
-			tasks: [{
-				id: "096C0C576B0F3358"
-				item: "gtceu:hsse_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.title}"
+			subtitle: "或许该升级涡轮机了？"
+			tasks: [
+				{
+					id: "096C0C576B0F3358"
+					item: "gtceu:hsse_ingot"
+					type: "item"
+				}
+			]
+			title: "高速钢-E"
 			x: 0.375d
 			y: 2.625d
 		}
@@ -144,34 +159,36 @@
 				"58BBD540D7D4FF01"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description1}"
+				"运行&3极端内燃机&r时务必进行增压!&m&7否则有何意义？&r"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description2}"
+				"配置&34A IV级动力舱&r作为输出端,并设置&3&a真空冷冻机&f&r提供&a&a液氧&f&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description3}"
+				"此时即可获得相当于1&dLuV&r安培的能量输出,同时燃料燃烧效率达&e200%&r!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description4}"
+				"切记持续供应少量&a润滑液&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description5}"
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description6}"
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description7}"
+				"与大型涡轮机不同,&3极端内燃机&r具备防溢出机制.无法输出的能量将使多方块结构暂时暂停运作."
+				"{@pagebreak}"
+				"&l&3秘闻:&r&o极端内燃机源自GTNH模组...但初版设计存在缺陷.虽然工具提示数据与当前版本相似——至此还算正常."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description8}"
+				"&o问题出在数值核算时.玩家最终发现需要同时运行约16台&e高压&f&a真空冷冻机&f才能满足&a液氧&f需求..."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description9}"
+				"&o&a且&f唯一可接受的燃料是&a高辛烷汽油&f——虽然宣称增压后燃烧效率达300%,但界面显示存在欺诈,实际&a效率&f始终为100%."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description10}"
+				"&oGTNH团队最终决定对极端内燃机及其他能源装置进行重构...谢天谢地!"
 			]
 			id: "466AC4DD902115EF"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.subtitle}"
-			tasks: [{
-				id: "7F0E2A5AD0E2FC25"
-				item: "gtceu:extreme_combustion_engine"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.title}"
+			subtitle: "终极内燃发电机!"
+			tasks: [
+				{
+					id: "7F0E2A5AD0E2FC25"
+					item: "gtceu:extreme_combustion_engine"
+					type: "item"
+				}
+			]
+			title: "极端内燃机"
 			x: 1.5d
 			y: 2.625d
 		}
@@ -184,18 +201,19 @@
 				"528CE69DA4358B2E"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest7CFC112B8F460549.description1}"
+				"您已具备自主生产&a聚苯并咪唑&r的全部条件!祝您好运——这需要14道制备工序,绝非易事."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest7CFC112B8F460549.description2}"
+				"&a聚苯并咪唑&r虽是&dLuV&r进阶至&cZPM&r阶段的必需品,但提前攻克可解锁&e高级贴片元件&r."
 			]
 			icon: "gtceu:polybenzimidazole_plate"
 			id: "7CFC112B8F460549"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest7CFC112B8F460549.subtitle}"
+			subtitle: "GTCEu最复杂的高分子材料!"
 			tasks: [
 				{
 					id: "7C5D37940A0C8409"
 					item: "gtceu:polybenzimidazole_ingot"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -204,7 +222,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest7CFC112B8F460549.title}"
+			title: "聚苯并咪唑"
 			x: -0.75d
 			y: 3.75d
 		}
@@ -214,11 +232,11 @@
 				"7CFC112B8F460549"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest195E5BFDE4C5A0DE.description1}"
+				"想要更优质的A贴片元件R？这些元件能以更廉价&7-&8且更快速&7-R的方式解锁电路配方？我们倾情奉上!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest195E5BFDE4C5A0DE.description2}"
+				"制作需要您尚未制备的合金材料,其中多数将广泛应用于D卢瓦级R及以上阶段.立即行动吧!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest195E5BFDE4C5A0DE.description3}"
+				"虽然当前并非必需,但A先进贴片元件R将成为D晶体R电路系列的硬性要求.请注意:在当前电路中使用可使配方耗时&2减半R."
 			]
 			icon: "gtceu:advanced_smd_transistor"
 			id: "195E5BFDE4C5A0DE"
@@ -250,7 +268,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest195E5BFDE4C5A0DE.title}"
+			title: "先进贴片元件"
 			x: -0.75d
 			y: 2.625d
 		}
@@ -260,13 +278,13 @@
 				"30A6EDDF25A5E5F8"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description1}"
+				"已掌握钨钢技术？需要&a纳米电脑主机&f？是时候制造机械设备了."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description2}"
+				"&3IV组装机&r是解锁&3IV能源舱与动态舱&r以及&3HSS-G线圈&r的必要设备."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description3}"
-				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description4}"
-				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description5}"
+				"将其升级为&2GCYM&r版本是不错的选择."
+				"{@pagebreak}"
+				"&l&3背景知识:&r&o您可知GTCE原生内容仅更新至&5EV&r&o阶,后续直至&3UV&r阶的内容均由第三方模组Shadows of Greg提供？"
 			]
 			icon: "gtceu:iv_assembler"
 			id: "5CA86A333670A55C"
@@ -280,10 +298,11 @@
 				{
 					id: "5E8D6AA09A113AE0"
 					item: "gtceu:large_assembler"
+					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.title}"
+			title: "IV组装机"
 			x: 0.375d
 			y: 3.75d
 		}
@@ -293,55 +312,58 @@
 				"14D277A164202FF8"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.description1}"
+				"A&a大型钨钢锅炉FR是终极A蒸汽锅炉F.其效率超越前代机型,且蒸汽产量更高."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.description2}"
+				"这玩意儿是L colossal noob trapR(巨型新手陷阱),您应当&4绝对R选用其他方案.C切勿R制造此物,它毫无实用价值,连作为梗图都不合格!蒸汽技术&4无法R突破此阶段,该锅炉很可能在未来&3被移除R."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.description3}"
+				"E注意R:点击完成勾选可跳过此任务&7(不影响完成进度)R,无需实际合成."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.description4}"
+				"L&3考据:RO 格雷科技5u里也没人造这玩意儿...说实话,几乎让人为这可怜锅炉感到惋惜."
 			]
 			icon: "gtceu:tungstensteel_large_boiler"
 			id: "328CFD483C26EA44"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.subtitle}"
+			subtitle: "祝你好运填燃料吧(笑)"
 			tasks: [
 				{
 					id: "4C89839747EDFFF5"
 					item: "gtceu:tungstensteel_large_boiler"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4F863C04757556B2"
-					title: "{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.task.4F863C04757556B2.title}"
+					title: "没错,确实合成出来了"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.title}"
+			title: "最差燃烧方案"
 			x: -0.75d
 			y: 4.875d
 		}
 		{
 			dependencies: ["528CE69DA4358B2E"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.description1}"
+				"A层压玻璃R是适用于&9四级R及以上阶段的闪亮新型玻璃,需在&3A冲压机床FR中使用陌生聚合物:D聚乙烯醇缩丁醛R制成."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.description2}"
+				"若已拥有处理裂化燃料的&3A蒸馏塔FR且实现环氧树脂自动化,所有生产步骤皆无显著难度."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.description3}"
+				"若尚未完成这两项准备,您知道该怎么做!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.description4}"
+				"&9注:RDA聚乙酸乙烯酯FR(玻璃必备材料)亦可制作A粘合剂R!"
 			]
 			id: "12B4423F055BFBF5"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.subtitle}"
-			tasks: [{
-				id: "2358A62B80B56238"
-				item: "gtceu:laminated_glass"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.title}"
+			subtitle: "又一种聚合物自A黑暗F中崛起"
+			tasks: [
+				{
+					id: "2358A62B80B56238"
+					item: "gtceu:laminated_glass"
+					type: "item"
+				}
+			]
+			title: "层压玻璃"
 			x: 2.625d
 			y: 4.875d
 		}
@@ -351,45 +373,49 @@
 				"216E5A3574AC08BF"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.description1}"
+				"高速钢-S是另一种M完全虚构R&7高速钢R,由铱与锇合金化制成."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.description2}"
+				"A高速钢-SR是制作D卢瓦级马达R的必要材料."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.description3}"
+				"该合金具有极佳A挖掘速度F,作为D转子R应用于&3大型涡轮机R时可转化为超凡能效R."
 			]
 			id: "3A7491323AC5C70C"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.subtitle}"
-			tasks: [{
-				id: "578E3442D589DAE8"
-				item: "gtceu:hsss_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.title}"
+			subtitle: "本系列纯属虚构"
+			tasks: [
+				{
+					id: "578E3442D589DAE8"
+					item: "gtceu:hsss_ingot"
+					type: "item"
+				}
+			]
+			title: "高速钢-S"
 			x: 2.625d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7D15EEE81B1A3100"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description1}"
+				"获取A铟R需大量DA硫酸FR及两种矿石:方铅矿与闪锌矿."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description2}"
+				"DA硫酸FR可通过&3A大型化学反应釜FR规模化生产,或作为&9A铂系矿泥渣FR处理过程的副产品获取."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description3}"
-				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description4}"
-				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description5}"
+				"在D卢瓦级R阶段,强制进行的&9娜夸达链R反应也会产出A铟R,意味着当前制备装置的使用寿命有限."
+				"{@pagebreak}"
+				"L&3考据:RO 此生产链承袭自D格雷科技F5版本,但旧版仅产出微量粉末,可谓...别具趣味."
 			]
 			icon: "gtceu:indium_dust"
 			id: "0F192D1F44B9B599"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.subtitle}"
-			tasks: [{
-				id: "1BC2B3ED9FD76DA2"
-				item: "gtceu:indium_dust"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.title}"
+			subtitle: "超导体至尊"
+			tasks: [
+				{
+					id: "1BC2B3ED9FD76DA2"
+					item: "gtceu:indium_dust"
+					type: "item"
+				}
+			]
+			title: "铟"
 			x: 2.625d
 			y: 2.625d
 		}
@@ -401,37 +427,39 @@
 				"528CE69DA4358B2E"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest0425179329ED1B72.description1}"
+				"&aHPIC&r解锁&3IV级能量输入仓&r和&3动态能源仓&r...你应该懂的!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0425179329ED1B72.description2}"
+				"制作&3IV级&a化学反应器&f&r是&d可选项&r.如果需要,可用&3&a大型化学反应釜&f&r来合成."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0425179329ED1B72.description3}"
+				"若想通过模式实现LCR自动化,请返回&aP2P通道&r任务&a了解更多信息&f."
 			]
 			id: "0425179329ED1B72"
 			size: 0.75d
-			tasks: [{
-				id: "3550E45267942DE8"
-				item: "gtceu:hpic_chip"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest0425179329ED1B72.title}"
+			tasks: [
+				{
+					id: "3550E45267942DE8"
+					item: "gtceu:hpic_chip"
+					type: "item"
+				}
+			]
+			title: "高&a功率电路&f"
 			x: 2.625d
 			y: 3.75d
 		}
 		{
 			dependencies: ["30A6EDDF25A5E5F8"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.description1}"
+				"&9IV级&r组件——幸运的是——在复杂度上并未大幅提升."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.description2}"
+				"但制作这些组件需要大量&d钨&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.description3}"
+				"&a发射器&r和&a传感器&r自成体系,它们需要&d&a下界之星&f&r和&d铱&r,这两种材料都有专属任务线."
 			]
 			icon: "gtceu:iv_electric_motor"
 			id: "01AB252C72B565FE"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.subtitle}"
+			subtitle: "...若不同意此观点,很快你会明白的"
 			tasks: [
 				{
 					id: "382B9759383E1AC3"
@@ -469,7 +497,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.title}"
+			title: "\"乐趣”永无止境"
 			x: 0.375d
 			y: 6.0d
 		}
@@ -480,45 +508,47 @@
 				"14D277A164202FF8"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.description1}"
+				"更高效的矿石&a处理&f带来&e强化副产物&r,仅需这台&3粉碎机&r!必备之物."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.description2}"
+				"现在终于可以实现大规模矿石处理自动化了."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.description3}"
-				""
-				"{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.description4}"
+				"下一个任务将正式启动!"
 			]
 			id: "05003665368F5A57"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.subtitle}"
-			tasks: [{
-				id: "4043CFB3C4E0DB90"
-				item: "gtceu:iv_macerator"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.title}"
+			subtitle: "告别矿石匮乏!"
+			tasks: [
+				{
+					id: "4043CFB3C4E0DB90"
+					item: "gtceu:iv_macerator"
+					type: "item"
+				}
+			]
+			title: "粉碎矿石获取更多副产物"
 			x: 1.5d
 			y: 4.875d
 		}
 		{
 			dependencies: ["05003665368F5A57"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.description1}"
+				"欢迎来到自动化时代!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.description2}"
+				"矿石&a处理&f现已触手可及."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.description3}"
+				"&e本任务将在&l技巧与提示&r&e标签页解锁矿石处理权威教程——快去查看详情!&r"
 			]
 			icon: "gtceu:refined_almandine_ore"
 			id: "724FB950CC472BB4"
 			shape: "circle"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.subtitle}"
-			tasks: [{
-				id: "496C00BA0D8F5445"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.title}"
+			subtitle: "我等这一刻好久了!"
+			tasks: [
+				{
+					id: "496C00BA0D8F5445"
+					type: "checkmark"
+				}
+			]
+			title: "配置矿石处理系统"
 			x: 1.5d
 			y: 6.0d
 		}
@@ -532,26 +562,28 @@
 				"6B128610C7D2825D"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description1}"
+				"制作&dLuV级&r组件需要更多工序.你需要建造&3组装线&r才能继续进展."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description2}"
+				"该多方块结构具有&e可变尺寸&r.底部每个&3ULV输入总线&r只能容纳&d单组物品&r,因此不同配方需不同长度."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description3}"
-				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description4}"
-				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description5}"
+				"建议先建造&d10格&r长度入门,或&d14格&r以兼容基础GTCEu所有配方.&e无需担心&r过度建造——过长仍可运行任何配方,但当前外壳可能&4造价不菲&r.&7抉择,&8总是抉择!&r"
+				"{@pagebreak}符"
+				"此处配方需要&a流体&r,建议永久保持&3输入仓&r内装有&d&a焊锡&f&r、&d润滑液&r和&d丁苯橡胶&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description6}"
+				"&e本任务将在&l技巧与提示&r&e标签页解锁组装线与研究的新教程——快去查看详情!&r"
 			]
 			id: "77B7B1EDD19831E0"
 			shape: "gear"
 			size: 1.3d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.subtitle}"
-			tasks: [{
-				id: "1BD34023E42B4E50"
-				item: "gtceu:assembly_line"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.title}"
+			subtitle: "又名\"装配线”"
+			tasks: [
+				{
+					id: "1BD34023E42B4E50"
+					item: "gtceu:assembly_line"
+					type: "item"
+				}
+			]
+			title: "组装线"
 			x: 3.75d
 			y: 4.875d
 		}
@@ -562,18 +594,18 @@
 				"69E384F389B0D07B"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.description1}"
+				"&o&7“2.5亿EU容量的电池？持续放电可维持25分钟.“"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.description2}"
+				"&a&a兰波顿能量球&f&r将成为你能源存储难题的终结开端."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.description3}"
+				"若你的发电不稳定,或因&3大型涡轮机&r特性需缓冲大量能源,这种&a能量存储&f形式堪称完美."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.description4}"
+				"如此强大的能源提升代价不菲.每个&d&a兰波顿能量球&f&r价值&a8个&a兰波顿水晶&f&r."
 			]
 			icon: "gtceu:lapotronic_energy_orb"
 			id: "5B07279B08BF8DDE"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.subtitle}"
+			subtitle: "太惊人了!"
 			tasks: [
 				{
 					id: "3B8E3903EA888A6F"
@@ -583,25 +615,28 @@
 				{
 					id: "529358AADE55D801"
 					item: "gtceu:iv_lapotronic_battery"
+					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.title}"
+			title: "超强电池"
 			x: 7.125d
 			y: 4.875d
 		}
 		{
 			dependencies: ["145F71A817C5996E"]
-			description: ["The &aZPM Mainframe&r is used to make the &3LuV Circuit Assembler&r (of course), but also allows you to step into &3Fusion&r."]
+			description: ["&aZPM主机&r用于制造&3LuV级&a电路组装机&f&r(理所当然),同时让你迈入&3聚变时代&r."]
 			id: "327C3E02CD751453"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest327C3E02CD751453.subtitle}"
-			tasks: [{
-				id: "59901F46ED2C46DF"
-				item: "gtceu:quantum_processor_mainframe"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest327C3E02CD751453.title}"
+			subtitle: "&a零点模块&f(几乎)到手!"
+			tasks: [
+				{
+					id: "59901F46ED2C46DF"
+					item: "gtceu:quantum_processor_mainframe"
+					type: "item"
+				}
+			]
+			title: "首批ZPM电路!"
 			x: 8.25d
 			y: 4.875d
 		}
@@ -611,24 +646,25 @@
 				"216E5A3574AC08BF"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description1}"
+				"&a下界之星&f&r用于制作高阶&d感应器&r、&d发射器&r和&d力场发生器&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description2}"
+				"若需要永久药水效果,也可将其用于&d信标&r.终于有了原版多方块结构!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description3}"
-				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description4}"
-				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description5}"
+				"本整合包中添加了&a下界之星&f粉尘的合成配方.&7(没错——未经任何调整,GTCEu默认你需要反复刷凋灵.)"
+				"§r"
+				"关于合成所需的&a下界空气&r:可随时查看&9液态下界空气&r的分馏说明,回报相当丰厚."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description6}"
+				"&o&8是否知道原版&a下界之星&f的纹理并未居中？:)"
 			]
 			icon: "minecraft:nether_star"
 			id: "6B128610C7D2825D"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.subtitle}"
+			subtitle: "跳跃吧,超级巨星"
 			tasks: [
 				{
 					id: "71D5FE3076C1F56C"
 					item: "gtceu:nether_star_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -640,11 +676,11 @@
 							value: "forge:gems/nether_star"
 						}
 					}
-					title: "{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.task.08814DD921835365.title}"
+					title: "&a下界之星&f"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.title}"
+			title: "&a下界之星&f"
 			x: 4.875d
 			y: 3.75d
 		}
@@ -655,13 +691,13 @@
 				"57D4E09A9CAB150C"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.description1}"
+				"该生产链始于获取&a稀有金属混合物&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.description2}"
+				"至少需要&9IV&r级的&3&a大型化学反应釜&f&r,但平均功耗并不算高."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.description3}"
+				"&d氯气&r可完全循环利用,&d氢气&r略有损耗&7(&o除非将酸性锇溶液放入&a蒸馏塔&f并将水电解回收...&8仔细想想还是别这么做&r&8)."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.description4}"
+				"进入&9IV&r阶段必须使用&a铱&r,请尽快实现PGS生产线自动化!"
 			]
 			icon: "gtceu:iridium_ingot"
 			id: "216E5A3574AC08BF"
@@ -683,84 +719,92 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.title}"
+			title: "铱与锇"
 			x: 3.75d
 			y: 2.625d
 		}
 		{
 			dependencies: ["2F9D9AAB27E6534D"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description1}"
+				"恭喜您进展至此!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description2}"
+				"晋升&dLuV&r等级不仅需要&a&a镀铑钯&f&r和&9LuV电路&r,还需&3组装线&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description3}"
+				"向&e聚变&r迈进时,元件&4资源消耗&r将开始&4显著&r增加."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description4}"
+				"若尚未实现全自动化,当前(&1IV&r阶段)正是良机.充分利用&2Gregicality多方块结构&r提供的能源!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description5}"
+				"若电力依赖&3大型涡轮机&r,可选用&3LuV转子支架&r."
 			]
 			id: "4F6E351C5F676618"
-			rewards: [{
-				id: "02E9F7E9FF906F4E"
-				item: "gtceu:rhodium_dust"
-				random_bonus: 3
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "02E9F7E9FF906F4E"
+					item: "gtceu:rhodium_dust"
+					random_bonus: 3
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.3d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.subtitle}"
-			tasks: [{
-				icon: "gtceu:rhodium_plated_palladium_ingot"
-				id: "0A57BEFB8BD9958A"
-				item: "gtceu:rhodium_plated_palladium_ingot"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.title}"
+			subtitle: "核心&dLuV&r材料"
+			tasks: [
+				{
+					icon: "gtceu:rhodium_plated_palladium_ingot"
+					id: "0A57BEFB8BD9958A"
+					item: "gtceu:rhodium_plated_palladium_ingot"
+					type: "item"
+				}
+			]
+			title: "镀铑钯"
 			x: 3.75d
 			y: 1.5d
 		}
 		{
 			dependencies: ["216E5A3574AC08BF"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest07906458E1A15683.description1}"
+				"此&a大型采矿场&f与普通版几乎相同,但作业范围更广且耗用更多钻井液."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest07906458E1A15683.description2}"
+				"属于可选升级——甚至可能根本不需要!"
 			]
 			id: "07906458E1A15683"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [{
-				id: "7E67EFBB59C847D7"
-				item: "gtceu:iv_large_miner"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest07906458E1A15683.title}"
+			tasks: [
+				{
+					id: "7E67EFBB59C847D7"
+					item: "gtceu:iv_large_miner"
+					type: "item"
+				}
+			]
+			title: "二代多方块采矿机"
 			x: 5.860969387755098d
 			y: 0.5221428571428568d
 		}
 		{
 			dependencies: ["216E5A3574AC08BF"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description1}"
+				"&3电力变电站&r是多方块电力存储系统.通过填充&a2-18层&r不同&9电容块&r提升储量.每层必须布满电容,空位可用空白电容填充."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description2}"
+				"&9电容&r储能量远高于制造所用的电池.&3电力变电站&r中可混用不同等级的电容."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description3}"
-				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description4}"
-				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description5}"
+				"&1IV&r阶段可制造&5EV&r和/或&1IV&r电容."
+				"{@pagebreak}"
+				"可通过常规能源仓输入能量,通过动态能源仓输出."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description6}"
+				"另可使用&9变电站专用仓&r传输更高安培电流.此类仓仅适用于变电站,不兼容普通多方块结构."
 			]
 			id: "04E9D2F484702965"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.subtitle}"
-			tasks: [{
-				id: "7A5A2DC7C8C3406E"
-				item: "gtceu:power_substation"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.title}"
+			subtitle: "终于实现集中供电"
+			tasks: [
+				{
+					id: "7A5A2DC7C8C3406E"
+					item: "gtceu:power_substation"
+					type: "item"
+				}
+			]
+			title: "电力变电站"
 			x: 4.875d
 			y: 1.5d
 		}
@@ -771,19 +815,21 @@
 				"63A87C9303D54487"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest225F57C95C6D7650.description1}"
+				"我们明白...这其实并不需要&d铟&r解锁.但请相信——此配方更优化,不希望您浪费时间."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest225F57C95C6D7650.description2}"
+				"&a量子比特CPU&r用于生产&1量子&r处理器."
 			]
 			id: "225F57C95C6D7650"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest225F57C95C6D7650.subtitle}"
-			tasks: [{
-				id: "4C2C6546F0928AD7"
-				item: "gtceu:qbit_cpu_chip"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest225F57C95C6D7650.title}"
+			subtitle: "其实与量子无关"
+			tasks: [
+				{
+					id: "4C2C6546F0928AD7"
+					item: "gtceu:qbit_cpu_chip"
+					type: "item"
+				}
+			]
+			title: "量子比特CPU"
 			x: 4.875d
 			y: 2.625d
 		}
@@ -795,42 +841,46 @@
 				"6B128610C7D2825D"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest2BB16260A76718B8.description1}"
+				"哇!走到这一步真不容易.你会庆幸不用再为电路板制作新的聚合物了."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest2BB16260A76718B8.description2}"
+				"&3IV级&a电路组装机&f&r将解锁&1量子&r系列电路."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest2BB16260A76718B8.description3}"
+				"同时还会解锁&dMV电路&r的&e最佳配方&r."
 			]
 			id: "2BB16260A76718B8"
 			size: 0.75d
-			tasks: [{
-				id: "230762F7951EB866"
-				item: "gtceu:iv_circuit_assembler"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest2BB16260A76718B8.title}"
+			tasks: [
+				{
+					id: "230762F7951EB866"
+					item: "gtceu:iv_circuit_assembler"
+					type: "item"
+				}
+			]
+			title: "IV级电路组装"
 			x: 6.0d
 			y: 2.625d
 		}
 		{
 			dependencies: ["0338C9219DC2F819"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.description1}"
+				"这是&1量子&r系列电路的下一阶段基板."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.description2}"
+				"&9提示:&r要实现高效快速的基板生产,建议使用两台&3&a大型化学反应釜&f&r,均需&eHV级&r或更高电力供应(让它们共享同一个&3能源仓&r):"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.description3}"
+				"&9-&r 一台&3大型化学反应釜&r专门生产&a三氯化铁&r.&d氢气&r可循环利用,因此可在本地再生产&d&a盐酸&f&r——这样只需被动输入&a&a铁粉&f&r和&a氯气&r."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.description4}"
+				"&9-&r 另一台&3大型化学反应釜&r应同时生产&a覆膜基板&r和&a空白&a电路板&f&r,以便未来通过AE2实现极其便捷的&e合成请求&r.保持输入仓内充满&a硫酸&f也并非难事."
 			]
 			id: "0988B5FB795FF7DA"
 			size: 0.75d
-			tasks: [{
-				id: "4EB5F93570DAE79B"
-				item: "gtceu:fiber_reinforced_printed_circuit_board"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.title}"
+			tasks: [
+				{
+					id: "4EB5F93570DAE79B"
+					item: "gtceu:fiber_reinforced_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "极致&a电路板&f"
 			x: 7.125d
 			y: 2.625d
 		}
@@ -841,100 +891,110 @@
 				"2BB16260A76718B8"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.description1}"
+				"这是&1量子&r系列的首款电路.这是最后一条“简易“电路产线——接下来将进入紧张阶段."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.description2}"
+				"若有需要,可进一步追求&d高级SMD&r来降低这些电路的成本."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.description3}"
+				"此举需要&9PBI&r...以及需要在你电弧炉中使用&aHSS-G线圈&r制作的合金."
 			]
 			id: "49C1D61741AA288E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.subtitle}"
-			tasks: [{
-				id: "4E109F0F515B210F"
-				item: "gtceu:quantum_processor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.title}"
+			subtitle: "量子级加工"
+			tasks: [
+				{
+					id: "4E109F0F515B210F"
+					item: "gtceu:quantum_processor"
+					type: "item"
+				}
+			]
+			title: "终极EV电路!"
 			x: 8.25d
 			y: 2.625d
 		}
 		{
 			dependencies: ["4343746E706264E6"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.description1}"
+				"&a火箭燃料&f主要用于兼容其他模组.自制整合包时会非常实用."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.description2}"
+				"作为GTCEu发电机的实际燃料？效果极差!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.description3}"
+				"在本整合包中,&a&a火箭燃料&f&r是获取&d&a下界之星&f&r的必要材料."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.description4}"
+				"自动化生产可能大量消耗资源,但可通过超频的&3&a大型化学反应釜&f&r进行安全批量化生产."
 			]
 			id: "1B520580219AFAE9"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.subtitle}"
-			tasks: [{
-				id: "659880DCA297ED7A"
-				item: "gtceu:rocket_fuel_bucket"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.title}"
+			subtitle: "亲爱的,我的微宇宙投影仪在哪？"
+			tasks: [
+				{
+					id: "659880DCA297ED7A"
+					item: "gtceu:rocket_fuel_bucket"
+					type: "item"
+				}
+			]
+			title: "&a火箭燃料&f"
 			x: 6.0d
 			y: 3.75d
 		}
 		{
 			dependencies: ["117FBB18DEE6F08B"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.description1}"
+				"新一代基板材料."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.description2}"
+				"只需在&3&a化学浸洗器&f&r中使用&a环氧树脂&r即可轻松制备."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.description3}"
+				"&8有人支持重新设计这个吗？"
 			]
 			id: "0338C9219DC2F819"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.subtitle}"
-			tasks: [{
-				id: "7092FDCCDDC53679"
-				item: "gtceu:reinforced_epoxy_resin_plate"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.title}"
+			subtitle: "前所未见的重大升级"
+			tasks: [
+				{
+					id: "7092FDCCDDC53679"
+					item: "gtceu:reinforced_epoxy_resin_plate"
+					type: "item"
+				}
+			]
+			title: "纤维增强环氧树脂"
 			x: 7.125d
 			y: 3.75d
 		}
 		{
 			dependencies: ["698B5F65F2DE4439"]
-			description: ["Good news for any mainframe haters out there - &dLuV&r Circuits that aren't mainframes!"]
+			description: ["主机反对者的福音——非主机架构的&dLuV&r电路!"]
 			id: "145F71A817C5996E"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest145F71A817C5996E.subtitle}"
-			tasks: [{
-				id: "0205E6C037A453A8"
-				item: "gtceu:quantum_processor_computer"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest145F71A817C5996E.title}"
+			subtitle: "传递LuV之爱"
+			tasks: [
+				{
+					id: "0205E6C037A453A8"
+					item: "gtceu:quantum_processor_computer"
+					type: "item"
+				}
+			]
+			title: "更多LuV电路"
 			x: 8.25d
 			y: 4.125d
 		}
 		{
 			dependencies: ["49C1D61741AA288E"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest698B5F65F2DE4439.description1}"
+				"更优质的&9IV级&r电路."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest698B5F65F2DE4439.description2}"
+				"你在&9IV级&r的征程仍在继续.保持坚强,战士."
 			]
 			id: "698B5F65F2DE4439"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest698B5F65F2DE4439.subtitle}"
-			tasks: [{
-				id: "3B46E4592A6AC60E"
-				item: "gtceu:quantum_processor_assembly"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest698B5F65F2DE4439.title}"
+			subtitle: "IV级,但现在是绿色版本"
+			tasks: [
+				{
+					id: "3B46E4592A6AC60E"
+					item: "gtceu:quantum_processor_assembly"
+					type: "item"
+				}
+			]
+			title: "更多IV级电路"
 			x: 8.25d
 			y: 3.375d
 		}
@@ -944,48 +1004,50 @@
 				"0425179329ED1B72"
 			]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.description1}"
+				"本任务可通过为多方块发电机安装&e任意一种&r&3IV级能源仓&r&r...或&3IV级动力仓&r来完成."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.description2}"
+				"别忘了存在&d4安培&r变体!但需要&a铌钛电缆&r,该电缆需使用&9&a聚苯硫醚&f&r制造."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.description3}"
+				"请在&dLuV&r章节查看相关内容(放心...很容易获取)."
 			]
 			icon: "gtceu:iv_energy_input_hatch"
 			id: "48DEABA155605D23"
 			shape: "rsquare"
 			size: 0.66d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.subtitle}"
-			tasks: [{
-				id: "2EC4E901B2CD35FA"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:iv_energy_input_hatch"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_energy_output_hatch"
-							}
-						]
+			subtitle: "熟能生巧"
+			tasks: [
+				{
+					id: "2EC4E901B2CD35FA"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:iv_energy_input_hatch"
+								}
+								{
+									Count: 1b
+									id: "gtceu:iv_energy_output_hatch"
+								}
+							]
+						}
 					}
+					title: "IV级发电机/能源舱口"
+					type: "item"
 				}
-				title: "{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.task.2EC4E901B2CD35FA.title}"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.title}"
+			]
+			title: "第一百万次升级电弧炉"
 			x: 3.7589285714285765d
 			y: 3.767040816326528d
 		}
 		{
 			dependencies: ["12B4423F055BFBF5"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest7CC40BDAA803D044.description1}"
+				"&3IV级&a金属剪切机&f&r是&a解锁&f&3IV级能源仓与动力仓&r的必要设备."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest7CC40BDAA803D044.description2}"
+				"升级至其&2GCYM&r变体是不错的选择."
 			]
 			icon: "gtceu:iv_cutter"
 			id: "7CC40BDAA803D044"
@@ -999,25 +1061,26 @@
 				{
 					id: "749F36AC9B4B92B1"
 					item: "gtceu:large_cutter"
+					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest7CC40BDAA803D044.title}"
+			title: "IV级&a金属剪切机&f"
 			x: 1.5d
 			y: 3.75d
 		}
 		{
 			dependencies: ["52D952ADBEB67454"]
 			description: [
-				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description1}"
+				"这套护甲相比纳米套装提供了更多生活品质&a改进&f."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description2}"
+				"&9头盔:&r提供&d&a夜视&f&r功能(默认按键&4M&r,请注意键位冲突),可抵御有害药水效果,并自动进食!"
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description3}"
+				"&9胸甲:&r消除燃烧伤害,可在&dLuV&r阶段最终升级为&a进阶&r版本.注意:未升级进阶版本时不包含喷气背包功能."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description4}"
+				"&9护腿:&r提供纳米护腿所不具备的速度提升效果."
 				""
-				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description5}"
+				"&9靴子:&r提供&d&a自动跳跃&f&r能力,消除跌落伤害,并增加跳跃高度!"
 			]
 			icon: {
 				Count: 1
@@ -1029,7 +1092,7 @@
 			id: "2EFC07A4615B8B12"
 			shape: "rsquare"
 			size: 0.75d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.subtitle}"
+			subtitle: "放心,这个我们没申请商标"
 			tasks: [
 				{
 					id: "350AC6FA06CC04AC"
@@ -1076,13 +1139,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.title}"
+			title: "&d夸克&f科技"
 			x: -0.75d
 			y: 0.375d
 		}
 		{
 			dependencies: ["7CFC112B8F460549"]
-			description: ["&bPolybenzimidazole&r is the best material for &6Soft Mallets&r in vanilla GTCEu. Show us that you're on top of your PBI supply by spending some of it on a &dsuperfluous tool upgrade&r."]
+			description: ["在原版GTCEu中,&b聚苯并咪唑&r是制作&e软质木锤&r的最佳材料.通过消耗部分PBI材料制作&d华而不实的工具升级&r,来证明你的PBI供应链实力."]
 			icon: {
 				Count: 1
 				id: "gtceu:polybenzimidazole_mallet"
@@ -1099,29 +1162,31 @@
 			id: "502836411CA028B9"
 			shape: "circle"
 			size: 0.5d
-			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest502836411CA028B9.subtitle}"
-			tasks: [{
-				id: "5A9B72CD21F42428"
-				item: {
-					Count: 1
-					id: "gtceu:polybenzimidazole_mallet"
-					tag: {
-						Damage: 0
-						DisallowContainerItem: 0b
-						GT.Behaviours: { }
-						GT.Tool: {
-							MaxDamage: 1023
+			subtitle: "没有这些傻气任务,生活该多无趣..."
+			tasks: [
+				{
+					id: "5A9B72CD21F42428"
+					item: {
+						Count: 1
+						id: "gtceu:polybenzimidazole_mallet"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: { }
+							GT.Tool: {
+								MaxDamage: 1023
+							}
+							HideFlags: 2
 						}
-						HideFlags: 2
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.iv__insane_voltage.quest502836411CA028B9.title}"
+			]
+			title: "终结所有木锤的&a木锤&f"
 			x: -1.6492346938775455d
 			y: 3.7466326530612264d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.iv__insane_voltage.subtitle0}"]
-	title: "{ftbquests.chapter.iv__insane_voltage.title}"
+	subtitle: ["实现全自动化并掌握组装技术"]
+	title: "&9IV&r - 超高压"
 }
