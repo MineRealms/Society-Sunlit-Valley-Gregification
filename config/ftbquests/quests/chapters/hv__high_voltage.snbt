@@ -38,6 +38,8 @@
 			x: 2.25d
 			y: -1.875d
 		}
+	]
+	quests: [
 		{
 			dependencies: ["16A6AE5C770DB83A"]
 			description: [
@@ -1526,8 +1528,6 @@
 			x: 9.0d
 			y: -5.25d
 		}
-	]
-	quests: [
 	]
 	subtitle: ["{ftbquests.chapter.hv__high_voltage.subtitle0}"]
 	title: "{ftbquests.chapter.hv__high_voltage.title}"

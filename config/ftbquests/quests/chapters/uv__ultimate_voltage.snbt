@@ -35,6 +35,8 @@
 			x: 3.375d
 			y: 1.5d
 		}
+	]
+	quests: [
 		{
 			dependencies: ["6F15D7574B8F6DB5"]
 			description: [
@@ -550,8 +552,6 @@
 			x: 6.75d
 			y: 0.375d
 		}
-	]
-	quests: [
 	]
 	subtitle: ["{ftbquests.chapter.uv__ultimate_voltage.subtitle0}"]
 	title: "{ftbquests.chapter.uv__ultimate_voltage.title}"

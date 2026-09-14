@@ -44,6 +44,8 @@
 			x: 5.625d
 			y: 10.125d
 		}
+	]
+	quests: [
 		{
 			dependencies: ["16B735F9C391D260"]
 			description: [
@@ -2014,8 +2016,6 @@
 			x: 8.418367346938766d
 			y: 2.7806122448979593d
 		}
-	]
-	quests: [
 	]
 	subtitle: ["{ftbquests.chapter.ev__extreme_voltage.subtitle0}"]
 	title: "{ftbquests.chapter.ev__extreme_voltage.title}"

@@ -65,6 +65,8 @@
 			x: 4.5d
 			y: 4.5d
 		}
+	]
+	quests: [
 		{
 			dependencies: [
 				"77B7B1EDD19831E0"
@@ -1104,8 +1106,6 @@
 			x: 4.95d
 			y: 5.94d
 		}
-	]
-	quests: [
 	]
 	subtitle: ["{ftbquests.chapter.luv__ludicrous_voltage.subtitle0}"]
 	title: "{ftbquests.chapter.luv__ludicrous_voltage.title}"

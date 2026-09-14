@@ -22,6 +22,8 @@
 			x: -6.0d
 			y: 2.25d
 		}
+	]
+	quests: [
 		{
 			dependencies: ["24F0454B9A090C44"]
 			description: [
@@ -717,8 +719,6 @@
 			x: -0.375d
 			y: 3.375d
 		}
-	]
-	quests: [
 	]
 	subtitle: ["{ftbquests.chapter.zpm__zero_point_module.subtitle0}"]
 	title: "{ftbquests.chapter.zpm__zero_point_module.title}"

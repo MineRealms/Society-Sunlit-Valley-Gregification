@@ -232,6 +232,8 @@
 			x: 5.0d
 			y: 7.0d
 		}
+	]
+	quests: [
 		{
 			dependencies: [
 				"3CF550B81716B8B9"
@@ -568,8 +570,6 @@
 			x: -1.0d
 			y: 8.0d
 		}
-	]
-	quests: [
 	]
 	subtitle: ["{ftbquests.chapter.progression.subtitle0}"]
 	title: "{ftbquests.chapter.progression.title}"

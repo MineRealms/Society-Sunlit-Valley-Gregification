@@ -87,6 +87,8 @@
 			x: 8.0d
 			y: -6.5d
 		}
+	]
+	quests: [
 		{
 			dependencies: [
 				"257DB4B39B2A928E"
@@ -165,8 +167,6 @@
 			x: 2.0d
 			y: -6.5d
 		}
-	]
-	quests: [
 	]
 	subtitle: ["{ftbquests.chapter.heating_coils.subtitle0}"]
 	title: "{ftbquests.chapter.heating_coils.title}"

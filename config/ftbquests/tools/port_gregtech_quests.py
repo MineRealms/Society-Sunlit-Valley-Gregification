@@ -92,11 +92,22 @@ def unescape(s):
 
 
 def split_blocks(text):
-    """拆分为 header / quest 块列表 / footer。quest 块分隔符为 2 个 tab 的 { 与 }。"""
+    """按 quests 数组切分：header（含 quest_links）、任务块列表、footer（章节标题/副标题）。
+    注意：quest_links 的条目也用 2 tab 的 { } 包着，不能按 2 tab 花括号切块，
+    必须先定位到 `quests: [` 这一行，只切 quests 数组里的块。"""
     lines = text.split("\n")
-    header, blocks, footer = [], [], []
-    cur = None
-    for ln in lines:
+    qi = None
+    for i, ln in enumerate(lines):
+        if ln.rstrip() == "\tquests: [":
+            qi = i
+            break
+    if qi is None:
+        # 没有（或为空的 `quests: [ ]`）任务数组：整体视为 header，不切块
+        return text, [], ""
+    header = "\n".join(lines[:qi + 1])  # 含 `quests: [` 行
+    rest = lines[qi + 1:]
+    blocks, footer, cur = [], [], None
+    for ln in rest:
         if ln == "\t\t{" and cur is None:
             cur = [ln]
         elif ln == "\t\t}" and cur is not None:
@@ -105,13 +116,11 @@ def split_blocks(text):
             cur = None
         elif cur is not None:
             cur.append(ln)
-        elif not blocks:
-            header.append(ln)
         else:
             footer.append(ln)
     if cur is not None:  # 容错
         blocks.append("\n".join(cur))
-    return "\n".join(header), blocks, "\n".join(footer)
+    return header, blocks, "\n".join(footer)
 
 
 def transform_quest_block(block, filename, en_out):
@@ -189,30 +198,28 @@ def transform_quest_block(block, filename, en_out):
 
 
 def transform_chapter(text, filename, en_out):
-    header, blocks, footer = split_blocks(text)
-
-    # 章节标题（footer 中 1 tab）
-    def foot_title(m):
+    # 章节标题（1 tab，全文件唯一；任务标题在 3 tab+，不会误匹配）
+    def chap_title(m):
         key = f"ftbquests.chapter.{filename}.title"
         en_out[key] = unescape(m.group(1))
         return f'\ttitle: "{{{key}}}"'
 
-    footer = re.sub(r'^\ttitle: "((?:[^"\\]|\\.)*)"$', foot_title, footer, flags=re.M)
+    text = re.sub(r'^\ttitle: "((?:[^"\\]|\\.)*)"$', chap_title, text, count=1, flags=re.M)
 
-    # 章节副标题（单行数组或多行数组）
-    def foot_sub_line(m):
+    # 章节副标题（单行数组）
+    def chap_sub_line(m):
         key = f"ftbquests.chapter.{filename}.subtitle0"
         en_out[key] = unescape(m.group(1))
         return f'\tsubtitle: ["{{{key}}}"]'
 
-    footer = re.sub(r'^\tsubtitle: \["((?:[^"\\]|\\.)*)"\]$', foot_sub_line, footer, flags=re.M)
+    text = re.sub(r'^\tsubtitle: \["((?:[^"\\]|\\.)*)"\]$', chap_sub_line, text, count=1, flags=re.M)
 
-    def foot_sub_multi(m):
+    # 章节副标题（多行数组）
+    def chap_sub_multi(m):
         inner = m.group(1)
         n = 0
-        lines = inner.split("\n")
         outl = []
-        for ln in lines:
+        for ln in inner.split("\n"):
             dm = re.match(r'^(\t\t)' + STR_RE + r"$", ln)
             if dm and dm.group(2):
                 key = f"ftbquests.chapter.{filename}.subtitle{n}"
@@ -223,13 +230,15 @@ def transform_chapter(text, filename, en_out):
                 outl.append(ln)
         return "\tsubtitle: [\n" + "\n".join(outl) + "\n\t]"
 
-    footer = re.sub(r'^\tsubtitle: \[\n(.*?)\n\t\]$', foot_sub_multi, footer, flags=re.M | re.S)
+    text = re.sub(r'^\tsubtitle: \[\n(.*?)\n\t\]$', chap_sub_multi, text, count=1, flags=re.M | re.S)
 
+    # 分组与顺序（1 tab）
+    text = re.sub(r'^\tgroup: "[^"]*"$', f'\tgroup: "{GROUP_ID}"', text, count=1, flags=re.M)
+    text = re.sub(r"^\torder_index: -?\d+$", f"\torder_index: {CHAPTER_ORDER[filename]}", text, count=1, flags=re.M)
+
+    # 切分并转换任务块（quest_links 保留在 header）
+    header, blocks, footer = split_blocks(text)
     blocks = [transform_quest_block(b, filename, en_out) for b in blocks]
-
-    # 分组与顺序（header 中）
-    header = re.sub(r'^\tgroup: "[^"]*"$', f'\tgroup: "{GROUP_ID}"', header, flags=re.M)
-    header = re.sub(r"^\torder_index: -?\d+$", f"\torder_index: {CHAPTER_ORDER[filename]}", header, flags=re.M)
 
     return header + "\n" + "\n".join(blocks) + "\n" + footer
 

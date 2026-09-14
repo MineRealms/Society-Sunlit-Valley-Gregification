@@ -47,6 +47,8 @@
 			x: 13.0d
 			y: 0.0d
 		}
+	]
+	quests: [
 		{
 			dependencies: ["0C690272ED4FB1C3"]
 			description: [
@@ -1350,8 +1352,6 @@
 			x: 11.0d
 			y: 3.0d
 		}
-	]
-	quests: [
 	]
 	subtitle: ["{ftbquests.chapter.ore_generation.subtitle0}"]
 	title: "{ftbquests.chapter.ore_generation.title}"
