@@ -1,0 +1,1640 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "gtceu"
+	group: "9F2C7A5E1B3D4C60"
+	icon: {
+		Count: 1
+		id: "gtceu:iron_wrench"
+		tag: {
+			Damage: 0
+			GT.Tool: { }
+		}
+	}
+	id: "2F8B0AFE317363C9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description3}"
+				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description4}"
+				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description5}"
+				""
+				"{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.description6}"
+			]
+			icon: "kubejs:greg_icon"
+			id: "25289F9E8AE01C29"
+			rewards: [{
+				auto: "invisible"
+				icon: "minecraft:cooked_beef"
+				id: "6FD85EC9BD99C866"
+				item: "gtceu:sus_record"
+				title: "{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.reward.6FD85EC9BD99C866.title}"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.2d
+			subtitle: "{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.subtitle}"
+			tasks: [{
+				id: "6C1F570DB9013DE7"
+				title: "{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.task.6C1F570DB9013DE7.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest25289F9E8AE01C29.title}"
+			x: -0.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["25289F9E8AE01C29"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.description2}"
+			]
+			icon: "minecraft:oak_log"
+			id: "0EAF2C5B5EB755C5"
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.subtitle}"
+			tasks: [
+				{
+					count: 6L
+					id: "34F2867EAF0914BF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					match_nbt: false
+					title: "{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.task.34F2867EAF0914BF.title}"
+					type: "item"
+				}
+				{
+					id: "22B6D3C1033D47DA"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gtceu.quest0EAF2C5B5EB755C5.title}"
+			x: -0.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.description3}"
+			]
+			icon: "minecraft:sugar_cane"
+			id: "0436F7B60BDEB091"
+			rewards: [{
+				count: 24
+				id: "2D2C971E9E651C2C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "37DD7A28A3A7CB26"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0F60FE32A8F7720E"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "23A44568A9FAACA2"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "00328CEF98F57407"
+					item: "gtceu:rubber_sapling"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1C05A84175DBD3A9"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gtceu.quest0436F7B60BDEB091.title}"
+			x: -0.75d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description2}"
+				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description3}"
+				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description4}"
+				""
+				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description5}"
+				""
+				"{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.description6}"
+			]
+			icon: "gtceu:cobaltite_ore"
+			id: "0C690272ED4FB1C3"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.subtitle}"
+			tasks: [{
+				id: "3FA401CACE8BBE5D"
+				title: "{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.task.3FA401CACE8BBE5D.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest0C690272ED4FB1C3.title}"
+			x: -2.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest13354F24F80F65FB.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest13354F24F80F65FB.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest13354F24F80F65FB.description3}"
+				""
+				"{ftbquests.chapter.gtceu.quest13354F24F80F65FB.description4}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:steel_axe"
+				tag: {
+					Damage: 0
+					GT.Tool: { }
+				}
+			}
+			id: "13354F24F80F65FB"
+			rewards: [{
+				count: 8
+				id: "60E07F9D0763E8E1"
+				item: "minecraft:spruce_sapling"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest13354F24F80F65FB.subtitle}"
+			tasks: [{
+				id: "3880A08A72884627"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:aluminium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 8.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:vanadium_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1535
+										ToolSpeed: 5.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:naquadah_alloy_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 5
+										MaxDamage: 3071
+										ToolSpeed: 42.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:flint_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 63
+										ToolSpeed: 3.5f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:red_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 2559
+										ToolSpeed: 9.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:blue_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 17.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:rose_gold_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:fortune"
+										lvl: 2s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 14.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:hsse_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 3071
+										ToolSpeed: 7.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:iron_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 255
+										ToolSpeed: 4.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:titanium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1535
+										ToolSpeed: 10.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:neutronium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 6
+										MaxDamage: 65534
+										ToolSpeed: 182.0f
+									}
+									HideFlags: 2
+									Unbreakable: 1b
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:duranium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 5
+										MaxDamage: 8191
+										ToolSpeed: 16.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 191
+										ToolSpeed: 5.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:invar_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [
+										{
+											id: "minecraft:efficiency"
+											lvl: 1s
+										}
+										{
+											id: "minecraft:bane_of_arthropods"
+											lvl: 3s
+										}
+									]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 383
+										ToolSpeed: 6.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:sterling_silver_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:smite"
+										lvl: 3s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 5.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:cobalt_brass_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 1023
+										ToolSpeed: 4.5f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:tungsten_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 2047
+										ToolSpeed: 11.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:damascus_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:fortune"
+										lvl: 3s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 8.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:tungsten_carbide_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 1023
+										ToolSpeed: 62.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:wrought_iron_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 383
+										ToolSpeed: 4.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:ultimet_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 2047
+										ToolSpeed: 12.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 511
+										ToolSpeed: 7.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:stainless_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 9.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:diamond_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 767
+										ToolSpeed: 8.0f
+									}
+									HideFlags: 2
+								}
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.gtceu.quest13354F24F80F65FB.task.3880A08A72884627.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest13354F24F80F65FB.title}"
+			x: -2.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36DD94945D5B4A80"]
+			dependency_requirement: "one_completed"
+			description: [
+				"{ftbquests.chapter.gtceu.quest563C96885A227C9F.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest563C96885A227C9F.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest563C96885A227C9F.description3}"
+				""
+				"{ftbquests.chapter.gtceu.quest563C96885A227C9F.description4}"
+			]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "563C96885A227C9F"
+			rewards: [{
+				count: 5
+				id: "3CDB383AFEBDB519"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest563C96885A227C9F.subtitle}"
+			tasks: [{
+				id: "3DAB1D757B3B049D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/wrought_iron"
+					}
+				}
+				title: "{ftbquests.chapter.gtceu.quest563C96885A227C9F.task.3DAB1D757B3B049D.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest563C96885A227C9F.title}"
+			x: 0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1ECBA1CBFFB9F625"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.description3}"
+				""
+				"{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.description4}"
+			]
+			id: "7DEB73FD649BDFB6"
+			rewards: [{
+				id: "6C50A2A3D43D3FEE"
+				item: "gtceu:iron_plate"
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:steel_hammer"
+					tag: {
+						Damage: 0
+						GT.Tool: { }
+					}
+				}
+				id: "1A4DDB914D7D2F3C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/hammers"
+					}
+				}
+				title: "{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.task.1A4DDB914D7D2F3C.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest7DEB73FD649BDFB6.title}"
+			x: 2.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description3}"
+				""
+				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description4}"
+				""
+				"{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.description5}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:steel_mining_hammer"
+				tag: {
+					Damage: 0
+					GT.Tool: { }
+				}
+			}
+			id: "4A365A7CC9E374F9"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:steel_mining_hammer"
+					tag: {
+						Damage: 0
+						GT.Tool: { }
+					}
+				}
+				id: "4F372C393ADC6CE2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mining_hammers"
+					}
+				}
+				title: "{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.task.4F372C393ADC6CE2.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest4A365A7CC9E374F9.title}"
+			x: 2.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description3}"
+				""
+				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description4}"
+				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description5}"
+				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description6}"
+				""
+				"{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.description7}"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "1ECBA1CBFFB9F625"
+			rewards: [{
+				count: 32
+				id: "6A8A7B57C7372740"
+				item: "gtceu:raw_magnetite"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.subtitle}"
+			tasks: [{
+				id: "063705687ED657F5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:raw_iron"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_yellow_limonite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_magnetite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_basaltic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_granitic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_pyrite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_goethite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_hematite"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.task.063705687ED657F5.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest1ECBA1CBFFB9F625.title}"
+			x: 0.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7DEB73FD649BDFB6"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description3}"
+				""
+				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description4}"
+				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description5}"
+				"{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.description6}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					GT.Tool: { }
+				}
+			}
+			id: "2001CB4968D3E0A2"
+			shape: "square"
+			size: 0.75d
+			tasks: [
+				{
+					id: "54E092F42DA65B86"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					title: "{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.task.54E092F42DA65B86.title}"
+					type: "item"
+				}
+				{
+					id: "4D6B7E2B4C8E5747"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/files"
+						}
+					}
+					title: "{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.task.4D6B7E2B4C8E5747.title}"
+					type: "item"
+				}
+				{
+					id: "23D6CF49FC7E82A9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					title: "{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.task.23D6CF49FC7E82A9.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gtceu.quest2001CB4968D3E0A2.title}"
+			x: 3.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description3}"
+				""
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description4}"
+				""
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description5}"
+				""
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description6}"
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description7}"
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description8}"
+				""
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description9}"
+				""
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description10}"
+				""
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description11}"
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description12}"
+				"{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.description13}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_screwdriver"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+					}
+				}
+			}
+			id: "5C3501DD3B4788FA"
+			rewards: [{
+				count: 16
+				id: "433F0ED89B586383"
+				item: "gtceu:damascus_steel_ingot"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [
+				{
+					id: "4055931FAD6A5087"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.4055931FAD6A5087.title}"
+					type: "item"
+				}
+				{
+					id: "0CB546DCA11BB335"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wire_cutters"
+						}
+					}
+					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.0CB546DCA11BB335.title}"
+					type: "item"
+				}
+				{
+					id: "4DF1C23D7DD1FAD6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mortars"
+						}
+					}
+					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.4DF1C23D7DD1FAD6.title}"
+					type: "item"
+				}
+				{
+					id: "397DD831CA0665E7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.397DD831CA0665E7.title}"
+					type: "item"
+				}
+				{
+					id: "1BFE642ED0595A93"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mallets"
+						}
+					}
+					title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.task.1BFE642ED0595A93.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gtceu.quest5C3501DD3B4788FA.title}"
+			x: 5.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description3}"
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description4}"
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description5}"
+				""
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description6}"
+				""
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description7}"
+				""
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description8}"
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description9}"
+				"{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.description10}"
+			]
+			icon: "gtceu:coke_oven"
+			id: "4946FC5BCA4CCA88"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "60891A0DEF29E9A1"
+				item: "gtceu:exquisite_coke_gem"
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.subtitle}"
+			tasks: [{
+				id: "3545479A7C09CDFC"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest4946FC5BCA4CCA88.title}"
+			x: 5.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.description3}"
+			]
+			icon: "minecraft:copper_ingot"
+			id: "45969FFBF88F4FBB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C28FA1A5275D24E"
+				table_id: 1702176335602373230L
+				type: "choice"
+			}]
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.subtitle}"
+			tasks: [{
+				count: 32L
+				id: "616556ECE4DB6103"
+				item: {
+					Count: 32
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:copper_ingot"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_ingot"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.task.616556ECE4DB6103.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest45969FFBF88F4FBB.title}"
+			x: 3.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description3}"
+				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description4}"
+				"{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.description5}"
+			]
+			icon: "gtceu:bronze_ingot"
+			id: "315DBB3B23F95E0D"
+			rewards: [{
+				count: 32
+				id: "5F229B651404DF0E"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.subtitle}"
+			tasks: [{
+				count: 24L
+				id: "39AEA2923971A2B5"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest315DBB3B23F95E0D.title}"
+			x: 5.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7DEB73FD649BDFB6"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.description3}"
+			]
+			icon: "minecraft:bucket"
+			id: "592BD683A48C2AA2"
+			rewards: [{
+				id: "68D4ECFA9AD5349A"
+				item: {
+					Count: 1
+					id: "gtceu:wood_drum"
+					tag: {
+						Fluid: {
+							Amount: 16000L
+							FluidName: "minecraft:water"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.subtitle}"
+			tasks: [{
+				id: "5DD165E4EB34C022"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest592BD683A48C2AA2.title}"
+			x: 2.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.description3}"
+			]
+			icon: "minecraft:charcoal"
+			id: "36DD94945D5B4A80"
+			rewards: [{
+				count: 16
+				id: "5408859E43668198"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.subtitle}"
+			tasks: [{
+				count: 48L
+				id: "3DF01E4FACBB1D53"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.task.3DF01E4FACBB1D53.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest36DD94945D5B4A80.title}"
+			x: 0.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description2}"
+				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description3}"
+				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description4}"
+				""
+				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description5}"
+				""
+				"{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.description6}"
+			]
+			icon: "minecraft:structure_void"
+			id: "1283B4D7B5D82193"
+			rewards: [{
+				id: "460EC827273306A5"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.subtitle}"
+			tasks: [{
+				id: "70C69E5432F6C3BE"
+				title: "{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.task.70C69E5432F6C3BE.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest1283B4D7B5D82193.title}"
+			x: 2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.description3}"
+			]
+			icon: "minecraft:bone_meal"
+			id: "49A04E63F40D65C0"
+			rewards: [
+				{
+					count: 64
+					id: "6292C644EE1ACA59"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "380C42204033B5C4"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "725FA988559A2A06"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "650805CC3324B1A2"
+					item: {
+						Count: 1
+						id: "gtceu:iron_shovel"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B1124C773D1E30F"
+					item: {
+						Count: 1
+						id: "gtceu:iron_axe"
+						tag: {
+							Damage: 0
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 4.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.subtitle}"
+			tasks: [
+				{
+					count: 16L
+					id: "36052E42DE641787"
+					item: "gtceu:iron_bolt"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "63F1C7989ADF097F"
+					item: "gtceu:iron_plate"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gtceu.quest49A04E63F40D65C0.title}"
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest62212F2B51AC779E.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest62212F2B51AC779E.description2}"
+			]
+			icon: "gtceu:silver_ingot"
+			id: "62212F2B51AC779E"
+			rewards: [
+				{
+					count: 128
+					id: "2C6F42288FF9B7DA"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "5242721C19BCC092"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "04BE5FBBF9402D5D"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "2D409B8436727D1C"
+					item: "gtceu:nickel_ingot"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "35EE3F4BAAE41AC3"
+					item: "gtceu:lead_ingot"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "70008D5488014AF1"
+					item: "gtceu:silver_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "29963CB493F50CC0"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest62212F2B51AC779E.subtitle}"
+			tasks: [
+				{
+					count: 64L
+					id: "37A7D2DE2F82E529"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "68684E4712C05221"
+					item: "gtceu:nickel_ingot"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "59AA0604B02D17EF"
+					item: "gtceu:lead_ingot"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0384FDE2E9B1414F"
+					item: "gtceu:silver_ingot"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "46C1361E3C1678C4"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.gtceu.quest62212F2B51AC779E.title}"
+			x: 5.25d
+			y: 0.0d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description3}"
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description4}"
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description5}"
+				""
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description6}"
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description7}"
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description8}"
+				""
+				"{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.description9}"
+			]
+			icon: "ftbquests:book"
+			id: "13E9DF7E980CFC5B"
+			shape: "circle"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.subtitle}"
+			tasks: [{
+				id: "04CC2E592A648F06"
+				title: "{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.task.04CC2E592A648F06.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest13E9DF7E980CFC5B.title}"
+			x: -2.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest411AB552514EA14C.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest411AB552514EA14C.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest411AB552514EA14C.description3}"
+			]
+			icon: "crafting_on_a_stick:crafting_table"
+			id: "411AB552514EA14C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest411AB552514EA14C.subtitle}"
+			tasks: [{
+				id: "30D40010C8E6E115"
+				item: "crafting_on_a_stick:crafting_table"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest411AB552514EA14C.title}"
+			x: 3.75d
+			y: -4.5d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.gtceu.quest008ABF78E56209F7.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest008ABF78E56209F7.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest008ABF78E56209F7.description3}"
+				""
+				"{ftbquests.chapter.gtceu.quest008ABF78E56209F7.description4}"
+			]
+			icon: "minecraft:lectern"
+			id: "008ABF78E56209F7"
+			shape: "circle"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.gtceu.quest008ABF78E56209F7.subtitle}"
+			tasks: [{
+				id: "382566FB9E8CFE29"
+				title: "{ftbquests.chapter.gtceu.quest008ABF78E56209F7.task.382566FB9E8CFE29.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest008ABF78E56209F7.title}"
+			x: -0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest5193DD03C0742548.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest5193DD03C0742548.description2}"
+				""
+				"{ftbquests.chapter.gtceu.quest5193DD03C0742548.description3}"
+			]
+			id: "5193DD03C0742548"
+			rewards: [{
+				id: "4D70B6467A188FDD"
+				item: "gtceu:sticky_resin"
+				random_bonus: 3
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.gtceu.quest5193DD03C0742548.subtitle}"
+			tasks: [{
+				count: 8L
+				id: "76851CD51E99CA38"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest5193DD03C0742548.title}"
+			x: 0.75d
+			y: -4.5d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description2}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description3}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description4}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description5}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description6}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description7}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description8}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description9}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description10}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description11}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description12}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description13}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description14}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description15}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description16}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description17}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description18}"
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description19}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description20}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description21}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description22}"
+				""
+				"{ftbquests.chapter.gtceu.quest63DC162144871509.description23}"
+			]
+			icon: "minecraft:netherite_upgrade_smithing_template"
+			id: "63DC162144871509"
+			shape: "circle"
+			size: 0.75d
+			tasks: [{
+				id: "3E3D67B53234AD1A"
+				title: "{ftbquests.chapter.gtceu.quest63DC162144871509.task.3E3D67B53234AD1A.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest63DC162144871509.title}"
+			x: -2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C690272ED4FB1C3"]
+			description: [
+				"{ftbquests.chapter.gtceu.quest3296B815876C3181.description1}"
+				""
+				"{ftbquests.chapter.gtceu.quest3296B815876C3181.description2}"
+				"{ftbquests.chapter.gtceu.quest3296B815876C3181.description3}"
+				"{ftbquests.chapter.gtceu.quest3296B815876C3181.description4}"
+			]
+			icon: "gtceu:cobalt_indicator"
+			id: "3296B815876C3181"
+			shape: "circle"
+			size: 0.5d
+			subtitle: "{ftbquests.chapter.gtceu.quest3296B815876C3181.subtitle}"
+			tasks: [{
+				id: "3C54F075FEE53897"
+				title: "{ftbquests.chapter.gtceu.quest3296B815876C3181.task.3C54F075FEE53897.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.gtceu.quest3296B815876C3181.title}"
+			x: -2.25d
+			y: -2.25d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.gtceu.subtitle0}"]
+	title: "{ftbquests.chapter.gtceu.title}"
+}

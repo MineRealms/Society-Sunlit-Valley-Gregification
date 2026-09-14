@@ -1,0 +1,767 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "tips_and_tricks_2"
+	group: "9F2C7A5E1B3D4C60"
+	icon: "gtceu:computer_monitor_cover"
+	id: "6049B9A595052948"
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description4}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description5}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description9}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description10}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.description11}"
+			]
+			icon: "gtceu:steam_machine_casing"
+			id: "7FB2D6C9A3763A47"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.subtitle}"
+			tasks: [{
+				id: "488F188E55E06B11"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest7FB2D6C9A3763A47.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E186F9C57155BFA"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description3}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description6}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description9}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description10}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description11}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description12}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description13}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description14}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description15}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description16}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description17}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description18}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description19}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description20}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description21}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description22}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description23}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description24}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description25}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description26}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.description27}"
+			]
+			icon: "gtceu:lv_battery_hull"
+			id: "61FED75EFA6555EC"
+			size: 0.66d
+			tasks: [{
+				id: "10F1D268436EA85C"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest61FED75EFA6555EC.title}"
+			x: 0.99d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E186F9C57155BFA"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description5}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description9}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description10}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description11}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description12}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.description13}"
+			]
+			icon: "gtceu:copper_double_cable"
+			id: "0F2A7F519B3C67FB"
+			size: 0.75d
+			tasks: [{
+				id: "41F15814196EECFC"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest0F2A7F519B3C67FB.task.41F15814196EECFC.title}"
+				type: "checkmark"
+			}]
+			x: 1.98d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B0FF43022F6C2EC"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description3}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description4}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description7}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.description9}"
+			]
+			icon: "gtceu:ulv_transformer_2a"
+			id: "2BE355672E638CF2"
+			size: 0.66d
+			tasks: [{
+				id: "7D5CFA20478CB9C8"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest2BE355672E638CF2.task.7D5CFA20478CB9C8.title}"
+				type: "checkmark"
+			}]
+			x: 2.97d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1BE0349B8F3890D3"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description5}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description9}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description10}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description11}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.description12}"
+			]
+			icon: "minecraft:clock"
+			id: "54DE75E97153E455"
+			size: 0.75d
+			tasks: [{
+				id: "5E35ABFDCB703A38"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest54DE75E97153E455.task.5E35ABFDCB703A38.title}"
+				type: "checkmark"
+			}]
+			x: 3.96d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description4}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description5}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description9}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.description10}"
+			]
+			icon: "gtceu:heatproof_machine_casing"
+			id: "1647E0C649E2131C"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.subtitle}"
+			tasks: [{
+				id: "4C9F42B0E4A2E0DB"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest1647E0C649E2131C.task.4C9F42B0E4A2E0DB.title}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.99d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description5}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description6}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.description7}"
+			]
+			icon: "gtceu:robust_machine_casing"
+			id: "331F2C12C652D268"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.subtitle}"
+			tasks: [{
+				id: "1E55AB139D9E3539"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.task.1E55AB139D9E3539.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest331F2C12C652D268.title}"
+			x: 0.99d
+			y: 0.99d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description1}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description3}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.description9}"
+			]
+			id: "6644AAD403127EFB"
+			size: 0.66d
+			tasks: [{
+				id: "3FF4710150014FB0"
+				item: "gtceu:maintenance_hatch"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest6644AAD403127EFB.title}"
+			x: 1.98d
+			y: 0.99d
+		}
+		{
+			dependencies: ["1646BF9194100E57"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description6}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description8}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description9}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description10}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description11}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description12}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description13}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description14}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description15}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description16}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.description17}"
+			]
+			icon: "gtceu:tritanium_coil_block"
+			id: "6C8789A7B8946CFF"
+			size: 0.75d
+			tasks: [{
+				id: "3434AF20FA598211"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest6C8789A7B8946CFF.task.3434AF20FA598211.title}"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description7}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.description8}"
+			]
+			id: "20B98506962B8B17"
+			size: 0.66d
+			tasks: [{
+				id: "1FEB8E12A60DE853"
+				item: "gtceu:lv_muffler_hatch"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest20B98506962B8B17.title}"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.description4}"
+			]
+			id: "5F320AFEF6F41AAF"
+			size: 0.75d
+			tasks: [{
+				count: 2L
+				id: "692DAFF49E94F293"
+				item: "gtceu:lv_energy_input_hatch"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest5F320AFEF6F41AAF.title}"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2FC7B1E867E4194E"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest0C09F89291D29EF8.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest0C09F89291D29EF8.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest0C09F89291D29EF8.description3}"
+			]
+			icon: "gtceu:lv_input_bus"
+			id: "0C09F89291D29EF8"
+			size: 0.66d
+			tasks: [
+				{
+					id: "20525743B089148E"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "1BAD5A4B4E0EA120"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest0C09F89291D29EF8.title}"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3568BC9742092FC5"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description3}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description4}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description7}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description9}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description10}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description11}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description12}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description13}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description14}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description15}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description16}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description17}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description18}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description19}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description20}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description21}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.description22}"
+			]
+			icon: "gtceu:cleanroom"
+			id: "1E5EFC5880605DD4"
+			size: 0.75d
+			tasks: [{
+				id: "315F143FB070D17F"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.task.315F143FB070D17F.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest1E5EFC5880605DD4.title}"
+			x: 0.0d
+			y: 1.98d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description5}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description6}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.description7}"
+			]
+			icon: "gtceu:assembly_line"
+			id: "2C70E297DBE3BDF2"
+			size: 0.66d
+			tasks: [{
+				id: "0CC1BD3E61E14F18"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest2C70E297DBE3BDF2.title}"
+			x: 0.99d
+			y: 1.98d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description6}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.description7}"
+			]
+			icon: "gtceu:data_orb"
+			id: "6DA28F169CED9C7D"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.subtitle}"
+			tasks: [{
+				id: "5626378FBFA6241A"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest6DA28F169CED9C7D.task.5626378FBFA6241A.title}"
+				type: "checkmark"
+			}]
+			x: 1.98d
+			y: 1.98d
+		}
+		{
+			dependencies: ["188A8C3DD38C2762"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description3}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description9}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description10}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description11}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description12}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description13}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description14}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description15}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description16}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description17}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description18}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description19}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description20}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description21}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description22}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description23}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description24}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description25}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description26}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description27}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description28}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description29}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description30}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description31}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description32}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description33}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description34}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description35}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description36}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.description37}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:turbine_rotor"
+				tag: {
+					GT.PartStats: {
+						Material: "aluminium"
+					}
+				}
+			}
+			id: "1366981BD8CD98E1"
+			size: 0.75d
+			tasks: [{
+				id: "2E9A0EE7DBA81C4D"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest1366981BD8CD98E1.task.2E9A0EE7DBA81C4D.title}"
+				type: "checkmark"
+			}]
+			x: 3.97d
+			y: 1.98d
+		}
+		{
+			dependencies: ["3B2D2C47BEBCFFA7"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description1}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.description8}"
+			]
+			icon: "gtceu:mega_blast_furnace"
+			id: "57DE7059D524FAE9"
+			size: 0.66d
+			tasks: [{
+				id: "7E9FB8A674944C72"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest57DE7059D524FAE9.task.7E9FB8A674944C72.title}"
+				type: "checkmark"
+			}]
+			x: 4.95d
+			y: 1.98d
+		}
+		{
+			dependencies: ["3B2D2C47BEBCFFA7"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.description2}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.description3}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.description4}"
+			]
+			icon: "gtceu:zpm_parallel_hatch"
+			id: "255929EB845E200D"
+			size: 0.75d
+			tasks: [{
+				id: "71990F9CE8E29F73"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest255929EB845E200D.title}"
+			x: 5.94d
+			y: 1.98d
+		}
+		{
+			dependencies: ["7813F183681E0342"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description4}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description5}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description6}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description7}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description8}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description9}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description10}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description11}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description12}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description13}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description14}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description15}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description16}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description17}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description18}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.description19}"
+			]
+			icon: "gtceu:crushed_redstone_ore"
+			id: "189612F2C7C60E81"
+			rewards: [
+				{
+					count: 16
+					id: "6B12F2544F281A32"
+					item: "gtceu:iron_ore"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "00CB754FC48F6203"
+					item: "gtceu:chalcopyrite_ore"
+					type: "item"
+				}
+			]
+			size: 0.66d
+			tasks: [
+				{
+					id: "26D2F1DD581B726D"
+					item: "gtceu:crushed_redstone_ore"
+					type: "item"
+				}
+				{
+					id: "48BC67DA4DD081A6"
+					item: "gtceu:pure_redstone_dust"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest189612F2C7C60E81.title}"
+			x: 4.95d
+			y: 0.0d
+		}
+		{
+			dependencies: ["724FB950CC472BB4"]
+			description: [
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description1}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description2}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description3}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description4}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description5}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description6}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description7}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description8}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description9}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description10}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description11}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description12}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description13}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description14}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description15}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description16}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description17}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description18}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description19}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description20}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description21}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description22}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description23}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description24}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description25}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description26}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description27}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description28}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description29}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description30}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description31}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description32}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description33}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description34}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description35}"
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description36}"
+				""
+				"{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.description37}"
+			]
+			icon: "gtceu:crushed_diamond_ore"
+			id: "7FCFE4C40837CF5E"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.subtitle}"
+			tasks: [{
+				id: "36276D923D83323C"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest7FCFE4C40837CF5E.task.36276D923D83323C.title}"
+				type: "checkmark"
+			}]
+			x: 5.94d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AD9884E7BFB2510"]
+			description: ["Spraying &3Input Buses&r and &3Hatches&r the same color will treat them as one &3Hatch&r in the &5Multiblock&r. With distinct mode enabled on the &3Buses/Hatches&r, the &5Multiblock&r will only search for a recipe using ingredients from one color group. With this enabled the &5Multiblock&r will try to match the color of the &3Output Hatch&r to the color group used for the inputs."]
+			icon: "gtceu:cyan_dye_spray_can"
+			id: "57EC19AF87A32930"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.tips_and_tricks_2.quest57EC19AF87A32930.subtitle}"
+			tasks: [{
+				id: "5F4FB0D81F0772F9"
+				title: "{ftbquests.chapter.tips_and_tricks_2.quest57EC19AF87A32930.task.5F4FB0D81F0772F9.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.tips_and_tricks_2.quest57EC19AF87A32930.title}"
+			x: 3.0d
+			y: 1.98d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.tips_and_tricks_2.subtitle0}"]
+	title: "{ftbquests.chapter.tips_and_tricks_2.title}"
+}

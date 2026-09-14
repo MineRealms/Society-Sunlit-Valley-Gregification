@@ -1,0 +1,1112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "luv__ludicrous_voltage"
+	group: "9F2C7A5E1B3D4C60"
+	icon: "gtceu:luv_electric_motor"
+	id: "262A03F6F4EC713C"
+	order_index: 7
+	quest_links: [
+		{
+			id: "7F8B55C8510200AF"
+			linked_quest: "188A8C3DD38C2762"
+			shape: "rsquare"
+			size: 0.66d
+			x: 6.75d
+			y: 0.0d
+		}
+		{
+			id: "217218CFDDD8EAC4"
+			linked_quest: "195E5BFDE4C5A0DE"
+			size: 0.75d
+			x: 6.75d
+			y: 3.375d
+		}
+		{
+			id: "0BD725095A2264FF"
+			linked_quest: "7CFC112B8F460549"
+			size: 0.75d
+			x: 5.625d
+			y: 3.375d
+		}
+		{
+			id: "67271280B90D765D"
+			linked_quest: "300348B1238BCB9A"
+			size: 0.75d
+			x: 1.125d
+			y: 3.375d
+		}
+		{
+			id: "7E79CDC95173C788"
+			linked_quest: "1A4AD56965407DC5"
+			size: 0.75d
+			x: 0.375d
+			y: 5.25d
+		}
+		{
+			id: "2FD482405B15F06A"
+			linked_quest: "77070668969E31BF"
+			size: 0.75d
+			x: 1.125d
+			y: 5.625d
+		}
+		{
+			id: "6205AC829E90CE53"
+			linked_quest: "4F6E351C5F676618"
+			size: 0.75d
+			x: 2.25d
+			y: 4.5d
+		}
+		{
+			id: "4E999806429BF983"
+			linked_quest: "77B7B1EDD19831E0"
+			shape: "gear"
+			size: 1.2d
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"77B7B1EDD19831E0"
+				"78277DBC07D3C45C"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest52D00CD3E8D1E293.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest52D00CD3E8D1E293.description2}"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:uhpic_chip"
+			id: "52D00CD3E8D1E293"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "375256F3884D78A5"
+					item: "gtceu:uhpic_wafer"
+					type: "item"
+				}
+				{
+					id: "131EF40752C3F5B4"
+					item: "gtceu:uhpic_chip"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest52D00CD3E8D1E293.title}"
+			x: 2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["00C14E3B8009DF7F"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest35549F0404C87BCA.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest35549F0404C87BCA.description2}"
+			]
+			id: "35549F0404C87BCA"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest35549F0404C87BCA.subtitle}"
+			tasks: [{
+				id: "10FAF765725C7790"
+				item: "gtceu:pcb_coolant_bucket"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest35549F0404C87BCA.title}"
+			x: 2.25d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"52D00CD3E8D1E293"
+				"35549F0404C87BCA"
+				"5ED7707B0ECF2207"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.description4}"
+			]
+			id: "1AD003487B4EC2EF"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.subtitle}"
+			tasks: [{
+				id: "39CDBE6B4B973868"
+				item: "gtceu:active_transformer"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest1AD003487B4EC2EF.title}"
+			x: 3.375d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"77B7B1EDD19831E0"
+				"5ED7707B0ECF2207"
+				"52D952ADBEB67454"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description4}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description5}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description6}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description7}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description8}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.description9}"
+			]
+			id: "42760D3A86EFDCA3"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.subtitle}"
+			tasks: [{
+				id: "01188385BE2DB3B3"
+				item: "gtceu:data_bank"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest42760D3A86EFDCA3.title}"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1AD003487B4EC2EF"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.description4}"
+			]
+			id: "07159FCD9744DD98"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.subtitle}"
+			tasks: [{
+				id: "3BA3AA8746044DC1"
+				item: "gtceu:normal_laser_pipe"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest07159FCD9744DD98.title}"
+			x: 3.375d
+			y: -1.125d
+		}
+		{
+			dependencies: ["78277DBC07D3C45C"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.description3}"
+			]
+			id: "3F31E99D0284A60A"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.subtitle}"
+			tasks: [{
+				id: "2F8C92A86CAF338F"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest3F31E99D0284A60A.title}"
+			x: 0.0d
+			y: 1.125d
+		}
+		{
+			dependencies: ["7A1E3C3A2D699C5B"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.description3}"
+			]
+			hide_dependency_lines: true
+			id: "78277DBC07D3C45C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.subtitle}"
+			tasks: [{
+				id: "36833D5050F81992"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest78277DBC07D3C45C.title}"
+			x: 1.125d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"78277DBC07D3C45C"
+				"7A1E3C3A2D699C5B"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description4}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.description5}"
+			]
+			id: "2FCBA0D780DBDA9E"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.subtitle}"
+			tasks: [{
+				count: 16L
+				id: "28332FC9FCA83E41"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest2FCBA0D780DBDA9E.title}"
+			x: 3.375d
+			y: 1.125d
+		}
+		{
+			dependencies: [
+				"0F192D1F44B9B599"
+				"2FCBA0D780DBDA9E"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5ED7707B0ECF2207.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5ED7707B0ECF2207.description2}"
+			]
+			id: "5ED7707B0ECF2207"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest5ED7707B0ECF2207.subtitle}"
+			tasks: [{
+				id: "10FB849CE994B1A5"
+				item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest5ED7707B0ECF2207.title}"
+			x: 4.5d
+			y: 1.125d
+		}
+		{
+			dependencies: ["546CC03435E763CF"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description3}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description4}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.description5}"
+			]
+			icon: "gtceu:argon_plasma_bucket"
+			id: "173C1FA72301B5E7"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.subtitle}"
+			tasks: [{
+				id: "062ECB2F9C9D741D"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest173C1FA72301B5E7.title}"
+			x: 5.625d
+			y: 1.125d
+		}
+		{
+			dependencies: ["173C1FA72301B5E7"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.description3}"
+			]
+			id: "4E9DED9569AA17F5"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.subtitle}"
+			tasks: [{
+				id: "13230F892A8F6FA1"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest4E9DED9569AA17F5.title}"
+			x: 6.75d
+			y: 1.125d
+		}
+		{
+			dependencies: ["378F0AFCF95354B2"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest24F0454B9A090C44.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest24F0454B9A090C44.description2}"
+			]
+			id: "24F0454B9A090C44"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest24F0454B9A090C44.subtitle}"
+			tasks: [{
+				id: "16895659E44B65B5"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest24F0454B9A090C44.title}"
+			x: 0.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"78277DBC07D3C45C"
+				"48DEABA155605D23"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description4}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description5}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description6}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description7}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description8}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description9}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description10}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description11}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description12}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description13}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description14}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description15}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.description16}"
+			]
+			icon: "gtceu:naquadah_dust"
+			id: "378F0AFCF95354B2"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.subtitle}"
+			tasks: [{
+				id: "1D674C3951223E8C"
+				item: "gtceu:fluoroantimonic_acid_bucket"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest378F0AFCF95354B2.title}"
+			x: 1.125d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"378F0AFCF95354B2"
+				"2FCBA0D780DBDA9E"
+				"00C14E3B8009DF7F"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.description4}"
+			]
+			icon: "gtceu:trinium_ingot"
+			id: "0DC999F79A685194"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.subtitle}"
+			tasks: [
+				{
+					id: "48F555D3FC7EA449"
+					item: "gtceu:trinium_sulfide_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F64CAA30D89B10B"
+					item: "gtceu:trinium_ingot"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0DC999F79A685194.title}"
+			x: 3.375d
+			y: 2.25d
+		}
+		{
+			dependencies: ["4F6E351C5F676618"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.description4}"
+			]
+			id: "2BBD3BC7D1B955C2"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.subtitle}"
+			tasks: [{
+				id: "757053C4979D8B08"
+				item: "gtceu:plutonium_241_dust"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest2BBD3BC7D1B955C2.title}"
+			x: 4.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"0DC999F79A685194"
+				"5ED7707B0ECF2207"
+				"52D952ADBEB67454"
+				"7CFC112B8F460549"
+				"327C3E02CD751453"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description3}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description4}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description5}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description6}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description7}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description8}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description9}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description10}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description11}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description12}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.description13}"
+			]
+			id: "546CC03435E763CF"
+			shape: "gear"
+			size: 1.3d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.subtitle}"
+			tasks: [{
+				id: "48A4D39ED0E11EBC"
+				item: "gtceu:luv_fusion_reactor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest546CC03435E763CF.title}"
+			x: 5.625d
+			y: 2.25d
+		}
+		{
+			dependencies: ["546CC03435E763CF"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.description4}"
+			]
+			id: "7A74F692F14F0FF8"
+			shape: "gear"
+			size: 1.1d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.subtitle}"
+			tasks: [{
+				id: "220305C9DA0F512B"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest7A74F692F14F0FF8.title}"
+			x: 6.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["7A74F692F14F0FF8"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description3}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description4}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description5}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description6}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.description7}"
+			]
+			icon: "gtceu:crystal_cpu"
+			id: "764091A111FB4DA6"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.subtitle}"
+			tasks: [
+				{
+					id: "3B9666A5C3CBDCD6"
+					item: "gtceu:engraved_crystal_chip"
+					type: "item"
+				}
+				{
+					id: "6AFCBD40BD589726"
+					item: "gtceu:crystal_cpu"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest764091A111FB4DA6.title}"
+			x: 7.875d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"77B7B1EDD19831E0"
+				"4F6E351C5F676618"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest00C14E3B8009DF7F.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest00C14E3B8009DF7F.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest00C14E3B8009DF7F.description3}"
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:luv_energy_input_hatch"
+			id: "00C14E3B8009DF7F"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [
+				{
+					id: "6733F9F527CA9B29"
+					item: "gtceu:luv_energy_input_hatch"
+					type: "item"
+				}
+				{
+					id: "6CE9FCCC37446BFD"
+					item: "gtceu:luv_energy_output_hatch"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest00C14E3B8009DF7F.title}"
+			x: 2.25d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"77B7B1EDD19831E0"
+				"46C7E1D5E37B1ED2"
+			]
+			description: ["The &aWireless Connector&r will help with logistics, giving &9Wireless Transfer&r for your ME Network with unlimited range. The energy cost scales exponentially with transfer distance."]
+			id: "7E2076D45F83D9C3"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest7E2076D45F83D9C3.subtitle}"
+			tasks: [{
+				id: "3AC7E29D373750F8"
+				item: "ae2:wireless_access_point"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest7E2076D45F83D9C3.title}"
+			x: 3.96d
+			y: 5.94d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest79192BA29BE69170.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest79192BA29BE69170.description2}"
+			]
+			icon: "ae2:interface"
+			id: "79192BA29BE69170"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "3DFCDF1B24506A8A"
+				title: "{ftbquests.chapter.luv__ludicrous_voltage.quest79192BA29BE69170.task.3DFCDF1B24506A8A.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest79192BA29BE69170.title}"
+			x: 3.3d
+			y: 4.62d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.description1}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.description3}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.description4}"
+			]
+			id: "4AEAC79007790BD8"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.subtitle}"
+			tasks: [{
+				id: "5904009DC40731D6"
+				item: "gtceu:ev_fluid_drilling_rig"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest4AEAC79007790BD8.title}"
+			x: 5.61d
+			y: 4.62d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest1BE779AF4487E3EB.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest1BE779AF4487E3EB.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest1BE779AF4487E3EB.description3}"
+			]
+			id: "1BE779AF4487E3EB"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "414C3982BED7EA0D"
+				item: "gtceu:luv_large_miner"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest1BE779AF4487E3EB.title}"
+			x: 5.28d
+			y: 5.28d
+		}
+		{
+			dependencies: [
+				"7A74F692F14F0FF8"
+				"195E5BFDE4C5A0DE"
+				"5B07279B08BF8DDE"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.description1}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.description3}"
+			]
+			icon: "gtceu:lapotronic_energy_orb_cluster"
+			id: "0D7C978F9CDF771B"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.subtitle}"
+			tasks: [
+				{
+					id: "6D1376BF3CEA87A7"
+					item: "gtceu:lapotronic_energy_orb_cluster"
+					type: "item"
+				}
+				{
+					id: "66D5D76676D27388"
+					item: "gtceu:luv_lapotronic_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0D7C978F9CDF771B.title}"
+			x: 6.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["42CD789B8C40E424"]
+			description: ["Cheaper &dLuV&r circuits! These'll take some of the edge out of those brutal Robot Arm recipes."]
+			id: "47087361D6DE7DCF"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest47087361D6DE7DCF.subtitle}"
+			tasks: [{
+				id: "3CF7F369F390A3E5"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest47087361D6DE7DCF.title}"
+			x: 7.875d
+			y: 4.5d
+		}
+		{
+			dependencies: ["47087361D6DE7DCF"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest7AE681E2AB31EA0D.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest7AE681E2AB31EA0D.description2}"
+			]
+			id: "7AE681E2AB31EA0D"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest7AE681E2AB31EA0D.subtitle}"
+			tasks: [{
+				id: "0E274B445A95250A"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest7AE681E2AB31EA0D.title}"
+			x: 7.875d
+			y: 5.625d
+		}
+		{
+			dependencies: [
+				"77B7B1EDD19831E0"
+				"7CFC112B8F460549"
+			]
+			description: ["The &aLuV Electric Prospector&r is a major upgrade from the &eHV&r one. With its huge range, it'll make finding Fluid and Ore veins very easy."]
+			id: "7033A24F37F9B9B9"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest7033A24F37F9B9B9.subtitle}"
+			tasks: [{
+				id: "718BA09242A22550"
+				item: "gtceu:prospector.luv"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest7033A24F37F9B9B9.title}"
+			x: 4.5d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"195E5BFDE4C5A0DE"
+				"6C241455C5434C2E"
+				"764091A111FB4DA6"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42CD789B8C40E424.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest42CD789B8C40E424.description2}"
+			]
+			id: "42CD789B8C40E424"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest42CD789B8C40E424.subtitle}"
+			tasks: [{
+				id: "6357389871CE70C2"
+				item: "gtceu:crystal_processor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest42CD789B8C40E424.title}"
+			x: 7.875d
+			y: 3.375d
+		}
+		{
+			dependencies: ["0338C9219DC2F819"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.description4}"
+			]
+			id: "6C241455C5434C2E"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.subtitle}"
+			tasks: [{
+				id: "5B8C1C15E5413CEC"
+				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest6C241455C5434C2E.title}"
+			x: 9.0d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"35D4F93EFB6EACB6"
+				"300348B1238BCB9A"
+				"1A4AD56965407DC5"
+				"12FEE0A47E4658D5"
+				"4F6E351C5F676618"
+				"77070668969E31BF"
+				"3A7491323AC5C70C"
+			]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.description4}"
+			]
+			icon: "gtceu:luv_electric_motor"
+			id: "11D3B21A177B0E14"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.subtitle}"
+			tasks: [
+				{
+					id: "0BA1015B5C7A0BD5"
+					item: "gtceu:luv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "70CFEBF19D3187E4"
+					item: "gtceu:luv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "03F3F0C59537103D"
+					item: "gtceu:luv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "682AD49DA21B55C7"
+					item: "gtceu:luv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "6A9298CBB8CF2A60"
+					item: "gtceu:luv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "31BB271A1E939852"
+					item: "gtceu:luv_emitter"
+					type: "item"
+				}
+				{
+					id: "57609974EC62C885"
+					item: "gtceu:luv_sensor"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest11D3B21A177B0E14.title}"
+			x: 1.125d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0425179329ED1B72"]
+			description: ["A requirement for &dLuV&r+ cables."]
+			id: "12FEE0A47E4658D5"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest12FEE0A47E4658D5.subtitle}"
+			tasks: [{
+				id: "4CAD2BE5558D7501"
+				item: "gtceu:polyphenylene_sulfide_foil"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest12FEE0A47E4658D5.title}"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4F6E351C5F676618"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description3}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description4}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description5}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description6}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description7}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description8}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description9}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description10}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description11}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description12}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description13}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description14}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description15}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description16}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description17}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description18}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.description19}"
+			]
+			icon: "minecraft:mud"
+			id: "63F9531F391040B2"
+			shape: "circle"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.subtitle}"
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest63F9531F391040B2.title}"
+			x: 2.25d
+			y: 3.375d
+		}
+		{
+			dependencies: ["5CA86A333670A55C"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest35D4F93EFB6EACB6.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest35D4F93EFB6EACB6.description2}"
+			]
+			id: "35D4F93EFB6EACB6"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest35D4F93EFB6EACB6.subtitle}"
+			tasks: [{
+				id: "1CAACC2FAABE68A1"
+				item: "gtceu:iv_polarizer"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest35D4F93EFB6EACB6.title}"
+			x: 0.375d
+			y: 3.75d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: ["The &aQuantum Bridge Card&r is an upgrade to the &9Quantum Link Tunnel&r, which gives &9Wireless Terminals&r access to your AE system with unlimited range, and from any dimension."]
+			icon: "ae2:wireless_receiver"
+			id: "602DA4B4820E9088"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest602DA4B4820E9088.subtitle}"
+			tasks: [{
+				id: "280DF4E4A7E5FC2A"
+				item: "ae2:wireless_receiver"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest602DA4B4820E9088.title}"
+			x: 3.63d
+			y: 5.28d
+		}
+		{
+			dependencies: ["0D7C978F9CDF771B"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.description2}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.description4}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:advanced_quarktech_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A884622985A7417"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.subtitle}"
+			tasks: [{
+				id: "23AF5E66858C1950"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0A884622985A7417.title}"
+			x: 6.758503401360549d
+			y: 5.621173469387756d
+		}
+		{
+			dependencies: ["4F6E351C5F676618"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.description2}"
+			]
+			icon: "gtceu:luv_dual_input_hatch"
+			id: "0960C894446A786C"
+			shape: "circle"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.subtitle}"
+			tasks: [{
+				id: "0089B7D781622D68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:luv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_dual_output_hatch"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.task.0089B7D781622D68.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest0960C894446A786C.title}"
+			x: 2.2414965986394577d
+			y: 5.631377551020407d
+		}
+		{
+			dependencies: ["77B7B1EDD19831E0"]
+			description: [
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description1}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description2}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description3}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description4}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description5}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description6}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description7}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description8}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description9}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description10}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description11}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description12}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description13}"
+				""
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description14}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description15}"
+				"{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.description16}"
+			]
+			icon: "ae2:blank_pattern"
+			id: "5CE0B928479D8535"
+			rewards: [{
+				count: 64
+				id: "597FE2E43C76B1E0"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.subtitle}"
+			tasks: [{
+				id: "77D0C17BBE681C85"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.luv__ludicrous_voltage.quest5CE0B928479D8535.title}"
+			x: 4.95d
+			y: 5.94d
+		}
+	]
+	quests: [
+	]
+	subtitle: ["{ftbquests.chapter.luv__ludicrous_voltage.subtitle0}"]
+	title: "{ftbquests.chapter.luv__ludicrous_voltage.title}"
+}

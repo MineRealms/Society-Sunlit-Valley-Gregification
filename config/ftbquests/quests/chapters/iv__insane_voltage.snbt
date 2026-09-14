@@ -1,0 +1,1133 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iv__insane_voltage"
+	group: "9F2C7A5E1B3D4C60"
+	icon: "gtceu:iv_electric_motor"
+	id: "32EF20533F323E02"
+	order_index: 6
+	quest_links: [{
+		id: "050247AED8C803F9"
+		linked_quest: "30A6EDDF25A5E5F8"
+		shape: "gear"
+		size: 1.2d
+		x: 0.375d
+		y: 4.875d
+	}]
+	quests: [
+		{
+			dependencies: [
+				"300348B1238BCB9A"
+				"7A1E3C3A2D699C5B"
+			]
+			description: ["This Superconductor will be required for progression during &dLuV&r... when you delve deeper into &bResearch&r."]
+			icon: "gtceu:samarium_iron_arsenic_oxide_double_wire"
+			id: "52D952ADBEB67454"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest52D952ADBEB67454.subtitle}"
+			tasks: [{
+				icon: "gtceu:samarium_iron_arsenic_oxide_single_wire"
+				id: "3789CEDA4AEEBD91"
+				item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest52D952ADBEB67454.title}"
+			x: -0.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FA0ACB7F161F378"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description1}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description2}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description4}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description5}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description6}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description7}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description8}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description9}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description10}"
+				"{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.description11}"
+			]
+			id: "300348B1238BCB9A"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.subtitle}"
+			tasks: [{
+				count: 64L
+				id: "0BC7D23CA52A619D"
+				item: "gtceu:rare_earth_dust"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest300348B1238BCB9A.title}"
+			x: -1.875d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1776FA1F3255731E"
+				"5CA86A333670A55C"
+				"069FD86133D7D582"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.description4}"
+			]
+			icon: "gtceu:hssg_coil_block"
+			id: "7A1E3C3A2D699C5B"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.subtitle}"
+			tasks: [{
+				icon: { Count: 16, id: "gtceu:hssg_coil_block" }
+				id: "544762609C1B9613"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest7A1E3C3A2D699C5B.title}"
+			x: 0.375d
+			y: 1.5d
+		}
+		{
+			dependencies: ["069FD86133D7D582"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.description3}"
+			]
+			hide_dependency_lines: true
+			id: "1776FA1F3255731E"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.subtitle}"
+			tasks: [{
+				id: "7F7D77145AC8197E"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest1776FA1F3255731E.title}"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A1E3C3A2D699C5B"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.description3}"
+			]
+			id: "1783D89CE81C8E2E"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.subtitle}"
+			tasks: [{
+				id: "096C0C576B0F3358"
+				item: "gtceu:hsse_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest1783D89CE81C8E2E.title}"
+			x: 0.375d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"1776FA1F3255731E"
+				"0425179329ED1B72"
+				"58BBD540D7D4FF01"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description4}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description5}"
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description6}"
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description7}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description8}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description9}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.description10}"
+			]
+			id: "466AC4DD902115EF"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.subtitle}"
+			tasks: [{
+				id: "7F0E2A5AD0E2FC25"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest466AC4DD902115EF.title}"
+			x: 1.5d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"7820DF52516344F4"
+				"4CD9F6D1B4CC7D81"
+				"5BACED5AE350EAB1"
+				"4343746E706264E6"
+				"528CE69DA4358B2E"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest7CFC112B8F460549.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest7CFC112B8F460549.description2}"
+			]
+			icon: "gtceu:polybenzimidazole_plate"
+			id: "7CFC112B8F460549"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest7CFC112B8F460549.subtitle}"
+			tasks: [
+				{
+					id: "7C5D37940A0C8409"
+					item: "gtceu:polybenzimidazole_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "65165EC105F048AD"
+					item: "gtceu:polybenzimidazole_plate"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest7CFC112B8F460549.title}"
+			x: -0.75d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"7A1E3C3A2D699C5B"
+				"7CFC112B8F460549"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest195E5BFDE4C5A0DE.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest195E5BFDE4C5A0DE.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest195E5BFDE4C5A0DE.description3}"
+			]
+			icon: "gtceu:advanced_smd_transistor"
+			id: "195E5BFDE4C5A0DE"
+			size: 0.75d
+			tasks: [
+				{
+					id: "25B01725B3E33952"
+					item: "gtceu:advanced_smd_transistor"
+					type: "item"
+				}
+				{
+					id: "5BA971DE64CA560F"
+					item: "gtceu:advanced_smd_resistor"
+					type: "item"
+				}
+				{
+					id: "1ED6BE67774595EA"
+					item: "gtceu:advanced_smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "027CA58B4F5D5F99"
+					item: "gtceu:advanced_smd_diode"
+					type: "item"
+				}
+				{
+					id: "3D7DE6355D703AFB"
+					item: "gtceu:advanced_smd_inductor"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest195E5BFDE4C5A0DE.title}"
+			x: -0.75d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"7CC79617A4965F25"
+				"30A6EDDF25A5E5F8"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description3}"
+				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description4}"
+				"{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.description5}"
+			]
+			icon: "gtceu:iv_assembler"
+			id: "5CA86A333670A55C"
+			size: 0.75d
+			tasks: [
+				{
+					id: "2BD1CC61E5122DC7"
+					item: "gtceu:iv_assembler"
+					type: "item"
+				}
+				{
+					id: "5E8D6AA09A113AE0"
+					item: "gtceu:large_assembler"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest5CA86A333670A55C.title}"
+			x: 0.375d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"30A6EDDF25A5E5F8"
+				"14D277A164202FF8"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.description4}"
+			]
+			icon: "gtceu:tungstensteel_large_boiler"
+			id: "328CFD483C26EA44"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.subtitle}"
+			tasks: [
+				{
+					id: "4C89839747EDFFF5"
+					item: "gtceu:tungstensteel_large_boiler"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4F863C04757556B2"
+					title: "{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.task.4F863C04757556B2.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest328CFD483C26EA44.title}"
+			x: -0.75d
+			y: 4.875d
+		}
+		{
+			dependencies: ["528CE69DA4358B2E"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.description4}"
+			]
+			id: "12B4423F055BFBF5"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.subtitle}"
+			tasks: [{
+				id: "2358A62B80B56238"
+				item: "gtceu:laminated_glass"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest12B4423F055BFBF5.title}"
+			x: 2.625d
+			y: 4.875d
+		}
+		{
+			dependencies: [
+				"7A1E3C3A2D699C5B"
+				"216E5A3574AC08BF"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.description3}"
+			]
+			id: "3A7491323AC5C70C"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.subtitle}"
+			tasks: [{
+				id: "578E3442D589DAE8"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest3A7491323AC5C70C.title}"
+			x: 2.625d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7D15EEE81B1A3100"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description3}"
+				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description4}"
+				"{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.description5}"
+			]
+			icon: "gtceu:indium_dust"
+			id: "0F192D1F44B9B599"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.subtitle}"
+			tasks: [{
+				id: "1BC2B3ED9FD76DA2"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest0F192D1F44B9B599.title}"
+			x: 2.625d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"7820DF52516344F4"
+				"0F192D1F44B9B599"
+				"5CA86A333670A55C"
+				"528CE69DA4358B2E"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest0425179329ED1B72.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0425179329ED1B72.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0425179329ED1B72.description3}"
+			]
+			id: "0425179329ED1B72"
+			size: 0.75d
+			tasks: [{
+				id: "3550E45267942DE8"
+				item: "gtceu:hpic_chip"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest0425179329ED1B72.title}"
+			x: 2.625d
+			y: 3.75d
+		}
+		{
+			dependencies: ["30A6EDDF25A5E5F8"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.description3}"
+			]
+			icon: "gtceu:iv_electric_motor"
+			id: "01AB252C72B565FE"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.subtitle}"
+			tasks: [
+				{
+					id: "382B9759383E1AC3"
+					item: "gtceu:iv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "0C74DFC662ECC366"
+					item: "gtceu:iv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "519AC26F40AFFB88"
+					item: "gtceu:iv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "36CA1AAFADE476FF"
+					item: "gtceu:iv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "27DB5DDEF05DDC0D"
+					item: "gtceu:iv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "165F27AC399EC0FD"
+					item: "gtceu:iv_emitter"
+					type: "item"
+				}
+				{
+					id: "6AD8B7D88D9E10F5"
+					item: "gtceu:iv_sensor"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest01AB252C72B565FE.title}"
+			x: 0.375d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"7CC79617A4965F25"
+				"30A6EDDF25A5E5F8"
+				"14D277A164202FF8"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.description4}"
+			]
+			id: "05003665368F5A57"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.subtitle}"
+			tasks: [{
+				id: "4043CFB3C4E0DB90"
+				item: "gtceu:iv_macerator"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest05003665368F5A57.title}"
+			x: 1.5d
+			y: 4.875d
+		}
+		{
+			dependencies: ["05003665368F5A57"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.description3}"
+			]
+			icon: "gtceu:refined_almandine_ore"
+			id: "724FB950CC472BB4"
+			shape: "circle"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.subtitle}"
+			tasks: [{
+				id: "496C00BA0D8F5445"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest724FB950CC472BB4.title}"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"73E8283634E5E33A"
+				"12B4423F055BFBF5"
+				"327C3E02CD751453"
+				"0425179329ED1B72"
+				"069FD86133D7D582"
+				"6B128610C7D2825D"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description3}"
+				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description4}"
+				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description5}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.description6}"
+			]
+			id: "77B7B1EDD19831E0"
+			shape: "gear"
+			size: 1.3d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.subtitle}"
+			tasks: [{
+				id: "1BD34023E42B4E50"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest77B7B1EDD19831E0.title}"
+			x: 3.75d
+			y: 4.875d
+		}
+		{
+			dependencies: [
+				"0988B5FB795FF7DA"
+				"383B789B654C4094"
+				"69E384F389B0D07B"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.description4}"
+			]
+			icon: "gtceu:lapotronic_energy_orb"
+			id: "5B07279B08BF8DDE"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.subtitle}"
+			tasks: [
+				{
+					id: "3B8E3903EA888A6F"
+					item: "gtceu:lapotronic_energy_orb"
+					type: "item"
+				}
+				{
+					id: "529358AADE55D801"
+					item: "gtceu:iv_lapotronic_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest5B07279B08BF8DDE.title}"
+			x: 7.125d
+			y: 4.875d
+		}
+		{
+			dependencies: ["145F71A817C5996E"]
+			description: ["The &aZPM Mainframe&r is used to make the &3LuV Circuit Assembler&r (of course), but also allows you to step into &3Fusion&r."]
+			id: "327C3E02CD751453"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest327C3E02CD751453.subtitle}"
+			tasks: [{
+				id: "59901F46ED2C46DF"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest327C3E02CD751453.title}"
+			x: 8.25d
+			y: 4.875d
+		}
+		{
+			dependencies: [
+				"1B520580219AFAE9"
+				"216E5A3574AC08BF"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description3}"
+				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description4}"
+				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description5}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.description6}"
+			]
+			icon: "minecraft:nether_star"
+			id: "6B128610C7D2825D"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.subtitle}"
+			tasks: [
+				{
+					id: "71D5FE3076C1F56C"
+					item: "gtceu:nether_star_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "08814DD921835365"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/nether_star"
+						}
+					}
+					title: "{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.task.08814DD921835365.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest6B128610C7D2825D.title}"
+			x: 4.875d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"7820DF52516344F4"
+				"528CE69DA4358B2E"
+				"57D4E09A9CAB150C"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.description4}"
+			]
+			icon: "gtceu:iridium_ingot"
+			id: "216E5A3574AC08BF"
+			size: 0.75d
+			tasks: [
+				{
+					id: "236EFFBCE5885D61"
+					item: "gtceu:rarest_metal_mixture_dust"
+					type: "item"
+				}
+				{
+					id: "1AAE4205D9FA580D"
+					item: "gtceu:iridium_dust"
+					type: "item"
+				}
+				{
+					id: "75849AB6B11652E9"
+					item: "gtceu:osmium_dust"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest216E5A3574AC08BF.title}"
+			x: 3.75d
+			y: 2.625d
+		}
+		{
+			dependencies: ["2F9D9AAB27E6534D"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description4}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.description5}"
+			]
+			id: "4F6E351C5F676618"
+			rewards: [{
+				id: "02E9F7E9FF906F4E"
+				item: "gtceu:rhodium_dust"
+				random_bonus: 3
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.subtitle}"
+			tasks: [{
+				icon: "gtceu:rhodium_plated_palladium_ingot"
+				id: "0A57BEFB8BD9958A"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest4F6E351C5F676618.title}"
+			x: 3.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["216E5A3574AC08BF"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest07906458E1A15683.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest07906458E1A15683.description2}"
+			]
+			id: "07906458E1A15683"
+			shape: "rsquare"
+			size: 0.66d
+			tasks: [{
+				id: "7E67EFBB59C847D7"
+				item: "gtceu:iv_large_miner"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest07906458E1A15683.title}"
+			x: 5.860969387755098d
+			y: 0.5221428571428568d
+		}
+		{
+			dependencies: ["216E5A3574AC08BF"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description3}"
+				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description4}"
+				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description5}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.description6}"
+			]
+			id: "04E9D2F484702965"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.subtitle}"
+			tasks: [{
+				id: "7A5A2DC7C8C3406E"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest04E9D2F484702965.title}"
+			x: 4.875d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"73E8283634E5E33A"
+				"0F192D1F44B9B599"
+				"63A87C9303D54487"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest225F57C95C6D7650.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest225F57C95C6D7650.description2}"
+			]
+			id: "225F57C95C6D7650"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest225F57C95C6D7650.subtitle}"
+			tasks: [{
+				id: "4C2C6546F0928AD7"
+				item: "gtceu:qbit_cpu_chip"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest225F57C95C6D7650.title}"
+			x: 4.875d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"73E8283634E5E33A"
+				"216E5A3574AC08BF"
+				"069FD86133D7D582"
+				"6B128610C7D2825D"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest2BB16260A76718B8.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest2BB16260A76718B8.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest2BB16260A76718B8.description3}"
+			]
+			id: "2BB16260A76718B8"
+			size: 0.75d
+			tasks: [{
+				id: "230762F7951EB866"
+				item: "gtceu:iv_circuit_assembler"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest2BB16260A76718B8.title}"
+			x: 6.0d
+			y: 2.625d
+		}
+		{
+			dependencies: ["0338C9219DC2F819"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.description4}"
+			]
+			id: "0988B5FB795FF7DA"
+			size: 0.75d
+			tasks: [{
+				id: "4EB5F93570DAE79B"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest0988B5FB795FF7DA.title}"
+			x: 7.125d
+			y: 2.625d
+		}
+		{
+			dependencies: [
+				"0988B5FB795FF7DA"
+				"225F57C95C6D7650"
+				"2BB16260A76718B8"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.description3}"
+			]
+			id: "49C1D61741AA288E"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.subtitle}"
+			tasks: [{
+				id: "4E109F0F515B210F"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest49C1D61741AA288E.title}"
+			x: 8.25d
+			y: 2.625d
+		}
+		{
+			dependencies: ["4343746E706264E6"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.description4}"
+			]
+			id: "1B520580219AFAE9"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.subtitle}"
+			tasks: [{
+				id: "659880DCA297ED7A"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest1B520580219AFAE9.title}"
+			x: 6.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["117FBB18DEE6F08B"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.description3}"
+			]
+			id: "0338C9219DC2F819"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.subtitle}"
+			tasks: [{
+				id: "7092FDCCDDC53679"
+				item: "gtceu:reinforced_epoxy_resin_plate"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest0338C9219DC2F819.title}"
+			x: 7.125d
+			y: 3.75d
+		}
+		{
+			dependencies: ["698B5F65F2DE4439"]
+			description: ["Good news for any mainframe haters out there - &dLuV&r Circuits that aren't mainframes!"]
+			id: "145F71A817C5996E"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest145F71A817C5996E.subtitle}"
+			tasks: [{
+				id: "0205E6C037A453A8"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest145F71A817C5996E.title}"
+			x: 8.25d
+			y: 4.125d
+		}
+		{
+			dependencies: ["49C1D61741AA288E"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest698B5F65F2DE4439.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest698B5F65F2DE4439.description2}"
+			]
+			id: "698B5F65F2DE4439"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest698B5F65F2DE4439.subtitle}"
+			tasks: [{
+				id: "3B46E4592A6AC60E"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest698B5F65F2DE4439.title}"
+			x: 8.25d
+			y: 3.375d
+		}
+		{
+			dependencies: [
+				"216E5A3574AC08BF"
+				"0425179329ED1B72"
+			]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.description3}"
+			]
+			icon: "gtceu:iv_energy_input_hatch"
+			id: "48DEABA155605D23"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.subtitle}"
+			tasks: [{
+				id: "2EC4E901B2CD35FA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:iv_energy_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_energy_output_hatch"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.task.2EC4E901B2CD35FA.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest48DEABA155605D23.title}"
+			x: 3.7589285714285765d
+			y: 3.767040816326528d
+		}
+		{
+			dependencies: ["12B4423F055BFBF5"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest7CC40BDAA803D044.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest7CC40BDAA803D044.description2}"
+			]
+			icon: "gtceu:iv_cutter"
+			id: "7CC40BDAA803D044"
+			size: 0.75d
+			tasks: [
+				{
+					id: "5365FC750B24814B"
+					item: "gtceu:iv_cutter"
+					type: "item"
+				}
+				{
+					id: "749F36AC9B4B92B1"
+					item: "gtceu:large_cutter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest7CC40BDAA803D044.title}"
+			x: 1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["52D952ADBEB67454"]
+			description: [
+				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description1}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description2}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description3}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description4}"
+				""
+				"{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.description5}"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:quarktech_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2EFC07A4615B8B12"
+			shape: "rsquare"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.subtitle}"
+			tasks: [
+				{
+					id: "350AC6FA06CC04AC"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "19D648FBB2D2332B"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "140838049DC2105A"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31D91C3755CF96AE"
+					item: {
+						Count: 1
+						id: "gtceu:quarktech_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest2EFC07A4615B8B12.title}"
+			x: -0.75d
+			y: 0.375d
+		}
+		{
+			dependencies: ["7CFC112B8F460549"]
+			description: ["&bPolybenzimidazole&r is the best material for &6Soft Mallets&r in vanilla GTCEu. Show us that you're on top of your PBI supply by spending some of it on a &dsuperfluous tool upgrade&r."]
+			icon: {
+				Count: 1
+				id: "gtceu:polybenzimidazole_mallet"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						MaxDamage: 1023
+					}
+					HideFlags: 2
+				}
+			}
+			id: "502836411CA028B9"
+			shape: "circle"
+			size: 0.5d
+			subtitle: "{ftbquests.chapter.iv__insane_voltage.quest502836411CA028B9.subtitle}"
+			tasks: [{
+				id: "5A9B72CD21F42428"
+				item: {
+					Count: 1
+					id: "gtceu:polybenzimidazole_mallet"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							MaxDamage: 1023
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.iv__insane_voltage.quest502836411CA028B9.title}"
+			x: -1.6492346938775455d
+			y: 3.7466326530612264d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.iv__insane_voltage.subtitle0}"]
+	title: "{ftbquests.chapter.iv__insane_voltage.title}"
+}

@@ -1,0 +1,1766 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_age"
+	group: "9F2C7A5E1B3D4C60"
+	icon: "gtceu:bronze_brick_casing"
+	id: "3B89FB8839204148"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest5673089822BFCA70.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest5673089822BFCA70.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest5673089822BFCA70.description3}"
+			]
+			icon: "gtceu:hp_steam_compressor"
+			id: "5673089822BFCA70"
+			rewards: [{
+				count: 8
+				id: "24A6C74E123DDC99"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest5673089822BFCA70.subtitle}"
+			tasks: [{
+				id: "77ECBBA179EC9B3F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_compressor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_alloy_smelter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_forge_hammer"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.steam_age.quest5673089822BFCA70.task.77ECBBA179EC9B3F.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest5673089822BFCA70.title}"
+			x: 0.0d
+			y: -1.98d
+		}
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest0C301014EC4D17B8.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest0C301014EC4D17B8.description2}"
+				"{ftbquests.chapter.steam_age.quest0C301014EC4D17B8.description3}"
+				"{ftbquests.chapter.steam_age.quest0C301014EC4D17B8.description4}"
+			]
+			id: "0C301014EC4D17B8"
+			rewards: [{
+				count: 8
+				id: "1A39F42877915C72"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.5d
+			subtitle: "{ftbquests.chapter.steam_age.quest0C301014EC4D17B8.subtitle}"
+			tasks: [{
+				id: "1D0F8D4470DFFD19"
+				item: {
+					Count: 1
+					id: "paraglider:paraglider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest0C301014EC4D17B8.title}"
+			x: 2.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description3}"
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description4}"
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description5}"
+				""
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description7}"
+				""
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description8}"
+				""
+				"{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.description9}"
+			]
+			icon: "gtceu:hp_steam_solid_boiler"
+			id: "2FD75E4BD95F6645"
+			rewards: [
+				{
+					count: 12
+					id: "22FCFB1342070EC5"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "195F3D02A2632E78"
+					item: "gtceu:wrought_iron_ingot"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "5A949113167C4248"
+					item: "gtceu:steel_ingot"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.subtitle}"
+			tasks: [{
+				id: "0DC74FB54995F3F1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solar_boiler"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.task.0DC74FB54995F3F1.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest2FD75E4BD95F6645.title}"
+			x: 0.0d
+			y: -1.2d
+		}
+		{
+			dependencies: ["07415D6305C3B1D2"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest40DE888E6025C646.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest40DE888E6025C646.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest40DE888E6025C646.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest40DE888E6025C646.description4}"
+				"{ftbquests.chapter.steam_age.quest40DE888E6025C646.description5}"
+				"{ftbquests.chapter.steam_age.quest40DE888E6025C646.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest40DE888E6025C646.description7}"
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			id: "40DE888E6025C646"
+			rewards: [
+				{
+					count: 64
+					id: "4BA49D38A085D5CA"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "6E244AE238636F71"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "{ftbquests.chapter.steam_age.quest40DE888E6025C646.subtitle}"
+			tasks: [
+				{
+					id: "7B33C92B976F5AB8"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "4EC38823292AF1E1"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest40DE888E6025C646.title}"
+			x: 1.125d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description4}"
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description5}"
+				""
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description7}"
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description8}"
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description9}"
+				""
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description10}"
+				""
+				"{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.description11}"
+			]
+			icon: "gtceu:steel_ingot"
+			id: "5D17DFCF6672404C"
+			rewards: [{
+				count: 64
+				id: "7843257BC8A81E96"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "74C4EEA936A5EE4E"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 52L
+					id: "01198A1525737B75"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2446080B788A8A19"
+					item: "gtceu:steel_ingot"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest5D17DFCF6672404C.title}"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.description4}"
+				"{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.description5}"
+				"{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.description7}"
+				""
+				"{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.description8}"
+			]
+			icon: "minecraft:netherrack"
+			id: "7CAD6FF241A827F7"
+			rewards: [
+				{
+					id: "235ABC3543BF8285"
+					item: {
+						Count: 1
+						id: "gtceu:red_steel_pickaxe"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A074EA36535C8B0"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.subtitle}"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "01DEABF7BF6C5413"
+				title: "{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.task.01DEABF7BF6C5413.title}"
+				type: "dimension"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest7CAD6FF241A827F7.title}"
+			x: 4.125d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CAD6FF241A827F7"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest236C886D50A99785.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest236C886D50A99785.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest236C886D50A99785.description3}"
+			]
+			id: "236C886D50A99785"
+			rewards: [
+				{
+					id: "20B864DFB8F05D94"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37C361DDB9A55FF2"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest236C886D50A99785.subtitle}"
+			tasks: [{
+				count: 16L
+				id: "36D03210534D3226"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest236C886D50A99785.title}"
+			x: 5.625d
+			y: -1.5d
+		}
+		{
+			dependencies: ["77EA56D16A9B3BFC"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest5A8F0124E07D5025.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest5A8F0124E07D5025.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest5A8F0124E07D5025.description3}"
+			]
+			icon: "gtceu:lv_electric_motor"
+			id: "5A8F0124E07D5025"
+			rewards: [{
+				id: "405DCE51B96EB09A"
+				item: "gtceu:steel_block"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "{ftbquests.chapter.steam_age.quest5A8F0124E07D5025.subtitle}"
+			tasks: [{
+				count: 6L
+				icon: "gtceu:lv_electric_motor"
+				id: "6F01622979E6F332"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest5A8F0124E07D5025.title}"
+			x: 7.875d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description2}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description3}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description4}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description5}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description6}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description7}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description8}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description9}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description10}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description11}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description12}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description13}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description14}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description15}"
+				"{ftbquests.chapter.steam_age.quest76B70EF552B35779.description16}"
+			]
+			id: "76B70EF552B35779"
+			rewards: [{
+				count: 32
+				id: "42FE9060BBF29DAF"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest76B70EF552B35779.subtitle}"
+			tasks: [{
+				count: 4L
+				id: "5DCE370285F5B2C6"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest76B70EF552B35779.title}"
+			x: 9.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["5DD49D500327A0E2"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.description2}"
+				"{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.description3}"
+				"{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.description4}"
+				""
+				"{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.description5}"
+				"{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.description6}"
+				"{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.description7}"
+			]
+			id: "2B74E56C9E138F18"
+			rewards: [{
+				id: "10D8ECE23B3C118B"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.subtitle}"
+			tasks: [{
+				id: "5876092FAA1763E0"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest2B74E56C9E138F18.title}"
+			x: -1.125d
+			y: -0.375d
+		}
+		{
+			dependencies: ["5DD49D500327A0E2"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.description3}"
+				"{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.description4}"
+				"{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.description5}"
+				""
+				"{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.description7}"
+				""
+				"{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.description8}"
+			]
+			id: "13901DA3D4F5C5A6"
+			rewards: [{
+				count: 18
+				id: "027EB8CF05AAACF8"
+				item: "gtceu:wood_normal_fluid_pipe"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.subtitle}"
+			tasks: [{
+				id: "03501AB173BA60EE"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest13901DA3D4F5C5A6.title}"
+			x: 0.0d
+			y: -0.375d
+		}
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest22997534983F6812.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest22997534983F6812.description2}"
+			]
+			icon: "gtceu:ball_casting_mold"
+			id: "22997534983F6812"
+			rewards: [
+				{
+					id: "0F35BAFC22B1C82E"
+					item: "gtceu:small_gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "4CA581AFFDA18455"
+					item: "gtceu:gear_casting_mold"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest22997534983F6812.subtitle}"
+			tasks: [
+				{
+					id: "33DCDFE73740AF97"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "7E7A1A7FBBCA2C27"
+					item: "gtceu:ball_casting_mold"
+					type: "item"
+				}
+				{
+					id: "2AE408B2303C21EA"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest22997534983F6812.title}"
+			x: 2.25d
+			y: -0.375d
+		}
+		{
+			dependencies: ["249374557D095913"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest1436DB89E21264F3.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest1436DB89E21264F3.description2}"
+			]
+			id: "1436DB89E21264F3"
+			rewards: [{
+				count: 16
+				id: "4B856E1E30618E4D"
+				item: "gtceu:sticky_resin"
+				random_bonus: 48
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest1436DB89E21264F3.subtitle}"
+			tasks: [{
+				id: "12A46916B1BC17EC"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest1436DB89E21264F3.title}"
+			x: 5.625d
+			y: -0.375d
+		}
+		{
+			dependencies: ["5193DD03C0742548"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest3144DC68B266730C.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest3144DC68B266730C.description2}"
+			]
+			id: "3144DC68B266730C"
+			rewards: [{
+				count: 24
+				id: "606726568EBF1E4A"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest3144DC68B266730C.subtitle}"
+			tasks: [{
+				count: 32L
+				id: "67D04A48C5473D10"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest3144DC68B266730C.title}"
+			x: 7.875d
+			y: 1.875d
+		}
+		{
+			dependencies: [
+				"3144DC68B266730C"
+				"236C886D50A99785"
+				"1436DB89E21264F3"
+			]
+			description: [
+				"{ftbquests.chapter.steam_age.quest77EA56D16A9B3BFC.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest77EA56D16A9B3BFC.description2}"
+				"{ftbquests.chapter.steam_age.quest77EA56D16A9B3BFC.description3}"
+				"{ftbquests.chapter.steam_age.quest77EA56D16A9B3BFC.description4}"
+			]
+			icon: "gtceu:rubber_ingot"
+			id: "77EA56D16A9B3BFC"
+			rewards: [{
+				count: 8
+				id: "7190A812E045BE04"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest77EA56D16A9B3BFC.subtitle}"
+			tasks: [
+				{
+					id: "04946F2F0923EFFE"
+					item: "gtceu:rubber_ingot"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B1CDCDC598717C5"
+					item: "gtceu:rubber_plate"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest77EA56D16A9B3BFC.title}"
+			x: 7.875d
+			y: -0.375d
+		}
+		{
+			dependencies: [
+				"3144DC68B266730C"
+				"76B70EF552B35779"
+			]
+			description: [
+				"{ftbquests.chapter.steam_age.quest391E853DCE86BFD0.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest391E853DCE86BFD0.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest391E853DCE86BFD0.description3}"
+			]
+			id: "391E853DCE86BFD0"
+			rewards: [{
+				count: 4
+				id: "0AEE150D99E66D54"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest391E853DCE86BFD0.subtitle}"
+			tasks: [{
+				id: "35CFB9E695DE3549"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest391E853DCE86BFD0.title}"
+			x: 7.875d
+			y: 0.75d
+		}
+		{
+			dependencies: ["5DD49D500327A0E2"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.description4}"
+				"{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.description5}"
+				"{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.description7}"
+				""
+				"{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.description8}"
+			]
+			icon: "gtceu:bronze_normal_fluid_pipe"
+			id: "1FFD2242B94A7378"
+			rewards: [{
+				count: 2
+				id: "66E3F49541CA77B9"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.subtitle}"
+			tasks: [{
+				id: "5953F4446733D908"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Bronze Pipes!\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:bronze_tiny_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_small_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_normal_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_large_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_huge_fluid_pipe"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest1FFD2242B94A7378.title}"
+			x: -1.125d
+			y: 0.75d
+		}
+		{
+			dependencies: ["315DBB3B23F95E0D"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description2}"
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description3}"
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description4}"
+				""
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description5}"
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description6}"
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description7}"
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description8}"
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description9}"
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description10}"
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description11}"
+				""
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description12}"
+				""
+				"{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.description13}"
+			]
+			id: "5DD49D500327A0E2"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.subtitle}"
+			tasks: [{
+				id: "0F864E85D4956919"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest5DD49D500327A0E2.title}"
+			x: 0.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["5DD49D500327A0E2"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest03DBF1961AE21C76.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest03DBF1961AE21C76.description2}"
+			]
+			id: "03DBF1961AE21C76"
+			rewards: [{
+				count: 4
+				id: "5A98072E0B3DBC41"
+				item: "gtceu:bronze_dust"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest03DBF1961AE21C76.subtitle}"
+			tasks: [{
+				id: "03BA041BE9C347FD"
+				item: "gtceu:bronze_machine_casing"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest03DBF1961AE21C76.title}"
+			x: 1.125d
+			y: 0.75d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest48AED37B4E20A99A.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest48AED37B4E20A99A.description2}"
+			]
+			id: "48AED37B4E20A99A"
+			rewards: [{
+				count: 8
+				id: "241026922AD16AB3"
+				item: "gtceu:bronze_plate"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest48AED37B4E20A99A.subtitle}"
+			tasks: [{
+				id: "2F3B195A110E41C2"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest48AED37B4E20A99A.title}"
+			x: 2.25d
+			y: 0.75d
+		}
+		{
+			dependencies: ["249374557D095913"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest3CF550B81716B8B9.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest3CF550B81716B8B9.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest3CF550B81716B8B9.description3}"
+			]
+			id: "3CF550B81716B8B9"
+			rewards: [{
+				count: 16
+				id: "259F8029A6ED0C85"
+				item: "minecraft:glass_pane"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest3CF550B81716B8B9.subtitle}"
+			tasks: [{
+				count: 2L
+				id: "099C373568DF4500"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest3CF550B81716B8B9.title}"
+			x: 5.625d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"22997534983F6812"
+				"48AED37B4E20A99A"
+			]
+			description: [
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description4}"
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description5}"
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description7}"
+				""
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description8}"
+				""
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description9}"
+				""
+				"{ftbquests.chapter.steam_age.quest249374557D095913.description10}"
+			]
+			icon: "minecraft:glass"
+			id: "249374557D095913"
+			rewards: [{
+				count: 2
+				id: "662203C8B58AE656"
+				item: "minecraft:glass"
+				random_bonus: 14
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest249374557D095913.subtitle}"
+			tasks: [
+				{
+					id: "4B958F6E2AA74763"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "16FC5B5DCBBEE53E"
+					item: "gtceu:glass_tube"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest249374557D095913.title}"
+			x: 4.125d
+			y: -0.375d
+		}
+		{
+			dependencies: ["48AED37B4E20A99A"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest54AF8696674766B4.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest54AF8696674766B4.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest54AF8696674766B4.description3}"
+			]
+			id: "54AF8696674766B4"
+			rewards: [{
+				count: 16
+				id: "0D64AF2E29B7F41A"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest54AF8696674766B4.subtitle}"
+			tasks: [{
+				id: "4D3C4CF6577957A1"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest54AF8696674766B4.title}"
+			x: 4.125d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"3CF550B81716B8B9"
+				"391E853DCE86BFD0"
+				"4ED5A9AEF7B928BA"
+				"54AF8696674766B4"
+				"77EA56D16A9B3BFC"
+			]
+			description: [
+				"{ftbquests.chapter.steam_age.quest4B979482EF026BFF.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest4B979482EF026BFF.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest4B979482EF026BFF.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest4B979482EF026BFF.description4}"
+				""
+				"{ftbquests.chapter.steam_age.quest4B979482EF026BFF.description5}"
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "4B979482EF026BFF"
+			rewards: [
+				{
+					id: "18CBC119F9A02091"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "187A334C34304FEA"
+					item: "gtceu:lv_machine_hull"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "{ftbquests.chapter.steam_age.quest4B979482EF026BFF.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "2D394A5292C3BA46"
+					item: "gtceu:basic_electronic_circuit"
+					type: "item"
+				}
+				{
+					id: "4296EFD816E40A37"
+					item: "gtceu:lv_machine_hull"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest4B979482EF026BFF.title}"
+			x: 6.75d
+			y: 0.75d
+		}
+		{
+			dependencies: ["1FFD2242B94A7378"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest3C70B0717E9377A4.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest3C70B0717E9377A4.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest3C70B0717E9377A4.description3}"
+				"{ftbquests.chapter.steam_age.quest3C70B0717E9377A4.description4}"
+				"{ftbquests.chapter.steam_age.quest3C70B0717E9377A4.description5}"
+				""
+				"{ftbquests.chapter.steam_age.quest3C70B0717E9377A4.description6}"
+			]
+			icon: "gtceu:potin_normal_fluid_pipe"
+			id: "3C70B0717E9377A4"
+			rewards: [{
+				count: 6
+				id: "18C834E9EC619985"
+				item: "gtceu:potin_plate"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest3C70B0717E9377A4.subtitle}"
+			tasks: [{
+				id: "7C0AFE7BBF56CD68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Potin Pipes!\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:potin_tiny_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_small_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_normal_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_large_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_huge_fluid_pipe"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest3C70B0717E9377A4.title}"
+			x: -2.25d
+			y: 0.75d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest1931FC6DEAC29646.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest1931FC6DEAC29646.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest1931FC6DEAC29646.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest1931FC6DEAC29646.description4}"
+			]
+			id: "1931FC6DEAC29646"
+			rewards: [{
+				id: "5C8B8D03ACE3CEED"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest1931FC6DEAC29646.subtitle}"
+			tasks: [{
+				id: "4F4074D7CE5A61A0"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest1931FC6DEAC29646.title}"
+			x: 0.0d
+			y: 1.875d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest1C50A758A1DE25CB.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest1C50A758A1DE25CB.description2}"
+				"{ftbquests.chapter.steam_age.quest1C50A758A1DE25CB.description3}"
+				"{ftbquests.chapter.steam_age.quest1C50A758A1DE25CB.description4}"
+				""
+				"{ftbquests.chapter.steam_age.quest1C50A758A1DE25CB.description5}"
+			]
+			id: "1C50A758A1DE25CB"
+			rewards: [{
+				count: 32
+				id: "26175A33C13BBF0C"
+				item: "gtceu:clay_dust"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest1C50A758A1DE25CB.subtitle}"
+			tasks: [{
+				id: "6DFD6AC8CF31305C"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest1C50A758A1DE25CB.title}"
+			x: 1.125d
+			y: 1.875d
+		}
+		{
+			dependencies: ["48AED37B4E20A99A"]
+			description: ["Invar has &650% more durability&r when used in GregTech tools compared to Iron (yes, that is the same as &aWrought Iron&r). Great for mining - you might want to consider using this in your tools if you &5haven't unlocked&r Steel."]
+			id: "76F61E499780C30B"
+			rewards: [{
+				id: "4B335E308869FC4B"
+				item: {
+					Count: 1
+					id: "gtceu:invar_mining_hammer"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
+							TorchPlacing: 1b
+						}
+						GT.Tool: {
+							AttackDamage: 4.5f
+							AttackSpeed: -3.2f
+							DefaultEnchantments: [ ]
+							HarvestLevel: 2
+							MaxDamage: 1151
+							ToolSpeed: 5.6f
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest76F61E499780C30B.subtitle}"
+			tasks: [{
+				count: 3L
+				id: "49E114B96843E5C9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/invar"
+					}
+				}
+				title: "{ftbquests.chapter.steam_age.quest76F61E499780C30B.task.49E114B96843E5C9.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest76F61E499780C30B.title}"
+			x: 2.25d
+			y: 1.875d
+		}
+		{
+			dependencies: [
+				"3144DC68B266730C"
+				"1C50A758A1DE25CB"
+			]
+			description: [
+				"{ftbquests.chapter.steam_age.quest4ED5A9AEF7B928BA.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest4ED5A9AEF7B928BA.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest4ED5A9AEF7B928BA.description3}"
+			]
+			icon: "gtceu:resin_printed_circuit_board"
+			id: "4ED5A9AEF7B928BA"
+			rewards: [{
+				count: 4
+				id: "2A1EAEB72424AFB9"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest4ED5A9AEF7B928BA.subtitle}"
+			tasks: [
+				{
+					id: "3704C06203B7485A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/wood"
+						}
+					}
+					optional_task: true
+					title: "{ftbquests.chapter.steam_age.quest4ED5A9AEF7B928BA.task.3704C06203B7485A.title}"
+					type: "item"
+				}
+				{
+					id: "131521889242DDB8"
+					item: "gtceu:resin_printed_circuit_board"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest4ED5A9AEF7B928BA.title}"
+			x: 6.75d
+			y: 1.875d
+		}
+		{
+			dependencies: ["1C50A758A1DE25CB"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest7813F183681E0342.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest7813F183681E0342.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest7813F183681E0342.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest7813F183681E0342.description4}"
+			]
+			icon: "gtceu:crushed_gold_ore"
+			id: "7813F183681E0342"
+			shape: "circle"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest7813F183681E0342.subtitle}"
+			tasks: [{
+				id: "1C4CFA0AD3125A6D"
+				title: "{ftbquests.chapter.steam_age.quest7813F183681E0342.task.1C4CFA0AD3125A6D.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest7813F183681E0342.title}"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1C50A758A1DE25CB"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest7FF95F1216D104B2.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest7FF95F1216D104B2.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest7FF95F1216D104B2.description3}"
+				"{ftbquests.chapter.steam_age.quest7FF95F1216D104B2.description4}"
+				"{ftbquests.chapter.steam_age.quest7FF95F1216D104B2.description5}"
+			]
+			icon: "gtceu:steam_grinder"
+			id: "7FF95F1216D104B2"
+			rewards: [{
+				count: 8
+				id: "36B5ABA86707D569"
+				item: "gtceu:bronze_ingot"
+				random_bonus: 16
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest7FF95F1216D104B2.subtitle}"
+			tasks: [
+				{
+					id: "478F7F5E6B4FC488"
+					item: "gtceu:steam_grinder"
+					type: "item"
+				}
+				{
+					id: "03C98558808BFE64"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "2DC0277BA681DFAE"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "68A6EFAD92986DFA"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					count: 22L
+					id: "4E7178278B4E3189"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest7FF95F1216D104B2.title}"
+			x: 1.125d
+			y: 3.0d
+		}
+		{
+			dependencies: ["76F61E499780C30B"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest6C25D11A26306168.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest6C25D11A26306168.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest6C25D11A26306168.description3}"
+				"{ftbquests.chapter.steam_age.quest6C25D11A26306168.description4}"
+				""
+				"{ftbquests.chapter.steam_age.quest6C25D11A26306168.description5}"
+			]
+			icon: "gtceu:steam_oven"
+			id: "6C25D11A26306168"
+			rewards: [{
+				count: 8
+				id: "72D375E16194CAE2"
+				item: "gtceu:bronze_ingot"
+				random_bonus: 16
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "{ftbquests.chapter.steam_age.quest6C25D11A26306168.subtitle}"
+			tasks: [
+				{
+					id: "0EA421E6E53FA6A8"
+					item: "gtceu:steam_oven"
+					type: "item"
+				}
+				{
+					id: "0516BE263B5E27D4"
+					item: "gtceu:steam_input_hatch"
+					type: "item"
+				}
+				{
+					id: "772885C6A810E804"
+					item: "gtceu:steam_input_bus"
+					type: "item"
+				}
+				{
+					id: "3C3A4803A6F267F3"
+					item: "gtceu:steam_output_bus"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "427EA1F4AE420C1F"
+					item: "gtceu:steam_machine_casing"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "50AD2CBE77234D06"
+					item: "gtceu:bronze_firebox_casing"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest6C25D11A26306168.title}"
+			x: 2.25d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3CF550B81716B8B9"
+				"54AF8696674766B4"
+			]
+			description: [
+				"{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.description4}"
+				"{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.description5}"
+				"{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.description7}"
+			]
+			icon: {
+				Count: 1
+				id: "ae2:portable_item_cell_1k"
+				tag: { }
+			}
+			id: "7DDCB711526F37A0"
+			progression_mode: "linear"
+			rewards: [{
+				count: 4
+				id: "3463AA941A74C11C"
+				item: "gtceu:certus_quartz_gem"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.subtitle}"
+			tasks: [{
+				id: "459D19A750BB8440"
+				item: {
+					Count: 1
+					id: "ae2:portable_item_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest7DDCB711526F37A0.title}"
+			x: 4.875d
+			y: 1.32d
+		}
+		{
+			dependencies: ["03DBF1961AE21C76"]
+			description: ["The Steam Compressor unlocks some tantalising new recipes that will help you to progress towards Steel."]
+			id: "07415D6305C3B1D2"
+			rewards: [{
+				id: "1F47D2A131498C25"
+				item: "gtceu:wrought_iron_block"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest07415D6305C3B1D2.subtitle}"
+			tasks: [{
+				id: "21C99D59F1BE48A3"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest07415D6305C3B1D2.title}"
+			x: 1.125d
+			y: -0.375d
+		}
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest4A993CC40AB6D35C.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest4A993CC40AB6D35C.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest4A993CC40AB6D35C.description3}"
+			]
+			icon: "toolbelt:belt"
+			id: "4A993CC40AB6D35C"
+			rewards: [{
+				id: "38A84272E0407C69"
+				item: "toolbelt:pouch"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.5d
+			subtitle: "{ftbquests.chapter.steam_age.quest4A993CC40AB6D35C.subtitle}"
+			tasks: [
+				{
+					id: "281B54469C34A5E2"
+					item: "toolbelt:belt"
+					type: "item"
+				}
+				{
+					id: "5FFC5866C6E85F86"
+					item: "toolbelt:pouch"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest4A993CC40AB6D35C.title}"
+			x: 2.0d
+			y: -2.75d
+		}
+		{
+			dependencies: ["5DD49D500327A0E2"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description3}"
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description4}"
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description5}"
+				""
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description7}"
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description8}"
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description9}"
+				""
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description10}"
+				""
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description11}"
+				""
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description12}"
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description13}"
+				"{ftbquests.chapter.steam_age.quest539CF1B85725786D.description14}"
+			]
+			icon: "gtceu:tin_small_item_pipe"
+			id: "539CF1B85725786D"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest539CF1B85725786D.subtitle}"
+			tasks: [{
+				id: "158F4EEDC214A3BA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:tin_small_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:nickel_small_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:cobalt_small_item_pipe"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.steam_age.quest539CF1B85725786D.task.158F4EEDC214A3BA.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest539CF1B85725786D.title}"
+			x: -1.125d
+			y: 1.875d
+		}
+		{
+			dependencies: ["54AF8696674766B4"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest5E89BDA8943534AF.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest5E89BDA8943534AF.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest5E89BDA8943534AF.description3}"
+				"{ftbquests.chapter.steam_age.quest5E89BDA8943534AF.description4}"
+				"{ftbquests.chapter.steam_age.quest5E89BDA8943534AF.description5}"
+				""
+				"{ftbquests.chapter.steam_age.quest5E89BDA8943534AF.description6}"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "5E89BDA8943534AF"
+			rewards: [{
+				count: 4
+				id: "7193C5F82152C3EB"
+				item: "minecraft:leather"
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest5E89BDA8943534AF.subtitle}"
+			tasks: [{
+				id: "193A62DF98B59838"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest5E89BDA8943534AF.title}"
+			x: 3.3d
+			y: 1.32d
+		}
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest4384068C4517F3D9.description1}"
+				"{ftbquests.chapter.steam_age.quest4384068C4517F3D9.description2}"
+				"{ftbquests.chapter.steam_age.quest4384068C4517F3D9.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest4384068C4517F3D9.description4}"
+				"{ftbquests.chapter.steam_age.quest4384068C4517F3D9.description5}"
+				"{ftbquests.chapter.steam_age.quest4384068C4517F3D9.description6}"
+				""
+				"{ftbquests.chapter.steam_age.quest4384068C4517F3D9.description7}"
+				""
+				"{ftbquests.chapter.steam_age.quest4384068C4517F3D9.description8}"
+			]
+			icon: "gtceu:charcoal_pile_igniter"
+			id: "4384068C4517F3D9"
+			rewards: [{
+				id: "73DAEC542AC76676"
+				item: "gtceu:brittle_charcoal"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest4384068C4517F3D9.subtitle}"
+			tasks: [
+				{
+					id: "2586D1FC6BC5E53C"
+					item: "gtceu:charcoal_pile_igniter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3B769177C398E246"
+					title: "{ftbquests.chapter.steam_age.quest4384068C4517F3D9.task.3B769177C398E246.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest4384068C4517F3D9.title}"
+			x: 1.2d
+			y: -2.97d
+		}
+		{
+			dependencies: ["40DE888E6025C646"]
+			description: [
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description4}"
+				""
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description5}"
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description6}"
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description7}"
+				""
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description8}"
+				""
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description9}"
+				""
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description10}"
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description11}"
+				"{ftbquests.chapter.steam_age.quest15923B47D23CCF34.description12}"
+			]
+			icon: "gtceu:steel_tank_valve"
+			id: "15923B47D23CCF34"
+			rewards: [
+				{
+					id: "59F4BC1D1C54FDFB"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "48D6923B31E53EC2"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest15923B47D23CCF34.subtitle}"
+			tasks: [
+				{
+					id: "19C34AAB329C7ABF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:wooden_multiblock_tank"
+								}
+								{
+									Count: 1b
+									id: "gtceu:bronze_multiblock_tank"
+								}
+								{
+									Count: 1
+									id: "gtceu:steel_multiblock_tank"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.steam_age.quest15923B47D23CCF34.task.19C34AAB329C7ABF.title}"
+					type: "item"
+				}
+				{
+					id: "123DB283FB4EF13D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:wooden_tank_valve"
+								}
+								{
+									Count: 1b
+									id: "gtceu:bronze_tank_valve"
+								}
+								{
+									Count: 1b
+									id: "gtceu:steel_tank_valve"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.steam_age.quest15923B47D23CCF34.task.123DB283FB4EF13D.title}"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "72D3346BD7D0A57D"
+					item: {
+						Count: 24
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "gtceu:solid_machine_casing"
+								}
+								{
+									Count: 1b
+									id: "gtceu:steam_machine_casing"
+								}
+								{
+									Count: 1b
+									id: "gtceu:wood_wall"
+								}
+							]
+						}
+					}
+					title: "{ftbquests.chapter.steam_age.quest15923B47D23CCF34.task.72D3346BD7D0A57D.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.steam_age.quest15923B47D23CCF34.title}"
+			x: 0.33d
+			y: -2.64d
+		}
+		{
+			dependencies: [
+				"1FFD2242B94A7378"
+				"539CF1B85725786D"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"{ftbquests.chapter.steam_age.quest27240865315F9530.description1}"
+				""
+				"{ftbquests.chapter.steam_age.quest27240865315F9530.description2}"
+				""
+				"{ftbquests.chapter.steam_age.quest27240865315F9530.description3}"
+				""
+				"{ftbquests.chapter.steam_age.quest27240865315F9530.description4}"
+			]
+			icon: "gtceu:steel_frame"
+			id: "27240865315F9530"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "{ftbquests.chapter.steam_age.quest27240865315F9530.subtitle}"
+			tasks: [{
+				id: "431894F9877BC900"
+				item: "gtceu:steel_frame"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.steam_age.quest27240865315F9530.title}"
+			x: -2.25d
+			y: 1.875d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.steam_age.subtitle0}"]
+	title: "{ftbquests.chapter.steam_age.title}"
+}
