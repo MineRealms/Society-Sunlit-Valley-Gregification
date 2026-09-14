@@ -13,7 +13,7 @@
 | 世界生成层 | `kubejs/startup_scripts/gt/worldGenLayers.js` | 暮色森林 / 骷髅洞穴的 GT 可替换岩层 |
 | 矿脉注入 | `kubejs/server_scripts/gt/oreVeins.js` | 22 种主世界矿脉 × 2 维度 = 44 条 |
 | 任务分组 | `config/ftbquests/quests/chapter_groups.snbt` | 新增分组「格雷科技」`9F2C7A5E1B3D4C60` |
-| 任务章节 | `config/ftbquests/quests/chapters/*.snbt`（17 章） | 社区包整套任务书（674 任务） |
+| 任务章节 | `config/ftbquests/quests/chapters/*.snbt`（17 章） | 社区包整套任务书（563 任务 + 111 链接） |
 | 奖励表 | `config/ftbquests/quests/reward_tables/*.snbt`（8 个） | bronze_age / hv / titanium 等 |
 | 搬运脚本 | `config/ftbquests/tools/port_gregtech_quests.py` | 文本键化 + 缺失物品替换 + 分组/排序 |
 | 翻译脚本 | `config/ftbquests/tools/translate_gregtech_quests.py` | 术语表 + 批量翻译 + 缓存/断点续传 |
@@ -22,7 +22,7 @@
 
 对应提交：
 - `6c708f3` feat: GT 矿脉注入暮色森林与骷髅洞穴（22 种主世界矿脉 × 2 维度）
-- `d2e5f3a` feat: 批量搬运 GT 社区包任务书（17 章 674 任务 + 8 奖励表）并汉化
+- `d2e5f3a` feat: 批量搬运 GT 社区包任务书（17 章 563 任务 + 8 奖励表）并汉化
 
 ---
 
@@ -61,7 +61,7 @@
 
 ### 2.1 结构
 
-- 新增章节分组 **「格雷科技」**（ID `9F2C7A5E1B3D4C60`），包含 17 章 **674 个任务**：
+- 新增章节分组 **「格雷科技」**（ID `9F2C7A5E1B3D4C60`），包含 17 章 **563 个任务**：
 
 | 顺序 | 章节 | 任务数 | 主题 |
 |---:|---|---:|---|
@@ -69,18 +69,18 @@
 | 1 | steam_age | 40 | 蒸汽时代 |
 | 2 | lv__low_voltage | 75 | 低压 |
 | 3 | mv__medium_voltage | 74 | 中压 |
-| 4 | hv__high_voltage | 49 | 高压 |
-| 5 | ev__extreme_voltage | 67 | 超高压 |
+| 4 | hv__high_voltage | 45 | 高压 |
+| 5 | ev__extreme_voltage | 62 | 超高压 |
 | 6 | iv__insane_voltage | 37 | 绝缘压 |
-| 7 | luv__ludicrous_voltage | 45 | 剧差压 |
-| 8 | zpm__zero_point_module | 29 | 零点压 |
-| 9 | uv__ultimate_voltage | 24 | 极限压 |
-| 10 | ore_generation | 45 | 矿脉生成 |
+| 7 | luv__ludicrous_voltage | 37 | 剧差压 |
+| 8 | zpm__zero_point_module | 27 | 零点压 |
+| 9 | uv__ultimate_voltage | 20 | 极限压 |
+| 10 | ore_generation | 39 | 矿脉生成 |
 | 11 | ore_processing | 20 | 矿石处理 |
 | 12 | renewability_and_you | 20 | 可再生资源 |
-| 13 | multiblock_dilemma | 42 | 多方块图鉴 |
-| 14 | heating_coils | 16 | 加热线圈 |
-| 15 | progression | 45 | 电路进程 |
+| 13 | multiblock_dilemma | 0 | 多方块图鉴（纯链接章） |
+| 14 | heating_coils | 4 | 加热线圈 |
+| 15 | progression | 17 | 电路进程 |
 | 16 | tips_and_tricks_2 | 21 | 技巧与机制 |
 
 - 8 个奖励表一并搬运（`bronze_age`、`distillation_tower`、`gallium_arsenide`、`hv`、`hv_components`、
@@ -111,7 +111,7 @@
 - 所有标题/副标题/描述/任务标题/奖励标题转换为
   `ftbquests.chapter.<file>.quest<ID>.*` 键（与暮色森林章节规范一致）。
 - **ID 零冲突**：搬运 ID 1668 个，与本包既有 3031 个 ID 无交集。
-- 强校验：674 个任务块内的键 ID 全部与任务自身 ID 一致。
+- 强校验：563 个任务块内的键 ID 全部与任务自身 ID 一致。
 
 ---
 
@@ -152,7 +152,7 @@ python config/ftbquests/tools/translate_gregtech_quests.py
 | `node --check`（两个 GT 脚本） | ✅ |
 | GTMaterials 材料字段（70 个） | ✅ 全部存在 |
 | 矿脉/章节 ID 唯一性 | ✅ 1668 个搬运 ID 与既有 3031 个零冲突 |
-| 任务块键 ID 一致性（674 块） | ✅ 0 不匹配 |
+| 任务块键 ID 一致性（563 块） | ✅ 0 不匹配 |
 | 物品 ID 校验（替代后） | ✅ 无缺失命名空间引用 |
 | 奖励表 ID 冲突 | ✅ 无 |
 | SNBT 结构（括号/引号平衡） | ✅ 17 章全部通过 |
@@ -182,5 +182,5 @@ python config/ftbquests/tools/translate_gregtech_quests.py
 | 2026-09-14 | 侦察 GTCEu 世界生成 API、两维度定义、任务书规范 |
 | 2026-09-14 | 新增 `worldGenLayers.js` / `oreVeins.js`；提交 `6c708f3` |
 | 2026-09-14 | 手写小章节尝试（已 `308697b` revert，改为整包搬运） |
-| 2026-09-14 | 完成 17 章搬运脚本 + 18 处物品替换 + 分组/排序；674 任务块强校验通过 |
+| 2026-09-14 | 完成 17 章搬运脚本 + 18 处物品替换 + 分组/排序；563 任务块强校验通过 |
 | 2026-09-14 | 翻译流水线（术语表 5151 条 + 批量翻译 83 秒）；3707 键写入 zh/en；提交 `d2e5f3a` |
