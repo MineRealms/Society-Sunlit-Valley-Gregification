@@ -426,7 +426,6 @@
 				{
 					id: "48F555D3FC7EA449"
 					item: "gtceu:trinium_sulfide_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -702,7 +701,6 @@
 				{
 					id: "66D5D76676D27388"
 					item: "gtceu:luv_lapotronic_battery"
-					optional_task: true
 					type: "item"
 				}
 			]

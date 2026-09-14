@@ -1,7 +1,7 @@
 {
 	id: "223E25374B1DD129"
 	loot_size: 1
-	order_index: 0
+	order_index: 1
 	rewards: [
 		{ count: 2, item: "pamhc2trees:lychee_sapling" }
 		{ count: 2, item: "pamhc2trees:banana_sapling" }

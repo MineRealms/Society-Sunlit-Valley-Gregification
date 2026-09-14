@@ -644,7 +644,6 @@
 				{
 					id: "04946F2F0923EFFE"
 					item: "gtceu:rubber_ingot"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1214,7 +1213,6 @@
 							value: "forge:plates/wood"
 						}
 					}
-					optional_task: true
 					title: "{ftbquests.chapter.steam_age.quest4ED5A9AEF7B928BA.task.3704C06203B7485A.title}"
 					type: "item"
 				}
@@ -1595,7 +1593,6 @@
 				{
 					id: "2586D1FC6BC5E53C"
 					item: "gtceu:charcoal_pile_igniter"
-					optional_task: true
 					type: "item"
 				}
 				{

@@ -1,7 +1,7 @@
 {
 	id: "7CEE6786B4C401DE"
 	loot_size: 1
-	order_index: 1
+	order_index: 2
 	rewards: [
 		{ item: "society:mayonnaise_machine" }
 		{ item: "society:loom" }

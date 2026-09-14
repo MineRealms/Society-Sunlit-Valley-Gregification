@@ -1,7 +1,7 @@
 {
 	id: "549F4646FB7BFF20"
 	loot_size: 1
-	order_index: 7
+	order_index: 15
 	rewards: [
 		{ item: "society:stone_hand" }
 		{ item: "society:frosted_tip" }

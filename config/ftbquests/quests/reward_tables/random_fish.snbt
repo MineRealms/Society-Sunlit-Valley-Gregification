@@ -1,7 +1,7 @@
 {
 	id: "0E92072EBDD2DBB6"
 	loot_size: 1
-	order_index: 2
+	order_index: 5
 	rewards: [
 		{ item: "aquaculture:pollock" }
 		{ item: "aquaculture:brown_trout" }
