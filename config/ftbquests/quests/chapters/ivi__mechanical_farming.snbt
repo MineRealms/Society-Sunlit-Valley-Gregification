@@ -94,6 +94,24 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["1A1129507F643085"]
+			description: [
+				"{ftbquests.chapter.ivi__mechanical_farming.quest1EA76C7815090684.description1}"
+				""
+				"{ftbquests.chapter.ivi__mechanical_farming.quest1EA76C7815090684.description2}"
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "1EA76C7815090684"
+			tasks: [{
+				id: "7D29338BA5EE99CD"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.ivi__mechanical_farming.quest1EA76C7815090684.title}"
+			x: 7.5d
+			y: 2.5d
+		}
+		{
 			dependencies: ["23BE07D35DAEA28C"]
 			description: [
 				"{ftbquests.chapter.ivi__mechanical_farming.quest4575948F05E18615.description1}"

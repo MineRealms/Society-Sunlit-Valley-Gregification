@@ -172,7 +172,37 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 
 ---
 
-## 4. 验证记录
+## 4. LV 门槛（Create × GT）
+
+**目标**：卡住 GT 的 LV 科技线 —— 先发展 Create（拿到电子管），才能进入 LV。
+
+### 4.1 配方门槛（KubeJS）
+
+- 文件：`kubejs/server_scripts/gt/lockLVBehindCreate.js`
+- 核心：`event.replaceInput({ output: 'gtceu:basic_electronic_circuit' }, 'gtceu:vacuum_tube', 'create:electron_tube')`
+- 依据（源码/文档/包内先例）：
+  - GTCEu 7.5.x `CircuitRecipes.java`：工作台 shaped `electronic_circuit_lv` 的 `'V'` = 真空管
+  - 7.5.3 注册名 `gtceu:basic_electronic_circuit`（jar 内 lang 核对）
+  - KubeJS `replaceInput` 支持按 output 过滤（GTCEu 官方文档；包内 `removeRecipes.js:1086` 已有用法）
+- 说明：电路组装机版使用标签 `#gtceu:circuits/ulv`，但该机器本身在 LV 门槛之后才能建造，故本次不处理。
+
+### 4.2 任务门槛（FTB Quests）
+
+- Create 章（`ivi__mechanical_farming`）新增任务 **「LV 时代」**（ID `1EA76C7815090684`）：
+  - 位置 (7.5, 2.5)，依赖电子管任务 `1A1129507F643085`
+  - 任务物品：`gtceu:basic_electronic_circuit` ×1（用电子管做出第一块 LV 电路）
+  - 文本键：`ftbquests.chapter.ivi__mechanical_farming.quest1EA76C7815090684.*`（zh/en 已写入）
+- GT LV 章（`lv__low_voltage`）5 个入口任务追加依赖 `1EA76C7815090684`：
+  - `288CE4AA4C5AA8BF`、`2F7617C0C4B330DE`、`38993B4697B0E16C`、`6E186F9C57155BFA`、`32EA7E81885C8E87`
+- 效果：完成 Create「LV 时代」后才解锁 GT 的 LV 任务线；与配方门槛形成双重锁。
+
+### 4.3 验证
+
+- `node --check` 通过；SNBT 解析通过；全局 1738 个任务 ID 无冲突；无断链依赖；新任务 lang 键 zh/en 齐全。
+
+---
+
+## 5. 验证记录
 
 | 项目 | 结果 |
 |---|---|
@@ -186,13 +216,15 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 | 本地化键完整性 | ✅ 3707 键 × 2 语言，0 缺失 |
 | 颜色码完整性 | 3374/3412 完全一致（38 条异常已修复，21 条缺个别颜色码） |
 | 占位符乱码残留 | ✅ 0 |
+| LV 门槛依赖（LV 章 5 入口） | ✅ 5/5 已追加 |
+| LV 门槛任务/文本（Create 章） | ✅ 新增「LV 时代」+ zh/en 键齐全 |
 
 > 运行时验证（需进存档）：打开任务书检查「格雷科技」分组排版与文本；
 > 旧存档请前往未探索区域观察新矿脉。建议 `/ftbquests editing_mode` 预览。
 
 ---
 
-## 5. 后续可选项（TODO）
+## 6. 后续可选项（TODO）
 
 - [ ] 人工润色机器翻译文本（重点：长描述、幽默文案、专有名词）
 - [ ] 按本包进度调整部分任务奖励（numismatics 货币联动）
@@ -202,7 +234,7 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 
 ---
 
-## 6. 进度日志
+## 7. 进度日志
 
 | 时间 | 事件 |
 |---|---|
@@ -211,3 +243,4 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 | 2026-09-14 | 手写小章节尝试（已 `308697b` revert，改为整包搬运） |
 | 2026-09-14 | 完成 17 章搬运脚本 + 18 处物品替换 + 分组/排序；563 任务块强校验通过 |
 | 2026-09-14 | 翻译流水线（术语表 5151 条 + 批量翻译 83 秒）；3707 键写入 zh/en；提交 `d2e5f3a` |
+| 2026-09-15 | LV 门槛（Create × GT）：`lockLVBehindCreate.js` + Create 章「LV 时代」任务 + GT LV 章 5 入口前置；静态校验全通过 |
