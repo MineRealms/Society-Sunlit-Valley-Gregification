@@ -202,7 +202,32 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 
 ---
 
-## 5. 验证记录
+## 5. Create × GT 轻量联动（R2）
+
+**目标**：让 Create 机器可以处理 GT 前期材料（ULV~LV），两边穿插发展。
+
+**文件**：`kubejs/server_scripts/gt/createBridges.js`（只加配方，不动物品/标签）
+
+| # | 联动 | 配方 | GT 依据 |
+|---|---|---|---|
+| 1 | Create 压合 → GT 板材 | 1 锭 → 1 板（铁/铜/金/锡/钢/青铜/黄铜/铅/银/锌/镍/琥珀金/熟铁） | 弯曲机 1→1（`MaterialRecipeHandler:390`） |
+| 2 | Create 压合 → GT 覆膜电路板 | 1 木板 + 2 粘性树脂 → 1 `gtceu:resin_circuit_board` | 无序合成 1x（`CircuitRecipes:775-778`） |
+| 3 | Create 粉碎轮 → GT 碎矿 | 原矿（tag）→ 2 碎矿（锡/铁/铜/金/煤/镍/铅/银/红石） | 研磨机 ×2（`OreRecipeHandler:194-201`） |
+| 4 | Create 混合 → GT 合金粉 | 红合金 1铜+4红石→1；黄铜 3铜+1锌→4；青铜 3铜+1锡→4；琥珀金 1金+1银→2；殷钢 2铁+1镍→3 | 混合器 ULV（`MixerRecipes:143-206,223-228`） |
+| 5 | Society 橡胶 → GT 橡胶 | Create 混合(加热)：1 `society:rubber` + 1 硫粉 → 1 `gtceu:rubber_ingot` | 合金炉 1硫+3生橡胶→1（`MachineRecipeLoader:423`） |
+
+**设计说明**：
+- 板材用 `create:compacting`（压床+盆）而非 `create:pressing`：Create 自带的铁/铜/金/黄铜压片占用同名标签输入，避免配方冲突。
+- 原矿用 `#forge:raw_materials/*` 标签，兼容 oreganized 等模组的铅/银原矿；锌无 GT 碎矿（JEI 核对）故不含。
+- 合金配方使用 `#forge:dusts/*` 标签（GT `TagUtil` 统一 `forge:` 命名空间）。
+
+### 5.1 验证
+
+- `node --check` 通过；脚本内 40 个物品 ID 全部命中 GT JEI 导出 / Create jar / 包内引用；10 个标签全为 `forge:` 命名空间。
+
+---
+
+## 6. 验证记录
 
 | 项目 | 结果 |
 |---|---|
@@ -218,13 +243,14 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 | 占位符乱码残留 | ✅ 0 |
 | LV 门槛依赖（LV 章 5 入口） | ✅ 5/5 已追加 |
 | LV 门槛任务/文本（Create 章） | ✅ 新增「LV 时代」+ zh/en 键齐全 |
+| Create 联动脚本（`createBridges.js`） | ✅ `node --check` + 40 物品 ID / 10 标签全部核对通过 |
 
 > 运行时验证（需进存档）：打开任务书检查「格雷科技」分组排版与文本；
 > 旧存档请前往未探索区域观察新矿脉。建议 `/ftbquests editing_mode` 预览。
 
 ---
 
-## 6. 后续可选项（TODO）
+## 7. 后续可选项（TODO）
 
 - [ ] 人工润色机器翻译文本（重点：长描述、幽默文案、专有名词）
 - [ ] 按本包进度调整部分任务奖励（numismatics 货币联动）
@@ -234,7 +260,7 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 
 ---
 
-## 7. 进度日志
+## 8. 进度日志
 
 | 时间 | 事件 |
 |---|---|
@@ -243,4 +269,5 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 | 2026-09-14 | 手写小章节尝试（已 `308697b` revert，改为整包搬运） |
 | 2026-09-14 | 完成 17 章搬运脚本 + 18 处物品替换 + 分组/排序；563 任务块强校验通过 |
 | 2026-09-14 | 翻译流水线（术语表 5151 条 + 批量翻译 83 秒）；3707 键写入 zh/en；提交 `d2e5f3a` |
-| 2026-09-15 | LV 门槛（Create × GT）：`lockLVBehindCreate.js` + Create 章「LV 时代」任务 + GT LV 章 5 入口前置；静态校验全通过 |
+| 2026-09-15 | LV 门槛（Create × GT）：`lockLVBehindCreate.js` + Create 章「LV 时代」任务 + GT LV 章 5 入口前置；静态校验全通过；提交 `9fb5899` |
+| 2026-09-15 | Create × GT 轻量联动 R2：`createBridges.js`（板材/覆膜板/碎矿/合金/橡胶 5 组）；ID 与标签核对通过 |
