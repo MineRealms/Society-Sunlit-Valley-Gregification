@@ -87,35 +87,63 @@ TC 本体源码包内主要包：`client` 352、`api` 261、`block` 163、`nativ
 `ThaumcraftTags` / `AspectApi` / `ChampionApi` / `WardingAuraApi` 等 —— 供附属模组
 （神秘工匠 / 禁忌魔法 / 污染魔法 / 神秘能源，源码均在包内）使用。
 
+### 2.5 已安装版本核对（重要）
+
+本包 `mods/thaumcraft-forge-...-20708.jar`（17.91 MB）**已自带 KubeJS 集成**：
+- 16 个 kubejs 相关条目、10 个 `data/thaumcraft/kubejs/recipe_schema/*.json`（与 dev 包一致）。
+→ **无需升级即可用 KubeJS 加/删 TC4 配方**；dev 包 20711 只是更新版本，可按需再评估。
+
 ---
 
-## 3. 联动候选（初步，待用户挑选后逐条验证实施）
+## 3. TC4 内容与配方结构（已核对）
 
-| # | 方向 | 做法（全部基于已确认能力） | 验证状态 |
+- **内容**：293 物品 / 178 方块；配方 JSON 449 个
+  （crafting 144 / arcane 106 / infusion 66 / crucible 58 / infusion_enchantment 27 / root 25 / compat 13 / smelting 10）。
+- **配方 JSON 结构（关键：都有 `research` 字段）**：
+  - 坩埚 `thaumcraft:crucible`：`{research, catalyst, result, aspects}`；
+    KubeJS schema 里 `research` 是 optional_string（**省略 = 无需研究**）。
+  - 注魔 `thaumcraft:infusion`：`{research, central, components[], instability, aspects, result}`。
+  - 奥术 `thaumcraft:arcane_shaped/shapeless`：`{research, pattern/key 或 ingredients, result, vis}`，
+    `vis` 是要素消耗（如 `{"aer": 8}`）。
+- **已有跨模组先例**：`recipes/compat/common_metal_*` 全部用**标签 + 条件**
+  （如 `forge:ingots/copper` + `forge:tag_empty` 条件判断），说明 TC4 原生按标签与金属模组互通。
+- **关键材料物品**：`thaumium_ingot`、`void_ingot`、`alumentum`、`amber`、`quicksilver`、
+  `nitor`、`balanced_shard`、`primordial_pearl`、`native_iron_cluster`、`native_gold_cluster`、
+  `native_cinnabar_cluster`、`greatwood_log`、`silverwood_log`、各类 shard。
+- **附属 mods**（源码均在 dev 包内，均无独立 KubeJS 集成）：
+  神秘工匠 95 物品/121 配方；禁忌魔法 63/56；污染魔法 61/80；神秘能源 47/84。
+
+---
+
+## 4. 联动候选（待用户挑选后逐条实施）
+
+| # | 方向 | 具体做法 | 状态 |
 |---|---|---|---|
-| A | **GT 材料加要素** | 改/加 `object_aspects` JSON：给 `#forge:ingots/*`、`#forge:plates/*`、`#forge:dusts/*` 等 GT 标签加要素（如 metallum/praecantatio） | 待做（JSON 结构已验证） |
-| B | **TC4 配方用 GT/Create 材料** | KubeJS `e.recipes.thaumcraft.crucible/infusion/arcane_*` 加配方；数值镜像 TC4 原配方 | 待做（schema 已验证） |
-| C | **GT 机器加工 TC4 材料** | 用 GT 研磨/离心/提取处理 TC4 的矿石/材料（需先列出 TC4 可加工材料与 GT 机器适配） | 待调研 |
-| D | **Create 机器加工 TC4 材料** | Create 研磨/混合/压合处理 TC4 材料（如要素罐、魔法金属等） | 待调研 |
-| E | **Society 经济联动** | 村民/商店收购或出售 TC4 物品（`global.trades` 体系） | 待调研 |
-| F | **任务书** | 新增「神秘时代」入门章（参考 GT 17 章搬运模式）或轻量任务 | 待用户决定 |
+| A | **要素桥接（最安全）** | 在 `object_aspects` 数据里给 GT/Create/Society 的标签加要素（如 `#forge:ingots/*`、`#forge:plates/*`、`#forge:dusts/*`），让 TC4 扫描/坩埚认识新模组材料 | 待做 |
+| B | **KubeJS 加 TC4 配方** | `e.recipes.thaumcraft.crucible / infusion / arcane_shaped / ...`：用 GT/Create 材料做 TC4 配方（如用 GT 板做奥术合成、给 GT 装备加注魔配方） | 待做 |
+| C | **GT 机器加工 TC4 材料** | GT 研磨/离心处理 TC4 矿（native cluster / cinnabar 等）→ GT 粉尘/金属（需先核对 GT 对应材料 ID） | 待调研 |
+| D | **Create 机器加工 TC4 材料** | Create 研磨/压合处理 TC4 材料（需先核对 TC4 有无对应产物与合理数值） | 待调研 |
+| E | **Society 经济联动** | 商店/村民交易 TC4 物品（`global.trades` 体系） | 待调研 |
+| F | **任务书** | 新增「神秘时代」入门章（可参考 GT 搬运模式）或轻量任务 | 待用户决定 |
 
-**限制（先记录，避免踩坑）**：
-- TC4 的「要素」不是物品（罐装要素是 `thaumcraft:*` 物品/流体）；跨模组桥接优先走 **要素 JSON + KubeJS 配方** 两条路。
-- dev 包版本 20711 > 包内 20708，实施前需确认是否先升级 mods。
-
----
-
-## 4. 下一步（按顺序）
-
-1. 列出 TC4 本体 `recipes/` 的关键配方类型与代表配方（坩埚/注魔/奥术）→ 作为数值镜像来源。
-2. 与用户确认要做哪几条候选（A~F）。
-3. 逐条实施：脚本/JSON → `node --check`（JS）/ JSON 校验 → 更新本文件 → git 提交。
+**实施注意**：
+1. TC4 配方的 `research` 字段决定解锁门槛；新增配方建议复用现有研究键或省略（无条件）。
+2. 要素（aspects）与研究（research）都是纯 JSON 数据，datapack/KubeJS data 即可，无需写 Java。
+3. 包内已装 20708 自带 KubeJS 插件，**无需升级**；如需 20711 再单独评估。
 
 ---
 
-## 5. 进度日志
+## 5. 下一步（按顺序）
+
+1. 与用户确认要做哪几条候选（A~F）。
+2. 逐条实施：脚本/JSON → `node --check`（JS）/ JSON 校验 → 更新本文件 → git 提交。
+3. 候选 C/D 需先做「TC4 材料 ↔ GT/Create 加工适配表」（列 TC4 矿/材料与 GT 机器输出）。
+
+---
+
+## 6. 进度日志
 
 | 时间 | 事件 |
 |---|---|
 | 2026-09-15 | 解包 dev zip，确认 7 个源码/API jar；确认 TC4 内置 KubeJS 插件与 10 个配方 schema；确认研究/要素均为 JSON 数据驱动；建立本文档 |
+| 2026-09-15 | 核对包内 20708 已自带 KubeJS schema（无需升级）；盘点 TC4 内容/配方结构/关键材料；给出 A~F 候选清单 |
