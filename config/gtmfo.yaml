@@ -4,16 +4,16 @@ devConfigs:
   nutrientMode: false
 
   # Export every recipe JEI can display to a JSON file after the recipe set is loaded (client-side, for external recipe graph tooling).
-  exportJeiRecipes: false
+  exportJeiRecipes: true
 
   # Export path. Relative paths resolve against the game directory; absolute paths (e.g. H:/tools/jei_recipes.json) are used as-is.
-  jeiRecipeExportPath: gtmfo/jei_recipes.json
+  jeiRecipeExportPath: H:/tools/sunlit_jei_recipes.json
 
   # Name/language-key export path (machines, materials, items, fluids). Same path rules as jeiRecipeExportPath.
-  jeiNameExportPath: gtmfo/jei_names.json
+  jeiNameExportPath: H:/tools/sunlit_jei_names.json
 
   # Also export recipes that JEI hides by default.
-  jeiExportHiddenRecipes: false
+  jeiExportHiddenRecipes: true
 
 # Recipe chain options.
 gtfoChainsConfig:
