@@ -19,13 +19,15 @@
 | **Create × GT 轻量联动 R2** | `kubejs/server_scripts/gt/createBridges.js`（板材/覆膜板/碎矿/合金/橡胶） | `7b8b379` |
 | **TC4 联动分析 + 实施** | `TC4_INTEGRATION.md`（KubeJS 插件/10 配方 schema/候选 A~F → 第 7~8 节调研+实施）；产物：aspects 桥接 JSON、`kubejs/server_scripts/tc/`（GT 加工 + TC4 配方）、`kubejs/startup_scripts/tc4Trades.js`、女巫商店 11 交易 | `625fb77`…本轮 |
 | **MEK 科技锁 + MEK 任务章** | `kubejs/server_scripts/mek/lockMekBehindGT.js`（B 方案=LV 微处理器）+ `config/ftbquests/quests/chapters/mekanism.snbt`（11 任务，前置=LV 章铝锭任务 `7567E885B7166603`） | `91961c4` |
+| **日志数据修复 + GTCA 兼容** | 4 类标签文件修复（treasure_spot_spawns / longwings / quality_food / zhopo×2，详见 `GT_INTEGRATION.md` 第 9 节）+ `kubejs/server_scripts/gt/gtcaCasingCompat.js`；删除 `_diag_tags.js` | `f7a0128` + 本轮 |
 | GregMek 修复与安装（用户完成） | `mods/gregmek-1.0-SNAPSHOT.jar`（30 KB，2026-09-15 22:10）；详见 `GT_INTEGRATION.md` 第 6 节 | 待补 |
 
 ---
 
 ## 2. 进行中
 
-- **无**（待进游戏运行时验证）：MEK 锁 + MEK 任务章、TC4 全部联动已实施完毕，详见 `GT_INTEGRATION.md` 第 6 节 / `TC4_INTEGRATION.md` 第 8 节。
+- **待重启验证**：删除 `_diag_tags.js` 后，`#society:sellable` / `#society:large_eggs` 两条 LMF 报错应消失；GTCA 两个机壳配方应在 JEI 正常显示；zhopo 矿井在骷髅洞穴生物群系生成。
+- MEK 锁 + MEK 任务章、TC4 全部联动已实施完毕，详见 `GT_INTEGRATION.md` / `TC4_INTEGRATION.md`。
 
 ---
 

@@ -334,7 +334,37 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 
 ---
 
-## 9. 进度日志
+## 9. 数据修复与 GTCA 兼容（2026-09-15）
+
+> 来源：latest.log（22:26 会话）分析结论；每项均先核对事实再修改，证据随附。
+
+### 9.1 标签数据修复（LMF 报错项，逐条核对）
+
+| 文件 | 问题（核对证据） | 修复 |
+|---|---|---|
+| `kubejs/data/society/tags/blocks/treasure_spot_spawns.json` | `minecraft:pitcher_pod` 是物品；方块为 `pitcher_crop`（gtceu tall_plants / SereneSeasons summer_crops / WorldEdit 注册表均引用） | 改为 `minecraft:pitcher_crop` |
+| `kubejs/data/longwings/tags/blocks/pollination_banned_crops.json` | `atmospheric:aloe_kernels` 仅物品模型（方块 `aloe_vera` 同文件已列）；`minecraft:torchflower` 是物品 | 删除 kernels 行；`torchflower` → `torchflower_crop` |
+| `kubejs/data/quality_food/tags/blocks/quality_blocks.json` | 方块标签混入物品/过期 ID：vinery 葡萄/樱桃/苹果、`create:wheat_flour(_bag)`、`farmersdelight:stacked_melons/pumpkins`、`farm_and_charm:lettuce/tomato/*_from_bag/*_from_ball`、`supplementaries:sugar_cube_uncrafting` | 葡萄 → `vinery:white_grape_bush`/`red_grape_bush`（方块已验证）；删除其余无效项；顺带去重 |
+| `kubejs/data/zhopo/tags/worldgen/biome/has_structure/*.json` | `society:skull_cavern` 是**维度** ID（见 `dimension/skull_cavern.json`），不是生物群系；仅 stone/deepslate 两个文件残留无效值（其余 10 个已是有效群系） | stone → `skull_caves`；deepslate → `blackstone_caves + skull_caves`（最小修正，保留作者原有分布意图） |
+
+> 备注：`society:sellable` / `society:large_eggs` 两条 LMF 报错源于 `_diag_tags.js` 在物品标签事件抛异常（该脚本已删除，提交 `f7a0128`），需下次启动验证。
+
+### 9.2 GTCA 兼容（机壳配方）
+
+- **现象**：日志 `Input item 0 of recipe gtceu:reactive_gas_cont_cas is empty`（`inert_filtration_casing` 同）。
+- **根因（GTCA 源码 7.5.x + GTCEu TagPrefix 生成条件核对）**：
+  - gtca `hastelloy_n` 无 GENERATE_FRAME / GENERATE_ROTOR；`hastealloy_276` 无 GENERATE_GEAR；GT 的 `hastelloy_x` 无 GENERATE_ROTOR → 对应零件物品不存在。
+  - GT 的 `inputItems(空栈)` 会记录 ERROR 并**跳过该输入**，配方仍以残缺形态注册（潜在异常廉价合成）。
+- **处理**：`kubejs/server_scripts/gt/gtcaCasingCompat.js`
+  - 按产出物移除两个残缺配方；
+  - 补两条兼容配方（数值镜像原配方：EUt = 7680 / IV、duration 680、circuit 6、产出 ×2）：
+    - `reactive_gas_contantment_casing`：`6x double_hastelloy_c_276_plate` + `hastelloy_c_276_frame` + `tungsten_steel_rotor`
+    - `inert_filtration_casing`：`hastelloy_c_276_frame` + `6x hastelloy_x_plate` + `2x tungsten_steel_rotor` + `2x tungsten_steel_gear` + `iv_electric_pump` + 576mB PTFE
+  - 物品 ID 全部逐条核对自 JEI 导出；`node --check` 通过。
+
+---
+
+## 10. 进度日志
 
 | 时间 | 事件 |
 |---|---|
@@ -348,3 +378,4 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 | 2026-09-15 | 记录 GregMek（GT × Mekanism 联动 addon）：修复流体重名崩溃后安装 `gregmek-1.0-SNAPSHOT.jar`；新增第 6 节 |
 | 2026-09-15 | 新增 MEK 科技锁 TODO（GT LV 电路组装机 + Create 精密构件）；建立 `STATUS.md` 状态快照 |
 | 2026-09-15 | **MEK 科技锁实施完成**（B 方案 = LV 微处理器 + Create 精密构件 8 处 `replaceInput`）+ MEK 任务章（11 任务，前置 = LV 章铝锭任务） |
+| 2026-09-15 | 日志分析后的数据修复（4 类标签文件）+ GTCA 机壳兼容配方；删除诊断脚本 `_diag_tags.js`（f7a0128） |
