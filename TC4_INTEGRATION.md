@@ -148,3 +148,73 @@ TC 本体源码包内主要包：`client` 352、`api` 261、`block` 163、`nativ
 |---|---|
 | 2026-09-15 | 解包 dev zip，确认 7 个源码/API jar；确认 TC4 内置 KubeJS 插件与 10 个配方 schema；确认研究/要素均为 JSON 数据驱动；建立本文档 |
 | 2026-09-15 | 核对包内 20708 已自带 KubeJS schema（无需升级）；盘点 TC4 内容/配方结构/关键材料；给出 A~F 候选清单 |
+| 2026-09-15 | **联动方案调研完成**（第 7 节）：要素/标签结构、扫描机制澄清（魔导透镜 vs 护目镜）、GT 加工清单、KubeJS 配方清单、Society 女巫方案；待用户确认 |
+
+---
+
+## 7. 联动方案调研（2026-09-15，待用户确认）
+
+> 本节记录调研事实与拟定方案，**实施需用户挑选确认**（用户要求：先调查后确认）。
+
+### 7.1 要素/标签桥接（候选 A）— 可行，数据结构已确认
+
+- 数据位置与结构（源码包核对）：
+  - `data/thaumcraft/object_aspects/definitions.json`：顶层 `direct`（290 条物品）/ `tags`（40 条标签）/ `complex`（64）/ `derived`（7）等；
+  - 标签条目格式（`common_material_aspects.json` 样例）：
+    `{"id": "forge:ores/uranium", "aspects": {"metallum": 2, "venenum": 2, "potentia": 2}}`；
+  - `data/thaumcraft/data_maps/block/block_aspects.json`：方块要素（`{"mode": "add", "aspects": {...}}`）。
+- 拟定：新增数据文件给 GT/Create/Society 标签补要素（如 `#forge:ingots/steel`、`#forge:plates/*`、`#forge:dusts/*`）；
+  TC4 已有 40 条标签条目（铁/铜/金/锡/铅/银/黄铜/青铜/铀等），新增时避开重复。
+
+### 7.2 扫描（候选 A 延伸）— 事实澄清 + 方案
+
+- **扫描是魔导透镜（Thaumometer）的功能**：源码 `item/ThaumometerItem.java` → `common/ScanManager.java`；
+  **揭示之护目镜**只负责显示要素（`client/GogglesAspectView.java`），本身不扫描（如需要"护目镜扫描"需额外定制）。
+- 扫描取要素逻辑（`ScanManager.resolveBlockTarget`）：
+  - 方块：`BlockAspectCatalog.resolve(state)`（block_aspects 数据图）＋ 物品 `ObjectAspectResolver.resolve(stack)` 合并；
+  - 因此给机器**物品 ID 写要素**即可被扫描（方块形态走其物品堆）。
+- 拟定（不追求全覆盖，先做基础机器）：
+  - GT：`gtceu:lv_macerator`、`gtceu:lv_assembler`、`gtceu:lv_electric_furnace`、`gtceu:lv_circuit_assembler` 等；
+  - Create：`create:mechanical_press`、`create:crushing_wheel`、`create:mechanical_mixer`、`create:deployer` 等；
+  - MEK：`mekanism:metallurgic_infuser`、`enrichment_chamber`、`crusher`、`energized_smelter`、`precision_sawmill` 等；
+  - 要素示例：能量机器 → `potentia` 2-3 + `machina` 2 + `motus` 1；金属机器 → `metallum` 3 + `instrumentum` 1。
+
+### 7.3 GT 加工 TC4 材料（候选 C）— 拟定清单（待确认）
+
+已核对 ID：
+- TC4：`thaumcraft:cinnabar_ore`、`native_cinnabar_cluster`、`quicksilver`、`quicksilver_drop`、`amber`、`amber_bearing_stone`、`amber_block`、`thaumium_ingot`、`void_ingot`、`alumentum`、`{air,fire,earth,water,entropy,order}_shard`、`balanced_shard`、`*_infused_stone`、`greatwood_log`、`silverwood_log`。
+- GT：`gtceu:cinnabar_dust`、`gtceu:cinnabar_gem`、`gtceu:cinnabar_ore`、`gtceu:crushed_cinnabar_ore`、`gtceu:mercury`、`gtceu:flowing_mercury`。
+
+拟定配方（数值镜像 GT 惯例，实施时核对形态）：
+1. 研磨机：`thaumcraft:cinnabar_ore` → 2× `gtceu:cinnabar_dust`；
+2. 研磨机：`thaumcraft:amber_bearing_stone` → `thaumcraft:amber`（数量待定 1~3）；
+3. 水银互换：`thaumcraft:quicksilver` ↔ `gtceu:mercury`（形态/数量实现时核对）；
+4. （可选）研磨机：`thaumcraft:native_cinnabar_cluster` → `gtceu:crushed_cinnabar_ore`。
+
+### 7.4 KubeJS 加 TC4 配方（候选 B）— 拟定清单（待确认）
+
+KubeJS 用法（schema 已核对）：`e.recipes.thaumcraft.crucible(result, catalyst, aspects[, research])`、
+`infusion(central, components, aspects, instability, result[, research])`、`arcane_shaped(pattern, key, result[, vis])`。
+
+拟定：
+1. 坩埚：`gtceu:cinnabar_dust` + aspects → `thaumcraft:quicksilver`（GT 水银粉 → 炼金水银）；
+2. 奥术/注魔：用 Create 精密构件 / GT 板材替代 TC4 配方中的基础材料（tag 替换，如 `#forge:plates/iron`）；
+3. 注魔：给 GT/Create 装备加注魔配方（附魔/属性）——具体目标待定；
+4. （可选）坩埚：GT 粉 → TC4 材料（如 `gtceu:gold_dust` → ?）。
+
+### 7.5 Society 经济（候选 E）— 推荐 NPC：女巫（witch）
+
+- 商店系统：`kubejs/data/society_trading/shops/*.json`（现有 39 家，含 `witch.json`；结构：`offer / request(numismatics 货币) / second_request / numismatics_cost / stage_required / trade_id`）。
+- **推荐女巫**：魔法主题完全对口（现有商品：`society:sunlit_crystal`、`society:plushie_wand`、附魔书等）。
+- 方案：
+  - 女巫商店上架 TC4 基础：`thaumcraft:amber`、`quicksilver`、`cinnabar_ore`/`native_cinnabar_cluster`、`*_shard`、`alumentum`（定价参考现有档位）；
+  - 玩家出售 TC4 物品：`global.trades`（Shipping Bin 收购价，参照 `gtmfoTrades.js` 先例）。
+- 备选：librarian（书/研究主题）、trader（杂货）。
+
+### 7.6 待用户确认清单
+
+1. **要素/扫描**：机器范围（各 mod 5-8 台？是否含多方块）与要素分配是否按 7.2 示例？
+2. **GT 加工 TC4**：7.3 的 1~3 条是否全做？数值偏好（1:1 / 1:2）？
+3. **KubeJS TC4 配方**：7.4 里挑哪几条？
+4. **Society**：女巫商店上架清单与价位档位？是否需要 Shipping Bin 收购？
+5. 版本：维持包内 20708（默认）还是升 dev 包 20711？

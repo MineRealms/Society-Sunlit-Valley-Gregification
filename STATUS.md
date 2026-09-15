@@ -25,7 +25,7 @@
 
 ## 2. 进行中
 
-- **TC4 联动**：分析已完成（报告见 `TC4_INTEGRATION.md`），等待用户从候选 A~F 中挑选后实施。
+- **TC4 联动**：调研报告已完成（`TC4_INTEGRATION.md` 第 7 节：要素/扫描、GT 加工、KubeJS 配方、Society 女巫方案），**等待用户确认第 7.6 节 5 项清单后实施**。
 
 ---
 
@@ -37,10 +37,10 @@
 - 实施：`kubejs/server_scripts/mek/lockMekBehindGT.js`（8 处 `replaceInput`）+ MEK 任务章（11 任务，前置 = LV 章铝锭任务 `7567E885B7166603`）。
 - 详见 `GT_INTEGRATION.md` 第 6.4 节；校验全通过（node --check / SNBT / ID / lang）。
 
-### 3.2 TC4 联动候选（A~F）
+### 3.2 TC4 联动（调研完成，待确认）
 
-A 要素桥接（给 GT/Create/Society 标签加要素）/ B KubeJS 加 TC4 配方 / C GT 加工 TC4 材料 /
-D Create 加工 TC4 材料 / E Society 经济 / F 任务书。详见 `TC4_INTEGRATION.md` 第 4 节。
+报告见 `TC4_INTEGRATION.md` 第 7 节；**待用户确认 5 项**（要素/扫描范围、GT 加工清单、KubeJS 配方挑选、女巫商店清单、TC4 版本）。
+要点：扫描=魔导透镜（护目镜只显示要素）；要素写 `object_aspects/definitions.json`；Society 商店 = `kubejs/data/society_trading/shops/witch.json`（推荐女巫）。
 
 ### 3.3 其它
 
