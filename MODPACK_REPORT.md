@@ -20,10 +20,10 @@
 | 整合包名 | Society: Sunlit Valley (Baopu Edition / 宝铺版) |
 | 实例路径 | G:\MinecraftGames\Sunlit Valley(BaopuEdition)\.minecraft\versions\Society Sunlit Valley |
 | 启动器 | HMCL 3.6.11.264 |
-| mod jar 数 | 392 |
-| mod id 总数 | 434 |
-| 章节 / 任务 | 30 / 1173 |
-| 核心 mod | society 1.22, society_trading 1.2.9, ftbquests 2001.4.17, create 6.0.8, botania 1.20.1-454, refinedstorage 1.12.4, twilightforest 4.3.2508, numismatics 1.1.0 |
+| mod jar 数 | 398 |
+| mod id 总数 | 462 |
+| 章节 / 任务 | 49 / 1766 |
+| 核心 mod | society 1.22, society_trading 1.2.9, ftbquests 2001.4.17, create 6.0.8, botania 1.20.1-454, refinedstorage 1.12.4, twilightforest 4.3.2508, numismatics 1.1.0, gtceu 7.5.3, mekanism 10.4.16, thaumcraft 4R (20711) |
 
 ## 2. 模组分类总览
 
@@ -55,7 +55,7 @@
 
 ### 科技 / Create
 
-- `create`（Create）、`create_central_kitchen`（Create: Central Kitchen）、`create_enchantment_industry`（Create Enchantment Industry）、`create_factory_logistics`（Create Factory Logistics）、`create_hypertube`（Create Hypertube）、`create_mechanical_extruder`（Create Mechanical Extruder）、`create_slime`（create_slime）、`createutilities`（Create Utilities）、`railways`（Create: Steam 'n' Rails）、`createrailwaysnavigator`（Create Railways Navigator）、`copycats`（Create: Copycats+）、`extra_gauges`（Create: Extra Gauges）、`createentitycontrol`（Create:Entity Control）、`ponderjs`（PonderJS）
+- `create`（Create）、`create_central_kitchen`（Create: Central Kitchen）、`create_enchantment_industry`（Create Enchantment Industry）、`create_factory_logistics`（Create Factory Logistics）、`create_hypertube`（Create Hypertube）、`create_mechanical_extruder`（Create Mechanical Extruder）、`create_slime`（create_slime）、`createutilities`（Create Utilities）、`railways`（Create: Steam 'n' Rails）、`createrailwaysnavigator`（Create Railways Navigator）、`copycats`（Create: Copycats+）、`extra_gauges`（Create: Extra Gauges）、`createentitycontrol`（Create:Entity Control）、`ponderjs`（PonderJS）、`mekanism`（Mekanism 10.4.16）、`mekanismgenerators`（Mekanism Generators）、`mekanismadditions`（Mekanism Additions）、`mekanismtools`（Mekanism Tools）、`applied_mekanistics`（Applied Mekanistics）、`gregmek`（GT×MEK 矿石处理联动）、`gtmfo`（GT Modern Food Option）
 
 ### 存储 / 物流
 
