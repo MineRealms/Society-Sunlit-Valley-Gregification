@@ -227,7 +227,56 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 
 ---
 
-## 6. 验证记录
+## 6. GregMek（GT × Mekanism 矿石联动）与 MEK 科技锁
+
+### 6.1 GregMek 是什么
+
+GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” 整合包开发），运行于
+1.20.1 / Forge 47.4 + GTCEu 7.5.3 + Mekanism 10.4.16：
+
+- **新增材料形态**（GT TagPrefix）：污浊粉 `dirtyDust`、碎块 `clump`、碎片 `shard`、晶体 `crystal`；
+- **新增流体**：纯净浆液 `pure_slurry`、污浊浆液 `dirty_slurry`（对所有带 ORE 属性的材料自动挂载）；
+- **GT 侧处理链**：洗矿机（矿石/粗矿 + 硫酸 → 污浊浆液）→ 化学洗矿（污浊浆液 + 水 → 纯净浆液）→ 高压釜（纯净浆液 → 晶体）；
+- **Mekanism 侧配方**：压射（晶体/矿石/粗矿 + 盐酸 → 碎片）、提纯（碎片/矿石/粗矿 + 氧气 → 碎块）、粉碎（碎块 → 污浊粉）、富集（矿石/污浊粉 → 粉尘）；
+- **GT 机器版同链配方**（化学反应釜/研磨机/离心机），不造 MEK 机器也能走；
+- 有配置：开关两条链、产出倍率、副产概率倍率。
+
+### 6.2 本轮对 GregMek 的改动（用户完成）
+
+1. **构建**：`fg.deobf` + `flatDir` 引入三个 jar（gtceu 7.5.3 / Mekanism 10.4.16.80 / JEI），
+   补 ldlib 1.0.52.a，从 gtceu jar 抽出 JiJ 的 Registrate、configuration 到 `libs/`，编译通过。
+2. **现代化重构**：`@Mod` 与 `@GTAddon` 拆类（避免 AddonFinder 反射重复 new）；配置改构造器注入
+   `FMLJavaModLoadingContext`；浆液流体改 `PostMaterialEvent` 挂载（7.5.3 不再调 `registerMaterials()`，
+   原为死代码）；配方统一走 `IGTAddon#addRecipes(Consumer)` 数据生成；加 JEI/EMI 配方分类；
+   配置倍率生效；时长按材料质量缩放；生成前检查 `shouldGenerateRecipesFor`；清理 2969 个过期 datagen JSON
+   （GTCEu 7.x 配方运行时动态生成，旧文件会 ID 冲突）。
+3. **修复自造崩溃**：`FluidBuilder.name("pure_slurry")` 覆盖按材料生成的流体名 → ~200 流体重名 →
+   建世界 `intrusive holders were not registered` 崩溃；改回裸 `FluidBuilder()` 后修复并安装
+   （旧 jar 备份为 `.broken-fluidnames`）。
+
+### 6.3 现状
+
+- `mods/gregmek-1.0-SNAPSHOT.jar`（30 KB，2026-09-15 22:10）已安装；
+- Mekanism 全家桶 10.4.16.80（本体 + Additions + Generators + Tools）在包内；
+- 运行时验证待进存档（矿石处理链、JEI 分类、浆液流体显示）。
+
+### 6.4 ★ MEK 科技锁（TODO，用户明确要求）
+
+**目标**：MEK 科技被 GT + Create 双重锁：
+
+1. MEK 基础机器需 GT **LV「基础电路组装机」**（`gtceu:circuit_assembler`）阶段后才能制作（等价 LV 电路门槛）；
+2. 后续 MEK 机器合成加入 **`create:precision_mechanism`**（Create 精密构件）。
+
+**实施思路**：
+
+- 先列 Mekanism 基础机器配方清单（`mods/Mekanism-1.20.1-10.4.16.80.jar` → `data/mekanism/recipes/`）；
+- KubeJS `e.remove({output:'mekanism:xxx'})` + 重加门槛配方，或 `e.replaceInput` 替换关键原料；
+- 新建脚本建议 `kubejs/server_scripts/mek/lockMekBehindGT.js`（命名待定）；
+- 完成后：静态校验（`node --check` + ID 核对）→ 更新本文件与 `STATUS.md` → 提交。
+
+---
+
+## 7. 验证记录
 
 | 项目 | 结果 |
 |---|---|
@@ -250,8 +299,9 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 
 ---
 
-## 7. 后续可选项（TODO）
+## 8. 后续可选项（TODO）
 
+- [ ] **MEK 科技锁（GT LV 电路组装机 + Create 精密构件）—— 见第 6.4 节（用户明确要求）**
 - [ ] 人工润色机器翻译文本（重点：长描述、幽默文案、专有名词）
 - [ ] 按本包进度调整部分任务奖励（numismatics 货币联动）
 - [ ] 为骷髅洞穴各群系差异化矿脉权重
@@ -261,7 +311,7 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 
 ---
 
-## 8. 进度日志
+## 9. 进度日志
 
 | 时间 | 事件 |
 |---|---|
@@ -272,3 +322,5 @@ resource-pack-prompt={"text":"本服需要任务书汉化资源包（自动下�
 | 2026-09-14 | 翻译流水线（术语表 5151 条 + 批量翻译 83 秒）；3707 键写入 zh/en；提交 `d2e5f3a` |
 | 2026-09-15 | LV 门槛（Create × GT）：`lockLVBehindCreate.js` + Create 章「LV 时代」任务 + GT LV 章 5 入口前置；静态校验全通过；提交 `9fb5899` |
 | 2026-09-15 | Create × GT 轻量联动 R2：`createBridges.js`（板材/覆膜板/碎矿/合金/橡胶 5 组）；ID 与标签核对通过 |
+| 2026-09-15 | 记录 GregMek（GT × Mekanism 联动 addon）：修复流体重名崩溃后安装 `gregmek-1.0-SNAPSHOT.jar`；新增第 6 节 |
+| 2026-09-15 | 新增 MEK 科技锁 TODO（GT LV 电路组装机 + Create 精密构件）；建立 `STATUS.md` 状态快照 |
