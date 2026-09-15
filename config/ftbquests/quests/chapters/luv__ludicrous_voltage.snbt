@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:luv_electric_motor"
 	id: "262A03F6F4EC713C"
-	order_index: 6
+	order_index: 14
 	quest_links: [
 		{
 			id: "7F8B55C8510200AF"
@@ -109,13 +109,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "绝对环境友好型"
-			tasks: [
-				{
-					id: "10FAF765725C7790"
-					item: "gtceu:pcb_coolant_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "10FAF765725C7790"
+				item: "gtceu:pcb_coolant_bucket"
+				type: "item"
+			}]
 			title: "介电PCB冷却液"
 			x: 2.25d
 			y: 1.125d
@@ -137,13 +135,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "不仅是大型变压器"
-			tasks: [
-				{
-					id: "39CDBE6B4B973868"
-					item: "gtceu:active_transformer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "39CDBE6B4B973868"
+				item: "gtceu:active_transformer"
+				type: "item"
+			}]
 			title: "主动变压器"
 			x: 3.375d
 			y: 0.0d
@@ -172,13 +168,11 @@
 			id: "42760D3A86EFDCA3"
 			size: 0.75d
 			subtitle: "服务器机房筹备中"
-			tasks: [
-				{
-					id: "01188385BE2DB3B3"
-					item: "gtceu:data_bank"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "01188385BE2DB3B3"
+				item: "gtceu:data_bank"
+				type: "item"
+			}]
 			title: "海量数据存储"
 			x: 4.5d
 			y: 0.0d
@@ -196,13 +190,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "是时候体验激光了!"
-			tasks: [
-				{
-					id: "3BA3AA8746044DC1"
-					item: "gtceu:normal_laser_pipe"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3BA3AA8746044DC1"
+				item: "gtceu:normal_laser_pipe"
+				type: "item"
+			}]
 			title: "激光能量传输"
 			x: 3.375d
 			y: -1.125d
@@ -220,13 +212,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "前所未有的掺杂技术"
-			tasks: [
-				{
-					id: "2F8C92A86CAF338F"
-					item: "gtceu:naquadah_boule"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2F8C92A86CAF338F"
+				item: "gtceu:naquadah_boule"
+				type: "item"
+			}]
 			title: "掺镎&a硅晶&f"
 			x: 0.0d
 			y: 1.125d
@@ -245,13 +235,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "难道不该叫星际镎？"
-			tasks: [
-				{
-					id: "36833D5050F81992"
-					item: "gtceu:naquadah_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "36833D5050F81992"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
 			title: "镎"
 			x: 1.125d
 			y: 1.125d
@@ -273,14 +261,12 @@
 			id: "2FCBA0D780DBDA9E"
 			size: 0.75d
 			subtitle: "比太阳表面更炽热!"
-			tasks: [
-				{
-					count: 16L
-					id: "28332FC9FCA83E41"
-					item: "gtceu:naquadah_coil_block"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 16L
+				id: "28332FC9FCA83E41"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
 			title: "镎线圈"
 			x: 3.375d
 			y: 1.125d
@@ -298,13 +284,11 @@
 			id: "5ED7707B0ECF2207"
 			size: 0.75d
 			subtitle: "庆幸这些不需要泵吧"
-			tasks: [
-				{
-					id: "10FB849CE994B1A5"
-					item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "10FB849CE994B1A5"
+				item: "gtceu:indium_tin_barium_titanium_cuprate_single_wire"
+				type: "item"
+			}]
 			title: "&aLuV超导体&f"
 			x: 4.5d
 			y: 1.125d
@@ -327,12 +311,10 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "星辰在召唤..."
-			tasks: [
-				{
-					id: "062ECB2F9C9D741D"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "062ECB2F9C9D741D"
+				type: "checkmark"
+			}]
 			title: "星辰流体"
 			x: 5.625d
 			y: 1.125d
@@ -349,13 +331,11 @@
 			id: "4E9DED9569AA17F5"
 			size: 0.75d
 			subtitle: "等离子？涡轮？!如何实现？"
-			tasks: [
-				{
-					id: "13230F892A8F6FA1"
-					item: "gtceu:plasma_large_turbine"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "13230F892A8F6FA1"
+				item: "gtceu:plasma_large_turbine"
+				type: "item"
+			}]
 			title: "&a大型等离子体涡轮&f"
 			x: 6.75d
 			y: 1.125d
@@ -370,13 +350,11 @@
 			id: "24F0454B9A090C44"
 			size: 0.75d
 			subtitle: "星际之门最强材料"
-			tasks: [
-				{
-					id: "16895659E44B65B5"
-					item: "gtceu:naquadah_alloy_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "16895659E44B65B5"
+				item: "gtceu:naquadah_alloy_ingot"
+				type: "item"
+			}]
 			title: "&a硅岩合金&f"
 			x: 0.0d
 			y: 2.25d
@@ -417,13 +395,11 @@
 			id: "378F0AFCF95354B2"
 			size: 0.75d
 			subtitle: "请勿触碰酸液"
-			tasks: [
-				{
-					id: "1D674C3951223E8C"
-					item: "gtceu:fluoroantimonic_acid_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1D674C3951223E8C"
+				item: "gtceu:fluoroantimonic_acid_bucket"
+				type: "item"
+			}]
 			title: "Naquadah精炼链"
 			x: 1.125d
 			y: 2.25d
@@ -450,7 +426,6 @@
 				{
 					id: "48F555D3FC7EA449"
 					item: "gtceu:trinium_sulfide_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -476,13 +451,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "高能钚同位素"
-			tasks: [
-				{
-					id: "757053C4979D8B08"
-					item: "gtceu:plutonium_241_dust"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "757053C4979D8B08"
+				item: "gtceu:plutonium_241_dust"
+				type: "item"
+			}]
 			title: "钚-241"
 			x: 4.5d
 			y: 2.25d
@@ -522,13 +495,11 @@
 			shape: "gear"
 			size: 1.3d
 			subtitle: "星辰之力"
-			tasks: [
-				{
-					id: "48A4D39ED0E11EBC"
-					item: "gtceu:luv_fusion_reactor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "48A4D39ED0E11EBC"
+				item: "gtceu:luv_fusion_reactor"
+				type: "item"
+			}]
 			title: "&a湮灭反应堆&f I"
 			x: 5.625d
 			y: 2.25d
@@ -546,13 +517,11 @@
 			shape: "gear"
 			size: 1.1d
 			subtitle: "聚变产生铕... 不会吧？!"
-			tasks: [
-				{
-					id: "220305C9DA0F512B"
-					item: "gtceu:europium_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "220305C9DA0F512B"
+				item: "gtceu:europium_ingot"
+				type: "item"
+			}]
 			title: "铕"
 			x: 6.75d
 			y: 2.25d
@@ -635,13 +604,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "穿越无限,超越极限!"
-			tasks: [
-				{
-					id: "3AC7E29D373750F8"
-					item: "expatternprovider:wireless_connect"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3AC7E29D373750F8"
+				item: "expatternprovider:wireless_connect"
+				type: "item"
+			}]
 			title: "&a无线&f之力"
 			x: 3.96d
 			y: 5.94d
@@ -657,13 +624,11 @@
 			id: "79192BA29BE69170"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "3DFCDF1B24506A8A"
-					title: "哇嘿!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3DFCDF1B24506A8A"
+				title: "哇嘿!"
+				type: "checkmark"
+			}]
 			title: "打包什么？"
 			x: 3.3d
 			y: 4.62d
@@ -682,13 +647,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "这玩意儿简直离谱!"
-			tasks: [
-				{
-					id: "5904009DC40731D6"
-					item: "gtceu:ev_fluid_drilling_rig"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5904009DC40731D6"
+				item: "gtceu:ev_fluid_drilling_rig"
+				type: "item"
+			}]
 			title: "荒谬的&a流体钻&f探"
 			x: 5.61d
 			y: 4.62d
@@ -705,13 +668,11 @@
 			id: "1BE779AF4487E3EB"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "414C3982BED7EA0D"
-					item: "gtceu:luv_large_miner"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "414C3982BED7EA0D"
+				item: "gtceu:luv_large_miner"
+				type: "item"
+			}]
 			title: "荒谬的&a矿钻&f"
 			x: 5.28d
 			y: 5.28d
@@ -740,7 +701,6 @@
 				{
 					id: "66D5D76676D27388"
 					item: "gtceu:luv_lapotronic_battery"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -754,13 +714,11 @@
 			id: "47087361D6DE7DCF"
 			size: 0.75d
 			subtitle: "没错...又一轮电路升级"
-			tasks: [
-				{
-					id: "3CF7F369F390A3E5"
-					item: "gtceu:crystal_processor_assembly"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3CF7F369F390A3E5"
+				item: "gtceu:crystal_processor_assembly"
+				type: "item"
+			}]
 			title: "更多LuV级电路"
 			x: 7.875d
 			y: 4.5d
@@ -775,13 +733,11 @@
 			id: "7AE681E2AB31EA0D"
 			size: 0.75d
 			subtitle: "...等等,为什么到这里就没了？"
-			tasks: [
-				{
-					id: "0E274B445A95250A"
-					item: "gtceu:crystal_processor_computer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0E274B445A95250A"
+				item: "gtceu:crystal_processor_computer"
+				type: "item"
+			}]
 			title: "更多ZPM级电路"
 			x: 7.875d
 			y: 5.625d
@@ -796,13 +752,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "若你尚未发现金矿,现在就能找到了"
-			tasks: [
-				{
-					id: "718BA09242A22550"
-					item: "gtceu:prospector.luv"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "718BA09242A22550"
+				item: "gtceu:prospector.luv"
+				type: "item"
+			}]
 			title: "LuV级矿脉勘探仪"
 			x: 4.5d
 			y: 3.375d
@@ -821,13 +775,11 @@
 			id: "42CD789B8C40E424"
 			size: 0.75d
 			subtitle: "我猜到后续发展了!"
-			tasks: [
-				{
-					id: "6357389871CE70C2"
-					item: "gtceu:crystal_processor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6357389871CE70C2"
+				item: "gtceu:crystal_processor"
+				type: "item"
+			}]
 			title: "顶级IV级电路!"
 			x: 7.875d
 			y: 3.375d
@@ -844,13 +796,11 @@
 			id: "6C241455C5434C2E"
 			size: 0.75d
 			subtitle: "ML-FR型PCB"
-			tasks: [
-				{
-					id: "5B8C1C15E5413CEC"
-					item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5B8C1C15E5413CEC"
+				item: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
 			title: "多层纤维增强型&a印刷电路板&f"
 			x: 9.0d
 			y: 3.375d
@@ -925,13 +875,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "电缆现在需要更优质的护套"
-			tasks: [
-				{
-					id: "4CAD2BE5558D7501"
-					item: "gtceu:polyphenylene_sulfide_foil"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4CAD2BE5558D7501"
+				item: "gtceu:polyphenylene_sulfide_foil"
+				type: "item"
+			}]
 			title: "&a聚苯硫醚&f"
 			x: 0.0d
 			y: 4.5d
@@ -991,13 +939,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "感受到吸引力了吗？"
-			tasks: [
-				{
-					id: "1CAACC2FAABE68A1"
-					item: "gtceu:iv_polarizer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1CAACC2FAABE68A1"
+				item: "gtceu:iv_polarizer"
+				type: "item"
+			}]
 			title: "IV级磁化技术"
 			x: 0.375d
 			y: 3.75d
@@ -1010,13 +956,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "危难中的桥梁"
-			tasks: [
-				{
-					id: "280DF4E4A7E5FC2A"
-					item: "ae2wtlib:quantum_bridge_card"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "280DF4E4A7E5FC2A"
+				item: "ae2wtlib:quantum_bridge_card"
+				type: "item"
+			}]
 			title: "无限无线范围"
 			x: 3.63d
 			y: 5.28d
@@ -1041,19 +985,17 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "我们天际相见!"
-			tasks: [
-				{
-					id: "23AF5E66858C1950"
-					item: {
-						Count: 1
-						id: "gtceu:advanced_quarktech_chestplate"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "23AF5E66858C1950"
+				item: {
+					Count: 1
+					id: "gtceu:advanced_quarktech_chestplate"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			title: "终极飞行装备"
 			x: 6.758503401360549d
 			y: 5.621173469387756d
@@ -1070,49 +1012,47 @@
 			shape: "circle"
 			size: 0.66d
 			subtitle: "紧凑实用"
-			tasks: [
-				{
-					id: "0089B7D781622D68"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:luv_dual_input_hatch"
-								}
-								{
-									Count: 1b
-									id: "gtceu:uv_dual_input_hatch"
-								}
-								{
-									Count: 1b
-									id: "gtceu:uhv_dual_input_hatch"
-								}
-								{
-									Count: 1b
-									id: "gtceu:luv_dual_output_hatch"
-								}
-								{
-									Count: 1b
-									id: "gtceu:zpm_dual_output_hatch"
-								}
-								{
-									Count: 1b
-									id: "gtceu:uv_dual_output_hatch"
-								}
-								{
-									Count: 1b
-									id: "gtceu:uhv_dual_output_hatch"
-								}
-							]
-						}
+			tasks: [{
+				id: "0089B7D781622D68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:luv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_dual_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:luv_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:zpm_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uv_dual_output_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:uhv_dual_output_hatch"
+							}
+						]
 					}
-					title: "双I/O舱口"
-					type: "item"
 				}
-			]
+				title: "双I/O舱口"
+				type: "item"
+			}]
 			title: "一石二鸟的双联仓口"
 			x: 2.2414965986394577d
 			y: 5.631377551020407d
@@ -1146,24 +1086,20 @@
 			]
 			icon: "expatternprovider:pattern_modifier"
 			id: "5CE0B928479D8535"
-			rewards: [
-				{
-					count: 64
-					id: "597FE2E43C76B1E0"
-					item: "ae2:blank_pattern"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "597FE2E43C76B1E0"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "&a样板修改器&r功能超群!"
-			tasks: [
-				{
-					id: "77D0C17BBE681C85"
-					item: "expatternprovider:pattern_modifier"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "77D0C17BBE681C85"
+				item: "expatternprovider:pattern_modifier"
+				type: "item"
+			}]
 			title: "样板修改器"
 			x: 4.95d
 			y: 5.94d

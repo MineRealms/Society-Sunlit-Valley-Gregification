@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "minecraft:water_bucket"
 	id: "4C3D68FB57D3CC02"
-	order_index: 1
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -21,13 +21,11 @@
 			id: "4D7A771B67DAFC6F"
 			size: 1.2d
 			subtitle: "很有环保意识嘛!"
-			tasks: [
-				{
-					id: "10D096D6F4770F24"
-					title: "我超爱可再生资源!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "10D096D6F4770F24"
+				title: "我超爱可再生资源!"
+				type: "checkmark"
+			}]
 			title: "推动可持续化流程"
 			x: 1.2d
 			y: -0.6d
@@ -46,13 +44,11 @@
 			id: "55D8E30978CBBC0D"
 			shape: "circle"
 			subtitle: "说是游戏机制破坏者也不为过吧？"
-			tasks: [
-				{
-					id: "21A653703F408934"
-					title: "岩石破碎"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "21A653703F408934"
+				title: "岩石破碎"
+				type: "checkmark"
+			}]
 			x: 2.0d
 			y: -1.5d
 		}
@@ -63,16 +59,14 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "哦,这才刚刚开始呢."
-			tasks: [
-				{
-					consume_items: false
-					count: 64L
-					id: "72A52930F1754ABF"
-					item: "minecraft:cobblestone"
-					title: "圆石"
-					type: "item"
-				}
-			]
+			tasks: [{
+				consume_items: false
+				count: 64L
+				id: "72A52930F1754ABF"
+				item: "minecraft:cobblestone"
+				title: "圆石"
+				type: "item"
+			}]
 			title: "圆石的乐趣"
 			x: 0.33d
 			y: -1.65d
@@ -94,13 +88,11 @@
 			shape: "rsquare"
 			size: 0.5d
 			subtitle: "&a小石子&f,大副产"
-			tasks: [
-				{
-					id: "3C1B921715553377"
-					item: "gtceu:stone_dust"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3C1B921715553377"
+				item: "gtceu:stone_dust"
+				type: "item"
+			}]
 			x: -0.33d
 			y: -1.65d
 		}
@@ -117,13 +109,11 @@
 			shape: "rsquare"
 			size: 0.5d
 			subtitle: "沙砾坑风云"
-			tasks: [
-				{
-					id: "3850F80F95B8E520"
-					item: "minecraft:gravel"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3850F80F95B8E520"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
 			x: 0.0d
 			y: -2.31d
 		}
@@ -138,13 +128,11 @@
 			shape: "rsquare"
 			size: 0.55d
 			subtitle: "巍峨石柱的双足..."
-			tasks: [
-				{
-					id: "6724DCD56A7592FF"
-					item: "minecraft:sand"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6724DCD56A7592FF"
+				item: "minecraft:sand"
+				type: "item"
+			}]
 			x: 0.0d
 			y: -2.97d
 		}
@@ -159,13 +147,11 @@
 			shape: "rsquare"
 			size: 0.5d
 			subtitle: "玻璃扎手,不是吗..."
-			tasks: [
-				{
-					id: "71A450692F1DC98D"
-					item: "minecraft:glass"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "71A450692F1DC98D"
+				item: "minecraft:glass"
+				type: "item"
+			}]
 			x: 0.0d
 			y: -3.63d
 		}
@@ -184,13 +170,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "芒硝与粘土..."
-			tasks: [
-				{
-					id: "6358C3084C675965"
-					item: "minecraft:diorite"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6358C3084C675965"
+				item: "minecraft:diorite"
+				type: "item"
+			}]
 			x: 0.99d
 			y: -2.31d
 		}
@@ -209,13 +193,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "红岩、&a二氧化硅&f..."
-			tasks: [
-				{
-					id: "7D054563301323A4"
-					item: "minecraft:granite"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7D054563301323A4"
+				item: "minecraft:granite"
+				type: "item"
+			}]
 			x: 1.65d
 			y: -2.64d
 		}
@@ -234,13 +216,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "&a二氧化硅&f、氟..."
-			tasks: [
-				{
-					id: "64EF28C6902C7083"
-					item: "minecraft:deepslate"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "64EF28C6902C7083"
+				item: "minecraft:deepslate"
+				type: "item"
+			}]
 			x: 2.31d
 			y: -2.64d
 		}
@@ -259,13 +239,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "石棉、硝石...(无机械动力)"
-			tasks: [
-				{
-					id: "74AEE715BE76C0CF"
-					item: "minecraft:andesite"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "74AEE715BE76C0CF"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
 			x: 2.97d
 			y: -2.31d
 		}
@@ -284,13 +262,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "辐射:新维加斯、铁..."
-			tasks: [
-				{
-					id: "3C423DE1EB48AFF5"
-					item: "minecraft:obsidian"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3C423DE1EB48AFF5"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
 			x: 3.3d
 			y: -1.65d
 		}
@@ -309,13 +285,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "橄榄石、&a黑色灰烬&f..."
-			tasks: [
-				{
-					id: "6F2F8349BF8AF29C"
-					item: "minecraft:basalt"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6F2F8349BF8AF29C"
+				item: "minecraft:basalt"
+				type: "item"
+			}]
 			x: 3.3d
 			y: -0.99d
 		}
@@ -336,13 +310,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "铝..."
-			tasks: [
-				{
-					id: "10A533EC38D279DA"
-					item: "gtceu:red_granite"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "10A533EC38D279DA"
+				item: "gtceu:red_granite"
+				type: "item"
+			}]
 			x: 2.97d
 			y: -0.33d
 		}
@@ -357,13 +329,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "方解石、镁..."
-			tasks: [
-				{
-					id: "0DED39C9E1966F0B"
-					item: "gtceu:marble"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0DED39C9E1966F0B"
+				item: "gtceu:marble"
+				type: "item"
+			}]
 			x: 2.31d
 			y: 0.0d
 		}
@@ -381,13 +351,11 @@
 			id: "24A90D07C3A35370"
 			shape: "circle"
 			subtitle: "现在事情还未定局..."
-			tasks: [
-				{
-					id: "2DE291473F207BF8"
-					title: "空气真是美妙无比"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "2DE291473F207BF8"
+				title: "空气真是美妙无比"
+				type: "checkmark"
+			}]
 			title: "各类空气(蒸馏)"
 			x: -0.1499999999999999d
 			y: -0.7d
@@ -413,13 +381,11 @@
 			shape: "rsquare"
 			size: 0.7d
 			subtitle: "氮气、氧气、氦气、氪气、氙气、氡气、&a末影珍珠&f..."
-			tasks: [
-				{
-					id: "37E57DD2AD97DD10"
-					title: "真惊讶我能在&a末地&f呼吸"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "37E57DD2AD97DD10"
+				title: "真惊讶我能在&a末地&f呼吸"
+				type: "checkmark"
+			}]
 			title: "液态末影空气"
 			x: -3.15d
 			y: -0.7d
@@ -444,13 +410,11 @@
 			shape: "rsquare"
 			size: 0.75d
 			subtitle: "氮气、氦气、氩气..."
-			tasks: [
-				{
-					id: "3964A8A27402A11B"
-					title: "我保证不会把空气当商品卖!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3964A8A27402A11B"
+				title: "我保证不会把空气当商品卖!"
+				type: "checkmark"
+			}]
 			title: "&a液态空气&f"
 			x: -1.15d
 			y: -0.7d
@@ -475,13 +439,11 @@
 			shape: "rsquare"
 			size: 0.7d
 			subtitle: "碳、煤炭气体、氦-3..."
-			tasks: [
-				{
-					id: "074BDDF3F1AE08AA"
-					title: "&a下界&f也不全是地狱景象"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "074BDDF3F1AE08AA"
+				title: "&a下界&f也不全是地狱景象"
+				type: "checkmark"
+			}]
 			title: "液态下界空气"
 			x: -2.15d
 			y: -0.7d
@@ -497,13 +459,11 @@
 			id: "7ECD974215E77432"
 			shape: "circle"
 			subtitle: "这样安全吗？没问题吗？"
-			tasks: [
-				{
-					id: "19F0161CE47673EE"
-					title: "哦,该死.这可真糟糕"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "19F0161CE47673EE"
+				title: "哦,该死.这可真糟糕"
+				type: "checkmark"
+			}]
 			title: "我的生物农场怎么办？"
 			x: 1.0d
 			y: 0.5d

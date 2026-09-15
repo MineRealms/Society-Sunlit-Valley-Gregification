@@ -6,7 +6,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:hv_electric_motor"
 	id: "237BDB19A9495869"
-	order_index: 3
+	order_index: 10
 	quest_links: [
 		{
 			id: "2583D0B64E51FAC8"
@@ -49,24 +49,20 @@
 			]
 			icon: "gtceu:hv_machine_casing"
 			id: "2D01E80DE837F6A6"
-			rewards: [
-				{
-					count: 6
-					id: "4D352625AE6D5757"
-					item: "gtceu:advanced_integrated_circuit"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 6
+				id: "4D352625AE6D5757"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
-			tasks: [
-				{
-					count: 6L
-					id: "09C7FB07CF7A1B49"
-					item: "gtceu:hv_machine_hull"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 6L
+				id: "09C7FB07CF7A1B49"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
 			title: "&a高压&f机器"
 			x: 1.125d
 			y: -1.875d
@@ -78,13 +74,11 @@
 			id: "55552589C581EE9E"
 			size: 0.75d
 			subtitle: "科幻级电池!"
-			tasks: [
-				{
-					id: "35D2AE2899F60BC3"
-					item: "gtceu:energy_crystal"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "35D2AE2899F60BC3"
+				item: "gtceu:energy_crystal"
+				type: "item"
+			}]
 			title: "超级电池"
 			x: 3.375d
 			y: -3.0d
@@ -104,13 +98,11 @@
 			shape: "rsquare"
 			size: 0.75d
 			subtitle: "&a通往&a能量存储&f之路"
-			tasks: [
-				{
-					id: "51F819B8083DC13A"
-					item: "gtceu:hv_autoclave"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "51F819B8083DC13A"
+				item: "gtceu:hv_autoclave"
+				type: "item"
+			}]
 			title: "高压灭菌器"
 			x: 2.25d
 			y: -3.0d
@@ -126,13 +118,11 @@
 			id: "124B32A0583A636A"
 			size: 0.75d
 			subtitle: "请勿将电子产品浸入洗浴..."
-			tasks: [
-				{
-					id: "13B0B5168E4B06E3"
-					item: "gtceu:hv_chemical_bath"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "13B0B5168E4B06E3"
+				item: "gtceu:hv_chemical_bath"
+				type: "item"
+			}]
 			title: "&a高压&f浸染"
 			x: 4.5d
 			y: -1.875d
@@ -157,7 +147,6 @@
 				{
 					id: "3872B1D118426B33"
 					item: "gtceu:steel_large_boiler"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -222,14 +211,12 @@
 			]
 			icon: "gtceu:hv_electric_motor"
 			id: "029CF0D9E5097F87"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "72019B9C7B00FDB7"
-					table_id: 4302125856527628630L
-					type: "choice"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72019B9C7B00FDB7"
+				table_id: 4302125856527628630L
+				type: "choice"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "难道不觉得这很有趣吗？"
@@ -283,13 +270,11 @@
 			icon: "gtceu:hv_assembler"
 			id: "16B735F9C391D260"
 			size: 0.75d
-			tasks: [
-				{
-					id: "1B70E35262CA2CB8"
-					item: "gtceu:hv_assembler"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1B70E35262CA2CB8"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
 			title: "HV &a控制电路加工厂&f"
 			x: 2.25d
 			y: -0.75d
@@ -308,13 +293,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "真正革命性的——水"
-			tasks: [
-				{
-					id: "3CE1967A82B9ED45"
-					item: "gtceu:infinite_water_cover"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3CE1967A82B9ED45"
+				item: "gtceu:infinite_water_cover"
+				type: "item"
+			}]
 			title: "无限水源"
 			x: 1.125d
 			y: 0.375d
@@ -342,7 +325,6 @@
 							value: "forge:lenses"
 						}
 					}
-					optional_task: true
 					title: "任意#forge:透镜"
 					type: "item"
 				}
@@ -366,13 +348,11 @@
 			id: "15EC934CE8F4DC86"
 			size: 0.75d
 			subtitle: "制作这些证明您真了不起!"
-			tasks: [
-				{
-					id: "6B595E3904B796C3"
-					item: "gtceu:nand_chip"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6B595E3904B796C3"
+				item: "gtceu:nand_chip"
+				type: "item"
+			}]
 			title: "最佳ULV电路!"
 			x: 4.5d
 			y: 1.5d
@@ -392,13 +372,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "\"流体数字化仪”？那是谁？"
-			tasks: [
-				{
-					id: "4717CD0721804BAC"
-					item: "ae2:fluid_cell_housing"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4717CD0721804BAC"
+				item: "ae2:fluid_cell_housing"
+				type: "item"
+			}]
 			title: "数字化流体存储"
 			x: 3.375d
 			y: 0.375d
@@ -424,13 +402,11 @@
 				{
 					id: "19C5FBCD216DCE26"
 					item: "gtceu:lpic_chip"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "3CB30E3B0B6353C2"
 					item: "gtceu:sodium_potassium_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -460,13 +436,11 @@
 			shape: "square"
 			size: 0.75d
 			subtitle: "化学爱好者欢呼吧!"
-			tasks: [
-				{
-					id: "652CFAE1FA60F3E2"
-					item: "gtceu:hv_chemical_reactor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "652CFAE1FA60F3E2"
+				item: "gtceu:hv_chemical_reactor"
+				type: "item"
+			}]
 			title: "&a高压&f 化学"
 			x: 5.625d
 			y: -1.875d
@@ -488,14 +462,12 @@
 			]
 			icon: "gtceu:rutile_dust"
 			id: "59DFC4DA7D29C315"
-			rewards: [
-				{
-					count: 8
-					id: "6752E5675B45883A"
-					item: "gtceu:bauxite_ore"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "6752E5675B45883A"
+				item: "gtceu:bauxite_ore"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "...说明这还不是钛!"
@@ -504,7 +476,6 @@
 					count: 15L
 					id: "7046AD026C55153C"
 					item: "gtceu:bauxite_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -534,13 +505,11 @@
 			id: "727075AAF9F91FAE"
 			size: 0.75d
 			subtitle: "不,这仍然不是钛"
-			tasks: [
-				{
-					id: "334DB53CC12726B0"
-					item: "gtceu:titanium_tetrachloride_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "334DB53CC12726B0"
+				item: "gtceu:titanium_tetrachloride_bucket"
+				type: "item"
+			}]
 			title: "准钛时刻²"
 			x: 5.625d
 			y: -4.125d
@@ -558,13 +527,11 @@
 			id: "45F9AAE4ABE32033"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "2C582DDA7BC36951"
-					item: "gtceu:mercury_barium_calcium_cuprate_single_wire"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2C582DDA7BC36951"
+				item: "gtceu:mercury_barium_calcium_cuprate_single_wire"
+				type: "item"
+			}]
 			title: "&a高压超导体&f"
 			x: 5.625d
 			y: -6.375d
@@ -586,14 +553,12 @@
 			id: "6B08799BCFD01D3D"
 			size: 0.75d
 			subtitle: "离战胜太阳还有漫漫长路"
-			tasks: [
-				{
-					count: 16L
-					id: "2DCD235EC79F582C"
-					item: "gtceu:nichrome_coil_block"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 16L
+				id: "2DCD235EC79F582C"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
 			title: "镍铬线圈"
 			x: 6.75d
 			y: -6.375d
@@ -614,24 +579,20 @@
 			]
 			icon: "gtceu:titanium_ingot"
 			id: "7FA0ACB7F161F378"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "106D8C718FA5E22C"
-					table_id: 3622252502177806142L
-					type: "choice"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "106D8C718FA5E22C"
+				table_id: 3622252502177806142L
+				type: "choice"
+			}]
 			shape: "gear"
 			size: 1.0d
 			subtitle: "钛板"
-			tasks: [
-				{
-					id: "6D3E269567F419DE"
-					item: "gtceu:titanium_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6D3E269567F419DE"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
 			title: "钛"
 			x: 5.625d
 			y: -5.25d
@@ -661,13 +622,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "人类智慧有极限吗？看来未必"
-			tasks: [
-				{
-					id: "497959F0CC572A68"
-					item: "gtceu:item_tag_filter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "497959F0CC572A68"
+				item: "gtceu:item_tag_filter"
+				type: "item"
+			}]
 			title: "300智商操作"
 			x: 7.875d
 			y: -6.375d
@@ -685,13 +644,11 @@
 			id: "6958029B5514D4EC"
 			size: 0.75d
 			subtitle: "知道吗？真空环境其实会加剧发热"
-			tasks: [
-				{
-					id: "784C1A8A77AD314E"
-					item: "gtceu:vacuum_freezer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "784C1A8A77AD314E"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
 			title: "极致冷冻"
 			x: 6.75d
 			y: -5.25d
@@ -706,13 +663,11 @@
 			id: "72F0DFAF5CC6D0FE"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "4CCBDA5AC16CBB48"
-					item: "gtceu:magnesium_diboride_single_wire"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4CCBDA5AC16CBB48"
+				item: "gtceu:magnesium_diboride_single_wire"
+				type: "item"
+			}]
 			title: "&aMV超导体&f"
 			x: 6.75d
 			y: -4.125d
@@ -730,13 +685,11 @@
 			icon: "gtceu:hv_circuit_assembler"
 			id: "6B1595678ECB7AC8"
 			size: 0.75d
-			tasks: [
-				{
-					id: "337D8EF42A7BD3A2"
-					item: "gtceu:hv_circuit_assembler"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "337D8EF42A7BD3A2"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
 			title: "HV级&a电路组装机&f"
 			x: 7.875d
 			y: -3.0d
@@ -760,25 +713,21 @@
 			]
 			icon: "minecraft:end_portal_frame"
 			id: "41D32C5178760F47"
-			rewards: [
-				{
-					command: "/locate structure minecraft:stronghold"
-					icon: "minecraft:end_portal_frame"
-					id: "30A15D4EF08A423C"
-					title: "最近要塞坐标已打印在聊天栏"
-					type: "command"
-				}
-			]
+			rewards: [{
+				command: "/locate structure minecraft:stronghold"
+				icon: "minecraft:end_portal_frame"
+				id: "30A15D4EF08A423C"
+				title: "最近要塞坐标已打印在聊天栏"
+				type: "command"
+			}]
 			size: 0.75d
 			subtitle: "...但这并非你冒险的终点"
-			tasks: [
-				{
-					count: 12L
-					id: "30A89DD2A22EE314"
-					item: "minecraft:ender_eye"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 12L
+				id: "30A89DD2A22EE314"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
 			title: "&a时代&f的终结"
 			x: 7.875d
 			y: -1.875d
@@ -799,13 +748,11 @@
 			id: "14D277A164202FF8"
 			size: 0.75d
 			subtitle: "哇,这纹理真是独具一格"
-			tasks: [
-				{
-					id: "71E3128BA0CAC113"
-					item: "gtceu:micro_processor_mainframe"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "71E3128BA0CAC113"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
 			title: "大型机 - 首款IV级电路!"
 			x: 9.0d
 			y: -4.125d
@@ -866,7 +813,6 @@
 							]
 						}
 					}
-					optional_task: true
 					title: "等离子混凝土或洁净室玻璃"
 					type: "item"
 				}
@@ -893,13 +839,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "流体勘探化繁为简"
-			tasks: [
-				{
-					id: "1ED12D379EEE0CBA"
-					item: "gtceu:prospector.hv"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1ED12D379EEE0CBA"
+				item: "gtceu:prospector.hv"
+				type: "item"
+			}]
 			title: "HV矿脉勘探仪"
 			x: 9.0d
 			y: -1.875d
@@ -915,13 +859,11 @@
 			id: "42FB276AB16258D9"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "4ABE8033182CF48D"
-					item: "gtceu:fluorine_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4ABE8033182CF48D"
+				item: "gtceu:fluorine_bucket"
+				type: "item"
+			}]
 			title: "氟"
 			x: 5.625d
 			y: -0.75d
@@ -942,27 +884,23 @@
 			]
 			icon: "gtceu:polytetrafluoroethylene_plate"
 			id: "7CC79617A4965F25"
-			rewards: [
-				{
-					count: 24
-					id: "314C46623E72CFA4"
-					item: "gtceu:netherrack_topaz_ore"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "314C46623E72CFA4"
+				item: "gtceu:netherrack_topaz_ore"
+				type: "item"
+			}]
 			size: 0.75d
 			subtitle: "又名特氟龙"
 			tasks: [
 				{
 					id: "24886FDFB1DE74E0"
 					item: "gtceu:hydrofluoric_acid_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
 					id: "690DEB428063A459"
 					item: "gtceu:chloroform_bucket"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -996,13 +934,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "点击此链接免费获取硝基"
-			tasks: [
-				{
-					id: "2A28EC2D53F6AF99"
-					item: "gtceu:nitrobenzene_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2A28EC2D53F6AF99"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
+			}]
 			title: "硝基苯"
 			x: 9.0d
 			y: 1.5d
@@ -1038,22 +974,20 @@
 			hide_dependent_lines: true
 			icon: "gtceu:large_chemical_reactor"
 			id: "528CE69DA4358B2E"
-			rewards: [
-				{
-					id: "3167A01BDCACFEFF"
-					item: {
-						Count: 1
-						id: "gtceu:stainless_steel_fluid_cell"
-						tag: {
-							Fluid: {
-								Amount: 64000
-								FluidName: "gtceu:sulfuric_acid"
-							}
+			rewards: [{
+				id: "3167A01BDCACFEFF"
+				item: {
+					Count: 1
+					id: "gtceu:stainless_steel_fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 64000
+							FluidName: "gtceu:sulfuric_acid"
 						}
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.3d
 			subtitle: "&a魔法&f容器的终极进化"
@@ -1130,14 +1064,12 @@
 			id: "16E3465CF94E2BDD"
 			size: 0.75d
 			subtitle: "花了些功夫才弄到这玩意,对吧？"
-			tasks: [
-				{
-					count: 12L
-					id: "00CC416ACB6CA99F"
-					item: "minecraft:blaze_powder"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 12L
+				id: "00CC416ACB6CA99F"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
 			title: "&a烈焰粉&f"
 			x: 6.75d
 			y: -1.875d
@@ -1156,35 +1088,30 @@
 			]
 			icon: "minecraft:ender_pearl"
 			id: "4024C831C77101CA"
-			rewards: [
-				{
-					id: "3A4CB6D323D4FAEE"
-					item: {
-						Count: 1
-						id: "minecraft:enchanted_book"
-						tag: {
-							RepairCost: 0
-							StoredEnchantments: [
-								{
-									id: "minecraft:sharpness"
-									lvl: 5s
-								}
-							]
-							display: {
-								Name: "{\"text\":\":)\"}"
-							}
+			rewards: [{
+				id: "3A4CB6D323D4FAEE"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						RepairCost: 0
+						StoredEnchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 5s
+						}]
+						display: {
+							Name: "{\"text\":\":)\"}"
 						}
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			size: 0.75d
 			subtitle: "可恶的\"人为卡进度”"
 			tasks: [
 				{
 					id: "3DC62CA60F006A06"
 					item: "gtceu:ender_pearl_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1210,13 +1137,11 @@
 			]
 			icon: "gtceu:phosphorus_boule"
 			id: "017019EB38F7A18C"
-			rewards: [
-				{
-					id: "69C519E1CE7B94F0"
-					item: "gtceu:hv_lithium_battery"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "69C519E1CE7B94F0"
+				item: "gtceu:hv_lithium_battery"
+				type: "item"
+			}]
 			size: 0.75d
 			subtitle: "这掺杂真带劲,兄弟!"
 			tasks: [
@@ -1228,7 +1153,6 @@
 				{
 					id: "2CD60F6FFD4C1DFF"
 					item: "gtceu:hv_laser_engraver"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -1249,13 +1173,11 @@
 			id: "1137D2BA7E03D685"
 			size: 0.75d
 			subtitle: "受控的&d格雷科技&f爆炸"
-			tasks: [
-				{
-					id: "52E617BBF3718471"
-					item: "gtceu:implosion_compressor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "52E617BBF3718471"
+				item: "gtceu:implosion_compressor"
+				type: "item"
+			}]
 			title: "&a聚爆压缩机&f"
 			x: 9.0d
 			y: -0.75d
@@ -1288,13 +1210,11 @@
 			id: "5BACED5AE350EAB1"
 			size: 0.75d
 			subtitle: "这不会腐蚀你的皮肤"
-			tasks: [
-				{
-					id: "0C851DC9BF5BBC3D"
-					item: "gtceu:nitric_acid_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0C851DC9BF5BBC3D"
+				item: "gtceu:nitric_acid_bucket"
+				type: "item"
+			}]
 			title: "&a硫酸&f"
 			x: 6.75d
 			y: 1.5d
@@ -1320,13 +1240,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "为了更进一步"
-			tasks: [
-				{
-					id: "122E070F32AB100B"
-					item: "gtceu:cetane_boosted_diesel_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "122E070F32AB100B"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
 			title: "高十六烷值柴油"
 			x: 7.875d
 			y: 1.5d
@@ -1408,13 +1326,11 @@
 			id: "6B7762F672BAE76F"
 			size: 0.75d
 			subtitle: "粉碎矿石并获得副产品"
-			tasks: [
-				{
-					id: "76DAF1C1B90EFE87"
-					item: "gtceu:hv_macerator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "76DAF1C1B90EFE87"
+				item: "gtceu:hv_macerator"
+				type: "item"
+			}]
 			title: "通用研磨机"
 			x: 0.0d
 			y: -1.875d
@@ -1444,13 +1360,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "&a神之甘露&f"
-			tasks: [
-				{
-					id: "54C9440D952AD14D"
-					item: "gtceu:ammonia_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "54C9440D952AD14D"
+				item: "gtceu:ammonia_bucket"
+				type: "item"
+			}]
 			title: "氨"
 			x: 6.75d
 			y: -0.75d
@@ -1467,13 +1381,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "再见,残酷的主世界"
-			tasks: [
-				{
-					id: "19CC2402A14AE77C"
-					item: "javd:portal_block"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "19CC2402A14AE77C"
+				item: "javd:portal_block"
+				type: "item"
+			}]
 			title: "虚空维度传送门"
 			x: 9.0d
 			y: 0.375d
@@ -1565,37 +1477,35 @@
 			id: "1D8170A19E54C5B9"
 			size: 0.75d
 			subtitle: "你说谁密集呢？"
-			tasks: [
-				{
-					id: "074BEBAAF5C3FF1F"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "mae2:4x_crafting_accelerator"
-								}
-								{
-									Count: 1b
-									id: "mae2:16x_crafting_accelerator"
-								}
-								{
-									Count: 1b
-									id: "mae2:64x_crafting_accelerator"
-								}
-								{
-									Count: 1b
-									id: "mae2:256x_crafting_accelerator"
-								}
-							]
-						}
+			tasks: [{
+				id: "074BEBAAF5C3FF1F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mae2:4x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:16x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:64x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:256x_crafting_accelerator"
+							}
+						]
 					}
-					title: "密集协处理器"
-					type: "item"
 				}
-			]
+				title: "密集协处理器"
+				type: "item"
+			}]
 			title: "密集协处理器"
 			x: 9.0d
 			y: -5.25d

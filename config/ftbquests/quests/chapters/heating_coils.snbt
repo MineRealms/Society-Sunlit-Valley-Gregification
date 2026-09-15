@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:cupronickel_coil_block"
 	id: "7C1306341997601D"
-	order_index: 1
+	order_index: 4
 	quest_links: [
 		{
 			id: "709FB8C1561E7BB8"
@@ -103,13 +103,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "法律意义上区别于康铜"
-			tasks: [
-				{
-					id: "77875BBDC0A937A9"
-					item: "gtceu:cupronickel_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "77875BBDC0A937A9"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
 			x: -2.5d
 			y: -6.5d
 		}
@@ -127,13 +125,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "这就是我铁铝铬合金的独特之处"
-			tasks: [
-				{
-					id: "76206DC9E7ABD07A"
-					item: "gtceu:kanthal_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "76206DC9E7ABD07A"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
 			x: -1.0d
 			y: -6.5d
 		}
@@ -144,13 +140,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "镍铬穹顶行动"
-			tasks: [
-				{
-					id: "1104AC52E0A0A472"
-					item: "gtceu:nichrome_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1104AC52E0A0A472"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
 			title: "镍铬合金"
 			x: 0.5d
 			y: -6.5d
@@ -165,13 +159,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "钨钢已成过去,RTM永存"
-			tasks: [
-				{
-					id: "76DE4924186D83C2"
-					item: "gtceu:rtm_alloy_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "76DE4924186D83C2"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
 			x: 2.0d
 			y: -6.5d
 		}

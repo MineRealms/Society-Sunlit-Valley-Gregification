@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:bronze_brick_casing"
 	id: "3B89FB8839204148"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -19,44 +19,40 @@
 			]
 			icon: "gtceu:hp_steam_compressor"
 			id: "5673089822BFCA70"
-			rewards: [
-				{
-					count: 8
-					id: "24A6C74E123DDC99"
-					item: "gtceu:steel_plate"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "24A6C74E123DDC99"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "压力有时也是好事"
-			tasks: [
-				{
-					id: "77ECBBA179EC9B3F"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_compressor"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_alloy_smelter"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_forge_hammer"
-								}
-							]
-						}
+			tasks: [{
+				id: "77ECBBA179EC9B3F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_compressor"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_alloy_smelter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_forge_hammer"
+							}
+						]
 					}
-					title: "看看这些高压机器..."
-					type: "item"
 				}
-			]
+				title: "看看这些高压机器..."
+				type: "item"
+			}]
 			title: "无效率惩罚"
 			x: 0.0d
 			y: -1.98d
@@ -71,30 +67,26 @@
 				"&l&3考据:&r&o&a悬挂式滑翔翼&f最初源自名为OpenBlocks的模组.因其实用性极高,得以从早期版本一路延续至现代版本."
 			]
 			id: "0C301014EC4D17B8"
-			rewards: [
-				{
-					count: 8
-					id: "1A39F42877915C72"
-					item: "minecraft:leather"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "1A39F42877915C72"
+				item: "minecraft:leather"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.5d
 			subtitle: "不,是带着滑翔翼的史蒂夫!"
-			tasks: [
-				{
-					id: "1D0F8D4470DFFD19"
-					item: {
-						Count: 1
-						id: "paraglider:paraglider"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "1D0F8D4470DFFD19"
+				item: {
+					Count: 1
+					id: "paraglider:paraglider"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			title: "是幻翼？还是鞘翅？"
 			x: 2.5d
 			y: -2.25d
@@ -143,33 +135,31 @@
 			shape: "square"
 			size: 0.75d
 			subtitle: "压力!压在我身上..."
-			tasks: [
-				{
-					id: "0DC74FB54995F3F1"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_solid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_liquid_boiler"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hp_steam_solar_boiler"
-								}
-							]
-						}
+			tasks: [{
+				id: "0DC74FB54995F3F1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_liquid_boiler"
+							}
+							{
+								Count: 1b
+								id: "gtceu:hp_steam_solar_boiler"
+							}
+						]
 					}
-					title: "&a高压&f锅炉"
-					type: "item"
 				}
-			]
+				title: "&a高压&f锅炉"
+				type: "item"
+			}]
 			title: "&a高压&f"
 			x: 0.0d
 			y: -1.2d
@@ -243,14 +233,12 @@
 			]
 			icon: "gtceu:steel_ingot"
 			id: "5D17DFCF6672404C"
-			rewards: [
-				{
-					count: 64
-					id: "7843257BC8A81E96"
-					item: "gtceu:coke_gem"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "7843257BC8A81E96"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "钢——薛定谔的合金"
@@ -310,12 +298,10 @@
 						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
-							StoredEnchantments: [
-								{
-									id: "minecraft:silk_touch"
-									lvl: 1s
-								}
-							]
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 1s
+							}]
 						}
 					}
 					type: "item"
@@ -324,14 +310,12 @@
 			shape: "square"
 			size: 0.75d
 			subtitle: "为什么不用钢制传送门？"
-			tasks: [
-				{
-					dimension: "minecraft:the_nether"
-					id: "01DEABF7BF6C5413"
-					title: "前往&a下界&f之旅"
-					type: "dimension"
-				}
-			]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "01DEABF7BF6C5413"
+				title: "前往&a下界&f之旅"
+				type: "dimension"
+			}]
 			title: "前往&a下界&f的征程"
 			x: 4.125d
 			y: -1.5d
@@ -373,14 +357,12 @@
 			shape: "square"
 			size: 0.75d
 			subtitle: "小小探险无伤大雅"
-			tasks: [
-				{
-					count: 16L
-					id: "36D03210534D3226"
-					item: "gtceu:sulfur_dust"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 16L
+				id: "36D03210534D3226"
+				item: "gtceu:sulfur_dust"
+				type: "item"
+			}]
 			title: "硫磺的重要性"
 			x: 5.625d
 			y: -1.5d
@@ -396,25 +378,21 @@
 			]
 			icon: "gtceu:lv_electric_motor"
 			id: "5A8F0124E07D5025"
-			rewards: [
-				{
-					id: "405DCE51B96EB09A"
-					item: "gtceu:steel_block"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "405DCE51B96EB09A"
+				item: "gtceu:steel_block"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.2d
 			subtitle: "&a低压时代&f正在召唤..."
-			tasks: [
-				{
-					count: 6L
-					icon: "gtceu:lv_electric_motor"
-					id: "6F01622979E6F332"
-					item: "gtceu:lv_electric_motor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 6L
+				icon: "gtceu:lv_electric_motor"
+				id: "6F01622979E6F332"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
 			title: "&a冷杉木&f的多马达之途"
 			x: 7.875d
 			y: -1.5d
@@ -441,25 +419,21 @@
 				"&9注7:&r没错,&a纸粉&f就叫这名字.现在让我们先笑个够吧？"
 			]
 			id: "76B70EF552B35779"
-			rewards: [
-				{
-					count: 32
-					id: "42FE9060BBF29DAF"
-					item: "minecraft:sugar_cane"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "42FE9060BBF29DAF"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "#现实主义"
-			tasks: [
-				{
-					count: 4L
-					id: "5DCE370285F5B2C6"
-					item: "minecraft:paper"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 4L
+				id: "5DCE370285F5B2C6"
+				item: "minecraft:paper"
+				type: "item"
+			}]
 			title: "格雷再次出手"
 			x: 9.0d
 			y: 0.75d
@@ -480,23 +454,19 @@
 				"&l&3背景故事:&r&o这些储罐实际移植自&d格雷科技&f6."
 			]
 			id: "2B74E56C9E138F18"
-			rewards: [
-				{
-					id: "10D8ECE23B3C118B"
-					item: "gtceu:bronze_drum"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "10D8ECE23B3C118B"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "开玩笑的,流体专用储罐"
-			tasks: [
-				{
-					id: "5876092FAA1763E0"
-					item: "gtceu:bronze_drum"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5876092FAA1763E0"
+				item: "gtceu:bronze_drum"
+				type: "item"
+			}]
 			title: "装甲储罐"
 			x: -1.125d
 			y: -0.375d
@@ -519,24 +489,20 @@
 				"&l&3背景故事:&r&o此多方块结构移植自经典1.7.10版本&d格雷科技&f整合包GT IMPACT."
 			]
 			id: "13901DA3D4F5C5A6"
-			rewards: [
-				{
-					count: 18
-					id: "027EB8CF05AAACF8"
-					item: "gtceu:wood_normal_fluid_pipe"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 18
+				id: "027EB8CF05AAACF8"
+				item: "gtceu:wood_normal_fluid_pipe"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "世上没有'免费'的水源"
-			tasks: [
-				{
-					id: "03501AB173BA60EE"
-					item: "gtceu:primitive_pump"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "03501AB173BA60EE"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
 			title: "原始&a水泵&f"
 			x: 0.0d
 			y: -0.375d
@@ -594,25 +560,21 @@
 				"还可在提取机中处理泥土获得&a骨头&r,使和平模式玩家获取&a&a骨粉&f&r更为便捷."
 			]
 			id: "1436DB89E21264F3"
-			rewards: [
-				{
-					count: 16
-					id: "4B856E1E30618E4D"
-					item: "gtceu:sticky_resin"
-					random_bonus: 48
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "4B856E1E30618E4D"
+				item: "gtceu:sticky_resin"
+				random_bonus: 48
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "&a蒸汽提取机&f可提取..."
-			tasks: [
-				{
-					id: "12A46916B1BC17EC"
-					item: "gtceu:hp_steam_extractor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "12A46916B1BC17EC"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
 			title: "&a蒸汽提取机&f"
 			x: 5.625d
 			y: -0.375d
@@ -625,25 +587,21 @@
 				"若非&b和平模式&r,&a粘性树脂&f也可通过粘液球获取."
 			]
 			id: "3144DC68B266730C"
-			rewards: [
-				{
-					count: 24
-					id: "606726568EBF1E4A"
-					item: "minecraft:redstone"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "606726568EBF1E4A"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "难道你以为我们会强制你使用树液采集器...？"
-			tasks: [
-				{
-					count: 32L
-					id: "67D04A48C5473D10"
-					item: "gtceu:sticky_resin"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 32L
+				id: "67D04A48C5473D10"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
 			title: "&a粘性树脂&f"
 			x: 7.875d
 			y: 1.875d
@@ -663,14 +621,12 @@
 			]
 			icon: "gtceu:rubber_ingot"
 			id: "77EA56D16A9B3BFC"
-			rewards: [
-				{
-					count: 8
-					id: "7190A812E045BE04"
-					item: "gtceu:rubber_plate"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "7190A812E045BE04"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "让树脂物尽其用!"
@@ -678,7 +634,6 @@
 				{
 					id: "04946F2F0923EFFE"
 					item: "gtceu:rubber_ingot"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -704,24 +659,20 @@
 				"当前导线造价昂贵,但到&7低压&r阶段成本将显著降低."
 			]
 			id: "391E853DCE86BFD0"
-			rewards: [
-				{
-					count: 4
-					id: "0AEE150D99E66D54"
-					item: "minecraft:charcoal"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "0AEE150D99E66D54"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "电路中最基础的元件"
-			tasks: [
-				{
-					id: "35CFB9E695DE3549"
-					item: "gtceu:resistor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "35CFB9E695DE3549"
+				item: "gtceu:resistor"
+				type: "item"
+			}]
 			title: "电子学#1:电阻器"
 			x: 7.875d
 			y: 0.75d
@@ -745,55 +696,51 @@
 			]
 			icon: "gtceu:bronze_normal_fluid_pipe"
 			id: "1FFD2242B94A7378"
-			rewards: [
-				{
-					count: 2
-					id: "66E3F49541CA77B9"
-					item: "minecraft:golden_apple"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "66E3F49541CA77B9"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "液体、气体...我们一视同仁"
-			tasks: [
-				{
-					id: "5953F4446733D908"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							RepairCost: 0
-							display: {
-								Name: "{\"text\":\"青铜管道!\"}"
-							}
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:bronze_tiny_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:bronze_small_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:bronze_normal_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:bronze_large_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:bronze_huge_fluid_pipe"
-								}
-							]
+			tasks: [{
+				id: "5953F4446733D908"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"青铜管道!\"}"
 						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:bronze_tiny_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_small_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_normal_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_large_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_huge_fluid_pipe"
+							}
+						]
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			title: "&a流体传输管道&f"
 			x: -1.125d
 			y: 0.75d
@@ -823,13 +770,11 @@
 			shape: "gear"
 			size: 1.2d
 			subtitle: "为蒸汽时代注入蒸汽动力"
-			tasks: [
-				{
-					id: "0F864E85D4956919"
-					item: "gtceu:lp_steam_solid_boiler"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0F864E85D4956919"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
 			title: "压力蒸煮"
 			x: 0.0d
 			y: 0.75d
@@ -842,24 +787,20 @@
 				"&e本任务解锁了 &l技巧与提示&r&e 标签页中关于蒸汽的新教程——前往查看以了解更多!&r"
 			]
 			id: "03DBF1961AE21C76"
-			rewards: [
-				{
-					count: 4
-					id: "5A98072E0B3DBC41"
-					item: "gtceu:bronze_dust"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "5A98072E0B3DBC41"
+				item: "gtceu:bronze_dust"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "出乎意料的蒸汽动力"
-			tasks: [
-				{
-					id: "03BA041BE9C347FD"
-					item: "gtceu:bronze_machine_casing"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "03BA041BE9C347FD"
+				item: "gtceu:bronze_machine_casing"
+				type: "item"
+			}]
 			title: "蒸汽机器特性"
 			x: 1.125d
 			y: 0.75d
@@ -872,24 +813,20 @@
 				"在所有 &e蒸汽时代&r 机器中,此设备耗汽量最大.若发现蒸汽供应不足,可用 &d任意软锤&r 给机器一个 &a关爱轻击&r 来暂时暂停其运作."
 			]
 			id: "48AED37B4E20A99A"
-			rewards: [
-				{
-					count: 8
-					id: "241026922AD16AB3"
-					item: "gtceu:bronze_plate"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "241026922AD16AB3"
+				item: "gtceu:bronze_plate"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "&a合金炉&f 专精合金冶炼..."
-			tasks: [
-				{
-					id: "2F3B195A110E41C2"
-					item: "gtceu:lp_steam_alloy_smelter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2F3B195A110E41C2"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
 			title: "&a蒸汽合金炉&f"
 			x: 2.25d
 			y: 0.75d
@@ -904,25 +841,21 @@
 				"从技术上讲,&a真空管&f也是你的首个超&a低压&f(&8ULV&r)电路!恭喜!不过单独使用它们的用途并不广泛."
 			]
 			id: "3CF550B81716B8B9"
-			rewards: [
-				{
-					count: 16
-					id: "259F8029A6ED0C85"
-					item: "minecraft:glass_pane"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "259F8029A6ED0C85"
+				item: "minecraft:glass_pane"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "电路中的&a硬质&f组件"
-			tasks: [
-				{
-					count: 2L
-					id: "099C373568DF4500"
-					item: "gtceu:vacuum_tube"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 2L
+				id: "099C373568DF4500"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
 			title: "电子学 #3:&a真空管&f"
 			x: 5.625d
 			y: 0.75d
@@ -953,15 +886,13 @@
 			]
 			icon: "minecraft:glass"
 			id: "249374557D095913"
-			rewards: [
-				{
-					count: 2
-					id: "662203C8B58AE656"
-					item: "minecraft:glass"
-					random_bonus: 14
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "662203C8B58AE656"
+				item: "minecraft:glass"
+				random_bonus: 14
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "一定很满足吧？"
@@ -991,24 +922,20 @@
 				"&l&3背景故事:&r&o这种材料最初源自RedPower——真是情怀复刻!"
 			]
 			id: "54AF8696674766B4"
-			rewards: [
-				{
-					count: 16
-					id: "0D64AF2E29B7F41A"
-					item: "minecraft:copper_ingot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "0D64AF2E29B7F41A"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "完全虚构的合金"
-			tasks: [
-				{
-					id: "4D3C4CF6577957A1"
-					item: "gtceu:red_alloy_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4D3C4CF6577957A1"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
 			title: "&a红色合金&f"
 			x: 4.125d
 			y: 0.75d
@@ -1081,55 +1008,51 @@
 			]
 			icon: "gtceu:potin_normal_fluid_pipe"
 			id: "3C70B0717E9377A4"
-			rewards: [
-				{
-					count: 6
-					id: "18C834E9EC619985"
-					item: "gtceu:potin_plate"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 6
+				id: "18C834E9EC619985"
+				item: "gtceu:potin_plate"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "...我要上战场了,只需你最精良的波汀."
-			tasks: [
-				{
-					id: "7C0AFE7BBF56CD68"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							RepairCost: 0
-							display: {
-								Name: "{\"text\":\"波廷合金管道!\"}"
-							}
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:potin_tiny_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:potin_small_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:potin_normal_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:potin_large_fluid_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:potin_huge_fluid_pipe"
-								}
-							]
+			tasks: [{
+				id: "7C0AFE7BBF56CD68"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"波廷合金管道!\"}"
 						}
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:potin_tiny_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_small_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_normal_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_large_fluid_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:potin_huge_fluid_pipe"
+							}
+						]
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			title: "波汀卖家..."
 			x: -2.25d
 			y: 0.75d
@@ -1146,23 +1069,19 @@
 				"知道吗？还有&a额外福利&r!若合成&a锻造锤子&f,我们将返还&8铁砧&r.温馨提示:你可以在铁砧中修复&d格雷科技&f的工具."
 			]
 			id: "1931FC6DEAC29646"
-			rewards: [
-				{
-					id: "5C8B8D03ACE3CEED"
-					item: "minecraft:anvil"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5C8B8D03ACE3CEED"
+				item: "minecraft:anvil"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "&a锻造锤子&f 的重击..."
-			tasks: [
-				{
-					id: "4F4074D7CE5A61A0"
-					item: "gtceu:lp_steam_forge_hammer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4F4074D7CE5A61A0"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
 			title: "&a蒸汽锻造锤&f"
 			x: 0.0d
 			y: 1.875d
@@ -1179,24 +1098,20 @@
 				"我们的(&o重要提示!&r)建议:现阶段直接熔炼反而更高效!用更快的采矿速度弥补&a效率&f损失.打粉机更适合制作&a粘土粉&f&r这类物品!"
 			]
 			id: "1C50A758A1DE25CB"
-			rewards: [
-				{
-					count: 32
-					id: "26175A33C13BBF0C"
-					item: "gtceu:clay_dust"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "26175A33C13BBF0C"
+				item: "gtceu:clay_dust"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "&a打粉机&f 粉碎中..."
-			tasks: [
-				{
-					id: "6DFD6AC8CF31305C"
-					item: "gtceu:lp_steam_macerator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6DFD6AC8CF31305C"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
 			title: "蒸汽打粉机"
 			x: 1.125d
 			y: 1.875d
@@ -1205,58 +1120,52 @@
 			dependencies: ["48AED37B4E20A99A"]
 			description: ["用于&d格雷科技&f工具时,因瓦合金的&e耐久度比铁高50%&r(没错,与&a锻铁&f&r持平),且自带&b&a效率 I&r属性.采矿利器——若&5尚未解锁&r钢制品,强烈建议用此材料制作工具."]
 			id: "76F61E499780C30B"
-			rewards: [
-				{
-					id: "15C0F36A7E35F7A6"
-					item: {
-						Count: 1
-						id: "gtceu:invar_mining_hammer"
-						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							Enchantments: [
-								{
-									id: "minecraft:efficiency"
-									lvl: 1s
-								}
-							]
-							GT.Behaviours: {
-								AoEColumn: 1
-								AoELayer: 0
-								AoERow: 1
-								MaxAoEColumn: 1
-								MaxAoELayer: 0
-								MaxAoERow: 1
-							}
-							GT.Tool: {
-								HarvestLevel: 2
-								MaxDamage: 1151
-								ToolSpeed: 5.6f
-							}
-							HideFlags: 2
+			rewards: [{
+				id: "15C0F36A7E35F7A6"
+				item: {
+					Count: 1
+					id: "gtceu:invar_mining_hammer"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						Enchantments: [{
+							id: "minecraft:efficiency"
+							lvl: 1s
+						}]
+						GT.Behaviours: {
+							AoEColumn: 1
+							AoELayer: 0
+							AoERow: 1
+							MaxAoEColumn: 1
+							MaxAoELayer: 0
+							MaxAoERow: 1
 						}
+						GT.Tool: {
+							HarvestLevel: 2
+							MaxDamage: 1151
+							ToolSpeed: 5.6f
+						}
+						HideFlags: 2
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "铁镍合金"
-			tasks: [
-				{
-					count: 3L
-					id: "49E114B96843E5C9"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/invar"
-						}
+			tasks: [{
+				count: 3L
+				id: "49E114B96843E5C9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/invar"
 					}
-					title: "&a殷钢锭&f"
-					type: "item"
 				}
-			]
+				title: "&a殷钢锭&f"
+				type: "item"
+			}]
 			title: "因瓦合金"
 			x: 2.25d
 			y: 1.875d
@@ -1275,14 +1184,12 @@
 			]
 			icon: "gtceu:resin_printed_circuit_board"
 			id: "4ED5A9AEF7B928BA"
-			rewards: [
-				{
-					count: 4
-					id: "2A1EAEB72424AFB9"
-					item: "gtceu:wood_plate"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "2A1EAEB72424AFB9"
+				item: "gtceu:wood_plate"
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "电路中的电路部分..."
@@ -1296,7 +1203,6 @@
 							value: "forge:plates/wood"
 						}
 					}
-					optional_task: true
 					title: "&a木板&f"
 					type: "item"
 				}
@@ -1326,13 +1232,11 @@
 			shape: "circle"
 			size: 0.66d
 			subtitle: "...该如何处理它们？"
-			tasks: [
-				{
-					id: "1C4CFA0AD3125A6D"
-					title: "天啊,我这是把自己卷进了什么!？"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1C4CFA0AD3125A6D"
+				title: "天啊,我这是把自己卷进了什么!？"
+				type: "checkmark"
+			}]
 			title: "这堆东西是什么？!"
 			x: 0.0d
 			y: 3.0d
@@ -1350,15 +1254,13 @@
 			]
 			icon: "gtceu:steam_grinder"
 			id: "7FF95F1216D104B2"
-			rewards: [
-				{
-					count: 8
-					id: "36B5ABA86707D569"
-					item: "gtceu:bronze_ingot"
-					random_bonus: 16
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "36B5ABA86707D569"
+				item: "gtceu:bronze_ingot"
+				random_bonus: 16
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "&a蒸汽锅炉&f的兄弟机型"
@@ -1408,15 +1310,13 @@
 			]
 			icon: "gtceu:steam_oven"
 			id: "6C25D11A26306168"
-			rewards: [
-				{
-					count: 8
-					id: "72D375E16194CAE2"
-					item: "gtceu:bronze_ingot"
-					random_bonus: 16
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "72D375E16194CAE2"
+				item: "gtceu:bronze_ingot"
+				random_bonus: 16
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "&a蒸汽磨粉机&f的老大哥"
@@ -1483,28 +1383,24 @@
 			}
 			id: "7DDCB711526F37A0"
 			progression_mode: "linear"
-			rewards: [
-				{
-					count: 4
-					id: "3463AA941A74C11C"
-					item: "gtceu:certus_quartz_gem"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "3463AA941A74C11C"
+				item: "gtceu:certus_quartz_gem"
+				type: "item"
+			}]
 			shape: "circle"
 			size: 0.66d
 			subtitle: "高科技背包!"
-			tasks: [
-				{
-					id: "459D19A750BB8440"
-					item: {
-						Count: 1
-						id: "ae2:portable_item_cell_1k"
-						tag: { }
-					}
-					type: "item"
+			tasks: [{
+				id: "459D19A750BB8440"
+				item: {
+					Count: 1
+					id: "ae2:portable_item_cell_1k"
+					tag: { }
 				}
-			]
+				type: "item"
+			}]
 			title: "&a便携元件&f"
 			x: 4.875d
 			y: 1.32d
@@ -1513,23 +1409,19 @@
 			dependencies: ["03DBF1961AE21C76"]
 			description: ["&a蒸汽压缩机&f可解锁若干令人心动的新配方,助您逐步迈向钢铁时代."]
 			id: "07415D6305C3B1D2"
-			rewards: [
-				{
-					id: "1F47D2A131498C25"
-					item: "gtceu:wrought_iron_block"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1F47D2A131498C25"
+				item: "gtceu:wrought_iron_block"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "&a蒸汽压缩机&f可压缩..."
-			tasks: [
-				{
-					id: "21C99D59F1BE48A3"
-					item: "gtceu:lp_steam_compressor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "21C99D59F1BE48A3"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
 			title: "&a蒸汽压缩机&f"
 			x: 1.125d
 			y: -0.375d
@@ -1545,13 +1437,11 @@
 			]
 			icon: "toolbelt:belt"
 			id: "4A993CC40AB6D35C"
-			rewards: [
-				{
-					id: "38A84272E0407C69"
-					item: "toolbelt:pouch"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "38A84272E0407C69"
+				item: "toolbelt:pouch"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.5d
 			subtitle: "为您的库存减负"
@@ -1601,33 +1491,31 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "终结所有物流烦恼"
-			tasks: [
-				{
-					id: "158F4EEDC214A3BA"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:tin_small_item_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:nickel_small_item_pipe"
-								}
-								{
-									Count: 1b
-									id: "gtceu:cobalt_small_item_pipe"
-								}
-							]
-						}
+			tasks: [{
+				id: "158F4EEDC214A3BA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:tin_small_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:nickel_small_item_pipe"
+							}
+							{
+								Count: 1b
+								id: "gtceu:cobalt_small_item_pipe"
+							}
+						]
 					}
-					title: "前期物品管道"
-					type: "item"
 				}
-			]
+				title: "前期物品管道"
+				type: "item"
+			}]
 			title: "物品管道"
 			x: -1.125d
 			y: 1.875d
@@ -1647,25 +1535,21 @@
 			]
 			icon: "sophisticatedbackpacks:backpack"
 			id: "5E89BDA8943534AF"
-			rewards: [
-				{
-					count: 4
-					id: "7193C5F82152C3EB"
-					item: "minecraft:leather"
-					random_bonus: 2
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "7193C5F82152C3EB"
+				item: "minecraft:leather"
+				random_bonus: 2
+				type: "item"
+			}]
 			shape: "circle"
 			size: 0.66d
 			subtitle: "低科技版个人存储单元"
-			tasks: [
-				{
-					id: "193A62DF98B59838"
-					item: "sophisticatedbackpacks:backpack"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "193A62DF98B59838"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
 			title: "背包系统"
 			x: 3.3d
 			y: 1.32d
@@ -1687,13 +1571,11 @@
 			]
 			icon: "gtceu:charcoal_pile_igniter"
 			id: "4384068C4517F3D9"
-			rewards: [
-				{
-					id: "73DAEC542AC76676"
-					item: "gtceu:brittle_charcoal"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "73DAEC542AC76676"
+				item: "gtceu:brittle_charcoal"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "我是麻烦制造者,捣乱发起者..."
@@ -1701,7 +1583,6 @@
 				{
 					id: "2586D1FC6BC5E53C"
 					item: "gtceu:charcoal_pile_igniter"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -1857,13 +1738,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "管道网络从未如此奢华炫目!"
-			tasks: [
-				{
-					id: "431894F9877BC900"
-					item: "gtceu:steel_frame"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "431894F9877BC900"
+				item: "gtceu:steel_frame"
+				type: "item"
+			}]
 			title: "极致美学"
 			x: -2.25d
 			y: 1.875d

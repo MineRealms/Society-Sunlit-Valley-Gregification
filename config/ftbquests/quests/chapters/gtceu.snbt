@@ -27,28 +27,31 @@
 				""
 				"你正在阅读的任务书 &e满载指引信息&r,助你畅游整合包.若感到迷茫,不妨多查阅——我们兼顾了 &d资深老玩家&r 与 &b新手&r 的需求而编写."
 			]
-			icon: "gtceu:iron_wrench"
-			id: "25289F9E8AE01C29"
-			rewards: [
-				{
-					auto: "invisible"
-					icon: "minecraft:cooked_beef"
-					id: "6FD85EC9BD99C866"
-					item: "gtceu:sus_record"
-					title: "牛排"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					GT.Tool: { }
 				}
-			]
+			}
+			id: "25289F9E8AE01C29"
+			rewards: [{
+				auto: "invisible"
+				icon: "minecraft:cooked_beef"
+				id: "6FD85EC9BD99C866"
+				item: "gtceu:sus_record"
+				title: "牛排"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 1.2d
 			subtitle: "愿你享受这段旅程"
-			tasks: [
-				{
-					id: "6C1F570DB9013DE7"
-					title: "欢迎!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "6C1F570DB9013DE7"
+				title: "欢迎!"
+				type: "checkmark"
+			}]
 			title: "欢迎来到 &d格雷科技&f CEu!"
 			x: -0.75d
 			y: -1.5d
@@ -101,14 +104,12 @@
 			]
 			icon: "minecraft:sugar_cane"
 			id: "0436F7B60BDEB091"
-			rewards: [
-				{
-					count: 24
-					id: "2D2C971E9E651C2C"
-					item: "minecraft:iron_ingot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "2D2C971E9E651C2C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "收集些资源吧!"
@@ -166,13 +167,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "说是矿石生成,不如叫催眠生成!"
-			tasks: [
-				{
-					id: "3FA401CACE8BBE5D"
-					title: "哇,矿石听起来真令人兴奋"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3FA401CACE8BBE5D"
+				title: "哇,矿石听起来真令人兴奋"
+				type: "checkmark"
+			}]
 			title: "&a银矿生成&f"
 			x: -2.25d
 			y: -3.0d
@@ -197,496 +196,486 @@
 				}
 			}
 			id: "13354F24F80F65FB"
-			rewards: [
-				{
-					count: 8
-					id: "60E07F9D0763E8E1"
-					item: "minecraft:spruce_sapling"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "60E07F9D0763E8E1"
+				item: "minecraft:spruce_sapling"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "谁还需要矿脉连锁？"
-			tasks: [
-				{
-					id: "3880A08A72884627"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:aluminium_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 767
-											ToolSpeed: 8.0f
-										}
-										HideFlags: 2
+			tasks: [{
+				id: "3880A08A72884627"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:aluminium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:vanadium_steel_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 3
-											MaxDamage: 1535
-											ToolSpeed: 5.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 8.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:naquadah_alloy_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											RelocateMinedBlocks: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 5
-											MaxDamage: 3071
-											ToolSpeed: 42.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:vanadium_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:flint_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 63
-											ToolSpeed: 3.5f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1535
+										ToolSpeed: 5.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:red_steel_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 3
-											MaxDamage: 2559
-											ToolSpeed: 9.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:naquadah_alloy_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:blue_steel_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 3
-											MaxDamage: 1023
-											ToolSpeed: 17.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 5
+										MaxDamage: 3071
+										ToolSpeed: 42.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:rose_gold_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										Enchantments: [
-											{
-												id: "minecraft:fortune"
-												lvl: 2s
-											}
-										]
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 767
-											ToolSpeed: 14.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:flint_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:hsse_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 4
-											MaxDamage: 3071
-											ToolSpeed: 7.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 63
+										ToolSpeed: 3.5f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:iron_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 255
-											ToolSpeed: 4.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:red_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:titanium_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 3
-											MaxDamage: 1535
-											ToolSpeed: 10.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 2559
+										ToolSpeed: 9.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:neutronium_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											RelocateMinedBlocks: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 6
-											MaxDamage: 65534
-											ToolSpeed: 182.0f
-										}
-										HideFlags: 2
-										Unbreakable: 1b
+							}
+							{
+								Count: 1b
+								id: "gtceu:blue_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:duranium_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											RelocateMinedBlocks: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 5
-											MaxDamage: 8191
-											ToolSpeed: 16.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 17.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:bronze_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 191
-											ToolSpeed: 5.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:rose_gold_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:fortune"
+										lvl: 2s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:invar_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										Enchantments: [
-											{
-												id: "minecraft:efficiency"
-												lvl: 1s
-											}
-											{
-												id: "minecraft:bane_of_arthropods"
-												lvl: 3s
-											}
-										]
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 383
-											ToolSpeed: 6.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 14.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:sterling_silver_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										Enchantments: [
-											{
-												id: "minecraft:smite"
-												lvl: 3s
-											}
-										]
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 767
-											ToolSpeed: 5.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:hsse_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:cobalt_brass_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 1023
-											ToolSpeed: 4.5f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 3071
+										ToolSpeed: 7.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:tungsten_steel_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 4
-											MaxDamage: 2047
-											ToolSpeed: 11.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:iron_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:damascus_steel_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										Enchantments: [
-											{
-												id: "minecraft:fortune"
-												lvl: 3s
-											}
-										]
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 3
-											MaxDamage: 1023
-											ToolSpeed: 8.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 255
+										ToolSpeed: 4.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:tungsten_carbide_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 4
-											MaxDamage: 1023
-											ToolSpeed: 62.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:titanium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:wrought_iron_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 2
-											MaxDamage: 383
-											ToolSpeed: 4.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1535
+										ToolSpeed: 10.0f
 									}
+									HideFlags: 2
 								}
-								{
-									Count: 1b
-									id: "gtceu:ultimet_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 4
-											MaxDamage: 2047
-											ToolSpeed: 12.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:neutronium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:steel_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 3
-											MaxDamage: 511
-											ToolSpeed: 7.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 6
+										MaxDamage: 65534
+										ToolSpeed: 182.0f
 									}
+									HideFlags: 2
+									Unbreakable: 1b
 								}
-								{
-									Count: 1b
-									id: "gtceu:stainless_steel_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 3
-											MaxDamage: 1023
-											ToolSpeed: 9.0f
-										}
-										HideFlags: 2
+							}
+							{
+								Count: 1b
+								id: "gtceu:duranium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
 									}
-								}
-								{
-									Count: 1b
-									id: "gtceu:diamond_axe"
-									tag: {
-										DisallowContainerItem: 0b
-										GT.Behaviours: {
-											DisableShields: 1b
-											TreeFelling: 1b
-										}
-										GT.Tool: {
-											Damage: 0
-											HarvestLevel: 3
-											MaxDamage: 767
-											ToolSpeed: 8.0f
-										}
-										HideFlags: 2
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 5
+										MaxDamage: 8191
+										ToolSpeed: 16.0f
 									}
+									HideFlags: 2
 								}
-							]
-						}
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 191
+										ToolSpeed: 5.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:invar_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [
+										{
+											id: "minecraft:efficiency"
+											lvl: 1s
+										}
+										{
+											id: "minecraft:bane_of_arthropods"
+											lvl: 3s
+										}
+									]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 383
+										ToolSpeed: 6.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:sterling_silver_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:smite"
+										lvl: 3s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 5.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:cobalt_brass_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 1023
+										ToolSpeed: 4.5f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:tungsten_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 2047
+										ToolSpeed: 11.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:damascus_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:fortune"
+										lvl: 3s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 8.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:tungsten_carbide_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 1023
+										ToolSpeed: 62.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:wrought_iron_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 383
+										ToolSpeed: 4.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:ultimet_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 2047
+										ToolSpeed: 12.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 511
+										ToolSpeed: 7.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:stainless_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 9.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:diamond_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 767
+										ToolSpeed: 8.0f
+									}
+									HideFlags: 2
+								}
+							}
+						]
 					}
-					title: "拿任意伐木斧!"
-					type: "item"
 				}
-			]
+				title: "拿任意伐木斧!"
+				type: "item"
+			}]
 			title: "伐木进行时"
 			x: -2.25d
 			y: -4.5d
@@ -705,31 +694,27 @@
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "563C96885A227C9F"
-			rewards: [
-				{
-					count: 5
-					id: "3CDB383AFEBDB519"
-					item: "gtceu:wrought_iron_ingot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 5
+				id: "3CDB383AFEBDB519"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "锻造谋杀案"
-			tasks: [
-				{
-					id: "3DAB1D757B3B049D"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:ingots/wrought_iron"
-						}
+			tasks: [{
+				id: "3DAB1D757B3B049D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/wrought_iron"
 					}
-					title: "&a锻铁锭&f"
-					type: "item"
 				}
-			]
+				title: "&a锻铁锭&f"
+				type: "item"
+			}]
 			title: "&a胜于钢铁&f"
 			x: 0.75d
 			y: 0.0d
@@ -746,39 +731,35 @@
 				"所有&a&d格雷科技&f&r工具都支持在铁砧上用对应材料修复(与原版工具机制相同).若缺乏经验值,现可合成&e附魔瓶&r."
 			]
 			id: "7DEB73FD649BDFB6"
-			rewards: [
-				{
-					id: "6C50A2A3D43D3FEE"
-					item: "gtceu:iron_plate"
-					random_bonus: 2
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "6C50A2A3D43D3FEE"
+				item: "gtceu:iron_plate"
+				random_bonus: 2
+				type: "item"
+			}]
 			shape: "square"
 			size: 0.75d
 			subtitle: "你的首件GT工具!"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "gtceu:steel_hammer"
-						tag: {
-							Damage: 0
-							GT.Tool: { }
-						}
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:steel_hammer"
+					tag: {
+						Damage: 0
+						GT.Tool: { }
 					}
-					id: "1A4DDB914D7D2F3C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/hammers"
-						}
-					}
-					title: "任意锤子!"
-					type: "item"
 				}
-			]
+				id: "1A4DDB914D7D2F3C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/hammers"
+					}
+				}
+				title: "任意锤子!"
+				type: "item"
+			}]
 			title: "停!锤子时间到!"
 			x: 2.25d
 			y: -3.0d
@@ -808,28 +789,26 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "高效采矿新时代"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "gtceu:steel_mining_hammer"
-						tag: {
-							Damage: 0
-							GT.Tool: { }
-						}
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:steel_mining_hammer"
+					tag: {
+						Damage: 0
+						GT.Tool: { }
 					}
-					id: "4F372C393ADC6CE2"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:tools/mining_hammers"
-						}
-					}
-					title: "任意采矿锤均可"
-					type: "item"
 				}
-			]
+				id: "4F372C393ADC6CE2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mining_hammers"
+					}
+				}
+				title: "任意采矿锤均可"
+				type: "item"
+			}]
 			title: "重锤出击!"
 			x: 2.25d
 			y: -4.5d
@@ -851,63 +830,59 @@
 			]
 			icon: "minecraft:iron_ingot"
 			id: "1ECBA1CBFFB9F625"
-			rewards: [
-				{
-					count: 32
-					id: "6A8A7B57C7372740"
-					item: "gtceu:raw_magnetite"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "6A8A7B57C7372740"
+				item: "gtceu:raw_magnetite"
+				type: "item"
+			}]
 			size: 0.75d
 			subtitle: "这难道不讽刺吗……你不觉得？"
-			tasks: [
-				{
-					id: "063705687ED657F5"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "minecraft:raw_iron"
-								}
-								{
-									Count: 1b
-									id: "gtceu:raw_yellow_limonite"
-								}
-								{
-									Count: 1b
-									id: "gtceu:raw_magnetite"
-								}
-								{
-									Count: 1b
-									id: "gtceu:raw_basaltic_mineral_sand"
-								}
-								{
-									Count: 1b
-									id: "gtceu:raw_granitic_mineral_sand"
-								}
-								{
-									Count: 1b
-									id: "gtceu:raw_pyrite"
-								}
-								{
-									Count: 1b
-									id: "gtceu:raw_goethite"
-								}
-								{
-									Count: 1b
-									id: "gtceu:raw_hematite"
-								}
-							]
-						}
+			tasks: [{
+				id: "063705687ED657F5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:raw_iron"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_yellow_limonite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_magnetite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_basaltic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_granitic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_pyrite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_goethite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_hematite"
+							}
+						]
 					}
-					title: "含铁矿石"
-					type: "item"
 				}
-			]
+				title: "含铁矿石"
+				type: "item"
+			}]
 			title: "铁,铁,还是铁!"
 			x: 0.75d
 			y: -3.0d
@@ -1014,14 +989,12 @@
 				}
 			}
 			id: "5C3501DD3B4788FA"
-			rewards: [
-				{
-					count: 16
-					id: "433F0ED89B586383"
-					item: "gtceu:damascus_steel_ingot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "433F0ED89B586383"
+				item: "gtceu:damascus_steel_ingot"
+				type: "item"
+			}]
 			size: 0.75d
 			tasks: [
 				{
@@ -1111,24 +1084,20 @@
 			icon: "gtceu:coke_oven"
 			id: "4946FC5BCA4CCA88"
 			min_required_dependencies: 1
-			rewards: [
-				{
-					id: "60891A0DEF29E9A1"
-					item: "gtceu:exquisite_coke_gem"
-					random_bonus: 2
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "60891A0DEF29E9A1"
+				item: "gtceu:exquisite_coke_gem"
+				random_bonus: 2
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.2d
 			subtitle: "你的第一个大项目……希望如此"
-			tasks: [
-				{
-					id: "3545479A7C09CDFC"
-					item: "gtceu:coke_oven"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3545479A7C09CDFC"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
 			title: "&a焦炉&f"
 			x: 5.25d
 			y: -4.5d
@@ -1144,40 +1113,36 @@
 			]
 			icon: "minecraft:copper_ingot"
 			id: "45969FFBF88F4FBB"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "2C28FA1A5275D24E"
-					table_id: 1702176335602373230L
-					type: "choice"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C28FA1A5275D24E"
+				table_id: 1702176335602373230L
+				type: "choice"
+			}]
 			size: 0.75d
 			subtitle: "收集更多资源!"
-			tasks: [
-				{
-					count: 32L
-					id: "616556ECE4DB6103"
-					item: {
-						Count: 32
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "minecraft:copper_ingot"
-								}
-								{
-									Count: 1b
-									id: "gtceu:tin_ingot"
-								}
-							]
-						}
+			tasks: [{
+				count: 32L
+				id: "616556ECE4DB6103"
+				item: {
+					Count: 32
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:copper_ingot"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_ingot"
+							}
+						]
 					}
-					title: "32个铜或锡"
-					type: "item"
 				}
-			]
+				title: "32个铜或锡"
+				type: "item"
+			}]
 			title: "迈向青铜时代!"
 			x: 3.75d
 			y: -1.5d
@@ -1195,25 +1160,21 @@
 			]
 			icon: "gtceu:bronze_ingot"
 			id: "315DBB3B23F95E0D"
-			rewards: [
-				{
-					count: 32
-					id: "5F229B651404DF0E"
-					item: "minecraft:clay_ball"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "5F229B651404DF0E"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.2d
 			subtitle: "人类的第一种合金——也是你的!"
-			tasks: [
-				{
-					count: 24L
-					id: "39AEA2923971A2B5"
-					item: "gtceu:bronze_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 24L
+				id: "39AEA2923971A2B5"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
 			title: "青铜时代？不,是&e蒸汽时代&r!"
 			x: 5.25d
 			y: -1.5d
@@ -1229,32 +1190,28 @@
 			]
 			icon: "minecraft:bucket"
 			id: "592BD683A48C2AA2"
-			rewards: [
-				{
-					id: "68D4ECFA9AD5349A"
-					item: {
-						Count: 1
-						id: "gtceu:wood_drum"
-						tag: {
-							Fluid: {
-								Amount: 16000L
-								FluidName: "minecraft:water"
-							}
+			rewards: [{
+				id: "68D4ECFA9AD5349A"
+				item: {
+					Count: 1
+					id: "gtceu:wood_drum"
+					tag: {
+						Fluid: {
+							Amount: 16000L
+							FluidName: "minecraft:water"
 						}
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "#真实感"
-			tasks: [
-				{
-					id: "5DD165E4EB34C022"
-					item: "minecraft:bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5DD165E4EB34C022"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
 			title: "格雷出手了"
 			x: 2.25d
 			y: -1.5d
@@ -1270,32 +1227,28 @@
 			]
 			icon: "minecraft:charcoal"
 			id: "36DD94945D5B4A80"
-			rewards: [
-				{
-					count: 16
-					id: "5408859E43668198"
-					item: "minecraft:coal"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "5408859E43668198"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "这里不行!"
-			tasks: [
-				{
-					count: 48L
-					id: "3DF01E4FACBB1D53"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:logs"
-						}
+			tasks: [{
+				count: 48L
+				id: "3DF01E4FACBB1D53"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
 					}
-					title: "我们需要更多原木"
-					type: "item"
 				}
-			]
+				title: "我们需要更多原木"
+				type: "item"
+			}]
 			title: "木炭？"
 			x: 0.75d
 			y: -1.5d
@@ -1315,23 +1268,19 @@
 			]
 			icon: "minecraft:structure_void"
 			id: "1283B4D7B5D82193"
-			rewards: [
-				{
-					id: "460EC827273306A5"
-					item: "storagedrawers:quantify_key"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "460EC827273306A5"
+				item: "storagedrawers:quantify_key"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "正在安装DecoCraft"
-			tasks: [
-				{
-					id: "70C69E5432F6C3BE"
-					title: "我愿承担所有模组冲突的责任;)"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "70C69E5432F6C3BE"
+				title: "我愿承担所有模组冲突的责任;)"
+				type: "checkmark"
+			}]
 			title: "更多模组？"
 			x: 2.25d
 			y: 0.0d
@@ -1535,13 +1484,11 @@
 			shape: "circle"
 			size: 0.75d
 			subtitle: "读一遍,再读一遍!"
-			tasks: [
-				{
-					id: "04CC2E592A648F06"
-					title: "此页我已阅读多次"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "04CC2E592A648F06"
+				title: "此页我已阅读多次"
+				type: "checkmark"
+			}]
 			title: "重要信息"
 			x: -2.25d
 			y: -1.5d
@@ -1560,13 +1507,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "注意:本整合包不含匠魂模组"
-			tasks: [
-				{
-					id: "30D40010C8E6E115"
-					item: "crafting_on_a_stick:crafting_table"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "30D40010C8E6E115"
+				item: "crafting_on_a_stick:crafting_table"
+				type: "item"
+			}]
 			title: "合成站"
 			x: 3.75d
 			y: -4.5d
@@ -1586,13 +1531,11 @@
 			shape: "circle"
 			size: 0.75d
 			subtitle: "助您快速上手的技巧与诀窍"
-			tasks: [
-				{
-					id: "382566FB9E8CFE29"
-					title: "好了好了,我明白了"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "382566FB9E8CFE29"
+				title: "好了好了,我明白了"
+				type: "checkmark"
+			}]
 			title: "教程系统"
 			x: -0.75d
 			y: 0.0d
@@ -1607,25 +1550,21 @@
 				"&a原木&f通过后续加工还能提供&d实用资源&r."
 			]
 			id: "5193DD03C0742548"
-			rewards: [
-				{
-					id: "4D70B6467A188FDD"
-					item: "gtceu:sticky_resin"
-					random_bonus: 3
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4D70B6467A188FDD"
+				item: "gtceu:sticky_resin"
+				random_bonus: 3
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "重申:这不是工业2模组"
-			tasks: [
-				{
-					count: 8L
-					id: "76851CD51E99CA38"
-					item: "gtceu:rubber_sapling"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 8L
+				id: "76851CD51E99CA38"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
 			title: "在&a橡胶树&f下乘凉"
 			x: 0.75d
 			y: -4.5d
@@ -1670,13 +1609,11 @@
 			id: "63DC162144871509"
 			shape: "circle"
 			size: 0.75d
-			tasks: [
-				{
-					id: "3E3D67B53234AD1A"
-					title: "哇,这些听起来很酷"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3E3D67B53234AD1A"
+				title: "哇,这些听起来很酷"
+				type: "checkmark"
+			}]
 			title: "还能玩什么？"
 			x: -2.25d
 			y: 0.0d
@@ -1695,13 +1632,11 @@
 			shape: "circle"
 			size: 0.5d
 			subtitle: "唤醒你内心的地质学家"
-			tasks: [
-				{
-					id: "3C54F075FEE53897"
-					title: "我超爱勘探!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "3C54F075FEE53897"
+				title: "我超爱勘探!"
+				type: "checkmark"
+			}]
 			title: "这太棒了!"
 			x: -2.25d
 			y: -2.25d

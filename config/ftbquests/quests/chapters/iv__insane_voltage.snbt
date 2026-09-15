@@ -5,17 +5,15 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:iv_electric_motor"
 	id: "32EF20533F323E02"
-	order_index: 5
-	quest_links: [
-		{
-			id: "050247AED8C803F9"
-			linked_quest: "30A6EDDF25A5E5F8"
-			shape: "gear"
-			size: 1.2d
-			x: 0.375d
-			y: 4.875d
-		}
-	]
+	order_index: 13
+	quest_links: [{
+		id: "050247AED8C803F9"
+		linked_quest: "30A6EDDF25A5E5F8"
+		shape: "gear"
+		size: 1.2d
+		x: 0.375d
+		y: 4.875d
+	}]
 	quests: [
 		{
 			dependencies: [
@@ -27,14 +25,12 @@
 			id: "52D952ADBEB67454"
 			size: 0.75d
 			subtitle: "所以你是说一个常春藤传导了这个超级？"
-			tasks: [
-				{
-					icon: "gtceu:samarium_iron_arsenic_oxide_single_wire"
-					id: "3789CEDA4AEEBD91"
-					item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
-					type: "item"
-				}
-			]
+			tasks: [{
+				icon: "gtceu:samarium_iron_arsenic_oxide_single_wire"
+				id: "3789CEDA4AEEBD91"
+				item: "gtceu:samarium_iron_arsenic_oxide_single_wire"
+				type: "item"
+			}]
 			title: "&aIV超导体&f"
 			x: -0.75d
 			y: 1.5d
@@ -58,14 +54,12 @@
 			id: "300348B1238BCB9A"
 			size: 0.75d
 			subtitle: "它的名字里有\"稀有”……哦不."
-			tasks: [
-				{
-					count: 64L
-					id: "0BC7D23CA52A619D"
-					item: "gtceu:rare_earth_dust"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 64L
+				id: "0BC7D23CA52A619D"
+				item: "gtceu:rare_earth_dust"
+				type: "item"
+			}]
 			title: "&a稀土&f"
 			x: -1.875d
 			y: 1.5d
@@ -89,17 +83,12 @@
 			id: "7A1E3C3A2D699C5B"
 			size: 0.75d
 			subtitle: "逼近太阳温度"
-			tasks: [
-				{
-					icon: {
-						Count: 16
-						id: "gtceu:hssg_coil_block"
-					}
-					id: "544762609C1B9613"
-					item: "gtceu:hssg_coil_block"
-					type: "item"
-				}
-			]
+			tasks: [{
+				icon: { Count: 16, id: "gtceu:hssg_coil_block" }
+				id: "544762609C1B9613"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
 			title: "高速钢-G线圈"
 			x: 0.375d
 			y: 1.5d
@@ -117,13 +106,11 @@
 			id: "1776FA1F3255731E"
 			size: 0.75d
 			subtitle: "这次我们要全速前进!"
-			tasks: [
-				{
-					id: "7F7D77145AC8197E"
-					item: "gtceu:hssg_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F7D77145AC8197E"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
 			title: "高速钢-G"
 			x: 1.5d
 			y: 1.5d
@@ -141,13 +128,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "或许该升级涡轮机了？"
-			tasks: [
-				{
-					id: "096C0C576B0F3358"
-					item: "gtceu:hsse_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "096C0C576B0F3358"
+				item: "gtceu:hsse_ingot"
+				type: "item"
+			}]
 			title: "高速钢-E"
 			x: 0.375d
 			y: 2.625d
@@ -181,13 +166,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "终极内燃发电机!"
-			tasks: [
-				{
-					id: "7F0E2A5AD0E2FC25"
-					item: "gtceu:extreme_combustion_engine"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7F0E2A5AD0E2FC25"
+				item: "gtceu:extreme_combustion_engine"
+				type: "item"
+			}]
 			title: "极端内燃机"
 			x: 1.5d
 			y: 2.625d
@@ -213,7 +196,6 @@
 				{
 					id: "7C5D37940A0C8409"
 					item: "gtceu:polybenzimidazole_ingot"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -298,7 +280,6 @@
 				{
 					id: "5E8D6AA09A113AE0"
 					item: "gtceu:large_assembler"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -329,7 +310,6 @@
 				{
 					id: "4C89839747EDFFF5"
 					item: "gtceu:tungstensteel_large_boiler"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -356,13 +336,11 @@
 			id: "12B4423F055BFBF5"
 			size: 0.75d
 			subtitle: "又一种聚合物自A黑暗F中崛起"
-			tasks: [
-				{
-					id: "2358A62B80B56238"
-					item: "gtceu:laminated_glass"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2358A62B80B56238"
+				item: "gtceu:laminated_glass"
+				type: "item"
+			}]
 			title: "层压玻璃"
 			x: 2.625d
 			y: 4.875d
@@ -382,13 +360,11 @@
 			id: "3A7491323AC5C70C"
 			size: 0.75d
 			subtitle: "本系列纯属虚构"
-			tasks: [
-				{
-					id: "578E3442D589DAE8"
-					item: "gtceu:hsss_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "578E3442D589DAE8"
+				item: "gtceu:hsss_ingot"
+				type: "item"
+			}]
 			title: "高速钢-S"
 			x: 2.625d
 			y: 1.5d
@@ -408,13 +384,11 @@
 			id: "0F192D1F44B9B599"
 			size: 0.75d
 			subtitle: "超导体至尊"
-			tasks: [
-				{
-					id: "1BC2B3ED9FD76DA2"
-					item: "gtceu:indium_dust"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1BC2B3ED9FD76DA2"
+				item: "gtceu:indium_dust"
+				type: "item"
+			}]
 			title: "铟"
 			x: 2.625d
 			y: 2.625d
@@ -435,13 +409,11 @@
 			]
 			id: "0425179329ED1B72"
 			size: 0.75d
-			tasks: [
-				{
-					id: "3550E45267942DE8"
-					item: "gtceu:hpic_chip"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3550E45267942DE8"
+				item: "gtceu:hpic_chip"
+				type: "item"
+			}]
 			title: "高&a功率电路&f"
 			x: 2.625d
 			y: 3.75d
@@ -517,13 +489,11 @@
 			id: "05003665368F5A57"
 			size: 0.75d
 			subtitle: "告别矿石匮乏!"
-			tasks: [
-				{
-					id: "4043CFB3C4E0DB90"
-					item: "gtceu:iv_macerator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4043CFB3C4E0DB90"
+				item: "gtceu:iv_macerator"
+				type: "item"
+			}]
 			title: "粉碎矿石获取更多副产物"
 			x: 1.5d
 			y: 4.875d
@@ -542,12 +512,10 @@
 			shape: "circle"
 			size: 0.66d
 			subtitle: "我等这一刻好久了!"
-			tasks: [
-				{
-					id: "496C00BA0D8F5445"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "496C00BA0D8F5445"
+				type: "checkmark"
+			}]
 			title: "配置矿石处理系统"
 			x: 1.5d
 			y: 6.0d
@@ -576,13 +544,11 @@
 			shape: "gear"
 			size: 1.3d
 			subtitle: "又名\"装配线”"
-			tasks: [
-				{
-					id: "1BD34023E42B4E50"
-					item: "gtceu:assembly_line"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1BD34023E42B4E50"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
 			title: "组装线"
 			x: 3.75d
 			y: 4.875d
@@ -615,7 +581,6 @@
 				{
 					id: "529358AADE55D801"
 					item: "gtceu:iv_lapotronic_battery"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -629,13 +594,11 @@
 			id: "327C3E02CD751453"
 			size: 0.75d
 			subtitle: "&a零点模块&f(几乎)到手!"
-			tasks: [
-				{
-					id: "59901F46ED2C46DF"
-					item: "gtceu:quantum_processor_mainframe"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "59901F46ED2C46DF"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
 			title: "首批ZPM电路!"
 			x: 8.25d
 			y: 4.875d
@@ -664,7 +627,6 @@
 				{
 					id: "71D5FE3076C1F56C"
 					item: "gtceu:nether_star_dust"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -737,25 +699,21 @@
 				"若电力依赖&3大型涡轮机&r,可选用&3LuV转子支架&r."
 			]
 			id: "4F6E351C5F676618"
-			rewards: [
-				{
-					id: "02E9F7E9FF906F4E"
-					item: "gtceu:rhodium_dust"
-					random_bonus: 3
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "02E9F7E9FF906F4E"
+				item: "gtceu:rhodium_dust"
+				random_bonus: 3
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.3d
 			subtitle: "核心&dLuV&r材料"
-			tasks: [
-				{
-					icon: "gtceu:rhodium_plated_palladium_ingot"
-					id: "0A57BEFB8BD9958A"
-					item: "gtceu:rhodium_plated_palladium_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				icon: "gtceu:rhodium_plated_palladium_ingot"
+				id: "0A57BEFB8BD9958A"
+				item: "gtceu:rhodium_plated_palladium_ingot"
+				type: "item"
+			}]
 			title: "镀铑钯"
 			x: 3.75d
 			y: 1.5d
@@ -770,13 +728,11 @@
 			id: "07906458E1A15683"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "7E67EFBB59C847D7"
-					item: "gtceu:iv_large_miner"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7E67EFBB59C847D7"
+				item: "gtceu:iv_large_miner"
+				type: "item"
+			}]
 			title: "二代多方块采矿机"
 			x: 5.860969387755098d
 			y: 0.5221428571428568d
@@ -797,13 +753,11 @@
 			id: "04E9D2F484702965"
 			size: 0.75d
 			subtitle: "终于实现集中供电"
-			tasks: [
-				{
-					id: "7A5A2DC7C8C3406E"
-					item: "gtceu:power_substation"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7A5A2DC7C8C3406E"
+				item: "gtceu:power_substation"
+				type: "item"
+			}]
 			title: "电力变电站"
 			x: 4.875d
 			y: 1.5d
@@ -822,13 +776,11 @@
 			id: "225F57C95C6D7650"
 			size: 0.75d
 			subtitle: "其实与量子无关"
-			tasks: [
-				{
-					id: "4C2C6546F0928AD7"
-					item: "gtceu:qbit_cpu_chip"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4C2C6546F0928AD7"
+				item: "gtceu:qbit_cpu_chip"
+				type: "item"
+			}]
 			title: "量子比特CPU"
 			x: 4.875d
 			y: 2.625d
@@ -849,13 +801,11 @@
 			]
 			id: "2BB16260A76718B8"
 			size: 0.75d
-			tasks: [
-				{
-					id: "230762F7951EB866"
-					item: "gtceu:iv_circuit_assembler"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "230762F7951EB866"
+				item: "gtceu:iv_circuit_assembler"
+				type: "item"
+			}]
 			title: "IV级电路组装"
 			x: 6.0d
 			y: 2.625d
@@ -873,13 +823,11 @@
 			]
 			id: "0988B5FB795FF7DA"
 			size: 0.75d
-			tasks: [
-				{
-					id: "4EB5F93570DAE79B"
-					item: "gtceu:fiber_reinforced_printed_circuit_board"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4EB5F93570DAE79B"
+				item: "gtceu:fiber_reinforced_printed_circuit_board"
+				type: "item"
+			}]
 			title: "极致&a电路板&f"
 			x: 7.125d
 			y: 2.625d
@@ -900,13 +848,11 @@
 			id: "49C1D61741AA288E"
 			size: 0.75d
 			subtitle: "量子级加工"
-			tasks: [
-				{
-					id: "4E109F0F515B210F"
-					item: "gtceu:quantum_processor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "4E109F0F515B210F"
+				item: "gtceu:quantum_processor"
+				type: "item"
+			}]
 			title: "终极EV电路!"
 			x: 8.25d
 			y: 2.625d
@@ -926,13 +872,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "亲爱的,我的微宇宙投影仪在哪？"
-			tasks: [
-				{
-					id: "659880DCA297ED7A"
-					item: "gtceu:rocket_fuel_bucket"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "659880DCA297ED7A"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
 			title: "&a火箭燃料&f"
 			x: 6.0d
 			y: 3.75d
@@ -949,13 +893,11 @@
 			id: "0338C9219DC2F819"
 			size: 0.75d
 			subtitle: "前所未见的重大升级"
-			tasks: [
-				{
-					id: "7092FDCCDDC53679"
-					item: "gtceu:reinforced_epoxy_resin_plate"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7092FDCCDDC53679"
+				item: "gtceu:reinforced_epoxy_resin_plate"
+				type: "item"
+			}]
 			title: "纤维增强环氧树脂"
 			x: 7.125d
 			y: 3.75d
@@ -966,13 +908,11 @@
 			id: "145F71A817C5996E"
 			size: 0.75d
 			subtitle: "传递LuV之爱"
-			tasks: [
-				{
-					id: "0205E6C037A453A8"
-					item: "gtceu:quantum_processor_computer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0205E6C037A453A8"
+				item: "gtceu:quantum_processor_computer"
+				type: "item"
+			}]
 			title: "更多LuV电路"
 			x: 8.25d
 			y: 4.125d
@@ -987,13 +927,11 @@
 			id: "698B5F65F2DE4439"
 			size: 0.75d
 			subtitle: "IV级,但现在是绿色版本"
-			tasks: [
-				{
-					id: "3B46E4592A6AC60E"
-					item: "gtceu:quantum_processor_assembly"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3B46E4592A6AC60E"
+				item: "gtceu:quantum_processor_assembly"
+				type: "item"
+			}]
 			title: "更多IV级电路"
 			x: 8.25d
 			y: 3.375d
@@ -1015,29 +953,27 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "熟能生巧"
-			tasks: [
-				{
-					id: "2EC4E901B2CD35FA"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:iv_energy_input_hatch"
-								}
-								{
-									Count: 1b
-									id: "gtceu:iv_energy_output_hatch"
-								}
-							]
-						}
+			tasks: [{
+				id: "2EC4E901B2CD35FA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:iv_energy_input_hatch"
+							}
+							{
+								Count: 1b
+								id: "gtceu:iv_energy_output_hatch"
+							}
+						]
 					}
-					title: "IV级发电机/能源舱口"
-					type: "item"
 				}
-			]
+				title: "IV级发电机/能源舱口"
+				type: "item"
+			}]
 			title: "第一百万次升级电弧炉"
 			x: 3.7589285714285765d
 			y: 3.767040816326528d
@@ -1061,7 +997,6 @@
 				{
 					id: "749F36AC9B4B92B1"
 					item: "gtceu:large_cutter"
-					optional_task: true
 					type: "item"
 				}
 			]
@@ -1163,25 +1098,23 @@
 			shape: "circle"
 			size: 0.5d
 			subtitle: "没有这些傻气任务,生活该多无趣..."
-			tasks: [
-				{
-					id: "5A9B72CD21F42428"
-					item: {
-						Count: 1
-						id: "gtceu:polybenzimidazole_mallet"
-						tag: {
-							Damage: 0
-							DisallowContainerItem: 0b
-							GT.Behaviours: { }
-							GT.Tool: {
-								MaxDamage: 1023
-							}
-							HideFlags: 2
+			tasks: [{
+				id: "5A9B72CD21F42428"
+				item: {
+					Count: 1
+					id: "gtceu:polybenzimidazole_mallet"
+					tag: {
+						Damage: 0
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							MaxDamage: 1023
 						}
+						HideFlags: 2
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			title: "终结所有木锤的&a木锤&f"
 			x: -1.6492346938775455d
 			y: 3.7466326530612264d

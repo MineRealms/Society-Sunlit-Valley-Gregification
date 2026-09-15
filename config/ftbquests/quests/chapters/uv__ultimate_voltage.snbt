@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:uv_electric_motor"
 	id: "2E730D6F5A7C2E83"
-	order_index: 8
+	order_index: 16
 	quest_links: [
 		{
 			id: "5232A33368566616"
@@ -68,13 +68,11 @@
 			shape: "heart"
 			size: 4.0d
 			subtitle: "这...就是终点吗？"
-			tasks: [
-				{
-					id: "0BE31C55310D03A8"
-					title: "感谢游玩!"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "0BE31C55310D03A8"
+				title: "感谢游玩!"
+				type: "checkmark"
+			}]
 			title: "&a终极电池&f"
 			x: 10.125d
 			y: 1.5d
@@ -94,13 +92,11 @@
 			id: "1976F9B2220BBEDE"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "244FC822F724507F"
-					item: "gtceu:cleaning_maintenance_hatch"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "244FC822F724507F"
+				item: "gtceu:cleaning_maintenance_hatch"
+				type: "item"
+			}]
 			title: "清洁&a维护仓&f"
 			x: 5.625d
 			y: 2.625d
@@ -153,23 +149,19 @@
 				"&o他们还添加了一个由8个真·终极电池制成的&l极·&a终极电池&f&r&o,价格高得离谱."
 			]
 			id: "6F15D7574B8F6DB5"
-			rewards: [
-				{
-					id: "4895F6328078CE87"
-					item: "minecraft:grass"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "4895F6328078CE87"
+				item: "minecraft:grass"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.3d
 			subtitle: "考虑接触一下草地"
-			tasks: [
-				{
-					id: "5EDF6F9FD702E463"
-					item: "gtceu:max_battery"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5EDF6F9FD702E463"
+				item: "gtceu:max_battery"
+				type: "item"
+			}]
 			title: "&a终极电池&f!"
 			x: 7.875d
 			y: 1.5d
@@ -186,13 +178,11 @@
 			id: "0BADFBA6F96E457E"
 			size: 0.75d
 			subtitle: "结合我们的力量..."
-			tasks: [
-				{
-					id: "5816F0458BEA1BCD"
-					item: "gtceu:network_switch"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5816F0458BEA1BCD"
+				item: "gtceu:network_switch"
+				type: "item"
+			}]
 			title: "&a物质网络转换器&f"
 			x: 2.25d
 			y: 0.375d
@@ -211,13 +201,11 @@
 			shape: "gear"
 			size: 1.2d
 			subtitle: "&e最终&r电路"
-			tasks: [
-				{
-					id: "433027F7B7C732A1"
-					item: "gtceu:wetware_processor_mainframe"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "433027F7B7C732A1"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
 			title: "&a湿件处理器主机&f - UHV电路"
 			x: 3.375d
 			y: -0.75d
@@ -231,13 +219,11 @@
 			id: "45E300FD7CD05A37"
 			size: 0.75d
 			subtitle: "数据存储确实很昂贵..."
-			tasks: [
-				{
-					id: "10F68287B673E16E"
-					item: "gtceu:data_module"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "10F68287B673E16E"
+				item: "gtceu:data_module"
+				type: "item"
+			}]
 			title: "数据模块"
 			x: 3.375d
 			y: 0.375d
@@ -254,13 +240,11 @@
 			id: "6DBF61D4F94BC851"
 			size: 0.75d
 			subtitle: "纯净中子"
-			tasks: [
-				{
-					id: "0454B12D9A5C9795"
-					item: "gtceu:neutronium_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0454B12D9A5C9795"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
 			title: "中子素"
 			x: 5.625d
 			y: -0.75d
@@ -279,14 +263,12 @@
 			id: "6AF3A40BC9CE7122"
 			size: 0.75d
 			subtitle: "你到底为什么需要这么高温的东西？!"
-			tasks: [
-				{
-					count: 16L
-					id: "43CE7370C6D03DFD"
-					item: "gtceu:tritanium_coil_block"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 16L
+				id: "43CE7370C6D03DFD"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
 			title: "三钛线圈"
 			x: 4.5d
 			y: 1.5d
@@ -306,13 +288,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "获取GOAT(史上最强) status"
-			tasks: [
-				{
-					id: "29384189E33C8CB1"
-					item: "gtceu:nan_certificate"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "29384189E33C8CB1"
+				item: "gtceu:nan_certificate"
+				type: "item"
+			}]
 			title: "告别新手认证"
 			x: 5.625d
 			y: 0.375d
@@ -414,13 +394,11 @@
 			id: "3CDA855A045A9F4D"
 			shape: "rsquare"
 			size: 0.66d
-			tasks: [
-				{
-					id: "2A13EB0C94A752BD"
-					item: "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2A13EB0C94A752BD"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_single_wire"
+				type: "item"
+			}]
 			title: "&aUV超导体&f"
 			x: 2.25d
 			y: 1.5d
@@ -466,13 +444,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "中子→&a电子&f空穴"
-			tasks: [
-				{
-					id: "74712C8E9A6561A0"
-					item: "gtceu:neutronium_boule"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "74712C8E9A6561A0"
+				item: "gtceu:neutronium_boule"
+				type: "item"
+			}]
 			title: "中子掺杂&a硅晶&f"
 			x: 6.75d
 			y: -0.75d
@@ -484,13 +460,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "好吧,或许确实存在创造模式物品"
-			tasks: [
-				{
-					id: "392079FDF410B9FD"
-					item: "ae2:creative_energy_cell"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "392079FDF410B9FD"
+				item: "ae2:creative_energy_cell"
+				type: "item"
+			}]
 			title: "创造ME能源"
 			x: 7.875d
 			y: -1.875d
@@ -501,13 +475,11 @@
 			id: "0009F48B6E385A47"
 			size: 0.75d
 			subtitle: "遗憾的是并不能让你飘浮"
-			tasks: [
-				{
-					id: "06668056CFF73DBD"
-					item: "gtceu:gravi_star"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "06668056CFF73DBD"
+				item: "gtceu:gravi_star"
+				type: "item"
+			}]
 			title: "&a重力之星&f"
 			x: 7.875d
 			y: -0.75d
@@ -530,13 +502,11 @@
 			id: "023FF9633765A0EB"
 			size: 0.75d
 			subtitle: "最昂贵的聚变形式"
-			tasks: [
-				{
-					id: "571672CEA7362C63"
-					item: "gtceu:uv_fusion_reactor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "571672CEA7362C63"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
 			title: "&a湮灭反应堆&f III"
 			x: 4.5d
 			y: -0.75d
@@ -552,13 +522,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "中子化是真实存在的吗？"
-			tasks: [
-				{
-					id: "665AC3D87C204E18"
-					item: "gtceu:ruthenium_trinium_americium_neutronate_single_wire"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "665AC3D87C204E18"
+				item: "gtceu:ruthenium_trinium_americium_neutronate_single_wire"
+				type: "item"
+			}]
 			title: "&aUHV超导体&f"
 			x: 5.625d
 			y: -1.875d
@@ -575,13 +543,11 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "我们能否更上一层楼？"
-			tasks: [
-				{
-					id: "493CC040B9974B42"
-					item: "gtceu:highly_advanced_soc"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "493CC040B9974B42"
+				item: "gtceu:highly_advanced_soc"
+				type: "item"
+			}]
 			title: "高精尖系统芯片"
 			x: 6.75d
 			y: 0.375d

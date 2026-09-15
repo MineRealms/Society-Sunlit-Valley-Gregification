@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "minecraft:iron_ore"
 	id: "6A809CAE287B97BA"
-	order_index: 2
+	order_index: 9
 	quest_links: [
 		{
 			id: "4B68740C721D04D5"
@@ -79,12 +79,10 @@
 			shape: "square"
 			size: 1.5d
 			subtitle: "读完本文您将成为专家!"
-			tasks: [
-				{
-					id: "502C58F19FF7DE24"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "502C58F19FF7DE24"
+				type: "checkmark"
+			}]
 			title: "&a银矿生成&f"
 			x: 2.0d
 			y: 0.0d
@@ -301,13 +299,11 @@
 			id: "1E27C654E2F6FFF2"
 			size: 0.9d
 			subtitle: "污染源"
-			tasks: [
-				{
-					id: "5FC26FB906B6F0A2"
-					item: "minecraft:coal"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "5FC26FB906B6F0A2"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			title: "煤炭"
 			x: 5.5d
 			y: 0.0d
@@ -573,13 +569,11 @@
 			id: "7C35B6B0B4CFFEB2"
 			size: 0.9d
 			subtitle: "美国梦之源"
-			tasks: [
-				{
-					id: "301C4CD1E47E2D02"
-					item: "gtceu:raw_oilsands"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "301C4CD1E47E2D02"
+				item: "gtceu:raw_oilsands"
+				type: "item"
+			}]
 			title: "油砂"
 			x: -0.5d
 			y: 3.0d
