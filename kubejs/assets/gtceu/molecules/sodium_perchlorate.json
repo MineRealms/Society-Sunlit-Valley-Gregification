@@ -1,0 +1,81 @@
+{
+  "contents": [
+    {
+      "index": 0,
+      "x": -0.8660254,
+      "y": -0.5,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 1,
+      "x": 0.0,
+      "y": -0.0,
+      "type": "atom",
+      "element": "Cl"
+    },
+    {
+      "index": 2,
+      "x": 0.8660254,
+      "y": 0.5,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 3,
+      "x": 0.5,
+      "y": -0.8660254,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 4,
+      "x": -0.5,
+      "y": 0.8660254,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 5,
+      "x": 1.5326921,
+      "y": 0.0,
+      "type": "atom",
+      "element": "Na"
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "lines": [
+        "solid",
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "lines": [
+        "solid",
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "lines": [
+        "solid",
+        "solid"
+      ],
+      "type": "bond"
+    }
+  ]
+}

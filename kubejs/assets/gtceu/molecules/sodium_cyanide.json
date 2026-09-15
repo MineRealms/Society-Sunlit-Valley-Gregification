@@ -1,0 +1,35 @@
+{
+  "contents": [
+    {
+      "index": 0,
+      "x": -0.5,
+      "y": 0.0,
+      "type": "atom",
+      "element": "C"
+    },
+    {
+      "index": 1,
+      "x": 0.5,
+      "y": -0.0,
+      "type": "atom",
+      "element": "N"
+    },
+    {
+      "index": 2,
+      "x": 0.0,
+      "y": 0.6666667,
+      "type": "atom",
+      "element": "Na"
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "lines": [
+        "solid",
+        "solid",
+        "solid"
+      ],
+      "type": "bond"
+    }
+  ]
+}
