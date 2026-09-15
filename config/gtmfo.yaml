@@ -151,6 +151,11 @@ gtfoMiscConfig:
   # Greenhouse replacements for dirt (use block names like minecraft:dirt)
   greenhouseDirts:
 
+  # Multiplier applied to greenhouse recipe durations (trees / sap).
+  # 1.0 = original GTFO speed (2000-4000 ticks per cycle).
+  # e.g. 6.0 makes every greenhouse cycle six times longer.
+  greenhouseDurationMultiplier: 6.0
+
   # Add furnace recipes for each baking oven recipe?
   bakingOvenReplacement: false
 
