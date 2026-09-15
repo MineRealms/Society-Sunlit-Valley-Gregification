@@ -1,0 +1,285 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mekanism"
+	group: "4A46A5E1358A80A6"
+	icon: "mekanism:metallurgic_infuser"
+	id: "363A0C94E5113468"
+	order_index: 17
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"{ftbquests.chapter.mekanism.quest08FE5F3D96A84939.description1}"
+				""
+				"{ftbquests.chapter.mekanism.quest08FE5F3D96A84939.description2}"
+				""
+				"{ftbquests.chapter.mekanism.quest08FE5F3D96A84939.description3}"
+			]
+			icon: "mekanism:metallurgic_infuser"
+			id: "08FE5F3D96A84939"
+			rewards: [
+				{
+					count: 8
+					id: "9FBD809C130636B1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "E49450A34A627546"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.quest08FE5F3D96A84939.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08FE5F3D96A84939"]
+			description: [
+				"{ftbquests.chapter.mekanism.quest5E78DFC45939175D.description1}"
+			]
+			icon: "mekanism:steel_casing"
+			id: "5E78DFC45939175D"
+			rewards: [
+				{
+					count: 8
+					id: "0C62D0ABB9FA0AA3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "43577D9AF4903198"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.quest5E78DFC45939175D.title}"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08FE5F3D96A84939"]
+			description: [
+				"{ftbquests.chapter.mekanism.quest6E3F3F7059605C5E.description1}"
+			]
+			icon: "mekanism:basic_control_circuit"
+			id: "6E3F3F7059605C5E"
+			rewards: [
+				{
+					count: 8
+					id: "DE74EFEB0D2D9056"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "D6724D76757BE48D"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.quest6E3F3F7059605C5E.title}"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["08FE5F3D96A84939"]
+			description: [
+				"{ftbquests.chapter.mekanism.quest9766F5058138C272.description1}"
+				""
+				"{ftbquests.chapter.mekanism.quest9766F5058138C272.description2}"
+				""
+				"{ftbquests.chapter.mekanism.quest9766F5058138C272.description3}"
+			]
+			icon: "gtceu:lv_ore_washer"
+			id: "9766F5058138C272"
+			rewards: [
+				{
+					count: 8
+					id: "538A81F1F7E356F7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "042C863EE33C78B8"
+				title: "{ftbquests.chapter.mekanism.quest9766F5058138C272.task.042C863EE33C78B8.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.mekanism.quest9766F5058138C272.title}"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E78DFC45939175D"]
+			description: [
+				"{ftbquests.chapter.mekanism.questE4EC2EAD7F571950.description1}"
+			]
+			icon: "mekanism:enrichment_chamber"
+			id: "E4EC2EAD7F571950"
+			rewards: [
+				{
+					count: 4
+					id: "3D8401C9D86FF746"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "18DC5FB15E94DDCA"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.questE4EC2EAD7F571950.title}"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5E78DFC45939175D"]
+			description: [
+				"{ftbquests.chapter.mekanism.questC42D2AB6E9608391.description1}"
+			]
+			icon: "mekanism:crusher"
+			id: "C42D2AB6E9608391"
+			rewards: [
+				{
+					count: 4
+					id: "B221DFE8D70C9012"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "70EAFC21DD702B32"
+				item: "mekanism:crusher"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.questC42D2AB6E9608391.title}"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E78DFC45939175D"]
+			description: [
+				"{ftbquests.chapter.mekanism.questA418D37BF1709306.description1}"
+			]
+			icon: "mekanism:energized_smelter"
+			id: "A418D37BF1709306"
+			rewards: [
+				{
+					count: 4
+					id: "CB4A43F954CB0C6D"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "B7EECB871EDD5BE3"
+				item: "mekanism:energized_smelter"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.questA418D37BF1709306.title}"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5E78DFC45939175D"]
+			description: [
+				"{ftbquests.chapter.mekanism.questB34F666F895AB76B.description1}"
+			]
+			icon: "mekanism:precision_sawmill"
+			id: "B34F666F895AB76B"
+			rewards: [
+				{
+					count: 4
+					id: "7F60EB773A4C8F99"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "880C5FD94A51CB6B"
+				item: "mekanism:precision_sawmill"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.questB34F666F895AB76B.title}"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E3F3F7059605C5E"]
+			description: [
+				"{ftbquests.chapter.mekanism.quest836FB0C2F0E3E944.description1}"
+			]
+			icon: "mekanism:advanced_control_circuit"
+			id: "836FB0C2F0E3E944"
+			rewards: [
+				{
+					count: 16
+					id: "CE50D13BE2C97227"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "205377D0C6BD097D"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.quest836FB0C2F0E3E944.title}"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["836FB0C2F0E3E944"]
+			description: [
+				"{ftbquests.chapter.mekanism.quest3596905358881BEE.description1}"
+			]
+			icon: "mekanism:osmium_compressor"
+			id: "3596905358881BEE"
+			rewards: [
+				{
+					count: 8
+					id: "9B731F4E62224A92"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "D1C91C1D82F8CC72"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.quest3596905358881BEE.title}"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["836FB0C2F0E3E944"]
+			description: [
+				"{ftbquests.chapter.mekanism.questF0E685EFDB715E7B.description1}"
+			]
+			icon: "mekanism:electrolytic_separator"
+			id: "F0E685EFDB715E7B"
+			rewards: [
+				{
+					count: 16
+					id: "0D842476D5AF611A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7EB9259B0398724A"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.mekanism.questF0E685EFDB715E7B.title}"
+			x: 5.0d
+			y: 5.0d
+		}
+	]
+	title: "{ftbquests.chapter.mekanism.title}"
+}

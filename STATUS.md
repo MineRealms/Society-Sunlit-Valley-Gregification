@@ -18,6 +18,7 @@
 | **LV 门槛（Create × GT）** | `kubejs/server_scripts/gt/lockLVBehindCreate.js` + Create 章「LV 时代」任务 + GT LV 章 5 入口前置 | `9fb5899` |
 | **Create × GT 轻量联动 R2** | `kubejs/server_scripts/gt/createBridges.js`（板材/覆膜板/碎矿/合金/橡胶） | `7b8b379` |
 | **TC4 联动分析** | `TC4_INTEGRATION.md`（KubeJS 插件/10 配方 schema/数据驱动资源/候选 A~F） | `625fb77` `43759b1` |
+| **MEK 科技锁 + MEK 任务章** | `kubejs/server_scripts/mek/lockMekBehindGT.js`（B 方案=LV 微处理器）+ `config/ftbquests/quests/chapters/mekanism.snbt`（11 任务，前置=LV 章铝锭任务 `7567E885B7166603`） | 本轮提交 |
 | GregMek 修复与安装（用户完成） | `mods/gregmek-1.0-SNAPSHOT.jar`（30 KB，2026-09-15 22:10）；详见 `GT_INTEGRATION.md` 第 6 节 | 待补 |
 
 ---
@@ -30,19 +31,11 @@
 
 ## 3. 待办（TODO）
 
-### 3.1 ★ MEK 科技锁（用户明确要求，务必保留）
+### 3.1 ✅ MEK 科技锁（已完成，2026-09-15）
 
-**需求**：
-1. Mekanism 的基础机器必须等 GT **LV 阶段「基础电路组装机」完成**之后才能制作；
-2. 组装机之后的 MEK 机器，合成中加入 **Create 精密构件（`create:precision_mechanism`）**；
-3. 整体目标：MEK 科技被 GT LV + Create 双重锁。
-
-**配方调研已完成**（Mekanism jar 4223 配方；详表见 `GT_INTEGRATION.md` 第 6.4 节）。**推荐方案（6 处 `e.replaceInput`）**：
-1. `steel_casing`：居中锇锭 → `gtceu:basic_electronic_circuit`（1 个）→ 所有 MEK 机器统一被 LV 电路门住；
-2. `metallurgic_infuser`（入门机，原本无电路）：熔炉 → `gtceu:basic_electronic_circuit`（×2）；
-3. 4 台基础机器（富集仓/粉碎机/电炉/精密锯木厂）：`#forge:circuits/basic` → `create:precision_mechanism`（各 ×2）。
-
-**实施**：新建 `kubejs/server_scripts/mek/lockMekBehindGT.js`；`node --check` + 6 配方 ID / 4 标签核对 → 更新文档 → 提交。
+- 需求：MEK 基础机器需 GT LV 电路（微处理器，电路组装机产物）+ Create 精密构件；MEK 入门前置 = LV 玩得差不多。
+- 实施：`kubejs/server_scripts/mek/lockMekBehindGT.js`（8 处 `replaceInput`）+ MEK 任务章（11 任务，前置 = LV 章铝锭任务 `7567E885B7166603`）。
+- 详见 `GT_INTEGRATION.md` 第 6.4 节；校验全通过（node --check / SNBT / ID / lang）。
 
 ### 3.2 TC4 联动候选（A~F）
 
