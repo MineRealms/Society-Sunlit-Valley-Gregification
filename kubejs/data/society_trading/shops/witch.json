@@ -514,6 +514,72 @@
       },
       "numismatics_cost": 81920,
       "trade_id": "crystal_of_regret_fishing_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:amber", "count": 4 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_amber_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:quicksilver", "count": 4 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_quicksilver_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:cinnabar_ore", "count": 2 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_cinnabar_ore_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:alumentum", "count": 8 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_alumentum_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:balanced_shard", "count": 1 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_balanced_shard_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:air_shard", "count": 4 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_air_shard_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:fire_shard", "count": 4 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_fire_shard_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:earth_shard", "count": 4 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_earth_shard_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:water_shard", "count": 4 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_water_shard_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:order_shard", "count": 4 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_order_shard_for_sun"
+    },
+    {
+      "offer": { "item": "thaumcraft:entropy_shard", "count": 4 },
+      "request": { "item": "numismatics:sun", "count": 1 },
+      "numismatics_cost": 4096,
+      "trade_id": "witch_entropy_shard_for_sun"
     }
   ]
 }

@@ -9,7 +9,7 @@
 ## 0. 当前任务（正在进行）
 
 **用户要求**：分析 TC4 移植版有没有模组联动能力（比如 KubeJS），并规划与本包的轻量联动。
-**当前状态**：**分析已完成**（源码包结构、KubeJS 插件、数据驱动资源、内容盘点、候选 A~F 均已核对并写入本文档，见第 2~4 节）；**等待用户挑选候选后逐条实施**。
+**当前状态**：分析 + 调研完成，**并于 2026-09-15 经用户授权全部实施**（见第 7~8 节：要素/扫描、GT 加工、KubeJS 配方、Society 女巫商店）。
 **关键结论速览**：包内已装 20708 自带 10 个 KubeJS 配方 schema，无需升级即可用 KubeJS 加/删 TC4 配方；研究与要素均为纯 JSON 数据。
 
 ---
@@ -149,6 +149,7 @@ TC 本体源码包内主要包：`client` 352、`api` 261、`block` 163、`nativ
 | 2026-09-15 | 解包 dev zip，确认 7 个源码/API jar；确认 TC4 内置 KubeJS 插件与 10 个配方 schema；确认研究/要素均为 JSON 数据驱动；建立本文档 |
 | 2026-09-15 | 核对包内 20708 已自带 KubeJS schema（无需升级）；盘点 TC4 内容/配方结构/关键材料；给出 A~F 候选清单 |
 | 2026-09-15 | **联动方案调研完成**（第 7 节）：要素/标签结构、扫描机制澄清（魔导透镜 vs 护目镜）、GT 加工清单、KubeJS 配方清单、Society 女巫方案；待用户确认 |
+| 2026-09-15 | **全部实施完成**（第 8 节）：要素/扫描 JSON（16 机器+6 标签）、GT 加工 3 配方、KubeJS TC4 配方 4 条、女巫商店 11 交易、Shipping Bin 14 项 |
 
 ---
 
@@ -218,3 +219,61 @@ KubeJS 用法（schema 已核对）：`e.recipes.thaumcraft.crucible(result, cat
 3. **KubeJS TC4 配方**：7.4 里挑哪几条？
 4. **Society**：女巫商店上架清单与价位档位？是否需要 Shipping Bin 收购？
 5. 版本：维持包内 20708（默认）还是升 dev 包 20711？
+
+---
+
+## 8. 实施记录（2026-09-15，已全部实施）
+
+> 用户授权「你来决定，做就完了」后，按第 7 节方案全部落地。
+
+### 8.1 要素 / 扫描（A）
+
+- 新增 **`kubejs/data/thaumcraft/object_aspects/pack_bridge_aspects.json`**：
+  - `direct`：16 台基础机器（GT 5 / Create 6 / MEK 5）→ machina / potentia / motus / metallum 等；
+  - `tags`：6 条 GT 金属标签（aluminium / nickel / zinc / invar / electrum / stainless_steel；steel 已有不重复）；
+  - 依据：`ObjectAspectCatalog` 加载器扫描 `data/*/object_aspects/`（源码 `common/ObjectAspectCatalog.java`）；
+    `direct`/`tags` 结构镜像 `definitions.json` / `common_material_aspects.json`（已核对）。
+- 扫描链路：`ThaumometerItem` → `ScanManager`（方块 = block_aspects + 物品要素合并）。
+- 效果：魔导透镜扫描 GT/Create/MEK 基础机器可发现要素（如能量机器给 potentia）。
+- 注意：**扫描用魔导透镜；揭示之护目镜只显示要素**（如要护目镜扫描需另行定制）。
+
+### 8.2 GT 加工 TC4（C）
+
+新增 **`kubejs/server_scripts/tc/tcGtCompat.js`**：
+
+1. 研磨机：`thaumcraft:cinnabar_ore` → 2× `gtceu:cinnabar_dust`（EUt 2 / 400t，镜像 OreRecipeHandler.java:121-128）
+2. 研磨机：`thaumcraft:amber_bearing_stone` → 2× `thaumcraft:amber`
+3. 提取机：`thaumcraft:quicksilver` → 144mB `gtceu:mercury`（EUt 30 / 60t）
+
+### 8.3 KubeJS TC4 配方（B）
+
+新增 **`kubejs/server_scripts/tc/tcRecipes.js`**（全部 `e.custom` 原始 JSON，规避 schema 参数顺序风险）：
+
+1. 坩埚：`gtceu:cinnabar_dust` + {metallum 2, permutatio 2} → `thaumcraft:quicksilver`
+2. 坩埚：`gtceu:steel_ingot` + {praecantatio 4} → `thaumcraft:thaumium_ingot`（研究 THAUMIUM）
+3. 坩埚：`gtceu:coke_dust` + {potentia 2, ignis 2} → `thaumcraft:alumentum`（研究 ALUMENTUM）
+4. 注魔：`thaumcraft:thaumometer` + [create:precision_mechanism, gtceu:basic_electronic_circuit,
+   thaumcraft:balanced_shard, minecraft:gold_ingot] + {sensus 16, auram 8, machina 16}、不稳定 2
+   → `thaumcraft:goggles_of_revealing`（研究 GOGGLES，机械魔法路线）
+
+### 8.4 Society 经济（E）
+
+- 女巫商店（`kubejs/data/society_trading/shops/witch.json`）新增 11 条 TC4 基础交易
+  （琥珀×4 / 水银×4 / 辰砂矿×2 / 炼金煤×8 / 均衡碎片×1 / 六系碎片×4，各 1 sun = 4096）；
+- 新增 **`kubejs/startup_scripts/tc4Trades.js`**：Shipping Bin 收购价 14 项
+  （矿物走 gem、碎片/炼金煤走 adventurer；机制与 `gtmfoTrades.js` 相同）。
+
+### 8.5 校验
+
+| 项目 | 结果 |
+|---|---|
+| `node --check`（3 个 JS） | ✅ |
+| `pack_bridge_aspects.json` 解析（direct 16 / tags 6） | ✅ |
+| `witch.json` 解析（49 交易、trade_id 无重复） | ✅ |
+| 新增配方物品 ID | ✅ 全部核对自 TC4 源码包 / jei_names.json |
+
+### 8.6 待运行时验证（进游戏）
+
+- 魔导透镜扫描机器 → 要素发现提示；
+- JEI 查看 GT 加工 / TC4 新配方；
+- 女巫商店新交易；Shipping Bin 收购价 tooltip。
