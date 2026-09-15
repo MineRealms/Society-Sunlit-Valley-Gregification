@@ -35,13 +35,14 @@
 **需求**：
 1. Mekanism 的基础机器必须等 GT **LV 阶段「基础电路组装机」完成**之后才能制作；
 2. 组装机之后的 MEK 机器，合成中加入 **Create 精密构件（`create:precision_mechanism`）**；
-3. 整体目标：MEK 科技被 GT LV + Create 双重锁住。
+3. 整体目标：MEK 科技被 GT LV + Create 双重锁。
 
-**实施思路（待核对后动手）**：
-- 先列出 Mekanism 基础机器配方清单（`mods/Mekanism-1.20.1-10.4.16.80.jar` 的 `data/mekanism/recipes/`）；
-- KubeJS：`e.remove({output: 'mekanism:xxx'})` + 重新添加带门槛的配方，或 `e.replaceInput` 替换关键原料；
-- 门槛物品：GT LV 电路（`gtceu:basic_electronic_circuit`）/ LV 电路组装机（`gtceu:circuit_assembler`）+ `create:precision_mechanism`；
-- 新建脚本建议：`kubejs/server_scripts/mek/lockMekBehindGT.js`。
+**配方调研已完成**（Mekanism jar 4223 配方；详表见 `GT_INTEGRATION.md` 第 6.4 节）。**推荐方案（6 处 `e.replaceInput`）**：
+1. `steel_casing`：居中锇锭 → `gtceu:basic_electronic_circuit`（1 个）→ 所有 MEK 机器统一被 LV 电路门住；
+2. `metallurgic_infuser`（入门机，原本无电路）：熔炉 → `gtceu:basic_electronic_circuit`（×2）；
+3. 4 台基础机器（富集仓/粉碎机/电炉/精密锯木厂）：`#forge:circuits/basic` → `create:precision_mechanism`（各 ×2）。
+
+**实施**：新建 `kubejs/server_scripts/mek/lockMekBehindGT.js`；`node --check` + 6 配方 ID / 4 标签核对 → 更新文档 → 提交。
 
 ### 3.2 TC4 联动候选（A~F）
 

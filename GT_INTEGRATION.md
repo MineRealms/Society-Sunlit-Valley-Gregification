@@ -267,12 +267,31 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 1. MEK 基础机器需 GT **LV「基础电路组装机」**（`gtceu:circuit_assembler`）阶段后才能制作（等价 LV 电路门槛）；
 2. 后续 MEK 机器合成加入 **`create:precision_mechanism`**（Create 精密构件）。
 
-**实施思路**：
+**配方调研结果**（`mods/Mekanism-1.20.1-10.4.16.80.jar` → `data/mekanism/recipes/`，共 4223 个配方）：
 
-- 先列 Mekanism 基础机器配方清单（`mods/Mekanism-1.20.1-10.4.16.80.jar` → `data/mekanism/recipes/`）；
-- KubeJS `e.remove({output:'mekanism:xxx'})` + 重加门槛配方，或 `e.replaceInput` 替换关键原料；
-- 新建脚本建议 `kubejs/server_scripts/mek/lockMekBehindGT.js`（命名待定）；
-- 完成后：静态校验（`node --check` + ID 核对）→ 更新本文件与 `STATUS.md` → 提交。
+| 机器 | 电路需求 | 关键材料 |
+|---|---|---|
+| 冶金灌注机 `metallurgic_infuser`（入门，**无电路**） | 无 | 熔炉×2 + 铁锭×4 + 红石×4 + 锇锭×1 |
+| 钢外壳 `steel_casing`（**所有机器都要**） | 无 | 钢锭×4 + 硅玻璃×4 + 锇锭×1（居中） |
+| 富集仓 `enrichment_chamber` | `#forge:circuits/basic`×2 | 基础合金×4 + 铁锭×2 + 钢外壳 |
+| 粉碎机 `crusher` | basic×2 | 红石×4 + 熔岩桶×2 + 钢外壳 |
+| 电炉 `energized_smelter` | basic×2 | 基础合金×4 + 硅玻璃×2 + 钢外壳 |
+| 精密锯木厂 `precision_sawmill` | basic×2 | 灌注合金×2 + 铁锭×4 + 钢外壳 |
+| 锇压缩机 `osmium_compressor` | advanced×2 | 灌注合金×4 + 钢外壳 |
+
+> `forge:circuits/basic` 标签 = `mekanism:basic_control_circuit`（MEK 内部链：锇锭+红石→基础电路；灌注合金×4+基础电路→高级电路）。
+
+**锁设计（推荐方案，共 6 处改动，全用 `e.replaceInput`，无需 remove/重加）**：
+
+1. `steel_casing`：居中锇锭 → `gtceu:basic_electronic_circuit`（1 个）→ **所有 MEK 机器（含附属）一并被 LV 电路门住**；
+2. `metallurgic_infuser`：熔炉 → `gtceu:basic_electronic_circuit`（×2）→ 入门机器也要 LV 电路；
+3. 4 台基础机器（富集仓/粉碎机/电炉/精密锯木厂）：`#forge:circuits/basic` → `create:precision_mechanism`（各 ×2）→ 用上 Create 精密构件。
+
+**实施**：
+
+- 新建 `kubejs/server_scripts/mek/lockMekBehindGT.js`；
+- 校验：`node --check` + 6 个配方 ID / 4 个标签核对；
+- 完成后更新本文件与 `STATUS.md` → 提交。
 
 ---
 
