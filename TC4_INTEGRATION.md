@@ -277,3 +277,17 @@ KubeJS 用法（schema 已核对）：`e.recipes.thaumcraft.crucible(result, cat
 - 魔导透镜扫描机器 → 要素发现提示；
 - JEI 查看 GT 加工 / TC4 新配方；
 - 女巫商店新交易；Shipping Bin 收购价 tooltip。
+
+### 8.7 入门任务章（FTB Quests，2026-09-16 新增）
+
+- 独立分组「神秘时代」（组 ID `B79B7DF60161F21A`，无前置，可直接开始）；
+- 章节 `config/ftbquests/quests/chapters/thaumcraft.snbt`（17 任务，章节 ID `1C53B7E775D8EDDC`）；
+- 生成器 `config/ftbquests/tools/build_thaumcraft_chapter.py`（可重复执行）；
+- 布局：4 列 × 5 行网格（x 0~7.5 / y 0~10），依赖呈树状分支，无超长单行/单列；
+- 任务线（全部核对自 `mods/thaumcraft-...-20711.jar`）：
+  1. 魔导透镜（2 金+玻璃+2 碎片）→ 2. 扫描（检查）→ 3. 碎片收集（检查）
+  → 4. 宏伟之木；5. 学徒法杖（2 铁杖端+木棍）→ 6. 魔导手册（法杖右手书架成型）
+  → 7. 桌子 / 8. 墨水瓶 → 11. 研究台（两桌+墨水瓶）；9. 第一次研究（检查）
+  → 10. 坩埚（法杖+炼药锅）→ 13. 闪耀之光 / 14. 炼金煤 / 15. 神秘锭
+  → 16. 神秘镐；12. 奥术工作台（法杖+桌子）→ 17. 揭示之护目镜；
+- 校验：SNBT 平衡 ✅、53 ID 全局唯一 ✅、17 依赖完整 ✅、52 lang 引用 zh/en 齐全 ✅、坐标无重叠 ✅。

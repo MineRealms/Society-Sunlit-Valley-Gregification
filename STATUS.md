@@ -20,6 +20,7 @@
 | **TC4 联动分析 + 实施** | `TC4_INTEGRATION.md`（KubeJS 插件/10 配方 schema/候选 A~F → 第 7~8 节调研+实施）；产物：aspects 桥接 JSON、`kubejs/server_scripts/tc/`（GT 加工 + TC4 配方）、`kubejs/startup_scripts/tc4Trades.js`、女巫商店 11 交易 | `625fb77`…本轮 |
 | **MEK 科技锁 + MEK 任务章** | `kubejs/server_scripts/mek/lockMekBehindGT.js`（B 方案=LV 微处理器）+ `config/ftbquests/quests/chapters/mekanism.snbt`（11 任务，前置=LV 章铝锭任务 `7567E885B7166603`） | `91961c4` |
 | **日志数据修复 + GTCA 兼容** | 4 类标签文件修复（treasure_spot_spawns / longwings / quality_food / zhopo×2，详见 `GT_INTEGRATION.md` 第 9 节）+ `kubejs/server_scripts/gt/gtcaCasingCompat.js`；删除 `_diag_tags.js` | `f7a0128` + 本轮 |
+| **TC4 入门任务章** | 新分组「神秘时代」+ `config/ftbquests/quests/chapters/thaumcraft.snbt`（17 任务，独立无前置）+ 生成器 `build_thaumcraft_chapter.py` | 本轮 |
 | GregMek 修复与安装（用户完成） | `mods/gregmek-1.0-SNAPSHOT.jar`（30 KB，2026-09-15 22:10）；详见 `GT_INTEGRATION.md` 第 6 节 | 待补 |
 
 ---

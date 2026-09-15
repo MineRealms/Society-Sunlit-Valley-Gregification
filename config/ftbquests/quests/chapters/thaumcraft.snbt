@@ -1,0 +1,455 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thaumcraft"
+	group: "B79B7DF60161F21A"
+	icon: "thaumcraft:thaumonomicon"
+	id: "1C53B7E775D8EDDC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"{ftbquests.chapter.thaumcraft.quest4F15F9F6021B0AF8.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.quest4F15F9F6021B0AF8.description2}"
+			]
+			icon: "thaumcraft:thaumometer"
+			id: "4F15F9F6021B0AF8"
+			rewards: [
+				{
+					count: 8
+					id: "35F501BCCBED6EC4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "D1E933168F4032A7"
+				item: "thaumcraft:thaumometer"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.quest4F15F9F6021B0AF8.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F15F9F6021B0AF8"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questEFD583503F686A53.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questEFD583503F686A53.description2}"
+			]
+			icon: "thaumcraft:thaumometer"
+			id: "EFD583503F686A53"
+			rewards: [
+				{
+					count: 8
+					id: "51BE477F04733434"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3C48E19CFE2C8F02"
+				title: "{ftbquests.chapter.thaumcraft.questEFD583503F686A53.task.3C48E19CFE2C8F02.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questEFD583503F686A53.title}"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F15F9F6021B0AF8"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questD1A29B49033ECF80.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questD1A29B49033ECF80.description2}"
+			]
+			icon: "thaumcraft:air_shard"
+			id: "D1A29B49033ECF80"
+			rewards: [
+				{
+					count: 8
+					id: "387C22AFCC1063D3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "EA5DB90438F68BB2"
+					item: "thaumcraft:air_shard"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F76D760EBD42B4DF"
+				title: "{ftbquests.chapter.thaumcraft.questD1A29B49033ECF80.task.F76D760EBD42B4DF.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questD1A29B49033ECF80.title}"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F15F9F6021B0AF8"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questD203E569ADFB0F32.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questD203E569ADFB0F32.description2}"
+			]
+			icon: "thaumcraft:greatwood_log"
+			id: "D203E569ADFB0F32"
+			rewards: [
+				{
+					count: 8
+					id: "09619AF0E5A42497"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "2AFB1C70F72FEE8E"
+				item: "thaumcraft:greatwood_log"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questD203E569ADFB0F32.title}"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F15F9F6021B0AF8"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questF3A027097D654BEC.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questF3A027097D654BEC.description2}"
+			]
+			icon: "thaumcraft:wand"
+			id: "F3A027097D654BEC"
+			rewards: [
+				{
+					count: 8
+					id: "E972737C7A89E287"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F0C6231DD7B1C558"
+				item: "thaumcraft:wand"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questF3A027097D654BEC.title}"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["F3A027097D654BEC"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.quest57DB7A280EE3633F.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.quest57DB7A280EE3633F.description2}"
+			]
+			icon: "thaumcraft:thaumonomicon"
+			id: "57DB7A280EE3633F"
+			rewards: [
+				{
+					count: 16
+					id: "BE6592AE06FCBA05"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "75F5FBB9C621D1FB"
+				item: "thaumcraft:thaumonomicon"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.quest57DB7A280EE3633F.title}"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["57DB7A280EE3633F"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questBA3336D6C9BB6D26.description1}"
+			]
+			icon: "thaumcraft:table"
+			id: "BA3336D6C9BB6D26"
+			rewards: [
+				{
+					count: 8
+					id: "E11ACF66A48C87F2"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "F4B1D3AFC5D935D0"
+				item: "thaumcraft:table"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questBA3336D6C9BB6D26.title}"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["57DB7A280EE3633F"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questAC8342C58BF48C3B.description1}"
+			]
+			icon: "thaumcraft:inkwell"
+			id: "AC8342C58BF48C3B"
+			rewards: [
+				{
+					count: 8
+					id: "0E3DC4984F4212D7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "529886787091801A"
+				item: "thaumcraft:inkwell"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questAC8342C58BF48C3B.title}"
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["57DB7A280EE3633F"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questE9C391B8091CE9CA.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questE9C391B8091CE9CA.description2}"
+			]
+			icon: "thaumcraft:thaumonomicon"
+			id: "E9C391B8091CE9CA"
+			rewards: [
+				{
+					count: 8
+					id: "443959D739B13ECB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7590E9CA4FBE6B3F"
+				title: "{ftbquests.chapter.thaumcraft.questE9C391B8091CE9CA.task.7590E9CA4FBE6B3F.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questE9C391B8091CE9CA.title}"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["57DB7A280EE3633F"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questE7B45BB092EA6379.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questE7B45BB092EA6379.description2}"
+			]
+			icon: "thaumcraft:crucible"
+			id: "E7B45BB092EA6379"
+			rewards: [
+				{
+					count: 8
+					id: "1EC425A499D2BAC7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "786790B31E18DB61"
+				item: "thaumcraft:crucible"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questE7B45BB092EA6379.title}"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["BA3336D6C9BB6D26", "AC8342C58BF48C3B"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questA40CE3A787FFAB67.description1}"
+			]
+			icon: "thaumcraft:research_table"
+			id: "A40CE3A787FFAB67"
+			rewards: [
+				{
+					count: 8
+					id: "F019957502E6EC56"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "B09FEFFA4AFD403F"
+				item: "thaumcraft:research_table"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questA40CE3A787FFAB67.title}"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["BA3336D6C9BB6D26"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.quest4F7A45CA9DB0BD3C.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.quest4F7A45CA9DB0BD3C.description2}"
+			]
+			icon: "thaumcraft:arcane_worktable"
+			id: "4F7A45CA9DB0BD3C"
+			rewards: [
+				{
+					count: 8
+					id: "65200CF144FFE713"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7E6858C0510BA167"
+				item: "thaumcraft:arcane_worktable"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.quest4F7A45CA9DB0BD3C.title}"
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["E7B45BB092EA6379"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questFBD8735B2844BA97.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questFBD8735B2844BA97.description2}"
+			]
+			icon: "thaumcraft:nitor"
+			id: "FBD8735B2844BA97"
+			rewards: [
+				{
+					count: 8
+					id: "381F17626AF9EF79"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0986FECE32BA2B26"
+				item: "thaumcraft:nitor"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questFBD8735B2844BA97.title}"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["E7B45BB092EA6379"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.quest0E99DDECCBCB4575.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.quest0E99DDECCBCB4575.description2}"
+			]
+			icon: "thaumcraft:alumentum"
+			id: "0E99DDECCBCB4575"
+			rewards: [
+				{
+					count: 8
+					id: "4547B192524CA32C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0D245F879348549C"
+				item: "thaumcraft:alumentum"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.quest0E99DDECCBCB4575.title}"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["E7B45BB092EA6379"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.quest188339BE6F24688B.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.quest188339BE6F24688B.description2}"
+			]
+			icon: "thaumcraft:thaumium_ingot"
+			id: "188339BE6F24688B"
+			rewards: [
+				{
+					count: 16
+					id: "24AB8BB6DD70C70F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "255D296E22396C02"
+				item: "thaumcraft:thaumium_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.quest188339BE6F24688B.title}"
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["188339BE6F24688B"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questBD072E3EC577F27F.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questBD072E3EC577F27F.description2}"
+			]
+			icon: "thaumcraft:thaumium_pickaxe"
+			id: "BD072E3EC577F27F"
+			rewards: [
+				{
+					count: 16
+					id: "E25A8487F0C107E0"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4851D7F587F9F5D7"
+				item: "thaumcraft:thaumium_pickaxe"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questBD072E3EC577F27F.title}"
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4F7A45CA9DB0BD3C"]
+			description: [
+				"{ftbquests.chapter.thaumcraft.questA4A79169446F404E.description1}"
+				""
+				"{ftbquests.chapter.thaumcraft.questA4A79169446F404E.description2}"
+			]
+			icon: "thaumcraft:goggles_of_revealing"
+			id: "A4A79169446F404E"
+			rewards: [
+				{
+					count: 32
+					id: "9167CBC17A935A79"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "91EFDFE5EE5B5CDA"
+				item: "thaumcraft:goggles_of_revealing"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.thaumcraft.questA4A79169446F404E.title}"
+			x: 7.5d
+			y: 7.5d
+		}
+	]
+	title: "{ftbquests.chapter.thaumcraft.title}"
+}
