@@ -10,9 +10,9 @@
 	quests: [
 		{
 			description: [
-				"{ftbquests.chapter.thaumcraft.quest4F15F9F6021B0AF8.description1}"
+				"用 &62 个金锭 + 1 块玻璃 + 2 个任意原质碎片&r合成&5魔导透镜&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.quest4F15F9F6021B0AF8.description2}"
+				"它是神秘学的起点：用它扫描方块与物品，认识隐藏在世界中的&d要素&r。"
 			]
 			icon: "thaumcraft:thaumometer"
 			id: "4F15F9F6021B0AF8"
@@ -29,16 +29,16 @@
 				item: "thaumcraft:thaumometer"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.quest4F15F9F6021B0AF8.title}"
+			title: "神秘学的起点：魔导透镜"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4F15F9F6021B0AF8"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questEFD583503F686A53.description1}"
+				"手持魔导透镜，对准任意方块或物品&6长按右键&r完成扫描。"
 				""
-				"{ftbquests.chapter.thaumcraft.questEFD583503F686A53.description2}"
+				"首次发现的要素会存入你的&d要素池&r，之后的研究都要消耗它。"
 			]
 			icon: "thaumcraft:thaumometer"
 			id: "EFD583503F686A53"
@@ -52,19 +52,19 @@
 			]
 			tasks: [{
 				id: "3C48E19CFE2C8F02"
-				title: "{ftbquests.chapter.thaumcraft.questEFD583503F686A53.task.3C48E19CFE2C8F02.title}"
+				title: "用魔导透镜扫描任意方块或物品"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questEFD583503F686A53.title}"
+			title: "观察世界"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4F15F9F6021B0AF8"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questD1A29B49033ECF80.description1}"
+				"碎片来自散落在地表与洞穴中的&5水晶簇&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.questD1A29B49033ECF80.description2}"
+				"透镜、研究、炼金都要用到它——顺手多收集一些。"
 			]
 			icon: "thaumcraft:air_shard"
 			id: "D1A29B49033ECF80"
@@ -84,19 +84,19 @@
 			]
 			tasks: [{
 				id: "F76D760EBD42B4DF"
-				title: "{ftbquests.chapter.thaumcraft.questD1A29B49033ECF80.task.F76D760EBD42B4DF.title}"
+				title: "收集至少 8 个原质碎片"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questD1A29B49033ECF80.title}"
+			title: "原质碎片"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4F15F9F6021B0AF8"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questD203E569ADFB0F32.description1}"
+				"魔法森林中的&5宏伟之木&r是法杖杆与多种魔法制品的材料。"
 				""
-				"{ftbquests.chapter.thaumcraft.questD203E569ADFB0F32.description2}"
+				"找不到森林？可以在魔导手册的分类里查看它的分布。"
 			]
 			icon: "thaumcraft:greatwood_log"
 			id: "D203E569ADFB0F32"
@@ -114,16 +114,16 @@
 				item: "thaumcraft:greatwood_log"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questD203E569ADFB0F32.title}"
+			title: "宏伟之木"
 			x: 7.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4F15F9F6021B0AF8"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questF3A027097D654BEC.description1}"
+				"用 &62 个铁杖端 + 1 根木棍&r合成&5学徒法杖&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.questF3A027097D654BEC.description2}"
+				"在这个世界，法杖不只是施法工具，还是各种魔法设备的&6成型核心&r。"
 			]
 			icon: "thaumcraft:wand"
 			id: "F3A027097D654BEC"
@@ -140,16 +140,16 @@
 				item: "thaumcraft:wand"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questF3A027097D654BEC.title}"
+			title: "学徒法杖"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["F3A027097D654BEC"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.quest57DB7A280EE3633F.description1}"
+				"手持法杖，对着&6书架&r右键——法杖会在仪式中成型为&5魔导手册&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.quest57DB7A280EE3633F.description2}"
+				"一切研究都从这本手册开始；JEI 的&6复合合成&r分类里能看到所有成型蓝图。"
 			]
 			icon: "thaumcraft:thaumonomicon"
 			id: "57DB7A280EE3633F"
@@ -166,14 +166,14 @@
 				item: "thaumcraft:thaumonomicon"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.quest57DB7A280EE3633F.title}"
+			title: "魔导手册"
 			x: 2.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["57DB7A280EE3633F"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questBA3336D6C9BB6D26.description1}"
+				"普通的&6桌子&r是研究台与奥术工作台的基础（普通合成即可）。"
 			]
 			icon: "thaumcraft:table"
 			id: "BA3336D6C9BB6D26"
@@ -190,14 +190,14 @@
 				item: "thaumcraft:table"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questBA3336D6C9BB6D26.title}"
+			title: "术式桌台"
 			x: 5.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["57DB7A280EE3633F"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questAC8342C58BF48C3B.description1}"
+				"用&6玻璃瓶 + 羽毛 + 黑色染料&r合成墨水瓶，研究台成型时需要它。"
 			]
 			icon: "thaumcraft:inkwell"
 			id: "AC8342C58BF48C3B"
@@ -214,16 +214,16 @@
 				item: "thaumcraft:inkwell"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questAC8342C58BF48C3B.title}"
+			title: "墨水瓶"
 			x: 7.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["57DB7A280EE3633F"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questE9C391B8091CE9CA.description1}"
+				"打开魔导手册，消耗要素池解锁一项研究。"
 				""
-				"{ftbquests.chapter.thaumcraft.questE9C391B8091CE9CA.description2}"
+				"推荐先研究&6炼金（坩埚）&r与&6奥术工作台&r方向。"
 			]
 			icon: "thaumcraft:thaumonomicon"
 			id: "E9C391B8091CE9CA"
@@ -237,19 +237,19 @@
 			]
 			tasks: [{
 				id: "7590E9CA4FBE6B3F"
-				title: "{ftbquests.chapter.thaumcraft.questE9C391B8091CE9CA.task.7590E9CA4FBE6B3F.title}"
+				title: "在魔导手册中解锁任意一项研究"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questE9C391B8091CE9CA.title}"
+			title: "第一次研究"
 			x: 0.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["57DB7A280EE3633F"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questE7B45BB092EA6379.description1}"
+				"手持法杖，对着&6炼药锅&r右键，成型为&5坩埚&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.questE7B45BB092EA6379.description2}"
+				"炼金的核心设备：把材料溶解成要素，再合成魔法物品。"
 			]
 			icon: "thaumcraft:crucible"
 			id: "E7B45BB092EA6379"
@@ -266,14 +266,14 @@
 				item: "thaumcraft:crucible"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questE7B45BB092EA6379.title}"
+			title: "坩埚"
 			x: 2.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["BA3336D6C9BB6D26", "AC8342C58BF48C3B"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questA40CE3A787FFAB67.description1}"
+				"按蓝图摆放&6两张桌子&r并手持&6墨水瓶&r右键，成型为&5研究台&r（JEI 可查布局）。"
 			]
 			icon: "thaumcraft:research_table"
 			id: "A40CE3A787FFAB67"
@@ -290,16 +290,16 @@
 				item: "thaumcraft:research_table"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questA40CE3A787FFAB67.title}"
+			title: "研究台"
 			x: 5.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["BA3336D6C9BB6D26"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.quest4F7A45CA9DB0BD3C.description1}"
+				"手持法杖对着&6桌子&r右键，成型为&5奥术工作台&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.quest4F7A45CA9DB0BD3C.description2}"
+				"消耗法杖内的魔力，进行魔法合成。"
 			]
 			icon: "thaumcraft:arcane_worktable"
 			id: "4F7A45CA9DB0BD3C"
@@ -316,16 +316,16 @@
 				item: "thaumcraft:arcane_worktable"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.quest4F7A45CA9DB0BD3C.title}"
+			title: "奥术工作台"
 			x: 7.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["E7B45BB092EA6379"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questFBD8735B2844BA97.description1}"
+				"炼金配方：&6荧石粉&r + 要素 &bpotentia 3 / ignis 3 / lux 3&r → &5闪耀之光&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.questFBD8735B2844BA97.description2}"
+				"丢进坩埚的材料会提供要素；要永久光源就靠它了。"
 			]
 			icon: "thaumcraft:nitor"
 			id: "FBD8735B2844BA97"
@@ -342,16 +342,16 @@
 				item: "thaumcraft:nitor"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questFBD8735B2844BA97.title}"
+			title: "闪耀之光"
 			x: 0.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["E7B45BB092EA6379"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.quest0E99DDECCBCB4575.description1}"
+				"炼金配方：&6煤炭&r + 要素 &bpotentia 3 / ignis 3 / perditio 3&r → &5炼金煤&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.quest0E99DDECCBCB4575.description2}"
+				"一种高效的魔法燃料，也能当作投掷物使用。"
 			]
 			icon: "thaumcraft:alumentum"
 			id: "0E99DDECCBCB4575"
@@ -368,16 +368,16 @@
 				item: "thaumcraft:alumentum"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.quest0E99DDECCBCB4575.title}"
+			title: "炼金煤"
 			x: 2.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["E7B45BB092EA6379"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.quest188339BE6F24688B.description1}"
+				"炼金配方：&6铁锭&r + 要素 &bpraecantatio 4&r → &5神秘锭&r。"
 				""
-				"{ftbquests.chapter.thaumcraft.quest188339BE6F24688B.description2}"
+				"比铁更坚硬、更容易附魔的魔法金属，可制作工具与护甲。"
 			]
 			icon: "thaumcraft:thaumium_ingot"
 			id: "188339BE6F24688B"
@@ -394,16 +394,16 @@
 				item: "thaumcraft:thaumium_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.quest188339BE6F24688B.title}"
+			title: "神秘锭"
 			x: 5.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["188339BE6F24688B"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questBD072E3EC577F27F.description1}"
+				"用神秘锭合成&5神秘镐&r（其他工具同理）。"
 				""
-				"{ftbquests.chapter.thaumcraft.questBD072E3EC577F27F.description2}"
+				"神秘工具天生容易附魔，是冒险途中的好伙伴。"
 			]
 			icon: "thaumcraft:thaumium_pickaxe"
 			id: "BD072E3EC577F27F"
@@ -420,16 +420,16 @@
 				item: "thaumcraft:thaumium_pickaxe"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questBD072E3EC577F27F.title}"
+			title: "神秘工具"
 			x: 5.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["4F7A45CA9DB0BD3C"]
 			description: [
-				"{ftbquests.chapter.thaumcraft.questA4A79169446F404E.description1}"
+				"在奥术工作台用&6魔导透镜 + 金锭 + 皮革&r合成&5揭示之护目镜&r（需先研究对应条目）。"
 				""
-				"{ftbquests.chapter.thaumcraft.questA4A79169446F404E.description2}"
+				"戴上它，方块与物品的要素会直接显示在视野里。"
 			]
 			icon: "thaumcraft:goggles_of_revealing"
 			id: "A4A79169446F404E"
@@ -446,10 +446,10 @@
 				item: "thaumcraft:goggles_of_revealing"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.thaumcraft.questA4A79169446F404E.title}"
+			title: "揭示之护目镜"
 			x: 7.5d
 			y: 7.5d
 		}
 	]
-	title: "{ftbquests.chapter.thaumcraft.title}"
+	title: "&5神秘时代&r - 入门"
 }

@@ -7,8 +7,7 @@
 
 产出：
     1. config/ftbquests/quests/chapter_groups.snbt —— 新增「神秘时代」分组（若不存在）
-    2. config/ftbquests/quests/chapters/thaumcraft.snbt —— 17 个入门任务
-    3. 向 kubejs/assets/ftbquestlocalizer/lang/zh_cn.json / en_us.json 插入文本
+    2. config/ftbquests/quests/chapters/thaumcraft.snbt —— 17 个入门任务（内联中文，不写 lang 文件）
 
 事实依据（逐条核对，非推测）：
     - 物品/机制：包内 mods/thaumcraft-forge-...-20711.jar
@@ -208,16 +207,19 @@ def make_id(rng, used):
 
 
 def ensure_group(group_id):
-    """把新分组写入 chapter_groups.snbt（若不存在）"""
+    """把新分组写入 chapter_groups.snbt（内联中文标题）；已存在时确保标题为内联"""
     with open(GROUPS_FILE, encoding="utf-8") as f:
         text = f.read()
-    if group_id in text:
+    key_ref = "{ftbquests.chapter_groups." + str(int(group_id, 16)) + ".title}"
+    entry = '\t\t{ id: "' + group_id + '", title: "' + GROUP_TITLE[0] + '" }\n'
+    if group_id not in text:
+        marker = "\t]\n}"
+        assert marker in text, "chapter_groups.snbt 结构不符合预期"
+        text = text.replace(marker, entry + marker)
+    elif key_ref in text:
+        text = text.replace(key_ref, GROUP_TITLE[0])
+    else:
         return False
-    key = f"ftbquests.chapter_groups.{int(group_id, 16)}.title"
-    entry = f'\t\t{{ id: "{group_id}", title: "{{{key}}}" }}\n'
-    marker = "\t]\n}"
-    assert marker in text, "chapter_groups.snbt 结构不符合预期"
-    text = text.replace(marker, entry + marker)
     with open(GROUPS_FILE, "w", encoding="utf-8", newline="\n") as f:
         f.write(text)
     return True
@@ -260,7 +262,7 @@ def build_snbt(group_id):
             for i, (zh, en) in enumerate(desc):
                 if i > 0:
                     lines.append('\t\t\t\t""')
-                lines.append(f'\t\t\t\t"{{ftbquests.chapter.{CHAPTER_FILENAME}.quest{q["qid"]}.description{i+1}}}"')
+                lines.append("\t\t\t\t" + json.dumps(zh, ensure_ascii=False))
             lines.append("\t\t\t]")
         lines.append(f'\t\t\ticon: "{q["icon"]}"')
         lines.append(f'\t\t\tid: "{q["qid"]}"')
@@ -288,15 +290,15 @@ def build_snbt(group_id):
                 lines.append('\t\t\t\ttype: "item"')
             else:
                 lines.append(f'\t\t\t\tid: "{t["tid"]}"')
-                lines.append(f'\t\t\t\ttitle: "{{ftbquests.chapter.{CHAPTER_FILENAME}.quest{q["qid"]}.task.{t["tid"]}.title}}"')
+                lines.append("\t\t\t\ttitle: " + json.dumps(t["title"][0], ensure_ascii=False))
                 lines.append('\t\t\t\ttype: "checkmark"')
             lines.append("\t\t\t}]")
-        lines.append(f'\t\t\ttitle: "{{ftbquests.chapter.{CHAPTER_FILENAME}.quest{q["qid"]}.title}}"')
+        lines.append("\t\t\ttitle: " + json.dumps(q["title"][0], ensure_ascii=False))
         lines.append(f'\t\t\tx: {q["x"]}d')
         lines.append(f'\t\t\ty: {q["y"]}d')
         lines.append("\t\t}")
     lines.append("\t]")
-    lines.append(f'\ttitle: "{{ftbquests.chapter.{CHAPTER_FILENAME}.title}}"')
+    lines.append('\ttitle: "&5神秘时代&r - 入门"')
     lines.append("}")
     return "\n".join(lines) + "\n", chapter_id
 
@@ -370,25 +372,36 @@ def insert_lang(path, entries, lang_index):
 GROUP_KEY_ID = None
 
 
+def find_existing_group():
+    """复用已存在的分组：优先读章节文件的 group 字段，其次按标题匹配分组表"""
+    if os.path.exists(CHAPTER_FILE):
+        t = open(CHAPTER_FILE, encoding="utf-8").read()
+        m = re.search(r'group:\s*"([0-9A-F]{16})"', t)
+        if m:
+            return m.group(1)
+    t = open(GROUPS_FILE, encoding="utf-8").read()
+    for m in re.finditer(r'\{ id: "([0-9A-F]{16})", title: "([^"]*)" \}', t):
+        if m.group(2) == GROUP_TITLE[0]:
+            return m.group(1)
+    return None
+
+
 def main():
     global GROUP_KEY_ID
-    rng = random.Random(SEED + 7)
-    used = collect_existing_ids()
-    group_id = make_id(rng, used)
+    group_id = find_existing_group()
+    if group_id is None:
+        rng = random.Random(SEED + 7)
+        used = collect_existing_ids()
+        group_id = make_id(rng, used)
     GROUP_KEY_ID = group_id
 
     created = ensure_group(group_id)
-    print(f"分组: {group_id}（{'新增' if created else '已存在'}）")
+    print(f"分组: {group_id}（{'新增' if created else '已存在/已内联'}）")
 
     snbt, chapter_id = build_snbt(group_id)
     with open(CHAPTER_FILE, "w", encoding="utf-8", newline="\n") as f:
         f.write(snbt)
     print(f"章节 -> {CHAPTER_FILE}  (id={chapter_id})")
-
-    entries = lang_entries(group_id)
-    insert_lang(os.path.join(LANG_DIR, "zh_cn.json"), entries, 0)
-    insert_lang(os.path.join(LANG_DIR, "en_us.json"), entries, 1)
-    print(f"lang entries: {len(entries)}")
     print(f"quests: {len(QUESTS)}")
 
 

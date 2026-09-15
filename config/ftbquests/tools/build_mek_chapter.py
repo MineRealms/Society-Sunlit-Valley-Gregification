@@ -6,9 +6,7 @@ MEK（通用机械）章节生成器（Society: Sunlit Valley / 1.20.1 / Mekanis
     python config/ftbquests/tools/build_mek_chapter.py
 
 产出：
-    1. config/ftbquests/quests/chapters/mekanism.snbt
-    2. 向 kubejs/assets/ftbquestlocalizer/lang/zh_cn.json 与 en_us.json
-       插入/覆盖 ftbquests.chapter.mekanism.* 本地化条目
+    1. config/ftbquests/quests/chapters/mekanism.snbt（内联中文，不写 lang 文件）
 
 说明：
     - 章节挂在「格雷科技」分组（4A46A5E1358A80A6）下，order_index = 17（排在 UV 之后）
@@ -264,7 +262,7 @@ def build_snbt():
             for i, (zh, en) in enumerate(desc):
                 if i > 0:
                     lines.append('\t\t\t\t""')
-                lines.append(f'\t\t\t\t"{{ftbquests.chapter.{CHAPTER_FILENAME}.quest{q["qid"]}.description{i+1}}}"')
+                lines.append("\t\t\t\t" + json.dumps(zh, ensure_ascii=False))
             lines.append("\t\t\t]")
         lines.append(f'\t\t\ticon: "{q["icon"]}"')
         lines.append(f'\t\t\tid: "{q["qid"]}"')
@@ -292,7 +290,7 @@ def build_snbt():
                 lines.append('\t\t\t\ttype: "item"')
             else:
                 lines.append(f'\t\t\t\tid: "{t["tid"]}"')
-                lines.append(f'\t\t\t\ttitle: "{{ftbquests.chapter.{CHAPTER_FILENAME}.quest{q["qid"]}.task.{t["tid"]}.title}}"')
+                lines.append("\t\t\t\ttitle: " + json.dumps(t["title"][0], ensure_ascii=False))
                 lines.append('\t\t\t\ttype: "checkmark"')
             lines.append("\t\t\t}]")
         else:
@@ -307,16 +305,16 @@ def build_snbt():
                     lines.append('\t\t\t\t\ttype: "item"')
                 else:
                     lines.append(f'\t\t\t\t\tid: "{t["tid"]}"')
-                    lines.append(f'\t\t\t\t\ttitle: "{{ftbquests.chapter.{CHAPTER_FILENAME}.quest{q["qid"]}.task.{t["tid"]}.title}}"')
+                    lines.append("\t\t\t\t\ttitle: " + json.dumps(t["title"][0], ensure_ascii=False))
                     lines.append('\t\t\t\t\ttype: "checkmark"')
                 lines.append("\t\t\t\t}")
             lines.append("\t\t\t]")
-        lines.append(f'\t\t\ttitle: "{{ftbquests.chapter.{CHAPTER_FILENAME}.quest{q["qid"]}.title}}"')
+        lines.append("\t\t\ttitle: " + json.dumps(q["title"][0], ensure_ascii=False))
         lines.append(f'\t\t\tx: {q["x"]}d')
         lines.append(f'\t\t\ty: {q["y"]}d')
         lines.append("\t\t}")
     lines.append("\t]")
-    lines.append(f'\ttitle: "{{ftbquests.chapter.{CHAPTER_FILENAME}.title}}"')
+    lines.append('\ttitle: "&9MEK&r - 通用机械"')
     lines.append("}")
     return "\n".join(lines) + "\n", chapter_id
 
@@ -394,11 +392,6 @@ def main():
     with open(CHAPTER_FILE, "w", encoding="utf-8", newline="\n") as f:
         f.write(snbt)
     print(f"chapter -> {CHAPTER_FILE}  (id={chapter_id})")
-
-    entries = lang_entries()
-    insert_lang(os.path.join(LANG_DIR, "zh_cn.json"), entries, 0)
-    insert_lang(os.path.join(LANG_DIR, "en_us.json"), entries, 1)
-    print(f"lang entries: {len(entries)} -> zh_cn.json / en_us.json")
     print(f"quests: {len(QUESTS)}")
 
 
