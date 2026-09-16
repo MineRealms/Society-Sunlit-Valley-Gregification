@@ -304,3 +304,14 @@ KubeJS 用法（schema 已核对）：`e.recipes.thaumcraft.crucible(result, cat
   - 魔法原木（TFMagicLogSpecial 0~3 → time/transformation/mining/sorting_log，含 arbor 4 + praecantatio 2 + 特性要素）；
   - 普通原木/树苗/树叶仍由原版标签（`minecraft:logs` 等）覆盖，不重复添加；
 - **校验**：203 个物品全部存在于 TF jar（item/block 清单）；所有要素名均在 TC4 端口合法集（48 种）内 ✅。
+
+### 8.9 暮色森林实体要素（2026-09-16）
+
+- **产出**：`kubejs/data/thaumcraft/entity_aspects/twilightforest_entities.json`（**57 个生物**）；
+- **格式**：端口 entity_aspects 规范（`entries[]`：`rule_id` / `id` / `required` / `scan_identity` / `aspects`）；
+  加载器 `EntityAspectCatalog` 跨命名空间扫描（源码 `super(GSON, "entity_aspects")` 核对）；
+- **范围**：全部 TF 生物（排除 24 个弹射物/技术实体/载具：lich_bolt、thrown_*、boat、slider 等）；
+- **设计**：TC4 风格，Boss 按原版凋灵/末影龙量级（巫妖 `mortuus 10 + praecantatio 8`、
+  冰雪女王 `gelum 12 + tenebrae 8`、九头蛇 `bestia 12 + ignis 8`），普通生物 2~6 点；
+  `scan_identity` 使用英文显示名（如 “Lich”）；
+- **校验**：57 个实体全部存在于 TF jar（lang 实体表）；要素名全部在端口合法集内 ✅；`rule_id` 唯一 ✅。

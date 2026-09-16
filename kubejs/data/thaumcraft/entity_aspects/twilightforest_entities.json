@@ -1,0 +1,659 @@
+{
+  "entries": [
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/adherent",
+      "id": "twilightforest:adherent",
+      "required": false,
+      "scan_identity": "Adherent",
+      "aspects": {
+        "praecantatio": 3,
+        "cognitio": 3,
+        "volatus": 2,
+        "ordo": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/alpha_yeti",
+      "id": "twilightforest:alpha_yeti",
+      "required": false,
+      "scan_identity": "Alpha Yeti",
+      "aspects": {
+        "bestia": 8,
+        "gelum": 5,
+        "pannus": 4,
+        "corpus": 3
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/armored_giant",
+      "id": "twilightforest:armored_giant",
+      "required": false,
+      "scan_identity": "Armored Giant",
+      "aspects": {
+        "bestia": 10,
+        "metallum": 6,
+        "terra": 6,
+        "machina": 3
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/bighorn_sheep",
+      "id": "twilightforest:bighorn_sheep",
+      "required": false,
+      "scan_identity": "Bighorn Sheep",
+      "aspects": {
+        "bestia": 3,
+        "pannus": 2,
+        "victus": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/blockchain_goblin",
+      "id": "twilightforest:blockchain_goblin",
+      "required": false,
+      "scan_identity": "Block and Chain Goblin",
+      "aspects": {
+        "bestia": 3,
+        "metallum": 3,
+        "telum": 2,
+        "machina": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/boar",
+      "id": "twilightforest:boar",
+      "required": false,
+      "scan_identity": "Boar",
+      "aspects": {
+        "bestia": 3,
+        "fames": 2,
+        "terra": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/carminite_broodling",
+      "id": "twilightforest:carminite_broodling",
+      "required": false,
+      "scan_identity": "Carminite Broodling",
+      "aspects": {
+        "bestia": 2,
+        "ignis": 2,
+        "spiritus": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/carminite_ghastguard",
+      "id": "twilightforest:carminite_ghastguard",
+      "required": false,
+      "scan_identity": "Carminite Ghastguard",
+      "aspects": {
+        "spiritus": 4,
+        "ignis": 3,
+        "machina": 3
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/carminite_ghastling",
+      "id": "twilightforest:carminite_ghastling",
+      "required": false,
+      "scan_identity": "Carminite Ghastling",
+      "aspects": {
+        "spiritus": 3,
+        "ignis": 2,
+        "machina": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/carminite_golem",
+      "id": "twilightforest:carminite_golem",
+      "required": false,
+      "scan_identity": "Carminite Golem",
+      "aspects": {
+        "machina": 4,
+        "metallum": 3,
+        "spiritus": 3,
+        "ordo": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/death_tome",
+      "id": "twilightforest:death_tome",
+      "required": false,
+      "scan_identity": "Death Tome",
+      "aspects": {
+        "cognitio": 4,
+        "praecantatio": 4,
+        "volatus": 2,
+        "perditio": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/deer",
+      "id": "twilightforest:deer",
+      "required": false,
+      "scan_identity": "Deer",
+      "aspects": {
+        "bestia": 2,
+        "motus": 2,
+        "victus": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/dwarf_rabbit",
+      "id": "twilightforest:dwarf_rabbit",
+      "required": false,
+      "scan_identity": "Dwarf Rabbit",
+      "aspects": {
+        "bestia": 1,
+        "motus": 2,
+        "lucrum": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/fire_beetle",
+      "id": "twilightforest:fire_beetle",
+      "required": false,
+      "scan_identity": "Fire Beetle",
+      "aspects": {
+        "bestia": 2,
+        "ignis": 3,
+        "machina": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/giant_miner",
+      "id": "twilightforest:giant_miner",
+      "required": false,
+      "scan_identity": "Giant Miner",
+      "aspects": {
+        "bestia": 8,
+        "terra": 6,
+        "perfodio": 4,
+        "metallum": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/harbinger_cube",
+      "id": "twilightforest:harbinger_cube",
+      "required": false,
+      "scan_identity": "Harbinger Cube",
+      "aspects": {
+        "alienis": 6,
+        "vacuos": 4,
+        "spiritus": 4,
+        "tenebrae": 3
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/hedge_spider",
+      "id": "twilightforest:hedge_spider",
+      "required": false,
+      "scan_identity": "Hedge Spider",
+      "aspects": {
+        "bestia": 2,
+        "perditio": 2,
+        "herba": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/helmet_crab",
+      "id": "twilightforest:helmet_crab",
+      "required": false,
+      "scan_identity": "Helmet Crab",
+      "aspects": {
+        "bestia": 2,
+        "aqua": 2,
+        "tutamen": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/hostile_wolf",
+      "id": "twilightforest:hostile_wolf",
+      "required": false,
+      "scan_identity": "Hostile Wolf",
+      "aspects": {
+        "bestia": 3,
+        "fames": 2,
+        "telum": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/hydra",
+      "id": "twilightforest:hydra",
+      "required": false,
+      "scan_identity": "Hydra",
+      "aspects": {
+        "bestia": 12,
+        "ignis": 8,
+        "fames": 6,
+        "corpus": 5
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/ice_crystal",
+      "id": "twilightforest:ice_crystal",
+      "required": false,
+      "scan_identity": "Ice Crystal",
+      "aspects": {
+        "gelum": 3,
+        "vitreus": 2,
+        "praecantatio": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/king_spider",
+      "id": "twilightforest:king_spider",
+      "required": false,
+      "scan_identity": "King Spider",
+      "aspects": {
+        "bestia": 4,
+        "perditio": 3,
+        "telum": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/knight_phantom",
+      "id": "twilightforest:knight_phantom",
+      "required": false,
+      "scan_identity": "Knight Phantom",
+      "aspects": {
+        "mortuus": 5,
+        "spiritus": 5,
+        "metallum": 4,
+        "telum": 3,
+        "exanimis": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/kobold",
+      "id": "twilightforest:kobold",
+      "required": false,
+      "scan_identity": "Kobold",
+      "aspects": {
+        "bestia": 2,
+        "metallum": 2,
+        "fames": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/lich",
+      "id": "twilightforest:lich",
+      "required": false,
+      "scan_identity": "Lich",
+      "aspects": {
+        "mortuus": 10,
+        "praecantatio": 8,
+        "spiritus": 6,
+        "exanimis": 5,
+        "humanus": 3
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/lich_minion",
+      "id": "twilightforest:lich_minion",
+      "required": false,
+      "scan_identity": "Lich Minion",
+      "aspects": {
+        "mortuus": 3,
+        "exanimis": 2,
+        "spiritus": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/lower_goblin_knight",
+      "id": "twilightforest:lower_goblin_knight",
+      "required": false,
+      "scan_identity": "Lower Goblin Knight",
+      "aspects": {
+        "bestia": 3,
+        "metallum": 3,
+        "telum": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/loyal_zombie",
+      "id": "twilightforest:loyal_zombie",
+      "required": false,
+      "scan_identity": "Loyal Zombie",
+      "aspects": {
+        "mortuus": 3,
+        "exanimis": 2,
+        "humanus": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/maze_slime",
+      "id": "twilightforest:maze_slime",
+      "required": false,
+      "scan_identity": "Maze Slime",
+      "aspects": {
+        "limus": 3,
+        "aqua": 2,
+        "perditio": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/minoshroom",
+      "id": "twilightforest:minoshroom",
+      "required": false,
+      "scan_identity": "Minoshroom",
+      "aspects": {
+        "bestia": 7,
+        "telum": 4,
+        "corpus": 4,
+        "fames": 3
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/minotaur",
+      "id": "twilightforest:minotaur",
+      "required": false,
+      "scan_identity": "Minotaur",
+      "aspects": {
+        "bestia": 5,
+        "telum": 3,
+        "corpus": 3,
+        "fames": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/mist_wolf",
+      "id": "twilightforest:mist_wolf",
+      "required": false,
+      "scan_identity": "Mist Wolf",
+      "aspects": {
+        "bestia": 3,
+        "aer": 3,
+        "tenebrae": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/mosquito_swarm",
+      "id": "twilightforest:mosquito_swarm",
+      "required": false,
+      "scan_identity": "Mosquito Swarm",
+      "aspects": {
+        "bestia": 1,
+        "aer": 2,
+        "fames": 1,
+        "venenum": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/naga",
+      "id": "twilightforest:naga",
+      "required": false,
+      "scan_identity": "Naga",
+      "aspects": {
+        "bestia": 8,
+        "motus": 5,
+        "telum": 3,
+        "terra": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/penguin",
+      "id": "twilightforest:penguin",
+      "required": false,
+      "scan_identity": "Penguin",
+      "aspects": {
+        "bestia": 2,
+        "gelum": 2,
+        "aqua": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/pinch_beetle",
+      "id": "twilightforest:pinch_beetle",
+      "required": false,
+      "scan_identity": "Pinch Beetle",
+      "aspects": {
+        "bestia": 2,
+        "machina": 2,
+        "metallum": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/quest_ram",
+      "id": "twilightforest:quest_ram",
+      "required": false,
+      "scan_identity": "Quest Ram",
+      "aspects": {
+        "bestia": 3,
+        "lucrum": 3,
+        "pannus": 2,
+        "ordo": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/raven",
+      "id": "twilightforest:raven",
+      "required": false,
+      "scan_identity": "Raven",
+      "aspects": {
+        "volatus": 3,
+        "tenebrae": 2,
+        "bestia": 2,
+        "aer": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/redcap",
+      "id": "twilightforest:redcap",
+      "required": false,
+      "scan_identity": "Redcap",
+      "aspects": {
+        "bestia": 3,
+        "telum": 2,
+        "perditio": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/redcap_sapper",
+      "id": "twilightforest:redcap_sapper",
+      "required": false,
+      "scan_identity": "Redcap Sapper",
+      "aspects": {
+        "bestia": 3,
+        "machina": 2,
+        "telum": 2,
+        "perditio": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/rising_zombie",
+      "id": "twilightforest:rising_zombie",
+      "required": false,
+      "scan_identity": "Zombie",
+      "aspects": {
+        "mortuus": 3,
+        "exanimis": 2,
+        "terra": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/skeleton_druid",
+      "id": "twilightforest:skeleton_druid",
+      "required": false,
+      "scan_identity": "Skeleton Druid",
+      "aspects": {
+        "mortuus": 4,
+        "praecantatio": 3,
+        "herba": 2,
+        "exanimis": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/slime_beetle",
+      "id": "twilightforest:slime_beetle",
+      "required": false,
+      "scan_identity": "Slime Beetle",
+      "aspects": {
+        "bestia": 2,
+        "aqua": 2,
+        "limus": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/snow_guardian",
+      "id": "twilightforest:snow_guardian",
+      "required": false,
+      "scan_identity": "Snow Guardian",
+      "aspects": {
+        "gelum": 4,
+        "tutamen": 3,
+        "machina": 2,
+        "praecantatio": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/snow_queen",
+      "id": "twilightforest:snow_queen",
+      "required": false,
+      "scan_identity": "Snow Queen",
+      "aspects": {
+        "gelum": 12,
+        "tenebrae": 8,
+        "praecantatio": 6,
+        "spiritus": 5,
+        "aqua": 4
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/squirrel",
+      "id": "twilightforest:squirrel",
+      "required": false,
+      "scan_identity": "Squirrel",
+      "aspects": {
+        "bestia": 1,
+        "motus": 2,
+        "arbor": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/stable_ice_core",
+      "id": "twilightforest:stable_ice_core",
+      "required": false,
+      "scan_identity": "Stable Ice Core",
+      "aspects": {
+        "gelum": 3,
+        "vitreus": 2,
+        "ordo": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/swarm_spider",
+      "id": "twilightforest:swarm_spider",
+      "required": false,
+      "scan_identity": "Swarm Spider",
+      "aspects": {
+        "bestia": 2,
+        "perditio": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/tiny_bird",
+      "id": "twilightforest:tiny_bird",
+      "required": false,
+      "scan_identity": "Tiny Bird",
+      "aspects": {
+        "volatus": 2,
+        "bestia": 1,
+        "aer": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/towerwood_borer",
+      "id": "twilightforest:towerwood_borer",
+      "required": false,
+      "scan_identity": "Towerwood Borer",
+      "aspects": {
+        "bestia": 2,
+        "arbor": 2,
+        "perditio": 2,
+        "machina": 1
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/troll",
+      "id": "twilightforest:troll",
+      "required": false,
+      "scan_identity": "Troll",
+      "aspects": {
+        "bestia": 6,
+        "terra": 4,
+        "telum": 3,
+        "corpus": 3
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/unstable_ice_core",
+      "id": "twilightforest:unstable_ice_core",
+      "required": false,
+      "scan_identity": "Unstable Ice Core",
+      "aspects": {
+        "gelum": 4,
+        "vitreus": 2,
+        "perditio": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/upper_goblin_knight",
+      "id": "twilightforest:upper_goblin_knight",
+      "required": false,
+      "scan_identity": "Upper Goblin Knight",
+      "aspects": {
+        "bestia": 4,
+        "metallum": 3,
+        "telum": 3
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/ur_ghast",
+      "id": "twilightforest:ur_ghast",
+      "required": false,
+      "scan_identity": "Ur-Ghast",
+      "aspects": {
+        "spiritus": 10,
+        "ignis": 6,
+        "tenebrae": 5,
+        "corpus": 4
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/winter_wolf",
+      "id": "twilightforest:winter_wolf",
+      "required": false,
+      "scan_identity": "Winter Wolf",
+      "aspects": {
+        "bestia": 4,
+        "gelum": 3,
+        "fames": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/wraith",
+      "id": "twilightforest:wraith",
+      "required": false,
+      "scan_identity": "Wraith",
+      "aspects": {
+        "spiritus": 5,
+        "tenebrae": 4,
+        "mortuus": 3,
+        "aer": 2
+      }
+    },
+    {
+      "rule_id": "thaumcraft:entity_rule/twilightforest/yeti",
+      "id": "twilightforest:yeti",
+      "required": false,
+      "scan_identity": "Yeti",
+      "aspects": {
+        "bestia": 5,
+        "gelum": 3,
+        "pannus": 2,
+        "corpus": 2
+      }
+    }
+  ]
+}
