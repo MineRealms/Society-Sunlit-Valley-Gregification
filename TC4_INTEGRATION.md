@@ -291,3 +291,16 @@ KubeJS 用法（schema 已核对）：`e.recipes.thaumcraft.crucible(result, cat
   → 10. 坩埚（法杖+炼药锅）→ 13. 闪耀之光 / 14. 炼金煤 / 15. 神秘锭
   → 16. 神秘镐；12. 奥术工作台（法杖+桌子）→ 17. 揭示之护目镜；
 - 校验：SNBT 平衡 ✅、53 ID 全局唯一 ✅、17 依赖完整 ✅、文本内联中文（无 lang 依赖）✅、坐标无重叠 ✅。
+
+### 8.8 暮色森林要素桥接（2026-09-16）
+
+- **参考来源**：`G:\DOWNLOAD-EDGE\TwilightAspects.zs`（1.7.10 的 TC4 扩展脚本，ZenScript/ModTweaker 语法）；
+- **产出**：`kubejs/data/thaumcraft/object_aspects/twilightforest_aspects.json`（**203 个条目**，direct）；
+- **映射方式**：1.7.10 旧 ID → 1.20.1 新 ID（逐条核对 TF jar 的 item/block 清单），数值取自参考脚本；
+  - 修正参考脚本拼写：`cognito` → `cognitio`、`viniculum` → `vinculum`；
+  - 参考脚本未覆盖的 1.20.1 新物品（迷你蘑菇牛/骑士幽灵/雪怪奖杯、carminite_reactor、盾牌等）按同风格补值；
+  - 奖杯 meta 0~4 → 娜迦/巫妖/九头蛇/暮色恶魂/冰雪女王；
+  - 植物（TFPlant 各 meta）按主题对应到 1.20.1 方块（moss_patch/clover_patch/fiddlehead/mayapple/fallen_leaves/root_strand/mushgloom/torchberry_plant）；
+  - 魔法原木（TFMagicLogSpecial 0~3 → time/transformation/mining/sorting_log，含 arbor 4 + praecantatio 2 + 特性要素）；
+  - 普通原木/树苗/树叶仍由原版标签（`minecraft:logs` 等）覆盖，不重复添加；
+- **校验**：203 个物品全部存在于 TF jar（item/block 清单）；所有要素名均在 TC4 端口合法集（48 种）内 ✅。

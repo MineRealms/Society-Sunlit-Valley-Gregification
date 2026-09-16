@@ -1,0 +1,1086 @@
+{
+  "direct": {
+    "twilightforest:alpha_yeti_fur": {
+      "bestia": 6,
+      "ignis": 4,
+      "pannus": 4
+    },
+    "twilightforest:alpha_yeti_trophy": {
+      "victus": 6,
+      "bestia": 6,
+      "spiritus": 6,
+      "gelum": 3
+    },
+    "twilightforest:arctic_boots": {
+      "bestia": 6,
+      "ignis": 4,
+      "pannus": 3,
+      "tutamen": 3
+    },
+    "twilightforest:arctic_chestplate": {
+      "bestia": 12,
+      "ignis": 9,
+      "pannus": 6,
+      "tutamen": 6
+    },
+    "twilightforest:arctic_fur": {
+      "bestia": 2,
+      "ignis": 1,
+      "pannus": 1,
+      "tutamen": 1
+    },
+    "twilightforest:arctic_helmet": {
+      "bestia": 7,
+      "ignis": 4,
+      "pannus": 3,
+      "tutamen": 3
+    },
+    "twilightforest:arctic_leggings": {
+      "bestia": 10,
+      "ignis": 8,
+      "pannus": 5,
+      "tutamen": 5
+    },
+    "twilightforest:armor_shard": {
+      "metallum": 1
+    },
+    "twilightforest:armor_shard_cluster": {
+      "metallum": 8
+    },
+    "twilightforest:aurora_block": {
+      "gelum": 2,
+      "vitreus": 2
+    },
+    "twilightforest:aurora_pillar": {
+      "gelum": 2,
+      "vitreus": 2
+    },
+    "twilightforest:aurora_slab": {
+      "gelum": 1,
+      "vitreus": 1
+    },
+    "twilightforest:auroralized_glass": {
+      "gelum": 1,
+      "vitreus": 1,
+      "lux": 1
+    },
+    "twilightforest:block_and_chain": {
+      "metallum": 64,
+      "telum": 5
+    },
+    "twilightforest:blue_castle_rune_brick": {
+      "terra": 2,
+      "ordo": 3,
+      "praecantatio": 2,
+      "sensus": 1
+    },
+    "twilightforest:blue_force_field": {
+      "alienis": 2,
+      "tutamen": 5,
+      "machina": 2,
+      "sensus": 1
+    },
+    "twilightforest:borer_essence": {
+      "spiritus": 4,
+      "bestia": 2,
+      "arbor": 2,
+      "praecantatio": 2
+    },
+    "twilightforest:brown_thorns": {
+      "herba": 3,
+      "telum": 3,
+      "mortuus": 1
+    },
+    "twilightforest:burnt_thorns": {
+      "herba": 2,
+      "aer": 2,
+      "ignis": 2
+    },
+    "twilightforest:carminite": {
+      "spiritus": 8,
+      "potentia": 5,
+      "bestia": 5,
+      "praecantatio": 5,
+      "machina": 5,
+      "exanimis": 4
+    },
+    "twilightforest:carminite_reactor": {
+      "machina": 3,
+      "potentia": 3,
+      "ignis": 2,
+      "vitreus": 1
+    },
+    "twilightforest:castle_brick": {
+      "terra": 2,
+      "ordo": 3
+    },
+    "twilightforest:charm_of_keeping_1": {
+      "lucrum": 4,
+      "iter": 2,
+      "mortuus": 1
+    },
+    "twilightforest:charm_of_keeping_2": {
+      "lucrum": 7,
+      "iter": 5,
+      "mortuus": 4
+    },
+    "twilightforest:charm_of_keeping_3": {
+      "lucrum": 8,
+      "iter": 8,
+      "mortuus": 7
+    },
+    "twilightforest:charm_of_life_1": {
+      "lucrum": 4,
+      "victus": 2,
+      "sano": 2
+    },
+    "twilightforest:charm_of_life_2": {
+      "lucrum": 7,
+      "victus": 5,
+      "sano": 5
+    },
+    "twilightforest:cicada": {
+      "sensus": 2
+    },
+    "twilightforest:cicada_jar": {
+      "sensus": 2,
+      "vitreus": 1,
+      "vacuos": 1
+    },
+    "twilightforest:clover_patch": {
+      "herba": 1
+    },
+    "twilightforest:cooked_meef": {
+      "corpus": 4,
+      "victus": 2,
+      "ignis": 1,
+      "bestia": 1
+    },
+    "twilightforest:cooked_venison": {
+      "corpus": 4,
+      "fames": 4,
+      "fabrico": 1
+    },
+    "twilightforest:cracked_castle_brick": {
+      "terra": 2,
+      "ordo": 3,
+      "perditio": 1
+    },
+    "twilightforest:cracked_deadrock": {
+      "terra": 2,
+      "mortuus": 2,
+      "perditio": 1
+    },
+    "twilightforest:cracked_mazestone": {
+      "terra": 2,
+      "vinculum": 1,
+      "tutamen": 1,
+      "perditio": 1
+    },
+    "twilightforest:cracked_towerwood": {
+      "arbor": 2,
+      "machina": 2,
+      "perditio": 1
+    },
+    "twilightforest:cracked_underbrick": {
+      "terra": 2,
+      "tenebrae": 2,
+      "perditio": 1
+    },
+    "twilightforest:crumble_horn": {
+      "perditio": 8,
+      "bestia": 2
+    },
+    "twilightforest:cube_of_annihilation": {
+      "vacuos": 6,
+      "alienis": 5,
+      "telum": 4,
+      "perditio": 8
+    },
+    "twilightforest:cut_mazestone": {
+      "terra": 2,
+      "vinculum": 1,
+      "tutamen": 1,
+      "ordo": 1
+    },
+    "twilightforest:deadrock": {
+      "terra": 2,
+      "mortuus": 2,
+      "aer": 1
+    },
+    "twilightforest:decorative_mazestone": {
+      "terra": 2,
+      "vinculum": 1,
+      "tutamen": 1,
+      "praecantatio": 1
+    },
+    "twilightforest:diamond_minotaur_axe": {
+      "lucrum": 8,
+      "vitreus": 6,
+      "instrumentum": 4,
+      "telum": 4
+    },
+    "twilightforest:encased_towerwood": {
+      "arbor": 2,
+      "machina": 2
+    },
+    "twilightforest:ender_bow": {
+      "telum": 3,
+      "iter": 3,
+      "permutatio": 3,
+      "pannus": 2,
+      "volatus": 1,
+      "alienis": 3
+    },
+    "twilightforest:experiment_115": {
+      "fames": 2,
+      "machina": 1
+    },
+    "twilightforest:fallen_leaves": {
+      "herba": 2,
+      "tenebrae": 1
+    },
+    "twilightforest:fiddlehead": {
+      "herba": 2,
+      "praecantatio": 1
+    },
+    "twilightforest:fiery_blood": {
+      "ignis": 8,
+      "victus": 8,
+      "praecantatio": 4
+    },
+    "twilightforest:fiery_boots": {
+      "ignis": 5,
+      "victus": 4,
+      "praecantatio": 4,
+      "metallum": 4,
+      "tutamen": 2
+    },
+    "twilightforest:fiery_chestplate": {
+      "ignis": 9,
+      "victus": 8,
+      "praecantatio": 8,
+      "metallum": 8,
+      "tutamen": 9
+    },
+    "twilightforest:fiery_helmet": {
+      "ignis": 6,
+      "victus": 5,
+      "praecantatio": 5,
+      "metallum": 3,
+      "tutamen": 4
+    },
+    "twilightforest:fiery_ingot": {
+      "ignis": 2,
+      "victus": 2,
+      "praecantatio": 2,
+      "metallum": 2
+    },
+    "twilightforest:fiery_leggings": {
+      "ignis": 9,
+      "victus": 8,
+      "praecantatio": 8,
+      "metallum": 7,
+      "tutamen": 7
+    },
+    "twilightforest:fiery_pickaxe": {
+      "ignis": 6,
+      "victus": 5,
+      "praecantatio": 5,
+      "metallum": 3,
+      "perfodio": 5
+    },
+    "twilightforest:fiery_sword": {
+      "ignis": 4,
+      "victus": 3,
+      "praecantatio": 3,
+      "metallum": 2,
+      "telum": 5
+    },
+    "twilightforest:fiery_tears": {
+      "ignis": 8,
+      "spiritus": 8,
+      "praecantatio": 4,
+      "exanimis": 4,
+      "vitium": 2
+    },
+    "twilightforest:firefly": {
+      "lux": 1,
+      "volatus": 1
+    },
+    "twilightforest:firefly_jar": {
+      "lux": 2,
+      "volatus": 1,
+      "vitreus": 1,
+      "vacuos": 1
+    },
+    "twilightforest:fluffy_cloud": {
+      "aer": 1,
+      "aqua": 3,
+      "volatus": 2,
+      "tempestas": 2
+    },
+    "twilightforest:giant_cobblestone": {
+      "terra": 4,
+      "perditio": 4
+    },
+    "twilightforest:giant_leaves": {
+      "herba": 4
+    },
+    "twilightforest:giant_log": {
+      "arbor": 16
+    },
+    "twilightforest:giant_obsidian": {
+      "ignis": 8,
+      "tenebrae": 4,
+      "terra": 8
+    },
+    "twilightforest:giant_pickaxe": {
+      "terra": 8,
+      "perditio": 8,
+      "perfodio": 8,
+      "arbor": 4
+    },
+    "twilightforest:giant_sword": {
+      "telum": 8,
+      "terra": 4,
+      "perditio": 4
+    },
+    "twilightforest:glass_sword": {
+      "vitreus": 8,
+      "telum": 7
+    },
+    "twilightforest:gold_minotaur_axe": {
+      "lucrum": 8,
+      "vitreus": 6,
+      "instrumentum": 4,
+      "telum": 4
+    },
+    "twilightforest:green_force_field": {
+      "alienis": 2,
+      "tutamen": 5,
+      "machina": 2,
+      "sensus": 1
+    },
+    "twilightforest:green_thorns": {
+      "herba": 4,
+      "telum": 3
+    },
+    "twilightforest:hedge": {
+      "herba": 1,
+      "telum": 1
+    },
+    "twilightforest:huge_lily_pad": {
+      "aqua": 4,
+      "herba": 4
+    },
+    "twilightforest:huge_mushgloom": {
+      "herba": 3,
+      "tenebrae": 2,
+      "lux": 2
+    },
+    "twilightforest:huge_mushgloom_stem": {
+      "herba": 2,
+      "tenebrae": 1
+    },
+    "twilightforest:huge_stalk": {
+      "herba": 5,
+      "fames": 1,
+      "aqua": 2
+    },
+    "twilightforest:huge_water_lily": {
+      "aqua": 2,
+      "herba": 4,
+      "sensus": 3
+    },
+    "twilightforest:hydra_chop": {
+      "corpus": 6,
+      "fames": 6,
+      "victus": 4
+    },
+    "twilightforest:hydra_trophy": {
+      "victus": 6,
+      "bestia": 6,
+      "spiritus": 6,
+      "exanimis": 3
+    },
+    "twilightforest:ice_bomb": {
+      "gelum": 8,
+      "perditio": 4,
+      "telum": 3
+    },
+    "twilightforest:ice_bow": {
+      "telum": 3,
+      "gelum": 3,
+      "bestia": 2,
+      "pannus": 2,
+      "volatus": 1
+    },
+    "twilightforest:ice_sword": {
+      "gelum": 6,
+      "vitreus": 4,
+      "telum": 5
+    },
+    "twilightforest:infested_towerwood": {
+      "arbor": 2,
+      "machina": 2,
+      "perditio": 1
+    },
+    "twilightforest:ironwood_axe": {
+      "metallum": 6,
+      "arbor": 5,
+      "praecantatio": 4,
+      "fabrico": 4,
+      "instrumentum": 2,
+      "lucrum": 1
+    },
+    "twilightforest:ironwood_boots": {
+      "metallum": 7,
+      "praecantatio": 5,
+      "fabrico": 5,
+      "arbor": 4,
+      "tutamen": 2,
+      "volatus": 1
+    },
+    "twilightforest:ironwood_chestplate": {
+      "metallum": 8,
+      "praecantatio": 8,
+      "fabrico": 8,
+      "arbor": 8,
+      "tutamen": 7
+    },
+    "twilightforest:ironwood_helmet": {
+      "metallum": 8,
+      "praecantatio": 6,
+      "fabrico": 6,
+      "arbor": 5,
+      "tutamen": 2,
+      "aqua": 1
+    },
+    "twilightforest:ironwood_hoe": {
+      "metallum": 5,
+      "arbor": 4,
+      "meto": 4,
+      "praecantatio": 3,
+      "fabrico": 2
+    },
+    "twilightforest:ironwood_ingot": {
+      "metallum": 4,
+      "praecantatio": 1,
+      "fabrico": 2,
+      "arbor": 1
+    },
+    "twilightforest:ironwood_leggings": {
+      "metallum": 8,
+      "praecantatio": 8,
+      "fabrico": 8,
+      "arbor": 7,
+      "tutamen": 5
+    },
+    "twilightforest:ironwood_pickaxe": {
+      "metallum": 6,
+      "arbor": 5,
+      "praecantatio": 4,
+      "fabrico": 4,
+      "perfodio": 3,
+      "instrumentum": 1
+    },
+    "twilightforest:ironwood_shovel": {
+      "metallum": 4,
+      "arbor": 3,
+      "instrumentum": 2,
+      "praecantatio": 2,
+      "fabrico": 2,
+      "terra": 1
+    },
+    "twilightforest:ironwood_sword": {
+      "metallum": 5,
+      "praecantatio": 3,
+      "fabrico": 2,
+      "arbor": 2,
+      "telum": 2,
+      "aer": 1
+    },
+    "twilightforest:knight_phantom_trophy": {
+      "victus": 6,
+      "bestia": 6,
+      "spiritus": 6,
+      "exanimis": 3
+    },
+    "twilightforest:knightmetal_axe": {
+      "metallum": 7,
+      "instrumentum": 4,
+      "fabrico": 3,
+      "arbor": 2
+    },
+    "twilightforest:knightmetal_block": {
+      "metallum": 64,
+      "fabrico": 9
+    },
+    "twilightforest:knightmetal_boots": {
+      "metallum": 8,
+      "fabrico": 4,
+      "tutamen": 4
+    },
+    "twilightforest:knightmetal_chestplate": {
+      "metallum": 12,
+      "fabrico": 8,
+      "tutamen": 8
+    },
+    "twilightforest:knightmetal_helmet": {
+      "metallum": 9,
+      "fabrico": 5,
+      "tutamen": 4
+    },
+    "twilightforest:knightmetal_ingot": {
+      "metallum": 8,
+      "fabrico": 1
+    },
+    "twilightforest:knightmetal_leggings": {
+      "metallum": 11,
+      "fabrico": 7,
+      "tutamen": 7
+    },
+    "twilightforest:knightmetal_pickaxe": {
+      "metallum": 7,
+      "perfodio": 4,
+      "fabrico": 3,
+      "arbor": 2
+    },
+    "twilightforest:knightmetal_ring": {
+      "metallum": 8,
+      "fabrico": 4
+    },
+    "twilightforest:knightmetal_shield": {
+      "metallum": 6,
+      "tutamen": 4,
+      "fabrico": 2
+    },
+    "twilightforest:knightmetal_sword": {
+      "metallum": 6,
+      "telum": 4,
+      "fabrico": 2,
+      "arbor": 1
+    },
+    "twilightforest:lamp_of_cinders": {
+      "ignis": 3,
+      "praecantatio": 5,
+      "lucrum": 2
+    },
+    "twilightforest:lich_trophy": {
+      "victus": 6,
+      "bestia": 6,
+      "spiritus": 6,
+      "motus": 3
+    },
+    "twilightforest:lifedrain_scepter": {
+      "praecantatio": 2,
+      "victus": 2,
+      "fames": 3,
+      "bestia": 2,
+      "venenum": 2,
+      "tenebrae": 1
+    },
+    "twilightforest:liveroot": {
+      "arbor": 2,
+      "victus": 2,
+      "praecantatio": 1
+    },
+    "twilightforest:liveroot_block": {
+      "arbor": 2,
+      "victus": 2
+    },
+    "twilightforest:magic_beans": {
+      "praecantatio": 7,
+      "herba": 3,
+      "victus": 2
+    },
+    "twilightforest:magic_map": {
+      "sensus": 8,
+      "cognitio": 8,
+      "praecantatio": 4
+    },
+    "twilightforest:magic_map_focus": {
+      "sensus": 2,
+      "praecantatio": 4
+    },
+    "twilightforest:mayapple": {
+      "herba": 1,
+      "mortuus": 1
+    },
+    "twilightforest:maze_map": {
+      "sensus": 8,
+      "cognitio": 8,
+      "praecantatio": 4,
+      "ordo": 4
+    },
+    "twilightforest:maze_map_focus": {
+      "sensus": 2,
+      "praecantatio": 4,
+      "ordo": 4
+    },
+    "twilightforest:maze_wafer": {
+      "fames": 2
+    },
+    "twilightforest:mazebreaker_pickaxe": {
+      "praecantatio": 9,
+      "instrumentum": 8,
+      "perfodio": 5,
+      "vitreus": 2,
+      "terra": 2,
+      "lucrum": 2
+    },
+    "twilightforest:mazestone": {
+      "terra": 2,
+      "vinculum": 1,
+      "tutamen": 1
+    },
+    "twilightforest:mazestone_border": {
+      "terra": 2,
+      "vinculum": 1,
+      "tutamen": 1
+    },
+    "twilightforest:mazestone_brick": {
+      "terra": 2,
+      "vinculum": 1,
+      "tutamen": 1
+    },
+    "twilightforest:mazestone_mosaic": {
+      "terra": 2,
+      "vinculum": 1,
+      "tutamen": 1,
+      "praecantatio": 1
+    },
+    "twilightforest:meef_stroganoff": {
+      "fames": 4,
+      "corpus": 4,
+      "bestia": 2
+    },
+    "twilightforest:mining_log": {
+      "arbor": 4,
+      "praecantatio": 2,
+      "iter": 1,
+      "lucrum": 2
+    },
+    "twilightforest:minoshroom_trophy": {
+      "victus": 6,
+      "bestia": 6,
+      "spiritus": 6,
+      "fames": 2
+    },
+    "twilightforest:moonworm": {
+      "tenebrae": 2,
+      "lux": 2
+    },
+    "twilightforest:moonworm_queen": {
+      "lux": 8,
+      "praecantatio": 1
+    },
+    "twilightforest:moss_patch": {
+      "herba": 1
+    },
+    "twilightforest:mossy_castle_brick": {
+      "terra": 2,
+      "ordo": 3,
+      "tenebrae": 1
+    },
+    "twilightforest:mossy_mazestone": {
+      "terra": 2,
+      "vinculum": 1,
+      "tutamen": 1,
+      "herba": 1
+    },
+    "twilightforest:mossy_towerwood": {
+      "arbor": 2,
+      "machina": 2,
+      "herba": 1
+    },
+    "twilightforest:mossy_underbrick": {
+      "terra": 2,
+      "tenebrae": 2,
+      "herba": 1
+    },
+    "twilightforest:mushgloom": {
+      "herba": 2,
+      "tenebrae": 1,
+      "lux": 1
+    },
+    "twilightforest:naga_chestplate": {
+      "tutamen": 6,
+      "motus": 2
+    },
+    "twilightforest:naga_leggings": {
+      "tutamen": 5,
+      "motus": 2
+    },
+    "twilightforest:naga_scale": {
+      "tutamen": 2,
+      "motus": 2
+    },
+    "twilightforest:naga_trophy": {
+      "victus": 6,
+      "bestia": 6,
+      "spiritus": 6,
+      "ignis": 3
+    },
+    "twilightforest:nagastone": {
+      "terra": 2,
+      "motus": 2
+    },
+    "twilightforest:orange_force_field": {
+      "alienis": 2,
+      "tutamen": 5,
+      "machina": 2,
+      "sensus": 1
+    },
+    "twilightforest:ore_magnet": {
+      "lucrum": 8,
+      "metallum": 8,
+      "instrumentum": 6,
+      "motus": 6
+    },
+    "twilightforest:ore_map": {
+      "metallum": 8,
+      "lucrum": 8,
+      "vitreus": 8
+    },
+    "twilightforest:ore_meter": {
+      "potentia": 2,
+      "lucrum": 3,
+      "praecantatio": 1
+    },
+    "twilightforest:peacock_feather_fan": {
+      "aer": 8,
+      "volatus": 8,
+      "motus": 6
+    },
+    "twilightforest:phantom_chestplate": {
+      "metallum": 12,
+      "tutamen": 12,
+      "exanimis": 12
+    },
+    "twilightforest:phantom_helmet": {
+      "metallum": 6,
+      "tutamen": 6,
+      "exanimis": 6
+    },
+    "twilightforest:pink_castle_rune_brick": {
+      "terra": 2,
+      "ordo": 3,
+      "praecantatio": 2,
+      "sensus": 1
+    },
+    "twilightforest:pink_force_field": {
+      "alienis": 2,
+      "tutamen": 5,
+      "machina": 2,
+      "sensus": 1
+    },
+    "twilightforest:rainy_cloud": {
+      "aer": 1,
+      "aqua": 3,
+      "volatus": 1,
+      "tempestas": 2
+    },
+    "twilightforest:raven_feather": {
+      "volatus": 2,
+      "aer": 1,
+      "tenebrae": 1
+    },
+    "twilightforest:raw_ironwood": {
+      "metallum": 5,
+      "arbor": 2,
+      "victus": 2,
+      "praecantatio": 1
+    },
+    "twilightforest:raw_meef": {
+      "corpus": 4,
+      "bestia": 2,
+      "victus": 2
+    },
+    "twilightforest:raw_venison": {
+      "corpus": 4,
+      "fames": 2,
+      "bestia": 2
+    },
+    "twilightforest:root": {
+      "arbor": 2
+    },
+    "twilightforest:root_strand": {
+      "herba": 2,
+      "praecantatio": 1
+    },
+    "twilightforest:seeker_bow": {
+      "telum": 4,
+      "arbor": 2,
+      "alienis": 3,
+      "sensus": 3,
+      "pannus": 2,
+      "volatus": 2
+    },
+    "twilightforest:shield": {
+      "vinculum": 1,
+      "praecantatio": 1,
+      "tutamen": 1
+    },
+    "twilightforest:slider": {
+      "motus": 4,
+      "vinculum": 2,
+      "arbor": 2
+    },
+    "twilightforest:snow_queen_trophy": {
+      "victus": 6,
+      "bestia": 6,
+      "spiritus": 6,
+      "gelum": 3
+    },
+    "twilightforest:snowy_cloud": {
+      "aer": 1,
+      "aqua": 2,
+      "volatus": 1,
+      "tempestas": 1,
+      "gelum": 1
+    },
+    "twilightforest:sorting_log": {
+      "arbor": 4,
+      "praecantatio": 2,
+      "iter": 1,
+      "ordo": 2
+    },
+    "twilightforest:steeleaf_axe": {
+      "herba": 4,
+      "metallum": 3,
+      "instrumentum": 4,
+      "praecantatio": 2
+    },
+    "twilightforest:steeleaf_boots": {
+      "herba": 4,
+      "metallum": 4,
+      "telum": 2,
+      "praecantatio": 2
+    },
+    "twilightforest:steeleaf_chestplate": {
+      "herba": 8,
+      "metallum": 8,
+      "tutamen": 7,
+      "praecantatio": 2
+    },
+    "twilightforest:steeleaf_helmet": {
+      "herba": 6,
+      "metallum": 5,
+      "telum": 3,
+      "praecantatio": 2
+    },
+    "twilightforest:steeleaf_hoe": {
+      "herba": 3,
+      "metallum": 2,
+      "meto": 2
+    },
+    "twilightforest:steeleaf_ingot": {
+      "herba": 4,
+      "metallum": 2
+    },
+    "twilightforest:steeleaf_leggings": {
+      "herba": 8,
+      "metallum": 7,
+      "tutamen": 6,
+      "praecantatio": 2
+    },
+    "twilightforest:steeleaf_pickaxe": {
+      "herba": 4,
+      "metallum": 3,
+      "perfodio": 4,
+      "lucrum": 2,
+      "praecantatio": 2
+    },
+    "twilightforest:steeleaf_shovel": {
+      "herba": 2,
+      "metallum": 2,
+      "instrumentum": 4,
+      "praecantatio": 2
+    },
+    "twilightforest:steeleaf_sword": {
+      "herba": 3,
+      "metallum": 2,
+      "telum": 4,
+      "praecantatio": 2,
+      "lucrum": 2
+    },
+    "twilightforest:stronghold_shield": {
+      "tutamen": 4,
+      "machina": 2,
+      "praecantatio": 2
+    },
+    "twilightforest:thick_castle_brick": {
+      "terra": 2,
+      "ordo": 3
+    },
+    "twilightforest:thorn_rose": {
+      "aer": 1,
+      "herba": 3,
+      "sensus": 2
+    },
+    "twilightforest:time_log": {
+      "arbor": 4,
+      "praecantatio": 2,
+      "iter": 1,
+      "alienis": 2
+    },
+    "twilightforest:torchberries": {
+      "herba": 2,
+      "lux": 2
+    },
+    "twilightforest:torchberry_plant": {
+      "herba": 2,
+      "lux": 2
+    },
+    "twilightforest:tower_key": {
+      "praecantatio": 4,
+      "machina": 4
+    },
+    "twilightforest:towerwood": {
+      "arbor": 2,
+      "machina": 2
+    },
+    "twilightforest:transformation_log": {
+      "arbor": 4,
+      "praecantatio": 2,
+      "bestia": 1,
+      "permutatio": 2
+    },
+    "twilightforest:transformation_powder": {
+      "praecantatio": 8,
+      "permutatio": 4
+    },
+    "twilightforest:triple_bow": {
+      "telum": 9,
+      "arbor": 2,
+      "bestia": 2,
+      "pannus": 6,
+      "volatus": 3
+    },
+    "twilightforest:trollber": {
+      "herba": 3,
+      "fames": 3
+    },
+    "twilightforest:trollsteinn": {
+      "terra": 2,
+      "metallum": 3
+    },
+    "twilightforest:trollvidr": {
+      "herba": 3
+    },
+    "twilightforest:trophy_pedestal": {
+      "lucrum": 6,
+      "bestia": 5
+    },
+    "twilightforest:twilight_portal": {
+      "aqua": 4,
+      "iter": 4,
+      "arbor": 2
+    },
+    "twilightforest:twilight_scepter": {
+      "praecantatio": 2,
+      "alienis": 2,
+      "telum": 2,
+      "iter": 4
+    },
+    "twilightforest:uberous_soil": {
+      "terra": 2,
+      "herba": 4,
+      "victus": 2,
+      "aqua": 1
+    },
+    "twilightforest:uncrafting_table": {
+      "perditio": 2,
+      "permutatio": 2,
+      "fabrico": 2,
+      "arbor": 4
+    },
+    "twilightforest:underbrick": {
+      "terra": 2,
+      "tenebrae": 2
+    },
+    "twilightforest:underbrick_floor": {
+      "terra": 2,
+      "tenebrae": 2
+    },
+    "twilightforest:unripe_trollber": {
+      "herba": 3,
+      "fames": 1
+    },
+    "twilightforest:ur_ghast_trophy": {
+      "victus": 6,
+      "bestia": 6,
+      "spiritus": 9
+    },
+    "twilightforest:violet_castle_rune_brick": {
+      "terra": 2,
+      "ordo": 3,
+      "praecantatio": 2,
+      "sensus": 1
+    },
+    "twilightforest:violet_force_field": {
+      "alienis": 2,
+      "tutamen": 5,
+      "machina": 2,
+      "sensus": 1
+    },
+    "twilightforest:weathered_deadrock": {
+      "terra": 2,
+      "mortuus": 2
+    },
+    "twilightforest:wispy_cloud": {
+      "aer": 1,
+      "aqua": 1,
+      "volatus": 1,
+      "tempestas": 1
+    },
+    "twilightforest:worn_castle_brick": {
+      "terra": 2,
+      "ordo": 3,
+      "aer": 1
+    },
+    "twilightforest:yellow_castle_rune_brick": {
+      "terra": 2,
+      "ordo": 3,
+      "praecantatio": 2,
+      "sensus": 1
+    },
+    "twilightforest:yeti_boots": {
+      "bestia": 8,
+      "ignis": 5,
+      "pannus": 4,
+      "tutamen": 4,
+      "gelum": 1
+    },
+    "twilightforest:yeti_chestplate": {
+      "bestia": 12,
+      "ignis": 8,
+      "pannus": 7,
+      "tutamen": 8,
+      "gelum": 3
+    },
+    "twilightforest:yeti_helmet": {
+      "bestia": 9,
+      "ignis": 6,
+      "pannus": 5,
+      "tutamen": 5,
+      "gelum": 2
+    },
+    "twilightforest:yeti_leggings": {
+      "bestia": 11,
+      "ignis": 8,
+      "pannus": 7,
+      "tutamen": 7,
+      "gelum": 3
+    },
+    "twilightforest:zombie_scepter": {
+      "praecantatio": 2,
+      "exanimis": 3,
+      "perditio": 2,
+      "corpus": 2,
+      "humanus": 1
+    }
+  }
+}
