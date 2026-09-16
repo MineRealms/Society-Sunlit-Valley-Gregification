@@ -19,16 +19,14 @@
 			]
 			icon: "mekanism:metallurgic_infuser"
 			id: "08FE5F3D96A84939"
-			rewards: [
-				{
-					count: 8
-					id: "9FBD809C130636B1"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "650A28DEC2117B7C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
-				id: "E49450A34A627546"
+				id: "0393E6A4848CBBCE"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
@@ -38,19 +36,15 @@
 		}
 		{
 			dependencies: ["08FE5F3D96A84939"]
-			description: [
-				"所有 MEK 机器都离不开钢外壳。钢锭既可来自 &dGT&r，也可在灌注机中用铁锭灌注 &8碳&r 得到。"
-			]
+			description: ["所有 MEK 机器都离不开钢外壳。钢锭既可来自 &dGT&r，也可在灌注机中用铁锭灌注 &8碳&r 得到。"]
 			icon: "mekanism:steel_casing"
 			id: "5E78DFC45939175D"
-			rewards: [
-				{
-					count: 8
-					id: "0C62D0ABB9FA0AA3"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "0C62D0ABB9FA0AA3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "43577D9AF4903198"
 				item: "mekanism:steel_casing"
@@ -62,21 +56,17 @@
 		}
 		{
 			dependencies: ["08FE5F3D96A84939"]
-			description: [
-				"在灌注机中把 &7锇锭&r 灌注 &c红石&r，得到基础控制电路；它是高级电路与众多机器的原料。"
-			]
+			description: ["在灌注机中把 &7锇锭&r 灌注 &c红石&r，得到基础控制电路；它是高级电路与众多机器的原料。"]
 			icon: "mekanism:basic_control_circuit"
 			id: "6E3F3F7059605C5E"
-			rewards: [
-				{
-					count: 8
-					id: "DE74EFEB0D2D9056"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "709C91D8FB15690D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
-				id: "D6724D76757BE48D"
+				id: "3C186F2A9D6478B9"
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
@@ -94,15 +84,13 @@
 				"&9MEK 侧&r：压射（+ 盐酸）→ 提纯（+ 氧气）→ 粉碎 → 富集。"
 			]
 			icon: "gtceu:lv_ore_washer"
-			id: "9766F5058138C272"
-			rewards: [
-				{
-					count: 8
-					id: "538A81F1F7E356F7"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			id: "5ABFFB3F315CC817"
+			rewards: [{
+				count: 8
+				id: "538A81F1F7E356F7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "042C863EE33C78B8"
 				title: "我已了解 GregMek 的双线处理链"
@@ -114,19 +102,15 @@
 		}
 		{
 			dependencies: ["5E78DFC45939175D"]
-			description: [
-				"把矿石与材料富集为更高效的形态。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"
-			]
+			description: ["把矿石与材料富集为更高效的形态。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"]
 			icon: "mekanism:enrichment_chamber"
-			id: "E4EC2EAD7F571950"
-			rewards: [
-				{
-					count: 4
-					id: "3D8401C9D86FF746"
-					item: "mekanism:ingot_osmium"
-					type: "item"
-				}
-			]
+			id: "10A2E317E5475086"
+			rewards: [{
+				count: 4
+				id: "3D8401C9D86FF746"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			tasks: [{
 				id: "18DC5FB15E94DDCA"
 				item: "mekanism:enrichment_chamber"
@@ -138,19 +122,15 @@
 		}
 		{
 			dependencies: ["5E78DFC45939175D"]
-			description: [
-				"把矿石粉碎为两份粉尘。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"
-			]
+			description: ["把矿石粉碎为两份粉尘。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"]
 			icon: "mekanism:crusher"
-			id: "C42D2AB6E9608391"
-			rewards: [
-				{
-					count: 4
-					id: "B221DFE8D70C9012"
-					item: "mekanism:ingot_osmium"
-					type: "item"
-				}
-			]
+			id: "08DBF2A8C8A7A980"
+			rewards: [{
+				count: 4
+				id: "251212678BC6E1BD"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			tasks: [{
 				id: "70EAFC21DD702B32"
 				item: "mekanism:crusher"
@@ -162,21 +142,17 @@
 		}
 		{
 			dependencies: ["5E78DFC45939175D"]
-			description: [
-				"以能量双倍冶炼矿石。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"
-			]
+			description: ["以能量双倍冶炼矿石。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"]
 			icon: "mekanism:energized_smelter"
-			id: "A418D37BF1709306"
-			rewards: [
-				{
-					count: 4
-					id: "CB4A43F954CB0C6D"
-					item: "mekanism:ingot_osmium"
-					type: "item"
-				}
-			]
+			id: "32D8358B1F418AA0"
+			rewards: [{
+				count: 4
+				id: "372791C8CCF3E460"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			tasks: [{
-				id: "B7EECB871EDD5BE3"
+				id: "0E3A994B08809151"
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
@@ -186,21 +162,17 @@
 		}
 		{
 			dependencies: ["5E78DFC45939175D"]
-			description: [
-				"高效切割木材与材料。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"
-			]
+			description: ["高效切割木材与材料。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"]
 			icon: "mekanism:precision_sawmill"
-			id: "B34F666F895AB76B"
-			rewards: [
-				{
-					count: 4
-					id: "7F60EB773A4C8F99"
-					item: "mekanism:ingot_osmium"
-					type: "item"
-				}
-			]
+			id: "21483B6B850A9D77"
+			rewards: [{
+				count: 4
+				id: "7F60EB773A4C8F99"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			tasks: [{
-				id: "880C5FD94A51CB6B"
+				id: "770B2653AD322253"
 				item: "mekanism:precision_sawmill"
 				type: "item"
 			}]
@@ -210,19 +182,15 @@
 		}
 		{
 			dependencies: ["6E3F3F7059605C5E"]
-			description: [
-				"在灌注机中用 &9灌注合金 ×4 + 基础控制电路&r 合成高级控制电路。"
-			]
+			description: ["在灌注机中用 &9灌注合金 ×4 + 基础控制电路&r 合成高级控制电路。"]
 			icon: "mekanism:advanced_control_circuit"
-			id: "836FB0C2F0E3E944"
-			rewards: [
-				{
-					count: 16
-					id: "CE50D13BE2C97227"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			id: "4BB945563F0E0112"
+			rewards: [{
+				count: 16
+				id: "3273EA68F80E6EDB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "205377D0C6BD097D"
 				item: "mekanism:advanced_control_circuit"
@@ -233,22 +201,17 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["836FB0C2F0E3E944"]
-			description: [
-				"用高级电路解锁的高级机器：压缩金属、制造 &7强化锇&r 等关键材料。"
-			]
+			description: ["用高级电路解锁的高级机器：压缩金属、制造 &7强化锇&r 等关键材料。"]
 			icon: "mekanism:osmium_compressor"
 			id: "3596905358881BEE"
-			rewards: [
-				{
-					count: 8
-					id: "9B731F4E62224A92"
-					item: "mekanism:ingot_osmium"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "302AB6476071BEC4"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			tasks: [{
-				id: "D1C91C1D82F8CC72"
+				id: "4A9BEE91E11FD0C7"
 				item: "mekanism:osmium_compressor"
 				type: "item"
 			}]
@@ -257,20 +220,15 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["836FB0C2F0E3E944"]
-			description: [
-				"把流体/气体电解分离（如盐水 → 氢气 + 氯气）。合成需要 &9灌注合金&r 与钢外壳。"
-			]
+			description: ["把流体/气体电解分离（如盐水 → 氢气 + 氯气）。合成需要 &9灌注合金&r 与钢外壳。"]
 			icon: "mekanism:electrolytic_separator"
-			id: "F0E685EFDB715E7B"
-			rewards: [
-				{
-					count: 16
-					id: "0D842476D5AF611A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			id: "7AD5A85F7DD61709"
+			rewards: [{
+				count: 16
+				id: "0D842476D5AF611A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7EB9259B0398724A"
 				item: "mekanism:electrolytic_separator"
@@ -281,5 +239,5 @@
 			y: 5.0d
 		}
 	]
-	title: "&9MEK&r - 通用机械"
+	title: "&9&l隐藏科技&r - 通用机械"
 }

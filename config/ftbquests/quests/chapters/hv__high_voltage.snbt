@@ -6,7 +6,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:hv_electric_motor"
 	id: "237BDB19A9495869"
-	order_index: 10
+	order_index: 4
 	quest_links: [
 		{
 			id: "2583D0B64E51FAC8"

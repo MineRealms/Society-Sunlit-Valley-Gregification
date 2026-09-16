@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:electric_blast_furnace"
 	id: "41FEC6178ABF1998"
-	order_index: 7
+	order_index: 14
 	quest_links: [
 		{
 			id: "1F0BB0AD77F19FD4"

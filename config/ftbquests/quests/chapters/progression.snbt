@@ -6,7 +6,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:basic_electronic_circuit"
 	id: "28EBC0FF82EFD94B"
-	order_index: 1
+	order_index: 11
 	quest_links: [
 		{
 			id: "2BB2FC2D9D2F2E57"

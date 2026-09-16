@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "minecraft:iron_ore"
 	id: "6A809CAE287B97BA"
-	order_index: 9
+	order_index: 15
 	quest_links: [
 		{
 			id: "4B68740C721D04D5"

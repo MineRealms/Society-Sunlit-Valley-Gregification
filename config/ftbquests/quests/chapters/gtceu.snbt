@@ -216,13 +216,13 @@
 								Count: 1b
 								id: "gtceu:aluminium_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 767
 										ToolSpeed: 8.0f
@@ -234,13 +234,13 @@
 								Count: 1b
 								id: "gtceu:vanadium_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1535
 										ToolSpeed: 5.0f
@@ -252,6 +252,7 @@
 								Count: 1b
 								id: "gtceu:naquadah_alloy_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
@@ -259,7 +260,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 5
 										MaxDamage: 3071
 										ToolSpeed: 42.0f
@@ -271,13 +271,13 @@
 								Count: 1b
 								id: "gtceu:flint_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 63
 										ToolSpeed: 3.5f
@@ -289,13 +289,13 @@
 								Count: 1b
 								id: "gtceu:red_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 2559
 										ToolSpeed: 9.0f
@@ -307,13 +307,13 @@
 								Count: 1b
 								id: "gtceu:blue_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1023
 										ToolSpeed: 17.0f
@@ -325,6 +325,7 @@
 								Count: 1b
 								id: "gtceu:rose_gold_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									Enchantments: [{
 										id: "minecraft:fortune"
@@ -335,7 +336,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 767
 										ToolSpeed: 14.0f
@@ -347,13 +347,13 @@
 								Count: 1b
 								id: "gtceu:hsse_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 4
 										MaxDamage: 3071
 										ToolSpeed: 7.0f
@@ -365,13 +365,13 @@
 								Count: 1b
 								id: "gtceu:iron_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 255
 										ToolSpeed: 4.0f
@@ -383,13 +383,13 @@
 								Count: 1b
 								id: "gtceu:titanium_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1535
 										ToolSpeed: 10.0f
@@ -401,6 +401,7 @@
 								Count: 1b
 								id: "gtceu:neutronium_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
@@ -408,7 +409,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 6
 										MaxDamage: 65534
 										ToolSpeed: 182.0f
@@ -421,6 +421,7 @@
 								Count: 1b
 								id: "gtceu:duranium_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
@@ -428,7 +429,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 5
 										MaxDamage: 8191
 										ToolSpeed: 16.0f
@@ -440,13 +440,13 @@
 								Count: 1b
 								id: "gtceu:bronze_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 191
 										ToolSpeed: 5.0f
@@ -458,6 +458,7 @@
 								Count: 1b
 								id: "gtceu:invar_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									Enchantments: [
 										{
@@ -474,7 +475,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 383
 										ToolSpeed: 6.0f
@@ -486,6 +486,7 @@
 								Count: 1b
 								id: "gtceu:sterling_silver_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									Enchantments: [{
 										id: "minecraft:smite"
@@ -496,7 +497,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 767
 										ToolSpeed: 5.0f
@@ -508,13 +508,13 @@
 								Count: 1b
 								id: "gtceu:cobalt_brass_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 1023
 										ToolSpeed: 4.5f
@@ -526,13 +526,13 @@
 								Count: 1b
 								id: "gtceu:tungsten_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 4
 										MaxDamage: 2047
 										ToolSpeed: 11.0f
@@ -544,6 +544,7 @@
 								Count: 1b
 								id: "gtceu:damascus_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									Enchantments: [{
 										id: "minecraft:fortune"
@@ -554,7 +555,6 @@
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1023
 										ToolSpeed: 8.0f
@@ -566,13 +566,13 @@
 								Count: 1b
 								id: "gtceu:tungsten_carbide_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 4
 										MaxDamage: 1023
 										ToolSpeed: 62.0f
@@ -584,13 +584,13 @@
 								Count: 1b
 								id: "gtceu:wrought_iron_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 2
 										MaxDamage: 383
 										ToolSpeed: 4.0f
@@ -602,13 +602,13 @@
 								Count: 1b
 								id: "gtceu:ultimet_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 4
 										MaxDamage: 2047
 										ToolSpeed: 12.0f
@@ -620,13 +620,13 @@
 								Count: 1b
 								id: "gtceu:steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 511
 										ToolSpeed: 7.0f
@@ -638,13 +638,13 @@
 								Count: 1b
 								id: "gtceu:stainless_steel_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 1023
 										ToolSpeed: 9.0f
@@ -656,13 +656,13 @@
 								Count: 1b
 								id: "gtceu:diamond_axe"
 								tag: {
+									Damage: 0
 									DisallowContainerItem: 0b
 									GT.Behaviours: {
 										DisableShields: 1b
 										TreeFelling: 1b
 									}
 									GT.Tool: {
-										Damage: 0
 										HarvestLevel: 3
 										MaxDamage: 767
 										ToolSpeed: 8.0f

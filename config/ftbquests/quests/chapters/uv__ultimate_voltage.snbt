@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:uv_electric_motor"
 	id: "2E730D6F5A7C2E83"
-	order_index: 16
+	order_index: 9
 	quest_links: [
 		{
 			id: "5232A33368566616"
