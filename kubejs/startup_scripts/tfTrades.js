@@ -21,9 +21,9 @@ if (!TF_LOADED) {
 
 const CROP = "shippingbin:crop_sell_multiplier";
 const WOOD = "shippingbin:wood_sell_multiplier";
-const GEM = "shippingbin:gem_sell_multiplier";
+const TF_GEM = "shippingbin:gem_sell_multiplier";
 
-const addTrades = (list, kind, multiplier, entries) => {
+const addTfTrades = (list, kind, multiplier, entries) => {
   if (!TF_LOADED) return;
   entries.forEach(([id, value]) => {
     const item = "twilightforest:" + id;
@@ -36,7 +36,7 @@ const addTrades = (list, kind, multiplier, entries) => {
 };
 
 // ===== 作物（农夫产品）：浆果 / 蘑菇 / 块根 =====
-addTrades(global.crops, "crop", CROP, [
+addTfTrades(global.crops, "crop", CROP, [
   ["torchberries", 12],
   ["mushgloom", 16],
   ["trollber", 24],
@@ -48,7 +48,7 @@ addTrades(global.crops, "crop", CROP, [
 ]);
 
 // ===== 畜产 / 肉类 / 魔法食物（沿用动物产品分类）=====
-addTrades(global.animalProducts, "crop", CROP, [
+addTfTrades(global.animalProducts, "crop", CROP, [
   ["raw_venison", 16],
   ["cooked_venison", 24],
   ["raw_meef", 14],
@@ -64,7 +64,7 @@ addTrades(global.animalProducts, "crop", CROP, [
 ]);
 
 // ===== 木材（工匠产品）：普通原木 2 / 魔法原木 4 =====
-addTrades(global.artisanGoods, "wood", WOOD, [
+addTfTrades(global.artisanGoods, "wood", WOOD, [
   ["twilight_oak_log", 2],
   ["canopy_log", 2],
   ["mangrove_log", 2],
@@ -82,7 +82,7 @@ addTrades(global.artisanGoods, "wood", WOOD, [
 ]);
 
 // ===== 材料（地质学家）：树产金属与甲片 =====
-addTrades(global.miscGeologist, "gem", GEM, [
+addTfTrades(global.miscGeologist, "gem", TF_GEM, [
   ["ironwood_ingot", 20],
   ["steeleaf_ingot", 24],
   ["knightmetal_ingot", 48],
