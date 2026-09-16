@@ -44,6 +44,13 @@ global.husbandryAnimals = [
   "minecraft:bat",
   "crittersandcompanions:shima_enaga",
   "minecraft:turtle",
+  "twilightforest:bighorn_sheep",
+  "twilightforest:deer",
+  "twilightforest:boar",
+  "twilightforest:squirrel",
+  "twilightforest:dwarf_rabbit",
+  "twilightforest:raven",
+  "twilightforest:penguin",
 ];
 
 global.milkableAnimals = [
@@ -62,6 +69,7 @@ global.milkableAnimals = [
   "minecraft:squid",
   "minecraft:glow_squid",
   "windswept:frostbiter",
+  "twilightforest:bighorn_sheep",
 ];
 
 global.coopMasterAnimals = [
@@ -75,6 +83,7 @@ global.coopMasterAnimals = [
   "wildernature:penguin",
   "farmlife:galliraptor",
   "crittersandcompanions:shima_enaga",
+  "twilightforest:penguin",
 ];
 
 global.tierTwoHusbandryAnimals = [

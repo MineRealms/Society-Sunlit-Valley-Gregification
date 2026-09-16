@@ -28,6 +28,62 @@ const fineWoolForage = [
 global.husbandryForagingDefinitions = [
   { animal: "minecraft:pig", forages: truffleForage },
   { animal: "snowpig:snow_pig", forages: truffleForage },
+  { animal: "twilightforest:boar", forages: truffleForage },
+  { animal: "twilightforest:bighorn_sheep", forages: fineWoolForage },
+  {
+    animal: "twilightforest:squirrel",
+    forages: [
+      {
+        item: "pamhc2trees:hazelnutitem",
+        countMult: 4,
+        chance: 0.25,
+        minHearts: 6,
+        hasQuality: true,
+      },
+    ],
+  },
+  {
+    animal: "twilightforest:deer",
+    forages: [
+      {
+        itemPool: [
+          "society:dried_sweet_berries",
+          "society:dried_foul_berries",
+          "society:dried_blueberry",
+          "society:dried_strawberry",
+          "society:dried_gearo_berry",
+          "society:dried_glow_berries",
+        ],
+        countMult: 6,
+        chance: 0.25,
+        minHearts: 3,
+      },
+    ],
+  },
+  {
+    animal: "twilightforest:raven",
+    forages: [
+      {
+        item: "twilightforest:raven_feather",
+        countMult: 2,
+        chance: 0.35,
+        minHearts: 6,
+        hasQuality: true,
+      },
+    ],
+  },
+  {
+    animal: "twilightforest:dwarf_rabbit",
+    forages: [
+      {
+        item: "minecraft:rabbit_hide",
+        countMult: 1,
+        chance: 0.25,
+        minHearts: 6,
+        hasQuality: true,
+      },
+    ],
+  },
   {
     animal: "minecraft:mooshroom",
     forages: [
@@ -619,6 +675,7 @@ global.husbandryMilkingDefinitions = [
     milk: { sm: "society:warped_milk", lg: "society:large_warped_milk" },
   },
   { animal: "minecraft:sheep", cooldown: 2, milk: sheepMilk },
+  { animal: "twilightforest:bighorn_sheep", cooldown: 2, milk: sheepMilk },
   { animal: "meadow:wooly_sheep", cooldown: 2, milk: sheepMilk },
   { animal: "wildernature:minisheep", cooldown: 2, milk: sheepMilk },
   {

@@ -99,3 +99,34 @@
 2. **C 季节 + F 肥料**（农业玩法闭环）
 3. **D 畜牧 + E 礼物**（需逐项平衡）
 4. G/H 可选
+
+---
+
+## 6. 实施记录（2026-09-16，A~E 已实施）
+
+### 6.1 新增 / 修改文件
+
+| 文件 | 内容 |
+|---|---|
+| `kubejs/startup_scripts/tfTrades.js`（新增，priority -30） | A：经济上架（push 到 global 列表 + `global.trades.set`） |
+| `kubejs/data/quality_food/tags/items/material_whitelist.json`（修改） | B：TF 食物 10 条 |
+| `kubejs/data/quality_food/tags/blocks/quality_blocks.json`（修改） | B：TF 植物 3 条（torchberry_plant / mushgloom / trollber） |
+| `kubejs/server_scripts/tags/tfSeasonsTags.js`（新增） | C：季节标签（spring / summer / autumn / year_round） |
+| `kubejs/server_scripts/entities/globalAnimalVariables.js`（修改） | D：TF 动物入栏（husbandry 7 种 / milkable 1 / coopmaster 1） |
+| `kubejs/startup_scripts/husbandryDefinitions.js`（修改） | D：挤奶 1 条 + 觅食 5 条 |
+| `kubejs/startup_scripts/globalNPCHandlers.js`（修改） | E：礼物（铁匠 / 女巫 / 市场） |
+| `kubejs/server_scripts/tags/handleItemBlockFluidTags.js`（修改） | E：TF 原木加入 rawLogs（木匠喜好 + `society:raw_logs`） |
+
+### 6.2 数值（平衡基准：浆果 4~24 / 生肉 16 / 熟肉 16~32 / 原木 2 / 皮革 8 / 羽毛 16）
+
+- 作物（农夫）：`torchberries 12`、`mushgloom 16`、`trollber 24`、`unripe_trollber 8`、`magic_beans 64`、`liveroot 12`、`mayapple 8`、`fiddlehead 8`
+- 畜产/食物（动物产品分类）：`raw_venison 16`、`cooked_venison 24`、`raw_meef 14`、`cooked_meef 22`、`meef_stroganoff 48`、`hydra_chop 96`、`maze_wafer 12`、`experiment_115 48`、`raven_feather 24`、`arctic_fur 32`、`alpha_yeti_fur 128`、`naga_scale 64`
+- 木材（工匠）：普通原木/去皮 `2`、魔法原木 `4`、`giant_log 4`
+- 材料（地质学家）：`ironwood_ingot 20`、`steeleaf_ingot 24`、`knightmetal_ingot 48`、`armor_shard 12`
+- 畜牧：bighorn_sheep 羊奶（冷却 2 天）、boar 松露（同猪）、squirrel 榛子（同雪地松鼠）、deer 干果（同野鹿）、raven 羽毛、dwarf_rabbit 兔皮
+- 礼物：铁匠 liked +`knightmetal_ingot`/`armor_shard`；女巫 liked +`torchberries`/`mushgloom`；市场 liked +`maze_wafer`
+- 季节：spring = 暮色橡木/空心橡木/彩虹橡木树苗；summer = 树冠/红树林树苗；autumn = 黑木树苗/mayapple/fiddlehead；year_round = 4 种魔法树苗 + mushgloom + torchberry_plant + 苔藓/三叶草/根须/落叶
+
+### 6.3 校验
+
+- 6 个 JS `node --check` ✅；两个 quality JSON 解析 ✅；全部 TF 引用（物品/方块/实体）逐一核对存在 ✅

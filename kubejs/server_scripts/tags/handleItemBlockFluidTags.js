@@ -264,7 +264,17 @@ const rawLogs = [
   "cluttered:red_mushroom_log",
   "rainbowoaks:rainbow_log",
   "minecraft:warped_stem",
-  "minecraft:crimson_stem"
+  "minecraft:crimson_stem",
+  "twilightforest:twilight_oak_log",
+  "twilightforest:canopy_log",
+  "twilightforest:mangrove_log",
+  "twilightforest:dark_log",
+  "twilightforest:hollow_oak_log",
+  "twilightforest:time_log",
+  "twilightforest:transformation_log",
+  "twilightforest:mining_log",
+  "twilightforest:sorting_log",
+  "twilightforest:giant_log"
 ]
 const oresToTag = [
   "etcetera:nether_bismuth_ore",

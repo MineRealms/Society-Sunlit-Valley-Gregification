@@ -124,7 +124,7 @@ const villagerSpecificGifts = new Map([
     }],
     ["blacksmith", {
         loved: ["society:ember_crystal_cluster", "crittersandcompanions:dragonfly_wing", "windswept:lavender", "herbalbrews:hazelnut_coffee", "bakery:hazelnut_ella"],
-        liked: ["#minecraft:flowers", "#forge:raw_materials", "pamhc2trees:hazelnutitem", "pamhc2trees:roastedhazelnutitem"],
+        liked: ["#minecraft:flowers", "#forge:raw_materials", "pamhc2trees:hazelnutitem", "pamhc2trees:roastedhazelnutitem", "twilightforest:knightmetal_ingot", "twilightforest:armor_shard"],
         neutral: [],
         disliked: [],
         hated: [],
@@ -145,7 +145,7 @@ const villagerSpecificGifts = new Map([
     }],
     ["market", {
         loved: ["#vinery:red_wine", "society:glitched_vhs", "windswept:elder_feather", "society:latte", "society:tubasmoke_carton", "society:ancient_vespertine"],
-        liked: ["society:tubasmoke_stick", "society:energy_drink", "supplementaries:antique_ink", "herbalbrews:coffee", "untitledduckmod:duck_feather"],
+        liked: ["society:tubasmoke_stick", "society:energy_drink", "supplementaries:antique_ink", "herbalbrews:coffee", "untitledduckmod:duck_feather", "twilightforest:maze_wafer"],
         neutral: [],
         disliked: [],
         hated: ["herbalbrews:milk_coffee", "society:death_liquid"],
@@ -159,7 +159,7 @@ const villagerSpecificGifts = new Map([
     }],
     ["witch", {
         loved: ["#society:eldritch", "society:energy_drink", 'society:pink_energy_drink', 'society:white_energy_drink', 'society:mana_energy_drink', "society:latte", "society:mocha", "society:bowl_of_soul", "herbalbrews:milk_coffee", "herbalbrews:hazelnut_coffee"],
-        liked: ["#society:mineral", "#minecraft:flowers", "herbalbrews:coffee", "society:espresso", "society:dirty_chai", "society:death_liquid"],
+        liked: ["#society:mineral", "#minecraft:flowers", "herbalbrews:coffee", "society:espresso", "society:dirty_chai", "society:death_liquid", "twilightforest:torchberries", "twilightforest:mushgloom"],
         neutral: ["#society:farmer_product",],
         disliked: ["society:truffle_tea"],
         hated: ["#minecraft:fishes", "herbalbrews:witch_hat"],

@@ -61,6 +61,9 @@
     "veggiesdelight:sweet_potato_crate",
     "nethervinery:crimson_grape_crate",
     "society:eggplant_crate",
+    "twilightforest:torchberry_plant",
+    "twilightforest:mushgloom",
+    "twilightforest:trollber",
     {
       "id": "#farmersdelight:wild_crops",
       "required": false

@@ -108,6 +108,46 @@
     {
       "id": "minecraft:rabbit_foot",
       "required": false
+    },
+    {
+      "id": "twilightforest:torchberries",
+      "required": false
+    },
+    {
+      "id": "twilightforest:trollber",
+      "required": false
+    },
+    {
+      "id": "twilightforest:raw_venison",
+      "required": false
+    },
+    {
+      "id": "twilightforest:cooked_venison",
+      "required": false
+    },
+    {
+      "id": "twilightforest:raw_meef",
+      "required": false
+    },
+    {
+      "id": "twilightforest:cooked_meef",
+      "required": false
+    },
+    {
+      "id": "twilightforest:meef_stroganoff",
+      "required": false
+    },
+    {
+      "id": "twilightforest:hydra_chop",
+      "required": false
+    },
+    {
+      "id": "twilightforest:maze_wafer",
+      "required": false
+    },
+    {
+      "id": "twilightforest:experiment_115",
+      "required": false
     }
   ]
 }
