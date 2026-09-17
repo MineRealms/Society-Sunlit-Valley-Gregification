@@ -818,11 +818,6 @@
       "pannus": 2,
       "volatus": 2
     },
-    "twilightforest:shield": {
-      "vinculum": 1,
-      "praecantatio": 1,
-      "tutamen": 1
-    },
     "twilightforest:slider": {
       "motus": 4,
       "vinculum": 2,
@@ -973,11 +968,6 @@
     "twilightforest:trophy_pedestal": {
       "lucrum": 6,
       "bestia": 5
-    },
-    "twilightforest:twilight_portal": {
-      "aqua": 4,
-      "iter": 4,
-      "arbor": 2
     },
     "twilightforest:twilight_scepter": {
       "praecantatio": 2,

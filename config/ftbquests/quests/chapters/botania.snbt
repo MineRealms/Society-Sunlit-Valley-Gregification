@@ -184,6 +184,8 @@
 				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description2}"
 				""
 				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description3}"
+				""
+				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description4}"
 			]
 			id: "46F86152B5B36A3B"
 			rewards: [{
@@ -357,6 +359,8 @@
 				"{ftbquests.chapter.botania.quest33B78DFDDC041570.description3}"
 				""
 				"{ftbquests.chapter.botania.quest33B78DFDDC041570.description4}"
+				""
+				"{ftbquests.chapter.botania.quest33B78DFDDC041570.description5}"
 			]
 			icon: "botania:mana_pool"
 			id: "33B78DFDDC041570"
@@ -571,6 +575,8 @@
 				"{ftbquests.chapter.botania.quest69A2A84A2830134C.description2}"
 				""
 				"{ftbquests.chapter.botania.quest69A2A84A2830134C.description3}"
+				""
+				"{ftbquests.chapter.botania.quest69A2A84A2830134C.description4}"
 			]
 			id: "69A2A84A2830134C"
 			rewards: [{
