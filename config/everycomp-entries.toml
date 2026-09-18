@@ -105,6 +105,18 @@
 		[types.leaves_type.forbidden_magic]
 			tainted = true
 
+		[types.leaves_type.gtmfo]
+			banana = true
+			orange = true
+			mango = true
+			apricot = true
+			lemon = true
+			lime = true
+			olive = true
+			rainbowwood = true
+			nutmeg = true
+			coconut = true
+
 	[types.wood_type]
 
 		[types.wood_type.autumnity]
@@ -191,6 +203,18 @@
 
 		[types.wood_type.forbidden_magic]
 			tainted = true
+
+		[types.wood_type.gtmfo]
+			banana = true
+			orange = true
+			mango = true
+			apricot = true
+			lemon = true
+			lime = true
+			olive = true
+			rainbowwood = true
+			nutmeg = true
+			coconut = true
 
 	[types.cake]
 

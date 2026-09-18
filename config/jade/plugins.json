@@ -105,11 +105,27 @@
   "gtmthings": {
     "wireless_energy_hatch_provider": true
   },
+  "thaumicenergistics": {
+    "infusion_provider_grid_node_state": true,
+    "arcane_assembler_grid_node_state": true,
+    "essentia_interface_grid_node_state": true,
+    "vis_interface_grid_node_state": true
+  },
   "society": {
     "plushie_jade": true,
     "crop_growth_jade": true,
     "artisan_machine_jade": true,
     "fish_pond_jade": true
+  },
+  "mekanism": {
+    "infuse_type": true,
+    "gas": true,
+    "remove_builtin": true,
+    "pigment": true,
+    "fluid": true,
+    "slurry": true,
+    "energy": true,
+    "tooltip_renderer": true
   },
   "pipez": {
     "pipe": true
@@ -141,6 +157,10 @@
     "cable_info": true,
     "parallel_info": true,
     "data_bank": true
+  },
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
   },
   "quality_food": {
     "quality_block": true,

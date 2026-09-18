@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "thaumcraft"
-	group: "04716B2F19F75F08"
+	group: "4A46A5E1358A80A6"
 	icon: "thaumcraft:thaumonomicon"
 	id: "1C53B7E775D8EDDC"
 	order_index: 0
@@ -12,18 +12,22 @@
 			description: [
 				"用 &62 个金锭 + 1 块玻璃 + 2 个任意原质碎片&r合成&5魔导透镜&r。"
 				""
-				"它是神秘学的起点：用它扫描方块与物品，认识隐藏在世界中的&d要素&r。"
+				"它是神秘学的起点：手持透镜对准方块或物品&6长按右键&r扫描，就能发现隐藏在世界中的&d要素&r（Aspects）。"
+				""
+				"扫描是&6一次性&r的：每种方块/物品首次扫描会永久记入你的要素池，之后再扫描不再获得新要素。"
 			]
 			icon: "thaumcraft:thaumometer"
 			id: "4F15F9F6021B0AF8"
-			rewards: [{
-				count: 8
-				id: "35F501BCCBED6EC4"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "35F501BCCBED6EC4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "356C19936DC10306"
+				id: "51E933168F4032A7"
 				item: "thaumcraft:thaumometer"
 				type: "item"
 			}]
@@ -34,18 +38,22 @@
 		{
 			dependencies: ["4F15F9F6021B0AF8"]
 			description: [
-				"手持魔导透镜，对准任意方块或物品&6长按右键&r完成扫描。"
+				"手持魔导透镜，对准任意方块或物品&6长按右键&r完成扫描；准星上的进度条走满即扫描成功。"
 				""
-				"首次发现的要素会存入你的&d要素池&r，之后的研究都要消耗它。"
+				"首次发现的要素会存入你的&d要素池&r，之后的研究、合成都要消耗它——见到没见过的东西就扫一下。"
+				""
+				"扫描生物同样有效；配合后期的&6揭示之护目镜&r，可以随时看到周围物体的要素。"
 			]
 			icon: "thaumcraft:thaumometer"
-			id: "0B5185E4A2EDDBAE"
-			rewards: [{
-				count: 8
-				id: "51BE477F04733434"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			id: "6FD583503F686A53"
+			rewards: [
+				{
+					count: 8
+					id: "51BE477F04733434"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3C48E19CFE2C8F02"
 				title: "用魔导透镜扫描任意方块或物品"
@@ -58,12 +66,14 @@
 		{
 			dependencies: ["4F15F9F6021B0AF8"]
 			description: [
-				"碎片来自散落在地表与洞穴中的&5水晶簇&r。"
+				"碎片来自散落在地表与洞穴中的&5水晶簇&r，共有六种：风、火、土、水、秩序、熵。"
 				""
-				"透镜、研究、炼金都要用到它——顺手多收集一些。"
+				"透镜、法杖、研究与炼金都要用到碎片——顺手多收集一些。"
+				""
+				"注意：水晶簇在本整合包中&6不会重新生长&r，碎片属于不可再生资源，请节约使用。"
 			]
 			icon: "thaumcraft:air_shard"
-			id: "77C9FF5233BB0E6B"
+			id: "51A29B49033ECF80"
 			rewards: [
 				{
 					count: 8
@@ -73,13 +83,13 @@
 				}
 				{
 					count: 2
-					id: "7E80FEA3A8FE213B"
+					id: "6A5DB90438F68BB2"
 					item: "thaumcraft:air_shard"
 					type: "item"
 				}
 			]
 			tasks: [{
-				id: "32FB8A273827A550"
+				id: "776D760EBD42B4DF"
 				title: "收集至少 8 个原质碎片"
 				type: "checkmark"
 			}]
@@ -90,18 +100,22 @@
 		{
 			dependencies: ["4F15F9F6021B0AF8"]
 			description: [
-				"魔法森林中的&5宏伟之木&r是法杖杆与多种魔法制品的材料。"
+				"&5宏伟之木&r生长在魔法森林中，是法杖杆与多种魔法制品的材料。"
 				""
-				"找不到森林？可以在魔导手册的分类里查看它的分布。"
+				"找不到魔法森林？打开魔导手册查看生物群系提示；宏伟之木的树皮与木材都能使用。"
+				""
+				"顺带留意&5银木&r——它们周围常有魔力节点。"
 			]
 			icon: "thaumcraft:greatwood_log"
-			id: "2291DCF2A4EA86E9"
-			rewards: [{
-				count: 8
-				id: "09619AF0E5A42497"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			id: "5203E569ADFB0F32"
+			rewards: [
+				{
+					count: 8
+					id: "09619AF0E5A42497"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "2AFB1C70F72FEE8E"
@@ -117,18 +131,22 @@
 			description: [
 				"用 &62 个铁杖端 + 1 根木棍&r合成&5学徒法杖&r。"
 				""
-				"在这个世界，法杖不只是施法工具，还是各种魔法设备的&6成型核心&r。"
+				"在这个世界，法杖不只是施法工具，还是各种魔法设备的&6成型核心&r——右键书架、桌子、炼药锅等方块就能把它们变成魔法设备。"
+				""
+				"法杖施法与成型都会消耗魔力（Vis），可以用魔导手册查看充能方式。"
 			]
 			icon: "thaumcraft:wand"
-			id: "7D05574990A6F7CD"
-			rewards: [{
-				count: 8
-				id: "222286700C7B9589"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			id: "73A027097D654BEC"
+			rewards: [
+				{
+					count: 8
+					id: "6972737C7A89E287"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "4018AC960E40C5AE"
+				id: "70C6231DD7B1C558"
 				item: "thaumcraft:wand"
 				type: "item"
 			}]
@@ -137,19 +155,24 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["73A027097D654BEC"]
 			description: [
 				"手持法杖，对着&6书架&r右键——法杖会在仪式中成型为&5魔导手册&r。"
 				""
-				"一切研究都从这本手册开始；JEI 的&6复合合成&r分类里能看到所有成型蓝图。"
+				"一切研究都从这本手册开始：打开它可以看到研究树，消耗要素池解锁新条目。"
+				""
+				"JEI 的&6复合合成&r分类里能看到所有成型蓝图（法杖 + 方块 → 设备）。"
 			]
 			icon: "thaumcraft:thaumonomicon"
 			id: "57DB7A280EE3633F"
-			rewards: [{
-				count: 16
-				id: "1980680A83889ED9"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "3E6592AE06FCBA05"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "75F5FBB9C621D1FB"
 				item: "thaumcraft:thaumonomicon"
@@ -161,17 +184,23 @@
 		}
 		{
 			dependencies: ["57DB7A280EE3633F"]
-			description: ["普通的&6桌子&r是研究台与奥术工作台的基础（普通合成即可）。"]
+			description: [
+				"普通的&6桌子&r（普通合成即可）是研究台与奥术工作台的基础。"
+				""
+				"建议一次多做几张：研究台需要 2 张桌子，奥术工作台需要 1 张。"
+			]
 			icon: "thaumcraft:table"
-			id: "2A78BFAE58969B12"
-			rewards: [{
-				count: 8
-				id: "775594B1BF16DBCB"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			id: "3A3336D6C9BB6D26"
+			rewards: [
+				{
+					count: 8
+					id: "611ACF66A48C87F2"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "0CF3C82AB48262DE"
+				id: "74B1D3AFC5D935D0"
 				item: "thaumcraft:table"
 				type: "item"
 			}]
@@ -181,30 +210,24 @@
 		}
 		{
 			dependencies: ["57DB7A280EE3633F"]
-			description: ["用&6玻璃瓶 + 羽毛 + 黑色染料&r合成墨水瓶，研究台成型时需要它。"]
-			icon: {
-				Count: 1
-				id: "thaumcraft:inkwell"
-				tag: {
-					Damage: 0
+			description: [
+				"用&6玻璃瓶 + 羽毛 + 黑色染料&r合成墨水瓶。"
+				""
+				"研究台成型时需要它；研究过程也会消耗墨水，记得多备几个。"
+			]
+			icon: "thaumcraft:inkwell"
+			id: "2C8342C58BF48C3B"
+			rewards: [
+				{
+					count: 8
+					id: "0E3DC4984F4212D7"
+					item: "numismatics:cog"
+					type: "item"
 				}
-			}
-			id: "19F287A9C8A14916"
-			rewards: [{
-				count: 8
-				id: "0E3DC4984F4212D7"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			]
 			tasks: [{
 				id: "529886787091801A"
-				item: {
-					Count: 1
-					id: "thaumcraft:inkwell"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "thaumcraft:inkwell"
 				type: "item"
 			}]
 			title: "墨水瓶"
@@ -216,16 +239,20 @@
 			description: [
 				"打开魔导手册，消耗要素池解锁一项研究。"
 				""
-				"推荐先研究&6炼金（坩埚）&r与&6奥术工作台&r方向。"
+				"推荐先研究&6炼金（坩埚）&r与&6奥术工作台&r方向——它们是后续所有配方的基础。"
+				""
+				"研究需要对应的要素（由扫描获得）；要素不足时，多扫描新方块与物品。"
 			]
 			icon: "thaumcraft:thaumonomicon"
-			id: "0EE736DF8CE88397"
-			rewards: [{
-				count: 8
-				id: "443959D739B13ECB"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			id: "69C391B8091CE9CA"
+			rewards: [
+				{
+					count: 8
+					id: "443959D739B13ECB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7590E9CA4FBE6B3F"
 				title: "在魔导手册中解锁任意一项研究"
@@ -240,16 +267,20 @@
 			description: [
 				"手持法杖，对着&6炼药锅&r右键，成型为&5坩埚&r。"
 				""
-				"炼金的核心设备：把材料溶解成要素，再合成魔法物品。"
+				"炼金的核心设备：把材料丢进坩埚，它们会溶解成要素；当要素达到配方要求时，再丢入&6催化剂&r即可合成。"
+				""
+				"小心：要素过量会产生&6咒波污染&r，污染会蔓延成腐化之地——炼金时不要乱丢杂物。"
 			]
 			icon: "thaumcraft:crucible"
-			id: "5BAC86BFAB8539B9"
-			rewards: [{
-				count: 8
-				id: "1EC425A499D2BAC7"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			id: "67B45BB092EA6379"
+			rewards: [
+				{
+					count: 8
+					id: "1EC425A499D2BAC7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "786790B31E18DB61"
 				item: "thaumcraft:crucible"
@@ -260,17 +291,24 @@
 			y: 5.0d
 		}
 		{
-			description: ["按蓝图摆放&6两张桌子&r并手持&6墨水瓶&r右键，成型为&5研究台&r（JEI 可查布局）。"]
+			dependencies: ["3A3336D6C9BB6D26", "2C8342C58BF48C3B"]
+			description: [
+				"按蓝图摆放&6两张桌子&r并手持&6墨水瓶&r右键，成型为&5研究台&r（JEI 可查布局）。"
+				""
+				"研究台是进行深入研究的工作台；配合魔导手册使用。"
+			]
 			icon: "thaumcraft:research_table"
-			id: "7EC203749BE2CA93"
-			rewards: [{
-				count: 8
-				id: "4839FD61B776EAD8"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			id: "240CE3A787FFAB67"
+			rewards: [
+				{
+					count: 8
+					id: "7019957502E6EC56"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
-				id: "6C47A87E8D855996"
+				id: "309FEFFA4AFD403F"
 				item: "thaumcraft:research_table"
 				type: "item"
 			}]
@@ -279,19 +317,24 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["3A3336D6C9BB6D26"]
 			description: [
 				"手持法杖对着&6桌子&r右键，成型为&5奥术工作台&r。"
 				""
-				"消耗法杖内的魔力，进行魔法合成。"
+				"在奥术工作台中消耗法杖内的魔力进行魔法合成——比如揭示之护目镜、魔杖部件与各种魔法物品。"
+				""
+				"合成时注意法杖的魔力储备，不足时需要先充能。"
 			]
 			icon: "thaumcraft:arcane_worktable"
 			id: "4F7A45CA9DB0BD3C"
-			rewards: [{
-				count: 8
-				id: "65200CF144FFE713"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "65200CF144FFE713"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7E6858C0510BA167"
 				item: "thaumcraft:arcane_worktable"
@@ -302,19 +345,22 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["67B45BB092EA6379"]
 			description: [
 				"炼金配方：&6荧石粉&r + 要素 &bpotentia 3 / ignis 3 / lux 3&r → &5闪耀之光&r。"
 				""
-				"丢进坩埚的材料会提供要素；要永久光源就靠它了。"
+				"丢进坩埚的材料会提供要素；闪耀之光可以放置为永久光源，也能制作其他魔法物品。"
 			]
 			icon: "thaumcraft:nitor"
-			id: "1E6AF78A00329D8E"
-			rewards: [{
-				count: 8
-				id: "381F17626AF9EF79"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			id: "7BD8735B2844BA97"
+			rewards: [
+				{
+					count: 8
+					id: "381F17626AF9EF79"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0986FECE32BA2B26"
 				item: "thaumcraft:nitor"
@@ -325,19 +371,22 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["67B45BB092EA6379"]
 			description: [
 				"炼金配方：&6煤炭&r + 要素 &bpotentia 3 / ignis 3 / perditio 3&r → &5炼金煤&r。"
 				""
-				"一种高效的魔法燃料，也能当作投掷物使用。"
+				"一种高效的魔法燃料（可当煤炭使用），也能当作投掷物造成爆炸伤害。"
 			]
 			icon: "thaumcraft:alumentum"
 			id: "0E99DDECCBCB4575"
-			rewards: [{
-				count: 8
-				id: "4547B192524CA32C"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "4547B192524CA32C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0D245F879348549C"
 				item: "thaumcraft:alumentum"
@@ -348,19 +397,24 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["67B45BB092EA6379"]
 			description: [
 				"炼金配方：&6铁锭&r + 要素 &bpraecantatio 4&r → &5神秘锭&r。"
 				""
-				"比铁更坚硬、更容易附魔的魔法金属，可制作工具与护甲。"
+				"比铁更坚硬、更容易附魔的魔法金属，可制作工具、护甲与更多魔法部件。"
+				""
+				"神秘锭也是研究&6虚空金属&r（VOIDMETAL）的前置之一。"
 			]
 			icon: "thaumcraft:thaumium_ingot"
 			id: "188339BE6F24688B"
-			rewards: [{
-				count: 16
-				id: "24AB8BB6DD70C70F"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "24AB8BB6DD70C70F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "255D296E22396C02"
 				item: "thaumcraft:thaumium_ingot"
@@ -375,31 +429,21 @@
 			description: [
 				"用神秘锭合成&5神秘镐&r（其他工具同理）。"
 				""
-				"神秘工具天生容易附魔，是冒险途中的好伙伴。"
+				"神秘工具天生容易附魔，是冒险途中的好伙伴；耐久与铁制相当，附魔收益更高。"
 			]
-			icon: {
-				Count: 1
-				id: "thaumcraft:thaumium_pickaxe"
-				tag: {
-					Damage: 0
+			icon: "thaumcraft:thaumium_pickaxe"
+			id: "3D072E3EC577F27F"
+			rewards: [
+				{
+					count: 16
+					id: "625A8487F0C107E0"
+					item: "numismatics:cog"
+					type: "item"
 				}
-			}
-			id: "5F1F88FD8F5F47F1"
-			rewards: [{
-				count: 16
-				id: "7048A36929F22210"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			]
 			tasks: [{
 				id: "4851D7F587F9F5D7"
-				item: {
-					Count: 1
-					id: "thaumcraft:thaumium_pickaxe"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "thaumcraft:thaumium_pickaxe"
 				type: "item"
 			}]
 			title: "神秘工具"
@@ -411,31 +455,23 @@
 			description: [
 				"在奥术工作台用&6魔导透镜 + 金锭 + 皮革&r合成&5揭示之护目镜&r（需先研究对应条目）。"
 				""
-				"戴上它，方块与物品的要素会直接显示在视野里。"
+				"戴上它，方块与物品的要素会直接显示在视野里，无需逐个扫描。"
+				""
+				"这是整理仓库、规划炼金时最实用的装备。"
 			]
-			icon: {
-				Count: 1
-				id: "thaumcraft:goggles_of_revealing"
-				tag: {
-					Damage: 0
+			icon: "thaumcraft:goggles_of_revealing"
+			id: "24A79169446F404E"
+			rewards: [
+				{
+					count: 32
+					id: "1167CBC17A935A79"
+					item: "numismatics:cog"
+					type: "item"
 				}
-			}
-			id: "1313E90206FDCD54"
-			rewards: [{
-				count: 32
-				id: "1B47957353AA0B6D"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			]
 			tasks: [{
-				id: "31CCFB266A6ABE3D"
-				item: {
-					Count: 1
-					id: "thaumcraft:goggles_of_revealing"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "11EFDFE5EE5B5CDA"
+				item: "thaumcraft:goggles_of_revealing"
 				type: "item"
 			}]
 			title: "揭示之护目镜"

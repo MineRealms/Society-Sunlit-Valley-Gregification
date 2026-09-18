@@ -21,4 +21,9 @@
 	golem_link_quality = 16
 	#Use TC4's older blue grass and foliage palette in Magical Forest biomes.
 	blue_magical_forest = false
+	#Show completed research in Minecraft's top-right toast queue. False uses TC4's legacy top-left research popup. Applies to new notifications.
+	research_completion_toasts = true
+	#Prevents overexposure on ward and architect overlays (client only).
+	#true (default): use bounded coloring; false: use original additive coloring.
+	prevent_overlay_overexposure = true
 

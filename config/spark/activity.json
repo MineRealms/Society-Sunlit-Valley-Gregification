@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "CharlesKo",
+      "uniqueId": "84591a2b-802f-361b-a1a5-4ab1867bb09c"
+    },
+    "time": 1789658682280,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/GNiVFUnjtO"
+    }
+  }
+]

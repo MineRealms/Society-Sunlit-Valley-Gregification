@@ -1,0 +1,572 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "ae2_overview"
+	group: "4A46A5E1358A80A6"
+	icon: "ae2:controller"
+	id: "441DBA5B3B33661A"
+	order_index: 30
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["39E7997F3080250A"]
+			description: [
+				"即便没有频道系统,&aP2P通道&f仍是极其重要的自动化工具!"
+				""
+				"&9注意:&r网络上有大量优质资源讲解&aP2P通道&f的工作原理.简而言之,它们允许将物品从1个输入端传输至无限个输出端.你可以使用&a内存卡&f进行链接."
+				""
+				"本任务将指导你如何利用&aP2P通道&f为自己创造效益."
+			]
+			icon: "ae2:me_p2p_tunnel"
+			id: "297F87F2564753C8"
+			shape: "square"
+			size: 0.75d
+			subtitle: "别担心,频道系统已移除"
+			title: "&aP2P通道&f"
+			tasks: [{
+				id: "6818758150410510"
+				item: "ae2:me_p2p_tunnel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46C7E1D5E37B1ED2"]
+			description: [
+				"若需迁移基地,现在可远程扩展您的AE2网络."
+				""
+				"制作一对完整的&3量子通道&r并非易事,需要付出相当的努力才能完成."
+			]
+			icon: "ae2:quantum_link"
+			id: "63A9E73DAE17DEC1"
+			size: 0.75d
+			subtitle: "[-h^2/2m∇^2 + V(x,t)]ψ(x,t) = iht'ψ(x,t)"
+			title: "量子通道"
+			tasks: [
+				{
+					count: 2L
+					id: "3B60DBBBF320BEEA"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3ED6C79846EB5AAB"
+					item: "ae2:quantum_ring"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5759F8B732CE2C20"
+					item: "ae2:quantum_entangled_singularity"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7EF57E379F736FBB"]
+			description: [
+				"将&aP2P通道&f转换为&a物品P2P通道&f&r需用&d原版箱子&r对其右键点击."
+				""
+				"物品&aP2P通道&f的实用性较为抽象,以下为例解:"
+				"{@pagebreak}"
+				"&e示例:&r在&3组装机&r内制作&9高压&a机械外壳&f&r需配套&3流体提取装置&r,这意味着需管理两个机器的库存."
+				""
+				"可被动向组装机输入聚乙烯,&l或&r将其以2根锭的形式纳入&d样板&r配置."
+				""
+				"若试图用缓冲仓配管道运输,该系统终将因与AE2接口阻塞模式冲突而&4卡死&r!"
+				"{@pagebreak}"
+				"解决方案:将&a物品P2P&r输入端连接&3&aME接口&f&r,两个输出端分别接至&3流体提取装置&r和&3组装机&r."
+				""
+				"在输出端配置过滤盖板.推荐使用&d物品&a标签过滤器&f&r,将其设置为&9锭类&r:提取装置端用&e白名单&r,组装机端用&e黑名单&r(因&d格雷科技&f中所有组装配方均不需锭材)."
+				""
+				"切记开启接口的&d&a阻塞模式&f&r."
+				""
+				"看——这就是为何推荐将聚合物(聚乙烯、聚四氟乙烯、聚苯并咪唑)存储为锭状的又一理由!"
+			]
+			icon: "ae2:item_p2p_tunnel"
+			id: "081E7171B664721E"
+			shape: "rsquare"
+			size: 0.5d
+			subtitle: "物品与P2P通道入门指南"
+			title: "物品&aP2P通道&f"
+			tasks: [{
+				id: "4AA98E9AB3AD8632"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1722813F617DF39B"]
+			description: [
+				"&a样板P2P通道&f是&9物品/&a流体P2P通道&f的升级版本."
+				""
+				"输入端需连接存有样板的样板供应器,可设置多个输出端连接至物品栏."
+				""
+				"当单个样板需要批量合成时,&aP2P通道&f会将合成任务均匀分配至所有连接的输出端."
+				""
+				"&a样板&f&aP2P通道&f同时遵循样板界面中设置的&e&a阻塞模式&f&r."
+			]
+			icon: "mae2:pattern_p2p_tunnel"
+			id: "3E383587D57D7017"
+			shape: "rsquare"
+			size: 0.5d
+			subtitle: "样板到样板"
+			title: "样板&aP2P通道&f"
+			tasks: [{
+				id: "48180714087F4B35"
+				item: "mae2:pattern_p2p_tunnel"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40FB56274D296BFC"]
+			description: [
+				"使用&d导线&r或&d电缆&r右键点击世界中的&aP2P通道&f即可转换为&aGT&aP2P通道 - EU&f&r."
+				""
+				"后期游戏中使用可有效避免电缆或变压器过度堆砌.还可结合AE2量子桥为基地外的高阶采矿机与钻机供电."
+				""
+				"P2P通道输出端存在&45%电压税&r,会导致5%的能量损耗."
+			]
+			icon: "mae2:pattern_p2p_tunnel"
+			id: "2BB37EE525DBB67F"
+			shape: "rsquare"
+			size: 0.5d
+			subtitle: "遗憾的是,英国玩家无法使用"
+			title: "&aP2P通道 - EU&f"
+			tasks: [{
+				id: "5E5C8B98CFE43D94"
+				item: "mae2:eu_p2p_tunnel"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26E8E5C163340E5A"]
+			description: [
+				"&b数字化流体存储&r非常酷.每个&b&a1k-ME流体存储元件&f&r可容纳&d5种&r流体类型,存储总量超过&e8,000桶&r!这甚至超过了&3超级储罐2&r的容量!"
+				""
+				"建议对流体&a存储单元&r进行&4格式化&r以指定存储类型,防止网络堵塞.可通过&3&a元件工作台&f&r完成此操作."
+			]
+			icon: "ae2:fluid_cell_housing"
+			id: "5924EF4C8E7B3086"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "\"流体数字化仪”？那是谁？"
+			title: "数字化流体存储"
+			tasks: [{
+				id: "5F37EC25A4F8BAE0"
+				item: "ae2:fluid_cell_housing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1D8170A19E54C5B9"]
+			description: [
+				"使用&5EV电路&r,你可以将协处理器压缩成&3密集&r变体,以获得更高的性价比."
+				""
+				"合成比例对你有利,所以你很可能会有比完成整合包所需更多的&e并行自动制作能力&r."
+			]
+			icon: "mae2:4x_crafting_accelerator"
+			id: "5860D0F4ACD3676C"
+			size: 0.75d
+			subtitle: "你说谁密集呢？"
+			title: "密集协处理器"
+			tasks: [{
+				id: "302766D38D77E25D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mae2:4x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:16x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:64x_crafting_accelerator"
+							}
+							{
+								Count: 1b
+								id: "mae2:256x_crafting_accelerator"
+							}
+						]
+					}
+				}
+				title: "密集协处理器"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7E2076D45F83D9C3"]
+			description: ["&a无线连接器&r可优化物流系统,为你的ME网络提供无限范围的&9无线传输&r功能.&a能量&f消耗随传输距离呈指数级增长."]
+			id: "7C2729823923A5B7"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "穿越无限,超越极限!"
+			title: "&a无线&f之力"
+			tasks: [{
+				id: "646C254AB4F91354"
+				item: "expatternprovider:wireless_connect"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["79192BA29BE69170"]
+			description: [
+				"若配方规模令你困扰,请放心——&2应用能源2&r现允许在处理模式中放置无限数量的物品."
+				""
+				"凭借此项革新,你可实现所有&3组装线&r配方的自动化生产."
+			]
+			icon: "expatternprovider:ex_interface"
+			id: "183E38CADB562D1A"
+			shape: "rsquare"
+			size: 0.66d
+			title: "打包什么？"
+			tasks: [{
+				id: "65A18E66DE5ED39B"
+				title: "哇嘿!"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["602DA4B4820E9088"]
+			description: ["&a量子桥接卡&f&r是&9量子连接通道&r的升级组件,可使&9无线终端&r跨维度无限范围接入AE系统."]
+			icon: "ae2wtlib:quantum_bridge_card"
+			id: "6E58BB956CDD388D"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "危难中的桥梁"
+			title: "无限无线范围"
+			tasks: [{
+				id: "2E2E0E2CBB5FE108"
+				item: "ae2wtlib:quantum_bridge_card"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5CE0B928479D8535"]
+			description: [
+				"以下是它的核心功能详解!"
+				""
+				"&2空白 &a样板终端&f:&r"
+				""
+				"手持本工具右键可打开操作界面,可插入&9&a空白样板&f&r.提供海量存储空间便于样板运输!"
+				"{@pagebreak}"
+				"&2批量样板修改:&r"
+				""
+				"插入&9&a编码样板&f&r时可进行批量乘除运算.特别适用于为并行按需生产设备快速复制样板."
+				""
+				"点击“清除“按钮可批量清空样板(无二次确认,请谨慎操作)."
+				"{@pagebreak}"
+				"&2物品搜索替换:&r"
+				""
+				"右键点击&a&a转换模式&f按钮&r开启新界面,可批量替换&9&a编码样板&f&r内所有指定物品."
+				""
+				"该功能对&e升级格雷科技电路&r尤为实用,例如将纳米电路批量替换为量子&5EV&r电路."
+				"{@pagebreak}"
+				"&2便捷样板传输:&r"
+				""
+				"Shift+左键点击可在玩家库存与修改器间快速转移样板,轻松实现接口终端与设备间的样板流转,避免库存拥堵."
+				"{@pagebreak}"
+				"&b背景故事&r:模组作者Neeve建议将此物品定为&eUXV&r级,因为\"它赋予玩家过强的掌控力\".注:&eUXV&r比&3UV&r高四级,仅次于&c&lMAX&r电压两级."
+			]
+			icon: "expatternprovider:pattern_modifier"
+			id: "1903706B44FAA5DB"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "&a样板修改器&r功能超群!"
+			title: "样板修改器"
+			tasks: [{
+				id: "70740D28057C75EE"
+				item: "expatternprovider:pattern_modifier"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7CCC1BDDE0C67F16"]
+			description: [
+				"板条箱是箱子的直接升级版.单格空间存储更多物品——还能要求什么呢？"
+				""
+				"其突出优势在于&e可加载覆盖板&r,使之成为自动化系统中缓冲器的理想选择."
+			]
+			id: "3A643B5AB5CCD343"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "前期游戏缓冲方案"
+			title: "&d格雷科技&f存储设备"
+			tasks: [{
+				id: "6D034FE6CDFE5246"
+				item: "gtceu:steel_crate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0E72017800A9766C"]
+			description: [
+				"现阶段涉足应用能源2系统虽可行,但需要较多准备工作..."
+				""
+				"您需要制造大量&7LV&r级机器,且部分AE2物品的&7LV级&r配方在没有更先进技术时相对昂贵."
+				""
+				"在&7LV&r阶段,您可以制造:"
+				""
+				"&e-&r &a能源接收器&f"
+				""
+				"&e-&r &aME终端&f"
+				""
+				"&e-&r 1k ME存储元件"
+				""
+				"&e-&r &aME存储箱&f"
+				""
+				"&b通道系统已在本整合包中禁用&r,可并行放置多个配备1k存储单元的&aME箱子&f来扩展存储容量!通过&aME终端&f可同时访问所有箱内物品."
+				"{@pagebreak}"
+				"&9注意:&r本包包含&5&a福鲁伊克斯水晶&f&r,但它们是作为GT材料生成,而非AE2默认的&a福鲁伊克斯水晶&f.获取方法:将&d&a福鲁伊克斯粉&f&r放入&a高压釜&r(由&7&a赛特斯石英粉&f&r、&e&a下界石英粉&f&o&r和&c红石&r在&a搅拌机&r中制成)处理.无需预先给&a赛特斯石英&f充能——它会在搅拌过程中自动充能...或者说类似的效果."
+				"{@pagebreak}"
+				"欢迎随时查阅AE2内置指南!您也可以参考:"
+				""
+				"&a官&f方&d&d应用能源2&f&r网站：&9https://appliedenergistics.org/guides&r"
+				""
+				"由&aPansmith&r制作的&b教学视频&r,虽然基于&eMinecraft 1.12.2&r版本,但核心机制仍基本一致:"
+				"&9https://www.youtube.com/watch?v=u0ouTWgdcXk&r"
+			]
+			id: "0DF40EAD90FF9F67"
+			shape: "square"
+			size: 0.75d
+			subtitle: "是时候告别那些箱子了"
+			title: "&a数字时代&f？这么快!？"
+			tasks: [{
+				id: "5CE6328C4D47DE3A"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["59BEB2AA9598A21D"]
+			description: [
+				"这是个&4玩梗&r任务——看看泰迪熊的合成要求吧."
+				""
+				"没错...用&7低压&r压缩机得花整整一年才能合成.若以最高超频速度制作,又需要多久呢？"
+				""
+				"&7现在绝对别急着做这个...听话等后期强力超频再说."
+				"{@pagebreak}"
+				"&l&3背景故事:&r&o本整合包主开发者花了太长时间修复模型文件才定制出这东西&7.&8.若好奇为什么会出现宝可梦玩偶,因为那是我的MC皮肤!"
+			]
+			hide_dependency_lines: true
+			icon: "expatternprovider:fishbig"
+			id: "63C60D9C4B778A05"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "你时间够用吗？"
+			title: "居然有人说&d格雷科技&f肝度太高..."
+			tasks: [{
+				id: "3D91271A08B80C91"
+				item: "expatternprovider:fishbig"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0A1165C6D1F62C2B"]
+			description: [
+				"&3&a分子装配室&f&r可用于自动化工作台配方,这意味着您现在可以自动化几乎所有内容."
+				""
+				"要最大化单个&a分子装配室&f可处理的配方数量,请构建一个由&a分子装配室&f和&aME接口&f组成的3D矩阵——其中每个组件都被另一种组件在六个方向上包围."
+				""
+				"在合成中使用更高级的材料将产生更多的&a分子装配室&f."
+				"{@pagebreak}"
+				"&c警告:&r尽量避免在AE2自动合成中使用GT工具!这会导致AE2出现问题……您可能会破坏TPS,甚至更糟,一旦其中一个工具损坏,就会自动合成数千个工具."
+				""
+				"如果您足够固执,&o真的&r想在AE2自动合成中使用GT工具,请优先编码使用高耐久度工具的配方,但&4不要&r为工具本身设置自动合成.相反,请使用替代的&3&a控制电路加工厂&f&r配方."
+			]
+			icon: "ae2:molecular_assembler"
+			id: "55DE6BB7C9DF4ACE"
+			size: 0.66d
+			subtitle: "终于实现自动合成!"
+			title: "自动合成"
+			tasks: [{
+				id: "748B600AC1BB910C"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5401AB5E399E7BEA"]
+			description: [
+				"制作&aAE2压印板&r将解锁AE2的所有&9处理器&r.这将开启&9&aME驱动器&f&r、&9&aME接口&f&r、&9ME合成CPU&r……几乎剩下的AE2内容都在您的指尖!&7(或者至少……直到您获得&a硅锭&f.)&r"
+				""
+				"AE2的&9印刷电路&r现在在&3&a冲压机床&f&r中制作."
+			]
+			icon: "ae2:silicon_press"
+			id: "411430954A05FC12"
+			size: 0.66d
+			subtitle: "谁喜欢寻找陨石呢？"
+			title: "&a挤压物质&f"
+			tasks: [
+				{
+					id: "17EDFBE0E839AAE3"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "7DB43340B5E96250"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "478C14FC1CFD7959"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "6296AA116EE51560"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1C036BCB2C488CFF"]
+			description: [
+				"&a样板&r应用于AE2自动合成系统.使用&a&a聚氯乙烯&f&r可将产出提升至&e&a可用4次&f&r,更高级别的塑料还能带来更高产量."
+				""
+				"但别过于兴奋——要真正深入AE2的自动化领域,首先需要获取一些&d&a硅锭&f&r."
+				""
+				"关于自动合成的补充说明:虽然通过AE2可以按需执行化学链式反应,但此举可能养成不良习惯,这些习惯在进阶阶段会产生反作用.我们强烈建议您尽可能采用被动化生产模式."
+			]
+			icon: "ae2:blank_pattern"
+			id: "385879ACA2A83D72"
+			shape: "square"
+			size: 0.75d
+			subtitle: "终于实现自动合成!"
+			title: "样板"
+			tasks: [{
+				id: "0AA6511BDFC6BE52"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3CCD98E7139BA564"]
+			description: ["虽然列出的所有步骤均可通过&3纯&d格雷科技&f&r实现自动化,但精明的玩家可能会选择用&dAE2&r满足所有物流需求.此处我们将介绍一些可能被忽略的技巧,助您将&a矿石处理&r提升至新高度."]
+			icon: "ae2:controller"
+			id: "68C1F4CAE639C4C0"
+			subtitle: "看看AE2能为您做什么!"
+			title: "&d应用能源2&f"
+			tasks: [{
+				id: "46BD1B4B4461F1B8"
+				title: "是的,我明白了!"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["23B078514FB4A215"]
+			description: [
+				"&3ME标签存储总线&r是将标记物品输送至目标位置的关键设备.功能如其名——点击设置筛选条件后,所有进入AE网络且&e符合预设物品标签&r的物资都会被导向总线连接的容器."
+				""
+				"当您想用&a过滤子网络&r处理矿石时,此功能尤为实用."
+				""
+				"若需优先处理矿石,记得设置&5高优先级&r!"
+			]
+			id: "72796A77F3410E77"
+			shape: "rsquare"
+			size: 0.75d
+			subtitle: "构建更广物流网络"
+			title: "标签物流大师"
+			tasks: [{
+				id: "11C9D05C46912EA5"
+				item: "expatternprovider:tag_storage_bus"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1CB9A26C3296858E"]
+			description: [
+				"子网络 &7(简称 “子网“)&r 可定义为独立于主网络之外的任何网络体系."
+				""
+				"创建子网的 &a简易&f 方法是将 &b&aME接口&f&r 连接至 &a存储总线&r.此时存储总线会将接口视作可读取的存储容器——即能获取接口所连网络中的 &5全部物品&r."
+				""
+				"由于主网络数据 &4不会&r 通过存储总线传输,需使用 &e石英纤维&r 从主网向子网输送能源.注意避免使用普通线缆意外连接两套网络."
+				"{@pagebreak}"
+				"关键在于:这对玩家有何 &a益处&r？子网络带来的物流效能提升巨大,以下简要举例说明 &9(浅析)&r,其余应用场景留给读者自行探索!"
+				""
+				"- 为矿石处理系统设立子网,可 &b自动处理&r 所有中间副产品,避免它们持续进出主网络!"
+				"- 对于 &d大型加工链&r(如 &e铂金处理&r),子网尤为实用.它能确保副产品被合理循环利用,同时降低系统负载."
+				""
+				""
+				"{@pagebreak}"
+				"子网支持无限嵌套,但在 &b模组化 Minecraft&r 中需谨慎操作(最好避免),过多嵌套层级会在计算网络时引发 &4性能问题&r."
+				""
+				"注意:若在整合包中启用了频道功能,子网仅消耗主网的单个频道.性价比极高!"
+			]
+			icon: "ae2:storage_bus"
+			id: "6C4E6757B5F85537"
+			shape: "rsquare"
+			size: 0.75d
+			subtitle: "社交隔离式网络"
+			title: "子网基础入门"
+			tasks: [{
+				id: "233FA31480C87AF9"
+				title: "我觉得听起来很棒"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["428C62749A1A1BAB"]
+			description: ["&a&a创造能源元件&f&r是少数可合成的创造模式物品之一.它为你的AE系统提供无限能源,从此无需再担心停电或能源不足问题."]
+			id: "7C045B9407797D46"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "好吧,或许确实存在创造模式物品"
+			title: "创造ME能源"
+			tasks: [{
+				id: "4CEBE0A1335F9ACE"
+				item: "ae2:creative_energy_cell"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+	]
+	title: "&b应用能源2&r - 概览"
+}

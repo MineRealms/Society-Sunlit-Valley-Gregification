@@ -1,0 +1,916 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "space"
+	group: "4A46A5E1358A80A6"
+	icon: "gcyr:rocket_scanner"
+	id: "141DBA5B3B33661A"
+	order_index: 18
+	quest_links: [ ]
+	images: [
+		{
+			image: "society:textures/quests/space/space.png"
+			x: 9.0d
+			y: 0.0d
+			width: 25.6d
+			height: 14.4d
+			rotation: 0.0d
+		}
+	]
+	quests: [
+		{
+			description: [
+				"造出&6火箭扫描仪&r（EV 多方块）：用发射台搭出底座、不锈钢框架搭出塔身（JEI 可查结构）。"
+				""
+				"在发射台上用火箭部件搭出火箭，然后点扫描仪界面的&6「扫描火箭」&r——整枚火箭会变成可发射的实体。"
+				""
+				"本整合包中火箭部件需要&6GT-- 的重型合金板&r，先准备 T1 重型合金。"
+			]
+			icon: "gcyr:rocket_scanner"
+			id: "597F87F2564753C8"
+			rewards: [
+				{
+					count: 32
+					id: "53A9E73DAE17DEC1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5818758150410510"
+				item: "gcyr:rocket_scanner"
+				type: "item"
+			}]
+			title: "太空时代：火箭扫描仪"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["597F87F2564753C8"]
+			description: [
+				"发射台是火箭的着陆面，也是扫描仪结构的底座；座椅是乘员位——没有座椅的火箭只能运货。"
+				""
+				"按需多做一批：发射台可以铺成任意大小的平台。"
+			]
+			icon: "gcyr:launch_pad"
+			id: "6B60DBBBF320BEEA"
+			rewards: [
+				{
+					count: 16
+					id: "181E7171B664721E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6ED6C79846EB5AAB"
+					item: "gcyr:launch_pad"
+					type: "item"
+				}
+				{
+					id: "3759F8B732CE2C20"
+					item: "gcyr:seat"
+					type: "item"
+				}
+			]
+			title: "发射台与座椅"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B60DBBBF320BEEA"]
+			description: [
+				"&6GT--&r 的重型合金链：用&6装配机（HV）&r把黄铜/铝/钢的致密板与不锈钢液压成&6T1 重型合金锭&r。"
+				""
+				"再把重型锭送进&6内爆压缩机&r（需要炸药）得到&6T1 重型合金板&r——火箭发动机与燃料罐都要用它。"
+			]
+			icon: "gtnn:heavy_plate_t1"
+			id: "0AA98E9AB3AD8632"
+			rewards: [
+				{
+					count: 24
+					id: "5BB37EE525DBB67F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7E383587D57D7017"
+					item: "gtnn:heavy_ingot_t1"
+					type: "item"
+				}
+				{
+					id: "08180714087F4B35"
+					item: "gtnn:heavy_plate_t1"
+					type: "item"
+				}
+			]
+			title: "T1 重型合金"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0AA98E9AB3AD8632"]
+			description: [
+				"装配机（HV）：4×动力推进器 + 6×Kapton-K 板 + 不锈钢框架 + &6T1 重型合金板&r。"
+				""
+				"基础发动机：载重 25、单发动机——刚好够一次月球往返。"
+			]
+			icon: "gcyr:basic_rocket_motor"
+			id: "3E5C8B98CFE43D94"
+			rewards: [
+				{
+					count: 32
+					id: "3F37EC25A4F8BAE0"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3924EF4C8E7B3086"
+				item: "gcyr:basic_rocket_motor"
+				type: "item"
+			}]
+			title: "基础火箭发动机"
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0AA98E9AB3AD8632"]
+			description: [
+				"装配机（HV）：2×不锈钢桶 + 6×Kapton-K 板 + 不锈钢框架 + &6T1 重型合金板&r。"
+				""
+				"容量 5000 mB——月球往返需要 8 桶燃料，记得带够。"
+			]
+			icon: "gcyr:basic_fuel_tank"
+			id: "3860D0F4ACD3676C"
+			rewards: [
+				{
+					count: 32
+					id: "546C254AB4F91354"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "602766D38D77E25D"
+				item: "gcyr:basic_fuel_tank"
+				type: "item"
+			}]
+			title: "基础燃料储罐"
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3E5C8B98CFE43D94", "3860D0F4ACD3676C"]
+			description: [
+				"GCYR 接受多种燃料（每 mB 燃烧时长）：&6汽油 25 / 柴油 18 / 火箭燃料 75 / 氢 10 / 氢等离子 18&r。"
+				""
+				"&6Mek 联动&r：电解分离器产氢 → 旋转冷凝器出液态氢，直接当火箭燃料；GT-- 的 RP-1/UDMH 等高级燃料也能用。"
+				""
+				"准备好至少 8 桶燃料再发射。"
+			]
+			icon: "gcyr:basic_fuel_tank"
+			id: "283E38CADB562D1A"
+			rewards: [
+				{
+					count: 24
+					id: "4E58BB956CDD388D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "45A18E66DE5ED39B"
+				title: "准备好 8 桶火箭燃料"
+				type: "checkmark"
+			}]
+			title: "火箭燃料"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["283E38CADB562D1A"]
+			description: [
+				"在发射台上搭好火箭（发动机+燃料罐+座椅），用扫描仪扫描成实体，右键加注燃料。"
+				""
+				"放入&6ID 芯片&r选择目的地；倒计时 200 刻后发射。"
+			]
+			icon: "gcyr:rocket_scanner"
+			id: "5E2E0E2CBB5FE108"
+			rewards: [
+				{
+					count: 48
+					id: "60740D28057C75EE"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3903706B44FAA5DB"
+				title: "用扫描仪组装出一枚可发射的火箭"
+				type: "checkmark"
+			}]
+			title: "组装第一枚火箭"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B60DBBBF320BEEA"]
+			description: [
+				"航空织物 = PTFE + 芳纶 + PBI 箔 + 玻璃纤维；头盔/胸甲/护腿/靴子各一件。"
+				""
+				"胸甲内置 &616000 mB 氧气罐&r——用流体罐或 Mek 氧气给它充氧。"
+				""
+				"只有穿齐四件套，氧气才会生效。"
+			]
+			icon: "gcyr:space_chestplate"
+			id: "7A643B5AB5CCD343"
+			rewards: [
+				{
+					count: 32
+					id: "6D91271A08B80C91"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "5D034FE6CDFE5246"
+					item: "gcyr:space_helmet"
+					type: "item"
+				}
+				{
+					id: "1DF40EAD90FF9F67"
+					item: "gcyr:space_chestplate"
+					type: "item"
+				}
+				{
+					id: "2CE6328C4D47DE3A"
+					item: "gcyr:space_leggings"
+					type: "item"
+				}
+				{
+					id: "43C60D9C4B778A05"
+					item: "gcyr:space_boots"
+					type: "item"
+				}
+			]
+			title: "宇航服四件套"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7A643B5AB5CCD343"]
+			description: [
+				"&6电解分离器&r把水分解成氧与氢，&6旋转冷凝器&r把氧气转成液态氧。"
+				""
+				"GCYR 宇航服直接认&6forge:oxygen&r 流体标签——Mek 氧气无需转换即可灌装。"
+			]
+			icon: "mekanism:electrolytic_separator"
+			id: "25DE6BB7C9DF4ACE"
+			rewards: [
+				{
+					count: 24
+					id: "6DB43340B5E96250"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "011430954A05FC12"
+					item: "mekanism:electrolytic_separator"
+					type: "item"
+				}
+				{
+					id: "37EDFBE0E839AAE3"
+					item: "mekanism:rotary_condensentrator"
+					type: "item"
+				}
+			]
+			title: "氧气供应（Mek 联动）"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["5E2E0E2CBB5FE108", "25DE6BB7C9DF4ACE"]
+			description: [
+				"目的地选&6月球（gcyr:luna）&r：无大气、无氧气、113K、重力 1.625。"
+				""
+				"带上氧气、燃料与备用宇航服——这是你的第一次出地球。"
+			]
+			icon: "gcyr:moon_stone"
+			id: "078C14FC1CFD7959"
+			rewards: [
+				{
+					count: 64
+					id: "785879ACA2A83D72"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4296AA116EE51560"
+				title: "乘火箭抵达月球"
+				type: "checkmark"
+			}]
+			title: "首飞：月球"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["078C14FC1CFD7959"]
+			description: [
+				"月石、月沙与月海表层土都是月球建材；月球矿脉由 GT 矿脉系统生成。"
+				""
+				"想长期驻留？带一套&6氧气扩散器&r来建立呼吸区。"
+			]
+			icon: "gcyr:lunar_mare_regolith"
+			id: "58C1F4CAE639C4C0"
+			rewards: [
+				{
+					count: 24
+					id: "433FA31480C87AF9"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "16BD1B4B4461F1B8"
+					item: "gcyr:moon_stone"
+					type: "item"
+				}
+				{
+					id: "21C9D05C46912EA5"
+					item: "gcyr:lunar_mare_regolith"
+					type: "item"
+				}
+				{
+					id: "5C4E6757B5F85537"
+					item: "gcyr:moon_sand"
+					type: "item"
+				}
+			]
+			title: "月球资源"
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["58C1F4CAE639C4C0"]
+			description: [
+				"IV/LuV/ZPM/UV 四档；把氧气（或空气）灌进机器，它会给密闭空间充氧（气闸门+防洪填充判定）。"
+				""
+				"&6Mek 联动&r：KubeJS 已给扩散器补上 Mek 氧气配方，直接连通你的电解产线。"
+				""
+				"气泡内温度恒定为 293K，是行星基地的核心。"
+			]
+			icon: "gcyr:iv_oxygen_spreader"
+			id: "6C045B9407797D46"
+			rewards: [
+				{
+					count: 32
+					id: "489ECE5DDF717776"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0CEBE0A1335F9ACE"
+				item: "gcyr:iv_oxygen_spreader"
+				type: "item"
+			}]
+			title: "氧气扩散器"
+			x: 15.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["078C14FC1CFD7959"]
+			description: [
+				"裸装耐受 213~333K；全套宇航服 60~363K——水星 440K、金星 737K 都超出范围。"
+				""
+				"用&6隔热织物&r（耐热）与&6绝缘织物&r（耐寒）配合热升级锻造模板，给每件护甲打上防护。"
+				""
+				"&6Mek 联动&r：全套 MekaSuit 已获耐热/耐寒标签，可替代织物升级。"
+			]
+			icon: "gcyr:heat_shielding_fabric"
+			id: "783605590B4434FC"
+			rewards: [
+				{
+					count: 24
+					id: "261EE779456B5902"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7A523C687A5800B4"
+					item: "gcyr:heat_shielding_fabric"
+					type: "item"
+				}
+				{
+					id: "32F895682F652C93"
+					item: "gcyr:insulating_fabric"
+					type: "item"
+				}
+				{
+					id: "7A33E542096C0E8A"
+					item: "gcyr:space_suit_thermal_upgrade_smithing_template"
+					type: "item"
+				}
+			]
+			title: "温度防护"
+			x: 18.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["783605590B4434FC"]
+			description: [
+				"T2 重型锭 = T1 锭 + 钛致密板 + 钨钢液（装配机 EV）；再内爆成&6T2 重型合金板&r。"
+				""
+				"先进发动机（载重 50、2 台）与先进燃料罐（7000 mB）都需要 T2 板。"
+			]
+			icon: "gtnn:heavy_plate_t2"
+			id: "1874936B7E59C07F"
+			rewards: [
+				{
+					count: 48
+					id: "7DF34D69CB73853A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0122527105B297B9"
+					item: "gtnn:heavy_plate_t2"
+					type: "item"
+				}
+				{
+					id: "6CC2B1F3019D17BE"
+					item: "gcyr:advanced_rocket_motor"
+					type: "item"
+				}
+				{
+					id: "5974D2429BA150E4"
+					item: "gcyr:advanced_fuel_tank"
+					type: "item"
+				}
+			]
+			title: "T2 重型合金与先进火箭"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1874936B7E59C07F"]
+			description: [
+				"火星：火箭等级 2、薄大气、无氧、208K、重力 3.72。"
+				""
+				"火星岩与表层土是红色建材；矿脉同样来自 GT 系统。"
+			]
+			icon: "gcyr:martian_rock"
+			id: "2050FFAD3E1FFA46"
+			rewards: [
+				{
+					count: 32
+					id: "5353DC0FD04D3D8F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0A7E17CF3D5C0AF6"
+				item: "gcyr:martian_rock"
+				type: "item"
+			}]
+			title: "火星"
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1874936B7E59C07F"]
+			description: [
+				"水星：等级 2、无大气、440K（必须耐热）、重力 3.7。"
+				""
+				"太阳能丰富（19）——适合建太阳能阵列。"
+			]
+			icon: "gcyr:mercury_rock"
+			id: "3814DAD8B5ADB40F"
+			rewards: [
+				{
+					count: 32
+					id: "6DFF3F2B4FEEA15B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2F8F678BF30D1D93"
+				item: "gcyr:mercury_rock"
+				type: "item"
+			}]
+			title: "水星"
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1874936B7E59C07F"]
+			description: [
+				"金星：等级 2、浓大气、737K（最高温）、重力 8.87——没有耐热防护寸步难行。"
+				""
+				"金星沙与岩石偏黄，适合做基地外墙。"
+			]
+			icon: "gcyr:venus_rock"
+			id: "7BC5E2A5702C45F8"
+			rewards: [
+				{
+					count: 32
+					id: "6DD35D01FA781E26"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "509416333B426F0E"
+				item: "gcyr:venus_rock"
+				type: "item"
+			}]
+			title: "金星"
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2050FFAD3E1FFA46"]
+			description: [
+				"把卫星放进火箭的卫星槽发射入轨；GPS 卫星配合&6GPS 跟踪器&r可追踪实体。"
+			]
+			icon: "gcyr:gps_satellite"
+			id: "400F931AF7702AD2"
+			rewards: [
+				{
+					count: 24
+					id: "1F7DD4E0A91E448D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3BC1D92220F5EF9A"
+				item: "gcyr:gps_satellite"
+				type: "item"
+			}]
+			title: "GPS 卫星"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2050FFAD3E1FFA46"]
+			description: [
+				"寻矿卫星按 32×32×32 区块扫描行星矿石（#ores），为你标记矿脉位置。"
+			]
+			icon: "gcyr:ore_finder_satellite"
+			id: "181B9CEB5EBEA340"
+			rewards: [
+				{
+					count: 24
+					id: "57D8910A916F1737"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5618A3F5A687D902"
+				item: "gcyr:ore_finder_satellite"
+				type: "item"
+			}]
+			title: "寻矿卫星"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2050FFAD3E1FFA46"]
+			description: [
+				"激光卫星可对地攻击实体或定点挖掘——危险但高效。"
+			]
+			icon: "gcyr:laser_satellite"
+			id: "011F18E43DA62209"
+			rewards: [
+				{
+					count: 24
+					id: "739A22BBD7FE9FAD"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7F48CD44A39BC688"
+				item: "gcyr:laser_satellite"
+				type: "item"
+			}]
+			title: "激光卫星"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2050FFAD3E1FFA46"]
+			description: [
+				"T3 重型锭 = T2 锭 + 钨钢致密板 + 铂液（装配机 IV）；内爆成&6T3 重型合金板&r。"
+				""
+				"精英发动机（载重 75、3 台）与精英燃料罐（12000 mB）都需要 T3 板。"
+			]
+			icon: "gtnn:heavy_plate_t3"
+			id: "01B849DEB042CE5E"
+			rewards: [
+				{
+					count: 64
+					id: "232FCF04184D811E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "638B3D30AF7A00F2"
+					item: "gtnn:heavy_plate_t3"
+					type: "item"
+				}
+				{
+					id: "187D50E33D4AEB3E"
+					item: "gcyr:elite_rocket_motor"
+					type: "item"
+				}
+				{
+					id: "39771289C49AEDB8"
+					item: "gcyr:elite_fuel_tank"
+					type: "item"
+				}
+			]
+			title: "T3 重型合金与精英火箭"
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["01B849DEB042CE5E"]
+			description: [
+				"比邻星 b：火箭等级 3、有大气与&6氧气&r、303K——另一颗恒星系里的可居住世界。"
+				""
+				"跨恒星系飞行需要 26 桶燃料（同星系）——精英火箭是硬性要求。"
+			]
+			icon: "gcyr:proxima_centauri_b_turf"
+			id: "0215796DB20D6209"
+			rewards: [
+				{
+					count: 64
+					id: "5782D01BABD5EF3C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "103773F62F8FC82A"
+				item: "gcyr:proxima_centauri_b_turf"
+				type: "item"
+			}]
+			title: "比邻星 b"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0215796DB20D6209"]
+			description: [
+				"LuV 多方块：把搭建好的平台结构打包成&6空间站包裹&r（记录全部方块）。"
+				""
+				"在轨道上发射包裹即可部署空间站，最多 512 格。"
+			]
+			icon: "gcyr:space_station_packager"
+			id: "3F966FE9E4C6DB1C"
+			rewards: [
+				{
+					count: 64
+					id: "5091A0844563138A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "47C4DD466CF90DDB"
+				item: "gcyr:space_station_packager"
+				type: "item"
+			}]
+			title: "空间站组装机"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3F966FE9E4C6DB1C"]
+			description: [
+				"把空间站包裹装进火箭发往轨道；用&6钥匙卡&r保存空间站编号，之后可随时往返。"
+				""
+				"空间站是跨行星中转与工业基地的最佳选址。"
+			]
+			icon: "gcyr:space_station_package"
+			id: "692D26067556F318"
+			rewards: [
+				{
+					count: 32
+					id: "52D7BE64225B8CE8"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "53F7F28DD998EB83"
+					item: "gcyr:space_station_package"
+					type: "item"
+				}
+				{
+					id: "6C344A849000D172"
+					item: "gcyr:keycard"
+					type: "item"
+				}
+			]
+			title: "空间站"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2050FFAD3E1FFA46"]
+			description: [
+				"GT-- 的&6火箭引擎发电机&r（EV/IV/LuV）燃烧火箭燃料发电。"
+				""
+				"KubeJS 已把 GCYR 的&6gtceu:rocket_fuel/汽油/柴油&r接入 GTNN 引擎——你的燃料产线现在能同时驱动火箭与电网。"
+			]
+			icon: "gtnn:ev_rocket_engine"
+			id: "62BF48A9682F25B6"
+			rewards: [
+				{
+					count: 32
+					id: "08DB0A54DCFCEE4A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "53C80C3CBB728184"
+				item: "gtnn:ev_rocket_engine"
+				type: "item"
+			}]
+			title: "火箭引擎发电（GT-- 联动）"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["692D26067556F318"]
+			description: [
+				"Mek 的&6量子纠缠器&r原生支持跨维度传输物品/流体/气体——行星基地与主基地之间的物流神器。"
+			]
+			icon: "mekanism:quantum_entangloporter"
+			id: "0D80D22FDC2EEB50"
+			rewards: [
+				{
+					count: 32
+					id: "5EC48A8CAC4D1D8D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2BD0550BF7BB07D9"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			title: "跨行星物流（Mek 联动）"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["783605590B4434FC"]
+			description: [
+				"本包已给全套 MekaSuit 打上&6gcyr:heat_resistant / freeze_resistant&r 标签：穿着它可在水星/金星/太空自由行动。"
+				""
+				"注意：它不替代氧气系统，仍需要氧气供应或宇航服。"
+			]
+			icon: "mekanism:mekasuit_helmet"
+			id: "366D969A8401A0CF"
+			rewards: [
+				{
+					count: 48
+					id: "79BBBFB1A237BE38"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "05DACD0294ABAB88"
+				title: "穿上全套 MekaSuit（已具备耐热/耐寒）"
+				type: "checkmark"
+			}]
+			title: "MekaSuit 耐温（Mek 联动）"
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["692D26067556F318"]
+			description: [
+				"ZPM+ 巨型多方块：制造戴森球机械方块、太阳能电池与维护端口。"
+				""
+				"支撑柱用波束接收器与钨钢框架——准备大量材料。"
+			]
+			icon: "gcyr:space_elevator"
+			id: "4E06937111357BD0"
+			rewards: [
+				{
+					count: 64
+					id: "65695552E4892C10"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "54AB0B271A256497"
+				item: "gcyr:space_elevator"
+				type: "item"
+			}]
+			title: "太空电梯"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4E06937111357BD0"]
+			description: [
+				"在太空电梯里生产&6戴森球机械方块 / 太阳能电池 / 维护端口&r，并组装&6戴森施工无人机&r（装配线 ZPM）。"
+				""
+				"光子电池由硅岩晶圆与 LuV 电路制成。"
+			]
+			icon: "gcyr:dyson_sphere_casing"
+			id: "2590EF4EE316180B"
+			rewards: [
+				{
+					count: 64
+					id: "3DD6433AC956ACB7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "125AE7124E8538F0"
+					item: "gcyr:dyson_sphere_casing"
+					type: "item"
+				}
+				{
+					id: "4094BC187BCAE1D0"
+					item: "gcyr:dyson_solar_cell"
+					type: "item"
+				}
+				{
+					id: "0F7F4B23DFAD51E2"
+					item: "gcyr:dyson_construction_drone"
+					type: "item"
+				}
+			]
+			title: "戴森球组件"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2590EF4EE316180B"]
+			description: [
+				"在轨道上建造&6戴森系统控制器&r（UV 多方块），投入组件与无人机开始建造。"
+				""
+				"建成后运行戴森球：UV/UXV 级别的持续发电——这是整合包太空线的终点。"
+			]
+			icon: "gcyr:dyson_system_controller"
+			id: "0AF8E05C8A57FE9A"
+			rewards: [
+				{
+					count: 64
+					id: "26DD8A9D7078A9B3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7035E047A25FD484"
+					item: "gcyr:dyson_system_controller"
+					type: "item"
+				}
+				{
+					id: "6820DBE9FEEF31F4"
+					title: "在轨道上建造戴森球并开始发电"
+					type: "checkmark"
+				}
+			]
+			title: "戴森球：终局"
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	title: "&b太空探索&r"
+}

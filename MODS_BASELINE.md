@@ -5,6 +5,10 @@
 - 总大小：0.91 GiB
 - 哈希算法：SHA256（用于校验 mods 是否被替换/改动）
 
+## 后续变更记录
+
+- **2026-09-18**：`mae2-1.6.1.jar` → `mae2-2.0.1.jar`（修复 MAE2 的 `@Overwrite` 与 `applied_greg` 的 `PatternProviderLogic` mixin 冲突导致的服务端启动崩溃；2.0.1 已改为 HEAD/TAIL 注入，SHA1 `d30714810b93b7a9443c2ad2ee4cf2f5ac222c54`；服务端同步时需删除旧 jar）
+
 ## 与上一版基线差异（上一版 392 个，生成于 2026-09-13 07:21）
 
 - 新增 12 个：`Applied-Mekanistics-1.4.2.jar`、`Mekanism-1.20.1-10.4.16.80.jar`、`MekanismAdditions-1.20.1-10.4.16.80.jar`、`MekanismGenerators-1.20.1-10.4.16.80.jar`、`MekanismTools-1.20.1-10.4.16.80.jar`、`forbidden-magic-forge-0.574-1.20.1-port.0.1.0-20711.jar`、`gregmek-1.0-SNAPSHOT.jar`、`gtmfo-0.0.7.jar`、`tainted-magic-forge-8.1.1-1.20.1-port.0.1.0-20711.jar`、`thaumcraft-forge-4.2.3.5-1.20.1-port.0.1.0-20711.jar`、`thaumic-energistics-1.20.1-forge-1.1.3.0-port.0.1.0-20711.jar`、`thaumic-tinkerer-forge-2.5-1.20.1-port.0.1.0-20711.jar`

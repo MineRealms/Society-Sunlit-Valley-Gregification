@@ -60,3 +60,23 @@
 - 任务书：`config/ftbquests/quests/chapters/`；文本 `kubejs/assets/ftbquestlocalizer/lang/{zh_cn,en_us}.json`
 - 分析工具：根目录 `analyze_ftb_quests.py` → `ftb_quests_map.json` / `ftb_quests_report.md`
 - 外部参考：GTCEu 源码 `H:\MinecraftMods\GregTech-Modern-7.5.2`；GT JEI 导出 `H:\tools\jei_names.json`；TC4 dev 包 `D:\Downloads\1.20.1-forge-20711-dev.zip`
+
+---
+
+## 5. 任务书文本约定（2026-09-17 起）
+
+- **新增/修改的任务文本一律内联中文**（直接写在 snbt 里），不写 lang 文件、不做 i18n。
+- 我们新增的章节（暮色森林 / 神秘时代 / MEK / GT 17 章）已全部内联；原 Sunlit Valley 章节保持原有 lang 键不动。
+- 生成器同步：`build_twilight_forest_chapter.py`、`build_thaumcraft_chapter.py`、`build_mek_chapter.py` 均输出内联中文。
+
+---
+
+## 6. 太空线整合（2026-09-18）
+
+详见 `SPACE_INTEGRATION.md`。摘要：
+
+- **太空任务章**：`config/ftbquests/quests/chapters/space.snbt`（30 任务，内联中文，GT 组 order 18，入口=EV 组装机 `7A55CC71442CC854`）；生成器 `build_space_chapter.py`。
+- **火箭硬化**：火箭发动机/燃料罐追加 `gtnn:heavy_plate_t1~t3` ×2（`kubejs/server_scripts/gcyr/hardenRockets.js`）。
+- **GT-- 重型合金补全**：GTNN 原重型锭配方依赖未安装的 Ad Astra → 用钛/钨钢/钠钾合金替代补全 T1~T4（`gcyr/heavyAlloys.js`）。
+- **Mek 联动**：宇航服氧气天然兼容（forge:oxygen）；补 Mek 氧扩散器配方与 Mek 氢燃料（`gcyr/mekLinks.js`）；全套 MekaSuit 获耐热/耐寒标签（`kubejs/data/gcyr/tags/items/`）。
+- **GT-- 联动**：GTNN 火箭引擎燃烧 GCYR 燃料发电；GTNN 高级燃料（RP-1/UDMH/MHN）驱动 GCYR 火箭（`gcyr/gtnnLinks.js`）。

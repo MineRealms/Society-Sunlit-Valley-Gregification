@@ -55,7 +55,7 @@
 |---|---|
 | `kubejs/server_scripts/botania/gateBotania.js` | 三阶段配方锁（移除原配方 + 重写） |
 | `kubejs/client_scripts/tooltips/botaniaGateTooltips.js` | 四个受锁物品的「阶段锁」提示（内联中文） |
-| `config/ftbquests/quests/chapters/botania.snbt` | 三个相关任务追加阶段锁说明行（存储魔力 / 合成符文 / 泰拉钢） |
+| `config/ftbquests/quests/chapters/botania.snbt` | 三个相关任务追加阶段锁说明行（存储魔力 / 合成符文 / 泰拉钢）+ 详细解锁指引（进入暮色森林方法 / 巫妖塔打法 / 虚空锭研究链） |
 | `kubejs/assets/ftbquestlocalizer/lang/{zh_cn,en_us}.json` | 对应任务文本（description5 / description4 ×2；其他语言自动回退 en_us） |
 
 > 备注：任务书「泰拉钢」原描述本就写着「将所需的**四种**材料放到泰拉凝聚板上」，本次把第四种材料定为虚空锭，与该文案正好吻合。

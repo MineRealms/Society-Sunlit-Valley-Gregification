@@ -291,9 +291,9 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 
 - 脚本：`kubejs/server_scripts/mek/lockMekBehindGT.js`（8 处 `replaceInput`，B 方案 = `gtceu:microchip_processor`）；
 - 任务章：`config/ftbquests/quests/chapters/mekanism.snbt`（11 任务，挂在「格雷科技」分组 `4A46A5E1358A80A6`，order 17）；
-  生成器 `config/ftbquests/tools/build_mek_chapter.py`；任务文本内联中文（无 lang 依赖）；
+  生成器 `config/ftbquests/tools/build_mek_chapter.py`；中英文本已写入 lang；
 - **入门前置**：LV 章「铝锭」任务 `7567E885B7166603`（LV→MV 收尾标志）——“LV 玩得差不多才能进 MEK”；
-- 校验：`node --check` ✅；SNBT 括号平衡 ✅；34 个新 ID 全局唯一 ✅；11 条依赖全部存在 ✅；文本内联中文 ✅。
+- 校验：`node --check` ✅；SNBT 括号平衡 ✅；34 个新 ID 全局唯一 ✅；11 条依赖全部存在 ✅；28 条 lang 引用 zh/en 完整 ✅。
 
 ---
 
@@ -315,7 +315,7 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 | LV 门槛任务/文本（Create 章） | ✅ 新增「LV 时代」+ zh/en 键齐全 |
 | Create 联动脚本（`createBridges.js`） | ✅ `node --check` + 40 物品 ID / 10 标签全部核对通过 |
 | MEK 锁脚本（`lockMekBehindGT.js`） | ✅ `node --check`；8 处替换按 Mekanism jar 配方逐条核对 |
-| MEK 任务章（`mekanism.snbt`） | ✅ SNBT 括号平衡；34 ID 全局唯一；11 依赖完整；文本内联中文 |
+| MEK 任务章（`mekanism.snbt`） | ✅ SNBT 括号平衡；34 ID 全局唯一；11 依赖完整；28 lang 键 zh/en 齐全 |
 
 > 运行时验证（需进存档）：打开任务书检查「格雷科技」分组排版与文本；
 > 旧存档请前往未探索区域观察新矿脉。建议 `/ftbquests editing_mode` 预览。
