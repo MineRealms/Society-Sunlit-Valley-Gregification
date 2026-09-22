@@ -291,3 +291,26 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 - 每轮一个独立文件 → 回滚 = 删除该文件（或 `git revert <commit>`）
 - R2 若改 `globalRegistry.js`（不推荐，优先独立 startup 脚本）需特别注意加载顺序
+
+---
+
+## 9. 畜牧兼容：义大利水牛（产奶 + 好感度）（2026-09-16，gtmfo-0.0.8）
+
+对照包内 husbandry 系统（`kubejs/server_scripts/entities/animalBase.js` + `husbandryDefinitions.js`）实现，
+**不添加新物品**，水牛直接接入现有水牛奶经济链：
+
+1. **模组侧（gtmfo-0.0.8 自带）**：实体类型标签
+   `data/society/tags/entity_types/{husbandry_animal,milkable_animal}.json` → `gtmfo:italian_buffalo`
+   （与包内 `handleEntityTags.js` 的标签合并；任何使用该体系的整合包都会自动识别）。
+2. **包侧（KubeJS）**：
+   - `husbandryDefinitions.js`：新增产奶定义
+     `{ animal: "gtmfo:italian_buffalo", cooldown: 1, milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" } }`
+     → 接入现有水牛奶经济（售价 64、奶酪压制机 `piece_of_buffalo_cheese`、意式咖啡机 `steamed_milk`、`addMilkRecipes.js`）；
+   - `globalAnimalVariables.js`：加入 `husbandryAnimals` / `milkableAnimals` / `tierTwoHusbandryAnimals`
+     （tier2 = 产出/好感度系数 ×1.25，与 `meadow:water_buffalo` 一致）。
+3. **玩法**：`society:milk_pail` 挤奶（大小奶与品质按好感度/心情判定）；`society:animal_feed` 喂食涨好感；
+   抚摸/命名/繁殖/情绪扫描/自动挤奶机等全部走通用流程；模组自带桶挤奶（`gtceu:italian_buffalo_milk`）保留不变。
+4. **JEI**：`husbandryJei.js` 按定义自动生成「挤奶」信息页（图标为 `gtmfo:italian_buffalo_spawn_egg`）。
+
+> 相关：农业平衡（果实掉率修复 / 温室限速 / 树苗季节联动）见模组仓库 `docs/AGRICULTURE_BALANCE.md`
+> 与 `PORTING_TODO.md §16.12`。
