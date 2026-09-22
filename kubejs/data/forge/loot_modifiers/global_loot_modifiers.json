@@ -1,1 +1,4 @@
-{"forge:conditions": [{"type": "forge:false"}]}
+{
+  "replace": false,
+  "entries": []
+}

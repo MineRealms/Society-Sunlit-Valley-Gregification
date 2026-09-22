@@ -4,7 +4,7 @@ devConfigs:
   nutrientMode: false
 
   # Export every recipe JEI can display to a JSON file after the recipe set is loaded (client-side, for external recipe graph tooling).
-  exportJeiRecipes: false
+  exportJeiRecipes: true
 
   # Export path. Relative paths resolve against the game directory; absolute paths (e.g. H:/tools/jei_recipes.json) are used as-is.
   jeiRecipeExportPath: H:/tools/sunlit_jei_recipes.json

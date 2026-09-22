@@ -689,11 +689,6 @@ global.husbandryMilkingDefinitions = [
     milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },
   },
   {
-    animal: "gtmfo:italian_buffalo",
-    cooldown: 1,
-    milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },
-  },
-  {
     animal: "wildernature:bison",
     cooldown: 1,
     milk: { sm: "society:buffalo_milk", lg: "society:large_buffalo_milk" },

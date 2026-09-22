@@ -1,0 +1,35 @@
+
+#Industrial pollution system
+[pollution]
+	#Master switch for the industrial pollution system.
+	enablePollution = true
+	#Machines emit pollution when they explode.
+	enableExplosionPollution = true
+	#Multiplier applied to multiblock muffler hatch pollution output.
+	#Range: 0.0 ~ 1000.0
+	mufflerPollutionMultiplier = 1.0
+	#Fraction of the chunk pollution that is scrubbed per TC4R flux consumed.
+	#Range: 0.0 ~ 1.0
+	fluxScrubberMultiplier = 0.002
+	#Natural pollution decay per tick and per polluted chunk.
+	#Range: 0.0 ~ 10.0
+	pollutionDecayPerTick = 0.001
+	#Chunk pollution value at which players start receiving harmful effects.
+	#Range: 0.0 ~ 1000000.0
+	effectThreshold = 10.0
+
+#Vis generator and aura machines
+[aura]
+	#EU produced per unit of vis drained from the Thaumcraft 4R network.
+	#Range: 1 ~ 1000000
+	visGeneratorEuPerVis = 250
+	#Pollution added per unit of vis drained.
+	#Range: 0.0 ~ 1000.0
+	visGeneratorPollutionMultiplier = 0.1
+	#Vis recharged per EU spent by the vis provider (upstream visProviderMultiplier).
+	#Range: 0.0 ~ 100.0
+	visProviderMultiplier = 0.05
+	#Base flux quanta consumed per operation by the flux promoted fuel cell.
+	#Range: 0.0 ~ 100.0
+	fluxFuelCellFluxPerTick = 0.005
+
