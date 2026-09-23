@@ -254,11 +254,12 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
    建世界 `intrusive holders were not registered` 崩溃；改回裸 `FluidBuilder()` 后修复并安装
    （旧 jar 备份为 `.broken-fluidnames`）。
 
-### 6.3 现状
+### 6.3 现状（2026-09-22 更新）
 
 - `mods/gregmek-1.0-SNAPSHOT.jar`（30 KB，2026-09-15 22:10）已安装；
 - Mekanism 全家桶 10.4.16.80（本体 + Additions + Generators + Tools）在包内；
-- 运行时验证待进存档（矿石处理链、JEI 分类、浆液流体显示）。
+- **服务器运行验证（9/22 日志）**：gregmek 加载无报错；`lockMekBehindGT.js` 正常加载（`[GT-MEK-LOCK]`）；
+- **仍待进存档确认**：MEK 侧矿石处理链（浆液/晶体/碎片等配方）与 JEI 分类展示（静态校验已过，暂无运行时证据）。
 
 ### 6.4 ★ MEK 科技锁（用户明确要求）—— 已实施
 
@@ -289,7 +290,8 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 
 **实施（已完成）**：
 
-- 脚本：`kubejs/server_scripts/mek/lockMekBehindGT.js`（8 处 `replaceInput`，B 方案 = `gtceu:microchip_processor`）；
+- 脚本：`kubejs/server_scripts/mek/lockMekBehindGT.js`（**6 处 `replaceInput` 调用**：灌注机 1 + 4 台基础机循环 1 + 精密构件 4 → 实际 **9 个替换**；B 方案 = `gtceu:microchip_processor`）；
+- 说明：**未锁 `steel_casing`**（§6.4 推荐方案 1 未采用）——入口由“冶金灌注机 → LV 微处理器×2”把守，保持包内合成表最小改动；
 - 任务章：`config/ftbquests/quests/chapters/mekanism.snbt`（11 任务，挂在「格雷科技」分组 `4A46A5E1358A80A6`，order 17）；
   生成器 `config/ftbquests/tools/build_mek_chapter.py`；中英文本已写入 lang；
 - **入门前置**：LV 章「铝锭」任务 `7567E885B7166603`（LV→MV 收尾标志）——“LV 玩得差不多才能进 MEK”；
@@ -324,7 +326,7 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 
 ## 8. 后续可选项（TODO）
 
-- [ ] **MEK 科技锁（GT LV 电路组装机 + Create 精密构件）—— 见第 6.4 节（用户明确要求）**
+- [x] **MEK 科技锁（GT LV 电路组装机 + Create 精密构件）—— 见第 6.4 节（2026-09-15 已实施，2026-09-22 服务器运行验证）**
 - [ ] 人工润色机器翻译文本（重点：长描述、幽默文案、专有名词）
 - [ ] 按本包进度调整部分任务奖励（numismatics 货币联动）
 - [ ] 为骷髅洞穴各群系差异化矿脉权重
@@ -379,3 +381,34 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 | 2026-09-15 | 新增 MEK 科技锁 TODO（GT LV 电路组装机 + Create 精密构件）；建立 `STATUS.md` 状态快照 |
 | 2026-09-15 | **MEK 科技锁实施完成**（B 方案 = LV 微处理器 + Create 精密构件 8 处 `replaceInput`）+ MEK 任务章（11 任务，前置 = LV 章铝锭任务） |
 | 2026-09-15 | 日志分析后的数据修复（4 类标签文件）+ GTCA 机壳兼容配方；删除诊断脚本 `_diag_tags.js`（f7a0128） |
+| 2026-09-22 | 服务器日志分析 + 修复：GCYR 汽油/柴油火箭燃料（EUt=0 被 GTCEu 拒绝 → `EUt(1,1)` 重注册，`gcyr/fixRocketFuels.js`）；TC4 原生矿簇熔炼（标签输出 → 固定物品输出，修复 GT 代理配方空产物）；Quark 树苗购买组；Relics `talisman` / society `clock` 饰品槽位；KubeJS 战利品表结构 |
+| 2026-09-22 | mods 文件夹整理（`mods1` → `mods`，402 个 jar；旧测试集删除，`pollution`/`rosetta` 备份到桌面）；`manifest.json` / `modpack.cfg` 清理为本地实际存在的 364 条（移除 3 条：旧 JEI 15.20.0.129、Emojiful、selectivebounds）；`MODS_BASELINE.md` 基线重算 |
+| 2026-09-22 | 联动现状事实核对（Create × GT × Mek，见第 11 节）；提交 `d367d16`（恢复 kubejs 全量树 + 本轮兼容数据） |
+
+---
+
+## 11. Create × GT × Mek 联动现状（2026-09-22 事实核对）
+
+**结论：三线串联 —— Create（入门）→ GT（ULV/LV 主科技）→ Mek（GT LV 电路 + Create 精密构件双重门后）。**
+
+### 11.1 现状总览
+
+| 方向 | 机制 | 载体 | 事实依据 | 运行状态 |
+|---|---|---|---|---|
+| Create → GT | LV 配方门：`gtceu:basic_electronic_circuit` 的真空管 → `create:electron_tube` | `kubejs/server_scripts/gt/lockLVBehindCreate.js` | GTCEu `CircuitRecipes.java:1007-1013`；`replaceInput` 按 output 过滤 | 服务器加载 ✓ |
+| Create → GT | LV 任务门：Create 章「LV 时代」`1EA76C7815090684`；GT LV 章 5 入口依赖它 | `config/ftbquests/quests/chapters/*.snbt` | SNBT/ID/依赖校验（§4.3） | 静态校验 ✓ |
+| Create → GT | 桥接 R2（5 组）：压板 / 覆膜电路板 / 碎矿 / 合金粉 / 橡胶 | `gt/createBridges.js`（91 行） | GT 官方配方数值逐条对照（§5） | 服务器加载 ✓ |
+| GT → Mek | 入门机（冶金灌注机）：熔炉 → `gtceu:microchip_processor`×2 | `mek/lockMekBehindGT.js` | Mekanism jar 配方逐条核对（§6.4） | 服务器加载 ✓ |
+| GT → Mek | 4 台基础机（富集仓/粉碎机/电炉/精密锯木厂）：`#forge:circuits/basic` → LV 微处理器×2 | 同上 | 同上 | 服务器加载 ✓ |
+| Create → Mek | 同上 4 台基础机各追加 `create:precision_mechanism`（替换铁锭/岩浆桶/硅玻璃/灌注合金） | 同上 | 同上 | 服务器加载 ✓ |
+| GT ↔ Mek（模组层） | gregmek（自研 addon）：污浊粉/碎块/碎片/晶体 + 纯净/污浊浆液 + GT/Mek 两条矿石处理链 | `mods/gregmek-1.0-SNAPSHOT.jar` | 反编译 13 个类；§6.1 逐条核对 | 加载无报错 ✓ |
+| AE2 横向桥 | applied_greg（GT×AE2）、Applied-Mekanistics（Mek×AE2）、AE2WTLib、ExtendedAE | 模组 | 包内 jar | 加载 ✓ |
+
+### 11.2 关键事实与边界
+
+- **顺序唯一且双向不逆**：GT 的 LV 需 Create 电子管（配方+任务双锁）；Mek 需 GT LV 微处理器 + Create 精密构件。反向（GT/Mek 要求 Create 进度以外的东西）不存在，Create 也不需要 GT 材料即可推进。
+- **桥接方向只有“低 → 高”**：Create 机器可加工 GT 的 ULV~LV 材料（压板/碎矿/合金粉/电路板/橡胶），没有发现 GT/Mek 材料反注 Create 的配方。
+- **MEK 锁实际形态**：`lockMekBehindGT.js` 共 6 处 `replaceInput` 调用（含 1 处 forEach ×4）→ 实际 9 个替换；**未锁 `steel_casing`**，入口由灌注机把守（B 方案）。
+- **任务侧**：MEK 章 11 任务挂「格雷科技」分组（order 17），入门前置 = LV 章铝锭任务 `7567E885B7166603`；MEK 章与 GT 章的依赖链与配方锁一致。
+- **运行验证（服务器 9/22 日志）**：`[GT-LV-GATE]` / `[GT-CREATE-BRIDGE]` / `[GT-MEK-LOCK]` 三个脚本均正常加载；GTCA 兼容脚本相关 4 条已知报错为噪音（配方已被脚本移除/替换，见 §9.2）。
+- **已知待验证**：MEK 矿石处理链的运行时表现（浆液/晶体等）与 JEI 分类；Create 桥接配方在 JEI 中的显示（静态 ID 已核对）。

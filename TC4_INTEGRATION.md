@@ -315,3 +315,16 @@ KubeJS 用法（schema 已核对）：`e.recipes.thaumcraft.crucible(result, cat
   冰雪女王 `gelum 12 + tenebrae 8`、九头蛇 `bestia 12 + ignis 8`），普通生物 2~6 点；
   `scan_identity` 使用英文显示名（如 “Lich”）；
 - **校验**：57 个实体全部存在于 TF jar（lang 实体表）；要素名全部在端口合法集内 ✅；`rule_id` 唯一 ✅。
+
+### 8.10 原生矿簇熔炼修复（2026-09-22，服务器日志驱动）
+
+- **现象**：日志 4 条 `Output item 0 of recipe thaumcraft:compat/native_{copper,tin,lead,silver}_cluster_smelting is empty`（GregTechCEu 记录）。
+- **根因（反编译核对）**：
+  - 端口配方 `CommonMetalSmeltingRecipe extends SmeltingRecipe`，输出 `CommonMetalRecipeOutput.Tagged`（`forge:ingots/*` 标签，运行时解析）；
+  - GTCEu `GTRecipeType.toGTrecipe()`（`RecipeManagerHandler` 调用）用**假 RegistryAccess** 取产物
+    （`recipe.getResultItem(RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY))`）
+    → 标签解析为空 → 报错且 GT 侧“熔炉代理配方”作废（原版熔炉路径不受影响）。
+- **修复**：`kubejs/data/thaumcraft/recipes/compat/native_*_cluster_smelting.json` 覆盖为**固定物品输出**
+  （铜 `minecraft:copper_ingot`、锡/铅/银 `gtceu:*_ingot`，各 ×2；JSON 依据 `ForgeRecipeItemCodec`：`{"id":...,"count":...}`，count 1..99）；
+  同时去掉仅对标签输出有意义的 `forge:tag_empty` 条件。
+- **效果**：GT 代理配方正常注册（GT 机器也能烧原生矿簇），日志报错消失。

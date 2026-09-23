@@ -1,7 +1,7 @@
 # 项目状态快照（STATUS）
 
 > 用途：上下文/记忆压缩时的「事实源速览」。详细内容见各专项文档。
-> 最后更新：2026-09-15
+> 最后更新：2026-09-22
 
 ---
 
@@ -9,7 +9,7 @@
 
 | 任务 | 主要产出 | 提交 |
 |---|---|---|
-| git 仓库（仅跟踪 `config/`、`kubejs/` + 白名单） | `.gitignore`、`MODS_BASELINE.md`（392 jar 日期/SHA256） | `ab54ed1` |
+| git 仓库（仅跟踪 `config/`、`kubejs/` + 白名单） | `.gitignore`、`MODS_BASELINE.md`（402 jar 日期/SHA256，2026-09-22 重算） | `ab54ed1` |
 | 暮色森林教程章节（30 任务，中英） | `config/ftbquests/quests/chapters/twilight_forest.snbt` + 生成器 `config/ftbquests/tools/build_twilight_forest_chapter.py` | `8d565c5` 等 |
 | 整合包说明报告（给 AI 联动用） | `MODPACK_REPORT.md` / `MODPACK_REPORT.json` | `b9473e8` |
 | GT 矿脉注入（暮色森林 / 骷髅洞穴） | `kubejs/startup_scripts/gt/worldGenLayers.js`、`kubejs/server_scripts/gt/oreVeins.js` | `6c708f3` |
@@ -80,3 +80,27 @@
 - **GT-- 重型合金补全**：GTNN 原重型锭配方依赖未安装的 Ad Astra → 用钛/钨钢/钠钾合金替代补全 T1~T4（`gcyr/heavyAlloys.js`）。
 - **Mek 联动**：宇航服氧气天然兼容（forge:oxygen）；补 Mek 氧扩散器配方与 Mek 氢燃料（`gcyr/mekLinks.js`）；全套 MekaSuit 获耐热/耐寒标签（`kubejs/data/gcyr/tags/items/`）。
 - **GT-- 联动**：GTNN 火箭引擎燃烧 GCYR 燃料发电；GTNN 高级燃料（RP-1/UDMH/MHN）驱动 GCYR 火箭（`gcyr/gtnnLinks.js`）。
+
+---
+
+## 7. 服务器日志修复与工程整理（2026-09-22）
+
+基于服务器日志（`latest.log` / `debug.log`，431 ERROR / 1032 WARN）的事实分析与修复：
+
+### 7.1 已修复（新增文件，提交 `d367d16`）
+- **GCYR 汽油/柴油火箭燃料**：GCYR 0.2.9 以 `EUt(0)` 注册被 GTCEu 7.5.x 拒绝 → `gcyr/fixRocketFuels.js` 以 `EUt(1,1)` 重注册（汽油 25t / 柴油 18t，与原值一致）→ 火箭油箱重新接受二者。
+- **TC4 原生矿簇熔炼**（4 条）：`data/thaumcraft/recipes/compat/native_{copper,tin,lead,silver}_cluster_smelting.json` 标签输出 → 固定物品输出（铜=原版铜锭，锡/铅/银=`gtceu:*_ingot`，×2）；同时修复 GT 代理配方空产物报错。
+- **Quark 树苗购买**：`quark_saplings.json` 去掉不存在的 `pink_blossom_sapling`（整组解析失败 → 5 个有效树苗）。
+- **饰品槽位**：`relics` 实体文件去掉无定义的 `talisman`；补 `society:clock` 槽位定义。
+- **战利品表**：`data/forge/loot_modifiers/global_loot_modifiers.json` 改为合法空表（原结构非法报错）。
+- **`gt_demo.js`**：钢板条箱展示生成器 v6（`/gtitems`，仅指令触发；Rhino 兼容：函数体内全 `var`）。
+
+### 7.2 工程整理
+- **mods 文件夹**：`mods1` → `mods`（402 jar）；旧测试集删除；独有 jar `pollution` / `rosetta_remote_debug_bridge` 备份到桌面 `mods-test-backup-20260922/`。
+- **清单清理**：`manifest.json` / `modpack.cfg`（HMCL 依据）删掉本地不存在的 3 条（旧 JEI 15.20.0.129、Emojiful、selectivebounds），防止 HMCL 启动时把旧文件拉回来；资源包/光影条目保留。
+- **基线**：`MODS_BASELINE.md` 按 402 jar 重算（新增 6 / 移除 2 / 变更 0）。
+- **联动现状**：Create × GT × Mek 事实核对见 `GT_INTEGRATION.md` 第 11 节。
+
+### 7.3 服务器侧手动事项
+- 删除服务器 `kubejs/server_scripts/gt_demo_sim_v6.js`（测试脚本误同步，会报 SyntaxError）；
+- 同步包：桌面 `starvalley-server-sync-20260922.zip`（10 个文件 + 说明）。
