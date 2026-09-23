@@ -73,7 +73,7 @@
 
 - [x] 5.1 `git init`
 - [x] 5.2 编写 `.gitignore`（仅跟踪 config、kubejs + 白名单）
-- [x] 5.3 生成 `MODS_BASELINE.md`（392 个 jar 的日期/大小/SHA256）
+- [x] 5.3 生成 `MODS_BASELINE.md`（402 个 jar 的日期/大小/SHA256（2026-09-22 重算））
 - [x] 5.4 基准提交（baseline commit `ab54ed1`，6418 个文件）
 - [x] 5.5 解包 TF jar，导出物品/方块/实体/进度（advancements）/配方 ID 清单
 - [x] 5.6 核对 1.20.1 TF 机制（传送门、Boss 顺序、关键物品用途）

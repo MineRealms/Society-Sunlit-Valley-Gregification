@@ -6,7 +6,7 @@
 ## 0. 摘要
 
 - **版本**：Minecraft 1.20.1 / Forge 47.4.23 / Java 17 (Eclipse Adoptium jdk-17.0.18.8)
-- **规模**：392 个 mod jar（Forge 统计 393 项，含嵌套 jarjar 共 434 个 mod id）
+- **规模**：402 个 mod jar（2026-09-22 基线；本报告其余数据为 2026-09-16 快照）（Forge 统计 393 项，含嵌套 jarjar 共 434 个 mod id）
 - **任务书**：FTB Quests，30 章 / 1173 任务 / 1341 任务目标 / 487 奖励
 - **主题**：田园/农场生活 + 村庄经济 + 收集养成（星露谷风格），科技线 Create、魔法线 Botania、存储线 Refined Storage
 - **核心 mod**：Society（农场/村民/经济）、Society Trading、Create: Numismatics（货币）、Quality Food（品质）
@@ -259,7 +259,7 @@
 | 任务索引脚本 | 根目录 `analyze_ftb_quests.py` → `ftb_quests_map.json` / `ftb_quests_report.md` |
 | TF 章节生成器 | `config/ftbquests/tools/build_twilight_forest_chapter.py` |
 | TF ID 参考 | `config/ftbquests/tools/twilightforest_ids.md`（645 物品 + 101 实体） |
-| mod 基准表 | `MODS_BASELINE.md`（392 jar 的日期/大小/SHA256） |
+| mod 基准表 | `MODS_BASELINE.md`（402 jar 的日期/大小/SHA256（2026-09-22 重算）） |
 | 开发指南 | `TASK_GUIDE.md` |
 | 本报告 JSON | `MODPACK_REPORT.json` |
 
