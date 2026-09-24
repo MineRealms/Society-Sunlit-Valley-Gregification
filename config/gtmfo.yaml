@@ -15,6 +15,24 @@ devConfigs:
   # Also export recipes that JEI hides by default.
   jeiExportHiddenRecipes: true
 
+# Nutrient system used by the pack's balanced-diet integration.
+gtfoNutrientConfig:
+  enabled: true
+  cap: 30.0
+  decayPerDay: 1.0
+  # Broad item tags are a conservative fallback; explicit KubeJS values below take precedence.
+  tagValue: 0.75
+  resetOnDeath: true
+  benefitThreshold: 5.0
+  # One half-heart per qualifying category, capped at 2.5 hearts total.
+  healthPerNutrient: 1.0
+  healthBonusCap: 5.0
+  balancedEffect: ""
+  balancedEffectAmplifier: 0
+  scoreboardMirror: true
+  hud: true
+  foodTooltips: true
+
 # Recipe chain options.
 gtfoChainsConfig:
   # Delete vanilla bread recipe?
@@ -175,4 +193,3 @@ gtfoWorldGenConfig:
 
   # Turn on GTFO berry generation? Required for some mod features.
   enableGTFOBerries: true
-

@@ -22,7 +22,7 @@
 | LDLib | 包内 1.0.52.a（GTMFO 开发环境 1.0.50） |
 | KubeJS | 2001.6.5-build.16；GTCEu 自带 KubeJS 集成（可写 GT 配方） |
 | 本包食物体系 | forge 标准标签 + Quality Food（吃 `#forge:crops` 等）+ Serene Seasons（`sereneseasons:*_crops`）+ Society 经济（`global.trades`） |
-| 暂缓项 | FTB 任务书改动（用户明确暂缓）；GT 配方（R4，可选） |
+| 当前待验证 | R5 营养配置、KubeJS 阶段同步、FTBQ 章节需启动整合包后实测 |
 
 **包内既有改动（不要提交）**：`config/CSC/...`、`config/fabric/...`、`config/oculus.properties`、
 `config/packetfixer.properties`、`config/ftbquests.zip` —— 这些是整合包作者/运行时的改动。
@@ -37,6 +37,7 @@
 | R2 | 经济数据（`global.trades` 定价，可卖/价格提示/村民礼物） | ✅ 完成 | `kubejs/startup_scripts/gtmfoTrades.js` | `node --check` + 121 个 ID 静态核对 | 见 git log |
 | R3 | 加工配方（Create/FD/Farm&Charm 加工 GTMFO 物品，三批共 21 条） | ✅ 完成 | `kubejs/server_scripts/recipes/addGtmfoRecipes.js` | `node --check` + ID 核对 | 见 git log |
 | R4 | GT 配方（GTMFO 机器加工整合包物品，8 条） | ✅ 完成 | `kubejs/server_scripts/recipes/addGtmfoGtRecipes.js` | `node --check` + ID 核对 | 见 git log |
+| R5 | 营养系统（配置、食物营养表、FTBQ 阶段桥接） | ✅ 静态完成，待实机 | `config/gtmfo.yaml`、`kubejs/server_scripts/gtmfo/gtmfoNutrients.js`、`config/ftbquests/quests/chapters/nutrition.snbt` | `node --check` + 118 个物品 ID + SNBT 分隔符核对 | 本轮提交 |
 
 ---
 
@@ -275,6 +276,32 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
 
 ---
 
+## 4.6 R5 明细：营养系统 × Sunlit Valley ✅（待实机）
+
+**配置**：`config/gtmfo.yaml`
+
+- 开启 `gtfoNutrientConfig.enabled`；保留五类上限 30、每日衰减 1、死亡清空和 HUD/tooltip；
+- 标签兜底值为 `0.75`；
+- 每类达到 5 时增加 `1.0` 最大生命（半颗心），总营养生命加成上限 `5.0`（两颗半心）；
+- 不配置额外均衡药水效果，SoLOnion 的多样性奖励仍是唯一的力量/速度/韧性来源。
+
+**食物表与标签**：`kubejs/server_scripts/gtmfo/gtmfoNutrients.js`
+
+- 使用 `gtmfo:nutrient/<name>` 标签覆盖外部模组的谷物、果实、蛋白、蔬菜和乳制品兜底；
+- 使用 `GTMFO.nutrients.addMany()` 为 118 个已核对注册物品提供逐类别值，复合菜不会只被粗粒度标签误判；
+- 覆盖 Vanilla、Farmer's Delight、Farm & Charm、Bakery、Candlelight、Meadow、Crabber's Delight 和 Vinery 的常用食物；
+- 模组未安装时整个文件跳过，避免再次写入无效 `gtmfo:*` 标签。
+
+**FTBQ 桥接**：同一脚本每 20 tick 读取 `gtmfo_nutrient_<name>` persistentData，动态维护：
+
+- `gtmfo_nutrient_dairy_5`、`fruit_5`、`grain_5`、`protein_5`、`vegetable_5`；
+- `gtmfo_nutrient_balanced_5`：五类最低值都达到 5；
+- `gtmfo_nutrient_balanced_10`：五类最低值都达到 10。
+
+`config/ftbquests/quests/chapters/nutrition.snbt` 使用 gamestage 任务展示“补齐五类营养 / 均衡饮食 / 长期均衡”三个里程碑。阶段会随衰减移除，任务状态不会伪造永久达标。
+
+---
+
 ## 5. 决策点 / 风险（持续更新）
 
 1. **GT 电力门槛**：GTMFO 机器是 GTCEu 电力机器（LV+）；本包科技线是 Create。R3 用 Create/FD 配方
@@ -283,7 +310,7 @@ Shipping Bin 售价、村民礼物（`#society:sellable`）。
    GTMFO 只是让 GT 食物机器可用。
 3. **GTMFO 原版覆盖配置**：`useBakingOvenForMeats` / `useRollingPinForPaper` / `deleteBreadRecipe` 会改原版配方，
    可能撞任务书 → 后续（R3 或单独一轮）评估是否在包内关闭。
-4. **暂缓**：FTB 任务章节（用户明确）；JEI 15.56 下 GTMFO 的 JEI 导出工具未验证（可选工具，低优先）。
+4. **R5 实机验证**：需要启动整合包后执行 `/reload`，确认 KubeJS 无事件错误、五类 tooltip/进食累计、SoLOnion 原有奖励和 FTBQ gamestage 任务都正常；JEI 导出工具仍是可选低优先项。
 
 ---
 
