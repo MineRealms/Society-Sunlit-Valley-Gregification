@@ -1,6 +1,7 @@
 # Development/debug options.
 devConfigs:
-  # Enable the nutrient (dairy/fruit/grain/protein/vegetable) system.
+  # Legacy switch for the nutrient system - prefer gtfoNutrientConfig.enabled.
+  # Kept for save/config compatibility; either flag enables the system.
   nutrientMode: false
 
   # Export every recipe JEI can display to a JSON file after the recipe set is loaded (client-side, for external recipe graph tooling).
@@ -15,22 +16,49 @@ devConfigs:
   # Also export recipes that JEI hides by default.
   jeiExportHiddenRecipes: true
 
-# Nutrient system used by the pack's balanced-diet integration.
+# Nutrient (dairy/fruit/grain/protein/vegetable) system options.
 gtfoNutrientConfig:
+  # Enable the nutrient system (dairy/fruit/grain/protein/vegetable)?
   enabled: true
+
+  # Maximum stored value per nutrient.
   cap: 30.0
+
+  # Value removed from every nutrient once per in-game day.
+  # 0 = no decay. Offline time does not multiply the decay (one step per observed day change).
   decayPerDay: 1.0
-  # Broad item tags are a conservative fallback; explicit KubeJS values below take precedence.
+
+  # Value granted for foods that only match a gtmfo:nutrient/<name> tag
+  # (GTMFO foods keep their built-in per-item values).
   tagValue: 0.75
+
+  # Reset every nutrient when the player dies?
   resetOnDeath: true
+
+  # Each nutrient at/above this threshold grants max health.
+  # 0 = no health bonus (use when the pack grants its own nutrient rewards).
   benefitThreshold: 5.0
-  # One half-heart per qualifying category, capped at 2.5 hearts total.
+
+  # Max health granted per qualifying nutrient (2.0 = 1 heart).
   healthPerNutrient: 1.0
+
+  # Maximum total max-health bonus from nutrients (10.0 = 5 hearts).
   healthBonusCap: 5.0
+
+  # Optional effect granted while ALL nutrients are at/above the threshold
+  # (e.g. minecraft:luck). Empty = disabled.
   balancedEffect: ""
+
+  # Amplifier for the balanced-diet effect (0 = level I).
   balancedEffectAmplifier: 0
+
+  # Mirror nutrient values into scoreboard objectives (gtmfo_nutrient_<name>) for quests/scripts.
   scoreboardMirror: true
+
+  # Show the nutrient HUD while playing (client side).
   hud: true
+
+  # Show a food item's nutrient values in its tooltip.
   foodTooltips: true
 
 # Recipe chain options.
@@ -193,3 +221,4 @@ gtfoWorldGenConfig:
 
   # Turn on GTFO berry generation? Required for some mod features.
   enableGTFOBerries: true
+

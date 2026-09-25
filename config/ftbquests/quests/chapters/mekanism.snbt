@@ -19,12 +19,14 @@
 			]
 			icon: "mekanism:metallurgic_infuser"
 			id: "08FE5F3D96A84939"
-			rewards: [{
-				count: 8
-				id: "650A28DEC2117B7C"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "650A28DEC2117B7C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0393E6A4848CBBCE"
 				item: "mekanism:metallurgic_infuser"
@@ -36,15 +38,19 @@
 		}
 		{
 			dependencies: ["08FE5F3D96A84939"]
-			description: ["所有 MEK 机器都离不开钢外壳。钢锭既可来自 &dGT&r，也可在灌注机中用铁锭灌注 &8碳&r 得到。"]
+			description: [
+				"所有 MEK 机器都离不开钢外壳。钢锭既可来自 &dGT&r，也可在灌注机中用铁锭灌注 &8碳&r 得到。"
+			]
 			icon: "mekanism:steel_casing"
 			id: "5E78DFC45939175D"
-			rewards: [{
-				count: 8
-				id: "0C62D0ABB9FA0AA3"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "0C62D0ABB9FA0AA3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "43577D9AF4903198"
 				item: "mekanism:steel_casing"
@@ -56,15 +62,19 @@
 		}
 		{
 			dependencies: ["08FE5F3D96A84939"]
-			description: ["在灌注机中把 &7锇锭&r 灌注 &c红石&r，得到基础控制电路；它是高级电路与众多机器的原料。"]
+			description: [
+				"在灌注机中把 &7锇锭&r 灌注 &c红石&r，得到基础控制电路；它是高级电路与众多机器的原料。"
+			]
 			icon: "mekanism:basic_control_circuit"
 			id: "6E3F3F7059605C5E"
-			rewards: [{
-				count: 8
-				id: "709C91D8FB15690D"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "709C91D8FB15690D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "3C186F2A9D6478B9"
 				item: "mekanism:basic_control_circuit"
@@ -85,12 +95,14 @@
 			]
 			icon: "gtceu:lv_ore_washer"
 			id: "5ABFFB3F315CC817"
-			rewards: [{
-				count: 8
-				id: "538A81F1F7E356F7"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "538A81F1F7E356F7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "042C863EE33C78B8"
 				title: "我已了解 GregMek 的双线处理链"
@@ -102,15 +114,19 @@
 		}
 		{
 			dependencies: ["5E78DFC45939175D"]
-			description: ["把矿石与材料富集为更高效的形态。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"]
+			description: [
+				"把矿石与材料富集为更高效的形态。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"
+			]
 			icon: "mekanism:enrichment_chamber"
 			id: "10A2E317E5475086"
-			rewards: [{
-				count: 4
-				id: "3D8401C9D86FF746"
-				item: "mekanism:ingot_osmium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "3D8401C9D86FF746"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "18DC5FB15E94DDCA"
 				item: "mekanism:enrichment_chamber"
@@ -122,15 +138,19 @@
 		}
 		{
 			dependencies: ["5E78DFC45939175D"]
-			description: ["把矿石粉碎为两份粉尘。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"]
+			description: [
+				"把矿石粉碎为两份粉尘。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"
+			]
 			icon: "mekanism:crusher"
 			id: "08DBF2A8C8A7A980"
-			rewards: [{
-				count: 4
-				id: "251212678BC6E1BD"
-				item: "mekanism:ingot_osmium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "251212678BC6E1BD"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "70EAFC21DD702B32"
 				item: "mekanism:crusher"
@@ -142,15 +162,19 @@
 		}
 		{
 			dependencies: ["5E78DFC45939175D"]
-			description: ["以能量双倍冶炼矿石。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"]
+			description: [
+				"以能量双倍冶炼矿石。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"
+			]
 			icon: "mekanism:energized_smelter"
 			id: "32D8358B1F418AA0"
-			rewards: [{
-				count: 4
-				id: "372791C8CCF3E460"
-				item: "mekanism:ingot_osmium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "372791C8CCF3E460"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "0E3A994B08809151"
 				item: "mekanism:energized_smelter"
@@ -162,15 +186,19 @@
 		}
 		{
 			dependencies: ["5E78DFC45939175D"]
-			description: ["高效切割木材与材料。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"]
+			description: [
+				"高效切割木材与材料。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。"
+			]
 			icon: "mekanism:precision_sawmill"
 			id: "21483B6B850A9D77"
-			rewards: [{
-				count: 4
-				id: "7F60EB773A4C8F99"
-				item: "mekanism:ingot_osmium"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7F60EB773A4C8F99"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "770B2653AD322253"
 				item: "mekanism:precision_sawmill"
@@ -181,16 +209,22 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6E3F3F7059605C5E"]
-			description: ["在灌注机中用 &9灌注合金 ×4 + 基础控制电路&r 合成高级控制电路。"]
+			dependencies: ["6E3F3F7059605C5E", "0DBC148D92A9F69F"]
+			description: [
+				"工作台上用 &9灌注合金 ×2 + 基础控制电路 ×1&r 合成高级控制电路（配方形如「合金-电路-合金」）。"
+				""
+				"&c阶段锁（MV）&r：配方中的“基础电路”已被替换为 &dGT 的 MV 电路（良好电子电路）&r —— 需要发展 &6MV&r 阶段。"
+			]
 			icon: "mekanism:advanced_control_circuit"
 			id: "4BB945563F0E0112"
-			rewards: [{
-				count: 16
-				id: "3273EA68F80E6EDB"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "3273EA68F80E6EDB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "205377D0C6BD097D"
 				item: "mekanism:advanced_control_circuit"
@@ -201,15 +235,74 @@
 			y: 5.0d
 		}
 		{
-			description: ["用高级电路解锁的高级机器：压缩金属、制造 &7强化锇&r 等关键材料。"]
-			icon: "mekanism:osmium_compressor"
-			id: "3596905358881BEE"
-			rewards: [{
-				count: 8
-				id: "302AB6476071BEC4"
-				item: "mekanism:ingot_osmium"
+			dependencies: ["4BB945563F0E0112", "26394C1290D70AB6"]
+			description: [
+				"工作台上用 &6强化合金 ×2 + 高级控制电路 ×1&r 合成精英控制电路。"
+				""
+				"&c阶段锁（HV）&r：配方中的“高级电路”已被替换为 &dGT 的 HV 集成电路（高级集成电路）&r —— 需要发展 &6HV&r 阶段。"
+			]
+			icon: "mekanism:elite_control_circuit"
+			id: "163A0C94E5113468"
+			rewards: [
+				{
+					count: 32
+					id: "4FBD809C130636B1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "749450A34A627546"
+				item: "mekanism:elite_control_circuit"
 				type: "item"
 			}]
+			title: "精英控制电路"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["163A0C94E5113468", "6B4A43F954CB0C6D", "4AFD3073C731A1E4"]
+			description: [
+				"工作台上用 &5原子合金 ×2 + 精英控制电路 ×1&r 合成终极控制电路。"
+				""
+				"&c阶段锁（EV）&r：配方中的“精英电路”已被替换为 &dGT 的 EV 电路（微处理器计算机）&r —— 需要发展 &6EV&r 阶段。"
+				""
+				"它也是绝大多数“终极”级机器的核心部件。"
+			]
+			icon: "mekanism:ultimate_control_circuit"
+			id: "2E78DFC45939175D"
+			rewards: [
+				{
+					count: 64
+					id: "3E3F3F7059605C5E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "23577D9AF4903198"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			title: "终极控制电路"
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["4BB945563F0E0112"]
+			description: [
+				"用高级电路解锁的高级机器：压缩金属、制造 &7强化锇&r 等关键材料。"
+			]
+			icon: "mekanism:osmium_compressor"
+			id: "3596905358881BEE"
+			rewards: [
+				{
+					count: 8
+					id: "302AB6476071BEC4"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4A9BEE91E11FD0C7"
 				item: "mekanism:osmium_compressor"
@@ -220,15 +313,20 @@
 			y: 5.0d
 		}
 		{
-			description: ["把流体/气体电解分离（如盐水 → 氢气 + 氯气）。合成需要 &9灌注合金&r 与钢外壳。"]
+			dependencies: ["4BB945563F0E0112"]
+			description: [
+				"把流体/气体电解分离（如盐水 → 氢气 + 氯气）。合成需要 &9灌注合金&r 与钢外壳。"
+			]
 			icon: "mekanism:electrolytic_separator"
 			id: "7AD5A85F7DD61709"
-			rewards: [{
-				count: 16
-				id: "0D842476D5AF611A"
-				item: "numismatics:cog"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "0D842476D5AF611A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7EB9259B0398724A"
 				item: "mekanism:electrolytic_separator"
@@ -237,6 +335,1214 @@
 			title: "电解分离器"
 			x: 5.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["08FE5F3D96A84939"]
+			description: [
+				"富集仓把普通材料变成「富集」形态：碳、红石、钻石、黑曜石、萤石、铁、金、锡……"
+				""
+				"&8富集碳&r 是炼钢与基础电路的关键；&c富集红石&r 用于高级灌注；&7富集钻石→强化黑曜石&r、&e富集萤石→强化萤石&r 是后期的核心材料。"
+			]
+			icon: "mekanism:enriched_redstone"
+			id: "66724D76757BE48D"
+			rewards: [
+				{
+					count: 8
+					id: "4766F5058138C272"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6E74EFEB0D2D9056"
+				item: "mekanism:enriched_carbon"
+				type: "item"
+			}]
+			title: "富集材料"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["08FE5F3D96A84939"]
+			description: [
+				"用 &c富集红石&r 灌注铁锭，得到灌注合金——高级电路、电解分离器等中级机器的骨架材料。"
+			]
+			icon: "mekanism:alloy_infused"
+			id: "238A81F1F7E356F7"
+			rewards: [
+				{
+					count: 8
+					id: "08DC5FB15E94DDCA"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "74EC2EAD7F571950"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			title: "灌注合金"
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["238A81F1F7E356F7", "3596905358881BEE"]
+			description: [
+				"用 &7富集钻石&r 灌注灌注合金，得到强化合金——精英机器与核工业的入场材料。"
+			]
+			icon: "mekanism:alloy_reinforced"
+			id: "1D8401C9D86FF746"
+			rewards: [
+				{
+					count: 16
+					id: "30EAFC21DD702B32"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "642D2AB6E9608391"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			title: "强化合金"
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["66724D76757BE48D", "3596905358881BEE"]
+			description: [
+				"在锇压缩机中用 &7富集钻石&r 压缩黑曜石 → &8强化黑曜石锭&r；用 &e富集萤石&r 压缩萤石 → &e强化萤石锭&r。"
+				""
+				"两者是原子合金、强化黑曜石工具与后期模块的关键材料。"
+			]
+			icon: "mekanism:ingot_refined_obsidian"
+			id: "5221DFE8D70C9012"
+			rewards: [
+				{
+					count: 16
+					id: "57EECB871EDD5BE3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5418D37BF1709306"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			title: "强化黑曜石（与强化萤石）"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1D8401C9D86FF746", "5221DFE8D70C9012"]
+			description: [
+				"用 &8强化黑曜石锭&r 灌注强化合金，得到原子合金——激光、Meka-Tool 与顶级机器的核心材料。"
+			]
+			icon: "mekanism:alloy_atomic"
+			id: "6B4A43F954CB0C6D"
+			rewards: [
+				{
+					count: 16
+					id: "480C5FD94A51CB6B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "534F666F895AB76B"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			title: "原子合金"
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4BB945563F0E0112"]
+			description: [
+				"升级芯片装进机器就能改造它：&b速度&r、&a能量&r、&7静音&r、&3气体&r、&6过滤器&r、&e锚定（区块加载）&r……"
+				""
+				"速度升级会按比例增加能耗；后期流水线一般「速度拉满 + 能量升级补足」。"
+			]
+			icon: "mekanism:upgrade_speed"
+			id: "3F60EB773A4C8F99"
+			rewards: [
+				{
+					count: 16
+					id: "105377D0C6BD097D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "436FB0C2F0E3E944"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
+			title: "机器升级芯片"
+			x: 7.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["10A2E317E5475086", "08DBF2A8C8A7A980", "32D8358B1F418AA0", "21483B6B850A9D77"]
+			description: [
+				"把机器升级为「工厂」后，一台机器可同时处理多个配方：基础 3 并行 → 高级 5 → 精英 7 → 终极 9。"
+				""
+				"富集/粉碎/冶炼/锯木/灌注/压射/提纯/混合 八种机器都有工厂版；后期产能核心。"
+			]
+			icon: "mekanism:basic_smelting_factory"
+			id: "6E50D13BE2C97227"
+			rewards: [
+				{
+					count: 16
+					id: "61C91C1D82F8CC72"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1596905358881BEE"
+				item: "mekanism:basic_smelting_factory"
+				type: "item"
+			}]
+			title: "工厂系列（并行加工）"
+			x: 10.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5E78DFC45939175D"]
+			description: [
+				"能量立方是 MEK 的电池（基础容量 2 MFE，可升级到终极）；&9能量平板&r 则是机器合成常用的便携组件。"
+				""
+				"用通用线缆把它们和机器连起来，功率从低到高自动协商。"
+			]
+			icon: "mekanism:basic_energy_cube"
+			id: "4B731F4E62224A92"
+			rewards: [
+				{
+					count: 8
+					id: "3EB9259B0398724A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "70E685EFDB715E7B"
+				item: "mekanism:basic_energy_cube"
+				type: "item"
+			}]
+			title: "能量立方与能量平板"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E78DFC45939175D"]
+			description: [
+				"MEK 的电力靠通用线缆传输；更高等级的线缆能承载更高电压、损耗更低。"
+				""
+				"注意：MEK 线缆是「推拉式」——机器会被动地向网络推电，无需额外配置。"
+			]
+			icon: "mekanism:basic_universal_cable"
+			id: "29D2407A284BAE99"
+			rewards: [
+				{
+					count: 8
+					id: "2F7FD3175C325A7B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "5C5165E388B37FBF"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			title: "通用线缆"
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4B731F4E62224A92"]
+			description: [
+				"入门发电机：燃烧固体燃料（煤炭、木板、岩浆桶……）发电，也可用岩浆给相邻的机器加热。"
+				""
+				"用它给灌注机、富集仓供电，正式开车。"
+			]
+			icon: "mekanismgenerators:heat_generator"
+			id: "2A1C9D138CD610DE"
+			rewards: [
+				{
+					count: 8
+					id: "3DA16FF21E647B60"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7CF3F2BB60D8852A"
+				item: "mekanismgenerators:heat_generator"
+				type: "item"
+			}]
+			title: "热力发电机"
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2A1C9D138CD610DE", "7AD5A85F7DD61709"]
+			description: [
+				"燃烧气体发电：氢气、乙烯、D-T 燃料……其中 &a乙烯&r 是性价比之王（加压反应室产）。"
+				""
+				"燃气发电机的发电量随燃料热值变化，适合作为中期主力电源。"
+			]
+			icon: "mekanismgenerators:gas_burning_generator"
+			id: "43032BA69184F237"
+			rewards: [
+				{
+					count: 16
+					id: "1865ACAC1637173B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7EE53938D3EF1713"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			title: "燃气发电机"
+			x: 12.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2A1C9D138CD610DE"]
+			description: [
+				"&e太阳能发电机&r：白天稳定发电（雨天/夜晚衰减），可升级为&6先进太阳能&r；"
+				""
+				"&b风力发电机&r：全天候发电，但必须放在高处（y≥ 越高越强）且不能有方块遮挡。"
+			]
+			icon: "mekanismgenerators:solar_generator"
+			id: "1435782951A5A442"
+			rewards: [
+				{
+					count: 16
+					id: "1AF62D85EC8F5D08"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1530B0448602521D"
+					item: "mekanismgenerators:solar_generator"
+					type: "item"
+				}
+				{
+					id: "30D9451F2DFAC2DC"
+					item: "mekanismgenerators:wind_generator"
+					type: "item"
+				}
+			]
+			title: "太阳能与风力发电机"
+			x: 15.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4BB945563F0E0112", "4B731F4E62224A92"]
+			description: [
+				"用感应外壳 + 端口 + 感应电池/供应器搭建的巨型储电多方块，容量可达数十亿 FE。"
+				""
+				"需要玻璃/钢外壳打底；后期核电与聚变的缓冲仓。"
+			]
+			icon: "mekanism:induction_casing"
+			id: "186C104018488AAB"
+			rewards: [
+				{
+					count: 32
+					id: "0E8495127D0745C1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "53BFB9DA952D3B37"
+				item: "mekanism:induction_casing"
+				type: "item"
+			}]
+			title: "感应矩阵（大型储电）"
+			x: 12.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7AD5A85F7DD61709"]
+			description: [
+				"把固体转成气体：&a氧气&r（富集红石/铁矿）、&7氢气&r（铁/锌）、&5乙烯&r（生物燃料）等都从它开始。"
+				""
+				"气体要先用&3加压管道&r或&3基础化学品罐&r接出来。"
+			]
+			icon: "mekanism:chemical_oxidizer"
+			id: "58CC02B01E4FE5B6"
+			rewards: [
+				{
+					count: 8
+					id: "671995A422CBFC2F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "168E7A16C9464F46"
+				item: "mekanism:chemical_oxidizer"
+				type: "item"
+			}]
+			title: "化学氧化器"
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["58CC02B01E4FE5B6"]
+			description: [
+				"把两种气体合成新气体：氢气 + 氯气 → &c盐酸&r；二氧化硫 + 氧气 → &6三氧化硫&r → 硫酸。"
+				""
+				"&c盐酸&r 与 &6硫酸&r 是 4x/5x 矿石处理链的钥匙。"
+			]
+			icon: "mekanism:chemical_infuser"
+			id: "570F0B7198B659E4"
+			rewards: [
+				{
+					count: 16
+					id: "4268AF9018B45592"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3F5B38F1686A1119"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			title: "化学混合器"
+			x: 12.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["570F0B7198B659E4"]
+			description: [
+				"气液固三态反应器：水 + 生物燃料 → &5乙烯&r；乙烯 + 氧气 → &aHDPE 片&r（高级材料）。"
+				""
+				"&aHDPE&r 是 MekaSuit 与后期组件的必备合成材料。"
+			]
+			icon: "mekanism:pressurized_reaction_chamber"
+			id: "263B34D61A20E803"
+			rewards: [
+				{
+					count: 16
+					id: "5160292D9274D002"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6B7A23C94AFCF54E"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			title: "加压反应室"
+			x: 15.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7AD5A85F7DD61709"]
+			description: [
+				"流体 ↔ 气体的双向转换机（如 水 ↔ 水蒸气、硫 → 二氧化硫）。"
+				""
+				"硫酸链与热蒸发链都靠它来回转换。"
+			]
+			icon: "mekanism:rotary_condensentrator"
+			id: "1EF69D6A9A804C4E"
+			rewards: [
+				{
+					count: 8
+					id: "5933DB59B4FE0B6A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4B3DACF181E9A99B"
+				item: "mekanism:rotary_condensentrator"
+				type: "item"
+			}]
+			title: "旋转冷凝器"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1EF69D6A9A804C4E"]
+			description: [
+				"用热蒸发方块搭建的多方块结构，把 &9盐水&r 逐级浓缩成 &7锂&r（聚变燃料的重要来源）。"
+				""
+				"需要控制器 + 阀门 + 加热源（太阳能/热力发电机等）。"
+			]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "107F20743297CDFC"
+			rewards: [
+				{
+					count: 16
+					id: "2F0AC5412B8FDCA1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5C96CD83741A0072"
+				item: "mekanism:thermal_evaporation_controller"
+				type: "item"
+			}]
+			title: "热蒸发厂（盐水 → 锂）"
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["10A2E317E5475086", "58CC02B01E4FE5B6"]
+			description: [
+				"把矿石/原矿用 &c盐酸&r 压射成 &b碎片（Shard）&r，是 4 倍矿石链的关键一步。"
+				""
+				"碎片 → 净化 → 粉碎 → 富集，最终产出 4 份粉尘。"
+			]
+			icon: "mekanism:chemical_injection_chamber"
+			id: "0DC74BFDE78F25EB"
+			rewards: [
+				{
+					count: 16
+					id: "28801FF247819A3B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "16429433326F7B3A"
+				item: "mekanism:chemical_injection_chamber"
+				type: "item"
+			}]
+			title: "化学压射室（4x 矿石）"
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0DC74BFDE78F25EB"]
+			description: [
+				"用 &a氧气&r 把矿石净化成 &6碎块（Clump）&r；碎块粉碎成污浊粉、富集后得 3 份粉尘。"
+				""
+				"是 4x/5x 链的中间站，也可以单独用作 3 倍矿。"
+			]
+			icon: "mekanism:purification_chamber"
+			id: "051FB37491A160B0"
+			rewards: [
+				{
+					count: 16
+					id: "174EA0F6F85656C6"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "052C9E8203DBAF6F"
+				item: "mekanism:purification_chamber"
+				type: "item"
+			}]
+			title: "净化室（3x 矿石）"
+			x: 12.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["051FB37491A160B0"]
+			description: [
+				"用 &6硫酸&r 把矿石完全溶解成 &9矿浆（Slurry）&r——5 倍矿石链的起点。"
+				""
+				"后续：化学清洗机 → 化学结晶器 → 压射 → 净化 → 粉碎 → 富集 = 5 份粉尘。"
+			]
+			icon: "mekanism:chemical_dissolution_chamber"
+			id: "32FD46AC2817D9EB"
+			rewards: [
+				{
+					count: 16
+					id: "5F0AE4C9E6B4255D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "05F5FE85ABB99410"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
+			title: "化学溶解室（5x 起点）"
+			x: 15.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["32FD46AC2817D9EB"]
+			description: [
+				"用清水把矿浆洗成&a纯净矿浆&r（脏矿浆 → 纯净矿浆），提升后续结晶效率。"
+			]
+			icon: "mekanism:chemical_washer"
+			id: "1573907EDA9AB89E"
+			rewards: [
+				{
+					count: 16
+					id: "43ADFD00C5E8451E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4F41E9F4B59D96F8"
+				item: "mekanism:chemical_washer"
+				type: "item"
+			}]
+			title: "化学清洗机"
+			x: 17.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1573907EDA9AB89E"]
+			description: [
+				"把纯净矿浆结晶成&b晶体&r；晶体再走压射→净化→粉碎→富集，一个矿石变 5 份粉尘。"
+				""
+				"至此你的矿石处理链全部打通（2x/3x/4x/5x 自选）。"
+			]
+			icon: "mekanism:chemical_crystallizer"
+			id: "7CCA01C5E98CB6C5"
+			rewards: [
+				{
+					count: 32
+					id: "42D0189218B4032E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3B12C808CEC80156"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			title: "化学结晶器（5x 终点前站）"
+			x: 20.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["570F0B7198B659E4"]
+			description: [
+				"核燃料链的核心：把 &6六氟化铀&r 离心分离，得到 &a浓缩铀&r。"
+				""
+				"配套链：铀 → 氢氟酸 → 六氟化铀 → 离心 → 裂变燃料。"
+			]
+			icon: "mekanism:isotopic_centrifuge"
+			id: "48BD829A106B7CF8"
+			rewards: [
+				{
+					count: 16
+					id: "36E5F1943561CCEB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3A0036936CAFA9A6"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			title: "同位素离心机（铀浓缩）"
+			x: 17.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["263B34D61A20E803"]
+			description: [
+				"核链的转化器：&7核废料&r → &d钋&r（Polonium）；&7锂&r → &b氚&r（Tritium，聚变燃料）。"
+				""
+				"钋粒是 MekaSuit / Meka-Tool 的必需品，氚则是聚变燃料的一半。"
+			]
+			icon: "mekanism:solar_neutron_activator"
+			id: "63E9F4120190BC92"
+			rewards: [
+				{
+					count: 16
+					id: "2C9A58E878123033"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "184DE59FE5ED6E22"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			title: "太阳能中子活化器"
+			x: 17.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6B4A43F954CB0C6D"]
+			description: [
+				"激光把能量聚焦成光束，用于&c点燃聚变反应堆&r；激光放大器可串联增强。"
+				""
+				"超临界相移器（SPS）的超导线圈也需要激光。"
+			]
+			icon: "mekanism:laser"
+			id: "7BF5AE148923BF3C"
+			rewards: [
+				{
+					count: 16
+					id: "12EBF08E38F4686A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2CC73FBA43B39924"
+				item: "mekanism:laser"
+				type: "item"
+			}]
+			title: "激光与点火"
+			x: 12.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["48BD829A106B7CF8", "1D8401C9D86FF746"]
+			description: [
+				"用&a裂变燃料&r驱动的多方块反应堆：产出热量与&7核废料&r。"
+				""
+				"&c注意辐射&r：燃料温度过高会熔毁（可控核事故），废料要用&9放射性废料桶&r封存；废料正是&d钋&r的来源。"
+				""
+				"结构：裂变机壳 + 端口 + 燃料组件（+ 控制棒组件调节反应）。"
+			]
+			icon: "mekanismgenerators:fission_reactor_casing"
+			id: "7064726A8D7CA072"
+			rewards: [
+				{
+					count: 32
+					id: "72D2B6420F59C862"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "2D938F9552D42EB1"
+				item: "mekanismgenerators:fission_reactor_casing"
+				type: "item"
+			}]
+			title: "裂变反应堆"
+			x: 17.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7064726A8D7CA072"]
+			description: [
+				"裂变反应堆的热量在这里把水烧成&7蒸汽&r；需要锅炉外壳 + 阀门 + &c过热元件&r + 压力分散器。"
+				""
+				"蒸汽再送进工业涡轮机发电。"
+			]
+			icon: "mekanism:boiler_casing"
+			id: "2FE09982086F1663"
+			rewards: [
+				{
+					count: 16
+					id: "12579122468ED837"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "3A6E5550AD392395"
+				item: "mekanism:boiler_casing"
+				type: "item"
+			}]
+			title: "热电锅炉"
+			x: 15.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["2FE09982086F1663"]
+			description: [
+				"蒸汽驱动的多方块发电机：涡轮机外壳 + 轮叶 + 转子 + 阀门，规模越大发电越多。"
+				""
+				"裂变 → 锅炉 → 涡轮 是稳定的核电三相套。"
+			]
+			icon: "mekanismgenerators:turbine_rotor"
+			id: "5524ABEDDF90BBEF"
+			rewards: [
+				{
+					count: 32
+					id: "541268EE67918DB9"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "351719F7C6E7554D"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+				{
+					id: "4D5133D1B04DDE58"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+			]
+			title: "工业涡轮机"
+			x: 17.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5524ABEDDF90BBEF", "7BF5AE148923BF3C"]
+			description: [
+				"核工业的顶点之一：用 &bD-T 燃料&r（氘 + 氚）与&c激光点火&r运行，输出巨量电力。"
+				""
+				"结构：聚变控制器 + 聚变框架 + 端口 + 激光聚焦矩阵。"
+				""
+				"聚变产出的电力足以支撑整个后期工厂；下一步是反物质。"
+			]
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "63286F918DBB933E"
+			rewards: [
+				{
+					count: 64
+					id: "34AD2F1F0D701E81"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "766B74DBB632679C"
+				item: "mekanismgenerators:fusion_reactor_controller"
+				type: "item"
+			}]
+			title: "聚变反应堆"
+			x: 20.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["63286F918DBB933E"]
+			description: [
+				"用 &d钋&r + 巨量能量把物质相移，产出&5反物质&r（Antimatter）。"
+				""
+				"结构：SPS 外壳 + 端口 + &c超级线圈&r（超导线圈需要激光与钋粒）。"
+			]
+			icon: "mekanism:sps_casing"
+			id: "64754396DDF4DDF6"
+			rewards: [
+				{
+					count: 64
+					id: "45DD078D8E174923"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "576CFE1B14BF3421"
+				item: "mekanism:sps_casing"
+				type: "item"
+			}]
+			title: "超临界相移器（SPS）"
+			x: 22.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["64754396DDF4DDF6"]
+			description: [
+				"把反物质气体压制成&5反物质粒&r——MEK 的终极材料，用于反质子核合成器等终局设备。"
+			]
+			icon: "mekanism:pellet_antimatter"
+			id: "55183947FA732E77"
+			rewards: [
+				{
+					count: 64
+					id: "124DBEEC44DBFC92"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "69BCAC290D5E3CB3"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			title: "反物质粒"
+			x: 22.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["4BB945563F0E0112"]
+			description: [
+				"MEK 的招牌工具：一键挖矿/砍树/收割，可调速度、范围与精准采集。"
+				""
+				"合成主料是&9能量平板&r；它也是 Meka-Tool 的前置。"
+			]
+			icon: "mekanism:atomic_disassembler"
+			id: "29738EBF53AD291E"
+			rewards: [
+				{
+					count: 16
+					id: "17ED5A8CDE7B69C0"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "04C4108812C054C0"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+			}]
+			title: "原子分解器"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["238A81F1F7E356F7"]
+			description: [
+				"用气体（氢气/氧气）推进的飞行背包，空中长按跳跃键悬停；&7装甲版&r提供护甲与更高效的气体利用。"
+				""
+				"记得随身带&3气体罐&r或接上管道补给。"
+			]
+			icon: "mekanism:jetpack"
+			id: "2BCAB0E723D8019E"
+			rewards: [
+				{
+					count: 16
+					id: "3168906A95B04604"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "521E9A8D91F9E806"
+				item: "mekanism:jetpack"
+				type: "item"
+			}]
+			title: "喷气背包"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["08FE5F3D96A84939"]
+			description: [
+				"Mekanism Tools 提供多种材料套装：&7锇&r、&6青铜&r、&b钢&r、&e强化萤石&r、&8强化黑曜石&r、&9青金石&r。"
+				""
+				"&b钢镐&r 与&8强化黑曜石镐&r 挖掘等级高，&b钢盾&r 可挡下大量伤害；每种材料都有&dPaxel&r（镐斧铲三合一）。"
+			]
+			icon: "mekanismtools:osmium_paxel"
+			id: "566B68E14B79A5BB"
+			rewards: [
+				{
+					count: 8
+					id: "6E98D4024652F997"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1CD865592363271B"
+				item: "mekanismtools:osmium_paxel"
+				type: "item"
+			}]
+			title: "锇制工具与护甲"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["29738EBF53AD291E", "7064726A8D7CA072"]
+			description: [
+				"终极工具：以原子分解器为基础，装上模块后可变成镐/斧/铲/剑/弓……还能连接 MEK 网络远程存取。"
+				""
+				"合成需要 &d钋粒&r（裂变链产物）+ &9基础感应元件&r + HDPE 片 + 下界合金。"
+			]
+			icon: "mekanism:meka_tool"
+			id: "697B0B330A681C0C"
+			rewards: [
+				{
+					count: 32
+					id: "682B22DADF0D0EE4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "227D210499D6BE5C"
+				item: "mekanism:meka_tool"
+				type: "item"
+			}]
+			title: "Meka-Tool"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["697B0B330A681C0C"]
+			description: [
+				"给 MekaSuit / Meka-Tool 安装模块的工作台；模块通过&9模块基础&r制作。"
+			]
+			icon: "mekanism:modification_station"
+			id: "0284F3A52FB0D29C"
+			rewards: [
+				{
+					count: 16
+					id: "0222B134EA3E5BCC"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6E015431B02F4502"
+				item: "mekanism:modification_station"
+				type: "item"
+			}]
+			title: "改造站"
+			x: -7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0284F3A52FB0D29C"]
+			description: [
+				"所有 MekaSuit 模块的底材（&aHDPE 片&r + 电路…）；装上&9改造站&r后即可安装到套装上。"
+				""
+				"常用模块：喷气单元、能量单元、护盾单元、营养单元、采矿单元……"
+			]
+			icon: "mekanism:module_base"
+			id: "026394E6DBB1AF8F"
+			rewards: [
+				{
+					count: 16
+					id: "69E3FB80A1A09C52"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5C232529A9A5B90D"
+				item: "mekanism:module_base"
+				type: "item"
+			}]
+			title: "模块基础"
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["026394E6DBB1AF8F", "7064726A8D7CA072"]
+			description: [
+				"MEK 的终极护甲：四件套以&5下界合金装备&r为底，加入 &d钋粒&r、&9基础感应元件&r 与 HDPE 片。"
+				""
+				"装上模块后：飞行、护盾、自动进食、辐射防护、水下呼吸……记得给套装充能！"
+			]
+			icon: "mekanism:mekasuit_helmet"
+			id: "257968B30FE1E986"
+			rewards: [
+				{
+					count: 64
+					id: "4704206F7D1DC304"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2990154154A68D43"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					id: "453946C160223CEB"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					id: "5640B877569D32D0"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					id: "47B74F64730874FF"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			title: "MekaSuit 全套"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E78DFC45939175D"]
+			description: [
+				"输送气体的管道；MEK 的气体系统（氧气/氢气/乙烯/核燃料气体）全靠它。"
+				""
+				"配套还有&6机械管道&r（流体）与&c热导线&r（热量），四类管道组成完整物流。"
+			]
+			icon: "mekanism:basic_pressurized_tube"
+			id: "1CA6008F10F719FD"
+			rewards: [
+				{
+					count: 8
+					id: "6D3818BF0A9CB74E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "2632E05CB422C91B"
+				item: "mekanism:basic_pressurized_tube"
+				type: "item"
+			}]
+			title: "加压管道（气体）"
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5E78DFC45939175D"]
+			description: [
+				"MEK 的智能分拣机：按物品/标签/模组分配路线，支持颜色标记与自填充。"
+				""
+				"配合&6物流运输管道&r就能自动化整个基地的物流。"
+			]
+			icon: "mekanism:logistical_sorter"
+			id: "4349BA7C1248170F"
+			rewards: [
+				{
+					count: 8
+					id: "0649FCA70ED470E4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2D97DBDC0AB158B4"
+				item: "mekanism:logistical_sorter"
+				type: "item"
+			}]
+			title: "物流分拣器"
+			x: 7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4BB945563F0E0112"]
+			description: [
+				"无线传输电、流体、气体与物品：两个传送器互相绑定即可跨维度传输。"
+				""
+				"后期跨基地物流的答案；合成需要&9传送核心&r。"
+			]
+			icon: "mekanism:quantum_entangloporter"
+			id: "4BB9BEC00BC40A56"
+			rewards: [
+				{
+					count: 16
+					id: "20D160F493E4DA4C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7DCA852D2D5049A2"
+				item: "mekanism:quantum_entangloporter"
+				type: "item"
+			}]
+			title: "量子传送器"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4BB945563F0E0112"]
+			description: [
+				"MEK 的无线存储系统：&9QIO 仪表板&r + &9QIO 驱动器阵列&r + 驱动器，全基地远程存取物品。"
+				""
+				"驱动器分四档容量（普通/超密/质量/时间膨胀），后期可跑到数十亿物品。"
+			]
+			icon: "mekanism:qio_dashboard"
+			id: "0D5FB2406506472D"
+			rewards: [
+				{
+					count: 16
+					id: "6C2AAE8780E0263F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "4D65CF5BF6ACC0DC"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+				{
+					id: "568CB09FAFAAA37E"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+			]
+			title: "QIO 量子存储网络"
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4BB945563F0E0112"]
+			description: [
+				"在矿典（Ore Dictionary）条目之间转换物品：把不同模组的同名矿/锭统一成你想要的版本。"
+				""
+				"在 GT × MEK × 其他模组共存的包里非常实用（例如把各模组锡锭统一）。"
+			]
+			icon: "mekanism:oredictionificator"
+			id: "1F319FEE052ACA0F"
+			rewards: [
+				{
+					count: 8
+					id: "7EE57F9494963A9D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "15D3BC67DAA8318A"
+				item: "mekanism:oredictionificator"
+				type: "item"
+			}]
+			title: "矿典转换器"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7AD5A85F7DD61709"]
+			description: [
+				"&bApplied Mekanistics&r 让 AE2 网络可以存取 MEK 的&3气体&r：气体存储元件、气体终端与自动化接口。"
+				""
+				"配合 QIO 与量子传送器，整个基地的气体物流都能进 AE2。"
+			]
+			icon: "appliedmekanistics:chemical_storage_cell_1k"
+			id: "70A1E6B7D1EB7DF0"
+			rewards: [
+				{
+					count: 16
+					id: "7B0F5A83D50F802A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7F9730A43CF5EA26"
+				title: "我已了解气体进 AE2 的方式"
+				type: "checkmark"
+			}]
+			title: "通用机械 × AE2：应用通量"
+			x: 2.5d
+			y: -5.0d
 		}
 	]
 	title: "&9&l隐藏科技&r - 通用机械"
