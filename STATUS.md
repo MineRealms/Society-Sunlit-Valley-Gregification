@@ -101,6 +101,11 @@
 - **基线**：`MODS_BASELINE.md` 按 402 jar 重算（新增 6 / 移除 2 / 变更 0）。
 - **联动现状**：Create × GT × Mek 事实核对见 `GT_INTEGRATION.md` 第 11 节。
 
-### 7.3 服务器侧手动事项
+### 7.3 MEK 任务章扩写 + 电路阶段锁（2026-09-22）
+- **章节**：`config/ftbquests/quests/chapters/mekanism.snbt` 由 11 → **58 任务**（材料/动力/化学/核工业/装备/物流全线，内联中文）；生成器 `config/ftbquests/tools/build_mek_chapter.py` 改为 **按 key 保留既有任务 ID**（新增任务才有新 ID；含 ID 保持自动校验）。
+- **电路阶段锁**（用户指定）：高级电路=GT **MV** 电路、精英=**HV**、终极=**EV**（基础=LV 已实现）；配方锁在 `kubejs/server_scripts/mek/lockMekBehindGT.js`，任务书双锁依赖 GT 章「首个中压电路!/首批高压电路!/首款极端电压电路!」三个任务；详见 `GT_INTEGRATION.md` §6.5。
+- **事实限制**：合金/富集材料为灌注机自定义配方，`replaceInput` 无法直接锁（原子合金未单独上锁）。
+
+### 7.4 服务器侧手动事项
 - 删除服务器 `kubejs/server_scripts/gt_demo_sim_v6.js`（测试脚本误同步，会报 SyntaxError）；
 - 同步包：桌面 `starvalley-server-sync-20260922.zip`（10 个文件 + 说明）。
