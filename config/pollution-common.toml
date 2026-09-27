@@ -17,6 +17,15 @@
 	#Chunk pollution value at which players start receiving harmful effects.
 	#Range: 0.0 ~ 1000000.0
 	effectThreshold = 10.0
+	#Heavy pollution slowly kills the environment: grass turns to sand,
+	#and water turns to lava at twice the conversion threshold.
+	enableTerrainConversion = true
+	#Chunk pollution value at which terrain conversion starts.
+	#Range: 0.0 ~ 1000000.0
+	terrainConversionThreshold = 25.0
+	#Maximum blocks converted per dimension per tick (performance budget).
+	#Range: 0 ~ 64
+	terrainConversionBudgetPerTick = 4
 
 #Vis generator and aura machines
 [aura]

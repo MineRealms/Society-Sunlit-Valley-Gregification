@@ -1,6 +1,7 @@
 # 太空线整合（GCYR × Mekanism × GT--）实施文档
 
-> 最后更新：2026-09-18
+> 初次整理：2026-09-18；2026-09-25 补充维护边界。当前概况见 [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)。
+> 本文的 EUt 与发动机等级数值关系需要按实际 `getRecipeEUtTier` 调用核验，不可把 EUt 1/2/3 直接等同于等级 1/2/3。
 > 内容：太空任务章（30 任务）+ 火箭硬化（GT-- 重型合金）+ GCYR×Mek / GCYR×GT-- 联动
 > 事实来源：`mods/gcyr-1.20.1-0.2.9.jar`、`mods/gtnn-1.20.1-1.3.10.jar`、`mods/Mekanism-1.20.1-10.4.16.80.jar`（CFR/javap 反编译 + 数据文件核对）
 
@@ -111,7 +112,7 @@ GTNN 原重型锭配方位于 `AdAstraRecipes`（依赖 ad_astra，本包未装�
 
 ## 6. 已知问题与备注
 
-1. 服务器日志中 `gcyr:gasoline`/`gcyr:diesel` 的 "EUt can't be explicitly set to 0" 为 GCYR 自身配方问题（装饰性），本批不改动。
+1. 服务器日志中 `gcyr:gasoline`/`gcyr:diesel` 的 "EUt can't be explicitly set to 0" 来自火箭燃料规则注册，不应归为“装饰性”。已新增 `gcyr/fixRocketFuels.js` 补充条目；原生注册日志是否仍出现、最终条目是否重复、引擎等级及燃料接受行为均待实际验收。
 2. `gcyr:passes_flood_fill` 标签含 UEV+ 氧扩散器（普通模式不存在）→ 标签警告；IV~UV 正常。
 3. GTNN 重型锭/板在没有 Ad Astra 时原本不可获得，本批已补全（见 §2）。
 4. 太空章依赖 EV 章任务 `7A55CC71442CC854`；若 EV 章被重生成需确认该 ID 仍存在。

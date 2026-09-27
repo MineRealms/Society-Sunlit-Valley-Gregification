@@ -1,5 +1,8 @@
 # Thaumcraft 4（TC4 移植版）× 本整合包 联动分析
 
+> 当前概况见 [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)，维护边界见 [MAINTENANCE_GUIDE.md](MAINTENANCE_GUIDE.md)。
+> 2026-09-25 本地安装 JAR 已是 **20711**；下文早期 20708 与“正在进行/待确认”段落属于历史调研，实施记录见第 8 节。新兼容数据落地不等于已通过游戏内验收。
+
 > 本文档是「TC4 相关联动分析」的唯一事实源。规则沿用 `GTMFO_INTEGRATION.md`：
 > 每阶段独立提交、静态自检、可回滚；**不编造内容**，所有结论标注源码出处。
 > 分析对象：`D:\Downloads\1.20.1-forge-20711-dev.zip`（TC4 移植版 20711 源码/API 包）
@@ -26,7 +29,7 @@
 | `tm/` | `tainted-magic-...-20711-sources.jar`（污染魔法） |
 | `te/` | `thaumic-energistics-...-20711-sources.jar`（神秘能源） |
 
-> ⚠️ 版本差：本包 `mods/` 内是 **20708**，dev 包是 **20711**（升级与否待定）。
+> 历史版本差：调研初期安装版为 20708，开发资料为 20711；当前本地已安装 20711，不再将升级列为待定项。
 
 TC 本体源码包内主要包：`client` 352、`api` 261、`block` 163、`nativeimpl` 156、
 `common` 113、`item` 93、`entity` 78、`network` 60、`registry` 54、`compat` 45、
@@ -321,10 +324,10 @@ KubeJS 用法（schema 已核对）：`e.recipes.thaumcraft.crucible(result, cat
 - **现象**：日志 4 条 `Output item 0 of recipe thaumcraft:compat/native_{copper,tin,lead,silver}_cluster_smelting is empty`（GregTechCEu 记录）。
 - **根因（反编译核对）**：
   - 端口配方 `CommonMetalSmeltingRecipe extends SmeltingRecipe`，输出 `CommonMetalRecipeOutput.Tagged`（`forge:ingots/*` 标签，运行时解析）；
-  - GTCEu `GTRecipeType.toGTrecipe()`（`RecipeManagerHandler` 调用）用**假 RegistryAccess** 取产物
+  - GTCEu `GTRecipeType.toGTrecipe()`（`RecipeManagerHandler` 调用）用从内置注册表构造的 RegistryAccess 取产物
     （`recipe.getResultItem(RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY))`）
-    → 标签解析为空 → 报错且 GT 侧“熔炉代理配方”作废（原版熔炉路径不受影响）。
+    → 与需要动态解析标签的输出存在兼容问题；旧日志确认该代理转换路径出现空输出。不能仅据此断言代理整体被丢弃或所有普通炉子都已实测正常。
 - **修复**：`kubejs/data/thaumcraft/recipes/compat/native_*_cluster_smelting.json` 覆盖为**固定物品输出**
   （铜 `minecraft:copper_ingot`、锡/铅/银 `gtceu:*_ingot`，各 ×2；JSON 依据 `ForgeRecipeItemCodec`：`{"id":...,"count":...}`，count 1..99）；
   同时去掉仅对标签输出有意义的 `forge:tag_empty` 条件。
-- **效果**：GT 代理配方正常注册（GT 机器也能烧原生矿簇），日志报错消失。
+- **预期与验收**：固定输出绕开动态标签解析；需在同步后分别检查最终配方、普通熔炉和 GT 炉子的 2 锭产物，以及是否仍有空输出错误。此前“报错消失”的文字没有修补后运行日志支撑，现改为待验收。

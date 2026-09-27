@@ -1,5 +1,8 @@
 # Society: Sunlit Valley (Baopu Edition / 宝铺版) — 整合包说明报告
 
+> **历史调查报告**：主体数据是早期快照，曾局部更新数量；不能作为当前完整注册表或版本清单。
+> 当前介绍见 [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)，当前缺口见 [STATUS.md](STATUS.md)。配套 JSON 也需重新生成才能代表现在。
+>
 > 本报告供其他 AI / 工具做联动分析使用。数据来源：`logs/modlist.txt`、`config/ftbquests/quests/**`、
 > `kubejs/assets/ftbquestlocalizer/lang/zh_cn.json`；机器可读版本见同目录 `MODPACK_REPORT.json`。
 
@@ -709,4 +712,3 @@
 | `ywzj_midi` | Limitless Concert | 1.20.1-forge-1.9.1 |
 | `zeta` | Zeta | 1.0-31 |
 | `zetter` | Zetter | 0.21.7 |
-

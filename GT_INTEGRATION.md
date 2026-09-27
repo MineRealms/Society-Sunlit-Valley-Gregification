@@ -1,5 +1,8 @@
 # GregTech 内容集成记录（Society: Sunlit Valley）
 
+> 当前阅读入口：[PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md) / [STATUS.md](STATUS.md)。本文件同时包含设计草案、历史验证和实施记录，应以实际脚本和最终配方区分三者。
+> **2026-09-25 复核**：MEK 章为 58 任务；生成器仍有重复运行 ID 错配风险，见 [FTBQ_GUIDE.md](FTBQ_GUIDE.md)。历史“服务器加载 ✓”不表示机器加工已验收。新增任务的内联中文规则优先于下文旧翻译流程。
+
 > 本文档记录「基于本包已有模组，引入 GT 矿脉生成 + 批量搬运 GT 社区包任务书并汉化」的完整工作。
 > 规则沿用 `GTMFO_INTEGRATION.md`：每阶段独立提交、语法/结构自检、可回滚、脚本可重复执行。
 > 原则：**不新增模组**，只使用本包已加载的 GT 生态（gtceu 7.5.3 + GTCA / GTMFO / GTSE / GTNN / GTMM 等）。
@@ -280,7 +283,7 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 | 精密锯木厂 `precision_sawmill` | basic×2 | 灌注合金×2 + 铁锭×4 + 钢外壳 |
 | 锇压缩机 `osmium_compressor` | advanced×2 | 灌注合金×4 + 钢外壳 |
 
-> `forge:circuits/basic` 标签 = `mekanism:basic_control_circuit`（MEK 内部链：锇锭+红石→基础电路；灌注合金×4+基础电路→高级电路）。
+> Mek 默认高级电路是工作台 `ACA` 配方（2 灌注合金 + 电路输入），并非灌注机“4 合金”配方；当前电路输入又被本包脚本替换。标签可能包含多个模组物品，最终成员以运行时为准。
 
 **锁设计（推荐方案，共 6 处改动，全用 `e.replaceInput`，无需 remove/重加）**：
 
@@ -295,7 +298,7 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 - 任务章：`config/ftbquests/quests/chapters/mekanism.snbt`（**2026-09-22 扩写至 58 任务**，挂在「格雷科技」分组 `4A46A5E1358A80A6`，order 17）；
   生成器 `config/ftbquests/tools/build_mek_chapter.py`（内联中文；**保留既有任务 ID**，只给新增任务发新 ID）；
 - **入门前置**：LV 章「铝锭」任务 `7567E885B7166603`（LV→MV 收尾标志）——“LV 玩得差不多才能进 MEK”；
-- 校验：`node --check` ✅；SNBT 括号平衡 ✅；181 个 ID 全部合规（首位 ≤7）且全局唯一 ✅；75 条依赖零悬空 ✅；旧 11 任务 ID 按 key 保持 ✅。
+- 历史交付静态检查记录：58 任务、181 个 ID、75 条依赖，旧 11 任务 ID 曾逐项比对。**这不是生成器二次运行安全证明**；当前读取仍依赖旧顺序表，已发现错配，见 `FTBQ_GUIDE.md`。
 
 ### 6.5 ★ 电路阶段锁（2026-09-22 用户指定）
 
@@ -312,9 +315,9 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 - GT 电路阶段逐条核对自 `gtceu-1.20.1-7.5.3.jar` lang tooltip：
   `microchip_processor`=LV / `good_electronic_circuit`=MV / `advanced_integrated_circuit`=HV / `micro_processor_computer`=EV。
 - 三个电路配方均为**原版合成台类型**（`minecraft:crafting_shaped`）→ `e.replaceInput` 有效；
-- **限制（事实）**：合金/富集材料是灌注机内部配方（`mekanism:metallurgic_infusing` 自定义类型），`replaceInput` 无法触及 → **原子合金本身无法用此方法直接锁 EV**；“EV 才能做终极电路”通过“终极电路需要 EV 电路输入”体现（终极电路还需要原子合金 ×2）。
+- **未完成的需求**：原子合金本身仍未硬锁 EV。自定义加工类型不是不可修改；可在核对序列化格式后评估同 ID 数据覆盖或删除重加。当前仅把终极电路的电路输入换成标称 EV 电路；能否严格要求 EV 生产设备还需检查该 GT 电路的完整获取链。
 - 任务书双锁（与 §4.2 同款做法）：高级/精英/终极电路任务分别依赖 GT 章
-  「首个中压电路!」`0DBC148D92A9F69F` / 「首批高压电路!`26394C1290D70AB6` / 「首款极端电压电路!`4AFD3073C731A1E4`。
+  「首个中压电路!」`0DBC148D92A9F69F` / 「首批高压电路!」`26394C1290D70AB6` / 「首款极端电压电路!」`4AFD3073C731A1E4`。
 
 ---
 
@@ -345,7 +348,7 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 
 ## 8. 后续可选项（TODO）
 
-- [x] **MEK 科技锁（GT LV 电路组装机 + Create 精密构件）—— 见第 6.4 节（2026-09-15 已实施，2026-09-22 服务器运行验证）**
+- [x] **MEK 基础机器配方脚本已实施**——见第 6.4 节；9/22 日志确认脚本加载，具体替换及旁路仍须游戏内验收。
 - [ ] 人工润色机器翻译文本（重点：长描述、幽默文案、专有名词）
 - [ ] 按本包进度调整部分任务奖励（numismatics 货币联动）
 - [ ] 为骷髅洞穴各群系差异化矿脉权重
@@ -408,7 +411,7 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 
 ## 11. Create × GT × Mek 联动现状（2026-09-22 事实核对）
 
-**结论：三线串联 —— Create（入门）→ GT（ULV/LV 主科技）→ Mek（GT LV 电路 + Create 精密构件双重门后）。**
+**设计主线：Create → GT LV → Mek。当前脚本连接了部分关键配方，不能据此宣称整包所有获取路线都被唯一顺序锁定。**
 
 ### 11.1 现状总览
 
@@ -425,10 +428,10 @@ GTCEu × Mekanism 的矿石处理联动 addon（原为 “GregTech Odyssey” �
 
 ### 11.2 关键事实与边界
 
-- **顺序唯一且双向不逆**：GT 的 LV 需 Create 电子管（配方+任务双锁）；Mek 需 GT LV 微处理器 + Create 精密构件。反向（GT/Mek 要求 Create 进度以外的东西）不存在，Create 也不需要 GT 材料即可推进。
+- **脚本连接的顺序**：GT 基础电子电路引入 Create 电子管，Mek 入门机器引入 LV 微处理器与 Create 精密构件。任务依赖提供引导；合成旁路、奖励及交易需另行核验。
 - **桥接方向只有“低 → 高”**：Create 机器可加工 GT 的 ULV~LV 材料（压板/碎矿/合金粉/电路板/橡胶），没有发现 GT/Mek 材料反注 Create 的配方。
 - **MEK 锁实际形态**：`lockMekBehindGT.js` 共 6 处 `replaceInput` 调用（含 1 处 forEach ×4）→ 实际 9 个替换；**未锁 `steel_casing`**，入口由灌注机把守（B 方案）。
 - **电路阶段锁（2026-09-22 新增）**：MEK 基础/高级/精英/终极电路分别对应 GT 的 **LV/MV/HV/EV** 电路（配方 `replaceInput` + 任务书依赖双锁，见 §6.5）；因此“终极电路”需要 EV 阶段（配方同时消耗原子合金×2）。
-- **任务侧**：MEK 章 11 任务挂「格雷科技」分组（order 17），入门前置 = LV 章铝锭任务 `7567E885B7166603`；MEK 章与 GT 章的依赖链与配方锁一致。
+- **任务侧**：MEK 章当前 58 任务，挂「格雷科技」分组（order 17），入门前置为 LV 铝锭任务 `7567E885B7166603`，另有三条 GT 电路任务依赖；任务图不证明生产电压硬锁成立。
 - **运行验证（服务器 9/22 日志）**：`[GT-LV-GATE]` / `[GT-CREATE-BRIDGE]` / `[GT-MEK-LOCK]` 三个脚本均正常加载；GTCA 兼容脚本相关 4 条已知报错为噪音（配方已被脚本移除/替换，见 §9.2）。
 - **已知待验证**：MEK 矿石处理链的运行时表现（浆液/晶体等）与 JEI 分类；Create 桥接配方在 JEI 中的显示（静态 ID 已核对）。

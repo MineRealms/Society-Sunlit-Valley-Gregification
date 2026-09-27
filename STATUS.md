@@ -1,111 +1,77 @@
-# 项目状态快照（STATUS）
+# 项目状态快照
 
-> 用途：上下文/记忆压缩时的「事实源速览」。详细内容见各专项文档。
-> 最后更新：2026-09-22
+## 2026-09-27：Pollution / Astral Sorcery 新增
 
----
+- 已安装用户指定构建：新版同名 Pollution 替换旧版，Astral Sorcery 新增；当前 403 个 JAR、54 个章节。
+- Pollution 42 任务（GT 组 order 31），AS 69 任务（魔法组 order 0）；内联中文、三列两行主题布局，规划与源码证据见 `config/ftbquests/tools/pollution_quest_plan.md` 和 `astral_sorcery_quest_plan.md`。
+- 新增 `kubejs/data/thaumcraft/object_aspects/astral_sorcery_aspects.json`：39 个 AS 物品/设备，21 种现有 TC4 要素。数值为本包新增平衡设计，非 AS 原生定义；不区分同物品的晶石 NBT 属性。采用现有 object_aspects 数据格式。
+- 两章合并后的静态检查通过：对象 ID、引用、DAG、SNBT、几何布局及重复生成；没有启动游戏。任务物品目标不代表多方块已成形，操作性教程使用明确的手动确认目标。
+- Pollution JAR SHA256：`73c3b978087f06692d4cf5718559e745bdf13bbf371abd761a5895280d1a013f`。
+- AS JAR SHA256：`b1da676c9f9db3437ce978c848ca4a988caa4c646440afc2eb67f5d977be9663`。
+- 旧 Pollution 备份：`C:/Users/ADMINI~1/AppData/Local/Temp/opencode/pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar.89dddc11d1544cd4.bak`。
+- 下方 9/25 基线为历史快照；本轮未提交或推送。
 
-## 1. 已完成（OK）
+> 最后核对：2026-09-25。总览：[PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)。
+> 本页记录当前状态和缺口；历史过程见各专项文档，不再将历史待办与当前完成项混排。
 
-| 任务 | 主要产出 | 提交 |
+## 当前基线
+
+- 分支 `master`，本轮开始时 HEAD 为 `70b2b98`；与本地记录的 `origin/master` 一致（未执行 fetch，不代表已实时查询远端）。
+- 活跃目录为 `mods/`、`kubejs/`；没有 `mods1/` 或 `kubejs.disabled/`。
+- 当前顶层 402 个模组 JAR、52 个任务章节；MEK 58、太空 30、TC4 17、暮色 30、营养 3 个任务。
+- 当前 GTMFO JAR 是 0.0.9，TC4 移植版是 20711；旧文档里的 0.0.8/20708 是历史状态。
+- `MODS_BASELINE.md` 为上次哈希快照；当前数量相同不意味着哈希/版本相同。
+
+## 系统落地情况
+
+| 系统 | 当前文件实现 | 验证边界 |
 |---|---|---|
-| git 仓库（仅跟踪 `config/`、`kubejs/` + 白名单） | `.gitignore`、`MODS_BASELINE.md`（402 jar 日期/SHA256，2026-09-22 重算） | `ab54ed1` |
-| 暮色森林教程章节（30 任务，中英） | `config/ftbquests/quests/chapters/twilight_forest.snbt` + 生成器 `config/ftbquests/tools/build_twilight_forest_chapter.py` | `8d565c5` 等 |
-| 整合包说明报告（给 AI 联动用） | `MODPACK_REPORT.md` / `MODPACK_REPORT.json` | `b9473e8` |
-| GT 矿脉注入（暮色森林 / 骷髅洞穴） | `kubejs/startup_scripts/gt/worldGenLayers.js`、`kubejs/server_scripts/gt/oreVeins.js` | `6c708f3` |
-| GT 任务书搬运（17 章 563 任务 + 汉化 3707 键） | `GT_INTEGRATION.md` | `d2e5f3a` 等 |
-| GTMFO 集成（模组/标签/配方/经济） | `GTMFO_INTEGRATION.md`、`kubejs/assets/gtceu/molecules/` | `62ed42b` 等 |
-| **LV 门槛（Create × GT）** | `kubejs/server_scripts/gt/lockLVBehindCreate.js` + Create 章「LV 时代」任务 + GT LV 章 5 入口前置 | `9fb5899` |
-| **Create × GT 轻量联动 R2** | `kubejs/server_scripts/gt/createBridges.js`（板材/覆膜板/碎矿/合金/橡胶） | `7b8b379` |
-| **TC4 联动分析 + 实施** | `TC4_INTEGRATION.md`（KubeJS 插件/10 配方 schema/候选 A~F → 第 7~8 节调研+实施）；产物：aspects 桥接 JSON、`kubejs/server_scripts/tc/`（GT 加工 + TC4 配方）、`kubejs/startup_scripts/tc4Trades.js`、女巫商店 11 交易 | `625fb77`…本轮 |
-| **MEK 科技锁 + MEK 任务章** | `kubejs/server_scripts/mek/lockMekBehindGT.js`（B 方案=LV 微处理器）+ `config/ftbquests/quests/chapters/mekanism.snbt`（11 任务，前置=LV 章铝锭任务 `7567E885B7166603`） | `91961c4` |
-| **日志数据修复 + GTCA 兼容** | 4 类标签文件修复（treasure_spot_spawns / longwings / quality_food / zhopo×2，详见 `GT_INTEGRATION.md` 第 9 节）+ `kubejs/server_scripts/gt/gtcaCasingCompat.js`；删除 `_diag_tags.js` | `f7a0128` + 本轮 |
-| **TC4 入门任务章** | 新分组「神秘时代」+ `config/ftbquests/quests/chapters/thaumcraft.snbt`（17 任务，独立无前置）+ 生成器 `build_thaumcraft_chapter.py` | 本轮 |
-| GregMek 修复与安装（用户完成） | `mods/gregmek-1.0-SNAPSHOT.jar`（30 KB，2026-09-15 22:10）；详见 `GT_INTEGRATION.md` 第 6 节 | 待补 |
+| Society 生活与经济 | 完整 kubejs 定义、加工、养殖、商店、Shipping Bin、季节/钓鱼体系 | 需随模组更新复核 ID、标签和产物 |
+| Create → GT | LV 电子管配方门、任务前置、5 组加工桥接 | 有历史加载日志；不等于所有最终配方已实测 |
+| GT → Mek | 基础机 LV 微处理器 + Create 精密构件；高级/精英/终极电路使用 GT MV/HV/EV 电路 | 原子合金本身未硬锁 EV；电路等级与生产阶段需区分 |
+| GregMek | 矿物形态、浆液及加工路线 addon | 具体产率、互通与 JEI 显示仍需实际验收 |
+| TC4/TF/Botania | 要素、实体、加工、交易、战利品与任务联动 | 见专项文档及维护手册中的兼容修补边界 |
+| GCYR/GTNN/Mek | 重型合金、火箭零件、氢氧与燃料配方桥接 | 新汽油/柴油条目需验证最终配方及油箱接受行为 |
+| GTMFO 营养 | `gtmfoNutrients.js` + 营养任务章；当前营养开启、每日衰减、死亡重置 | 阶段撤销不保证 FTBQ 已完成任务回退 |
+| 展示工具 | `gt_demo.js`，钢板条箱版本，指令触发 | 没有本轮游戏内验收；历史 Node 模拟不作通过凭据 |
 
----
+## 优先待办
 
-## 2. 进行中
+1. **修复 MEK 生成器重复运行安全性**：`load_previous_ids()` 对当前 58 任务仍使用旧 11 项顺序，压缩机/分离器会读到精英/终极电路 ID。本轮只读复现，未运行生成器。具体映射见 [FTBQ_GUIDE.md](FTBQ_GUIDE.md)。
+2. **MEK 任务内容复核**：检查倍矿、电缆、化学氧化、强化材料、喷气背包燃料、核工业和装备描述。上一轮“已核对所有事实”结论过强。
+3. **兑现原子合金 EV 硬锁需求**：目前只修改电路合成配方。自定义加工类型不代表不可修改，需核对实际配方 JSON/schema 后实现并查旁路。
+4. **兼容补丁运行验收**：TC4 四种矿簇、GCYR 汽油/柴油、FFB 树苗、Curios 槽位、GLM 列表。文件与静态检查已落地；不要提前宣布日志消失或玩法恢复。
+5. **服务器发布清单**：排除 Node 测试文件；服务器旧日志曾加载 `gt_demo_sim_v6.js`，需在目标机确认已删除；旧同步 ZIP 不能当作自动更新包。
+6. **启动器管理**：两份 manifest 各 364 项，但是否完全停止 HMCL 自动修复还需启动验证。
 
-- **待重启验证**：删除 `_diag_tags.js` 后，`#society:sellable` / `#society:large_eggs` 两条 LMF 报错应消失；GTCA 两个机壳配方应在 JEI 正常显示；zhopo 矿井在骷髅洞穴生物群系生成。
-- MEK 锁 + MEK 任务章、TC4 全部联动已实施完毕，详见 `GT_INTEGRATION.md` / `TC4_INTEGRATION.md`。
+## 当前 Git 未提交变动（本轮文档编辑前）
 
----
+7 个已跟踪文件有修改，暂存区为空：
 
-## 3. 待办（TODO）
+- `config/CSC/Log/CSC_Record.log`
+- `config/everycomp-entries.toml`：新增 Pollution 树叶类型配置。
+- `config/fabric/indigo-renderer.properties`
+- `config/jei/recipe-category-sort-order.ini`
+- `config/oculus.properties`
+- `config/packetfixer.properties`：本次 diff 为时间戳变化。
+- `config/pollution-common.toml`：新增地形转化开关、阈值 25 和每 tick 预算 4；这是功能配置，不能当普通日志删除。
 
-### 3.1 ✅ MEK 科技锁（已完成，2026-09-15）
+未跟踪的备份/导出与工具目录：`config/forge-client-1.toml.bak`、`config/ftbquests.zip`、`config/ftbquests/quests.7z`、`config/pollution-jei-dump.txt`、`config/pollution-jei-tooltip.log`、`config/tools/`、`config/warpload-common.toml.bak`。本次均保留。
 
-- 需求：MEK 基础机器需 GT LV 电路（微处理器，电路组装机产物）+ Create 精密构件；MEK 入门前置 = LV 玩得差不多。
-- 实施：`kubejs/server_scripts/mek/lockMekBehindGT.js`（8 处 `replaceInput`）+ MEK 任务章（11 任务，前置 = LV 章铝锭任务 `7567E885B7166603`）。
-- 详见 `GT_INTEGRATION.md` 第 6.4 节；校验全通过（node --check / SNBT / ID / lang）。
+## 最近关键提交
 
-### 3.2 ✅ TC4 联动（已实施，2026-09-15）
+| 提交 | 内容 |
+|---|---|
+| `70b2b98` | MEK 生成器与文档；生成器安全性仍见当前待办 |
+| `f9ebcb4` | 58 任务 MEK 章节、Mek 电路锁及 GTMFO 配置 |
+| `23767a8` | GTMFO 营养脚本、营养任务章及配置 |
+| `9b4dfc8` | 取消跟踪机器本地的 HMCL 配置 |
+| `d367d16` | 恢复 kubejs 全量树，兼容数据与展示脚本 |
+| `7b130e4` | 太空章节/资源与 GCYR 联动 |
 
-已实施：要素/扫描桥接（16 机器 + 6 金属标签）、GT 加工 3 配方、KubeJS TC4 配方 4 条、女巫商店 11 交易 + Shipping Bin 14 项。
-文件：`kubejs/data/thaumcraft/object_aspects/pack_bridge_aspects.json`、`kubejs/server_scripts/tc/`、`kubejs/startup_scripts/tc4Trades.js`、`kubejs/data/society_trading/shops/witch.json`。
-详见 `TC4_INTEGRATION.md` 第 7~8 节（含校验结果与运行时验证清单）。
+## 维护入口
 
-### 3.3 其它
-
-- TC4 附属（神秘工匠/禁忌魔法/污染魔法/神秘能源）联动调研（可选）。
-- TC4 版本：包内 20708（自带 KubeJS schema，够用）；dev 包 20711（按需升级）。
-
----
-
-## 4. 关键文件索引
-
-- 专项文档：`GT_INTEGRATION.md`、`GTMFO_INTEGRATION.md`、`TC4_INTEGRATION.md`、`MODPACK_REPORT.md`、`TASK_GUIDE.md`
-- 脚本：`kubejs/server_scripts/gt/`（LV 门槛 / Create 桥）、`kubejs/server_scripts/recipes/`、`kubejs/startup_scripts/`
-- 任务书：`config/ftbquests/quests/chapters/`；文本 `kubejs/assets/ftbquestlocalizer/lang/{zh_cn,en_us}.json`
-- 分析工具：根目录 `analyze_ftb_quests.py` → `ftb_quests_map.json` / `ftb_quests_report.md`
-- 外部参考：GTCEu 源码 `H:\MinecraftMods\GregTech-Modern-7.5.2`；GT JEI 导出 `H:\tools\jei_names.json`；TC4 dev 包 `D:\Downloads\1.20.1-forge-20711-dev.zip`
-
----
-
-## 5. 任务书文本约定（2026-09-17 起）
-
-- **新增/修改的任务文本一律内联中文**（直接写在 snbt 里），不写 lang 文件、不做 i18n。
-- 我们新增的章节（暮色森林 / 神秘时代 / MEK / GT 17 章）已全部内联；原 Sunlit Valley 章节保持原有 lang 键不动。
-- 生成器同步：`build_twilight_forest_chapter.py`、`build_thaumcraft_chapter.py`、`build_mek_chapter.py` 均输出内联中文。
-
----
-
-## 6. 太空线整合（2026-09-18）
-
-详见 `SPACE_INTEGRATION.md`。摘要：
-
-- **太空任务章**：`config/ftbquests/quests/chapters/space.snbt`（30 任务，内联中文，GT 组 order 18，入口=EV 组装机 `7A55CC71442CC854`）；生成器 `build_space_chapter.py`。
-- **火箭硬化**：火箭发动机/燃料罐追加 `gtnn:heavy_plate_t1~t3` ×2（`kubejs/server_scripts/gcyr/hardenRockets.js`）。
-- **GT-- 重型合金补全**：GTNN 原重型锭配方依赖未安装的 Ad Astra → 用钛/钨钢/钠钾合金替代补全 T1~T4（`gcyr/heavyAlloys.js`）。
-- **Mek 联动**：宇航服氧气天然兼容（forge:oxygen）；补 Mek 氧扩散器配方与 Mek 氢燃料（`gcyr/mekLinks.js`）；全套 MekaSuit 获耐热/耐寒标签（`kubejs/data/gcyr/tags/items/`）。
-- **GT-- 联动**：GTNN 火箭引擎燃烧 GCYR 燃料发电；GTNN 高级燃料（RP-1/UDMH/MHN）驱动 GCYR 火箭（`gcyr/gtnnLinks.js`）。
-
----
-
-## 7. 服务器日志修复与工程整理（2026-09-22）
-
-基于服务器日志（`latest.log` / `debug.log`，431 ERROR / 1032 WARN）的事实分析与修复：
-
-### 7.1 已修复（新增文件，提交 `d367d16`）
-- **GCYR 汽油/柴油火箭燃料**：GCYR 0.2.9 以 `EUt(0)` 注册被 GTCEu 7.5.x 拒绝 → `gcyr/fixRocketFuels.js` 以 `EUt(1,1)` 重注册（汽油 25t / 柴油 18t，与原值一致）→ 火箭油箱重新接受二者。
-- **TC4 原生矿簇熔炼**（4 条）：`data/thaumcraft/recipes/compat/native_{copper,tin,lead,silver}_cluster_smelting.json` 标签输出 → 固定物品输出（铜=原版铜锭，锡/铅/银=`gtceu:*_ingot`，×2）；同时修复 GT 代理配方空产物报错。
-- **Quark 树苗购买**：`quark_saplings.json` 去掉不存在的 `pink_blossom_sapling`（整组解析失败 → 5 个有效树苗）。
-- **饰品槽位**：`relics` 实体文件去掉无定义的 `talisman`；补 `society:clock` 槽位定义。
-- **战利品表**：`data/forge/loot_modifiers/global_loot_modifiers.json` 改为合法空表（原结构非法报错）。
-- **`gt_demo.js`**：钢板条箱展示生成器 v6（`/gtitems`，仅指令触发；Rhino 兼容：函数体内全 `var`）。
-
-### 7.2 工程整理
-- **mods 文件夹**：`mods1` → `mods`（402 jar）；旧测试集删除；独有 jar `pollution` / `rosetta_remote_debug_bridge` 备份到桌面 `mods-test-backup-20260922/`。
-- **清单清理**：`manifest.json` / `modpack.cfg`（HMCL 依据）删掉本地不存在的 3 条（旧 JEI 15.20.0.129、Emojiful、selectivebounds），防止 HMCL 启动时把旧文件拉回来；资源包/光影条目保留。
-- **基线**：`MODS_BASELINE.md` 按 402 jar 重算（新增 6 / 移除 2 / 变更 0）。
-- **联动现状**：Create × GT × Mek 事实核对见 `GT_INTEGRATION.md` 第 11 节。
-
-### 7.3 MEK 任务章扩写 + 电路阶段锁（2026-09-22）
-- **章节**：`config/ftbquests/quests/chapters/mekanism.snbt` 由 11 → **58 任务**（材料/动力/化学/核工业/装备/物流全线，内联中文）；生成器 `config/ftbquests/tools/build_mek_chapter.py` 改为 **按 key 保留既有任务 ID**（新增任务才有新 ID；含 ID 保持自动校验）。
-- **电路阶段锁**（用户指定）：高级电路=GT **MV** 电路、精英=**HV**、终极=**EV**（基础=LV 已实现）；配方锁在 `kubejs/server_scripts/mek/lockMekBehindGT.js`，任务书双锁依赖 GT 章「首个中压电路!/首批高压电路!/首款极端电压电路!」三个任务；详见 `GT_INTEGRATION.md` §6.5。
-- **事实限制**：合金/富集材料为灌注机自定义配方，`replaceInput` 无法直接锁（原子合金未单独上锁）。
-
-### 7.4 服务器侧手动事项
-- 删除服务器 `kubejs/server_scripts/gt_demo_sim_v6.js`（测试脚本误同步，会报 SyntaxError）；
-- 同步包：桌面 `starvalley-server-sync-20260922.zip`（10 个文件 + 说明）。
+- 全面介绍及文档导航：[PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md)
+- FTBQ 规范与历史坑：[FTBQ_GUIDE.md](FTBQ_GUIDE.md)
+- KubeJS、日志、HMCL、同步与 Git：[MAINTENANCE_GUIDE.md](MAINTENANCE_GUIDE.md)
+- 新增任务使用内联中文；原包章节的语言键不统一重写。维护时优先修改当前事实源，历史日志保留原日期和验证范围。
