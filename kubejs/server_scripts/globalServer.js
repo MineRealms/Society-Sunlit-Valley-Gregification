@@ -308,19 +308,15 @@ global.handleFee = (server, player, reason) => {
 };
 
 global.teleportHome = (player, server, level) => {
-  let respawnPosition = player.getRespawnPosition();
+  var respawnPosition = player.getRespawnPosition();
+  var destinationDimension = player.getRespawnDimension().location().toString();
   if (respawnPosition == null) {
     respawnPosition = level.getSharedSpawnPos();
+    destinationDimension = level.dimension;
   }
-  player.teleportTo(
-    server.getLevel(player.getRespawnDimension().location()),
-    respawnPosition.x,
-    respawnPosition.y,
-    respawnPosition.z,
-    [],
-    0.0,
-    0.0
-  );
+  // KubeJS's string-dimension overload avoids Mohist's ambiguous Java
+  // ServerPlayer.teleportTo overloads (Set<RelativeMovement> vs TeleportCause).
+  player.teleportTo(destinationDimension, respawnPosition.x, respawnPosition.y, respawnPosition.z, 0, 0);
   server.runCommandSilent(`experience add ${player.username} 1`);
 };
 

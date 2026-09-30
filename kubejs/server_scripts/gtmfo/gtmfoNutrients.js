@@ -182,7 +182,7 @@ const GTMFO_NUTRIENT_DEFINITIONS = {
 };
 
 if (GTMFO_NUTRIENT_MOD && typeof GTMFO !== "undefined") {
-  const registered = GTMFO.nutrients.addMany(GTMFO_NUTRIENT_DEFINITIONS);
+  var registered = GTMFO.nutrients.addMany(GTMFO_NUTRIENT_DEFINITIONS);
   console.info("[GTMFO-INTEGRATION] nutrient definitions registered: " + registered);
 }
 

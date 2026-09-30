@@ -17,7 +17,7 @@ const canTeleportDown = (level, player, blockPos) => {
     } else if (airAbove) airAbove = false;
   }
   if (successBlock > 0) {
-    player.teleportTo(level, blockPos.x, blockPos.y - successBlock, blockPos.z, [], 0.0, 0.0);
+    player.teleportTo(level.dimension, blockPos.x, blockPos.y - successBlock, blockPos.z, 0, 0);
     return true;
   }
   return false;
@@ -44,7 +44,7 @@ const canTeleportSide = (level, player, blockPos) => {
     }
   }
   if (successBlock) {
-    player.teleportTo(level, successBlock.x, successBlock.y, successBlock.z, [], 0.0, 0.0);
+    player.teleportTo(level.dimension, successBlock.x, successBlock.y, successBlock.z, 0, 0);
     return true;
   }
   return false;
