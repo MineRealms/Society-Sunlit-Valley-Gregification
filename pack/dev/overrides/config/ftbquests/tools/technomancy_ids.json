@@ -1,0 +1,428 @@
+{
+  "chapter_sha256": "d57fd1734736293683ec649847f68b145ba884c1d78db6a468780ae212a69528",
+  "ids": {
+    "chapter": "46881545CAE3181F",
+    "quest/basalt": "515B944F4C4BEE3A",
+    "quest/bellows": "67F64B78F0C5D185",
+    "quest/burner": "7443FF016E1AE1C0",
+    "quest/catalyst": "3B4F1E25974B1E64",
+    "quest/coil": "0A84A57D1A32C317",
+    "quest/condenser": "2AFB1BF752ABCCD1",
+    "quest/consumer": "78EF653B4E0DF538",
+    "quest/coupler": "1B96CAA80F235B14",
+    "quest/crystal": "2595EF064345A7C1",
+    "quest/dburner": "4CBA82BBCFE30662",
+    "quest/decon": "318423E671474994",
+    "quest/dynamo": "0986E006F07C8916",
+    "quest/ecoil": "6AB13AB8F9E08FCC",
+    "quest/fflower": "6FFFB873D4F4E164",
+    "quest/focus": "514940EC33F8A9C2",
+    "quest/fountain": "28A01766F9D47417",
+    "quest/fusor": "552D0E594695432E",
+    "quest/harv": "513359BECF195702",
+    "quest/intro": "0F71F86BB7942BDF",
+    "quest/lamp": "5E8ECD12CD7522F4",
+    "quest/mexch": "70CE430815B45186",
+    "quest/mfab": "7864C150189EE2AF",
+    "quest/morpher": "041171E8DC155293",
+    "quest/ndynamo": "3C6ADBA8A4421E66",
+    "quest/nfab": "7FAEEECC0354C75D",
+    "quest/ngear": "2E3B1360868022E3",
+    "quest/nmetal": "2305DE87D3D2A84B",
+    "quest/padv": "4AA6187F78E1FFE7",
+    "quest/pbasic": "1FEA6CAD6F7FA029",
+    "quest/pbo": "1681E47CF4800859",
+    "quest/pcomplex": "12A40AF92CE2F0C0",
+    "quest/pen": "551885F10D5F3E1A",
+    "quest/potency": "6633476C1003B2FE",
+    "quest/ptc": "277A98E8F5B0F2BA",
+    "quest/qglass": "2B5296AB264988A1",
+    "quest/qjar": "01834EF9709B03AD",
+    "quest/reservoir": "0D5134626E206EAC",
+    "quest/tcore": "1643940B19ACFF1B",
+    "quest/tome": "2168C6875D45233B",
+    "quest/treasure": "77D5886C2CED9216",
+    "quest/wand": "243F1220008A5532",
+    "quest/xgem": "16C9E5BB9E0C69C8",
+    "reward/basalt/cog": "3C88775739673E09",
+    "reward/bellows/cog": "255220E1B3934B95",
+    "reward/burner/cog": "7B043EC29AEA2A1A",
+    "reward/catalyst/cog": "00D4B3DA7630B561",
+    "reward/coil/cog": "4A6899F410EDE24C",
+    "reward/condenser/cog": "4EF1EB021B56B2C6",
+    "reward/consumer/cog": "4448BBC9279E3EE6",
+    "reward/coupler/cog": "28B39BFC0A8FBF81",
+    "reward/crystal/cog": "6CFC4638D898410B",
+    "reward/dburner/cog": "33853E916278344B",
+    "reward/decon/cog": "3C5F45AA80DD0FDD",
+    "reward/dynamo/cog": "3B073F1798EC21FA",
+    "reward/ecoil/cog": "59812AC02B5ACD3D",
+    "reward/fflower/cog": "365C16498EE44392",
+    "reward/focus/cog": "1DCC0B7F4F6BBCD2",
+    "reward/fountain/cog": "022DF9D0FAE4D14C",
+    "reward/fusor/cog": "22DC0ACD0031D74C",
+    "reward/harv/cog": "393384A88D5BFC19",
+    "reward/lamp/cog": "23DE0CAB917D9E0D",
+    "reward/mexch/cog": "70B3A7291AB79445",
+    "reward/mfab/cog": "02467D7D84EC3040",
+    "reward/morpher/cog": "4D5CFCE1911B47FD",
+    "reward/ndynamo/cog": "2A3B462C2C1FB5E0",
+    "reward/nfab/cog": "5E3F13FAF99CE88F",
+    "reward/ngear/cog": "5F39A584AFC5A02F",
+    "reward/nmetal/cog": "331EB17E8A85CE9B",
+    "reward/padv/cog": "204A1D4F44AA7F3C",
+    "reward/pbasic/cog": "2202F6A3DB148CB3",
+    "reward/pbo/cog": "4118042784FCA7A0",
+    "reward/pcomplex/cog": "57070FE44A55CEFE",
+    "reward/pen/cog": "782B14171C68E1CA",
+    "reward/potency/cog": "075C2449CF285697",
+    "reward/ptc/cog": "0915B0EAE7D4A29F",
+    "reward/qglass/cog": "77694AFC07D067A4",
+    "reward/qjar/cog": "158847E4E7E09B2B",
+    "reward/reservoir/cog": "31368836B4EAF7F1",
+    "reward/tcore/cog": "630074129AF02773",
+    "reward/tome/cog": "043EF2F39881D680",
+    "reward/treasure/cog": "222863A719AE82C9",
+    "reward/wand/cog": "4C9D0853965DB20D",
+    "reward/xgem/cog": "0B4558C2F4A061B3",
+    "task/basalt/item/technom:basalt": "29DB302F557C3F12",
+    "task/bellows/item/technom:electric_bellows": "35DC242D336C2AAD",
+    "task/burner/item/technom:existence_burner": "39EA2A5B1FE1F3FC",
+    "task/catalyst/item/technom:catalyst_dark": "0FC669EF8CCC9A35",
+    "task/catalyst/item/technom:catalyst_earth": "702A420630CDAF33",
+    "task/catalyst/item/technom:catalyst_fire": "005AF6C21919B9C7",
+    "task/catalyst/item/technom:catalyst_light": "1E8A6C52182D1F35",
+    "task/catalyst/item/technom:catalyst_water": "575A4B1F3EC4CE4D",
+    "task/coil/item/technom:essentia_coil": "69041883DFDE4D3E",
+    "task/condenser/item/technom:energy_condenser": "33D25D2ECE565DA9",
+    "task/consumer/item/technom:eldritch_consumer": "6333A90AA48C6287",
+    "task/coupler/item/technom:coil_coupler": "265F147510563F31",
+    "task/crystal/item/technom:crystal_dark": "06B9057B8153EE61",
+    "task/crystal/item/technom:crystal_earth": "4C937EE2144E71D8",
+    "task/crystal/item/technom:crystal_fire": "641600C29CB0BA43",
+    "task/crystal/item/technom:crystal_light": "7448F033A288BD6C",
+    "task/crystal/item/technom:crystal_water": "473AEE45EAFDDCCA",
+    "task/dburner/item/technom:existence_dynamic_burner": "4931E7EFB21D70FE",
+    "task/decon/item/technom:adv_decon_table": "22A4BAD67F8334DD",
+    "task/dynamo/item/technom:essentia_dynamo": "2B51168A9BC844D2",
+    "task/ecoil/item/technom:enchanted_coil": "6973E0280371A9BC",
+    "task/fflower/item/technom:flower_dynamo": "53371F35B0DCBC02",
+    "task/focus/item/technom:fusion_focus": "7CF75C01C4AF01EF",
+    "task/fountain/item/technom:existence_fountain": "62A1851372A1BF87",
+    "task/fusor/item/technom:essentia_fusor": "3690AA2033FA8F37",
+    "task/harv/item/technom:existence_crop_accelerator": "6BBE33608EEF4B68",
+    "task/harv/item/technom:existence_harvester": "0B666BEDB4A1350B",
+    "task/harv/item/technom:existence_sealer": "0790800C1F1D3059",
+    "task/intro/check": "76602D6F01BA3F5C",
+    "task/lamp/item/technom:flux_lamp": "158A4824D27FAB4E",
+    "task/mexch/item/technom:mana_exchanger": "6BA7C5669BC5D59B",
+    "task/mfab/item/technom:mana_fabricator": "2184C2500177B4DC",
+    "task/morpher/item/technom:biome_morpher": "6B7A667B59595BE0",
+    "task/ndynamo/item/technom:node_dynamo": "3FA3220D6B87B3FB",
+    "task/nfab/item/technom:node_fabricator": "38F4DEC7EEC5E8A2",
+    "task/ngear/item/technom:neutronized_gear": "656A924DCA3872AF",
+    "task/nmetal/item/technom:neutronized_metal": "261FBFC641DFC099",
+    "task/padv/item/technom:existence_pylon_advanced": "2AE3EC1EE8E8EB12",
+    "task/pbasic/item/technom:existence_pylon_basic": "427AE9A2ED2C16BA",
+    "task/pbo/item/technom:processor_bo": "03D95F17126EFD43",
+    "task/pcomplex/item/technom:existence_pylon_complex": "66118482FDE280E0",
+    "task/pen/item/technom:pen": "09367E1A8B884C25",
+    "task/potency/item/technom:potency_gem": "2DEEB8444AF13169",
+    "task/ptc/item/technom:processor_tc": "1A34FD011B4089AB",
+    "task/qglass/item/technom:quantized_glass": "128FBC6ABEBAEFEA",
+    "task/qjar/item/technom:quantum_jar": "2162FA4E2BB558EC",
+    "task/reservoir/item/technom:essentia_reservoir": "296822040A361035",
+    "task/tcore/item/technom:technoturge_core": "5ABB2B85484A209F",
+    "task/tome/item/technom:ritual_tome": "36491B2F4CDF80AE",
+    "task/treasure/item/technom:treasure_fire_gem": "520512085CEBD594",
+    "task/wand/item/technom:energized_wand_core": "5E9E94BB09ED4E5C",
+    "task/xgem/item/technom:existence_gem": "0364B8A097072EFD"
+  },
+  "item_evidence": {
+    "numismatics:cog": {
+      "jar": "CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
+      "model": "assets/numismatics/models/item/cog.json",
+      "sha256": "f37d91367b2adecdae67cc27b15fa902584d1241607990809d6388d3c59014fd"
+    },
+    "technom:adv_decon_table": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/adv_decon_table.json"
+    },
+    "technom:basalt": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/basalt.json"
+    },
+    "technom:biome_morpher": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/biome_morpher.json"
+    },
+    "technom:catalyst_dark": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/catalyst_dark.json"
+    },
+    "technom:catalyst_earth": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/catalyst_earth.json"
+    },
+    "technom:catalyst_fire": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/catalyst_fire.json"
+    },
+    "technom:catalyst_light": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/catalyst_light.json"
+    },
+    "technom:catalyst_water": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/catalyst_water.json"
+    },
+    "technom:coil_coupler": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/coil_coupler.json"
+    },
+    "technom:crystal_dark": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/crystal_dark.json"
+    },
+    "technom:crystal_earth": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/crystal_earth.json"
+    },
+    "technom:crystal_fire": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/crystal_fire.json"
+    },
+    "technom:crystal_light": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/crystal_light.json"
+    },
+    "technom:crystal_water": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/crystal_water.json"
+    },
+    "technom:eldritch_consumer": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/eldritch_consumer.json"
+    },
+    "technom:electric_bellows": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/electric_bellows.json"
+    },
+    "technom:enchanted_coil": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/enchanted_coil.json"
+    },
+    "technom:energized_wand_core": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/energized_wand_core.json"
+    },
+    "technom:energy_condenser": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/energy_condenser.json"
+    },
+    "technom:essentia_coil": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/essentia_coil.json"
+    },
+    "technom:essentia_dynamo": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/essentia_dynamo.json"
+    },
+    "technom:essentia_fusor": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/essentia_fusor.json"
+    },
+    "technom:essentia_reservoir": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/essentia_reservoir.json"
+    },
+    "technom:existence_burner": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_burner.json"
+    },
+    "technom:existence_crop_accelerator": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_crop_accelerator.json"
+    },
+    "technom:existence_dynamic_burner": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_dynamic_burner.json"
+    },
+    "technom:existence_fountain": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_fountain.json"
+    },
+    "technom:existence_gem": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_gem.json"
+    },
+    "technom:existence_harvester": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_harvester.json"
+    },
+    "technom:existence_pylon_advanced": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_pylon_advanced.json"
+    },
+    "technom:existence_pylon_basic": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_pylon_basic.json"
+    },
+    "technom:existence_pylon_complex": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_pylon_complex.json"
+    },
+    "technom:existence_sealer": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/existence_sealer.json"
+    },
+    "technom:flower_dynamo": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/flower_dynamo.json"
+    },
+    "technom:flux_lamp": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/flux_lamp.json"
+    },
+    "technom:fusion_focus": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/fusion_focus.json"
+    },
+    "technom:mana_exchanger": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/mana_exchanger.json"
+    },
+    "technom:mana_fabricator": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/mana_fabricator.json"
+    },
+    "technom:neutronized_gear": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/neutronized_gear.json"
+    },
+    "technom:neutronized_metal": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/neutronized_metal.json"
+    },
+    "technom:node_dynamo": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/node_dynamo.json"
+    },
+    "technom:node_fabricator": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/node_fabricator.json"
+    },
+    "technom:pen": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/pen.json"
+    },
+    "technom:potency_gem": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/potency_gem.json"
+    },
+    "technom:processor_bo": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/processor_bo.json"
+    },
+    "technom:processor_tc": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/processor_tc.json"
+    },
+    "technom:quantized_glass": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/quantized_glass.json"
+    },
+    "technom:quantum_jar": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/quantum_jar.json"
+    },
+    "technom:ritual_tome": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/ritual_tome.json"
+    },
+    "technom:technoturge_core": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/technoturge_core.json"
+    },
+    "technom:treasure_fire_gem": {
+      "jar": "technom-1.20.1-0.1.0-dev.jar",
+      "model": "assets/technom/models/item/treasure_fire_gem.json"
+    }
+  },
+  "order_index": 32,
+  "quest_evidence": {
+    "basalt": [],
+    "bellows": [],
+    "burner": [],
+    "catalyst": [],
+    "coil": [],
+    "condenser": [],
+    "consumer": [],
+    "coupler": [],
+    "crystal": [],
+    "dburner": [],
+    "decon": [],
+    "dynamo": [],
+    "ecoil": [],
+    "fflower": [],
+    "focus": [],
+    "fountain": [],
+    "fusor": [],
+    "harv": [],
+    "intro": [],
+    "lamp": [],
+    "mexch": [],
+    "mfab": [],
+    "morpher": [],
+    "ndynamo": [],
+    "nfab": [],
+    "ngear": [],
+    "nmetal": [],
+    "padv": [],
+    "pbasic": [],
+    "pbo": [],
+    "pcomplex": [],
+    "pen": [],
+    "potency": [],
+    "ptc": [],
+    "qglass": [],
+    "qjar": [],
+    "reservoir": [],
+    "tcore": [],
+    "tome": [],
+    "treasure": [],
+    "wand": [],
+    "xgem": []
+  },
+  "salt": "technomancy",
+  "schema": 2,
+  "source_evidence": {},
+  "technom_jar_sha256": "175a0674ac12ee73bc65e6d7a6e3d7ab5f62fc4000460f6bdf5bdbcd9c50ae8d",
+  "validation": {
+    "chapter_sha256": "d57fd1734736293683ec649847f68b145ba884c1d78db6a468780ae212a69528",
+    "group": "4A46A5E1358A80A6",
+    "layout": {
+      "center_bounds": [
+        24,
+        16
+      ],
+      "clusters": 6,
+      "crossings": 0,
+      "edge_node_hits": 0,
+      "edges": 36,
+      "icon_bounds": [
+        24.9,
+        16.9
+      ],
+      "max_edge": 2.828427,
+      "min_spacing": 2,
+      "overlaps": 0
+    },
+    "multi_objective_quests": 3,
+    "objectives": 52,
+    "order_index": 32,
+    "quests": 42,
+    "rewards": 41,
+    "unique_items": 52
+  }
+}
