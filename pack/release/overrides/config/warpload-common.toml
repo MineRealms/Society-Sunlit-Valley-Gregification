@@ -1,0 +1,108 @@
+#Master switch for all WarpLoad optimizations
+enabled = true
+#Log cache hits, misses, stores and extraction events
+logCacheEvents = true
+
+[startup]
+	#Preload Forge path resource pack indexes on WarpLoad worker threads during startup
+	asyncPreloadPacks = true
+	#Use a dedicated work-stealing pool for resource reload preparation instead of competing for the shared Minecraft worker pool
+	dedicatedResourceReloadExecutor = true
+	#Query safe resource-pack segments concurrently while preserving vanilla priority and filter order. Off by default: with path indexes in place, dispatching a task per pack per lookup costs more than sequential O(1) map hits and visibly slows mods that read many small resources (measured: Moonlight dynamic asset generation 7.9s -> 1.4s)
+	parallelResourceLookup = false
+	#Minimum safe pack segment size before WarpLoad uses parallel resource lookup
+	#Range: 2 ~ 64
+	parallelLookupMinPacks = 4
+	#Cache per-pack resource existence checks across launches
+	cacheResourceExistence = true
+	#Parse data-pack JSON (recipes, advancements, loot tables and every SimpleJsonResourceReloadListener directory) in parallel when no disk cache is available
+	parallelJsonParsing = true
+	#Index directory walks of mod resource packs and reuse them for the whole session
+	cacheWalkedPaths = true
+	#Also cache namespace lookups that returned nothing
+	cacheEmptyNamespaces = true
+	#Cache BlockModel material lookups during model baking
+	cacheMaterials = true
+	#Parallelism of the dedicated reload pool. 0 = auto (CPU cores - 2). Lower it when a mod's own parallel asset generation (e.g. Moonlight's dynamic resources) is slowed down by pool contention
+	#Range: 0 ~ 64
+	reloadWorkers = 0
+
+[datapack]
+	#Extract zip datapacks into a folder inside the world once and use the folder afterwards. Reduces RAM and allows full path indexing
+	extractZipDatapacks = true
+	#Folder name created inside the world directory for extracted datapacks
+	cacheFolder = "warpload_cache"
+	#Also cache zip datapacks that are not inside the world datapacks folder while the world loads
+	cacheExternalZips = true
+
+[reloadCache]
+	#Cache parsed JSON datapack data (recipes, advancements, loot tables by default) on disk for instant reloads
+	jsonReloadCacheEnabled = true
+	#Cache every SimpleJsonResourceReloadListener directory instead of just the defaults
+	jsonReloadCacheAllDirectories = false
+	#Extra JSON reload directories to cache
+	jsonReloadExtraDirectories = []
+	#Cache parsed heavy tag directories (items/blocks/entity_types/fluids/biomes/...) on disk
+	tagReloadCacheEnabled = true
+	#Cache every tag directory instead of just the heavy defaults
+	tagReloadCacheAllDirectories = false
+	#Extra tag directories to cache
+	tagReloadExtraDirectories = []
+	#Reuse already built tag collections for repeated datapack loads in the same session (world re-entry, /reload). Guarded by a fingerprint of the raw tag entries, so changed datapacks still rebuild
+	reuseBuiltTags = true
+	#Mod ids whose jar content is hashed into cache fingerprints, so a same-version repacked jar still invalidates caches. Keep this list short: jars are read once per launch
+	contentHashedMods = ["gtceu"]
+
+[modelCache]
+	#Cache baked models on disk and skip the bake loop on later launches. Off by default: applying and storing models spikes RAM. Automatically disabled when ModernFix dynamic resources is on and for custom/layered models
+	modelBakeCacheEnabled = false
+	#Skip the model bake cache when the model map is larger than this. Caps peak RAM; 0 = unlimited
+	#Range: 0 ~ 2000000
+	modelBakeMaxModels = 20000
+
+[ai]
+	#Only run mob AI when a player is within this radius (blocks). Outside the radius AI is frozen
+	#Range: 1.0 ~ 128.0
+	aiActivationRadius = 10.0
+	#Enable player-distance mob AI gating
+	aiOptimizationEnabled = true
+	#Keep AI active for named mobs even outside the radius
+	aiKeepNamedActive = true
+	#Clear non-player targets when AI is frozen to avoid stale pathing work
+	aiClearTargetWhenFrozen = true
+	#When FTB Chunks is present, keep mob AI active inside force-loaded chunks even if no player is nearby
+	aiRespectFtbForceLoaded = true
+
+[compatibility]
+	#Complete failed third-party client resource reload listeners instead of letting one mod crash the whole loading overlay
+	isolateModdedResourceReloadFailures = true
+	#Class-name prefixes that may be isolated when a resource reload fails. Use * for all non-core mod listeners
+	isolatedResourceReloadListenerPatterns = ["*"]
+	#When Sinytra Connector is installed, avoid startup/resource optimizations that change Fabric resource reload or renderer lookup timing
+	connectorCompatibilityMode = true
+	#Fusion-aware compatibility. Packs that actually use a Fusion overrides folder automatically bypass the zip fast paths, and when a zip datapack is extracted the overrides folder is transferred to the extracted pack. Set to false only if you never use Fusion overrides folders
+	fusionCompatibilityMode = true
+
+[memory]
+	#Keep soft in-memory copies of parsed JSON/tag data for faster reloads. Soft refs are dropped under memory pressure
+	memoryCacheEnabled = true
+	#Max soft memory-cache entries across each cache type
+	#Range: 1 ~ 256
+	memoryCacheMaxEntries = 16
+	#Drop WarpLoad heap caches after world load / resource reload so Minecraft keeps the only live copy
+	clearMemoryAfterReload = true
+
+[integration]
+	#Cache GregTech's generated recipe data (the dynamic data pack JSON) on disk and skip regeneration on later launches. Only active when GregTech is loaded
+	gtRecipeDataCache = true
+
+[debug]
+	#Log every resource reload listener's completion time, the thread that ran it and live WarpLoad executor statistics. Used to diagnose reload-phase contention
+	reloadTimeline = true
+	#Log Moonlight dynamic asset generation start/end plus its internal thread-pool statistics
+	moonlightProbe = true
+
+[client]
+	#Persist LowDragLib CTM metadata (LDLMetadataSection cache) across launches. Only active when ldlib is installed; resource-pack changes are fingerprinted
+	ldlCtmCache = true
+

@@ -1,0 +1,13 @@
+{
+  "type": "thaumcraft:common_metal_smelting",
+  "category": "misc",
+  "ingredient": {
+    "item": "thaumcraft:native_lead_cluster"
+  },
+  "result": {
+    "id": "gtceu:lead_ingot",
+    "count": 2
+  },
+  "experience": 1.0,
+  "cookingtime": 200
+}

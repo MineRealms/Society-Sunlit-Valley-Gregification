@@ -1,0 +1,30 @@
+{
+  "direct": {
+    "gtceu:lv_macerator": { "machina": 3, "potentia": 2, "motus": 2, "instrumentum": 1 },
+    "gtceu:lv_assembler": { "machina": 3, "potentia": 2, "fabrico": 2 },
+    "gtceu:lv_electric_furnace": { "machina": 3, "potentia": 3, "ignis": 2 },
+    "gtceu:lv_circuit_assembler": { "machina": 3, "potentia": 2, "cognitio": 2, "fabrico": 1 },
+    "gtceu:lv_chemical_reactor": { "machina": 3, "potentia": 2, "aqua": 2, "permutatio": 1 },
+
+    "create:mechanical_press": { "machina": 3, "motus": 2, "metallum": 1 },
+    "create:crushing_wheel": { "machina": 2, "motus": 3, "perditio": 1 },
+    "create:mechanical_mixer": { "machina": 3, "motus": 2, "aqua": 1, "permutatio": 1 },
+    "create:deployer": { "machina": 2, "motus": 2, "fabrico": 2, "sensus": 1 },
+    "create:encased_fan": { "machina": 2, "motus": 3, "aer": 2 },
+    "create:millstone": { "machina": 2, "motus": 2, "terra": 1, "perditio": 1 },
+
+    "mekanism:metallurgic_infuser": { "machina": 3, "potentia": 2, "ignis": 2, "metallum": 1 },
+    "mekanism:enrichment_chamber": { "machina": 3, "potentia": 2, "permutatio": 2 },
+    "mekanism:crusher": { "machina": 2, "potentia": 2, "perditio": 2 },
+    "mekanism:energized_smelter": { "machina": 3, "potentia": 3, "ignis": 2 },
+    "mekanism:precision_sawmill": { "machina": 2, "potentia": 2, "arbor": 1, "instrumentum": 1 }
+  },
+  "tags": [
+    { "id": "forge:ingots/aluminium", "aspects": { "metallum": 3, "instrumentum": 1 } },
+    { "id": "forge:ingots/nickel", "aspects": { "metallum": 3, "instrumentum": 1 } },
+    { "id": "forge:ingots/zinc", "aspects": { "metallum": 3, "instrumentum": 1 } },
+    { "id": "forge:ingots/invar", "aspects": { "metallum": 3, "instrumentum": 1 } },
+    { "id": "forge:ingots/electrum", "aspects": { "metallum": 2, "lucrum": 2 } },
+    { "id": "forge:ingots/stainless_steel", "aspects": { "metallum": 3, "ordo": 1 } }
+  ]
+}

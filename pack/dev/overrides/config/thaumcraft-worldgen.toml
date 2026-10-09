@@ -1,0 +1,34 @@
+
+[world_generation]
+	#Generate wild aura nodes in newly generated chunks.
+	generate_aura_nodes = true
+	#Generate TC4 mounds, rings, hilltop stones and node totems.
+	generate_structures = true
+	#Generate cinnabar ore in newly generated chunks.
+	generate_cinnabar_ore = true
+	#Generate amber-bearing stone in newly generated chunks.
+	generate_amber_ore = true
+	#Generate primal infused stone in newly generated chunks.
+	generate_infused_stone = true
+	#Generate TC4 vegetation in ordinary overworld biomes.
+	generate_trees = true
+	#Allow Tainted Land to enter new overworld biome layouts.
+	generate_taint = true
+	#Average chunks per wild aura node; TC4 default is 36.
+	#Range: 1 ~ 214748364
+	node_rarity = 36
+	#One-in-n chance that a generated node receives a special type or modifier; minimum 3 as in TC4.
+	#Range: > 3
+	special_node_rarity = 18
+
+[biomes]
+	#Additional Vanilla-equivalent TerraBlender Overworld region weight. TerraBlender's own default Vanilla weight is 10; the default value 10 here raises the effective Vanilla weight to 20. Set to 0 to disable the additional region.
+	#Range: > 0
+	additional_overworld_region_weight = 10
+	#Relative TerraBlender region weight for Magical Forest. With default settings, 2 is equivalent to user-facing weight 1 against Vanilla 10.
+	#Range: > 1
+	magical_forest_biome_weight = 2
+	#Relative TerraBlender region weight for Tainted Land. With default settings, 1 is equivalent to user-facing weight 0.5 against Vanilla 10.
+	#Range: > 1
+	taint_biome_weight = 1
+

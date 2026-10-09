@@ -1,0 +1,6 @@
+#Render Worldshaper's Looking Glass phantom block previews.
+show_placement_mirror_preview = true
+#Minimum bottom margin for the Soul Heart bar. The native right-hand HUD layout may place it higher to respect rows already reserved by other mods.
+#Range: 0 ~ 256
+soul_heart_height = 39
+

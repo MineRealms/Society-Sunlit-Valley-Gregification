@@ -22,3 +22,12 @@ __pycache__/
 !/PROJECT_OVERVIEW.md
 !/FTBQ_GUIDE.md
 !/MAINTENANCE_GUIDE.md
+
+# =====================================================================
+# CurseForge 打包源（方案A：pack/ 子目录）
+# 跟踪 manifest.json + overrides/{config,kubejs,resourcepacks}
+# 排除 overrides/mods 下的自定义模组 jar（由 mods/ 或更新器分发）
+# =====================================================================
+!/pack/
+/pack/*/overrides/mods/
+/pack/dist/

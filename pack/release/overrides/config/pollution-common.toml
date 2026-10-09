@@ -1,0 +1,90 @@
+
+#Industrial pollution system
+[pollution]
+	#Master switch for the industrial pollution system.
+	enablePollution = true
+	#Machines emit pollution when they explode.
+	enableExplosionPollution = true
+	#Multiplier applied to multiblock muffler hatch pollution output.
+	#Range: 0.0 ~ 1000.0
+	mufflerPollutionMultiplier = 1.0
+	#TC4R flux scrubbed per operation, scaled by the scrubber machine tier.
+	#Range: 0.0 ~ 1.0
+	fluxScrubberMultiplier = 0.002
+	#Natural pollution decay per tick and per polluted chunk.
+	#Range: 0.0 ~ 10.0
+	pollutionDecayPerTick = 0.001
+	#Chunk pollution value at which players start receiving harmful effects.
+	#Range: 0.0 ~ 1000000.0
+	effectThreshold = 10.0
+	#Heavy pollution slowly kills the environment: grass turns to sand,
+	#and water turns to lava at twice the conversion threshold.
+	enableTerrainConversion = true
+	#Chunk pollution value at which terrain conversion starts.
+	#Range: 0.0 ~ 1000000.0
+	terrainConversionThreshold = 25.0
+	#Maximum blocks converted per dimension per tick (performance budget).
+	#Range: 0 ~ 64
+	terrainConversionBudgetPerTick = 4
+
+#Vis generator and aura machines
+[aura]
+	#EU produced per unit of vis drained from the Thaumcraft 4R network.
+	#Range: 1 ~ 1000000
+	visGeneratorEuPerVis = 250
+	#Pollution added per unit of vis drained.
+	#Range: 0.0 ~ 1000.0
+	visGeneratorPollutionMultiplier = 0.1
+	#Vis recharged per EU spent by the vis provider (upstream visProviderMultiplier).
+	#Range: 0.0 ~ 100.0
+	visProviderMultiplier = 0.05
+	#Base flux quanta consumed per operation by the flux promoted fuel cell.
+	#Range: 0.0 ~ 100.0
+	fluxFuelCellFluxPerTick = 0.005
+
+#Underground portal ritual
+[world]
+	portalOriginDimension = "minecraft:overworld"
+	allowPortalsInOtherDimensions = false
+	#If false, arrival portals need another diamond to enable return travel.
+	shouldReturnPortalBeUsable = true
+	#Reject rituals outside the destination world border; checks every 100 instead of 20 ticks.
+	checkPortalDestination = false
+
+#Thaumcraft warp events
+[warp]
+	#Enable Pollution warp events driven by the player's TC4R warp.
+	enableWarpEvents = true
+	#Allow the countdown bomb warp event to schedule a delayed explosion.
+	enableCountdownBomb = true
+	#Ticks between warp event rolls for each player.
+	#Range: 20 ~ 12000
+	warpEventIntervalTicks = 200
+	#Fuse length of the countdown bomb warp event.
+	#Range: 20 ~ 1200
+	countdownBombTicks = 200
+
+	[warp.events]
+		blind = true
+		nausea = true
+		poison = true
+		wither = true
+		weakness = true
+		jump = true
+		wind = true
+		blood = true
+		lightning = true
+		obsidian = true
+		mushrooms = true
+		fake_explosion = true
+		fake_rain = true
+		rain = true
+		junk = true
+		blink = true
+		swamp = true
+		countdown_bomb = true
+		wither_rose = true
+		fall = true
+		inventory_scramble = true
+		zombie_siege = true
+

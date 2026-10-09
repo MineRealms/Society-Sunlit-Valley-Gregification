@@ -1,0 +1,33 @@
+
+[general]
+	#Determines how fast notifications scroll downwards, in milliseconds.
+	#Range: > 1
+	notification_delay = 5000
+	#Maximum number of notifications displayed onscreen.
+	#Range: > 0
+	notification_max = 15
+	#Enables TC4's rare luminous overlay on fibrous taint.
+	glowing_taint = true
+	#Darkens selected animated colors for higher contrast, matching TC4's color-blind option.
+	color_blind = false
+	#Enables TC4's Death Gaze, Blurred Vision, Unnatural Hunger and Sun Scorned post-processing effects.
+	shaders = true
+	#Display the casting-wand dial at the bottom left instead of the top left.
+	wand_dial_bottom = false
+	#Always display scanned item aspects unless Shift is held; false keeps TC4's default Shift-to-display behavior.
+	display_aspects = false
+	#Segment density of golem marker links; values below four disable the effect as in TC4.
+	#Range: > 0
+	golem_link_quality = 16
+	#Use TC4's older blue grass and foliage palette in Magical Forest biomes.
+	blue_magical_forest = false
+	#Show completed research in Minecraft's top-right toast queue. False uses TC4's legacy top-left research popup. Applies to new notifications.
+	research_completion_toasts = true
+	#Prevents overexposure on ward and architect overlays (client only).
+	#true (default): use bounded coloring; false: use original additive coloring.
+	prevent_overlay_overexposure = true
+	#Display scanned item aspects at the bottom of the item tooltip as a standard component.
+	#true (default): include aspects in tooltip layout; false: use the external aspect strip above the tooltip.
+	#The display_aspects setting still controls whether Shift shows or hides aspects.
+	aspect_tooltip_component = true
+

@@ -1,0 +1,1895 @@
+{
+	default_hide_dependency_lines: false,
+	default_quest_shape: "",
+	filename: "astral_sorcery",
+	group: "04716B2F19F75F08",
+	icon: "astralsorcery:tome",
+	id: "5785BBD0FC2CC109",
+	order_index: 0,
+	quest_links: [],
+	quests: [
+		{
+			id: "383340D9B0A5E896",
+			title: "A 发现：星芒宝典",
+			icon: "astralsorcery:tome",
+			description: [
+				"从星芒宝典的“发现”页开始。宝典以研究进度开放内容，本章按实际手册分成发现、探索、共鸣、星座、五彩。",
+				"任务物品仅检查取得，不消耗；手动勾选只代表你确认完成实作，不自动检测研究或结构。升级祭坛会原地替换，请先完成前一级目标，必要时挖下新祭坛供背包检测后再放回。",
+				"地图上排从左向右，下排从右向左。各区入口需要对应阶段设备；箭头是局部学习顺序，不是完整配方表。",
+				"",
+				"手册阶段：A 发现；参照页面：WELCOME。"
+			],
+			x: 0.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [],
+			tasks: [
+				{
+					id: "6270C1B96CA3F242",
+					type: "item",
+					item: "astralsorcery:tome",
+					consume_items: false
+				}
+			],
+			rewards: [
+				{
+					id: "24EA71B1BD41F907",
+					type: "item",
+					item: "astralsorcery:aquamarine",
+					count: 1
+				}
+			]
+		},
+		{
+			id: "71A8CFBE8A60BAB6",
+			title: "学院祭坛与露天水晶",
+			icon: "astralsorcery:rock_collector_crystal",
+			description: [
+				"寻找学院遗迹。大型祭坛的浮动聚能水晶可帮助入门，宝箱可能有星图。按手册移除水晶上方遮蔽，让它能接收星光；不要把受保护的遗迹水晶当作可带回家的成品。",
+				"",
+				"手册阶段：A 发现；参照页面：SHRINES。"
+			],
+			x: 3.0d,
+			y: 7.5d,
+			size: 0.9d,
+			dependencies: [
+				"383340D9B0A5E896"
+			],
+			tasks: [
+				{
+					id: "1DC28ECD24473727",
+					type: "checkmark",
+					title: "手动确认：找到祭坛并检查水晶上方遮挡"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "2D92A6E017B8394C",
+			title: "星图不是星座发现",
+			icon: "astralsorcery:constellation_paper",
+			description: [
+				"获取并查看星图，研究水平足够时它会揭示星座资料。Shift 打开宝典可存放星图；拿到星图不等于已经在夜空描绘并发现星座。",
+				"",
+				"手册阶段：A 发现；参照页面：CPAPER。"
+			],
+			x: 6.0d,
+			y: 7.5d,
+			size: 0.9d,
+			dependencies: [
+				"71A8CFBE8A60BAB6"
+			],
+			tasks: [
+				{
+					id: "24866D89152231C2",
+					type: "item",
+					item: "astralsorcery:constellation_paper",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "2CE13A52C431038B",
+			title: "为观星做好准备",
+			icon: "astralsorcery:parchment",
+			description: [
+				"核对宝典中的星图和观星地点。探索阶段制作手持望远镜，再按图描绘；不要用羊皮纸目标假装自动发现星座。",
+				"",
+				"手册阶段：A 发现；参照页面：CPAPER。"
+			],
+			x: 9.0d,
+			y: 7.5d,
+			size: 0.9d,
+			dependencies: [
+				"2D92A6E017B8394C"
+			],
+			tasks: [
+				{
+					id: "7256CF6A0999A158",
+					type: "checkmark",
+					title: "手动确认：已阅读星图并选好无遮挡观星地点"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "69C3C3025D8093B4",
+			title: "河岸的海蓝宝石",
+			icon: "astralsorcery:aquamarine",
+			description: [
+				"寻找海蓝宝石砂岩并取得海蓝宝石。手册将其描述为河岸、沙滩附近的星能敏感资源；它用于宝典、共振星杖和早期透镜。",
+				"",
+				"手册阶段：A 发现；参照页面：ORES。"
+			],
+			x: 3.0d,
+			y: 1.5d,
+			size: 0.9d,
+			dependencies: [
+				"383340D9B0A5E896"
+			],
+			tasks: [
+				{
+					id: "325A7FCBE44A80D8",
+					type: "item",
+					item: "astralsorcery:aquamarine",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "2EB5AAEA5CC8E124",
+			title: "共振星杖：引导合成",
+			icon: "astralsorcery:wand",
+			description: [
+				"用当前配方制作共振星杖（共鸣法杖）。在祭坛摆好原料后用它右击启动；夜间在露天手持还可寻找地下晶石的星能迹象。它也能提示多方块结构中缺失或放错的部件。",
+				"",
+				"手册阶段：A 发现；参照页面：WAND。"
+			],
+			x: 6.0d,
+			y: 1.5d,
+			size: 0.9d,
+			dependencies: [
+				"69C3C3025D8093B4"
+			],
+			tasks: [
+				{
+					id: "10373BBDA86E50DC",
+					type: "item",
+					item: "astralsorcery:wand",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "5D4AA36C67E18973",
+			title: "星辉合成台",
+			icon: "astralsorcery:altar_discovery",
+			description: [
+				"把普通工作台放在学院聚能水晶附近，让星光转化为星辉合成台。自己采集星能时，正上方须无遮挡；高处与汇星浓度会影响可用星能。",
+				"星能槽反映当前环境可用量，不是一直充电的电池。放好配方后用共振星杖右击。下一分区从这台设备起步。",
+				"",
+				"手册阶段：A 发现；参照页面：ALTAR1。"
+			],
+			x: 9.0d,
+			y: 1.5d,
+			size: 0.9d,
+			dependencies: [
+				"2EB5AAEA5CC8E124"
+			],
+			tasks: [
+				{
+					id: "3B32D78069DE6BC0",
+					type: "item",
+					item: "astralsorcery:altar_discovery",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "73726E3AD2AEBB9C",
+			title: "星术师的大理石",
+			icon: "astralsorcery:marble_raw",
+			description: [
+				"准备本模组的大理石，并加工雕纹、精致、柱与横梁等变体。结构辨认的是具体方块，不要把别的模组同名石材当作替代品。",
+				"",
+				"手册阶段：A 发现；参照页面：MARBLETYPES。"
+			],
+			x: 3.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [
+				"383340D9B0A5E896"
+			],
+			tasks: [
+				{
+					id: "07072865E970FEFC",
+					type: "item",
+					item: "astralsorcery:marble_raw",
+					consume_items: false
+				},
+				{
+					id: "2CA18222971E36E2",
+					type: "item",
+					item: "astralsorcery:marble_chiseled",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "5A8B225EF1F5869F",
+			title: "炭黑大理石",
+			icon: "astralsorcery:black_marble_raw",
+			description: [
+				"制作炭黑大理石，后续祭坛底座会大量使用。按当前配方加工，不把炭黑与普通大理石互换。",
+				"",
+				"手册阶段：A 发现；参照页面：SOOTYMARBLE。"
+			],
+			x: 6.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [
+				"73726E3AD2AEBB9C"
+			],
+			tasks: [
+				{
+					id: "14E8A535D0099AEE",
+					type: "item",
+					item: "astralsorcery:black_marble_raw",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "7150B9F22202D420",
+			title: "读懂结构分层图",
+			icon: "astralsorcery:marble_pillar",
+			description: [
+				"在宝典结构页切换分层视图，核对方块变体、柱高和空气位置。任务中取得控制方块并不代表结构已成型；用共振星杖检查错误。",
+				"",
+				"手册阶段：A 发现；参照页面：MARBLETYPES、WAND。"
+			],
+			x: 9.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [
+				"5A8B225EF1F5869F"
+			],
+			tasks: [
+				{
+					id: "52C9844E2B956AA2",
+					type: "checkmark",
+					title: "手动确认：能按宝典分层图辨认建材与空气位置"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "7B641B85451E7B9F",
+			title: "B 探索：让星光工作",
+			icon: "astralsorcery:altar_discovery",
+			description: [
+				"已在发现阶段取得星辉合成台。这里对应 BASIC_CRAFT，宝典显示为“探索”，不是另一个额外研究等级。",
+				"四条支线分别是液体、观星、照明与供能；升级用的聚星缸、晶石、星能液需一并准备。",
+				"",
+				"手册阶段：B 探索；参照页面：WELL、ALTAR2。"
+			],
+			x: 12.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [],
+			tasks: [
+				{
+					id: "0988BD596AC46CD9",
+					type: "item",
+					item: "astralsorcery:altar_discovery",
+					consume_items: false
+				}
+			],
+			rewards: [
+				{
+					id: "24A9F14D2C168206",
+					type: "item",
+					item: "astralsorcery:aquamarine",
+					count: 1
+				}
+			]
+		},
+		{
+			id: "723E2B19B2D657AD",
+			title: "水晶石与属性",
+			icon: "astralsorcery:rock_crystal",
+			description: [
+				"夜间利用共振星杖寻找晶石迹象，再用足够等级的镐开采水晶石矿石。保留不同属性的晶石，避免把唯一一枚投入消耗型催化流程。手册建议用精细方法处理，而非粗暴磨石。",
+				"",
+				"手册阶段：B 探索；参照页面：ROCK_CRYSTALS。"
+			],
+			x: 15.0d,
+			y: 0.0d,
+			size: 0.9d,
+			dependencies: [
+				"7B641B85451E7B9F"
+			],
+			tasks: [
+				{
+					id: "29580AF3F541DFE3",
+					type: "item",
+					item: "astralsorcery:rock_crystal",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "351A5D6DA4F61FFA",
+			title: "聚星缸：星辉池",
+			icon: "astralsorcery:well",
+			description: [
+				"在星辉合成台制作聚星缸。右击放入海蓝宝石等催化剂，催化剂会逐渐耗损且不能随意取回。提供的星能越多，产液越快。",
+				"保持顶部开口通畅；下部可接主动抽液设备。不要把聚星缸当作可任意回灌的储罐。",
+				"",
+				"手册阶段：B 探索；参照页面：WELL。"
+			],
+			x: 18.0d,
+			y: 0.0d,
+			size: 0.9d,
+			dependencies: [
+				"723E2B19B2D657AD"
+			],
+			tasks: [
+				{
+					id: "3285FB6242C85394",
+					type: "item",
+					item: "astralsorcery:well",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "090A0741648230CC",
+			title: "星能液与晶石处理",
+			icon: "astralsorcery:liquid_starlight_bucket",
+			description: [
+				"用桶收集星能液。按手册把晶石浸入星能液可使其成长；两个晶石可能发生属性合并。先留存一枚原始晶石作比较。液体与其他流体交互时会消耗，试验应放在独立区域。",
+				"",
+				"手册阶段：B 探索；参照页面：WELL、CRYSTAL_GROWTH。"
+			],
+			x: 21.0d,
+			y: 0.0d,
+			size: 0.9d,
+			dependencies: [
+				"351A5D6DA4F61FFA"
+			],
+			tasks: [
+				{
+					id: "4FD20CB709B866BA",
+					type: "item",
+					item: "astralsorcery:liquid_starlight_bucket",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "070F1D6331688582",
+			title: "玻璃透镜",
+			icon: "astralsorcery:glass_lens",
+			description: [
+				"在星辉合成台把海蓝宝石与玻璃板加工为玻璃透镜。它是手持望远镜、星辉转继器等设备的基础材料，不同于放在世界中传光的水晶透镜方块。",
+				"",
+				"手册阶段：B 探索；参照页面：HAND_TELESCOPE。"
+			],
+			x: 15.0d,
+			y: 3.0d,
+			size: 0.9d,
+			dependencies: [
+				"7B641B85451E7B9F"
+			],
+			tasks: [
+				{
+					id: "0316158DFF5B582E",
+					type: "item",
+					item: "astralsorcery:glass_lens",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "60239AB03876FE11",
+			title: "手持望远镜",
+			icon: "astralsorcery:hand_telescope",
+			description: [
+				"制作手持望远镜，在无遮挡的夜空观测。手册说明它只适合最明亮的星座，并且每晚只有一个星座能通过这种简易工具显现。",
+				"",
+				"手册阶段：B 探索；参照页面：HAND_TELESCOPE。"
+			],
+			x: 18.0d,
+			y: 3.0d,
+			size: 0.9d,
+			dependencies: [
+				"070F1D6331688582"
+			],
+			tasks: [
+				{
+					id: "6F78919720BB8FCE",
+					type: "item",
+					item: "astralsorcery:hand_telescope",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "5F8CFD0FEFB82849",
+			title: "描绘第一个明亮星座",
+			icon: "astralsorcery:constellation_paper",
+			description: [
+				"先看过相应星图，再在星座出现的夜晚观测。按住 Shift 固定视角，用左键准确描绘星点；未固定或描绘不准确不会真正发现。这个目标需要手动确认。",
+				"",
+				"手册阶段：B 探索；参照页面：HAND_TELESCOPE。"
+			],
+			x: 21.0d,
+			y: 3.0d,
+			size: 0.9d,
+			dependencies: [
+				"60239AB03876FE11"
+			],
+			tasks: [
+				{
+					id: "0785E4D66919786A",
+					type: "checkmark",
+					title: "手动确认：已在夜空描绘并发现一个明亮星座"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "4DF0677F8C81F36B",
+			title: "辉光粉与浮空光源",
+			icon: "astralsorcery:illumination_powder",
+			description: [
+				"制作辉光粉并投出，可留下浮空光源。液体或方块覆盖可移除这些光源；不是所有发光效果都对应可采集的物品。",
+				"",
+				"手册阶段：B 探索；参照页面：ILLUM_POWDER。"
+			],
+			x: 15.0d,
+			y: 6.0d,
+			size: 0.9d,
+			dependencies: [
+				"7B641B85451E7B9F"
+			],
+			tasks: [
+				{
+					id: "1C6618DAEB09A2E7",
+					type: "item",
+					item: "astralsorcery:illumination_powder",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "558D0BC1501183F2",
+			title: "洞穴照明器（光照仪）",
+			icon: "astralsorcery:illuminator",
+			description: [
+				"制作洞穴照明器。按手册，它借助夜间汇星之能在下方被天空遮蔽的区域布置光源；后期辉光星杖也能为它供能。拆掉设备不会同时清除已放的光源。",
+				"",
+				"手册阶段：B 探索；参照页面：ILLUMINATOR。"
+			],
+			x: 18.0d,
+			y: 6.0d,
+			size: 0.9d,
+			dependencies: [
+				"4DF0677F8C81F36B"
+			],
+			tasks: [
+				{
+					id: "640679B41CD2B2BE",
+					type: "item",
+					item: "astralsorcery:illuminator",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "53683A48B5C07E0A",
+			title: "暗夜粉",
+			icon: "astralsorcery:nocturnal_powder",
+			description: [
+				"暗夜粉形成临时黑暗云并产生当地群系的怪物。它不会遮断阳光对亡灵的影响；同处反复或过密使用会降低效果。它是可选应用，也会用于后期配方。",
+				"",
+				"手册阶段：B 探索；参照页面：NOC_POWDER。"
+			],
+			x: 21.0d,
+			y: 6.0d,
+			size: 0.9d,
+			dependencies: [
+				"558D0BC1501183F2"
+			],
+			tasks: [
+				{
+					id: "22EE927899EBA1C9",
+					type: "item",
+					item: "astralsorcery:nocturnal_powder",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "6E0E1D1410CE8E83",
+			title: "浸润注星木",
+			icon: "astralsorcery:infused_wood",
+			description: [
+				"先完成聚星缸支线并取得星能液，再把木材浸泡其中得到注星木。它用于共振器和后续传光设备；继续加工可得到注星木板等变体。",
+				"",
+				"手册阶段：B 探索；参照页面：INFUSED_WOOD。"
+			],
+			x: 15.0d,
+			y: 9.0d,
+			size: 0.9d,
+			dependencies: [
+				"7B641B85451E7B9F"
+			],
+			tasks: [
+				{
+					id: "366ADC8F0F7C2128",
+					type: "item",
+					item: "astralsorcery:infused_wood",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "7D3E78D0E8B5749F",
+			title: "寻找汇星之域",
+			icon: "astralsorcery:resonator",
+			description: [
+				"制作汇星共振器，夜间手持寻找高浓度蓝色云区；云内的星芒提示浓度更高的位置。它帮助选址，不是共振星杖，也不是仪式范围升级模式。",
+				"",
+				"手册阶段：B 探索；参照页面：SKY_RESO。"
+			],
+			x: 18.0d,
+			y: 9.0d,
+			size: 0.9d,
+			dependencies: [
+				"6E0E1D1410CE8E83"
+			],
+			tasks: [
+				{
+					id: "153817ABC12AFE78",
+					type: "item",
+					item: "astralsorcery:resonator",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "4166C91AE57724A3",
+			title: "转继供能与二阶祭坛",
+			icon: "astralsorcery:altar_attunement",
+			description: [
+				"转继器需要 3×3 底座：中央炭黑大理石、四角雕纹大理石、四边横梁；放上转继器并额外插入玻璃透镜。手册记录供能距离为 16 格。",
+				"备齐晶石、星能液等升级材料后，把星辉合成台升级为星辉祭坛。其结构外缘 9×9，必须按宝典分层图施工；红色星能槽提示结构有误。升级原地发生，必要时挖下拾取再放回。",
+				"",
+				"手册阶段：B 探索；参照页面：SPEC_RELAY、ALTAR2。"
+			],
+			x: 21.0d,
+			y: 9.0d,
+			size: 0.9d,
+			dependencies: [
+				"7D3E78D0E8B5749F"
+			],
+			tasks: [
+				{
+					id: "669506D4599FD0CE",
+					type: "item",
+					item: "astralsorcery:spectral_relay",
+					consume_items: false
+				},
+				{
+					id: "633E613717AB4C43",
+					type: "item",
+					item: "astralsorcery:glass_lens",
+					consume_items: false
+				},
+				{
+					id: "2F418FFC1C2EDB5A",
+					type: "item",
+					item: "astralsorcery:altar_attunement",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "70805578C4DE91B5",
+			title: "C 共鸣：建立光路",
+			icon: "astralsorcery:altar_attunement",
+			description: [
+				"以探索阶段的二阶星辉祭坛进入共鸣。注意 altar_attunement 是合成祭坛，attunement_altar 才是供玩家与晶石共鸣的独立设备。",
+				"这里先解决星辉锭与星尘，三阶祭坛也依赖这些材料。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：STARLIGHT_NETWORK。"
+			],
+			x: 24.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [],
+			tasks: [
+				{
+					id: "799B9D9E5CC03BBE",
+					type: "item",
+					item: "astralsorcery:altar_attunement",
+					consume_items: false
+				}
+			],
+			rewards: [
+				{
+					id: "139A1721A70CFEFB",
+					type: "item",
+					item: "astralsorcery:aquamarine",
+					count: 1
+				}
+			]
+		},
+		{
+			id: "03544644108D10CF",
+			title: "连接器与水晶透镜",
+			icon: "astralsorcery:linking_tool",
+			description: [
+				"先右击聚能源，再右击目标建立光路。普通水晶透镜可以多源接收，但只向一个目标发送。源连接多个目标会均分能量，删除不用的连接。",
+				"开始时可利用学院水晶；自制聚能水晶在星座阶段才制作，不把它倒置成星辉锭的前置。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：LINKTOOL、LENS。"
+			],
+			x: 27.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [
+				"70805578C4DE91B5"
+			],
+			tasks: [
+				{
+					id: "78834462F37F7D3D",
+					type: "item",
+					item: "astralsorcery:linking_tool",
+					consume_items: false
+				},
+				{
+					id: "0FF7531EF5C63A5B",
+					type: "item",
+					item: "astralsorcery:lens",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "28626DC2C0B74311",
+			title: "铁矿石到星辉锭",
+			icon: "astralsorcery:starmetal_ingot",
+			description: [
+				"把聚能水晶连接到铁矿石，持续星能照射会将其转化为星辉矿石，再熔炼取得星辉锭。取得矿石后先完成检测，再投入熔炼；不是用普通铁锭直接照射。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：STARMETAL_ORE。"
+			],
+			x: 30.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [
+				"03544644108D10CF"
+			],
+			tasks: [
+				{
+					id: "7556C2EBA62A0BB7",
+					type: "item",
+					item: "astralsorcery:starmetal_ore",
+					consume_items: false
+				},
+				{
+					id: "15A9235D02FDB416",
+					type: "item",
+					item: "astralsorcery:starmetal_ingot",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "661709548C4AA8DB",
+			title: "切削工具与星尘",
+			icon: "astralsorcery:chisel",
+			description: [
+				"用星辉锭、注星木板等制作切削工具。在世界中把星辉锭放到地面并用工具敲击获得星尘，不是工作台里的无序配方。",
+				"星尘用于三阶天辉祭坛；当前升级配方允许普通晶石，不必先有天辉水晶。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：CUTTING_TOOL、STARDUST、ALTAR3。"
+			],
+			x: 33.0d,
+			y: 4.5d,
+			size: 0.9d,
+			dependencies: [
+				"28626DC2C0B74311"
+			],
+			tasks: [
+				{
+					id: "20AEBFDEF6F3EACD",
+					type: "item",
+					item: "astralsorcery:chisel",
+					consume_items: false
+				},
+				{
+					id: "077E899AC9F21A7E",
+					type: "item",
+					item: "astralsorcery:stardust",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "5E95938CB88975F9",
+			title: "固定式天文望远镜",
+			icon: "astralsorcery:telescope",
+			description: [
+				"升级手持望远镜。天文望远镜可以查看当晚出现的明亮与暗淡星座，转动方向查看夜空的八个区域；这里不是“天空只有八个星座”。周围应无遮挡。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：TELESCOPE。"
+			],
+			x: 27.0d,
+			y: 7.5d,
+			size: 0.9d,
+			dependencies: [
+				"70805578C4DE91B5"
+			],
+			tasks: [
+				{
+					id: "126E556C1D1CACE0",
+					type: "item",
+					item: "astralsorcery:telescope",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "50B144BF3C9E137C",
+			title: "理解暗淡星座的门槛",
+			icon: "astralsorcery:constellation_paper",
+			description: [
+				"先完成 D 区个体共鸣，才能理解五个明亮星座之外的星座。设备能看到与玩家知识已足够是两项条件。参考星图，在合适夜晚发现一个暗淡星座。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：TELESCOPE、ATT_PLAYER。"
+			],
+			x: 30.0d,
+			y: 7.5d,
+			size: 0.9d,
+			dependencies: [
+				"5E95938CB88975F9"
+			],
+			tasks: [
+				{
+					id: "4804BF48F44181CD",
+					type: "checkmark",
+					title: "手动确认：完成个体共鸣并发现一个暗淡星座"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "0A8923EB17DFC6E7",
+			title: "分享发现",
+			icon: "astralsorcery:knowledge_share",
+			description: [
+				"制作知识共享卷轴。手册说明右击可写入或学习，Shift 右击覆盖已有知识。多人共用任务进度不等于模组研究已自动同步给所有人。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：KNOWLEDGE_SHARE。"
+			],
+			x: 33.0d,
+			y: 7.5d,
+			size: 0.9d,
+			dependencies: [
+				"50B144BF3C9E137C"
+			],
+			tasks: [
+				{
+					id: "74CEA4D0B8391A11",
+					type: "item",
+					item: "astralsorcery:knowledge_share",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "0A0B13D43418A449",
+			title: "个人充能与工具",
+			icon: "astralsorcery:wand",
+			description: [
+				"手册把个人星能充能与世界中的汇星之域区分开来。充能会从环境恢复，夜空下更有利；不同工具消耗不同，不能把它当作无限能源。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：QUICK_CHARGE、TOOL_CHANNEL。"
+			],
+			x: 27.0d,
+			y: 1.5d,
+			size: 0.9d,
+			dependencies: [
+				"70805578C4DE91B5"
+			],
+			tasks: [
+				{
+					id: "348F9BDA25B2C63C",
+					type: "checkmark",
+					title: "手动确认：已阅读个人充能及恢复方式"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "4C9E7F2F050E513E",
+			title: "建造与移动星杖",
+			icon: "astralsorcery:architect_wand",
+			description: [
+				"制作排列星杖与越空星杖。排列星杖需要背包内的实际建材；越空星杖有冲驰与闪现模式，使用前确认目标方块面。后续可选更替星杖与冲击星杖。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：TOOL_WANDS、TRAVERSAL_WAND、GRAPPLE_WAND。"
+			],
+			x: 30.0d,
+			y: 1.5d,
+			size: 0.9d,
+			dependencies: [
+				"0A0B13D43418A449"
+			],
+			tasks: [
+				{
+					id: "4A167D830DAD9387",
+					type: "item",
+					item: "astralsorcery:architect_wand",
+					consume_items: false
+				},
+				{
+					id: "69198ED77C20E88F",
+					type: "item",
+					item: "astralsorcery:blink_wand",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "29427DBD3E4A1367",
+			title: "天辉星门",
+			icon: "astralsorcery:celestial_gateway",
+			description: [
+				"先准备本区星尘支线的材料，再制作星门并按宝典搭建结构。站上星门观察其他目的地，面对目标按 Shift 或右击传送。可用铁砧命名，私有权限需按手册另行配置。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：CELESTIAL_GATEWAY。"
+			],
+			x: 33.0d,
+			y: 1.5d,
+			size: 0.9d,
+			dependencies: [
+				"4C9E7F2F050E513E"
+			],
+			tasks: [
+				{
+					id: "40BC72511E722062",
+					type: "item",
+					item: "astralsorcery:celestial_gateway",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "00A1BB0311CB11B1",
+			title: "D 共鸣：独立共鸣祭坛",
+			icon: "astralsorcery:attunement_altar",
+			description: [
+				"用二阶合成祭坛与星辉锭制作独立的共鸣祭坛。源码的中心炭黑大理石为 15×15，含外侧角部的结构总占地为 19×19；占地不是施工图，请按宝典分层放柱与横梁。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：ATT_PLAYER。"
+			],
+			x: 33.0d,
+			y: 18.0d,
+			size: 0.9d,
+			dependencies: [],
+			tasks: [
+				{
+					id: "139E2F1C975B2754",
+					type: "item",
+					item: "astralsorcery:attunement_altar",
+					consume_items: false
+				}
+			],
+			rewards: [
+				{
+					id: "34B08B73F65D830D",
+					type: "item",
+					item: "astralsorcery:aquamarine",
+					count: 1
+				}
+			]
+		},
+		{
+			id: "4E65EF976A821A81",
+			title: "把星座摆到地面",
+			icon: "astralsorcery:spectral_relay",
+			description: [
+				"夜间手持星图查看转继器位置，按星座图形摆在炭黑底座上。源码不仅检查图形，还检查星座当前月相是否活跃；祭坛也要看到天空。不要假设任何星座每晚都可用。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：ATT_PLAYER。"
+			],
+			x: 30.0d,
+			y: 21.0d,
+			size: 0.9d,
+			dependencies: [
+				"00A1BB0311CB11B1"
+			],
+			tasks: [
+				{
+					id: "1FC0BE14208181DD",
+					type: "item",
+					item: "astralsorcery:spectral_relay",
+					consume_items: false
+				},
+				{
+					id: "13DDAF70FD5CA16D",
+					type: "checkmark",
+					title: "手动确认：结构、星座图形及当晚活跃条件均满足"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "63EED30BE09998B2",
+			title: "与明亮星座共鸣",
+			icon: "astralsorcery:tome",
+			description: [
+				"选择明亮级星座，站上有效共鸣祭坛中心进行个体共鸣。个人只能与明亮星座共鸣；它会影响星能力起点与成长方式。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：ATT_PERKS。"
+			],
+			x: 27.0d,
+			y: 21.0d,
+			size: 0.9d,
+			dependencies: [
+				"4E65EF976A821A81"
+			],
+			tasks: [
+				{
+					id: "3588F68AD8FC981E",
+					type: "checkmark",
+					title: "手动确认：已完成个体共鸣并打开宝典星能力页"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "243ECADAE980904B",
+			title: "封禁与重置不是一回事",
+			icon: "astralsorcery:perk_seal",
+			description: [
+				"封禁印章临时抑制一个星能力，不影响其他节点。普通更替之星会清除个人共鸣及成长进度；先阅读说明再使用，任务只要求制作，不要求实际重置。后期灿芒之星可保留成长进度重新分配。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：ATT_PERKS_SEAL、SHIFT_STAR。"
+			],
+			x: 24.0d,
+			y: 21.0d,
+			size: 0.9d,
+			dependencies: [
+				"63EED30BE09998B2"
+			],
+			tasks: [
+				{
+					id: "632E062B6B33F33C",
+					type: "item",
+					item: "astralsorcery:perk_seal",
+					consume_items: false
+				},
+				{
+					id: "1B36839670E6EA05",
+					type: "item",
+					item: "astralsorcery:shifting_star",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "1509A9AB4F1C0048",
+			title: "共鸣水晶石",
+			icon: "astralsorcery:attuned_rock_crystal",
+			description: [
+				"同样需要夜晚、有效图形与当前活跃星座，把未共鸣水晶放到祭坛中心进行共鸣。当前实现会将普通晶石转换为对应共鸣物品。",
+				"物品目标不校验具体星座 NBT，务必查看提示确认共鸣星座。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：ATT_CRYSTAL。"
+			],
+			x: 30.0d,
+			y: 15.0d,
+			size: 0.9d,
+			dependencies: [
+				"00A1BB0311CB11B1"
+			],
+			tasks: [
+				{
+					id: "25D00A894146817D",
+					type: "item",
+					item: "astralsorcery:attuned_rock_crystal",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "60034177D84B4DC2",
+			title: "仪式基座",
+			icon: "astralsorcery:ritual_pedestal",
+			description: [
+				"按宝典搭好基座支持结构并留出要求的空气。放上共鸣晶石产生对应效果；外接星能源必须与晶石星座一致，才可增强仪式。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：RIT_PEDESTAL。"
+			],
+			x: 27.0d,
+			y: 15.0d,
+			size: 0.9d,
+			dependencies: [
+				"1509A9AB4F1C0048"
+			],
+			tasks: [
+				{
+					id: "5F7FCAA8D4D40B46",
+					type: "item",
+					item: "astralsorcery:ritual_pedestal",
+					consume_items: false
+				},
+				{
+					id: "78B8DAE6158943C8",
+					type: "checkmark",
+					title: "手动确认：已搭建结构并用共鸣晶石启动仪式"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "5A26D5C36A66EC48",
+			title: "仪式促能与平衡",
+			icon: "astralsorcery:lens",
+			description: [
+				"自制聚能水晶在 E 区解锁后，可进一步提供同星座能量。按射线提示放置透镜并连回基座；手册规定最多五次反射即可完全平衡。",
+				"不同仪式可能增大范围或提高速度；不要照搬旧中文“过载必然碎裂”的说法。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：PED_ACCEL。"
+			],
+			x: 24.0d,
+			y: 15.0d,
+			size: 0.9d,
+			dependencies: [
+				"60034177D84B4DC2"
+			],
+			tasks: [
+				{
+					id: "15810928502AF617",
+					type: "item",
+					item: "astralsorcery:lens",
+					consume_items: false
+				},
+				{
+					id: "4A5BF700ED6294A7",
+					type: "checkmark",
+					title: "手动确认：已阅读并理解同星座供能和透镜平衡"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "3CA3079F2D8218D1",
+			title: "培育能力宝石簇",
+			icon: "astralsorcery:illumination_powder",
+			description: [
+				"将水晶石与辉光粉投入放在世界中的星能液，形成宝石水晶簇。它与用星尘培育的天辉水晶簇不是同一种流程。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：ATT_PERK_GEMS。"
+			],
+			x: 30.0d,
+			y: 18.0d,
+			size: 0.9d,
+			dependencies: [
+				"00A1BB0311CB11B1"
+			],
+			tasks: [
+				{
+					id: "4740BC057B53E9DF",
+					type: "item",
+					item: "astralsorcery:rock_crystal",
+					consume_items: false
+				},
+				{
+					id: "23D2EBBB62A5165D",
+					type: "item",
+					item: "astralsorcery:illumination_powder",
+					consume_items: false
+				},
+				{
+					id: "5C603E770A3E805A",
+					type: "checkmark",
+					title: "手动确认：已开始培育宝石水晶簇"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "61B543084D8DB137",
+			title: "观察日夜对宝石的影响",
+			icon: "astralsorcery:perk_gem_day",
+			description: [
+				"等待宝石簇成熟，生长时段影响烈阳、皎月和天空宝石类型。收获后观察它的增益，再选择适合自己的宝石；这里允许手动确认任一类型，避免强制刷齐三种。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：ATT_PERK_GEMS。"
+			],
+			x: 27.0d,
+			y: 18.0d,
+			size: 0.9d,
+			dependencies: [
+				"3CA3079F2D8218D1"
+			],
+			tasks: [
+				{
+					id: "6C3A9ECBEE20E635",
+					type: "checkmark",
+					title: "手动确认：收获任意一种能力宝石并查看增益"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "152392D4DC60BD3D",
+			title: "把宝石嵌入星能力",
+			icon: "astralsorcery:perk_gem_sky",
+			description: [
+				"先分配宝石镶嵌槽星能力，再从背包选宝石镶入。移除会返还宝石。没有解锁槽位时，仅把宝石放在背包不代表获得其增益。",
+				"",
+				"手册阶段：D 共鸣·仪式；参照页面：ATT_PERK_GEMS。"
+			],
+			x: 24.0d,
+			y: 18.0d,
+			size: 0.9d,
+			dependencies: [
+				"61B543084D8DB137"
+			],
+			tasks: [
+				{
+					id: "7ED8F236D4F70BF0",
+					type: "checkmark",
+					title: "手动确认：已解锁一个宝石槽并装备宝石"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "618538F7CC1E45D6",
+			title: "E 星座：天辉祭坛",
+			icon: "astralsorcery:altar_constellation",
+			description: [
+				"用 C 区的星辉锭和星尘把二阶祭坛升级为天辉祭坛。结构外缘为 11×11，并有更高的柱；按宝典图逐层核对。",
+				"完成升级进入星座研究，四条支线分别为注入、天辉晶石、光学与应用。",
+				"",
+				"手册阶段：E 星座；参照页面：INFUSER、COLL_CRYSTAL。"
+			],
+			x: 21.0d,
+			y: 18.0d,
+			size: 0.9d,
+			dependencies: [],
+			tasks: [
+				{
+					id: "7B5E5090FB4A4806",
+					type: "item",
+					item: "astralsorcery:altar_constellation",
+					consume_items: false
+				}
+			],
+			rewards: [
+				{
+					id: "7669AEE3671D088E",
+					type: "item",
+					item: "astralsorcery:aquamarine",
+					count: 1
+				}
+			]
+		},
+		{
+			id: "120699E07706914C",
+			title: "星能注入器",
+			icon: "astralsorcery:infuser",
+			description: [
+				"按结构图搭建注入器，准备周围所需星能液池。它依赖星能液而不要求露天；放入原料后用共振星杖启动。反应损耗液体后先补齐再开下一次。",
+				"",
+				"手册阶段：E 星座；参照页面：INFUSER。"
+			],
+			x: 18.0d,
+			y: 19.5d,
+			size: 0.9d,
+			dependencies: [
+				"618538F7CC1E45D6"
+			],
+			tasks: [
+				{
+					id: "1CC636D3F76F676E",
+					type: "item",
+					item: "astralsorcery:infuser",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "7CF1B1554F7D2AE8",
+			title: "海蓝宝石变共振宝石",
+			icon: "astralsorcery:resonating_gem",
+			description: [
+				"指定 JAR 的注入配方将海蓝宝石加工为共振宝石。它用于聚能水晶、四阶祭坛及后续设备；不要把普通海蓝宝石当作同一种物品。",
+				"",
+				"手册阶段：E 星座；参照页面：INFUSER。"
+			],
+			x: 15.0d,
+			y: 19.5d,
+			size: 0.9d,
+			dependencies: [
+				"120699E07706914C"
+			],
+			tasks: [
+				{
+					id: "5ED89B8E0497AA74",
+					type: "item",
+					item: "astralsorcery:resonating_gem",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "5D2F9B3241FFDD4D",
+			title: "五彩祭坛：最后一级合成祭坛",
+			icon: "astralsorcery:altar_radiance",
+			description: [
+				"先完成天辉水晶支线。四阶升级配方明确要求天辉级晶石，同时需要共振宝石、玻璃透镜、精致及炭黑大理石。",
+				"支持结构继承三阶并增加顶部大理石砖；按宝典图施工，不要把新增顶部砖填成实心屋顶。升级后进入 F 区。",
+				"",
+				"手册阶段：E 星座；参照页面：ALTAR4。"
+			],
+			x: 12.0d,
+			y: 19.5d,
+			size: 0.9d,
+			dependencies: [
+				"7CF1B1554F7D2AE8"
+			],
+			tasks: [
+				{
+					id: "7EC44A1CB956A5ED",
+					type: "item",
+					item: "astralsorcery:altar_radiance",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "6605EAB04F15BEE9",
+			title: "从星尘培育天辉水晶",
+			icon: "astralsorcery:celestial_crystal",
+			description: [
+				"把水晶石与星尘投入世界中的星能液形成天辉水晶簇。让其接收星光并经历各生长阶段，成熟发光后再收获。",
+				"手册建议在星辉矿石上生长；加速会让矿石退回铁矿石，可用聚能水晶再次转化。任务检测收获的晶石，不要求挖下生长中的簇。",
+				"",
+				"手册阶段：E 星座；参照页面：CEL_CRYSTAL_GROW、CEL_CRYSTALS。"
+			],
+			x: 18.0d,
+			y: 13.5d,
+			size: 0.9d,
+			dependencies: [
+				"618538F7CC1E45D6"
+			],
+			tasks: [
+				{
+					id: "1A5F27B642911F0F",
+					type: "item",
+					item: "astralsorcery:celestial_crystal",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "1C48648D988E8954",
+			title: "可移动的聚能水晶",
+			icon: "astralsorcery:rock_collector_crystal",
+			description: [
+				"先在共鸣祭坛调谐晶石，再结合共振宝石等材料制作聚能水晶。制作后品质不可再改，先选好晶石属性。不要密集堆放，采集区相互影响会降低收益。",
+				"这里分别检测普通与天辉聚能水晶；天辉版本需要共鸣天辉晶石。它们不同于受保护的学院水晶。",
+				"",
+				"手册阶段：E 星座；参照页面：COLL_CRYSTAL。"
+			],
+			x: 15.0d,
+			y: 13.5d,
+			size: 0.9d,
+			dependencies: [
+				"6605EAB04F15BEE9"
+			],
+			tasks: [
+				{
+					id: "5B394AB260D23E16",
+					type: "item",
+					item: "astralsorcery:rock_collector_crystal",
+					consume_items: false
+				},
+				{
+					id: "1616AFDAD6E14E1B",
+					type: "item",
+					item: "astralsorcery:celestial_collector_crystal",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "53B096A4B519F688",
+			title: "让天辉聚能更平稳",
+			icon: "astralsorcery:celestial_collector_crystal",
+			description: [
+				"按宝典搭建增强天辉聚能水晶的支持结构。增强结构平滑星座显隐造成的供能波动，不是凭空增加所有时段的最大输出；它有助于在星座未出现时维持工作。",
+				"",
+				"手册阶段：E 星座；参照页面：ENHANCED_COLLECTOR。"
+			],
+			x: 12.0d,
+			y: 13.5d,
+			size: 0.9d,
+			dependencies: [
+				"1C48648D988E8954"
+			],
+			tasks: [
+				{
+					id: "35A0CE1394D0AB67",
+					type: "checkmark",
+					title: "手动确认：已搭建增强聚能结构并检查露天与光路"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "122D71BFE55C7672",
+			title: "彩色透镜与幽芒",
+			icon: "astralsorcery:colored_lens_fire",
+			description: [
+				"将彩色镜片装到水晶透镜上，可改变光束效果；燃烧镜片用于加热，幽芒镜片允许星光穿过实体方块但有损耗。经过另一普通透镜或棱镜后不会自动保留颜色效果。",
+				"",
+				"手册阶段：E 星座；参照页面：LENSES_EFFECTS、IGNITION_LENS、SPECTRAL_LENS。"
+			],
+			x: 18.0d,
+			y: 16.5d,
+			size: 0.9d,
+			dependencies: [
+				"618538F7CC1E45D6"
+			],
+			tasks: [
+				{
+					id: "62BDB78FAEC203AB",
+					type: "item",
+					item: "astralsorcery:colored_lens_fire",
+					consume_items: false
+				},
+				{
+					id: "52095BD64294A9B7",
+					type: "item",
+					item: "astralsorcery:colored_lens_spectral",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "0C0E5EED0D9ED3F3",
+			title: "一束星光，多条去路",
+			icon: "astralsorcery:prism",
+			description: [
+				"水晶棱镜把接收的星能均匀分配到多个目标。普通水晶透镜是单目标；分流不是复制能量，仍需合理安排源和负载。",
+				"",
+				"手册阶段：E 星座；参照页面：PRISM。"
+			],
+			x: 15.0d,
+			y: 16.5d,
+			size: 0.9d,
+			dependencies: [
+				"122D71BFE55C7672"
+			],
+			tasks: [
+				{
+					id: "27FFB998280C45A2",
+					type: "item",
+					item: "astralsorcery:prism",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "25CAD0F9AEB398F5",
+			title: "群星映射与注星玻璃",
+			icon: "astralsorcery:refraction_table",
+			description: [
+				"准备映射台、羊皮纸与注星玻璃。按手册描绘同时在天空中的星座，最多使用三个；重复同一个星座不会带来重复增益。",
+				"玻璃上各星座都在天空时，才能用它处理未附魔装备或书。普通注星玻璃目标不会验证已经蚀刻的 NBT。",
+				"",
+				"手册阶段：E 星座；参照页面：DRAWING_TABLE。"
+			],
+			x: 12.0d,
+			y: 16.5d,
+			size: 0.9d,
+			dependencies: [
+				"0C0E5EED0D9ED3F3"
+			],
+			tasks: [
+				{
+					id: "43B8A0F4D094823C",
+					type: "item",
+					item: "astralsorcery:refraction_table",
+					consume_items: false
+				},
+				{
+					id: "3544449B73973FBF",
+					type: "item",
+					item: "astralsorcery:infused_glass",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "60BBD909A10C2A6E",
+			title: "注能工具与辉光星杖",
+			icon: "astralsorcery:infused_crystal_pickaxe",
+			description: [
+				"在注入器中处理水晶石镐可得到充能镐；工具效果消耗个人充能并有冷却。另制作辉光星杖用于放置光源，也可为洞穴照明器临时供能。",
+				"",
+				"手册阶段：E 星座；参照页面：CHARGED_TOOLS、ILLUMINATION_WAND。"
+			],
+			x: 18.0d,
+			y: 22.5d,
+			size: 0.9d,
+			dependencies: [
+				"618538F7CC1E45D6"
+			],
+			tasks: [
+				{
+					id: "6F950F2C10773F9A",
+					type: "item",
+					item: "astralsorcery:infused_crystal_pickaxe",
+					consume_items: false
+				},
+				{
+					id: "34DD12EF1C488710",
+					type: "item",
+					item: "astralsorcery:illumination_wand",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "3EEF34C6FF743D9F",
+			title: "把仪式移到需要的地方",
+			icon: "astralsorcery:ritual_link",
+			description: [
+				"制作一对仪式锚。按手册，在基座正上方五格放一个锚，用连接器连到同维度的另一锚，把效果中心转移过去。先完成 D 区仪式本体；锚不代替基座。",
+				"",
+				"手册阶段：E 星座；参照页面：RITUAL_LINK。"
+			],
+			x: 15.0d,
+			y: 22.5d,
+			size: 0.9d,
+			dependencies: [
+				"60BBD909A10C2A6E"
+			],
+			tasks: [
+				{
+					id: "09AE5AD188280EF3",
+					type: "item",
+					item: "astralsorcery:ritual_link",
+					consume_items: false
+				},
+				{
+					id: "0ADB0103F562B7C9",
+					type: "checkmark",
+					title: "手动确认：已阅读成对仪式锚的连接与高度要求"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "5F794A70727CAA5D",
+			title: "树木信标的再现之影",
+			icon: "astralsorcery:tree_beacon",
+			description: [
+				"信标捕获附近树苗成长时的树木精华，随后产出资源。再现之影寿命有限，最终仍要补栽树苗。额外星能可加快生产，手册记录生息座更有利。",
+				"",
+				"手册阶段：E 星座；参照页面：TREEBEACON。"
+			],
+			x: 12.0d,
+			y: 22.5d,
+			size: 0.9d,
+			dependencies: [
+				"3EEF34C6FF743D9F"
+			],
+			tasks: [
+				{
+					id: "6B99B295DCAF7CB6",
+					type: "item",
+					item: "astralsorcery:tree_beacon",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "4CB41759ADF4E33C",
+			title: "F 五彩：毕业后的研究",
+			icon: "astralsorcery:altar_radiance",
+			description: [
+				"四阶五彩祭坛是本工件实际注册的最高合成祭坛。先完成 E 区，确认结构与供能，再研究聚焦配方、观星台和万象泉。",
+				"持有祭坛物品不自动授予研究；仍要完成模组自身升级流程。",
+				"",
+				"手册阶段：F 五彩；参照页面：CRAFTING_FOCUS_HINT。"
+			],
+			x: 9.0d,
+			y: 18.0d,
+			size: 0.9d,
+			dependencies: [],
+			tasks: [
+				{
+					id: "3AF3047F6465E30C",
+					type: "item",
+					item: "astralsorcery:altar_radiance",
+					consume_items: false
+				}
+			],
+			rewards: [
+				{
+					id: "7606570C7E6E82D3",
+					type: "item",
+					item: "astralsorcery:aquamarine",
+					count: 1
+				}
+			]
+		},
+		{
+			id: "0683556B1D027055",
+			title: "聚焦晶石与转继供料",
+			icon: "astralsorcery:spectral_relay",
+			description: [
+				"需要星座聚焦的配方，应在祭坛放入匹配星座的共鸣晶石；外围转继器按合成提示供应材料。查看配方背景的聚焦星座与绕在网格外的原料。",
+				"手册说明此级祭坛星能不足时会暂停等待恢复，不再直接取消合成。",
+				"",
+				"手册阶段：F 五彩；参照页面：CRAFTING_FOCUS_HINT。"
+			],
+			x: 6.0d,
+			y: 16.5d,
+			size: 0.9d,
+			dependencies: [
+				"4CB41759ADF4E33C"
+			],
+			tasks: [
+				{
+					id: "4A55ADD71C2EB1F9",
+					type: "item",
+					item: "astralsorcery:spectral_relay",
+					consume_items: false
+				},
+				{
+					id: "018FD85450CF1D17",
+					type: "item",
+					item: "astralsorcery:attuned_rock_crystal",
+					consume_items: false
+				},
+				{
+					id: "60AA3744B3E5344E",
+					type: "checkmark",
+					title: "手动确认：已按配方检查聚焦星座和外围供料"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "4B55AA8F0BB1E792",
+			title: "观星台与朦胧星座",
+			icon: "astralsorcery:observatory",
+			description: [
+				"观星台配方需要圣芒座（Lucerna）聚焦以及外围原料。先通过个体共鸣与天文望远镜解决暗淡星座知识，再准备对应共鸣晶石。",
+				"观星台可见朦胧星座；移动鼠标瞄准，Shift 锁定视角后描绘。右击或 Esc 离开视图。",
+				"",
+				"手册阶段：F 五彩；参照页面：OBSERVATORY。"
+			],
+			x: 3.0d,
+			y: 16.5d,
+			size: 0.9d,
+			dependencies: [
+				"0683556B1D027055"
+			],
+			tasks: [
+				{
+					id: "510D411F24BD91F7",
+					type: "item",
+					item: "astralsorcery:observatory",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "50DB7C740FA122E3",
+			title: "为共鸣晶石附加特质",
+			icon: "astralsorcery:attuned_celestial_crystal",
+			description: [
+				"朦胧星座不足以作为普通仪式的主星座，却可为已经共鸣的晶石附加一个特质。按其图形布置共鸣祭坛，并等待有效夜晚。",
+				"手册说明特质不能随意更换；先查星座页的效果再应用。普通物品 ID 不能检测特质，本项采用手动确认。",
+				"",
+				"手册阶段：F 五彩；参照页面：ATT_TRAIT。"
+			],
+			x: 0.0d,
+			y: 16.5d,
+			size: 0.9d,
+			dependencies: [
+				"4B55AA8F0BB1E792"
+			],
+			tasks: [
+				{
+					id: "42DC669492A16B89",
+					type: "checkmark",
+					title: "手动确认：已在共鸣晶石上应用并核对一种特质"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "5A54E0C00B0287BC",
+			title: "纳星圣杯",
+			icon: "astralsorcery:chalice",
+			description: [
+				"圣杯为聚星缸提供魔法储存与转运。手册记录容量 64 桶，可从视线通畅的 16 格内聚星缸抽液；移动前应先清空。红石可抑制其周围流体交互效果。",
+				"",
+				"手册阶段：F 五彩；参照页面：C_CHALICE。"
+			],
+			x: 6.0d,
+			y: 13.5d,
+			size: 0.9d,
+			dependencies: [
+				"4CB41759ADF4E33C"
+			],
+			tasks: [
+				{
+					id: "5780C20072CD8E10",
+					type: "item",
+					item: "astralsorcery:chalice",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "7AEF54CC5E3E0207",
+			title: "万象泉与支持结构",
+			icon: "astralsorcery:fountain",
+			description: [
+				"搭建万象泉结构，直接在上方放圣杯供给星能液。它靠内部液体工作，不需要露天；还要安装所需引口才有具体作用。结构内部不要存放重要方块。",
+				"",
+				"手册阶段：F 五彩；参照页面：BORE_CORE。"
+			],
+			x: 3.0d,
+			y: 13.5d,
+			size: 0.9d,
+			dependencies: [
+				"5A54E0C00B0287BC"
+			],
+			tasks: [
+				{
+					id: "4AD9172195FDAAEF",
+					type: "item",
+					item: "astralsorcery:fountain",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "10D8D42123D55358",
+			title: "液体与漩涡引口",
+			icon: "astralsorcery:fountain_prime_liquid",
+			description: [
+				"纳耳狂曼引口用于抽取地下流体精华，配方聚焦南极座（Octans）；准备视线内空圣杯接收，并先勘察位置。其钻孔会破坏下方方块。",
+				"费萨利德引口用于束缚附近生物并持续消耗星能液。只讨论 JAR 有配方且手册有页的这两种引口，不要求无配方的矿物引口。",
+				"",
+				"手册阶段：F 五彩；参照页面：BORE_HEAD_LIQUID、BORE_HEAD_VORTEX、ICHOSIC。"
+			],
+			x: 0.0d,
+			y: 13.5d,
+			size: 0.9d,
+			dependencies: [
+				"7AEF54CC5E3E0207"
+			],
+			tasks: [
+				{
+					id: "3A180F17B3CCD186",
+					type: "item",
+					item: "astralsorcery:fountain_prime_liquid",
+					consume_items: false
+				},
+				{
+					id: "185BE3C8FDB5078F",
+					type: "item",
+					item: "astralsorcery:fountain_prime_vortex",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "054A4C6EEEC5EDD5",
+			title: "星斗披风",
+			icon: "astralsorcery:mantle",
+			description: [
+				"制作星斗披风。它通过专门的五彩祭坛配方调谐，不是扔到共鸣祭坛上。先保证满耐久，再查对应星座页的调谐配方。",
+				"",
+				"手册阶段：F 五彩；参照页面：ATT_CAPE。"
+			],
+			x: 6.0d,
+			y: 19.5d,
+			size: 0.9d,
+			dependencies: [
+				"4CB41759ADF4E33C"
+			],
+			tasks: [
+				{
+					id: "7D9292A82F729CA9",
+					type: "item",
+					item: "astralsorcery:mantle",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "152B582593193826",
+			title: "给披风选择星座",
+			icon: "astralsorcery:mantle",
+			description: [
+				"按对应配方调谐满耐久披风。披风一次只对应一个星座，再用另一星座配方会改换调谐；星尘可作铁砧维修材料。",
+				"这是 NBT 相关效果，任务以手动确认而非普通披风物品检测替代。",
+				"",
+				"手册阶段：F 五彩；参照页面：ATT_CAPE。"
+			],
+			x: 3.0d,
+			y: 19.5d,
+			size: 0.9d,
+			dependencies: [
+				"054A4C6EEEC5EDD5"
+			],
+			tasks: [
+				{
+					id: "3D67ABCEDDDEFD87",
+					type: "checkmark",
+					title: "手动确认：已通过专门配方调谐披风"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "33DF9E087C4A3AD5",
+			title: "灿芒之星：保留成长的重分配",
+			icon: "astralsorcery:shifting_star_aevitas",
+			description: [
+				"以生息座灿芒之星为例，配方需要生息座聚焦。与普通更替之星不同，它会变换共鸣起点、退回已分配点数，但保留成长进度。任务只要求制作，是否使用由你决定。",
+				"",
+				"手册阶段：F 五彩；参照页面：ENH_SHIFTING_STAR。"
+			],
+			x: 0.0d,
+			y: 19.5d,
+			size: 0.9d,
+			dependencies: [
+				"152B582593193826"
+			],
+			tasks: [
+				{
+					id: "3DEBAD0E23F4D81F",
+					type: "item",
+					item: "astralsorcery:shifting_star_aevitas",
+					consume_items: false
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "0008D45B34EBF0A4",
+			title: "补制星图",
+			icon: "astralsorcery:constellation_paper",
+			description: [
+				"五彩阶段可用配方补制星图，例如生息座星图。普通星图物品检测不会区分星座或来源，因此这里只要求手动确认确实使用配方补制。",
+				"",
+				"手册阶段：F 五彩；参照页面：CRAFTING_FOCUS_HINT。"
+			],
+			x: 6.0d,
+			y: 22.5d,
+			size: 0.9d,
+			dependencies: [
+				"4CB41759ADF4E33C"
+			],
+			tasks: [
+				{
+					id: "0CEBCBC8649AFE80",
+					type: "checkmark",
+					title: "手动确认：已在五彩祭坛补制一张星图"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "4C120F6BEC4A9C93",
+			title: "重新检查你的星能网络",
+			icon: "astralsorcery:linking_tool",
+			description: [
+				"逐项检查：源与目标星座是否兼容，天空与光路有无遮挡，多余连接是否均分能量，聚能源是否堆放过密，祭坛外围供料是否齐备。对照宝典对应页排查。",
+				"",
+				"手册阶段：F 五彩；参照页面：CRAFTING_FOCUS_HINT。"
+			],
+			x: 3.0d,
+			y: 22.5d,
+			size: 0.9d,
+			dependencies: [
+				"0008D45B34EBF0A4"
+			],
+			tasks: [
+				{
+					id: "743B49601C6966AF",
+					type: "checkmark",
+					title: "手动确认：已完成一次基地星能网络巡检"
+				}
+			],
+			rewards: []
+		},
+		{
+			id: "2386BABEF6F703CB",
+			title: "辉煌：当前手册的边界",
+			icon: "astralsorcery:tome",
+			description: [
+				"祝贺你完成本章的五个实际研究阶段。源码虽保留 BRILLIANCE（辉煌）枚举，当前 RegistryResearch 没有注册其研究页面，也没有可要求制作的第五级祭坛。",
+				"本项仅为阅读结业，不宣称自动授予“辉煌”研究。可以继续优化晶石、光学网络与各星座应用。",
+				"",
+				"手册阶段：F 五彩；参照页面：CRAFTING_FOCUS_HINT。"
+			],
+			x: 0.0d,
+			y: 22.5d,
+			size: 0.9d,
+			dependencies: [
+				"4C120F6BEC4A9C93"
+			],
+			tasks: [
+				{
+					id: "2D7A0FBFCFE80F4B",
+					type: "checkmark",
+					title: "手动确认：已理解现有阶段和辉煌的实现边界"
+				}
+			],
+			rewards: []
+		}
+	]
+}

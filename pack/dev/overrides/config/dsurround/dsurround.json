@@ -1,0 +1,97 @@
+{
+  "logging": {
+    "enableDebugLogging": false,
+    "traceMask": 0,
+    "enableModUpdateChatMessage": true,
+    "filteredTagView": true,
+    "registerCommands": true
+  },
+  "soundSystem": {
+    "streamingChannels": 12,
+    "cullInterval": 20,
+    "enableSoundPruning": true
+  },
+  "enhancedSounds": {
+    "enableEnhancedSounds": true,
+    "backgroundThreadWorkers": 0,
+    "enableMonoConversion": true,
+    "enableOcclusionProcessing": true,
+    "occlusionStrength": 1.0,
+    "reverbRays": 32,
+    "reverbBounces": 4,
+    "reverbRayTraceDistance": 256
+  },
+  "soundOptions": {
+    "ambientVolumeScaling": 100,
+    "replaceThunderSounds": true,
+    "allowScarySounds": true,
+    "playBiomeMusicWhileCreative": false,
+    "displayToastMessagesForMusic": true
+  },
+  "blockEffects": {
+    "blockEffectRange": 32,
+    "steamColumnEnabled": true,
+    "flameJetEnabled": true,
+    "bubbleColumnEnabled": true,
+    "firefliesEnabled": true,
+    "waterfallsEnabled": true,
+    "enableWaterfallSounds": true,
+    "enableWaterfallParticles": true,
+    "waterRippleStyle": "PIXELATED_CIRCLE"
+  },
+  "entityEffects": {
+    "entityEffectRange": 24,
+    "enableBowPull": true,
+    "enableBreathEffect": true,
+    "enablePlayerToolbarEffect": true,
+    "enableSwingEffect": true,
+    "enableBrushStepEffect": true
+  },
+  "footsteps": {
+    "enabled": true,
+    "volumeScale": 1.0,
+    "armorSounds": true,
+    "armorVolumeScale": 0.5,
+    "firstPersonFootsteps": true,
+    "enableFootprints": false,
+    "footprintStyle": 0
+  },
+  "footstepAccents": {
+    "enableAccents": true,
+    "enableArmorAccents": true,
+    "enableWetSurfaceAccents": true,
+    "enableFloorSqueaks": true,
+    "enableLeafAccents": true
+  },
+  "particleTweaks": {
+    "suppressPlayerParticles": false,
+    "suppressProjectileParticleTrails": false
+  },
+  "compassAndClockOptions": {
+    "enableClock": true,
+    "enableCompass": true,
+    "compassStyle": "TRANSPARENT_WITH_INDICATOR",
+    "scale": 1.0
+  },
+  "weather": {
+    "doVanillaRain": false,
+    "useVanillaRainSound": false,
+    "rainRippleStyle": "PIXELATED_CIRCLE",
+    "allowBackgroundThunder": true,
+    "stormThunderThreshold": 0.75,
+    "defaultMinRainStrength": 0.0,
+    "defaultMaxRainStrength": 1.0,
+    "enableNetherrackMagmaSplashEffect": true,
+    "enableWeatherFog": true,
+    "fogStartReduction": 0.9,
+    "fogEndReduction": 0.4
+  },
+  "aurora": {
+    "enableAuroras": false,
+    "maxAuroras": 3,
+    "useShaders": true
+  },
+  "otherOptions": {
+    "playRandomSoundOnStartup": true
+  }
+}

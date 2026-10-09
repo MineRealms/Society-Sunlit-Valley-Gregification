@@ -1,0 +1,82 @@
+
+#General Settings
+[general]
+	#SignPicture directory (empty = default)
+	signpicDir = ""
+	#Add tooltip line to sign
+	signTooltip = false
+
+#Image Settings
+[image]
+	#Image width limit in pixels
+	#Range: 1 ~ 4096
+	widthLimit = 512
+	#Image height limit in pixels
+	#Range: 1 ~ 4096
+	heightLimit = 512
+	#Use fast resize algorithm
+	fastResize = false
+	#Animate GIF images
+	animateGif = true
+
+#Entry (sign text parse cache) Management
+[entry]
+	#Garbage collection delay in ticks
+	#Range: > 0
+	gcDelayTick = 300
+
+#HTTP Settings
+[http]
+	#Parallel processing number for downloading
+	#Range: 1 ~ 32
+	httpThreads = 3
+	#Download timeout in milliseconds (0 = infinity)
+	#Range: 0 ~ 300000
+	downloadTimeout = 15000
+
+#Content Data Management
+[content]
+	#Parallel processing number for image loading
+	#Range: 1 ~ 32
+	loadThreads = 3
+	#Size limit before downloading in bytes (0 = infinity)
+	#Range: > 0
+	maxByte = 33554432
+	#Garbage collection delay in ticks
+	#Range: > 0
+	gcDelayTick = 300
+	#Load process starting delay in ticks
+	#Range: 0 ~ 100
+	loadStartIntervalTick = 0
+	#Sync process interval in ticks
+	#Range: 0 ~ 100
+	syncLoadIntervalTick = 0
+	#Retry count limit (0 = infinity)
+	#Range: 0 ~ 10
+	maxRetry = 3
+
+#Prevent Anti-AutoSign Plugin (e.g., NoCheatPlus)
+[preventAntiAutoSign]
+	#Enable anti-auto-sign prevention
+	enable = true
+	#Minimum edit time in milliseconds
+	#Range: 0 ~ 10000
+	minEditTime = 150
+	#Minimum time per line in milliseconds
+	#Range: 0 ~ 5000
+	minLineTime = 50
+	#Minimum time per character in milliseconds
+	#Range: 0 ~ 1000
+	minCharTime = 50
+
+#API Upload Settings
+[api]
+	#Uploader type
+	uploaderType = ""
+	#Uploader API key
+	uploaderKey = ""
+	#URL shortener type
+	shortenerType = ""
+	#URL shortener API key
+	shortenerKey = ""
+

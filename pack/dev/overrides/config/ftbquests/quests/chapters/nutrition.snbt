@@ -1,0 +1,105 @@
+{
+	filename: "nutrition"
+	group: "15230846E14B6926"
+	icon: "farmersdelight:mixed_salad"
+	id: "7D31B2F9C4A6E001"
+	order_index: 8
+	quest_links: [ ]
+	title: "均衡饮食"
+	subtitle: ["GTMFO 五类营养"]
+	quests: [
+		{
+			description: ["让每一类营养都达到 5。GTMFO 的 HUD 和食物 tooltip 会显示当前进度。"]
+			icon: "minecraft:bread"
+			id: "7D31B2F9C4A6E101"
+			rewards: [{
+				count: 2
+				id: "7D31B2F9C4A6E201"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "minecraft:milk_bucket"
+					id: "7D31B2F9C4A6E301"
+					stage: "gtmfo_nutrient_dairy_5"
+					title: "乳制品达到 5"
+					type: "gamestage"
+				}
+				{
+					icon: "minecraft:apple"
+					id: "7D31B2F9C4A6E302"
+					stage: "gtmfo_nutrient_fruit_5"
+					title: "水果达到 5"
+					type: "gamestage"
+				}
+				{
+					icon: "minecraft:bread"
+					id: "7D31B2F9C4A6E303"
+					stage: "gtmfo_nutrient_grain_5"
+					title: "谷物达到 5"
+					type: "gamestage"
+				}
+				{
+					icon: "minecraft:cooked_beef"
+					id: "7D31B2F9C4A6E304"
+					stage: "gtmfo_nutrient_protein_5"
+					title: "蛋白质达到 5"
+					type: "gamestage"
+				}
+				{
+					icon: "minecraft:carrot"
+					id: "7D31B2F9C4A6E305"
+					stage: "gtmfo_nutrient_vegetable_5"
+					title: "蔬菜达到 5"
+					type: "gamestage"
+				}
+			]
+			title: "补齐五类营养"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D31B2F9C4A6E101"]
+			description: ["五类营养的最低值都达到 5，形成真正的均衡饮食。"]
+			icon: "farmersdelight:mixed_salad"
+			id: "7D31B2F9C4A6E102"
+			rewards: [{
+				count: 2
+				id: "7D31B2F9C4A6E202"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D31B2F9C4A6E306"
+				stage: "gtmfo_nutrient_balanced_5"
+				title: "五类营养最低值达到 5"
+				type: "gamestage"
+			}]
+			title: "均衡饮食"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D31B2F9C4A6E102"]
+			description: ["把均衡饮食维持到更高水平。该目标不会额外增加属性，只作为长期饮食里程碑。"]
+			icon: "minecraft:golden_carrot"
+			id: "7D31B2F9C4A6E103"
+			rewards: [{
+				count: 1
+				id: "7D31B2F9C4A6E203"
+				item: "minecraft:golden_carrot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D31B2F9C4A6E307"
+				stage: "gtmfo_nutrient_balanced_10"
+				title: "五类营养最低值达到 10"
+				type: "gamestage"
+			}]
+			title: "长期均衡"
+			x: 7.0d
+			y: 0.0d
+		}
+	]
+}

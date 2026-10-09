@@ -1,0 +1,72 @@
+{
+  "contents": [
+    {
+      "index": 0,
+      "x": 0.3464102,
+      "y": -0.0,
+      "type": "atom",
+      "element": "N"
+    },
+    {
+      "index": 1,
+      "x": 1.2124356,
+      "y": -0.5,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 2,
+      "x": -0.5196152,
+      "y": -0.5,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 3,
+      "x": 0.3464102,
+      "y": 1.0,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 4,
+      "x": -1.3856406,
+      "y": 0.0,
+      "type": "atom",
+      "element": "H"
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "lines": [
+        "solid",
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    }
+  ]
+}

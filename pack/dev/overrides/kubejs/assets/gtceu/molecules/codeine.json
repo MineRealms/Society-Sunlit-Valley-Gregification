@@ -1,0 +1,296 @@
+{
+  "contents": [
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "x0": 2.5435113,
+      "y0": 0.5040543,
+      "x1": 2.5435113,
+      "y1": 1.5040543,
+      "angle": -0.0721682,
+      "type": "benzene"
+    },
+    {
+      "index": 6,
+      "x": -2.6336645,
+      "y": 1.1419571,
+      "type": "atom"
+    },
+    {
+      "index": 7,
+      "x": -1.2937978,
+      "y": 0.5454101,
+      "type": "atom",
+      "element": "N"
+    },
+    {
+      "index": 8,
+      "x": -1.2380493,
+      "y": 0.0149984,
+      "type": "atom"
+    },
+    {
+      "index": 9,
+      "x": -0.750825,
+      "y": -0.2019278,
+      "type": "atom"
+    },
+    {
+      "index": 10,
+      "x": 0.1069719,
+      "y": -0.0782528,
+      "type": "atom"
+    },
+    {
+      "index": 11,
+      "x": -0.8065735,
+      "y": 0.3284838,
+      "type": "atom"
+    },
+    {
+      "index": 12,
+      "x": -0.911102,
+      "y": 1.3230057,
+      "type": "atom"
+    },
+    {
+      "index": 13,
+      "x": -0.102085,
+      "y": 1.910791,
+      "type": "atom"
+    },
+    {
+      "index": 14,
+      "x": 3.4095367,
+      "y": 0.0040543,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 15,
+      "x": 3.4095367,
+      "y": -0.9959457,
+      "type": "atom"
+    },
+    {
+      "index": 16,
+      "x": 1.4159889,
+      "y": -1.0293093,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 17,
+      "x": 0.4159889,
+      "y": -1.0293093,
+      "type": "atom"
+    },
+    {
+      "index": 18,
+      "x": -0.3907502,
+      "y": -1.6278114,
+      "type": "atom"
+    },
+    {
+      "index": 19,
+      "x": -1.3418067,
+      "y": -1.3187944,
+      "type": "atom"
+    },
+    {
+      "index": 20,
+      "x": -1.5497184,
+      "y": -0.3406468,
+      "type": "atom"
+    },
+    {
+      "index": 21,
+      "x": 0.3972606,
+      "y": -2.2434728,
+      "type": "atom",
+      "element": "O"
+    },
+    {
+      "index": 22,
+      "x": 0.2580875,
+      "y": -3.2337409,
+      "type": "atom",
+      "element": "H"
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 7,
+      "b": 8,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 8,
+      "b": 9,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 9,
+      "b": 10,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 10,
+      "b": 11,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 11,
+      "b": 12,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 12,
+      "b": 13,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 13,
+      "b": 3,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 0,
+      "b": 14,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 14,
+      "b": 15,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 5,
+      "b": 16,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 16,
+      "b": 17,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 17,
+      "b": 18,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 18,
+      "b": 19,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 19,
+      "b": 20,
+      "lines": [
+        "solid",
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 18,
+      "b": 21,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 12,
+      "b": 7,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 17,
+      "b": 10,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 20,
+      "b": 11,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    },
+    {
+      "a": 21,
+      "b": 22,
+      "lines": [
+        "solid"
+      ],
+      "type": "bond"
+    }
+  ]
+}

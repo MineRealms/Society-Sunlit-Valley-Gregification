@@ -1,0 +1,14 @@
+
+#GregMek - GregTech CEu / Mekanism ore processing integration
+[general]
+	#Enable GregTech ore processing recipes (dissolving, slurry washing, crystallizing)
+	enableGTRecipes = true
+	#Enable the Mekanism-flavoured processing chains (injecting, purifying, enriching, crushing)
+	enableMekanismRecipes = true
+	#Multiplier applied to all processing outputs (0.1 - 10.0)
+	#Range: 0.1 ~ 10.0
+	oreProcessingMultiplier = 1.0
+	#Multiplier applied to byproduct chances (0.0 - 5.0)
+	#Range: 0.0 ~ 5.0
+	byproductChanceMultiplier = 1.0
+

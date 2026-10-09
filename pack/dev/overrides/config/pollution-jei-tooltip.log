@@ -1,0 +1,3530 @@
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:51.782862900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 自在球
+tooltipLines: 2
+  [1] 自在球
+  [2] pollution:ball_in_itself
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:52.085711300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 封装灵气节点
+tooltipLines: 2
+  [1] 封装灵气节点
+  [2] pollution:packaged_aura_node
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:52.720886900+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 节点稳定框架
+tooltipLines: 3
+  [1] 节点稳定框架
+  [2] pollution:node_stabilization_frame
+  [3] 配方ID：pollution:infusion/node_stabilization_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:53.541249400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 高速钢-G框架
+tooltipLines: 3
+  [1] 高速钢-G框架
+  [2] (FeW)₅CrMo₂V
+  [3] gtceu:hssg_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:56.636647300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 自在球
+tooltipLines: 2
+  [1] 自在球
+  [2] pollution:ball_in_itself
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:57.130488600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 空气过滤器滤芯 III
+tooltipLines: 7
+  [1] 空气过滤器滤芯 III
+  [2] 耐久：480000/480000
+  [3] 主要材料：赛摩铜
+  [4] 过滤等级：3
+  [5] 预计工作：6h 40m 0s
+  [6] 距离损坏：6h 40m 0s
+  [7] pollution:filter.iii
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:57.782645600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 自在球
+tooltipLines: 2
+  [1] 自在球
+  [2] pollution:ball_in_itself
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:58.103926500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质谐振器
+tooltipLines: 2
+  [1] 源质谐振器
+  [2] thaumcraft:resonator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:45:59.146589100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 理式核心
+tooltipLines: 2
+  [1] 理式核心
+  [2] pollution:core_of_idea
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:01.378925200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 魔法电路板（§5EV§r）
+tooltipLines: 2
+  [1] 魔法电路板（§5EV§r）
+  [2] pollution:magic_circuit_board.ev
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:01.948792100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 理式核心
+tooltipLines: 2
+  [1] 理式核心
+  [2] pollution:core_of_idea
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:02.754180200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质谐振器
+tooltipLines: 2
+  [1] 源质谐振器
+  [2] thaumcraft:resonator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:02.881006500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 节点换能器
+tooltipLines: 2
+  [1] 节点换能器
+  [2] thaumcraft:node_transducer
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:03.049608400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光风霁月琥珀金板
+tooltipLines: 3
+  [1] 光风霁月琥珀金板
+  [2] ✦✧
+  [3] pollution:iizunamaru_electrum_plate
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:03.631761900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 太虚玄钢框架
+tooltipLines: 3
+  [1] 太虚玄钢框架
+  [2] ䷜
+  [3] pollution:aetheric_dark_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:03.654910+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 节点换能器
+tooltipLines: 2
+  [1] 节点换能器
+  [2] thaumcraft:node_transducer
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:04.049857500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光风霁月琥珀金齿轮
+tooltipLines: 3
+  [1] 光风霁月琥珀金齿轮
+  [2] ✦✧
+  [3] pollution:iizunamaru_electrum_gear
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:06.473158500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §dLuV§r力场发生器
+tooltipLines: 2
+  [1] §dLuV§r力场发生器
+  [2] gtceu:luv_field_generator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:07.009250100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 4
+  [1] 液态灵
+  [2] (Ae(OrdIg))Ae
+  [3] §a状态：液态
+  [4] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:07.299131200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光风霁月琥珀金齿轮
+tooltipLines: 3
+  [1] 光风霁月琥珀金齿轮
+  [2] ✦✧
+  [3] pollution:iizunamaru_electrum_gear
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:07.350172500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 长太虚玄钢杆
+tooltipLines: 3
+  [1] 长太虚玄钢杆
+  [2] ䷜
+  [3] pollution:long_aetheric_dark_steel_rod
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:07.700262800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 太虚玄钢框架
+tooltipLines: 3
+  [1] 太虚玄钢框架
+  [2] ䷜
+  [3] pollution:aetheric_dark_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:07.761486100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光风霁月琥珀金板
+tooltipLines: 3
+  [1] 光风霁月琥珀金板
+  [2] ✦✧
+  [3] pollution:iizunamaru_electrum_plate
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:08.008930300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 太虚玄钢框架
+tooltipLines: 3
+  [1] 太虚玄钢框架
+  [2] ䷜
+  [3] pollution:aetheric_dark_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:08.396277200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 长太虚玄钢杆
+tooltipLines: 3
+  [1] 长太虚玄钢杆
+  [2] ䷜
+  [3] pollution:long_aetheric_dark_steel_rod
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:08.881050500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 太虚玄钢框架
+tooltipLines: 3
+  [1] 太虚玄钢框架
+  [2] ䷜
+  [3] pollution:aetheric_dark_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:08.948261700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光风霁月琥珀金板
+tooltipLines: 3
+  [1] 光风霁月琥珀金板
+  [2] ✦✧
+  [3] pollution:iizunamaru_electrum_plate
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:12.070208300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光风霁月琥珀金杆
+tooltipLines: 3
+  [1] 光风霁月琥珀金杆
+  [2] ✦✧
+  [3] pollution:iizunamaru_electrum_rod
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:12.138977100+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光风霁月琥珀金锭
+tooltipLines: 5
+  [1] 光风霁月琥珀金锭
+  [2] ✦✧
+  [3] pollution:iizunamaru_electrum_ingot
+  [4] 配方源：GregTech
+  [5] 配方ID：gtceu:shaped/stick_iizunamaru_electrum
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:18.684146200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 热光风霁月琥珀金锭
+tooltipLines: 3
+  [1] 热光风霁月琥珀金锭
+  [2] ✦✧
+  [3] pollution:hot_iizunamaru_electrum_ingot
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:18.952418300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态氦
+fluid.registryKey: gtceu:liquid_helium
+fluid.amount: 500
+fluid.displayName: 液态氦
+fluid.descriptionId: material.gtceu.helium
+fluid.translatedDescription: 氦
+tooltipLines: 5
+  [1] 液态氦
+  [2] He
+  [3] §a状态：液态
+  [4] §c温度：4 K
+  [5] §b低温流体！轻拿轻放！
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:19.241466900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 气态氦
+fluid.registryKey: gtceu:helium
+fluid.amount: 1000
+fluid.displayName: 气态氦
+fluid.descriptionId: material.gtceu.helium
+fluid.translatedDescription: 氦
+tooltipLines: 4
+  [1] 气态氦
+  [2] He
+  [3] §a状态：气态
+  [4] §c温度：293 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:32.405626800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 虚空锭
+tooltipLines: 2
+  [1] 虚空锭
+  [2] thaumcraft:void_ingot
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:32.842677700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §5EV§r力场发生器
+tooltipLines: 2
+  [1] §5EV§r力场发生器
+  [2] gtceu:ev_field_generator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:32.945028900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: dev.tc4port.thaumcraft.compat.jei.AspectJeiIngredient
+ingredientClass: dev.tc4port.thaumcraft.compat.jei.AspectJeiIngredient
+helperClass: dev.tc4port.thaumcraft.compat.jei.AspectIngredientHelper
+helperDisplayName: Perditio 熵增,混沌,解构
+tooltipLines: 4
+  [1] Perditio
+  [2] 熵增,混沌,解构
+  [3] 数量：250
+  [4] thaumcraft:perditio
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:33.293321900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 元始珍珠
+tooltipLines: 4
+  [1] 元始珍珠
+  [2] 那魔法的结构似乎在每次
+  [3] 脉动时都会造成一阵波荡.
+  [4] thaumcraft:primordial_pearl
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:33.528676900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 聚变机械方块
+tooltipLines: 2
+  [1] 聚变机械方块
+  [2] gtceu:fusion_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:34.096705600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 虚空锭
+tooltipLines: 2
+  [1] 虚空锭
+  [2] thaumcraft:void_ingot
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:34.332092900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §5EV§r力场发生器
+tooltipLines: 2
+  [1] §5EV§r力场发生器
+  [2] gtceu:ev_field_generator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:37.277402200+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 要素裂解
+tooltipLines: 3
+  [1] 要素裂解
+  [2] pollution:magic_fusion_reactor
+  [3] 配方ID：pollution:infusion/magic_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:39.193226400+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 长距离流体管道
+tooltipLines: 2
+  [1] 长距离流体管道
+  [2] gtceu:long_distance_fluid_pipeline
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:48.605899600+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 加强钛机械方块
+tooltipLines: 2
+  [1] 加强钛机械方块
+  [2] gtceu:stable_machine_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:48.650650+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 耐腐蚀机械方块
+tooltipLines: 2
+  [1] 耐腐蚀机械方块
+  [2] gtceu:corrosion_proof_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:48.701420200+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 散热片
+tooltipLines: 2
+  [1] 散热片
+  [2] gtceu:heat_vent
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T20:46:48.750702300+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 装配线格栅
+tooltipLines: 2
+  [1] 装配线格栅
+  [2] gtceu:assembly_line_grating
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:21.011995900+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 工业蒸汽机械方块
+tooltipLines: 2
+  [1] 工业蒸汽机械方块
+  [2] gtceu:industrial_steam_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:21.071127800+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 激光安全机械方块
+tooltipLines: 2
+  [1] 激光安全机械方块
+  [2] gtceu:laser_safe_engraving_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:21.113271+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 聚四氟乙烯化学惰性机械方块
+tooltipLines: 2
+  [1] 聚四氟乙烯化学惰性机械方块
+  [2] gtceu:inert_machine_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:42.981292600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 可配置维护仓
+tooltipLines: 3
+  [1] 可配置维护仓
+  [2] 多方块结构共享：§4禁止
+  [3] gtceu:configurable_maintenance_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:43.070124200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:45.528896400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 工业花瓣炼药锅
+tooltipLines: 2
+  [1] 工业花瓣炼药锅
+  [2] pollution:mana_petal_apothecary
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:46.139845+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §9IV§r消声仓
+tooltipLines: 6
+  [1] §9IV§r消声仓
+  [2] 从机器中回收废料
+  [3] §b回收概率：§f50%
+  [4] 多方块结构共享：§a允许
+  [5] §l切 勿 阻 隔 输 出 口！
+  [6] gtceu:iv_muffler_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:46.225502500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输出总线
+tooltipLines: 4
+  [1] §8ULV§r输出总线
+  [2] 为多方块结构输出物品
+  [3] §6物品槽位数量：§f1
+  [4] gtceu:ulv_output_bus
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:46.268089100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输入总线
+tooltipLines: 4
+  [1] §8ULV§r输入总线
+  [2] 为多方块结构输入物品
+  [3] §6物品槽位数量：§f1
+  [4] gtceu:ulv_input_bus
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:46.359523300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §9IV§r消声仓
+tooltipLines: 6
+  [1] §9IV§r消声仓
+  [2] 从机器中回收废料
+  [3] §b回收概率：§f50%
+  [4] 多方块结构共享：§a允许
+  [5] §l切 勿 阻 隔 输 出 口！
+  [6] gtceu:iv_muffler_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:46.384046100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:46.778070400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 工业花瓣炼药锅
+tooltipLines: 2
+  [1] 工业花瓣炼药锅
+  [2] pollution:mana_petal_apothecary
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.132972700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.260318600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输出总线
+tooltipLines: 4
+  [1] §8ULV§r输出总线
+  [2] 为多方块结构输出物品
+  [3] §6物品槽位数量：§f1
+  [4] gtceu:ulv_output_bus
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.329994+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输入总线
+tooltipLines: 4
+  [1] §8ULV§r输入总线
+  [2] 为多方块结构输入物品
+  [3] §6物品槽位数量：§f1
+  [4] gtceu:ulv_input_bus
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.380844+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 魔法水晶
+tooltipLines: 2
+  [1] 魔法水晶
+  [2] botania:mana_pylon
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.423695700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 白色浮空花
+tooltipLines: 2
+  [1] 白色浮空花
+  [2] botania:white_floating_flower
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.474891800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光束核心 V
+tooltipLines: 2
+  [1] 光束核心 V
+  [2] pollution:beam_core_4
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.522336+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 钨钢框架
+tooltipLines: 3
+  [1] 钨钢框架
+  [2] FeW
+  [3] gtceu:tungsten_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.563099600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 活木板
+tooltipLines: 2
+  [1] 活木板
+  [2] botania:livingwood_planks
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.642949300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 框边活石砖
+tooltipLines: 2
+  [1] 框边活石砖
+  [2] botania:chiseled_livingrock_bricks
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:47.981271900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 活木板
+tooltipLines: 2
+  [1] 活木板
+  [2] botania:livingwood_planks
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:48.021051100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光束核心 V
+tooltipLines: 2
+  [1] 光束核心 V
+  [2] pollution:beam_core_4
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:48.363065100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 钨钢框架
+tooltipLines: 3
+  [1] 钨钢框架
+  [2] FeW
+  [3] gtceu:tungsten_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:50.528235900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 白色浮空花
+tooltipLines: 2
+  [1] 白色浮空花
+  [2] botania:white_floating_flower
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:51.208805200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光束核心 V
+tooltipLines: 2
+  [1] 光束核心 V
+  [2] pollution:beam_core_4
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:51.318676500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 钨钢框架
+tooltipLines: 3
+  [1] 钨钢框架
+  [2] FeW
+  [3] gtceu:tungsten_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:51.367625700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 活木板
+tooltipLines: 2
+  [1] 活木板
+  [2] botania:livingwood_planks
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:51.434053900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 框边活石砖
+tooltipLines: 2
+  [1] 框边活石砖
+  [2] botania:chiseled_livingrock_bricks
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:35:51.910179800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输入仓
+tooltipLines: 4
+  [1] §8ULV§r输入仓
+  [2] 为多方块结构输入流体
+  [3] §9流体容量：§f8,000 mB
+  [4] gtceu:ulv_input_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:00.635885700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 白色浮空花
+tooltipLines: 2
+  [1] 白色浮空花
+  [2] botania:white_floating_flower
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:01.185471300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光束核心 V
+tooltipLines: 2
+  [1] 光束核心 V
+  [2] pollution:beam_core_4
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:02.780265700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 框边活石砖
+tooltipLines: 2
+  [1] 框边活石砖
+  [2] botania:chiseled_livingrock_bricks
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:03.019890300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 钨钢框架
+tooltipLines: 3
+  [1] 钨钢框架
+  [2] FeW
+  [3] gtceu:tungsten_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:03.065165900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光束核心 V
+tooltipLines: 2
+  [1] 光束核心 V
+  [2] pollution:beam_core_4
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:03.230202900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 钨钢框架
+tooltipLines: 3
+  [1] 钨钢框架
+  [2] FeW
+  [3] gtceu:tungsten_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:03.384307900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 活木板
+tooltipLines: 2
+  [1] 活木板
+  [2] botania:livingwood_planks
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:03.468707900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 框边活石砖
+tooltipLines: 2
+  [1] 框边活石砖
+  [2] botania:chiseled_livingrock_bricks
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:05.656098900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 钨钢框架
+tooltipLines: 3
+  [1] 钨钢框架
+  [2] FeW
+  [3] gtceu:tungsten_steel_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:06.366061200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:06.577097200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质流体输入仓（§1IV§r）
+tooltipLines: 4
+  [1] 源质流体输入仓（§1IV§r）
+  [2] §9流体容量：§f256000 mB
+  [3] 储存并向魔导多方块提供配方所需的源质流体
+  [4] pollution:iv_infused_fluid_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:06.903151700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 可配置维护仓
+tooltipLines: 3
+  [1] 可配置维护仓
+  [2] 多方块结构共享：§4禁止
+  [3] gtceu:configurable_maintenance_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:11.868443700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输出总线
+tooltipLines: 4
+  [1] §8ULV§r输出总线
+  [2] 为多方块结构输出物品
+  [3] §6物品槽位数量：§f1
+  [4] gtceu:ulv_output_bus
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:12.084689100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输入总线
+tooltipLines: 4
+  [1] §8ULV§r输入总线
+  [2] 为多方块结构输入物品
+  [3] §6物品槽位数量：§f1
+  [4] gtceu:ulv_input_bus
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:13.212522500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 工业花瓣炼药锅
+tooltipLines: 2
+  [1] 工业花瓣炼药锅
+  [2] pollution:mana_petal_apothecary
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:13.582561200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:16.408933700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 可配置维护仓
+tooltipLines: 3
+  [1] 可配置维护仓
+  [2] 多方块结构共享：§4禁止
+  [3] gtceu:configurable_maintenance_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:16.818479400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §9IV§r消声仓
+tooltipLines: 6
+  [1] §9IV§r消声仓
+  [2] 从机器中回收废料
+  [3] §b回收概率：§f50%
+  [4] 多方块结构共享：§a允许
+  [5] §l切 勿 阻 隔 输 出 口！
+  [6] gtceu:iv_muffler_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:18.628137800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输出总线
+tooltipLines: 4
+  [1] §8ULV§r输出总线
+  [2] 为多方块结构输出物品
+  [3] §6物品槽位数量：§f1
+  [4] gtceu:ulv_output_bus
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:20.780055400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:22.431011600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 白色浮空花
+tooltipLines: 2
+  [1] 白色浮空花
+  [2] botania:white_floating_flower
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:22.682176700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光束核心 V
+tooltipLines: 2
+  [1] 光束核心 V
+  [2] pollution:beam_core_4
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:22.729246800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 白色浮空花
+tooltipLines: 2
+  [1] 白色浮空花
+  [2] botania:white_floating_flower
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:22.826577500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8ULV§r输出总线
+tooltipLines: 4
+  [1] §8ULV§r输出总线
+  [2] 为多方块结构输出物品
+  [3] §6物品槽位数量：§f1
+  [4] gtceu:ulv_output_bus
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:22.871786900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 可配置维护仓
+tooltipLines: 3
+  [1] 可配置维护仓
+  [2] 多方块结构共享：§4禁止
+  [3] gtceu:configurable_maintenance_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:23.073030600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:26.032786300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 工业花瓣炼药锅
+tooltipLines: 2
+  [1] 工业花瓣炼药锅
+  [2] pollution:mana_petal_apothecary
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:27.276057600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: dev.tc4port.thaumcraft.compat.jei.AspectJeiIngredient
+ingredientClass: dev.tc4port.thaumcraft.compat.jei.AspectJeiIngredient
+helperClass: dev.tc4port.thaumcraft.compat.jei.AspectIngredientHelper
+helperDisplayName: Praecantatio 魔力
+tooltipLines: 4
+  [1] Praecantatio
+  [2] 魔力
+  [3] 数量：32
+  [4] thaumcraft:praecantatio
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:27.499429400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 蕴魔电路板 (§5EV§r)
+tooltipLines: 2
+  [1] 蕴魔电路板 (§5EV§r)
+  [2] pollution:magic_circuit.ev
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:28.102049100+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 工业花瓣炼药锅
+tooltipLines: 3
+  [1] 工业花瓣炼药锅
+  [2] pollution:mana_petal_apothecary
+  [3] 配方ID：pollution:infusion/mana_petal
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:28.552911700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 高速钢-G板
+tooltipLines: 3
+  [1] 高速钢-G板
+  [2] (FeW)₅CrMo₂V
+  [3] gtceu:hssg_plate
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:30.830801700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §5EV§r力场发生器
+tooltipLines: 2
+  [1] §5EV§r力场发生器
+  [2] gtceu:ev_field_generator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:31.262410300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 蕴魔电路板 (§5EV§r)
+tooltipLines: 2
+  [1] 蕴魔电路板 (§5EV§r)
+  [2] pollution:magic_circuit.ev
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:31.380217100+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 工业花瓣炼药锅
+tooltipLines: 3
+  [1] 工业花瓣炼药锅
+  [2] pollution:mana_petal_apothecary
+  [3] 配方ID：pollution:infusion/mana_petal
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:33.566954600+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 木壁
+tooltipLines: 2
+  [1] 木壁
+  [2] gtceu:wood_wall
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:36.420423900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 绿色神秘花瓣
+tooltipLines: 6
+  [1] 绿色神秘花瓣
+  [2] botania:green_petal
+  [3] 接受标签：Item
+  [4] #botania:petals/green
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:36.977938900+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 异构花
+tooltipLines: 6
+  [1] 异构花
+  [2] 功能花
+  [3] 像岩石般坚硬
+  [4] botania:marimorphosis
+  [5] 配方源：Pollution Unofficial
+  [6] 配方ID：pollution:mana_petal_recipes/botania_native/petal_apothecary/marimorphosis
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:38.428595800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 绿色神秘花瓣
+tooltipLines: 6
+  [1] 绿色神秘花瓣
+  [2] botania:green_petal
+  [3] 接受标签：Item
+  [4] #botania:petals/green
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:38.528500900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 黄色神秘花瓣
+tooltipLines: 6
+  [1] 黄色神秘花瓣
+  [2] botania:yellow_petal
+  [3] 接受标签：Item
+  [4] #botania:petals/yellow
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:42.128978800+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 异构花
+tooltipLines: 6
+  [1] 异构花
+  [2] 功能花
+  [3] 像岩石般坚硬
+  [4] botania:marimorphosis
+  [5] 配方源：Pollution Unofficial
+  [6] 配方ID：pollution:mana_petal_recipes/botania_native/petal_apothecary/marimorphosis
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:50.895917900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 品红色神秘花瓣
+tooltipLines: 6
+  [1] 品红色神秘花瓣
+  [2] botania:magenta_petal
+  [3] 接受标签：Item
+  [4] #botania:petals/magenta
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:51.013276400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 品红色微光蘑菇
+tooltipLines: 6
+  [1] 品红色微光蘑菇
+  [2] botania:magenta_mushroom
+  [3] 接受标签：Item
+  [4] #botania:petals/magenta
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:52.018407600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 品红色神秘花瓣
+tooltipLines: 6
+  [1] 品红色神秘花瓣
+  [2] botania:magenta_petal
+  [3] 接受标签：Item
+  [4] #botania:petals/magenta
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:56.992457300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 书架
+tooltipLines: 3
+  [1] 书架
+  [2] minecraft:bookshelf
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:57.057507100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 草木
+tooltipLines: 4
+  [1] 草木
+  [2] (TerAq)Ter
+  [3] pollution:infused_plant_gem
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:57.108235200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 草木粉
+tooltipLines: 4
+  [1] 草木粉
+  [2] (TerAq)Ter
+  [3] pollution:infused_plant_dust
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:57.240593700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 诡异疣块
+tooltipLines: 3
+  [1] 诡异疣块
+  [2] minecraft:warped_wart_block
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:57.353017200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 胶带
+tooltipLines: 4
+  [1] 胶带
+  [2] §7强度不足，无法解决机械故障
+可以带走板条箱，且不丢失物品
+  [3] gtceu:basic_tape
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:57.469316600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 蘑菇柄
+tooltipLines: 3
+  [1] 蘑菇柄
+  [2] minecraft:mushroom_stem
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:57.587154400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 丛林树苗
+tooltipLines: 3
+  [1] 丛林树苗
+  [2] minecraft:jungle_sapling
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:57.645966900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 火把花
+tooltipLines: 3
+  [1] 火把花
+  [2] minecraft:torchflower
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:58.089312700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 打火石
+tooltipLines: 4
+  [1] 打火石
+  [2] minecraft:flint_and_steel
+  [3] NBT：1个标签
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:58.142270800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §9精英脱水机 §r
+tooltipLines: 6
+  [1] §9精英脱水机 §r
+  [2] §a输入电压：§f8,192 EU/t（§9IV§f）
+  [3] §c能量缓存：§r524,288 EU
+  [4] §9流体容量：§f64,000 mB
+  [5] gtnn:iv_dehydrator
+  [6] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:58.195968+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §d精英火箭引擎发电机 III
+tooltipLines: 7
+  [1] §d精英火箭引擎发电机 III
+  [2] 效率: 60%
+  [3] §a输出电压：§f32,768 EU/t（§dLuV§f）
+  [4] §c能量缓存：§r2,097,152 EU
+  [5] §9流体容量：§f16,000 mB
+  [6] gtnn:luv_rocket_engine
+  [7] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:58.262005700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 小型钢齿轮
+tooltipLines: 4
+  [1] 小型钢齿轮
+  [2] Fe
+  [3] gtceu:small_steel_gear
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:58.313900700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 小型高速钢-S齿轮
+tooltipLines: 4
+  [1] 小型高速钢-S齿轮
+  [2] ((FeW)₅CrMo₂V)₆Ir₂Os
+  [3] gtceu:small_hsss_gear
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:58.391675200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 碳化钨钻头
+tooltipLines: 4
+  [1] 碳化钨钻头
+  [2] WC
+  [3] gtceu:tungsten_carbide_drill_head
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:36:58.444829800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 红钢钻头
+tooltipLines: 4
+  [1] 红钢钻头
+  [2] (CuAu₄)(ZnCu₃)Fe₂(Ni(AuAgCu₃)Fe₃)₄
+  [3] gtceu:red_steel_drill_head
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:07.341149900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 空白魔法地图
+tooltipLines: 3
+  [1] 空白魔法地图
+  [2] twilightforest:magic_map
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:07.409057+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 应急护盾护身符
+tooltipLines: 5
+  [1] 应急护盾护身符
+  [2] 栏位: 项链
+  [3] thaumcraft:emergency_runic_amulet
+  [4] 符文护盾 +7
+  [5] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:08.906556300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 深板岩瓦
+tooltipLines: 3
+  [1] 深板岩瓦
+  [2] minecraft:deepslate_tiles
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:11.133425200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细铱导线
+tooltipLines: 4
+  [1] 细铱导线
+  [2] Ir
+  [3] gtceu:fine_iridium_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:12.115887200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细退火铜导线
+tooltipLines: 4
+  [1] 细退火铜导线
+  [2] Cu
+  [3] gtceu:fine_annealed_copper_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:12.301261100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细铱锇合金导线
+tooltipLines: 4
+  [1] 细铱锇合金导线
+  [2] Ir₃Os
+  [3] gtceu:fine_osmiridium_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:12.553551600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细铀铑硅岩合金导线
+tooltipLines: 5
+  [1] 细铀铑硅岩合金导线
+  [2] URhNq₂
+  [3] gtceu:fine_uranium_rhodium_dinaquadide_wire
+  [4] §c§l危险物质 §7按住Shift以显示详情
+  [5] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:12.613073500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细源质钢导线
+tooltipLines: 3
+  [1] 细源质钢导线
+  [2] gtceu:fine_elementium_wire
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:12.674017900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细钯导线
+tooltipLines: 4
+  [1] 细钯导线
+  [2] Pd
+  [3] gtceu:fine_palladium_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:12.995845800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细铀铑硅岩合金导线
+tooltipLines: 5
+  [1] 细铀铑硅岩合金导线
+  [2] URhNq₂
+  [3] gtceu:fine_uranium_rhodium_dinaquadide_wire
+  [4] §c§l危险物质 §7按住Shift以显示详情
+  [5] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:16.116838300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1x高阶神秘超导体导线
+tooltipLines: 8
+  [1] 1x高阶神秘超导体导线
+  [2] UV§d超导体
+  [3] §a最大电压：§r§a524,288§a（§3UV§a）
+  [4] §e最大电流：§r§e8
+  [5] §c线损/米/安：§r§c0§7 伏
+  [6] §7按住§6SHIFT§7显示工具信息
+  [7] pollution:advanced_thaumic_superconductor_single_wire
+  [8] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:16.610555+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光风霁月琥珀金螺丝
+tooltipLines: 4
+  [1] 光风霁月琥珀金螺丝
+  [2] ✦✧
+  [3] pollution:iizunamaru_electrum_screw
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:16.667880600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 刻金螺丝
+tooltipLines: 4
+  [1] 刻金螺丝
+  [2] Kqt
+  [3] pollution:keqinggold_screw
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:16.810141800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细铟锡钡钛铜氧化物导线
+tooltipLines: 4
+  [1] 细铟锡钡钛铜氧化物导线
+  [2] In₄Sn₂Ba₂TiCu₇O₁₄
+  [3] gtceu:fine_indium_tin_barium_titanium_cuprate_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:17.237754600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细铕导线
+tooltipLines: 4
+  [1] 细铕导线
+  [2] Eu
+  [3] gtceu:fine_europium_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:17.707143600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细高速钢-G导线
+tooltipLines: 4
+  [1] 细高速钢-G导线
+  [2] (FeW)₅CrMo₂V
+  [3] gtceu:fine_hssg_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:17.813006200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细铌钛合金导线
+tooltipLines: 4
+  [1] 细铌钛合金导线
+  [2] NbTi
+  [3] gtceu:fine_niobium_titanium_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:18.060813100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 细铟锡钡钛铜氧化物导线
+tooltipLines: 4
+  [1] 细铟锡钡钛铜氧化物导线
+  [2] In₄Sn₂Ba₂TiCu₇O₁₄
+  [3] gtceu:fine_indium_tin_barium_titanium_cuprate_wire
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:22.289591700+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 铝制防冻机械方块
+tooltipLines: 2
+  [1] 铝制防冻机械方块
+  [2] gtceu:frostproof_machine_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:22.335118900+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 镀钯变电站机械方块
+tooltipLines: 2
+  [1] 镀钯变电站机械方块
+  [2] gtceu:palladium_substation
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:22.572760800+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 大型组装机机械方块
+tooltipLines: 2
+  [1] 大型组装机机械方块
+  [2] gtceu:large_scale_assembler_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:22.616296600+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 切片刀
+tooltipLines: 2
+  [1] 切片刀
+  [2] gtceu:slicing_blades
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:22.656876800+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 装配线控制外壳
+tooltipLines: 2
+  [1] 装配线控制外壳
+  [2] gtceu:assembly_line_unit
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:22.680180800+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 钛涡轮机械方块
+tooltipLines: 2
+  [1] 钛涡轮机械方块
+  [2] gtceu:titanium_turbine_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:22.722298+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 聚四氟乙烯管道方块
+tooltipLines: 2
+  [1] 聚四氟乙烯管道方块
+  [2] gtceu:ptfe_pipe_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:23.073127100+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §dLuV§r机械方块
+tooltipLines: 2
+  [1] §dLuV§r机械方块
+  [2] gtceu:luv_machine_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:23.117714300+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 砖砌锻铁外壳
+tooltipLines: 2
+  [1] 砖砌锻铁外壳
+  [2] gtceu:steel_brick_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:23.483891500+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 凯金线圈方块
+tooltipLines: 3
+  [1] 凯金线圈方块
+  [2] §7按住§6SHIFT§7获得更多线圈信息
+  [3] gtceu:trinium_coil_block
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:23.527750400+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 兰波顿电容（§cZPM§r）
+tooltipLines: 3
+  [1] 兰波顿电容（§cZPM§r）
+  [2] §c电池容量：§f24,000,000,000 EU
+  [3] gtceu:zpm_lapotronic_battery
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:23.615925500+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 聚变线圈方块
+tooltipLines: 2
+  [1] 聚变线圈方块
+  [2] gtceu:fusion_coil
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:37:23.821756200+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 青铜燃烧室
+tooltipLines: 2
+  [1] 青铜燃烧室
+  [2] gtceu:bronze_firebox_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:29.577332400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 白色浮空花
+tooltipLines: 2
+  [1] 白色浮空花
+  [2] botania:white_floating_flower
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:32.806273200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 火之符文
+tooltipLines: 2
+  [1] 火之符文
+  [2] botania:rune_fire
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:32.882323200+08:00[Asia/Shanghai]
+role: INPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:33.164206300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 火之符文
+tooltipLines: 2
+  [1] 火之符文
+  [2] botania:rune_fire
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:33.207196+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 绿色微光蘑菇
+tooltipLines: 6
+  [1] 绿色微光蘑菇
+  [2] botania:green_mushroom
+  [3] 接受标签：Item
+  [4] #botania:petals/green
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:33.521249300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 黄色微光蘑菇
+tooltipLines: 6
+  [1] 黄色微光蘑菇
+  [2] botania:yellow_mushroom
+  [3] 接受标签：Item
+  [4] #botania:petals/yellow
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:33.715281600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 灰色微光蘑菇
+tooltipLines: 6
+  [1] 灰色微光蘑菇
+  [2] botania:gray_mushroom
+  [3] 接受标签：Item
+  [4] #botania:petals/gray
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:33.932106600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 红色微光蘑菇
+tooltipLines: 6
+  [1] 红色微光蘑菇
+  [2] botania:red_mushroom
+  [3] 接受标签：Item
+  [4] #botania:petals/red
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:34.027244600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 红色神秘花瓣
+tooltipLines: 6
+  [1] 红色神秘花瓣
+  [2] botania:red_petal
+  [3] 接受标签：Item
+  [4] #botania:petals/red
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:34.267793700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 红石根
+tooltipLines: 2
+  [1] 红石根
+  [2] botania:redstone_root
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:34.569371100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 红色神秘花瓣
+tooltipLines: 6
+  [1] 红色神秘花瓣
+  [2] botania:red_petal
+  [3] 接受标签：Item
+  [4] #botania:petals/red
+  [5] <component: mezz.jei.library.gui.ingredients.TagContentTooltipComponent>
+  [6] <component: mezz.jei.common.gui.RecipeSlotOptionsTooltipComponent>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:37.856068900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 骷髅病毒
+tooltipLines: 3
+  [1] 骷髅病毒
+  [2] botania:virus_nullodermal
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:38.096234100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 避雷针
+tooltipLines: 3
+  [1] 避雷针
+  [2] minecraft:lightning_rod
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:38.214515100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §6高级脱水机 II§r
+tooltipLines: 6
+  [1] §6高级脱水机 II§r
+  [2] §a输入电压：§f512 EU/t（§6HV§f）
+  [3] §c能量缓存：§r32,768 EU
+  [4] §9流体容量：§f16,000 mB
+  [5] gtnn:hv_dehydrator
+  [6] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:38.300968300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §5高级火箭引擎发电机 I
+tooltipLines: 7
+  [1] §5高级火箭引擎发电机 I
+  [2] 效率: 80%
+  [3] §a输出电压：§f2,048 EU/t（§5EV§f）
+  [4] §c能量缓存：§r131,072 EU
+  [5] §9流体容量：§f16,000 mB
+  [6] gtnn:ev_rocket_engine
+  [7] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:38.849810100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §9精英硅岩发电机 II
+tooltipLines: 6
+  [1] §9精英硅岩发电机 II
+  [2] 效率: 100%
+  [3] §a输出电压：§f8,192 EU/t（§9IV§f）
+  [4] §c能量缓存：§r524,288 EU
+  [5] gtnn:iv_naquadah_reactor
+  [6] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:39.887282600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §5高级火箭引擎发电机 I
+tooltipLines: 7
+  [1] §5高级火箭引擎发电机 I
+  [2] 效率: 80%
+  [3] §a输出电压：§f2,048 EU/t（§5EV§f）
+  [4] §c能量缓存：§r131,072 EU
+  [5] §9流体容量：§f16,000 mB
+  [6] gtnn:ev_rocket_engine
+  [7] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:42.145771600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §d精英火箭引擎发电机 III
+tooltipLines: 7
+  [1] §d精英火箭引擎发电机 III
+  [2] 效率: 60%
+  [3] §a输出电压：§f32,768 EU/t（§dLuV§f）
+  [4] §c能量缓存：§r2,097,152 EU
+  [5] §9流体容量：§f16,000 mB
+  [6] gtnn:luv_rocket_engine
+  [7] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:42.789938100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 小型无尽齿轮
+tooltipLines: 4
+  [1] 小型无尽齿轮
+  [2] ∞
+  [3] gtceu:small_infinity_gear
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:43.179527600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 小型镀铑钯齿轮
+tooltipLines: 4
+  [1] 小型镀铑钯齿轮
+  [2] Pd₃Rh
+  [3] gtceu:small_rhodium_plated_palladium_gear
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:43.305470200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 小型铁齿轮
+tooltipLines: 4
+  [1] 小型铁齿轮
+  [2] Fe
+  [3] gtceu:small_iron_gear
+  [4] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:43.495046400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 铱机械方块
+tooltipLines: 3
+  [1] 铱机械方块
+  [2] gtnn:iridium_casing
+  [3] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:43.660707900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 工业粉碎机
+tooltipLines: 8
+  [1] 工业粉碎机
+  [2] 可用配方类型：研磨机
+  [3] 工业粉碎机的控制器方块
+  [4] 比相同电压的单方块快§560%
+  [5] 最大并行：§6n*等级§7，LV为1级，MV为2级，以此类推
+  [6] 初始n为2，插入粉碎升级芯片后为8（暂未实装）
+  [7] gtnn:maceration_stack_controller
+  [8] <component: dev.tc4port.thaumcraft.compat.jei.JeiTooltipComponents$AspectList>
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:40:54.626177500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §5进阶研磨机 III§r
+tooltipLines: 5
+  [1] §5进阶研磨机 III§r
+  [2] §7粉碎矿石并获得副产物
+  [3] §a输入电压：§f2,048 EU/t（§5EV§f）
+  [4] §c能量缓存：§r131,072 EU
+  [5] gtceu:ev_macerator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:49.748006200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: dev.tc4port.thaumcraft.compat.jei.AspectJeiIngredient
+ingredientClass: dev.tc4port.thaumcraft.compat.jei.AspectJeiIngredient
+helperClass: dev.tc4port.thaumcraft.compat.jei.AspectIngredientHelper
+helperDisplayName: Praecantatio 魔力
+tooltipLines: 4
+  [1] Praecantatio
+  [2] 魔力
+  [3] 数量：8
+  [4] thaumcraft:praecantatio
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:50.015491400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 磁化钢块
+tooltipLines: 3
+  [1] 磁化钢块
+  [2] Fe
+  [3] gtceu:magnetic_steel_block
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:50.368420400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 高速钢-G板
+tooltipLines: 3
+  [1] 高速钢-G板
+  [2] (FeW)₅CrMo₂V
+  [3] gtceu:hssg_plate
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:50.956032200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 高速钢-G框架
+tooltipLines: 3
+  [1] 高速钢-G框架
+  [2] (FeW)₅CrMo₂V
+  [3] gtceu:hssg_frame
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:51.410408500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 磁化钢块
+tooltipLines: 3
+  [1] 磁化钢块
+  [2] Fe
+  [3] gtceu:magnetic_steel_block
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:51.464231200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 节点换能器
+tooltipLines: 2
+  [1] 节点换能器
+  [2] thaumcraft:node_transducer
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:51.951702600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质谐振器
+tooltipLines: 2
+  [1] 源质谐振器
+  [2] thaumcraft:resonator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:54.452267100+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 光束核心 I
+tooltipLines: 3
+  [1] 光束核心 I
+  [2] pollution:beam_core_0
+  [3] 配方ID：pollution:infusion/beam_core_0
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:59.589430300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 可配置维护仓
+tooltipLines: 3
+  [1] 可配置维护仓
+  [2] 多方块结构共享：§4禁止
+  [3] gtceu:configurable_maintenance_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:41:59.790130800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质流体输入仓（§1IV§r）
+tooltipLines: 4
+  [1] 源质流体输入仓（§1IV§r）
+  [2] §9流体容量：§f256000 mB
+  [3] 储存并向魔导多方块提供配方所需的源质流体
+  [4] pollution:iv_infused_fluid_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:00.313584400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:01.457026400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质流体输入仓（§1IV§r）
+tooltipLines: 4
+  [1] 源质流体输入仓（§1IV§r）
+  [2] §9流体容量：§f256000 mB
+  [3] 储存并向魔导多方块提供配方所需的源质流体
+  [4] pollution:iv_infused_fluid_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:01.669790700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 可配置维护仓
+tooltipLines: 3
+  [1] 可配置维护仓
+  [2] 多方块结构共享：§4禁止
+  [3] gtceu:configurable_maintenance_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:02.281143+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:02.330259200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 魔导研磨机
+tooltipLines: 2
+  [1] 魔导研磨机
+  [2] pollution:magic_macerator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:11.515967+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 魔导研磨机
+tooltipLines: 2
+  [1] 魔导研磨机
+  [2] pollution:magic_macerator
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:20.408613600+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:36.431030200+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 魔导温室
+tooltipLines: 3
+  [1] 魔导温室
+  [2] pollution:magic_green_house
+  [3] 配方ID：pollution:magic_amplification_info/magic_green_house
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:50.018474+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 强化钨钢机械方块
+tooltipLines: 2
+  [1] 强化钨钢机械方块
+  [2] gtceu:robust_machine_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:50.088010+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 聚四氟乙烯化学惰性机械方块
+tooltipLines: 2
+  [1] 聚四氟乙烯化学惰性机械方块
+  [2] gtceu:inert_machine_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:50.173936300+08:00[Asia/Shanghai]
+role: RENDER_ONLY
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 加强钛机械方块
+tooltipLines: 2
+  [1] 加强钛机械方块
+  [2] gtceu:stable_machine_casing
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:42:52.174451+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 红色化学染料
+tooltipLines: 2
+  [1] 红色化学染料
+  [2] gtceu:chemical_red_dye
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:15.555769300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:16.129924700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质流体输入仓（§1IV§r）
+tooltipLines: 4
+  [1] 源质流体输入仓（§1IV§r）
+  [2] §9流体容量：§f256000 mB
+  [3] 储存并向魔导多方块提供配方所需的源质流体
+  [4] pollution:iv_infused_fluid_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:16.220455700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 可配置维护仓
+tooltipLines: 3
+  [1] 可配置维护仓
+  [2] 多方块结构共享：§4禁止
+  [3] gtceu:configurable_maintenance_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:16.429757100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质流体输入仓（§1IV§r）
+tooltipLines: 4
+  [1] 源质流体输入仓（§1IV§r）
+  [2] §9流体容量：§f256000 mB
+  [3] 储存并向魔导多方块提供配方所需的源质流体
+  [4] pollution:iv_infused_fluid_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:16.972047200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:17.500261800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质流体输入仓（§1IV§r）
+tooltipLines: 4
+  [1] 源质流体输入仓（§1IV§r）
+  [2] §9流体容量：§f256000 mB
+  [3] 储存并向魔导多方块提供配方所需的源质流体
+  [4] pollution:iv_infused_fluid_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:20.909864100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 可配置维护仓
+tooltipLines: 3
+  [1] 可配置维护仓
+  [2] 多方块结构共享：§4禁止
+  [3] gtceu:configurable_maintenance_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:21.067442300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质流体输入仓（§1IV§r）
+tooltipLines: 4
+  [1] 源质流体输入仓（§1IV§r）
+  [2] §9流体容量：§f256000 mB
+  [3] 储存并向魔导多方块提供配方所需的源质流体
+  [4] pollution:iv_infused_fluid_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:21.223078+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:21.620060300+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 源质流体输入仓（§1IV§r）
+tooltipLines: 4
+  [1] 源质流体输入仓（§1IV§r）
+  [2] §9流体容量：§f256000 mB
+  [3] 储存并向魔导多方块提供配方所需的源质流体
+  [4] pollution:iv_infused_fluid_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:22.152024900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1A 魔力输入仓（§1IV§r）
+tooltipLines: 5
+  [1] 1A 魔力输入仓（§1IV§r）
+  [2] 能源型魔力仓：以植物魔法魔力充当能源，作为魔导多方块的 GT 能源接口（内部 1 Mana 视为 1 EU）
+  [3] 供给多方块：最高 8192 Mana/t（§9IV，1A）；可接收 Botania 魔力脉冲
+  [4] 魔力缓存：131072 Mana
+  [5] pollution:iv_mana_input_hatch_1a
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:25.633815100+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 4
+  [1] 液态灵
+  [2] (Ae(OrdIg))Ae
+  [3] §a状态：液态
+  [4] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:27.657330800+08:00[Asia/Shanghai]
+role: INPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:27.732752900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §9IV§r传感器
+tooltipLines: 2
+  [1] §9IV§r传感器
+  [2] gtceu:iv_sensor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:27.818867900+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §9IV§r能源仓
+tooltipLines: 6
+  [1] §9IV§r能源仓
+  [2] §a输入电压：§f8,192 EU/t（§9IV§f）
+  [3] §e输入电流：§f2A
+  [4] §c能量缓存：§r1,048,576 EU
+  [5] 为多方块结构输入能量
+  [6] gtceu:iv_energy_input_hatch
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:28.277313500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §9IV§r传感器
+tooltipLines: 2
+  [1] §9IV§r传感器
+  [2] gtceu:iv_sensor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:35.853018800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 4
+  [1] 液态灵
+  [2] (Ae(OrdIg))Ae
+  [3] §a状态：液态
+  [4] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:36.325049900+08:00[Asia/Shanghai]
+role: INPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:36.678593700+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 高等应用魔导秩构单元
+tooltipLines: 2
+  [1] 高等应用魔导秩构单元
+  [2] pollution:magic_assembler
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:40.727509700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 4
+  [1] 液态灵
+  [2] (Ae(OrdIg))Ae
+  [3] §a状态：液态
+  [4] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:42.216412500+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: pollution:alfheim
+tooltipLines: 3
+  [1] pollution:alfheim
+  [2] minecraft:barrier
+  [3] NBT：1个标签
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:46.454346200+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 5
+  [1] 液态灵
+  [2] §9总量：1,000/1,000 mB
+  [3] (Ae(OrdIg))Ae
+  [4] §a状态：液态
+  [5] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:47.553225800+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: pollution:alfheim
+tooltipLines: 3
+  [1] pollution:alfheim
+  [2] minecraft:barrier
+  [3] NBT：1个标签
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:50.930939600+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 5
+  [1] 液态灵
+  [2] §9总量：1,000/1,000 mB
+  [3] (Ae(OrdIg))Ae
+  [4] §a状态：液态
+  [5] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:51.248433+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: pollution:alfheim
+tooltipLines: 3
+  [1] pollution:alfheim
+  [2] minecraft:barrier
+  [3] NBT：1个标签
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:45:53.295592500+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 5
+  [1] 液态灵
+  [2] §9总量：1,000/1,000 mB
+  [3] (Ae(OrdIg))Ae
+  [4] §a状态：液态
+  [5] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:01.461907+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 精致的灵
+tooltipLines: 3
+  [1] 精致的灵
+  [2] (Ae(OrdIg))Ae
+  [3] pollution:exquisite_infused_aura_gem
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:07.719571+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §c炽焱催化剂核心§r
+tooltipLines: 3
+  [1] §c炽焱催化剂核心§r
+  [2] pollution:hot_catalyst_core
+  [3] §c不会被消耗§r
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:10.742884200+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:10.973321700+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §8§l焦化催化剂核心§r
+tooltipLines: 3
+  [1] §8§l焦化催化剂核心§r
+  [2] pollution:coking_catalyst_core
+  [3] §c不会被消耗§r
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:11.639709200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 宏伟之木原木
+tooltipLines: 2
+  [1] 宏伟之木原木
+  [2] thaumcraft:greatwood_log
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:12.098876200+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: §c炽焱催化剂核心§r
+tooltipLines: 3
+  [1] §c炽焱催化剂核心§r
+  [2] pollution:hot_catalyst_core
+  [3] §c不会被消耗§r
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:15.989698800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 水
+fluid.registryKey: minecraft:water
+fluid.amount: 1000
+fluid.displayName: 水
+fluid.descriptionId: block.minecraft.water
+fluid.translatedDescription: 水
+tooltipLines: 4
+  [1] 水
+  [2] H₂O
+  [3] §a状态：液态
+  [4] §c温度：300 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:16.504828500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态魔
+fluid.registryKey: pollution:infused_magic
+fluid.amount: 144
+fluid.displayName: 液态魔
+fluid.descriptionId: material.pollution.infused_magic
+fluid.translatedDescription: 魔
+tooltipLines: 4
+  [1] 液态魔
+  [2] Ae(OrdIg)
+  [3] §a状态：液态
+  [4] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:16.962601900+08:00[Asia/Shanghai]
+role: INPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:17.000154800+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 5
+  [1] 液态灵
+  [2] (Ae(OrdIg))Ae
+  [3] §a状态：液态
+  [4] §c温度：1,200 K
+  [5] 配方ID：pollution:node_magic_fusion/node_fusion/erich_aura
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:17.021108300+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:17.276647800+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 5
+  [1] 液态灵
+  [2] (Ae(OrdIg))Ae
+  [3] §a状态：液态
+  [4] §c温度：1,200 K
+  [5] 配方ID：pollution:node_magic_fusion/node_fusion/erich_aura
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:21.164209800+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: LuV 节点聚变堆
+tooltipLines: 2
+  [1] LuV 节点聚变堆
+  [2] pollution:luv_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:21.630788400+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: ZPM 节点聚变堆
+tooltipLines: 2
+  [1] ZPM 节点聚变堆
+  [2] pollution:zpm_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:22.203889+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: LuV 节点聚变堆
+tooltipLines: 2
+  [1] LuV 节点聚变堆
+  [2] pollution:luv_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:22.523768100+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: ZPM 节点聚变堆
+tooltipLines: 2
+  [1] ZPM 节点聚变堆
+  [2] pollution:zpm_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:22.610170600+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: UV 节点聚变堆
+tooltipLines: 2
+  [1] UV 节点聚变堆
+  [2] pollution:uv_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:23.659132600+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: ZPM 节点聚变堆
+tooltipLines: 2
+  [1] ZPM 节点聚变堆
+  [2] pollution:zpm_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:26.623330700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 水
+fluid.registryKey: minecraft:water
+fluid.amount: 1000
+fluid.displayName: 水
+fluid.descriptionId: block.minecraft.water
+fluid.translatedDescription: 水
+tooltipLines: 4
+  [1] 水
+  [2] H₂O
+  [3] §a状态：液态
+  [4] §c温度：300 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:26.951052300+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: LuV 节点聚变堆
+tooltipLines: 2
+  [1] LuV 节点聚变堆
+  [2] pollution:luv_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:26.976977900+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: ZPM 节点聚变堆
+tooltipLines: 2
+  [1] ZPM 节点聚变堆
+  [2] pollution:zpm_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:27.567846+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: UV 节点聚变堆
+tooltipLines: 2
+  [1] UV 节点聚变堆
+  [2] pollution:uv_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:27.768307200+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: ZPM 节点聚变堆
+tooltipLines: 2
+  [1] ZPM 节点聚变堆
+  [2] pollution:zpm_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:32.320427500+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态碳
+fluid.registryKey: gtceu:carbon
+fluid.amount: 16
+fluid.displayName: 液态碳
+fluid.descriptionId: material.gtceu.carbon
+fluid.translatedDescription: 碳
+tooltipLines: 4
+  [1] 液态碳
+  [2] C
+  [3] §a状态：液态
+  [4] §c温度：4,600 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:32.758175600+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: UV 节点聚变堆
+tooltipLines: 2
+  [1] UV 节点聚变堆
+  [2] pollution:uv_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:33.177105300+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 核聚变反应堆控制电脑 MK-III
+tooltipLines: 5
+  [1] 核聚变反应堆控制电脑 MK-III
+  [2] §7储能上限：§e640M EU
+  [3] 超频时消耗两倍能量，工作时间减半
+  [4] 核聚变反应堆MK-III是台大型多方块结构，用于融合元素形成更重的元素。它仅可使用UV等级的能源仓。每个能源仓可增加40MEU的能量缓存，最大能量缓存为640MEU。
+  [5] gtceu:uv_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:33.374829+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: ZPM 节点聚变堆
+tooltipLines: 2
+  [1] ZPM 节点聚变堆
+  [2] pollution:zpm_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:33.476789600+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态碳
+fluid.registryKey: gtceu:carbon
+fluid.amount: 16
+fluid.displayName: 液态碳
+fluid.descriptionId: material.gtceu.carbon
+fluid.translatedDescription: 碳
+tooltipLines: 4
+  [1] 液态碳
+  [2] C
+  [3] §a状态：液态
+  [4] §c温度：4,600 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:42.151018500+08:00[Asia/Shanghai]
+role: INPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:43.532892700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态银
+fluid.registryKey: gtceu:silver
+fluid.amount: 288
+fluid.displayName: 液态银
+fluid.descriptionId: material.gtceu.silver
+fluid.translatedDescription: 银
+tooltipLines: 4
+  [1] 液态银
+  [2] Ag
+  [3] §a状态：液态
+  [4] §c温度：1,235 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:43.907316400+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态灵
+fluid.registryKey: pollution:infused_aura
+fluid.amount: 1000
+fluid.displayName: 液态灵
+fluid.descriptionId: material.pollution.infused_aura
+fluid.translatedDescription: 灵
+tooltipLines: 4
+  [1] 液态灵
+  [2] (Ae(OrdIg))Ae
+  [3] §a状态：液态
+  [4] §c温度：1,200 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:46:46.313363600+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态超次元秘银
+fluid.registryKey: pollution:hyperdimensional_silver
+fluid.amount: 144
+fluid.displayName: 液态超次元秘银
+fluid.descriptionId: material.pollution.hyperdimensional_silver
+fluid.translatedDescription: 超次元秘银
+tooltipLines: 5
+  [1] 液态超次元秘银
+  [2] Ag₅₀(RnMa)m(AeIgAqTerOrdPe)n
+  [3] §a状态：液态
+  [4] §c温度：5,400 K
+  [5] 配方ID：pollution:node_magic_fusion/node_fusion/hyperdimensional_silver
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:48:52.246071600+08:00[Asia/Shanghai]
+role: OUTPUT
+ingredient: (empty)
+tooltip: (empty)
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:48:53.624351700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: fluid_stack
+ingredientClass: net.minecraftforge.fluids.FluidStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.fluid.FluidIngredientHelper
+helperDisplayName: 液态碳
+fluid.registryKey: gtceu:carbon
+fluid.amount: 16
+fluid.displayName: 液态碳
+fluid.descriptionId: material.gtceu.carbon
+fluid.translatedDescription: 碳
+tooltipLines: 4
+  [1] 液态碳
+  [2] C
+  [3] §a状态：液态
+  [4] §c温度：4,600 K
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:48:53.770319800+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: UV 节点聚变堆
+tooltipLines: 2
+  [1] UV 节点聚变堆
+  [2] pollution:uv_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:07.136394100+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 核聚变反应堆控制电脑 MK-III
+tooltipLines: 5
+  [1] 核聚变反应堆控制电脑 MK-III
+  [2] §7储能上限：§e640M EU
+  [3] 超频时消耗两倍能量，工作时间减半
+  [4] 核聚变反应堆MK-III是台大型多方块结构，用于融合元素形成更重的元素。它仅可使用UV等级的能源仓。每个能源仓可增加40MEU的能量缓存，最大能量缓存为640MEU。
+  [5] gtceu:uv_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:07.193138800+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: UV 节点聚变堆
+tooltipLines: 2
+  [1] UV 节点聚变堆
+  [2] pollution:uv_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:08.927950700+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 核聚变反应堆控制电脑 MK-III
+tooltipLines: 5
+  [1] 核聚变反应堆控制电脑 MK-III
+  [2] §7储能上限：§e640M EU
+  [3] 超频时消耗两倍能量，工作时间减半
+  [4] 核聚变反应堆MK-III是台大型多方块结构，用于融合元素形成更重的元素。它仅可使用UV等级的能源仓。每个能源仓可增加40MEU的能量缓存，最大能量缓存为640MEU。
+  [5] gtceu:uv_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:08.983697700+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: ZPM 节点聚变堆
+tooltipLines: 2
+  [1] ZPM 节点聚变堆
+  [2] pollution:zpm_node_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:09.419236800+08:00[Asia/Shanghai]
+role: CATALYST
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 核聚变反应堆控制电脑 MK-III
+tooltipLines: 5
+  [1] 核聚变反应堆控制电脑 MK-III
+  [2] §7储能上限：§e640M EU
+  [3] 超频时消耗两倍能量，工作时间减半
+  [4] 核聚变反应堆MK-III是台大型多方块结构，用于融合元素形成更重的元素。它仅可使用UV等级的能源仓。每个能源仓可增加40MEU的能量缓存，最大能量缓存为640MEU。
+  [5] gtceu:uv_fusion_reactor
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:13.415564200+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 量子之星
+tooltipLines: 3
+  [1] 量子之星
+  [2] §7改良的下界之星
+  [3] gtceu:quantum_star
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:14.218575700+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 双层镅板
+tooltipLines: 3
+  [1] 双层镅板
+  [2] Am
+  [3] gtceu:double_americium_plate
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:16.652789800+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: 1x富集硅岩凯金铕铿铀合金导线
+tooltipLines: 8
+  [1] 1x富集硅岩凯金铕铿铀合金导线
+  [2] Nq+₄Ke₃Eu₂Dr
+  [3] UV§d超导体
+  [4] §a最大电压：§r§a524,288§a（§3UV§a）
+  [5] §e最大电流：§r§e16
+  [6] §c线损/米/安：§r§c0§7 伏
+  [7] §7按住§6SHIFT§7显示工具信息
+  [8] gtceu:enriched_naquadah_trinium_europium_duranide_single_wire
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:16.894434+08:00[Asia/Shanghai]
+role: INPUT
+ingredientType: item_stack
+ingredientClass: net.minecraft.world.item.ItemStack
+helperClass: mezz.jei.library.plugins.vanilla.ingredients.ItemStackHelper
+helperDisplayName: UHPIC芯片
+tooltipLines: 3
+  [1] UHPIC芯片
+  [2] §7超高功率集成电路
+  [3] gtceu:uhpic_chip
+
+=== Pollution JEI recipe slot tooltip ===
+timestamp: 2026-09-19T22:49:17.021887900+08:00[Asia/Shanghai]
+role: INPUT
+ingredient: (empty)
+tooltip: (empty)
+
