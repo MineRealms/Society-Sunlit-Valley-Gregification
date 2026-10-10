@@ -177,7 +177,7 @@ const GTMFO_NUTRIENT_DEFINITIONS = {
 
   "vinery:apple_cider": { fruit: 0.75 },
   "vinery:apple_juice": { fruit: 1.0 },
-  "vinery:applesauce": { fruit: 1.0 },
+  "vintagedelight:apple_sauce_bottle": { fruit: 1.0 },
   "vinery:red_grapejuice": { fruit: 1.0 },
 };
 
