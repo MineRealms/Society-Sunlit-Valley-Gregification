@@ -1,30 +1,17 @@
 # =====================================================================
-# 本仓库只跟踪 config/ 与 kubejs/ 两个文件夹
-# 根目录下的两个基准/说明文件为白名单例外（用户要求纳入 git）
+# 本仓库跟踪：config/、kubejs/、pack/（CF 打包源）、docs/（文档）、README.md
 # 其余所有文件与文件夹（mods、saves、logs、resourcepacks 等）一律不跟踪
 # =====================================================================
 /*
 !/.gitignore
+!/README.md
+!/docs/
 !/config/
 !/kubejs/
-!/MODS_BASELINE.md
-!/TASK_GUIDE.md
-!/MODPACK_REPORT.md
-!/MODPACK_REPORT.json
 __pycache__/
-!/GTMFO_INTEGRATION.md
-!/GT_INTEGRATION.md
-!/TC4_INTEGRATION.md
-!/STATUS.md
-!/TF_INTEGRATION.md
-!/BOTANIA_INTEGRATION.md
-!/SPACE_INTEGRATION.md
-!/PROJECT_OVERVIEW.md
-!/FTBQ_GUIDE.md
-!/MAINTENANCE_GUIDE.md
 
 # =====================================================================
-# CurseForge 打包源（方案A：pack/ 子目录）
+# CurseForge 打包源（pack/ 子目录）
 # 跟踪 manifest.json + overrides/{config,kubejs,resourcepacks}
 # 排除 overrides/mods 下的自定义模组 jar（由 mods/ 或更新器分发）
 # =====================================================================
