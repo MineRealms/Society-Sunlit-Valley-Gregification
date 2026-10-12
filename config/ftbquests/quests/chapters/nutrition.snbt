@@ -1,12 +1,12 @@
 {
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
 	filename: "nutrition"
 	group: "15230846E14B6926"
 	icon: "farmersdelight:mixed_salad"
 	id: "7D31B2F9C4A6E001"
-	order_index: 8
+	order_index: 9
 	quest_links: [ ]
-	title: "均衡饮食"
-	subtitle: ["GTMFO 五类营养"]
 	quests: [
 		{
 			description: ["让每一类营养都达到 5。GTMFO 的 HUD 和食物 tooltip 会显示当前进度。"]
@@ -86,7 +86,6 @@
 			icon: "minecraft:golden_carrot"
 			id: "7D31B2F9C4A6E103"
 			rewards: [{
-				count: 1
 				id: "7D31B2F9C4A6E203"
 				item: "minecraft:golden_carrot"
 				type: "item"
@@ -102,4 +101,6 @@
 			y: 0.0d
 		}
 	]
+	subtitle: ["GTMFO 五类营养"]
+	title: "均衡饮食"
 }
