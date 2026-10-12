@@ -5,16 +5,13 @@ ServerEvents.recipes((e) => {
   var broken = [
     "veggiesdelight:cauliflower_burger",
     "crabbersdelight:lanternfish_from_barrel",
-    "twilightdelight:rainbow_ice_cream",
     "crabbersdelight:lanternfish_barrel",
     "meadow:limestone_bricks_stairs",
     "farmlife:cooked_fuli_from_campfire_cooking",
     "translocators:item_translocator",
     "dramaticdoors:short_palm_door_universal_sawmill",
-    "twilightdelight:twilight_ice_cream",
     "farmlife:cooked_fuli_from_smoking",
     "farmlife:cooked_fuli",
-    "twilightdelight:teardrop_sword",
     "dramaticdoors:tall_palm_door"
   ];
   broken.forEach((id) => e.remove({ id: id }));

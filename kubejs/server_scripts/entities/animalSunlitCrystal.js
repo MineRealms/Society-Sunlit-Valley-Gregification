@@ -16,7 +16,7 @@ ItemEvents.entityInteracted((e) => {
     }
     if (!plushie.hasTag("society:plushies")) {
       errorString = "society.husbandry.sunlit_crystal.not_plushie";
-    } else if (Number(plushieNbt.get("affection")) < 4) {
+    } else if (!plushieNbt || Number(plushieNbt.get("affection")) < 4) {
       errorString =
         "society.husbandry.sunlit_crystal.not_enough_plushie_affection";
     } else if (plushieNbt.get("animal")) {
