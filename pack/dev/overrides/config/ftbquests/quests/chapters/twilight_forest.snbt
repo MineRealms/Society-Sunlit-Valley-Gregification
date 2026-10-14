@@ -101,14 +101,12 @@
 			]
 			icon: "twilightforest:filled_magic_map"
 			id: "32F8D6F32B8F1CB4"
-			rewards: [
-				{
-					count: 8
-					id: "1D3B00876ABCE2C9"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "1D3B00876ABCE2C9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "68E652F05E1F833F"
 				item: "twilightforest:filled_magic_map"
@@ -129,14 +127,12 @@
 			]
 			icon: "twilightforest:naga_trophy"
 			id: "021344151B763B49"
-			rewards: [
-				{
-					count: 12
-					id: "586901477009230A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 12
+				id: "586901477009230A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				count: 4L
 				id: "2DF336FA74D93506"
@@ -154,25 +150,41 @@
 				""
 				"鳞片不够就再挑战一次娜迦；庭院可以重复挑战，掉落依旧。"
 			]
-			icon: "twilightforest:naga_chestplate"
-			id: "30934AFA65F56683"
-			rewards: [
-				{
-					count: 8
-					id: "34FBD02DBB723426"
-					item: "numismatics:cog"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "twilightforest:naga_chestplate"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "30934AFA65F56683"
+			rewards: [{
+				count: 8
+				id: "34FBD02DBB723426"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "176AE3F14FD58C3A"
-					item: "twilightforest:naga_chestplate"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "056EC22DC4A26935"
-					item: "twilightforest:naga_leggings"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -193,14 +205,12 @@
 			]
 			icon: "twilightforest:lich_trophy"
 			id: "488B432328D9B944"
-			rewards: [
-				{
-					count: 20
-					id: "35C21C35D9C75CB7"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 20
+				id: "35C21C35D9C75CB7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "22ABF0695D7835AF"
 				item: "twilightforest:lich_trophy"
@@ -219,34 +229,62 @@
 				""
 				"探索危险区域时它们能派上大用场，比如用护盾权杖硬抗九头蛇的火球。"
 			]
-			icon: "twilightforest:twilight_scepter"
-			id: "0D4130C468537BE0"
-			rewards: [
-				{
-					id: "65998178CACE3147"
-					item: "twilightforest:charm_of_life_1"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "twilightforest:twilight_scepter"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "0D4130C468537BE0"
+			rewards: [{
+				id: "65998178CACE3147"
+				item: "twilightforest:charm_of_life_1"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4CF628254F3B9584"
-					item: "twilightforest:twilight_scepter"
+					item: {
+						Count: 1
+						id: "twilightforest:twilight_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "1F2B498DD4D5EC06"
-					item: "twilightforest:zombie_scepter"
+					item: {
+						Count: 1
+						id: "twilightforest:zombie_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "6665E58CE048354A"
-					item: "twilightforest:lifedrain_scepter"
+					item: {
+						Count: 1
+						id: "twilightforest:lifedrain_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "47813E258FF6A3B6"
-					item: "twilightforest:fortification_scepter"
+					item: {
+						Count: 1
+						id: "twilightforest:fortification_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -265,14 +303,12 @@
 			]
 			icon: "twilightforest:minoshroom_trophy"
 			id: "381AC769A7131275"
-			rewards: [
-				{
-					count: 16
-					id: "25EBB133B320B44E"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "25EBB133B320B44E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6369718BDC38B994"
@@ -300,14 +336,12 @@
 			]
 			icon: "twilightforest:meef_stroganoff"
 			id: "6B2B60458AC5D46C"
-			rewards: [
-				{
-					count: 8
-					id: "5CD12E0CF62387F4"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "5CD12E0CF62387F4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B699329E23AA010"
 				item: "twilightforest:meef_stroganoff"
@@ -328,14 +362,12 @@
 			]
 			icon: "twilightforest:hydra_trophy"
 			id: "4CAD3B0DACC6D32F"
-			rewards: [
-				{
-					count: 24
-					id: "1B9D0044ABF6EC4A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "1B9D0044ABF6EC4A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "019110BAB23C6FD6"
@@ -363,14 +395,12 @@
 			]
 			icon: "twilightforest:alpha_yeti_trophy"
 			id: "754E90A0E12A50CA"
-			rewards: [
-				{
-					count: 16
-					id: "0A334C2FB3C80150"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "0A334C2FB3C80150"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6D49C4745B05CD11"
@@ -396,20 +426,30 @@
 				""
 				"毛皮不够就多找几座雪怪洞穴——每只雪怪首领都会掉落 6 张毛皮。"
 			]
-			icon: "twilightforest:yeti_helmet"
+			icon: {
+				Count: 1
+				id: "twilightforest:yeti_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "105CF9FBAEB3BD89"
 			optional: true
-			rewards: [
-				{
-					count: 12
-					id: "7B7210E1B21F83D7"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 12
+				id: "7B7210E1B21F83D7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6C760702C6021620"
-				item: "twilightforest:yeti_helmet"
+				item: {
+					Count: 1
+					id: "twilightforest:yeti_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "雪怪毛皮装备"
@@ -427,14 +467,12 @@
 			]
 			icon: "twilightforest:snow_queen_trophy"
 			id: "391F92AB97AA1DB3"
-			rewards: [
-				{
-					count: 24
-					id: "28CDC0FA869C1753"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "28CDC0FA869C1753"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "17632B4FBE40212F"
@@ -460,14 +498,12 @@
 			]
 			icon: "twilightforest:trophy_pedestal"
 			id: "17AC0067E172009C"
-			rewards: [
-				{
-					count: 8
-					id: "34549F0FD156AD7A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "34549F0FD156AD7A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "70E45466391A1EF9"
 				item: "twilightforest:trophy_pedestal"
@@ -488,14 +524,12 @@
 			]
 			icon: "twilightforest:knight_phantom_trophy"
 			id: "4DABA911C611379E"
-			rewards: [
-				{
-					count: 24
-					id: "2F4753C87BF7B0F8"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "2F4753C87BF7B0F8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0A3D22F149D33EF8"
@@ -521,14 +555,12 @@
 			]
 			icon: "twilightforest:ghast_trap"
 			id: "6EB018742288FC9C"
-			rewards: [
-				{
-					count: 16
-					id: "2C6F23E95FA13376"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "2C6F23E95FA13376"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "27DEEA8FC62ED1E4"
 				item: "twilightforest:carminite"
@@ -549,14 +581,12 @@
 			]
 			icon: "twilightforest:ur_ghast_trophy"
 			id: "34998EC5E846BEB4"
-			rewards: [
-				{
-					count: 32
-					id: "311F1AEFD887EC46"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "311F1AEFD887EC46"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1CA7DEA569DC3820"
@@ -582,14 +612,12 @@
 			]
 			icon: "twilightforest:uberous_soil"
 			id: "766DD957C1A393E3"
-			rewards: [
-				{
-					count: 32
-					id: "1520DBF906A819A1"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "1520DBF906A819A1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0EB4453F5B48817C"
 				title: "我已击败九头蛇、冰雪女王与暮初恶魂"
@@ -608,19 +636,29 @@
 				""
 				"洞穴里还能找到肥沃泥土（Uberous Soil）——种魔豆要用它。"
 			]
-			icon: "twilightforest:lamp_of_cinders"
-			id: "18625B23A8117E90"
-			rewards: [
-				{
-					count: 24
-					id: "5E8685CE30F87922"
-					item: "numismatics:cog"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "twilightforest:lamp_of_cinders"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "18625B23A8117E90"
+			rewards: [{
+				count: 24
+				id: "5E8685CE30F87922"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E35F1E1B9A03C36"
-				item: "twilightforest:lamp_of_cinders"
+				item: {
+					Count: 1
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "让烈焰燃烧得更猛烈些吧"
@@ -636,14 +674,12 @@
 			]
 			icon: "twilightforest:huge_stalk"
 			id: "5B90564AEED856F5"
-			rewards: [
-				{
-					count: 16
-					id: "30ECC58DEA59024A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "30ECC58DEA59024A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5C22745FD9B90398"
 				item: "twilightforest:magic_beans"
@@ -660,19 +696,29 @@
 				""
 				"巨人镐可以破坏&6巨型方块&r（巨型原木、巨型圆石、巨型黑曜石等），这些方块同样存在于云上楼阁与高原中。"
 			]
-			icon: "twilightforest:giant_pickaxe"
-			id: "03A931BBA1569A34"
-			rewards: [
-				{
-					count: 32
-					id: "6635A3DBB64EA903"
-					item: "numismatics:cog"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "twilightforest:giant_pickaxe"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "03A931BBA1569A34"
+			rewards: [{
+				count: 32
+				id: "6635A3DBB64EA903"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B5A2607E8ED254A"
-				item: "twilightforest:giant_pickaxe"
+				item: {
+					Count: 1
+					id: "twilightforest:giant_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "飘然云上"
@@ -688,14 +734,12 @@
 			]
 			icon: "twilightforest:giant_obsidian"
 			id: "6BF811C9B89B6FC4"
-			rewards: [
-				{
-					count: 64
-					id: "7FC08534EE72F76A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "7FC08534EE72F76A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "49A001A5C83C146A"
 				title: "抵达高原"
@@ -712,20 +756,30 @@
 				""
 				"右键放置一只&6月光蠕虫&r作为照明，左键可以回收它——随身携带等于无限光源。"
 			]
-			icon: "twilightforest:moonworm_queen"
+			icon: {
+				Count: 1
+				id: "twilightforest:moonworm_queen"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "16F8525E635C45B3"
 			optional: true
-			rewards: [
-				{
-					count: 8
-					id: "7ACD091149657B9D"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "7ACD091149657B9D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "115C44E261D69341"
-				item: "twilightforest:moonworm_queen"
+				item: {
+					Count: 1
+					id: "twilightforest:moonworm_queen"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "月光蠕虫女王"
@@ -741,19 +795,29 @@
 				""
 				"配合时运镐使用，采矿效率翻倍。"
 			]
-			icon: "twilightforest:ore_magnet"
-			id: "618221A2EBDB2FC7"
-			rewards: [
-				{
-					count: 8
-					id: "3AEFD6477336342C"
-					item: "numismatics:cog"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "twilightforest:ore_magnet"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "618221A2EBDB2FC7"
+			rewards: [{
+				count: 8
+				id: "3AEFD6477336342C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6E4F703B9313FE03"
-				item: "twilightforest:ore_magnet"
+				item: {
+					Count: 1
+					id: "twilightforest:ore_magnet"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "矿石磁铁"
@@ -769,14 +833,12 @@
 			]
 			icon: "twilightforest:transformation_powder"
 			id: "60DBED816C4E4AA9"
-			rewards: [
-				{
-					count: 4
-					id: "158B59C5FA1EC7B6"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "158B59C5FA1EC7B6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "041B41C73379EED5"
 				item: "twilightforest:transformation_powder"
@@ -797,14 +859,12 @@
 			]
 			icon: "twilightforest:uncrafting_table"
 			id: "7473102F824BCEEC"
-			rewards: [
-				{
-					count: 8
-					id: "4343DF1689EC7D30"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "4343DF1689EC7D30"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "737631E2F2B62BC3"
 				item: "twilightforest:uncrafting_table"
@@ -823,13 +883,17 @@
 			]
 			icon: "twilightforest:quest_ram_trophy"
 			id: "4CC391753E50C31A"
-			rewards: [
-				{
-					id: "43F67AB53DDBA26C"
-					item: "twilightforest:crumble_horn"
-					type: "item"
+			rewards: [{
+				id: "43F67AB53DDBA26C"
+				item: {
+					Count: 1
+					id: "twilightforest:crumble_horn"
+					tag: {
+						Damage: 0
+					}
 				}
-			]
+				type: "item"
+			}]
 			tasks: [{
 				id: "662F34E97B7ED64A"
 				item: "twilightforest:quest_ram_trophy"
@@ -851,14 +915,12 @@
 			icon: "twilightforest:time_sapling"
 			id: "0D464FAB95CA3F9E"
 			optional: true
-			rewards: [
-				{
-					count: 16
-					id: "60F504080968458D"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "60F504080968458D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "10C9946CF98DEF04"
@@ -892,20 +954,30 @@
 				""
 				"它无法合成，只能在&6极光宫殿&r的宝箱中找到——留着对付强敌的最后一击。"
 			]
-			icon: "twilightforest:glass_sword"
+			icon: {
+				Count: 1
+				id: "twilightforest:glass_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "6A520967AEC6617E"
 			optional: true
-			rewards: [
-				{
-					count: 4
-					id: "55A3FC5DE20EAD0F"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "55A3FC5DE20EAD0F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CF9F14DE115B99E"
-				item: "twilightforest:glass_sword"
+				item: {
+					Count: 1
+					id: "twilightforest:glass_sword"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "会心一击"

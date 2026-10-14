@@ -5,18 +5,16 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gcyr:rocket_scanner"
 	id: "141DBA5B3B33661A"
+	images: [{
+		height: 14.4d
+		image: "society:textures/quests/space/space.png"
+		rotation: 0.0d
+		width: 25.6d
+		x: 9.0d
+		y: 0.0d
+	}]
 	order_index: 18
 	quest_links: [ ]
-	images: [
-		{
-			image: "society:textures/quests/space/space.png"
-			x: 9.0d
-			y: 0.0d
-			width: 25.6d
-			height: 14.4d
-			rotation: 0.0d
-		}
-	]
 	quests: [
 		{
 			description: [
@@ -28,14 +26,12 @@
 			]
 			icon: "gcyr:rocket_scanner"
 			id: "597F87F2564753C8"
-			rewards: [
-				{
-					count: 32
-					id: "53A9E73DAE17DEC1"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "53A9E73DAE17DEC1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5818758150410510"
 				item: "gcyr:rocket_scanner"
@@ -54,14 +50,12 @@
 			]
 			icon: "gcyr:launch_pad"
 			id: "6B60DBBBF320BEEA"
-			rewards: [
-				{
-					count: 16
-					id: "181E7171B664721E"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "181E7171B664721E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6ED6C79846EB5AAB"
@@ -87,14 +81,12 @@
 			]
 			icon: "gtnn:heavy_plate_t1"
 			id: "0AA98E9AB3AD8632"
-			rewards: [
-				{
-					count: 24
-					id: "5BB37EE525DBB67F"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "5BB37EE525DBB67F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7E383587D57D7017"
@@ -120,14 +112,12 @@
 			]
 			icon: "gcyr:basic_rocket_motor"
 			id: "3E5C8B98CFE43D94"
-			rewards: [
-				{
-					count: 32
-					id: "3F37EC25A4F8BAE0"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "3F37EC25A4F8BAE0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3924EF4C8E7B3086"
 				item: "gcyr:basic_rocket_motor"
@@ -146,14 +136,12 @@
 			]
 			icon: "gcyr:basic_fuel_tank"
 			id: "3860D0F4ACD3676C"
-			rewards: [
-				{
-					count: 32
-					id: "546C254AB4F91354"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "546C254AB4F91354"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "602766D38D77E25D"
 				item: "gcyr:basic_fuel_tank"
@@ -164,7 +152,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["3E5C8B98CFE43D94", "3860D0F4ACD3676C"]
+			dependencies: [
+				"3E5C8B98CFE43D94"
+				"3860D0F4ACD3676C"
+			]
 			description: [
 				"GCYR 接受多种燃料（每 mB 燃烧时长）：&6汽油 25 / 柴油 18 / 火箭燃料 75 / 氢 10 / 氢等离子 18&r。"
 				""
@@ -174,14 +165,12 @@
 			]
 			icon: "gcyr:basic_fuel_tank"
 			id: "283E38CADB562D1A"
-			rewards: [
-				{
-					count: 24
-					id: "4E58BB956CDD388D"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "4E58BB956CDD388D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "45A18E66DE5ED39B"
 				title: "准备好 8 桶火箭燃料"
@@ -200,14 +189,12 @@
 			]
 			icon: "gcyr:rocket_scanner"
 			id: "5E2E0E2CBB5FE108"
-			rewards: [
-				{
-					count: 48
-					id: "60740D28057C75EE"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 48
+				id: "60740D28057C75EE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3903706B44FAA5DB"
 				title: "用扫描仪组装出一枚可发射的火箭"
@@ -226,35 +213,63 @@
 				""
 				"只有穿齐四件套，氧气才会生效。"
 			]
-			icon: "gcyr:space_chestplate"
-			id: "7A643B5AB5CCD343"
-			rewards: [
-				{
-					count: 32
-					id: "6D91271A08B80C91"
-					item: "numismatics:cog"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "gcyr:space_chestplate"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "7A643B5AB5CCD343"
+			rewards: [{
+				count: 32
+				id: "6D91271A08B80C91"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "5D034FE6CDFE5246"
-					item: "gcyr:space_helmet"
+					item: {
+						Count: 1
+						id: "gcyr:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "1DF40EAD90FF9F67"
-					item: "gcyr:space_chestplate"
+					item: {
+						Count: 1
+						id: "gcyr:space_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "2CE6328C4D47DE3A"
-					item: "gcyr:space_leggings"
+					item: {
+						Count: 1
+						id: "gcyr:space_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "43C60D9C4B778A05"
-					item: "gcyr:space_boots"
+					item: {
+						Count: 1
+						id: "gcyr:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -271,14 +286,12 @@
 			]
 			icon: "mekanism:electrolytic_separator"
 			id: "25DE6BB7C9DF4ACE"
-			rewards: [
-				{
-					count: 24
-					id: "6DB43340B5E96250"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "6DB43340B5E96250"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "011430954A05FC12"
@@ -296,7 +309,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["5E2E0E2CBB5FE108", "25DE6BB7C9DF4ACE"]
+			dependencies: [
+				"5E2E0E2CBB5FE108"
+				"25DE6BB7C9DF4ACE"
+			]
 			description: [
 				"目的地选&6月球（gcyr:luna）&r：无大气、无氧气、113K、重力 1.625。"
 				""
@@ -304,14 +320,12 @@
 			]
 			icon: "gcyr:moon_stone"
 			id: "078C14FC1CFD7959"
-			rewards: [
-				{
-					count: 64
-					id: "785879ACA2A83D72"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "785879ACA2A83D72"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4296AA116EE51560"
 				title: "乘火箭抵达月球"
@@ -330,14 +344,12 @@
 			]
 			icon: "gcyr:lunar_mare_regolith"
 			id: "58C1F4CAE639C4C0"
-			rewards: [
-				{
-					count: 24
-					id: "433FA31480C87AF9"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "433FA31480C87AF9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "16BD1B4B4461F1B8"
@@ -370,14 +382,12 @@
 			]
 			icon: "gcyr:iv_oxygen_spreader"
 			id: "6C045B9407797D46"
-			rewards: [
-				{
-					count: 32
-					id: "489ECE5DDF717776"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "489ECE5DDF717776"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0CEBE0A1335F9ACE"
 				item: "gcyr:iv_oxygen_spreader"
@@ -398,14 +408,12 @@
 			]
 			icon: "gcyr:heat_shielding_fabric"
 			id: "783605590B4434FC"
-			rewards: [
-				{
-					count: 24
-					id: "261EE779456B5902"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "261EE779456B5902"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7A523C687A5800B4"
@@ -436,14 +444,12 @@
 			]
 			icon: "gtnn:heavy_plate_t2"
 			id: "1874936B7E59C07F"
-			rewards: [
-				{
-					count: 48
-					id: "7DF34D69CB73853A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 48
+				id: "7DF34D69CB73853A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0122527105B297B9"
@@ -474,14 +480,12 @@
 			]
 			icon: "gcyr:martian_rock"
 			id: "2050FFAD3E1FFA46"
-			rewards: [
-				{
-					count: 32
-					id: "5353DC0FD04D3D8F"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "5353DC0FD04D3D8F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0A7E17CF3D5C0AF6"
 				item: "gcyr:martian_rock"
@@ -500,14 +504,12 @@
 			]
 			icon: "gcyr:mercury_rock"
 			id: "3814DAD8B5ADB40F"
-			rewards: [
-				{
-					count: 32
-					id: "6DFF3F2B4FEEA15B"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "6DFF3F2B4FEEA15B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2F8F678BF30D1D93"
 				item: "gcyr:mercury_rock"
@@ -526,14 +528,12 @@
 			]
 			icon: "gcyr:venus_rock"
 			id: "7BC5E2A5702C45F8"
-			rewards: [
-				{
-					count: 32
-					id: "6DD35D01FA781E26"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "6DD35D01FA781E26"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "509416333B426F0E"
 				item: "gcyr:venus_rock"
@@ -545,19 +545,15 @@
 		}
 		{
 			dependencies: ["2050FFAD3E1FFA46"]
-			description: [
-				"把卫星放进火箭的卫星槽发射入轨；GPS 卫星配合&6GPS 跟踪器&r可追踪实体。"
-			]
+			description: ["把卫星放进火箭的卫星槽发射入轨；GPS 卫星配合&6GPS 跟踪器&r可追踪实体。"]
 			icon: "gcyr:gps_satellite"
 			id: "400F931AF7702AD2"
-			rewards: [
-				{
-					count: 24
-					id: "1F7DD4E0A91E448D"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "1F7DD4E0A91E448D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3BC1D92220F5EF9A"
 				item: "gcyr:gps_satellite"
@@ -569,19 +565,15 @@
 		}
 		{
 			dependencies: ["2050FFAD3E1FFA46"]
-			description: [
-				"寻矿卫星按 32×32×32 区块扫描行星矿石（#ores），为你标记矿脉位置。"
-			]
+			description: ["寻矿卫星按 32×32×32 区块扫描行星矿石（#ores），为你标记矿脉位置。"]
 			icon: "gcyr:ore_finder_satellite"
 			id: "181B9CEB5EBEA340"
-			rewards: [
-				{
-					count: 24
-					id: "57D8910A916F1737"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "57D8910A916F1737"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5618A3F5A687D902"
 				item: "gcyr:ore_finder_satellite"
@@ -593,19 +585,15 @@
 		}
 		{
 			dependencies: ["2050FFAD3E1FFA46"]
-			description: [
-				"激光卫星可对地攻击实体或定点挖掘——危险但高效。"
-			]
+			description: ["激光卫星可对地攻击实体或定点挖掘——危险但高效。"]
 			icon: "gcyr:laser_satellite"
 			id: "011F18E43DA62209"
-			rewards: [
-				{
-					count: 24
-					id: "739A22BBD7FE9FAD"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 24
+				id: "739A22BBD7FE9FAD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F48CD44A39BC688"
 				item: "gcyr:laser_satellite"
@@ -624,14 +612,12 @@
 			]
 			icon: "gtnn:heavy_plate_t3"
 			id: "01B849DEB042CE5E"
-			rewards: [
-				{
-					count: 64
-					id: "232FCF04184D811E"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "232FCF04184D811E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "638B3D30AF7A00F2"
@@ -662,14 +648,12 @@
 			]
 			icon: "gcyr:proxima_centauri_b_turf"
 			id: "0215796DB20D6209"
-			rewards: [
-				{
-					count: 64
-					id: "5782D01BABD5EF3C"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "5782D01BABD5EF3C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "103773F62F8FC82A"
 				item: "gcyr:proxima_centauri_b_turf"
@@ -688,14 +672,12 @@
 			]
 			icon: "gcyr:space_station_packager"
 			id: "3F966FE9E4C6DB1C"
-			rewards: [
-				{
-					count: 64
-					id: "5091A0844563138A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "5091A0844563138A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "47C4DD466CF90DDB"
 				item: "gcyr:space_station_packager"
@@ -714,14 +696,12 @@
 			]
 			icon: "gcyr:space_station_package"
 			id: "692D26067556F318"
-			rewards: [
-				{
-					count: 32
-					id: "52D7BE64225B8CE8"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "52D7BE64225B8CE8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "53F7F28DD998EB83"
@@ -747,14 +727,12 @@
 			]
 			icon: "gtnn:ev_rocket_engine"
 			id: "62BF48A9682F25B6"
-			rewards: [
-				{
-					count: 32
-					id: "08DB0A54DCFCEE4A"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "08DB0A54DCFCEE4A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "53C80C3CBB728184"
 				item: "gtnn:ev_rocket_engine"
@@ -766,19 +744,15 @@
 		}
 		{
 			dependencies: ["692D26067556F318"]
-			description: [
-				"Mek 的&6量子纠缠器&r原生支持跨维度传输物品/流体/气体——行星基地与主基地之间的物流神器。"
-			]
+			description: ["Mek 的&6量子纠缠器&r原生支持跨维度传输物品/流体/气体——行星基地与主基地之间的物流神器。"]
 			icon: "mekanism:quantum_entangloporter"
 			id: "0D80D22FDC2EEB50"
-			rewards: [
-				{
-					count: 32
-					id: "5EC48A8CAC4D1D8D"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "5EC48A8CAC4D1D8D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2BD0550BF7BB07D9"
 				item: "mekanism:quantum_entangloporter"
@@ -797,14 +771,12 @@
 			]
 			icon: "mekanism:mekasuit_helmet"
 			id: "366D969A8401A0CF"
-			rewards: [
-				{
-					count: 48
-					id: "79BBBFB1A237BE38"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 48
+				id: "79BBBFB1A237BE38"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "05DACD0294ABAB88"
 				title: "穿上全套 MekaSuit（已具备耐热/耐寒）"
@@ -823,14 +795,12 @@
 			]
 			icon: "gcyr:space_elevator"
 			id: "4E06937111357BD0"
-			rewards: [
-				{
-					count: 64
-					id: "65695552E4892C10"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "65695552E4892C10"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "54AB0B271A256497"
 				item: "gcyr:space_elevator"
@@ -849,14 +819,12 @@
 			]
 			icon: "gcyr:dyson_sphere_casing"
 			id: "2590EF4EE316180B"
-			rewards: [
-				{
-					count: 64
-					id: "3DD6433AC956ACB7"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "3DD6433AC956ACB7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "125AE7124E8538F0"
@@ -887,14 +855,12 @@
 			]
 			icon: "gcyr:dyson_system_controller"
 			id: "0AF8E05C8A57FE9A"
-			rewards: [
-				{
-					count: 64
-					id: "26DD8A9D7078A9B3"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "26DD8A9D7078A9B3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7035E047A25FD484"

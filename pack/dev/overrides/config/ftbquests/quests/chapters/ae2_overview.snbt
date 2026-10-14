@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "ae2:controller"
 	id: "441DBA5B3B33661A"
-	order_index: 30
+	order_index: 19
 	quest_links: [ ]
 	quests: [
 		{
@@ -22,12 +22,12 @@
 			shape: "square"
 			size: 0.75d
 			subtitle: "别担心,频道系统已移除"
-			title: "&aP2P通道&f"
 			tasks: [{
 				id: "6818758150410510"
 				item: "ae2:me_p2p_tunnel"
 				type: "item"
 			}]
+			title: "&aP2P通道&f"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -42,7 +42,6 @@
 			id: "63A9E73DAE17DEC1"
 			size: 0.75d
 			subtitle: "[-h^2/2m∇^2 + V(x,t)]ψ(x,t) = iht'ψ(x,t)"
-			title: "量子通道"
 			tasks: [
 				{
 					count: 2L
@@ -63,6 +62,7 @@
 					type: "item"
 				}
 			]
+			title: "量子通道"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -92,11 +92,11 @@
 			shape: "rsquare"
 			size: 0.5d
 			subtitle: "物品与P2P通道入门指南"
-			title: "物品&aP2P通道&f"
 			tasks: [{
 				id: "4AA98E9AB3AD8632"
 				type: "checkmark"
 			}]
+			title: "物品&aP2P通道&f"
 			x: 5.0d
 			y: 0.0d
 		}
@@ -116,12 +116,12 @@
 			shape: "rsquare"
 			size: 0.5d
 			subtitle: "样板到样板"
-			title: "样板&aP2P通道&f"
 			tasks: [{
 				id: "48180714087F4B35"
 				item: "mae2:pattern_p2p_tunnel"
 				type: "item"
 			}]
+			title: "样板&aP2P通道&f"
 			x: 7.5d
 			y: 0.0d
 		}
@@ -139,12 +139,12 @@
 			shape: "rsquare"
 			size: 0.5d
 			subtitle: "遗憾的是,英国玩家无法使用"
-			title: "&aP2P通道 - EU&f"
 			tasks: [{
 				id: "5E5C8B98CFE43D94"
 				item: "mae2:eu_p2p_tunnel"
 				type: "item"
 			}]
+			title: "&aP2P通道 - EU&f"
 			x: 10.0d
 			y: 0.0d
 		}
@@ -160,12 +160,12 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "\"流体数字化仪”？那是谁？"
-			title: "数字化流体存储"
 			tasks: [{
 				id: "5F37EC25A4F8BAE0"
 				item: "ae2:fluid_cell_housing"
 				type: "item"
 			}]
+			title: "数字化流体存储"
 			x: 0.0d
 			y: 2.5d
 		}
@@ -180,7 +180,6 @@
 			id: "5860D0F4ACD3676C"
 			size: 0.75d
 			subtitle: "你说谁密集呢？"
-			title: "密集协处理器"
 			tasks: [{
 				id: "302766D38D77E25D"
 				item: {
@@ -210,6 +209,7 @@
 				title: "密集协处理器"
 				type: "item"
 			}]
+			title: "密集协处理器"
 			x: 2.5d
 			y: 2.5d
 		}
@@ -220,12 +220,12 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "穿越无限,超越极限!"
-			title: "&a无线&f之力"
 			tasks: [{
 				id: "646C254AB4F91354"
 				item: "expatternprovider:wireless_connect"
 				type: "item"
 			}]
+			title: "&a无线&f之力"
 			x: 5.0d
 			y: 2.5d
 		}
@@ -240,12 +240,12 @@
 			id: "183E38CADB562D1A"
 			shape: "rsquare"
 			size: 0.66d
-			title: "打包什么？"
 			tasks: [{
 				id: "65A18E66DE5ED39B"
 				title: "哇嘿!"
 				type: "checkmark"
 			}]
+			title: "打包什么？"
 			x: 7.5d
 			y: 2.5d
 		}
@@ -257,12 +257,12 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "危难中的桥梁"
-			title: "无限无线范围"
 			tasks: [{
 				id: "2E2E0E2CBB5FE108"
 				item: "ae2wtlib:quantum_bridge_card"
 				type: "item"
 			}]
+			title: "无限无线范围"
 			x: 10.0d
 			y: 2.5d
 		}
@@ -298,12 +298,12 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "&a样板修改器&r功能超群!"
-			title: "样板修改器"
 			tasks: [{
 				id: "70740D28057C75EE"
 				item: "expatternprovider:pattern_modifier"
 				type: "item"
 			}]
+			title: "样板修改器"
 			x: 0.0d
 			y: 5.0d
 		}
@@ -318,12 +318,12 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "前期游戏缓冲方案"
-			title: "&d格雷科技&f存储设备"
 			tasks: [{
 				id: "6D034FE6CDFE5246"
 				item: "gtceu:steel_crate"
 				type: "item"
 			}]
+			title: "&d格雷科技&f存储设备"
 			x: 2.5d
 			y: 5.0d
 		}
@@ -359,12 +359,12 @@
 			shape: "square"
 			size: 0.75d
 			subtitle: "是时候告别那些箱子了"
-			title: "&a数字时代&f？这么快!？"
 			tasks: [{
 				id: "5CE6328C4D47DE3A"
 				item: "ae2:cell_component_1k"
 				type: "item"
 			}]
+			title: "&a数字时代&f？这么快!？"
 			x: 5.0d
 			y: 5.0d
 		}
@@ -385,12 +385,12 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "你时间够用吗？"
-			title: "居然有人说&d格雷科技&f肝度太高..."
 			tasks: [{
 				id: "3D91271A08B80C91"
 				item: "expatternprovider:fishbig"
 				type: "item"
 			}]
+			title: "居然有人说&d格雷科技&f肝度太高..."
 			x: 7.5d
 			y: 5.0d
 		}
@@ -411,12 +411,12 @@
 			id: "55DE6BB7C9DF4ACE"
 			size: 0.66d
 			subtitle: "终于实现自动合成!"
-			title: "自动合成"
 			tasks: [{
 				id: "748B600AC1BB910C"
 				item: "ae2:molecular_assembler"
 				type: "item"
 			}]
+			title: "自动合成"
 			x: 10.0d
 			y: 5.0d
 		}
@@ -431,7 +431,6 @@
 			id: "411430954A05FC12"
 			size: 0.66d
 			subtitle: "谁喜欢寻找陨石呢？"
-			title: "&a挤压物质&f"
 			tasks: [
 				{
 					id: "17EDFBE0E839AAE3"
@@ -454,6 +453,7 @@
 					type: "item"
 				}
 			]
+			title: "&a挤压物质&f"
 			x: 0.0d
 			y: 7.5d
 		}
@@ -471,12 +471,12 @@
 			shape: "square"
 			size: 0.75d
 			subtitle: "终于实现自动合成!"
-			title: "样板"
 			tasks: [{
 				id: "0AA6511BDFC6BE52"
 				item: "ae2:blank_pattern"
 				type: "item"
 			}]
+			title: "样板"
 			x: 2.5d
 			y: 7.5d
 		}
@@ -486,12 +486,12 @@
 			icon: "ae2:controller"
 			id: "68C1F4CAE639C4C0"
 			subtitle: "看看AE2能为您做什么!"
-			title: "&d应用能源2&f"
 			tasks: [{
 				id: "46BD1B4B4461F1B8"
 				title: "是的,我明白了!"
 				type: "checkmark"
 			}]
+			title: "&d应用能源2&f"
 			x: 5.0d
 			y: 7.5d
 		}
@@ -508,12 +508,12 @@
 			shape: "rsquare"
 			size: 0.75d
 			subtitle: "构建更广物流网络"
-			title: "标签物流大师"
 			tasks: [{
 				id: "11C9D05C46912EA5"
 				item: "expatternprovider:tag_storage_bus"
 				type: "item"
 			}]
+			title: "标签物流大师"
 			x: 7.5d
 			y: 7.5d
 		}
@@ -542,12 +542,12 @@
 			shape: "rsquare"
 			size: 0.75d
 			subtitle: "社交隔离式网络"
-			title: "子网基础入门"
 			tasks: [{
 				id: "233FA31480C87AF9"
 				title: "我觉得听起来很棒"
 				type: "checkmark"
 			}]
+			title: "子网基础入门"
 			x: 10.0d
 			y: 7.5d
 		}
@@ -558,12 +558,12 @@
 			shape: "rsquare"
 			size: 0.66d
 			subtitle: "好吧,或许确实存在创造模式物品"
-			title: "创造ME能源"
 			tasks: [{
 				id: "4CEBE0A1335F9ACE"
 				item: "ae2:creative_energy_cell"
 				type: "item"
 			}]
+			title: "创造ME能源"
 			x: 0.0d
 			y: 10.0d
 		}

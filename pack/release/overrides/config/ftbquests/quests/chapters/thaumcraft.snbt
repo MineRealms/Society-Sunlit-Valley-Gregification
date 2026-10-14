@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "thaumcraft"
-	group: "4A46A5E1358A80A6"
+	group: "04716B2F19F75F08"
 	icon: "thaumcraft:thaumonomicon"
 	id: "1C53B7E775D8EDDC"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -18,14 +18,12 @@
 			]
 			icon: "thaumcraft:thaumometer"
 			id: "4F15F9F6021B0AF8"
-			rewards: [
-				{
-					count: 8
-					id: "35F501BCCBED6EC4"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "35F501BCCBED6EC4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "51E933168F4032A7"
 				item: "thaumcraft:thaumometer"
@@ -46,14 +44,12 @@
 			]
 			icon: "thaumcraft:thaumometer"
 			id: "6FD583503F686A53"
-			rewards: [
-				{
-					count: 8
-					id: "51BE477F04733434"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "51BE477F04733434"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3C48E19CFE2C8F02"
 				title: "用魔导透镜扫描任意方块或物品"
@@ -108,14 +104,12 @@
 			]
 			icon: "thaumcraft:greatwood_log"
 			id: "5203E569ADFB0F32"
-			rewards: [
-				{
-					count: 8
-					id: "09619AF0E5A42497"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "09619AF0E5A42497"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				count: 4L
 				id: "2AFB1C70F72FEE8E"
@@ -137,14 +131,12 @@
 			]
 			icon: "thaumcraft:wand"
 			id: "73A027097D654BEC"
-			rewards: [
-				{
-					count: 8
-					id: "6972737C7A89E287"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "6972737C7A89E287"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "70C6231DD7B1C558"
 				item: "thaumcraft:wand"
@@ -165,14 +157,12 @@
 			]
 			icon: "thaumcraft:thaumonomicon"
 			id: "57DB7A280EE3633F"
-			rewards: [
-				{
-					count: 16
-					id: "3E6592AE06FCBA05"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "3E6592AE06FCBA05"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "75F5FBB9C621D1FB"
 				item: "thaumcraft:thaumonomicon"
@@ -191,14 +181,12 @@
 			]
 			icon: "thaumcraft:table"
 			id: "3A3336D6C9BB6D26"
-			rewards: [
-				{
-					count: 8
-					id: "611ACF66A48C87F2"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "611ACF66A48C87F2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "74B1D3AFC5D935D0"
 				item: "thaumcraft:table"
@@ -215,19 +203,29 @@
 				""
 				"研究台成型时需要它；研究过程也会消耗墨水，记得多备几个。"
 			]
-			icon: "thaumcraft:inkwell"
-			id: "2C8342C58BF48C3B"
-			rewards: [
-				{
-					count: 8
-					id: "0E3DC4984F4212D7"
-					item: "numismatics:cog"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "thaumcraft:inkwell"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "2C8342C58BF48C3B"
+			rewards: [{
+				count: 8
+				id: "0E3DC4984F4212D7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "529886787091801A"
-				item: "thaumcraft:inkwell"
+				item: {
+					Count: 1
+					id: "thaumcraft:inkwell"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "墨水瓶"
@@ -245,14 +243,12 @@
 			]
 			icon: "thaumcraft:thaumonomicon"
 			id: "69C391B8091CE9CA"
-			rewards: [
-				{
-					count: 8
-					id: "443959D739B13ECB"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "443959D739B13ECB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7590E9CA4FBE6B3F"
 				title: "在魔导手册中解锁任意一项研究"
@@ -273,14 +269,12 @@
 			]
 			icon: "thaumcraft:crucible"
 			id: "67B45BB092EA6379"
-			rewards: [
-				{
-					count: 8
-					id: "1EC425A499D2BAC7"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "1EC425A499D2BAC7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "786790B31E18DB61"
 				item: "thaumcraft:crucible"
@@ -291,7 +285,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["3A3336D6C9BB6D26", "2C8342C58BF48C3B"]
+			dependencies: [
+				"3A3336D6C9BB6D26"
+				"2C8342C58BF48C3B"
+			]
 			description: [
 				"按蓝图摆放&6两张桌子&r并手持&6墨水瓶&r右键，成型为&5研究台&r（JEI 可查布局）。"
 				""
@@ -299,14 +296,12 @@
 			]
 			icon: "thaumcraft:research_table"
 			id: "240CE3A787FFAB67"
-			rewards: [
-				{
-					count: 8
-					id: "7019957502E6EC56"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "7019957502E6EC56"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "309FEFFA4AFD403F"
 				item: "thaumcraft:research_table"
@@ -327,14 +322,12 @@
 			]
 			icon: "thaumcraft:arcane_worktable"
 			id: "4F7A45CA9DB0BD3C"
-			rewards: [
-				{
-					count: 8
-					id: "65200CF144FFE713"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "65200CF144FFE713"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E6858C0510BA167"
 				item: "thaumcraft:arcane_worktable"
@@ -353,14 +346,12 @@
 			]
 			icon: "thaumcraft:nitor"
 			id: "7BD8735B2844BA97"
-			rewards: [
-				{
-					count: 8
-					id: "381F17626AF9EF79"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "381F17626AF9EF79"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0986FECE32BA2B26"
 				item: "thaumcraft:nitor"
@@ -379,14 +370,12 @@
 			]
 			icon: "thaumcraft:alumentum"
 			id: "0E99DDECCBCB4575"
-			rewards: [
-				{
-					count: 8
-					id: "4547B192524CA32C"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "4547B192524CA32C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D245F879348549C"
 				item: "thaumcraft:alumentum"
@@ -407,14 +396,12 @@
 			]
 			icon: "thaumcraft:thaumium_ingot"
 			id: "188339BE6F24688B"
-			rewards: [
-				{
-					count: 16
-					id: "24AB8BB6DD70C70F"
-					item: "numismatics:cog"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "24AB8BB6DD70C70F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "255D296E22396C02"
 				item: "thaumcraft:thaumium_ingot"
@@ -431,19 +418,29 @@
 				""
 				"神秘工具天生容易附魔，是冒险途中的好伙伴；耐久与铁制相当，附魔收益更高。"
 			]
-			icon: "thaumcraft:thaumium_pickaxe"
-			id: "3D072E3EC577F27F"
-			rewards: [
-				{
-					count: 16
-					id: "625A8487F0C107E0"
-					item: "numismatics:cog"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "thaumcraft:thaumium_pickaxe"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "3D072E3EC577F27F"
+			rewards: [{
+				count: 16
+				id: "625A8487F0C107E0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4851D7F587F9F5D7"
-				item: "thaumcraft:thaumium_pickaxe"
+				item: {
+					Count: 1
+					id: "thaumcraft:thaumium_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "神秘工具"
@@ -459,19 +456,29 @@
 				""
 				"这是整理仓库、规划炼金时最实用的装备。"
 			]
-			icon: "thaumcraft:goggles_of_revealing"
-			id: "24A79169446F404E"
-			rewards: [
-				{
-					count: 32
-					id: "1167CBC17A935A79"
-					item: "numismatics:cog"
-					type: "item"
+			icon: {
+				Count: 1
+				id: "thaumcraft:goggles_of_revealing"
+				tag: {
+					Damage: 0
 				}
-			]
+			}
+			id: "24A79169446F404E"
+			rewards: [{
+				count: 32
+				id: "1167CBC17A935A79"
+				item: "numismatics:cog"
+				type: "item"
+			}]
 			tasks: [{
 				id: "11EFDFE5EE5B5CDA"
-				item: "thaumcraft:goggles_of_revealing"
+				item: {
+					Count: 1
+					id: "thaumcraft:goggles_of_revealing"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "揭示之护目镜"
@@ -479,5 +486,5 @@
 			y: 7.5d
 		}
 	]
-	title: "&5神秘时代&r - 入门"
+	title: "&5&l神秘时代"
 }
