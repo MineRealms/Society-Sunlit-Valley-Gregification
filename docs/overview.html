@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Society: Sunlit Valley — Gregification · Overview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root{
+    --bg:#0e1116; --panel:#161b22; --panel2:#1b2230; --line:#2a3342;
+    --ink:#e6edf3; --dim:#9aa7b4; --dim2:#6b7a8d;
+    --green:#3fb950; --gold:#e3b341; --purple:#a371f7; --blue:#58a6ff; --red:#f85149; --cyan:#39c5cf;
+  }
+  body{
+    width:1600px; background:
+      radial-gradient(1200px 600px at 15% -10%, #1d2740 0%, transparent 60%),
+      radial-gradient(1000px 500px at 100% 0%, #241a33 0%, transparent 55%),
+      var(--bg);
+    color:var(--ink);
+    font-family:"Microsoft YaHei","Segoe UI",system-ui,-apple-system,sans-serif;
+    padding:44px 48px 40px;
+  }
+  .head{ display:flex; align-items:flex-end; justify-content:space-between; gap:24px; }
+  .brand h1{
+    font-size:52px; line-height:1.05; letter-spacing:.5px; font-weight:800;
+    background:linear-gradient(90deg,#e3b341,#f0883e 40%,#a371f7 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .brand .sub{ color:var(--dim); font-size:19px; margin-top:10px; }
+  .brand .cn{ color:var(--dim2); font-size:14px; margin-top:6px; letter-spacing:2px; }
+  .badges{ display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end; max-width:620px; }
+  .badge{ background:#11161d; border:1px solid var(--line); border-radius:10px; padding:8px 14px; font-size:14px; color:var(--dim); }
+  .badge b{ color:var(--ink); }
+
+  .stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin:34px 0 30px; }
+  .stat{ background:linear-gradient(180deg,var(--panel2),var(--panel)); border:1px solid var(--line); border-radius:16px; padding:20px 22px; }
+  .stat .n{ font-size:40px; font-weight:800; color:var(--gold); }
+  .stat .n small{ font-size:18px; color:var(--dim); font-weight:600; }
+  .stat .l{ color:var(--dim); font-size:14px; margin-top:6px; }
+
+  h2.sec{ font-size:20px; color:var(--ink); margin:34px 0 16px; display:flex; align-items:center; gap:12px; }
+  h2.sec::before{ content:""; width:6px; height:22px; border-radius:3px; background:var(--gold); }
+  h2.sec .en{ color:var(--dim2); font-size:13px; font-weight:500; letter-spacing:1px; }
+
+  /* core loop */
+  .loop{ display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+  .cc{ background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:16px 16px; position:relative; }
+  .cc .t{ font-size:16px; font-weight:700; color:var(--ink); }
+  .cc .d{ font-size:12.5px; color:var(--dim); margin-top:6px; line-height:1.55; }
+  .cc .k{ font-size:11.5px; color:var(--dim2); margin-top:8px; }
+  .cc::after{ content:"›"; position:absolute; right:-11px; top:50%; transform:translateY(-50%); color:var(--dim2); font-size:22px; }
+  .cc:last-child::after{ content:""; }
+
+  /* weave: farm ⇄ tech */
+  .weave{ background:linear-gradient(180deg,#151b24,#12171f); border:1px solid var(--line); border-radius:18px; padding:26px 26px 22px; }
+  .lane{ display:flex; align-items:stretch; gap:10px; }
+  .lane>.lbl{ flex:0 0 84px; display:flex; align-items:center; justify-content:center; text-align:center; font-size:15px; font-weight:800; border:1px solid var(--line); border-radius:12px; background:#0f141b; }
+  .lane.f>.lbl{ color:var(--green); border-color:#2f6b3a; }
+  .lane.t>.lbl{ color:#f0883e; border-color:#7a4a2a; }
+  .lane .node{ flex:1 1 0; min-width:0; }
+  .cross{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:14px 0; }
+  .xc{ background:#0f141b; border:1px dashed var(--line); border-radius:12px; padding:11px 14px; font-size:12.5px; color:var(--dim); line-height:1.6; }
+  .xc b{ color:var(--ink); }
+  .xc.up b{ color:var(--green); }
+  .xc.down b{ color:var(--blue); }
+  .xc.warn b{ color:#f0883e; }
+
+  .node{ flex:0 0 auto; text-align:center; border-radius:12px; padding:12px 14px; border:1px solid var(--line); background:#0f141b; min-width:96px; }
+  .node .t{ font-size:15px; font-weight:700; }
+  .node .s{ font-size:11px; color:var(--dim2); margin-top:3px; }
+  .arrow{ flex:0 0 auto; color:var(--dim2); font-size:20px; }
+  .n-farm{ border-color:#2f6b3a; } .n-farm .t{ color:var(--green); }
+  .n-create{ border-color:#6b5a2a; } .n-create .t{ color:var(--gold); }
+  .n-gt{ border-color:#7a4a2a; } .n-gt .t{ color:#f0883e; }
+  .n-mek{ border-color:#2a5a7a; } .n-mek .t{ color:var(--blue); }
+  .n-space{ border-color:#4a2a7a; } .n-space .t{ color:var(--purple); }
+  .tiers{ display:flex; gap:6px; margin-top:16px; flex-wrap:wrap; }
+  .tier{ font-size:12px; padding:5px 11px; border-radius:999px; border:1px solid var(--line); background:#0f141b; color:var(--dim); }
+  .tier b{ color:#f0883e; }
+  .spine .note{ color:var(--dim2); font-size:12.5px; margin-top:14px; }
+
+  /* branches */
+  .grid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; }
+  .card{ background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px 18px 16px; }
+  .card h3{ font-size:17px; margin-bottom:4px; }
+  .card .tag{ font-size:11.5px; color:var(--dim2); letter-spacing:1px; margin-bottom:10px; }
+  .card ul{ list-style:none; }
+  .card li{ font-size:13px; color:var(--dim); padding:5px 0 5px 16px; position:relative; line-height:1.5; border-bottom:1px dashed #222a36; }
+  .card li:last-child{ border-bottom:none; }
+  .card li::before{ content:""; position:absolute; left:0; top:12px; width:7px; height:7px; border-radius:50%; }
+  .c-magic h3{ color:var(--purple); } .c-magic li::before{ background:var(--purple); }
+  .c-explore h3{ color:var(--green); } .c-explore li::before{ background:var(--green); }
+  .c-food h3{ color:var(--gold); } .c-food li::before{ background:var(--gold); }
+  .c-store h3{ color:var(--blue); } .c-store li::before{ background:var(--blue); }
+  .c-quest h3{ color:var(--cyan); } .c-quest li::before{ background:var(--cyan); }
+  .c-misc h3{ color:var(--red); } .c-misc li::before{ background:var(--red); }
+  b.hl{ color:var(--ink); }
+
+  .foot{ margin-top:34px; display:flex; align-items:center; justify-content:space-between; color:var(--dim2); font-size:13px; border-top:1px solid var(--line); padding-top:18px; }
+  .foot .r{ text-align:right; }
+
+  /* pollution feature */
+  .poll{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .pc{ background:linear-gradient(180deg,var(--panel2),var(--panel)); border:1px solid var(--line); border-top:3px solid var(--purple); border-radius:14px; padding:16px 16px 14px; }
+  .pc .t{ font-size:15.5px; font-weight:700; color:var(--purple); }
+  .pc .d{ font-size:12.5px; color:var(--dim); margin-top:8px; line-height:1.65; }
+</style>
+</head>
+<body>
+
+  <div class="head">
+    <div class="brand">
+      <h1>Society: Sunlit Valley</h1>
+      <div class="sub">田园生活与工业科技，你中有我、我中有你 · 整合包总览</div>
+      <div class="cn">G R E G I F I C A T I O N &nbsp;·&nbsp; 宝 铺 版</div>
+    </div>
+    <div class="badges">
+      <div class="badge">Minecraft <b>1.20.1</b></div>
+      <div class="badge">Forge <b>47.4.23</b></div>
+      <div class="badge">Java <b>17</b></div>
+      <div class="badge"><b>411</b> 模组</div>
+      <div class="badge"><b>56</b> 任务章节</div>
+      <div class="badge"><b>2000+</b> 任务</div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="n">411</div><div class="l">模组 JAR</div></div>
+    <div class="stat"><div class="n">56</div><div class="l">FTB Quests 章节</div></div>
+    <div class="stat"><div class="n">2044</div><div class="l">任务总数</div></div>
+    <div class="stat"><div class="n">7</div><div class="l">主支线（工业 / 魔法 / 探索 / 太空 / 营养 / 存储 / 任务）</div></div>
+  </div>
+
+  <h2 class="sec">核心循环 <span class="en">THE CORE LOOP</span></h2>
+  <div class="loop">
+    <div class="cc"><div class="t">种植 &amp; 养殖</div><div class="d">作物与季节、动物好感/心情、品质三档</div><div class="k">Serene Seasons · Quality Food</div></div>
+    <div class="cc"><div class="t">料理 &amp; 钓鱼</div><div class="d">农夫乐事全家桶、烘焙、酿酒、垂钓</div><div class="k">Farmer's Delight 系列</div></div>
+    <div class="cc"><div class="t">卖货 &amp; 货币</div><div class="d">Shipping Bin 出售，换取硬币</div><div class="k">Shipping Bin · Numismatics</div></div>
+    <div class="cc"><div class="t">村庄 &amp; NPC</div><div class="d">职业村民、商店、礼物与好感</div><div class="k">Society · Society Trading</div></div>
+    <div class="cc"><div class="t">社区收集</div><div class="d">社区中心与长期目标，解锁更多内容</div><div class="k">社区中心 · 收藏线</div></div>
+  </div>
+
+  <h2 class="sec">双线交织 · 种田与科技你中有我 <span class="en">FARM ⇄ INDUSTRY</span></h2>
+  <div class="weave">
+    <div class="lane f">
+      <div class="lbl">农业线</div>
+      <div class="node n-farm"><div class="t">开荒种植</div><div class="s">季节 · 品质 · 养殖好感</div></div>
+      <div class="node n-farm"><div class="t">高级农业</div><div class="s">洒水器 · 史莱姆 · 蝴蝶</div></div>
+      <div class="node n-farm"><div class="t">五彩农业</div><div class="s">精通 · 酿酒 · 自动奶酪</div></div>
+      <div class="node n-farm"><div class="t">动力农业</div><div class="s">LV 起步 · 自动厨房 · 果汁物流</div></div>
+    </div>
+    <div class="cross">
+      <div class="xc up"><b>农田喂工业 ↑</b>：橡胶、作物与早期卖货收入撑起 GT 起步；吃进肚子的五类营养也是工业节奏的一部分</div>
+      <div class="xc down"><b>工业反哺农田 ↓</b>：洒水器、物品管道、自动化厨房与果汁物流，把农田接进产线</div>
+      <div class="xc warn"><b>工厂会咬人 ⚠</b>：Pollution 让多方块按区块记账排污——污染 25 草变沙、50 水变熔岩，厂区得和农田隔开</div>
+    </div>
+    <div class="lane t">
+      <div class="lbl">工业线</div>
+      <div class="node n-create"><div class="t">Create</div><div class="s">动力 · 自动化起点</div></div>
+      <div class="node n-gt"><div class="t">GregTech</div><div class="s">蒸汽 → LV → … → UV</div></div>
+      <div class="node n-mek"><div class="t">Mekanism</div><div class="s">深度加工 · 核能</div></div>
+      <div class="node n-space"><div class="t">GCYR 太空</div><div class="s">火箭 · 行星</div></div>
+    </div>
+    <div class="tiers">
+      <span class="tier"><b>LV</b></span><span class="tier"><b>MV</b></span><span class="tier"><b>HV</b></span>
+      <span class="tier"><b>EV</b></span><span class="tier"><b>IV</b></span><span class="tier"><b>LuV</b></span>
+      <span class="tier"><b>ZPM</b></span><span class="tier"><b>UV</b></span>
+      <span class="tier">农业章节跟着电压走：动力农业从 LV 开工，配方门槛 + 任务依赖 + 模组进度共同构成阶段锁</span>
+    </div>
+    <div class="note">两条线不分先后：农场是工业的原料、收入与营养来源，工业是农田的洒水器、管道与自动化手段；魔法线再通过 Pollution、Technomancy 把 vis、魔力与 EU 接进同一张能源网。</div>
+  </div>
+
+  <h2 class="sec">支线与模组 <span class="en">BRANCHES &amp; MODS</span></h2>
+  <div class="grid">
+    <div class="card c-magic">
+      <h3>魔法 · 神秘时代系</h3>
+      <div class="tag">MAGIC · THAUMATURGY</div>
+      <ul>
+        <li><b class="hl">Thaumcraft 4R</b>（神秘时代 4 移植版）· 要素/注魔/法杖</li>
+        <li><b class="hl">Technomancy</b>（神秘科技）· 精华 ↔ 能量</li>
+        <li><b class="hl">Thaumic Addons</b> · 扭曲理论 / 节点机械 / 神秘视界</li>
+        <li><b class="hl">Pollution</b> · 工业排放 ↔ 污染 ↔ 灵气/魔力，工厂与农田共担环境代价</li>
+        <li><b class="hl">Astral Sorcery</b>（星辉魔法）· 星座与祭坛</li>
+        <li><b class="hl">Botania</b>（植物魔法）· 魔力与花卉</li>
+      </ul>
+    </div>
+    <div class="card c-explore">
+      <h3>探索 · 冒险</h3>
+      <div class="tag">EXPLORATION · ADVENTURE</div>
+      <ul>
+        <li><b class="hl">暮色森林</b> · 进度保护与首领链</li>
+        <li>灾变 / 遗物 / 更好的考古</li>
+        <li>物种、长翼、稀有生物与采集</li>
+        <li>骷髅洞穴与自定义维度</li>
+        <li>滑翔伞 / 传送石碑 / 简易召回</li>
+      </ul>
+    </div>
+    <div class="card c-food">
+      <h3>营养 · 饮食</h3>
+      <div class="tag">NUTRITION · DIVERSITY</div>
+      <ul>
+        <li><b class="hl">GTMFO</b> · 乳/果/谷/蛋白/蔬菜 五类均衡</li>
+        <li><b class="hl">solonion</b> · 食物多样性 → 额外生命</li>
+        <li>GT 机器加工食品与作物经济</li>
+        <li>品质食物（铁/金/铱）影响售价</li>
+      </ul>
+    </div>
+    <div class="card c-store">
+      <h3>存储 · 物流</h3>
+      <div class="tag">STORAGE · LOGISTICS</div>
+      <ul>
+        <li><b class="hl">AE2</b> + Applied Greg / Mekanistics</li>
+        <li><b class="hl">Refined Storage</b> 及其扩展</li>
+        <li>功能性存储 / 精致背包与存储</li>
+        <li>管道（Pipez / Classic Pipes）与流体</li>
+      </ul>
+    </div>
+    <div class="card c-quest">
+      <h3>任务 · 引导</h3>
+      <div class="tag">FTB QUESTS</div>
+      <ul>
+        <li>56 章 / 2000+ 任务，多分支线性进度</li>
+        <li>教程（I–IV）· 社区中心 · 指南 · 收藏</li>
+        <li>工业：GT 电压 → 太空；魔法：TC4R / 星辉 / 植物</li>
+        <li>配方门槛 + 任务依赖 + 模组进度共同成阶段</li>
+      </ul>
+    </div>
+    <div class="card c-misc">
+      <h3>交通 · 生活</h3>
+      <div class="tag">TRANSPORT · LIFE</div>
+      <ul>
+        <li>Create 蒸汽铁路 / 高铁管道</li>
+        <li>小型船只 / 更多矿车 / 汽车</li>
+        <li>家具与装饰全家桶</li>
+        <li>货币经济与债务系统</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="sec">跨界联动 · Pollution 污染 <span class="en">POLLUTION · WHERE FARM MEETS FACTORY</span></h2>
+  <div class="poll">
+    <div class="pc">
+      <div class="t">排放要付账</div>
+      <div class="d">GT 多方块按消声仓在所在区块记账：污染 10 起反胃饥饿，25 草地变沙，50 连水源都可能变熔岩。停产后数值才缓慢衰减，工厂不能贴着农田建。</div>
+    </div>
+    <div class="pc">
+      <div class="t">vis ↔ EU 双向互通</div>
+      <div class="d">灵气发电机把神秘时代节点的 vis 抽成 EU，灵气充能机再用 EU 回补节点——但来回都记排污账，循环供电不是免费午餐。</div>
+    </div>
+    <div class="pc">
+      <div class="t">魔导产线进电压表</div>
+      <div class="d">咒波消声仓是带注魔配方的 GT 多方块部件；魔导电路从 ULV 一路做到 ZPM，源质、Infused 材料与机器零件走同一条流水线。</div>
+    </div>
+    <div class="pc">
+      <div class="t">花园也掺一脚</div>
+      <div class="d">植物魔法的魔力与工业 EU 互换、节点工程自成一章。整章分六区：污染与能源 / 源质供应 / 魔导加工 / 电路 / 植物魔法 / 节点工程。</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div>Society: Sunlit Valley — Gregification（宝铺版）· 基于 Society: Sunlit Valley 农场整合包，叠加 GregTech 工业线与魔法/探索/科技移植。</div>
+    <div class="r">全部模组版权归各自作者所有</div>
+  </div>
+
+</body>
+</html>
+
+<!-- measure: document.title = HEIGHT:<px> -->
+<script>
+  addEventListener('load', function () {
+    document.title = 'HEIGHT:' + Math.ceil(document.documentElement.scrollHeight);
+  });
+</script>
+
