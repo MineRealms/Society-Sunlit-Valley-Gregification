@@ -1,0 +1,321 @@
+{
+  "chapter_sha256": "faed78558b6f4b50d63ec9d151e2b1039907a4c6355e3564d328dfcc4febcb2e",
+  "ids": {
+    "chapter": "7BB658FE0A01DB8B",
+    "quest/iso_alchemite": "01AF74F91080524F",
+    "quest/iso_blood_infuser": "48F817D6F452222B",
+    "quest/iso_corpse_effigy": "5C4FB1314BEDC781",
+    "quest/iso_crystal_wand": "16BDA608BDD7788A",
+    "quest/iso_dust": "40E9F63AB752E799",
+    "quest/iso_essentia_dynamo": "062C4624405DDD81",
+    "quest/iso_flesh": "5C297505C034AB35",
+    "quest/iso_focus_animation": "5472B57141FC5CAA",
+    "quest/iso_focus_containment": "39201DCBC81649F5",
+    "quest/iso_focus_disintegration": "4CAB343D4892D0A6",
+    "quest/iso_focus_illumination": "4CA8E39DEF103A82",
+    "quest/iso_focus_intro": "3BD6505A880DE8C3",
+    "quest/iso_focus_liquefaction": "3CE0A7572CCE3F5F",
+    "quest/iso_gateway": "0203FFEC9C1BE7F5",
+    "quest/iso_golem_powder": "50895613A861BB0C",
+    "quest/iso_intro": "2AA13B6385509FDF",
+    "quest/iso_jar_soul": "6B503C683320DDD3",
+    "quest/iso_lens": "49E370A90E599C08",
+    "quest/iso_node_monitor": "46E839B4E20B2BBE",
+    "quest/iso_portal": "6114E7B6B26C9CA6",
+    "quest/iso_putty": "3C2DBD5D19B8A993",
+    "quest/iso_recombinator": "30EFCC8452E9A3FB",
+    "quest/iso_shard": "500752DD64E65DB3",
+    "quest/iso_somatic_brain": "493D9465A1F00304",
+    "quest/iso_soul_beacon": "09B0A6A4FBFBBD5C",
+    "quest/iso_transduction": "2EC464FF57B0D82C",
+    "quest/iso_vis_dynamo": "6A7C9170624C6E37",
+    "quest/iso_vortex": "28B95EA4486EA436",
+    "quest/nm_attuned": "09C80D241A6AB593",
+    "quest/nm_intro": "3B6070471B18D87A",
+    "quest/nm_matrix": "4A7BE2C0CF200045",
+    "quest/nm_unattuned": "3E3D991C5FEB9578",
+    "quest/wt_amulet": "4522517F1F055F4F",
+    "quest/wt_cleanser": "5CC1674F08BB954A",
+    "quest/wt_cleanser_minor": "150F48473B9F615A",
+    "quest/wt_complete": "0428DF351B589182",
+    "quest/wt_intro": "1E9CF4040078B78B",
+    "quest/wt_oblivion": "28C190B6CACEC9BB",
+    "quest/wt_paper": "315C327C269E59CC",
+    "quest/wt_something": "24EB413ADB5212F8",
+    "quest/wt_vanish": "1AD11A5031CD1C81",
+    "quest/wt_ward_amulet": "4141AAF8357CD0DC",
+    "reward/iso_alchemite/cog": "0A7A00CEAD257E84",
+    "reward/iso_blood_infuser/cog": "3A7B8899671AB72F",
+    "reward/iso_corpse_effigy/cog": "4F07E355D03CB848",
+    "reward/iso_crystal_wand/cog": "123D73D573B707C2",
+    "reward/iso_dust/cog": "4990D7D138B63558",
+    "reward/iso_essentia_dynamo/cog": "3B2DB4E9553D2FD7",
+    "reward/iso_flesh/cog": "630CD4BA3F552E0F",
+    "reward/iso_focus_animation/cog": "7C135F54B125ACE4",
+    "reward/iso_focus_containment/cog": "00D910648F9BA53B",
+    "reward/iso_focus_disintegration/cog": "4BD2AE41F010A691",
+    "reward/iso_focus_illumination/cog": "48760053BBD40D86",
+    "reward/iso_focus_liquefaction/cog": "3A5ECF73C7D3040C",
+    "reward/iso_gateway/cog": "14AAC92D7E325EE3",
+    "reward/iso_golem_powder/cog": "6A261AF402120142",
+    "reward/iso_jar_soul/cog": "26021856B9C84601",
+    "reward/iso_lens/cog": "658E784320EE6C69",
+    "reward/iso_node_monitor/cog": "2BC1DAE57DE0744F",
+    "reward/iso_portal/cog": "5B20DEE7B125CD1C",
+    "reward/iso_putty/cog": "7CADC816D206CB5E",
+    "reward/iso_recombinator/cog": "02F792250AD350F6",
+    "reward/iso_shard/cog": "0688872CE1235140",
+    "reward/iso_somatic_brain/cog": "5F65B68125CF251B",
+    "reward/iso_soul_beacon/cog": "112FD8E39082F472",
+    "reward/iso_transduction/cog": "2FB04AC76C08C1EE",
+    "reward/iso_vis_dynamo/cog": "0A06AE520826C179",
+    "reward/iso_vortex/cog": "23CA8BCC32E2D538",
+    "reward/nm_matrix/cog": "2EB1235EA3EF08D1",
+    "reward/wt_amulet/cog": "0EA31B0709EC2ACB",
+    "reward/wt_cleanser/cog": "620A68CEAF5F5B48",
+    "reward/wt_cleanser_minor/cog": "5DBC6C6DD5750C92",
+    "reward/wt_oblivion/cog": "02052BBE18C21CED",
+    "reward/wt_paper/cog": "268CEF17E41DB881",
+    "reward/wt_something/cog": "31F41AF0958D8957",
+    "reward/wt_ward_amulet/cog": "7422F07C38C41111",
+    "task/iso_alchemite/item/isorropia:alchemite": "048319AA59F9D684",
+    "task/iso_blood_infuser/item/isorropia:blood_infuser": "217D72FA8049FDC2",
+    "task/iso_corpse_effigy/item/isorropia:corpse_effigy": "7475C810D9D59F88",
+    "task/iso_crystal_wand/item/isorropia:crystal_wand": "70C8A1679C6FF662",
+    "task/iso_dust/item/isorropia:dust": "10CD4A06A915ED35",
+    "task/iso_essentia_dynamo/item/isorropia:essentia_dynamo": "2F0495270E8CCEF9",
+    "task/iso_flesh/item/isorropia:flesh": "20241D45209AD173",
+    "task/iso_focus_animation/item/isorropia:focus_animation": "2DB53FE9A52B28C6",
+    "task/iso_focus_containment/item/isorropia:focus_containment": "690ACE6C76F7F807",
+    "task/iso_focus_disintegration/item/isorropia:focus_disintegration": "6D18AA2E860A6377",
+    "task/iso_focus_illumination/item/isorropia:focus_illumination": "553B9093B9290541",
+    "task/iso_focus_intro/check": "3F5A92FD0D88575D",
+    "task/iso_focus_liquefaction/item/isorropia:focus_liquefaction": "5C3B458800464ACF",
+    "task/iso_gateway/item/isorropia:gateway": "153BC8B3078246A5",
+    "task/iso_golem_powder/item/isorropia:golem_powder": "4D23959D54AFAC59",
+    "task/iso_intro/check": "3501DBD54836612A",
+    "task/iso_jar_soul/item/isorropia:jar_soul": "65D8228640A0461E",
+    "task/iso_lens/item/isorropia:lens": "2CEC5152DE888AB5",
+    "task/iso_lens/item/isorropia:lens_air": "02D3DB8405C4AB69",
+    "task/iso_lens/item/isorropia:lens_envy": "5C7C8A3807ED5A12",
+    "task/iso_lens/item/isorropia:lens_fire": "1A77569800D4B04D",
+    "task/iso_lens/item/isorropia:lens_ordo": "6514949689ECE0CC",
+    "task/iso_node_monitor/item/isorropia:node_monitor": "480A99392D568C8A",
+    "task/iso_portal/item/isorropia:portal": "2FD31732EB4DA149",
+    "task/iso_putty/item/isorropia:void_putty": "623A7B5CE71202F2",
+    "task/iso_recombinator/item/isorropia:recombinator": "08BA0B459AEA7ED7",
+    "task/iso_shard/item/isorropia:ethereal_shard": "719A47E76C774571",
+    "task/iso_somatic_brain/item/isorropia:somatic_brain": "7BEA3BB4B9D56528",
+    "task/iso_soul_beacon/item/isorropia:soul_beacon": "77AF41406E4DDA7D",
+    "task/iso_transduction/item/isorropia:transduction_amplifier": "342081C41E9CC2F6",
+    "task/iso_vis_dynamo/item/isorropia:vis_dynamo": "21CABEA8231F528D",
+    "task/iso_vortex/item/isorropia:vortex": "0AF865095A80E4A6",
+    "task/iso_vortex/item/isorropia:vortex_stabilizer": "3646253F98F85006",
+    "task/nm_attuned/check": "0836AA6C305E5F85",
+    "task/nm_intro/check": "0CCC5D783B015588",
+    "task/nm_matrix/item/nodalmechanics:matrix": "02852D2EE0A2EF4D",
+    "task/nm_unattuned/check": "6CA41600D4F2E94C",
+    "task/wt_amulet/item/warptheory:amulet": "71F6815F0DDA95F6",
+    "task/wt_cleanser/item/warptheory:cleanser": "22EBEAF4884DC07C",
+    "task/wt_cleanser_minor/item/warptheory:cleanser_minor": "45E0B625987FB8E7",
+    "task/wt_complete/check": "5560EB95724298CD",
+    "task/wt_intro/check": "2EC318F009F3C159",
+    "task/wt_oblivion/item/warptheory:oblivion_potion": "09DAD6F686862FAA",
+    "task/wt_paper/item/warptheory:paper": "64F8B8E6A52F3141",
+    "task/wt_something/item/warptheory:something": "159BCE17B656738E",
+    "task/wt_vanish/check": "1AE9D0DB1F957B80",
+    "task/wt_ward_amulet/item/warptheory:warp_ward_amulet": "3451240D95DC5A7C"
+  },
+  "item_evidence": {
+    "isorropia:alchemite": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/alchemite.json"
+    },
+    "isorropia:blood_infuser": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/blood_infuser.json"
+    },
+    "isorropia:corpse_effigy": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/corpse_effigy.json"
+    },
+    "isorropia:crystal_wand": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/crystal_wand.json"
+    },
+    "isorropia:dust": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/dust.json"
+    },
+    "isorropia:essentia_dynamo": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/essentia_dynamo.json"
+    },
+    "isorropia:ethereal_shard": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/ethereal_shard.json"
+    },
+    "isorropia:flesh": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/flesh.json"
+    },
+    "isorropia:focus_animation": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/focus_animation.json"
+    },
+    "isorropia:focus_containment": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/focus_containment.json"
+    },
+    "isorropia:focus_disintegration": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/focus_disintegration.json"
+    },
+    "isorropia:focus_illumination": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/focus_illumination.json"
+    },
+    "isorropia:focus_liquefaction": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/focus_liquefaction.json"
+    },
+    "isorropia:gateway": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/gateway.json"
+    },
+    "isorropia:golem_powder": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/golem_powder.json"
+    },
+    "isorropia:jar_soul": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/jar_soul.json"
+    },
+    "isorropia:lens": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/lens.json"
+    },
+    "isorropia:lens_air": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/lens_air.json"
+    },
+    "isorropia:lens_envy": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/lens_envy.json"
+    },
+    "isorropia:lens_fire": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/lens_fire.json"
+    },
+    "isorropia:lens_ordo": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/lens_ordo.json"
+    },
+    "isorropia:node_monitor": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/node_monitor.json"
+    },
+    "isorropia:portal": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/portal.json"
+    },
+    "isorropia:recombinator": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/recombinator.json"
+    },
+    "isorropia:somatic_brain": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/somatic_brain.json"
+    },
+    "isorropia:soul_beacon": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/soul_beacon.json"
+    },
+    "isorropia:transduction_amplifier": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/transduction_amplifier.json"
+    },
+    "isorropia:vis_dynamo": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/vis_dynamo.json"
+    },
+    "isorropia:void_putty": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/void_putty.json"
+    },
+    "isorropia:vortex": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/vortex.json"
+    },
+    "isorropia:vortex_stabilizer": {
+      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "model": "assets/isorropia/models/item/vortex_stabilizer.json"
+    },
+    "nodalmechanics:matrix": {
+      "jar": "nodalmechanics-1.20.1-forge-1.0.0-dev.jar",
+      "model": "assets/nodalmechanics/models/item/matrix.json"
+    },
+    "numismatics:cog": {
+      "jar": "CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
+      "model": "assets/numismatics/models/item/cog.json",
+      "sha256": "f37d91367b2adecdae67cc27b15fa902584d1241607990809d6388d3c59014fd"
+    },
+    "warptheory:amulet": {
+      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
+      "model": "assets/warptheory/models/item/amulet.json"
+    },
+    "warptheory:cleanser": {
+      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
+      "model": "assets/warptheory/models/item/cleanser.json"
+    },
+    "warptheory:cleanser_minor": {
+      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
+      "model": "assets/warptheory/models/item/cleanser_minor.json"
+    },
+    "warptheory:oblivion_potion": {
+      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
+      "model": "assets/warptheory/models/item/oblivion_potion.json"
+    },
+    "warptheory:paper": {
+      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
+      "model": "assets/warptheory/models/item/paper.json"
+    },
+    "warptheory:something": {
+      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
+      "model": "assets/warptheory/models/item/something.json"
+    },
+    "warptheory:warp_ward_amulet": {
+      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
+      "model": "assets/warptheory/models/item/warp_ward_amulet.json"
+    }
+  },
+  "order_index": 22,
+  "salt": "thaumicaddons",
+  "schema": 2,
+  "validation": {
+    "chapter_sha256": "faed78558b6f4b50d63ec9d151e2b1039907a4c6355e3564d328dfcc4febcb2e",
+    "group": "4A46A5E1358A80A6",
+    "layout": {
+      "center_bounds": [
+        24,
+        16
+      ],
+      "clusters": 6,
+      "crossings": 0,
+      "edge_node_hits": 0,
+      "edges": 36,
+      "icon_bounds": [
+        24.9,
+        16.9
+      ],
+      "max_edge": 2.828427,
+      "min_spacing": 2,
+      "overlaps": 0
+    },
+    "objectives": 47,
+    "order_index": 22,
+    "quests": 42,
+    "rewards": 34,
+    "unique_items": 40
+  }
+}
