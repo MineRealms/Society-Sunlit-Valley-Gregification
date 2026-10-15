@@ -188,6 +188,8 @@
 				"&6阶段锁&r：第四种材料是神秘时代的&6虚空锭&r——需要研究出虚空金属（VOIDMETAL）。"
 				""
 				"虚空锭路线：扫描积累要素 → 研究&6神秘锭（THAUMIUM）&r与&6初级异界（ELDRITCHMINOR）&r → 解锁&6虚空金属（VOIDMETAL）&r；坩埚配方：虚空种子 + metallum 8，虚空种子 = 小麦种子 + tenebrae 8 / vacuos 8 / alienis 2。"
+				""
+				"整合包改动：泰拉钢还需要长翼蝴蝶养殖的&6蝴蝶琥珀&r——炼金术士与养蜂人必须握手。"
 			]
 			id: "46F86152B5B36A3B"
 			rewards: [{

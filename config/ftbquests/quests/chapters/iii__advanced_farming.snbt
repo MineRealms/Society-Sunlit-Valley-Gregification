@@ -914,6 +914,8 @@
 				"{ftbquests.chapter.iii__advanced_farming.quest3B6640956F047EC8.description2}"
 				""
 				"{ftbquests.chapter.iii__advanced_farming.quest3B6640956F047EC8.description3}"
+				""
+				"整合包联动：蝴蝶琥珀是&6植物魔法泰拉钢&r的材料，也能在&5神秘时代坩埚&r里炼成神秘琥珀——养殖成果直接推动两条魔法线。"
 			]
 			icon: "society:butterfly_amber"
 			id: "3B6640956F047EC8"
@@ -1364,6 +1366,26 @@
 			title: "{ftbquests.chapter.iii__advanced_farming.quest3DE36C9FBCB58800.title}"
 			x: -1.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["1AA78CF8A14DEE76"]
+			description: [
+				"经济联动：作物与料理的&6品质档&r（无/铁/金/铱）直接决定 Shipping Bin 的售价，品质越高单价越高。"
+				""
+				"长翼蝴蝶与史莱姆产物（蝴蝶琥珀、飞蛾花粉、凝胶心）本身就能进收购箱换钱；部分发展里程碑（如「大地的品质」）还会翻倍高品质加成。"
+				""
+				"高品质同时是魔法线的门票：铱档以上的稀有产出正在把田园生活推进神秘与星辉的中期配方。"
+			]
+			icon: "numismatics:cog"
+			id: "7E4A1C9D2F8B3E50"
+			tasks: [{
+				id: "1D6B8E2A4C7F90A3"
+				title: "已理解品质与售价的联动"
+				type: "checkmark"
+			}]
+			title: "品质就是身价"
+			x: 6.0d
+			y: 3.0d
 		}
 	]
 	title: "{ftbquests.chapter.iii__advanced_farming.title}"

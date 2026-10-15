@@ -15,6 +15,8 @@
 //   ③ 神秘出虚空锭 → 泰拉钢锭 需要 thaumcraft:void_ingot
 //      （TC4 研究 VOIDMETAL：parents = THAUMIUM + ELDRITCHMINOR，属中后期；
 //        虚空锭坩埚配方 = 虚空种子 + metallum 8，虚空种子可再生）
+//   ④ 长翼蝴蝶养殖 → 泰拉钢锭 需要 society:butterfly_amber
+//      （蝴蝶琥珀：长翼蝴蝶好感互动掉落，iii__advanced_farming 任务线）
 // ============================================================
 console.info("[SOCIETY] gateBotania.js loaded");
 
@@ -49,7 +51,7 @@ ServerEvents.recipes((e) => {
     T: LICH_TROPHY,
   });
 
-  // ---------- ③ 神秘时代虚空锭：泰拉钢锭 ----------
+  // ---------- ③ 神秘时代虚空锭 + ④ 长翼养殖琥珀：泰拉钢锭 ----------
   e.remove({ id: "botania:terra_plate/terrasteel_ingot" });
   e.custom({
     type: "botania:terra_plate",
@@ -58,8 +60,9 @@ ServerEvents.recipes((e) => {
       { item: "botania:mana_pearl" },
       { item: "botania:mana_diamond" },
       { item: VOID_INGOT },
+      { item: "society:butterfly_amber" },
     ],
     mana: 500000,
     result: { item: "botania:terrasteel_ingot" },
-  });
+  }).id("society:botania/terrasteel_void_butterfly");
 });
