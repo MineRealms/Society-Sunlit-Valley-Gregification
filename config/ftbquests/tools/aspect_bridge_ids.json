@@ -1,0 +1,23 @@
+{
+  "group": "04716B2F19F75F08",
+  "ids": {
+    "chapter": "6E10B9AAE50F14F7",
+    "quest/gt_pre": "39CD50C1F6CFF555",
+    "quest/intro": "46BC12C9F957B69E",
+    "quest/scan_botania": "11A4FE4E63EEA3D9",
+    "quest/scan_me": "664ACBE7C68B1E03",
+    "quest/scan_tf": "7B4BDB48948964AD",
+    "quest/sell_magic": "067824BBD6BD0AD4",
+    "task/gt_pre/item/gtceu:talc_dust": "0693705EF84EACCF",
+    "task/gt_pre/item/gtceu:wood_dust": "5D0542E40483C8F2",
+    "task/intro/check": "30A1978CB656D564",
+    "task/scan_botania/item/botania:manasteel_ingot": "7059BCE6E196C2E7",
+    "task/scan_me/item/me:athelas": "29E97BA6FBFD814E",
+    "task/scan_tf/item/twilightforest:torchberries": "4E9F5C9C95C50947",
+    "task/sell_magic/check": "39BAB6A74863A87E"
+  },
+  "order_index": 30,
+  "output_sha256": "da7d62e5793d30e748cfa16fd30e67f708f068f47dad321713140f0a05fd6ae7",
+  "salt": "society-aspect-bridge-chapter-v1",
+  "schema": 1
+}
