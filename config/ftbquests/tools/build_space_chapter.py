@@ -11,7 +11,11 @@
 事实依据（逐条核对，非推测）：
     - GCYR（mods/gcyr-1.20.1-0.2.9.jar）：
         · 火箭扫描仪 = EV 多方块；发射台/座椅；基础/先进/精英 发动机与燃料罐
-        · 燃料：汽油25t / 柴油18t / 火箭燃料75t / 氢10t / 氢等离子18t（每 mB 燃烧时长）
+        · 燃料三档（每 mB 燃烧时长；档位必须匹配火箭等级）：
+          T1 汽油25 / 柴油18 / 火箭燃料75 / 氢10 / RP-1 50
+          T2 UDMH 90 / 浓肼混合60 / 狱炎推进剂80
+          T3 甲基肼硝酸盐100 / 龙脉燃料160 / 氢等离子18
+        · 量产：污染化学厂（狱炎推进剂/龙脉燃料）、GT--/KubeJS（RP-1/UDMH/浓肼）、Mek（液氢）
         · 行星：月球(t1)/火星·水星·金星(t2)/比邻星b(t3)；温度 113K~737K；仅地球/比邻星b有氧
         · 宇航服胸甲 = 16000mB 氧气罐；氧扩散器 IV~UV；温度阈值 裸装213~333K / 全套60~363K
         · 空间站组装机 LuV；太空电梯 ZPM+；戴森系统控制器 UV
@@ -27,6 +31,7 @@
 """
 
 import json
+import sys
 import os
 import random
 import re
@@ -95,15 +100,17 @@ QUESTS = [
                ("装配机（HV）：4×动力推进器 + 6×Kapton-K 板 + 不锈钢框架 + &6T1 重型合金板&r。",
                 "HV Assembler: 4 Power Thrusters + 6 Kapton-K Plates + Stainless Frame + &6T1 Heavy Plates&r."),
                ("基础发动机：载重 25、单发动机——刚好够一次月球往返。",
-                "Basic motor: carry weight 25, single motor - just enough for a Luna round trip.")
+                "Basic motor: carry weight 25, single motor - just enough for a Luna round trip."),
+               ("烧 &6T1 档&r 燃料即可（汽油/柴油/火箭燃料/氢/RP-1）。",
+                "Runs on &6tier-1&r fuels (gasoline/diesel/rocket fuel/hydrogen/RP-1).")
          ],
          icon="gcyr:basic_rocket_motor", x=6.0, y=-6.0, deps=["heavy1"],
          tasks=[{"type": "item", "item": "gcyr:basic_rocket_motor"}],
          rewards=[{"item": "numismatics:cog", "count": 32}]),
     dict(key="tank1", title=["基础燃料储罐", "Basic Fuel Tank"],
          desc=[
-               ("装配机（HV）：2×不锈钢桶 + 6×Kapton-K 板 + 不锈钢框架 + &6T1 重型合金板&r。",
-                "HV Assembler: 2 Stainless Steel Drums + 6 Kapton-K Plates + Stainless Frame + &6T1 Heavy Plates&r."),
+               ("装配机（HV）：2×不锈钢桶 + 6×Kapton-K 板 + 不锈钢框架 + &6T1 重型合金板&r。出发前灌满 &6T1 档&r 燃料。",
+                "HV Assembler: 2 stainless drums + 6 Kapton-K plates + stainless frame + &6T1 Heavy Plates&r. Fill it with &6tier-1&r fuel before launch."),
                ("容量 5000 mB——月球往返需要 8 桶燃料，记得带够。",
                 "Capacity 5000 mB - a Luna round trip needs 8 buckets of fuel.")
          ],
@@ -112,10 +119,12 @@ QUESTS = [
          rewards=[{"item": "numismatics:cog", "count": 32}]),
     dict(key="fuel", title=["火箭燃料", "Rocket Fuel"],
          desc=[
-               ("GCYR 接受多种燃料（每 mB 燃烧时长）：&6汽油 25 / 柴油 18 / 火箭燃料 75 / 氢 10 / 氢等离子 18&r。",
-                "GCYR fuels (burn time per mB): &6Gasoline 25 / Diesel 18 / Rocket Fuel 75 / Hydrogen 10 / Hydrogen Plasma 18&r."),
-               ("&6Mek 联动&r：电解分离器产氢 → 旋转冷凝器出液态氢，直接当火箭燃料；GT-- 的 RP-1/UDMH 等高级燃料也能用。",
-                "&6Mek link&r: Electrolytic Separator hydrogen -> Rotary Condensentrator liquid hydrogen works as rocket fuel; GT-- fuels (RP-1/UDMH...) also work."),
+               ("GCYR 燃料分三档（每 mB 燃烧时长，档位必须匹配火箭等级）：",
+                "GCYR fuels come in three tiers (burn time per mB; fuel tier must match the rocket tier):"),
+               ("&6T1&r 汽油25 / 柴油18 / 火箭燃料75 / 氢10 / RP-1 50；&6T2&r UDMH 90 / 浓肼混合60 / 狱炎推进剂80；&6T3&r 甲基肼硝酸盐100 / 龙脉燃料160 / 氢等离子18。",
+                "&6T1&r Gasoline 25 / Diesel 18 / Rocket Fuel 75 / Hydrogen 10 / RP-1 50; &6T2&r UDMH 90 / Dense Hydrazine 60 / Infernal Blaze Propellant 80; &6T3&r Methylhydrazine Nitrate 100 / Dragon Pulse Fuel 160 / Hydrogen Plasma 18."),
+               ("&6量产&r：&6化学厂&r产狱炎推进剂与龙脉燃料；GT--/KubeJS 产 RP-1、UDMH、浓肼；电解分离器 + 旋转冷凝器出液态氢。",
+                "&6Mass production&r: the &6Chemical Plant&r makes Infernal Blaze Propellant and Dragon Pulse Fuel; GT--/KubeJS make RP-1, UDMH and Dense Hydrazine; Electrolytic Separator + Rotary Condensentrator make liquid hydrogen."),
                ("准备好至少 8 桶燃料再发射。",
                 "Prepare at least 8 buckets before launch.")
          ],
@@ -127,7 +136,9 @@ QUESTS = [
                ("在发射台上搭好火箭（发动机+燃料罐+座椅），用扫描仪扫描成实体，右键加注燃料。",
                 "Build the rocket on the pads (motor + tank + seat), scan it into an entity, then right-click to fuel it."),
                ("放入&6ID 芯片&r选择目的地；倒计时 200 刻后发射。",
-                "Insert an &6ID Chip&r to pick a destination; the launch countdown is 200 ticks.")
+                "Insert an &6ID Chip&r to pick a destination; the launch countdown is 200 ticks."),
+               ("发动机/燃料罐决定火箭等级，&6燃料档位必须匹配&r：T1 火箭烧 T1 燃料，以此类推。",
+                "Motors and tanks set the rocket tier, and the &6fuel tier must match&r: a T1 rocket burns T1 fuel, and so on.")
          ],
          icon="gcyr:rocket_scanner", x=12.0, y=0.0, deps=["fuel"],
          tasks=[{"type": "checkmark", "title": ["用扫描仪组装出一枚可发射的火箭", "Scan a complete, launchable rocket"]}],
@@ -159,7 +170,9 @@ QUESTS = [
                ("目的地选&6月球（gcyr:luna）&r：无大气、无氧气、113K、重力 1.625。",
                 "Destination &6Luna&r: no atmosphere, no oxygen, 113K, gravity 1.625."),
                ("带上氧气、燃料与备用宇航服——这是你的第一次出地球。",
-                "Bring oxygen, fuel and a spare suit - your first trip off Earth.")
+                "Bring oxygen, fuel and a spare suit - your first trip off Earth."),
+               ("月球往返用 &6T1 档&r 燃料即可（推荐火箭燃料 75t/mB）。",
+                "&6Tier-1&r fuel is enough for a Luna round trip (Rocket Fuel at 75 t/mB is recommended).")
          ],
          icon="gcyr:moon_stone", x=15.0, y=0.0, deps=["assemble", "oxygen"],
          tasks=[{"type": "checkmark", "title": ["乘火箭抵达月球", "Reach Luna by rocket"]}],
@@ -203,7 +216,9 @@ QUESTS = [
                ("T2 重型锭 = T1 锭 + 钛致密板 + 钨钢液（装配机 EV）；再内爆成&6T2 重型合金板&r。",
                 "T2 ingots = T1 + titanium dense plates + tungstensteel (EV Assembler); implosion-compress into &6T2 Heavy Plates&r."),
                ("先进发动机（载重 50、2 台）与先进燃料罐（7000 mB）都需要 T2 板。",
-                "Advanced motors (weight 50, 2 engines) and tanks (7000 mB) need T2 plates.")
+                "Advanced motors (weight 50, 2 engines) and tanks (7000 mB) need T2 plates."),
+               ("T2 火箭喝 &6T2 档&r 燃料：UDMH 90 / 浓肼混合 60 / 狱炎推进剂 80。",
+                "A T2 rocket drinks &6tier-2&r fuels: UDMH 90 / Dense Hydrazine 60 / Infernal Blaze Propellant 80.")
          ],
          icon="gtnn:heavy_plate_t2", x=18.0, y=0.0, deps=["thermal"],
          tasks=[{"type": "item", "item": "gtnn:heavy_plate_t2"}, {"type": "item", "item": "gcyr:advanced_rocket_motor"}, {"type": "item", "item": "gcyr:advanced_fuel_tank"}],
@@ -267,7 +282,9 @@ QUESTS = [
                ("T3 重型锭 = T2 锭 + 钨钢致密板 + 铂液（装配机 IV）；内爆成&6T3 重型合金板&r。",
                 "T3 ingots = T2 + tungstensteel dense plates + platinum (IV Assembler); implosion-compress into &6T3 Heavy Plates&r."),
                ("精英发动机（载重 75、3 台）与精英燃料罐（12000 mB）都需要 T3 板。",
-                "Elite motors (weight 75, 3 engines) and tanks (12000 mB) need T3 plates.")
+                "Elite motors (weight 75, 3 engines) and tanks (12000 mB) need T3 plates."),
+               ("T3 火箭喝 &6T3 档&r 燃料：甲基肼硝酸盐 100 / 龙脉燃料 160 / 氢等离子 18。",
+                "A T3 rocket drinks &6tier-3&r fuels: Methylhydrazine Nitrate 100 / Dragon Pulse Fuel 160 / Hydrogen Plasma 18.")
          ],
          icon="gtnn:heavy_plate_t3", x=15.0, y=3.0, deps=["mars"],
          tasks=[{"type": "item", "item": "gtnn:heavy_plate_t3"}, {"type": "item", "item": "gcyr:elite_rocket_motor"}, {"type": "item", "item": "gcyr:elite_fuel_tank"}],
@@ -277,7 +294,9 @@ QUESTS = [
                ("比邻星 b：火箭等级 3、有大气与&6氧气&r、303K——另一颗恒星系里的可居住世界。",
                 "Proxima Centauri B: rocket tier 3, atmosphere with &6oxygen&r, 303K - a habitable world in another star system."),
                ("跨恒星系飞行需要 26 桶燃料（同星系）——精英火箭是硬性要求。",
-                "Interstellar travel needs 26 buckets of fuel - the elite rocket is mandatory.")
+                "Interstellar travel needs 26 buckets of fuel - the elite rocket is mandatory."),
+               ("长航程首选 &6龙脉燃料&r（160t/mB，化学厂量产）；带足 T3 档燃料再出发。",
+                "&6Dragon Pulse Fuel&r (160 t/mB, made in the Chemical Plant) is the best long-haul pick; stock enough tier-3 fuel.")
          ],
          icon="gcyr:proxima_centauri_b_turf", x=12.0, y=3.0, deps=["heavy3"],
          tasks=[{"type": "item", "item": "gcyr:proxima_centauri_b_turf"}],
@@ -598,18 +617,37 @@ def find_existing_group():
 
 def main():
     global GROUP_KEY_ID
+    argv = sys.argv[1:]
+    check = '--check' in argv
+    verify_repeat = '--verify-repeat' in argv
     group_id = CHAPTER_GROUP
     GROUP_KEY_ID = group_id
-
     created = ensure_group(group_id)
     print(f"分组: {group_id}（{'新增' if created else '已存在/已内联'}）")
-
     snbt, chapter_id = build_snbt(group_id)
-    with open(CHAPTER_FILE, "w", encoding="utf-8", newline="\n") as f:
+    if verify_repeat:
+        GROUP_KEY_ID = group_id
+        snbt2, chapter_id2 = build_snbt(group_id)
+        assert snbt == snbt2 and chapter_id == chapter_id2, 'verify-repeat FAILED: output not deterministic'
+        print('verify-repeat: OK (two runs byte-identical)')
+    if check:
+        try:
+            disk = open(CHAPTER_FILE, encoding='utf-8').read()
+        except FileNotFoundError:
+            print('--check: chapter file missing'); sys.exit(1)
+        if disk == snbt:
+            print('--check: OK (byte-identical)')
+        else:
+            import difflib
+            diff = list(difflib.unified_diff(disk.splitlines(), snbt.splitlines(), 'disk', 'generated', lineterm=''))
+            print('--check: DIFFERS (%d diff lines)' % len(diff))
+            for l in diff[:80]: print(l)
+            sys.exit(1)
+        return
+    with open(CHAPTER_FILE, 'w', encoding='utf-8', newline=chr(10)) as f:
         f.write(snbt)
     print(f"章节 -> {CHAPTER_FILE}  (id={chapter_id})")
     print(f"quests: {len(QUESTS)}")
-
 
 if __name__ == "__main__":
     main()
