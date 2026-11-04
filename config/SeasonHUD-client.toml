@@ -3,7 +3,7 @@
 	#Enable the mod?
 	#(true/false)
 	#Default is true.
-	enable_mod = true
+	enable_mod = false
 
 	[SeasonHUD.HUD]
 		#Where to display the Hud when no minimap is installed.
