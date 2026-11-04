@@ -1,0 +1,584 @@
+{
+	default_hide_dependency_lines: false,
+	default_quest_shape: "",
+	filename: "middle_earth",
+	group: "5E4D3C2B1A090807",
+	icon: "me:starlight_phial",
+	id: "6A1B2C3D4E5F0718",
+	order_index: 0,
+	quest_links: [ ],
+	quests: [
+		{
+			description: [
+				"中州（Middle-earth）是一整片中土大陆：新的群系、建筑、生物与农作。",
+				"本包对它的改动：工匠台与合金炉需要 GT LV 电路；星光水晶瓶改为在星辉祭坛用冰雪女王战利品合成；蔬菜、浆果与蘑菇接入 GTMFO 营养与品质作物系统。"
+			],
+			dependencies: [ ],
+			icon: "me:starlight_phial",
+			id: "6A1B2C3D4E5F0721",
+			tasks: [
+				{
+					id: "6A1B2C3D4E5F0741",
+					title: "已阅读中土之旅导航",
+					type: "checkmark"
+				}
+			],
+			title: "中州 · 中土之旅",
+			x: 0.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"中州的核心 crafting 站：工匠台。",
+				"科技锁：原配方中的锡锭已替换为 GT LV 电路（gtceu:basic_electronic_circuit），先推进格雷 LV。"
+			],
+			dependencies: [
+				"6A1B2C3D4E5F0721"
+			],
+			icon: "me:artisan_table",
+			id: "6A1B2C3D4E5F0722",
+			tasks: [
+				{
+					id: "6A1B2C3D4E5F0742",
+					type: "item",
+					item: "me:artisan_table",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "工匠台（GT LV 锁）",
+			x: 2.0d,
+			y: -2.0d
+		},
+		{
+			description: [
+				"合金炉用于中州金属的冶炼与合金。",
+				"科技锁：原配方的熔炉已替换为 GT LV 电路（gtceu:basic_electronic_circuit）。"
+			],
+			dependencies: [
+				"6A1B2C3D4E5F0721"
+			],
+			icon: "me:alloy_furnace",
+			id: "6A1B2C3D4E5F0723",
+			tasks: [
+				{
+					id: "6A1B2C3D4E5F0743",
+					type: "item",
+					item: "me:alloy_furnace",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "合金炉（GT LV 锁）",
+			x: 2.0d,
+			y: 2.0d
+		},
+		{
+			description: [
+				"星光水晶瓶是中州探险的起点。",
+				"本包改动：不再用工作台无序合成，改为在星辉发现祭坛合成：装水水瓶、冰雪女王战利品和 4 个发光材料。",
+				"发现祭坛只能使用内圈 3×3；对照 JEI 祭坛图案。"
+			],
+			dependencies: [
+				"6A1B2C3D4E5F0722"
+			],
+			icon: "me:starlight_phial",
+			id: "6A1B2C3D4E5F0724",
+			tasks: [
+				{
+					id: "6A1B2C3D4E5F0744",
+					type: "item",
+					item: "me:starlight_phial",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "星光水晶瓶（星辉祭坛）",
+			x: 4.0d,
+			y: -2.0d
+		},
+		{
+			description: [
+				"中州蔬菜已接入本包 GTMFO 蔬菜营养、通用作物/种子标签；作物方块列入 Quality Food 的 quality_blocks（方块标签）。",
+				"品质掉落仍由 Quality Food 的成熟作物判定和收获物资格共同决定，需游戏内测试；先认识黄瓜、生菜、番茄，再拓展地方作物。"
+			],
+			dependencies: [
+				"6A1B2C3D4E5F0723"
+			],
+			icon: "me:cucumber",
+			id: "6A1B2C3D4E5F0725",
+			tasks: [
+				{
+					id: "6A1B2C3D4E5F0745",
+					type: "item",
+					item: "me:cucumber",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "6A1B2C3D4E5F0746",
+					type: "item",
+					item: "me:lettuce",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "6A1B2C3D4E5F0747",
+					type: "item",
+					item: "me:tomato",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "中州菜园",
+			x: 4.0d,
+			y: 2.0d
+		},
+		{
+			description: [
+				"中州草莓在 GTMFO 中计入水果；多种模组蘑菇按较低值计入蔬菜。",
+				"收集草莓和白蘑菇作为直接证据；若想做自动农业，请先观察各自真实作物方块、掉落和生长条件。"
+			],
+			dependencies: [
+				"6A1B2C3D4E5F0725"
+			],
+			icon: "me:strawberry",
+			id: "6A1B2C3D4E5F0726",
+			tasks: [
+				{
+					id: "6A1B2C3D4E5F0748",
+					type: "item",
+					item: "me:strawberry",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "6A1B2C3D4E5F0749",
+					type: "item",
+					item: "me:white_mushroom",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "浆果与蘑菇",
+			x: 6.0d,
+			y: 2.0d
+		},
+		{
+			description: [
+				"烟斗草是中州特有作物。模组资源中有烟斗草制种配方：1 个烟斗草可制 1 个烟斗草种子。",
+				"种子已接入 forge:seeds；具体生长条件以游戏内作物表现为准。"
+			],
+			dependencies: [
+				"6A1B2C3D4E5F0725"
+			],
+			icon: "me:pipeweed",
+			id: "6A1B2C3D4E5F0727",
+			tasks: [
+				{
+					id: "6A1B2C3D4E5F0750",
+					type: "item",
+					item: "me:pipeweed",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "6A1B2C3D4E5F0751",
+					type: "item",
+					item: "me:pipeweed_seeds",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "烟斗草",
+			x: 6.0d,
+			y: -2.0d
+		},
+		{
+			description: [
+				"地图配方：8 张纸围住 1 本书。进入中土后制作并使用地图，熟悉区域、坐标与出生点。",
+				"地图传送快捷键可在按键设置的 Middle-earth 分类查看；传送前确认目标点安全。"
+			],
+			dependencies: [
+				"6A1B2C3D4E5F0724"
+			],
+			icon: "me:middle_earth_map",
+			id: "5A4D97845B7B47FE",
+			tasks: [
+				{
+					id: "54784E0A8B89C1DD",
+					type: "item",
+					item: "me:middle_earth_map",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "中土地图：先学会定位",
+			x: 6.0d,
+			y: -4.0d
+		},
+		{
+			description: [
+				"星光水晶瓶的右键效果是把你传送进中土；它本身不负责打开角色选择界面。",
+				"模组另有 onboarding 角色流程，涉及派系、种族与出生点。首次入境观察是否出现；若没有，不要反复消耗/使用水晶瓶，请联系管理员核对服务端引导。管理员可用 `/middle_earth onboarding open`（需权限）尝试重新打开。",
+				"派系是预设阵营，不是玩家自建帮会；本机未发现声望刷取或军衔晋升系统。"
+			],
+			dependencies: [
+				"5A4D97845B7B47FE"
+			],
+			icon: "me:starlight_phial",
+			id: "6DDFD8DD1366973D",
+			tasks: [
+				{
+					id: "56A55C65F109DB02",
+					title: "已完成角色引导，记下所选派系、种族与出生点",
+					type: "checkmark"
+				}
+			],
+			title: "第一次入境：角色创建",
+			x: 8.0d,
+			y: -4.0d
+		},
+		{
+			description: [
+				"本机数据包含 8 种种族：human、elf、dwarf、hobbit、orc、uruk、goblin、snaga。",
+				"种族会改变玩家基础属性，不只是外观：例如本机数据中 dwarf 为 22 HP 且有采矿效率加成，hobbit 为 14 HP、体型更小且攻击倍率降低；elf 有粉雪免疫/摔落减免，goblin 有攀爬能力。实际数值以角色界面显示为准。"
+			],
+			dependencies: [
+				"6DDFD8DD1366973D"
+			],
+			icon: "me:middle_earth_map",
+			id: "22186F9B1DB3A7EF",
+			tasks: [
+				{
+					id: "6CAC76AD6B6ADE5E",
+					title: "已查看种族属性，并确认当前角色的选择",
+					type: "checkmark"
+				}
+			],
+			title: "种族：不只是外观",
+			x: 10.0d,
+			y: -4.0d
+		},
+		{
+			description: [
+				"可选择多个自由民与黑暗势力派系/子派系；派系决定初始出生点及与 NPC 的外交关系。",
+				"本章按当前 1.4.2-port 的数据介绍选择与敌我关系，不假设存在可刷声望、晋升军衔或自建帮会机制。"
+			],
+			dependencies: [
+				"6DDFD8DD1366973D"
+			],
+			icon: "me:middle_earth_map",
+			id: "79351E155A35B683",
+			tasks: [
+				{
+					id: "49949153BB5D062D",
+					title: "已在角色界面/派系说明中确认可选派系与出生点",
+					type: "checkmark"
+				}
+			],
+			title: "派系：选择阵营与落脚点",
+			x: 10.0d,
+			y: -2.0d
+		},
+		{
+			description: [
+				"派系外交用于判断 NPC 敌我；敌对派系会主动攻击。部分中立组织（如强盗、野生哥布林）也可能对你敌对。",
+				"出发前看地图与玩家手册，带好护甲、食物和退路；不要把 NEUTRAL 简单理解成安全。"
+			],
+			dependencies: [
+				"79351E155A35B683"
+			],
+			icon: "me:middle_earth_map",
+			id: "6120376E91CCD163",
+			tasks: [
+				{
+					id: "1E29A6A67A617E47",
+					title: "已了解敌对关系会影响 NPC 行为，并准备好一次安全的野外行程",
+					type: "checkmark"
+				}
+			],
+			title: "外交关系：中立也可能危险",
+			x: 12.0d,
+			y: -2.0d
+		},
+		{
+			description: [
+				"游戏内 Middle-earth 手册提供种族限制坐骑提示：矮人可用小麦驯服 Broadhoof Goat；精灵可尝试用三叶草、甜浆果、蘑菇等驯服 Great Horn；邪恶种族可用生肉驯服 Warg。",
+				"手册还提到邪恶阵营可在 Cave Troll 睡眠时尝试用锁链驯服。以当前版本实际提示为准，勿在危险洞穴裸装尝试。"
+			],
+			dependencies: [
+				"22186F9B1DB3A7EF",
+				"79351E155A35B683"
+			],
+			icon: "me:broadhoof_goat_spawn_egg",
+			id: "4997356FAF8EE82F",
+			tasks: [
+				{
+					id: "3510D0282D1E39D3",
+					title: "已阅读坐骑手册，并确认自己种族/阵营可尝试的坐骑",
+					type: "checkmark"
+				}
+			],
+			title: "坐骑与种族特性",
+			x: 12.0d,
+			y: -4.0d
+		},
+		{
+			description: [
+				"内置手册提示：地下城挑战波次会给钥匙，钥匙用于打开更深处的宝库。",
+				"先准备武器、护甲、食物与撤退路线；不要把 trial key 与普通遗迹战利品混为一谈。"
+			],
+			dependencies: [
+				"5A4D97845B7B47FE"
+			],
+			icon: "me:middle_earth_map",
+			id: "6CEA7E70797E79BD",
+			tasks: [
+				{
+					id: "64E5650AF022B2C8",
+					title: "已读地下城手册并完成一次有准备的遗迹探索",
+					type: "checkmark"
+				}
+			],
+			title: "遗迹与地下城：钥匙开宝库",
+			x: 8.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"模组数据包提供多种 1:1 留种配方：作物产物可合成对应种子。",
+				"先采到作物，再按 JEI 查看种子配方；不要假定所有作物都有独立种子或相同生长规则。"
+			],
+			dependencies: [
+				"6A1B2C3D4E5F0725"
+			],
+			icon: "me:tomato_seeds",
+			id: "08DB21B49C50BAFB",
+			tasks: [
+				{
+					id: "5F013059DB9E3960",
+					type: "item",
+					item: "me:bell_pepper_seeds",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "12417FAC40EC53B9",
+					type: "item",
+					item: "me:cucumber_seeds",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "6C57A38228A35183",
+					type: "item",
+					item: "me:lettuce_seeds",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "39F72DEFCA975220",
+					type: "item",
+					item: "me:tomato_seeds",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "7D01464351D0A8B7",
+					type: "item",
+					item: "me:flax_seeds",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "种子循环：从作物留种",
+			x: 6.0d,
+			y: 4.0d
+		},
+		{
+			description: [
+				"中州还有大葱、大蒜、甜椒、洋葱与亚麻等地方作物。",
+				"本包已把常见蔬菜接入通用作物/种子标签；具体种子产出请看 JEI，部分种子配方是 1 个作物换 1 个种子。"
+			],
+			dependencies: [
+				"08DB21B49C50BAFB"
+			],
+			icon: "me:leek",
+			id: "3E5211829B608D1A",
+			tasks: [
+				{
+					id: "4F4D46B07E48A6EC",
+					type: "item",
+					item: "me:leek",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "029B9D81A0A7AE1A",
+					type: "item",
+					item: "me:garlic",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "3B1BA968061468D8",
+					type: "item",
+					item: "me:bell_pepper",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "3E53D561B35976BA",
+					type: "item",
+					item: "me:onion",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "扩展菜园：地方作物",
+			x: 8.0d,
+			y: 4.0d
+		},
+		{
+			description: [
+				"亚麻有 1:1 留种配方；4 个亚麻可在工作台合成 1 根线。",
+				"这是中州农业与基础材料的轻量联动，适合在稳定供粮后顺手开垦。"
+			],
+			dependencies: [
+				"3E5211829B608D1A"
+			],
+			icon: "me:flax",
+			id: "08704B0BE0C1D3B3",
+			tasks: [
+				{
+					id: "719FFE2D5E425DD8",
+					type: "item",
+					item: "me:flax",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "4A4F27C7B9BBFE8D",
+					type: "item",
+					item: "me:flax_seeds",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "亚麻：农业副产物做线",
+			x: 10.0d,
+			y: 6.0d
+		},
+		{
+			description: [
+				"模组自带工作台配方与农夫乐事炖锅配方都已接入：蔬菜汤、鱼炖菜、蟹汤、禽肉餐、肉碗和肉蛋餐可用炖锅制作。",
+				"这些料理也已加入 GTMFO 显式营养映射；用 JEI 查配方并亲自食用，确认营养显示后再作为长期远征口粮。"
+			],
+			dependencies: [
+				"3E5211829B608D1A",
+				"6A1B2C3D4E5F0726"
+			],
+			icon: "me:vegetable_soup",
+			id: "23E553A3BD21EEF6",
+			tasks: [
+				{
+					id: "059815214AD1EC61",
+					type: "item",
+					item: "me:vegetable_soup",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "6B8B403017583715",
+					type: "item",
+					item: "me:berry_pie",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "5318E6989ABC5C5A",
+					type: "item",
+					item: "me:fish_stew",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "中土厨房：把收获变成远行口粮",
+			x: 10.0d,
+			y: 4.0d
+		},
+		{
+			description: [
+				"整合脚本将中州蔬菜计入 GTMFO 蔬菜、草莓计入水果，多种蘑菇按较低值计入蔬菜；中州作物方块也接入品质作物标签。",
+				"GTMFO 当前 HUD 关闭，数值看本包统一 Sunlit HUD；注意类别标签与单件显式营养值不是一回事。"
+			],
+			dependencies: [
+				"23E553A3BD21EEF6"
+			],
+			icon: "me:strawberry",
+			id: "4A4414F314B8BC63",
+			tasks: [
+				{
+					id: "10DFFAE043A023F6",
+					title: "已查看统一 HUD/食物 tooltip，确认中州作物进入营养分类",
+					type: "checkmark"
+				}
+			],
+			title: "营养与品质：农业接入整合包",
+			x: 12.0d,
+			y: 4.0d
+		}
+	],
+	title: "&2&l中州&r · 中土之旅"
+}
