@@ -58,7 +58,7 @@
     "task/templates/item/pollution:blood_circuit": "590D2D61606A41C2"
   },
   "order_index": 25,
-  "output_sha256": "43d19f46fe543577cf816f543cb0a80b5a9957940a2e83b22cfdea7b817065f8",
+  "output_sha256": "0bf3229c70e098214f26c28d27caee705e2012792a3211108b929afa25b5896f",
   "salt": "society-thaumic-industry-chapter-v1",
   "schema": 1
 }
