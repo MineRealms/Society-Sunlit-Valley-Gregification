@@ -17,7 +17,7 @@
 				"数据文件：kubejs/data/thaumcraft/object_aspects/pack_bridge_aspects.json（可自行增补）。"
 			],
 			dependencies: [
-				"35F501BCCBED6EC4"
+				"4F15F9F6021B0AF8"
 			],
 			icon: "thaumcraft:thaumonomicon",
 			id: "46BC12C9F957B69E",

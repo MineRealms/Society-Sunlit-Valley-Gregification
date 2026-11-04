@@ -32,7 +32,9 @@ GROUP = '04716B2F19F75F08'
 SALT = 'society-aspect-bridge-chapter-v1'
 ORDER = 30
 
-EXT_TC_INTRO = '35F501BCCBED6EC4'       # thaumcraft chapter: first quest
+EXT_TC_INTRO = '4F15F9F6021B0AF8'       # thaumcraft chapter: first quest
+# 4F15F9F6021B0AF8 才是魔导透镜的 quest id；35F501BCCBED6EC4 是它那条 8 cog 奖励的 id，
+# 抄成奖励 id 会让依赖悬空（FTBQ 不报错，但前置永远不满足）。
 EXT_BIN_ESSENTIA = '7160EA5E15705A84'   # trade: 接受仓源质通道
 EXT_BIN_MANA = '4040D45BF06D0973'       # trade: 接受仓魔力通道
 EXT_DEPS = {EXT_TC_INTRO, EXT_BIN_ESSENTIA, EXT_BIN_MANA}
@@ -115,6 +117,40 @@ def get_keys():
         if q.get('check'):
             keys.append('task/' + q['key'] + '/check')
     return keys
+
+def quest_ids():
+    """全库"任务" id，不含 task/reward id。
+
+    external_ids() 收的是任意 16-hex，把某条奖励的 id 当成前置也能通过校验，
+    结果是依赖悬空、游戏内前置永远不满足（35F501BCCBED6EC4 那次就是）。
+    这里按 quests: [] 的顶层块重新收一遍，只取每个块的第一个 id。"""
+    result = set()
+    for path in sorted(QUESTS.rglob('*.snbt')):
+        if path == OUTPUT:
+            continue
+        text = path.read_text(encoding='utf-8-sig')
+        m = re.search(r'\bquests:\s*\[', text)
+        if not m:
+            continue
+        i, depth, start = m.end(), 1, None
+        while i < len(text):
+            c = text[i]
+            if c == '{':
+                if depth == 1:
+                    start = i
+                depth += 1
+            elif c == '}':
+                depth -= 1
+                if depth == 1 and start is not None:
+                    block = re.search(r'\bid:\s*"([0-9A-F]{16})"', text[start:i + 1])
+                    if block:
+                        result.add(block.group(1))
+                    start = None
+            elif c == ']' and depth == 1:
+                break
+            i += 1
+    return result
+
 
 def external_ids():
     result = {GROUP}
@@ -226,6 +262,8 @@ def validate(doc, external):
     return (dump(doc) + '\n').encode('utf-8')
 
 def render():
+    bad_ext = EXT_DEPS - quest_ids()
+    assert not bad_ext, '外部前置不是任务 id（多半抄成了 task/reward id）: ' + str(sorted(bad_ext))
     ids = allocate(get_keys(), external_ids())
     group_doc = (QUESTS / 'chapter_groups.snbt').read_text(encoding='utf-8-sig')
     if GROUP not in re.findall(r'id:\s*"([0-9A-F]{16})"', group_doc):

@@ -17,7 +17,7 @@
     "task/sell_magic/check": "39BAB6A74863A87E"
   },
   "order_index": 30,
-  "output_sha256": "da7d62e5793d30e748cfa16fd30e67f708f068f47dad321713140f0a05fd6ae7",
+  "output_sha256": "dba66c9697a7d732e405d1516171d25c5343cfdaae6ce51f481fda351dcebfef",
   "salt": "society-aspect-bridge-chapter-v1",
   "schema": 1
 }
