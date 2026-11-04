@@ -931,11 +931,66 @@ QUESTS = [
             ("配合 QIO 与量子传送器，整个基地的气体物流都能进 AE2。",
              "Together with QIO and Entangloporters, your whole base's gas logistics can live inside AE2."),
         ],
-        icon="appliedmekanistics:chemical_storage_cell_1k",
+        icon="appmek:chemical_storage_cell_1k",
         x=2.5, y=-5.0,
         deps=["separator"],
         tasks=[{"type": "checkmark", "title": ("我已了解气体进 AE2 的方式", "I understand how gasses enter AE2")}],
         rewards=cog(16),
+    ),
+
+    # ---------------- 2026-11-03 深度融合补锁（A–D）对应的三个新任务 ----------------
+    dict(
+        key="steel_ebf",
+        title=("MEK 钢必须过电弧炉", "MEK Steel Must Go Through the EBF"),
+        desc=[
+            ("MEK 的钢尘（铁尘+碳，灌注机产物）原来用普通熔炉就能烧成钢锭，绕过了格雷科技的电弧炉。现在这条路已经拆掉。",
+             "MEK steel dust used to smelt in any furnace, skipping the GregTech Electric Blast Furnace. That path is now removed."),
+            ("钢锭只能用 &dGT 电弧炉（EBF，1000K）&r 烧：钢外壳居中位置也换成了 &bGT MV 电子电路&r。",
+             "Steel ingots now require the &dGT EBF (1000K)&r; the Steel Casing's center slot is now a &bGT MV Circuit&r."),
+            ("所以 MEK 中后期机器的实际门槛 = MV 电弧炉时代，和 GT 进度对齐。",
+             "So the real gate for mid/late Mekanism machines = the MV-era EBF, aligned with GT progression."),
+        ],
+        icon="gtceu:mv_machine_casing",
+        x=-2.5, y=-2.5,
+        deps=["casing"],
+        tasks=[{"type": "checkmark", "title": ("我已确认 MEK 钢走 EBF", "I confirmed MEK steel goes through the EBF")}],
+        rewards=cog(8),
+    ),
+    dict(
+        key="digital_miner",
+        title=("数字矿机：EV 门槛", "Digital Miner: EV Gate"),
+        desc=[
+            ("数字矿机原来只要 &71 个基础电路&r——LV 时代就能掏整块区块，直接跳过 GT 矿脉和矿石处理。",
+             "The Digital Miner used to cost just &71 basic circuit&r — chunk-mining at LV, skipping GT veins and ore processing entirely."),
+            ("现在合成需要 &bGT EV 微处理器&r（原终极电路位）+ &6Create 精密构件 ×2&r。",
+             "It now requires the &bGT EV Microprocessor&r (in the Ultimate Circuit slot) plus &62 Create Precision Mechanisms&r."),
+            ("EV 之前，请老老实实跑 GT 矿脉 + GregMek 双线处理；矿脉章节有地图和指示矿说明。",
+             "Before EV, work the GT veins and the GregMek dual processing chains; see the Ore Generation chapter for surface indicators."),
+        ],
+        icon="mekanism:digital_miner",
+        x=12.5, y=-7.5,
+        deps=["ultimate_circuit"],
+        tasks=[{"type": "item", "item": "mekanism:digital_miner"}],
+        rewards=cog(16),
+    ),
+    dict(
+        key="power_lock",
+        title=("发电也要 GT 电路", "Power Generation Needs GT Circuits"),
+        desc=[
+            ("MEK 全家桶发电机的入门件被整体上税：",
+             "Every entry-level Mekanism generator now pays a GT tax:"),
+            ("燃气发电机：灌注合金×4 → &bGT MV 电子电路×4&r；风力 / 生物发电机：基础电路 → &bGT MV 电子电路&r；",
+             "Gas-Burning: Infused Alloy×4 → &bGT MV Circuits×4&r; Wind / Bio: basic circuit → &bGT MV Circuit&r;"),
+            ("太阳能 / 高级太阳能：灌注合金 → &bGT MV 电子电路&r；加热发电机：熔炉 → &bLV 微处理器&r；电解分离器：铁锭 → &6Create 精密构件&r。",
+             "Solar / Advanced Solar: Infused Alloy → &bGT MV Circuit&r; Heat: furnace → &bLV Microchip&r; Electrolytic Separator: iron → &6Precision Mechanisms&r."),
+            ("乙烯链（生物质→乙烯）因此被推到 MV 之后，不会再出现 LV 白嫖电力。",
+             "The ethene loop (biofuel → ethene) is therefore pushed past MV — no more free power at LV."),
+        ],
+        icon="mekanismgenerators:gas_burning_generator",
+        x=15.0, y=-2.5,
+        deps=["gas_generator"],
+        tasks=[{"type": "checkmark", "title": ("我已了解发电机的 GT 税", "I understand the generator GT tax")}],
+        rewards=cog(8),
     ),
 ]
 
@@ -1011,7 +1066,15 @@ def parse_section_ids(block, section):
 #    否则旧 ID 会错位到别的任务上（玩家进度错乱）。
 OLD_KEY_ORDER = [
     "infuser", "casing", "circuit", "gregmek", "enrichment", "crusher",
-    "smelter", "sawmill", "adv_circuit", "compressor", "separator",
+    "smelter", "sawmill", "adv_circuit", "elite_circuit", "ultimate_circuit", "compressor",
+    "separator", "enriched", "alloy_infused", "alloy_reinforced", "refined_obsidian", "alloy_atomic",
+    "upgrades", "factories", "energy_cube", "cables", "heat_generator", "gas_generator",
+    "solar_wind", "induction", "oxidizer", "chemical_infuser", "prc", "rotary",
+    "thermal_evap", "injection", "purification", "dissolution", "washer_chem", "crystallizer",
+    "centrifuge", "sodium", "laser", "fission", "boiler", "turbine",
+    "fusion", "sps", "antimatter", "atomic_disassembler", "jetpack", "osmium_tools",
+    "mekatool", "modification_station", "modules", "mekasuit", "pressurized_tube", "logistical_sorter",
+    "entangloporter", "qio", "oredictionificator", "appliedmek",
 ]
 
 

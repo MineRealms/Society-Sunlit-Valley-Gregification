@@ -8,7 +8,7 @@
 //   - GTNN 燃料为 GT 材料（lang material.gtceu.rp_1_rocket_fuel 等）→ 流体 id：gtceu:rp_1_rocket_fuel 等
 //   - GCYR 火箭燃料配方（RocketFuelRecipes.java）：
 //       汽油25t/柴油18t/火箭燃料75t/氢10t/氢等离子18t（每 mB 燃烧时长，duration 字段）
-//       EUt 字段 = 所需发动机等级（1=基础 2=先进 3=精英）
+//       GCYR 会把 EUt 转为 GT tier；1/2/3 都是 ULV，必须编码成 32/128/512。
 //
 // 本脚本：
 //   B1 让 GTNN 引擎燃烧 GCYR 燃料（发电）
@@ -20,13 +20,14 @@ ServerEvents.recipes((e) => {
   if (!Platform.isLoaded("gcyr") || !Platform.isLoaded("gtnn")) return;
 
   // ---- B1：GTNN 火箭引擎接受 GCYR 燃料（发电，EUt 负值）----
-  const engineFuels = [
+  let engineFuels = [
     ["gtceu:rocket_fuel", 1, 4],      // 精炼火箭燃料：1mB / 4t
     ["gtceu:gasoline", 4, 3],         // 汽油（≈RP-1）：4mB / 3t
     ["gtceu:diesel", 3, 3],           // 柴油：3mB / 3t
     ["mekanism:hydrogen", 8, 3],      // Mek 氢（低密度）：8mB / 3t
   ];
   engineFuels.forEach(([fluid, amount, duration]) => {
+    if (fluid.startsWith('mekanism:') && !Platform.isLoaded('mekanism')) return;
     e.recipes.gtceu.rocket_engine("kubejs:rocket_engine_" + fluid.split(":")[1])
       .inputFluids(Fluid.of(fluid, amount))
       .duration(duration)
@@ -34,8 +35,9 @@ ServerEvents.recipes((e) => {
   });
 
   // ---- B2：GTNN 高级燃料驱动 GCYR 火箭 ----
-  // duration = 每 mB 燃烧时长（越高越省燃料）；EUt = 最低发动机等级
-  const rocketFuels = [
+  // duration 参与GCYR耗油公式，不是简单的每mB燃烧秒数；tier需编码成GT电压。
+  let tierVoltage = [0, 32, 128, 512];
+  let rocketFuels = [
     ["gtceu:rp_1_rocket_fuel", 50, 1],                     // RP-1（煤油系）
     ["gtceu:dense_hydrazine_mixed_fuel", 60, 2],           // 稠密肼混合燃料
     ["gtceu:udmh_rocket_fuel", 90, 2],                     // UDMH
@@ -45,6 +47,6 @@ ServerEvents.recipes((e) => {
     e.recipes.gcyr.rocket_fuel("kubejs:rocket_fuel_" + fluid.split(":")[1])
       .inputFluids(Fluid.of(fluid, 1))
       .duration(duration)
-      .EUt(tier, 1);
+      .EUt(tierVoltage[tier], 1);
   });
 });

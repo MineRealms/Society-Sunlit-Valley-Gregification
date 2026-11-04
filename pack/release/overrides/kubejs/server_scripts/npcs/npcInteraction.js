@@ -36,6 +36,11 @@ const getNpcKey = (customName) => {
     return customName.substring(startIndex + "dialog.npc.".length, endIndex);
 }
 const npcIds = ["easy_npc:humanoid", "easy_npc:humanoid_slim"];
+// SunlitMarket 接入：这些 NPC 右击时先弹一个选择框（看店 / 看市场行情）。
+// 只在装了 sunlitmarket 且脚本注册成功时启用，否则保持原来的直接开店。
+const SV_PAWN_CHOICE = (typeof SunlitMarket !== 'undefined')
+    ? { banker: true, blacksmith: true, fisher: true, market: true, shepherd: true, trader: true }
+    : {};
 
 const handleNpc = (e, npcId, level, server, target, player, item) => {
     let day = global.getDay(level);
@@ -179,6 +184,10 @@ const handleNpc = (e, npcId, level, server, target, player, item) => {
                     if (Number(npcData.friendship) >= 500) {
                         server.runCommandSilent(`openshop ${player.username} wise_oak`)
                     }
+                } else if (SV_PAWN_CHOICE[String(npcId)]) {
+                    // SunlitMarket 接入：先让玩家选"看店 / 看行情"，行情面板是
+                    // /sunlitmarket chart（已降到权限 0，dialog 选项能以玩家身份执行）。
+                    server.runCommandSilent(`dialog ${player.getUuid()} show ${player.username} sunlitmarket_${npcId}_choice`)
                 } else {
                     server.runCommandSilent(`openshop ${player.username} ${npcId}`)
                 }

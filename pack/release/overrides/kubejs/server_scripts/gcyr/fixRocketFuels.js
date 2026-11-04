@@ -1,29 +1,40 @@
 // priority: 0
-// ============================================================
-// GCYR 汽油/柴油火箭燃料修复
-//
-// 事实依据（反编译核对 + 服务器日志）：
-//   - GCYR 0.2.9 RocketFuelRecipes.java 用 EUt(0) 注册燃料配方：
-//       gasoline: 1mB / 25t   diesel: 1mB / 18t   （rocket_fuel/hydrogen 等用 EUt≥1，正常注册）
-//   - GTCEu 7.5.x 拒绝 EUt=0 的配方（日志：EUt can't be explicitly set to 0, id: gcyr:gasoline / gcyr:diesel）
-//     → 这两条配方未注册 → RocketEntity 的燃料检查（按 ROCKET_FUEL_RECIPES 匹配流体）
-//       不接受汽油/柴油 → 火箭无法使用它们
-//   - EUt 字段含义 = 所需发动机等级（见 gtnnLinks.js 的核对结论）
-//
-// 修复：以 EUt(1,1)（基础发动机级）重新注册，duration 与原值一致
-// ============================================================
-console.info("[GCYR-FUEL-FIX] fixRocketFuels.js loaded");
-
-ServerEvents.recipes((e) => {
-  if (!Platform.isLoaded("gcyr")) return;
-
-  e.recipes.gcyr.rocket_fuel("kubejs:gcyr_fuel_gasoline")
-    .inputFluids(Fluid.of("gtceu:gasoline", 1))
-    .duration(25)
-    .EUt(1, 1);
-
-  e.recipes.gcyr.rocket_fuel("kubejs:gcyr_fuel_diesel")
-    .inputFluids(Fluid.of("gtceu:diesel", 1))
-    .duration(18)
-    .EUt(1, 1);
-});
+// GCYR 0.2.9 reads getRecipeEUtTier(recipe), not the literal EUt value.
+// Engine tiers BASIC/ADVANCED/ELITE=1/2/3 therefore encode as 32/128/512 V.
+// These voltages are metadata for fuel eligibility; rockets do not consume EU.
+ServerEvents.recipes(e => {
+  if (!Platform.isLoaded('gcyr') || !Platform.isLoaded('gtceu')) return
+  let fuels = [
+    ['gasoline', 'gtceu:gasoline', 25, 32, 'kubejs:gcyr_fuel_gasoline'],
+    ['diesel', 'gtceu:diesel', 18, 32, 'kubejs:gcyr_fuel_diesel'],
+    ['rocket_fuel', 'gtceu:rocket_fuel', 75, 32, 'gcyr:rocket_fuel'],
+    ['hydrogen', 'gtceu:hydrogen', 10, 32, 'gcyr:hydrogen'],
+    ['hydrogen_plasma', 'gtceu:hydrogen_plasma', 18, 512, 'gcyr:hydrogen_plasma']
+  ]
+  fuels.forEach(([path, fluid, duration, voltage, id]) => {
+    e.remove({id: 'gcyr:rocket_fuel/' + path})
+    e.remove({id: 'gcyr:' + path})
+    e.recipes.gcyr.rocket_fuel(id)
+      .inputFluids(Fluid.of(fluid, 1))
+      .duration(duration)
+      .EUt(voltage, 1)
+  })
+  // Pollution registers its two magic propellants without a tier (ULV = any rocket), although
+  // both burn more efficiently than GT rocket fuel. Gate by where they can first be produced:
+  // infernal blaze (HV production) -> advanced engine, dragon pulse (IV production) -> elite.
+  if (Platform.isLoaded('pollution')) {
+    let magic = [
+      ['infernal_blaze_propellant', 80, 128],
+      ['dragon_pulse_fuel', 160, 512]
+    ]
+    magic.forEach(([path, duration, voltage]) => {
+      let id = 'pollution:rocket_fuel/gcyr_rocket_fuel/' + path
+      e.remove({id: id})
+      e.recipes.gcyr.rocket_fuel('pollution:gcyr_rocket_fuel/' + path)
+        .inputFluids(Fluid.of('pollution:' + path, 1))
+        .duration(duration)
+        .EUt(voltage, 1)
+    })
+  }
+  console.info('[GCYR-FUEL-FIX] native fuel tiers normalized; pair with Sunlit Industry Compat for per-rocket validation')
+})

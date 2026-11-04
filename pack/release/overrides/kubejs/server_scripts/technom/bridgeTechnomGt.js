@@ -44,7 +44,7 @@ ServerEvents.recipes((e) => {
 
   // ---- 神秘术士芯（终局）：GT 次世代电路组装（把终局机卡在 GT HV 之后）----
   e.recipes.gtceu.assembler("technom:compat/technoturge_core")
-    .itemInputs("technom:energized_wand_core", "gtceu:advanced_electronic_circuit", "#forge:ingots/thaumium")
+    .itemInputs("technom:energized_wand_core", "gtceu:advanced_integrated_circuit", "#forge:ingots/thaumium")
     .itemOutputs("technom:technoturge_core")
     .duration(200)
     .EUt(480);
