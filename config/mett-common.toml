@@ -1,0 +1,17 @@
+
+#Compressed essentia jars
+[jars]
+	#Enable the compressed and x2 compressed jars
+	compressedJars = true
+	#Enable the extralarge jar
+	extralargeJar = true
+	#Capacity of the compressed jar
+	#Range: 1 ~ 1000000000
+	compressedJarCapacity = 512
+	#Capacity of the x2 compressed jar
+	#Range: 1 ~ 1000000000
+	x2CompressedJarCapacity = 4096
+	#Capacity of the extralarge jar
+	#Range: 1 ~ 1000000000
+	extralargeJarCapacity = 1000000000
+

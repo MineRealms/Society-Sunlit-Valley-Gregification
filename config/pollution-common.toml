@@ -8,7 +8,7 @@
 	#Multiplier applied to multiblock muffler hatch pollution output.
 	#Range: 0.0 ~ 1000.0
 	mufflerPollutionMultiplier = 1.0
-	#Fraction of the chunk pollution that is scrubbed per TC4R flux consumed.
+	#TC4R flux scrubbed per operation, scaled by the scrubber machine tier.
 	#Range: 0.0 ~ 1.0
 	fluxScrubberMultiplier = 0.002
 	#Natural pollution decay per tick and per polluted chunk.
@@ -41,4 +41,56 @@
 	#Base flux quanta consumed per operation by the flux promoted fuel cell.
 	#Range: 0.0 ~ 100.0
 	fluxFuelCellFluxPerTick = 0.005
+
+#Underground portal ritual
+[world]
+	portalOriginDimension = "minecraft:overworld"
+	allowPortalsInOtherDimensions = false
+	#If false, arrival portals need another diamond to enable return travel.
+	shouldReturnPortalBeUsable = true
+	#Reject rituals outside the destination world border; checks every 100 instead of 20 ticks.
+	checkPortalDestination = false
+
+#Thaumcraft warp events
+[warp]
+	#Enable Pollution warp events driven by the player's TC4R warp.
+	enableWarpEvents = true
+	#Allow the countdown bomb warp event to schedule a delayed explosion.
+	enableCountdownBomb = true
+	#Ticks between warp event rolls for each player.
+	#Range: 20 ~ 12000
+	warpEventIntervalTicks = 200
+	#Fuse length of the countdown bomb warp event.
+	#Range: 20 ~ 1200
+	countdownBombTicks = 200
+
+	[warp.events]
+		blind = true
+		nausea = true
+		poison = true
+		wither = true
+		weakness = true
+		jump = true
+		wind = true
+		blood = true
+		lightning = true
+		obsidian = true
+		mushrooms = true
+		fake_explosion = true
+		fake_rain = true
+		rain = true
+		junk = true
+		blink = true
+		swamp = true
+		countdown_bomb = true
+		wither_rose = true
+		fall = true
+		inventory_scramble = true
+		zombie_siege = true
+
+#Thaumic industrial infusion (TC recipe whitelist converter)
+[thaumic_industrial]
+	#Additional Thaumcraft result item ids allowed for industrial infusion conversion
+	#(the built-in mystic-material whitelist is always active).
+	extraIndustrialWhitelist = []
 

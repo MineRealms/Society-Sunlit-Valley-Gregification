@@ -44,6 +44,28 @@
         "value": 1
       }
     },
+    "thaumcraft:aura_revealing_suppression": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "me:width_scale": {
+      "enabled": false,
+      "min": {
+        "default": 0.1,
+        "value": 0.1
+      },
+      "max": {
+        "default": 2,
+        "value": 2
+      }
+    },
     "elixirum:generic.venenum_mastery": {
       "enabled": false,
       "min": {
@@ -86,6 +108,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "me:safe_fall_distance": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "elixirum:generic.fortuna_resistance": {
@@ -759,6 +792,17 @@
         "value": 100
       }
     },
+    "thaumictinkerer:block_break_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell_type_wololo": {
       "enabled": false,
       "min": {
@@ -845,6 +889,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "me:block_interaction_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
       }
     },
     "minecraft:generic.attack_damage": {
@@ -979,6 +1034,17 @@
         "value": 1
       }
     },
+    "thaumcraft:focus_cooldown_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell_type_wither_skull": {
       "enabled": false,
       "min": {
@@ -1056,6 +1122,17 @@
         "value": 100
       }
     },
+    "me:fall_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "attributeslib:arrow_damage": {
       "enabled": false,
       "min": {
@@ -1087,6 +1164,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "me:climbing_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
       }
     },
     "runiclib:generic.vulnerability_multiplier": {
@@ -1452,6 +1540,17 @@
         "value": 100
       }
     },
+    "me:entity_interaction_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/wall_of_fire": {
       "enabled": false,
       "min": {
@@ -1637,6 +1736,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "forbidden_magic:block_break_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "additional_attributes:innate_spell/irons_spellbooks/spectral_hammer": {
@@ -1923,6 +2033,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "me:mining_efficiency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "shippingbin:sell_multiplier": {
@@ -2596,6 +2717,17 @@
         "value": 100
       }
     },
+    "thaumcraft:runic_recharge_delay_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell_type_gluttony": {
       "enabled": false,
       "min": {
@@ -2638,6 +2770,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "me:movement_efficiency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "minecraft:friction_modifier": {
@@ -2904,6 +3047,17 @@
         "value": 1000
       }
     },
+    "thaumcraft:focus_damage_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "elixirum:generic.anima_resistance": {
       "enabled": false,
       "min": {
@@ -2957,6 +3111,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "thaumcraft:focus_damage_bonus": {
+      "enabled": false,
+      "min": {
+        "default": -1000000,
+        "value": -1000000
+      },
+      "max": {
+        "default": 1000000,
+        "value": 1000000
       }
     },
     "irons_spellbooks:spell_power": {
@@ -3102,6 +3267,17 @@
         "value": 1
       }
     },
+    "me:burning_time": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "forge:nametag_distance": {
       "enabled": false,
       "min": {
@@ -3221,6 +3397,28 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "thaumcraft:aura_revealing": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "thaumcraft:goggles_overlay": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "attributeslib:arrow_velocity": {
@@ -3454,6 +3652,17 @@
         "value": 1
       }
     },
+    "me:sneaking_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "shippingbin:meat_sell_multiplier": {
       "enabled": false,
       "min": {
@@ -3474,6 +3683,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "thaumcraft:wand_vis_cost_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "elixirum:generic.anima_mastery": {
@@ -3509,6 +3729,17 @@
         "value": 100
       }
     },
+    "thaumicbases:block_break_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:generic.attack_speed": {
       "enabled": true,
       "min": {
@@ -3542,6 +3773,17 @@
         "value": 100
       }
     },
+    "me:water_movement_efficiency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "attributeslib:prot_pierce": {
       "enabled": false,
       "min": {
@@ -3553,6 +3795,17 @@
         "value": 34
       }
     },
+    "me:delvers_fear_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "value": 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      }
+    },
     "additional_attributes:innate_spell/irons_spellbooks/blood_needles": {
       "enabled": false,
       "min": {
@@ -3562,6 +3815,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "thaumcraft:goggles_overlay_suppression": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "additional_attributes:spell_type_oakskin": {
@@ -3617,6 +3881,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "me:powdered_snow_immunity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "irons_spellbooks:max_mana": {
@@ -3738,6 +4013,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "thaumcraft:runic_shield_capacity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2147483647,
+        "value": 2147483647
       }
     },
     "tconstruct:generic.chrysophilite": {
@@ -4048,6 +4334,17 @@
         "value": 1000000
       }
     },
+    "me:scale": {
+      "enabled": false,
+      "min": {
+        "default": 0.0625,
+        "value": 0.0625
+      },
+      "max": {
+        "default": 16,
+        "value": 16
+      }
+    },
     "irons_spellbooks:blood_spell_power": {
       "enabled": false,
       "min": {
@@ -4059,6 +4356,17 @@
         "value": 100
       }
     },
+    "thaumcraft:runic_recharge_rate": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "additional_attributes:spell_type_summon_horse": {
       "enabled": false,
       "min": {
@@ -4068,6 +4376,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "me:detection_range": {
+      "enabled": false,
+      "min": {
+        "default": 0.1,
+        "value": 0.1
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "additional_attributes:spell_type_counterspell": {

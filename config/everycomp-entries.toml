@@ -122,6 +122,37 @@
 			rainbow = true
 			alfheim_dream = true
 
+		[types.leaves_type.me]
+			lebethron = true
+			berry_holly = true
+			dry_larch = true
+			flowering_mallorn = true
+			orange_maple = true
+			red_maple = true
+			yellow_maple = true
+			dry_pine = true
+			pale_oak = true
+			aspen = true
+			beech = true
+			larch = true
+			chestnut = true
+			fir = true
+			holly = true
+			mallorn = true
+			maple = true
+			mirkwood = true
+			palm = true
+			pine = true
+			black_pine = true
+			white_spruce = true
+			willow = true
+
+		[types.leaves_type.thaumicbases]
+			golden_oak = true
+			peaceful = true
+			nether = true
+			ender = true
+
 	[types.wood_type]
 
 		[types.wood_type.autumnity]
@@ -220,6 +251,35 @@
 			rainbowwood = true
 			nutmeg = true
 			coconut = true
+
+		[types.wood_type.me]
+			pale_oak = true
+			aspen = true
+			beech = true
+			deadwood = true
+			larch = true
+			black_lebethron = true
+			white_lebethron = true
+			chestnut = true
+			fir = true
+			holly = true
+			mallorn = true
+			maple = true
+			silver_maple = true
+			mirkwood = true
+			palm = true
+			white_palm = true
+			pine = true
+			black_pine = true
+			white_spruce = true
+			willow = true
+			rotten = true
+			scorched = true
+			dark_mushroom = true
+			gray_mushroom = true
+
+		[types.wood_type.thaumicbases]
+			ender = true
 
 	[types.cake]
 

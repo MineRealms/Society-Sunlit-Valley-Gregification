@@ -1,0 +1,10 @@
+
+[general]
+	easy_recipes = false
+	allow_environment_effects = true
+	allow_multiple_levels = true
+	add_warp_effects = true
+	allow_world_hole = false
+	#Allow events that can damage terrain, buildings, decorations, containers or farmland. Applies after a data reload or world restart.
+	allow_destructive_events = true
+

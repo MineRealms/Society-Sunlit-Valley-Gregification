@@ -1,0 +1,117 @@
+
+[teams]
+	sharedAlignment = true
+	#PERSONAL keeps wanted records on the player; TEAM uses the FTB party owner. Switching scope preserves both record sets without copying them.
+	#Allowed Values: PERSONAL, TEAM
+	wantedScope = "PERSONAL"
+
+[trade]
+	#Range: -100000 ~ 100000
+	refuseBelow = -100
+	preventSameQuoteArbitrage = true
+	#Stocked shelves price by inventory: buying drains the shelf and raises prices, selling refills it and lowers them. Unlimited offers keep fixed prices.
+	dynamicPricing = true
+	#Range: 0.0 ~ 2.0
+	inventoryElasticity = 0.2
+	#Range: 0.05 ~ 4.0
+	priceMultiplierMin = 0.5
+	#Range: 0.1 ~ 8.0
+	priceMultiplierMax = 2.0
+	#Merchant shelf may be filled to this multiple of the restock level before further sales stop lowering prices.
+	#Range: 1.0 ~ 16.0
+	sellOverstockCapacity = 3.0
+	#Most lots one owner (player or FTB party) can contribute to a single index candle's weight.
+	#Volume beyond the cap still shows on the chart but cannot move a settlement price.
+	#Range: 0 ~ 1000000
+	indexOwnerCapPerCandle = 64
+
+[counter]
+	enabled = true
+	#Range: 1 ~ 32
+	range = 8
+	#Range: 20 ~ 24000
+	intervalTicks = 200
+	#Range: 20 ~ 240000
+	lifetimeTicks = 1200
+	#Range: 1 ~ 12
+	maxRequests = 3
+	#Range: 20 ~ 240000
+	npcCooldownTicks = 1200
+	#Range: 1 ~ 1000
+	npcDailyRequests = 12
+	#Range: 1 ~ 1000000
+	fairTradeRewardDivisor = 200
+	#Range: 0.0 ~ 1.0
+	haggleBaseChance = 0.5
+
+[crime]
+	confiscation = true
+	pricePenalty = true
+	enforcement = true
+	#Range: 0 ~ 1000
+	heatDecayPerDay = 18
+	#Range: 0 ~ 10000
+	inspectionThreshold = 20
+	#Range: 20 ~ 240000
+	inspectionCooldownTicks = 1200
+	#Range: 1 ~ 32
+	inspectionRange = 8
+	#Range: 1 ~ 2304
+	confiscationItemLimit = 64
+	#Zero disables fines.
+	#Range: 0 ~ 1000000
+	finePerTier = 0
+	#Range: 0.0 ~ 1.0
+	pricePenaltyPerWanted = 0.005
+
+[region]
+	#Range: 1.0 ~ 100000.0
+	radius = 512.0
+
+[consequences]
+	inspectOwnedCounter = true
+	bribeEnabled = false
+	#Range: 1 ~ 10000000
+	bribePrice = 100
+	#Range: 1 ~ 10000
+	bribeWantedReduction = 10
+	#Range: 0 ~ 10000
+	haggleFailureAlignmentLoss = 1
+	#Range: 0 ~ 10000
+	stolenAlignmentLoss = 2
+	#Range: 0 ~ 10000
+	contrabandWantedPerTier = 5
+	#Explicit opt-in; territorial rewards need valid dimension/region data.
+	killAlignmentEnabled = false
+	#Range: 0 ~ 10000
+	friendlyKillLoss = 25
+	#Range: 0 ~ 10000
+	regionalEnemyKillGain = 5
+
+[treasury]
+	#Pawn cash (C) pays the acceptance bin and shelf buybacks; the issuance reserve (R) refills C and funds NPC demand.
+	#Disabling returns to the old behaviour where every system payout is minted from nothing.
+	enabled = true
+	#Seeded once, when a world first creates its treasury.
+	#Range: 0 ~ 2305843009213693951
+	initialCash = 200000
+	#Range: 0 ~ 2305843009213693951
+	initialReserve = 5000000
+	#Each economy day the reserve tops pawn cash up toward this level.
+	#Range: 0 ~ 2305843009213693951
+	cashTarget = 200000
+	#Pawn cash above this level is swept back into the reserve each economy day.
+	#Range: 0 ~ 2305843009213693951
+	cashCeiling = 400000
+	#Range: 0 ~ 2305843009213693951
+	dailyRefill = 100000
+	#Spur the NPC economy may pay players per economy day for goods it consumes.
+	#Range: 0 ~ 2305843009213693951
+	npcDailyBudget = 50000
+
+[integration]
+	#Starting alignment granted to a player's own Middle-earth faction on first login.
+	#Read from the Middle-earth player data (me:gondor, me:rohan, ...); 0 disables it.
+	#Range: 0 ~ 1000
+	meFactionSeedAlignment = 50
+

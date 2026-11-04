@@ -1,0 +1,41 @@
+
+#Player x faction alignment. Replaces the old flat reputation value.
+[alignment]
+	#Master switch. When false every faction reads as 0.
+	enabled = true
+	#Lower clamp.
+	#Range: -100000 ~ 0
+	min = -1000
+	#Upper clamp. The pack runs a slow curve, so this is deliberately high.
+	#Range: 1 ~ 100000
+	max = 3000
+	#Drift alignment back toward 0 once per in-game day.
+	decayEnabled = true
+	#Points moved toward 0 per day (sign preserved).
+	#Range: 0 ~ 1000
+	decayPerDay = 1
+	#Wanted level lost per day.
+	#Range: 0 ~ 1000
+	wantedDecayPerDay = 2
+	#Upper clamp for wanted level.
+	#Range: 1 ~ 10000
+	wantedMax = 100
+
+#Cross-faction consequences.
+[diplomacy]
+	#Gaining with faction A costs you with A's enemies.
+	doubleDropEnabled = true
+	#Fraction of the gain subtracted from each hostile faction.
+	#Range: 0.0 ~ 2.0
+	doubleDropRatio = 0.5
+	#Read data/me/me/faction/*.json for the hostile table. Falls back to empty when Middle-earth is absent.
+	useMiddleEarthFactionTable = true
+
+#Price ladder. Each entry is "threshold|buyMultiplier|sellMultiplier|title".
+#The highest threshold that is <= the player's alignment wins.
+#buyMultiplier multiplies what the player PAYS (1.35 = 35% surcharge).
+#sellMultiplier multiplies what the player RECEIVES (0.85 = 15% less).
+[price]
+	#Ladder entries, sorted ascending by threshold at load time.
+	tiers = ["-1000|1.50|0.70|死敌", "-500|1.35|0.85|敌对", "-100|1.20|0.90|冷淡", "0|1.00|1.00|中立", "100|0.95|1.05|常客", "500|0.90|1.10|盟友", "1000|0.85|1.15|挚友", "3000|0.80|1.20|传奇"]
+

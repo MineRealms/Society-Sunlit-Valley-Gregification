@@ -1,0 +1,17 @@
+
+#The configuration for the creatures of the mod
+[creatures]
+	#Ticks the taint pig waits before eating another taint block (20 ticks = 1 second)
+	#Range: 0 ~ 72000
+	taint_eat_cooldown = 3
+	#Weight of the ore an ore pig was infused with in its nugget roll
+	#Range: 0.0 ~ 1000.0
+	ore_pig_main_weight = 1.0
+	#Weight of every other ore in an ore pig's nugget roll
+	#Range: 0.0 ~ 1000.0
+	ore_pig_other_weight = 1.0
+	#Allowed forge:ores/<material> suffixes for ore pig drops. Use ["*"] for the legacy unrestricted pool; [] disables drops.
+	ore_pig_materials = ["iron", "copper", "tin", "lead", "silver", "gold", "zinc"]
+	#When a material has no nugget, allow one whole dust instead. Disable in progression packs.
+	ore_pig_dust_fallback = false
+

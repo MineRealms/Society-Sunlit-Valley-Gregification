@@ -1,0 +1,50 @@
+
+[energy]
+	#FE per GT EU used by Technomancy machines. Read once at startup; keep it equal to
+	#GTCEu's compat.energy ratios so FE/EU conversion loops cannot create energy.
+	#Range: 1 ~ 1024
+	fePerEu = 4
+
+[balance]
+	#Multiplier on the energy one unit of essentia is worth in a dynamo.
+	#A faithful 1:1 port of the 1.7.10 values is 1.0, but it is exploitable: one unit of
+	#ignis or potentia is worth 64000 Q, and Thaumcraft's coal carries potentia 2 plus
+	#ignis 2, so putting coal through a crucible yields four units worth 256000 Q against
+	#roughly 64000 Q from simply burning it - a renewable fourfold gain. The default of
+	#0.25 makes the two routes break even. Dynamo output rate is unaffected; only how
+	#long a unit burns changes.
+	#Range: 0.0 ~ 16.0
+	essentiaFuelScale = 0.25
+	#Energy the condenser spends per unit of essentia it creates, in Q.
+	#Hard constraint: this must stay strictly greater than what a dynamo yields from
+	#burning one unit of the aspect the condenser produces, or the pair is a perpetual
+	#motion machine. The original 1000000 left a 15.6x margin at 1:1 fuel value; 200000
+	#keeps a 12.5x margin at the default fuel scale without the multi-hour wait.
+	#Range: 1 ~ 9223372036854775807
+	condenserCostQ = 200000
+	#Energy the eldritch consumer spends per object it destroys, in Q.
+	#One charge is paid for each item entity, mob or block it consumes. The default is
+	#the original 20000; the buffer holds fifty charges, also as in 1.7.10.
+	#Range: 1 ~ 9223372036854775807
+	eldritchConsumerCostQ = 20000
+	#Energy the Botania mana fabricator spends per 100 mana, in Q.
+	#1.7.10 charged 1000000 per operation; the 1.12 fork cut it to 5000, which is a
+	#rebalance by that fork's author and not upstream consensus, so the default stays
+	#at the original. Set it to 5000 to play with the fork's cheaper rate.
+	#Range: 1 ~ 9223372036854775807
+	manaFabricatorCostQ = 1000000
+	#Energy the biome morpher spends per biome column it converts, in Q.
+	#The original 20000 is what its 800000 Q buffer buys forty conversions with.
+	#Range: 1 ~ 9223372036854775807
+	biomeMorpherCostQ = 20000
+
+[world]
+	#Let villagers carry the three treasures, which the Extraction ritual then takes.
+	#Off by default, as in 1.7.10: the original gated this behind a second option,
+	#treasureSafeguard, that shipped false, so its treasures flag ended up false too.
+	#Turning this on makes one villager in fifty a carrier. Killing an unsealed
+	#carrier destroys the treasure and sets off its revenge - a radius-30 explosion
+	#for the fire gem - while killing one the sealing device has marked drops the
+	#treasure instead. Both are a reason to keep this off on a public server.
+	treasures = false
+
