@@ -1,7 +1,14 @@
 {
-  "chapter_sha256": "faed78558b6f4b50d63ec9d151e2b1039907a4c6355e3564d328dfcc4febcb2e",
+  "chapter_sha256": "961d6ef029b3d84fcecf8ff88b906083f819ded58845ab4786b9d31974f9fbb4",
   "ids": {
     "chapter": "7BB658FE0A01DB8B",
+    "quest/choc_bar": "40212D5ADA81F83D",
+    "quest/choc_block": "4C628ADB1D6E2937",
+    "quest/choc_chicken": "389CC027DA3F15DE",
+    "quest/choc_cow": "1C02CC85EA53538C",
+    "quest/choc_cream": "78FA59E330C02E1F",
+    "quest/choc_jelly": "283BDCA7B13BCDE8",
+    "quest/choc_milk": "7F24309BBE4C5ED5",
     "quest/iso_alchemite": "01AF74F91080524F",
     "quest/iso_blood_infuser": "48F817D6F452222B",
     "quest/iso_corpse_effigy": "5C4FB1314BEDC781",
@@ -34,6 +41,13 @@
     "quest/nm_intro": "3B6070471B18D87A",
     "quest/nm_matrix": "4A7BE2C0CF200045",
     "quest/nm_unattuned": "3E3D991C5FEB9578",
+    "quest/ta_cake": "568B0D48B9141B25",
+    "quest/ta_puriflower": "23271957047B8D02",
+    "quest/ta_salt": "2C006DCE8D221C52",
+    "quest/ta_vis_pod": "65A181CE7BE7AAD4",
+    "quest/ta_vis_seeds": "2C8C1FECC213FE06",
+    "quest/ta_void_fruit": "4E9A074FC63A31FF",
+    "quest/ta_void_seed": "1F18EDE22CB6BCA5",
     "quest/wt_amulet": "4522517F1F055F4F",
     "quest/wt_cleanser": "5CC1674F08BB954A",
     "quest/wt_cleanser_minor": "150F48473B9F615A",
@@ -44,6 +58,12 @@
     "quest/wt_something": "24EB413ADB5212F8",
     "quest/wt_vanish": "1AD11A5031CD1C81",
     "quest/wt_ward_amulet": "4141AAF8357CD0DC",
+    "reward/choc_bar/cog": "796857A876E2E51B",
+    "reward/choc_block/cog": "5C9847B32E75FFC0",
+    "reward/choc_chicken/cog": "1A14A72F2A817122",
+    "reward/choc_cream/cog": "71C15C643EC130B4",
+    "reward/choc_jelly/cog": "7979E2D04970E290",
+    "reward/choc_milk/cog": "11C5E71E1576918D",
     "reward/iso_alchemite/cog": "0A7A00CEAD257E84",
     "reward/iso_blood_infuser/cog": "3A7B8899671AB72F",
     "reward/iso_corpse_effigy/cog": "4F07E355D03CB848",
@@ -71,6 +91,12 @@
     "reward/iso_vis_dynamo/cog": "0A06AE520826C179",
     "reward/iso_vortex/cog": "23CA8BCC32E2D538",
     "reward/nm_matrix/cog": "2EB1235EA3EF08D1",
+    "reward/ta_cake/cog": "2C8E54120045CB6A",
+    "reward/ta_puriflower/cog": "113C72D7C70C9D25",
+    "reward/ta_salt/cog": "3A23C1AA125B42EC",
+    "reward/ta_vis_pod/cog": "5CE16EEB5ACC07E4",
+    "reward/ta_void_fruit/cog": "0C143B829537D6F4",
+    "reward/ta_void_seed/cog": "6AB3195855A0EFDD",
     "reward/wt_amulet/cog": "0EA31B0709EC2ACB",
     "reward/wt_cleanser/cog": "620A68CEAF5F5B48",
     "reward/wt_cleanser_minor/cog": "5DBC6C6DD5750C92",
@@ -78,6 +104,13 @@
     "reward/wt_paper/cog": "268CEF17E41DB881",
     "reward/wt_something/cog": "31F41AF0958D8957",
     "reward/wt_ward_amulet/cog": "7422F07C38C41111",
+    "task/choc_bar/item/isorropia:chocolate_bar": "55E7297E77284A7D",
+    "task/choc_block/item/isorropia:chocolate": "0ADE2D42CC00686D",
+    "task/choc_chicken/item/isorropia:gold_egg": "06DBF9C5C1C746B9",
+    "task/choc_cow/check": "01461B306B88C5FF",
+    "task/choc_cream/item/isorropia:chocolate_cream": "127126D935A618FC",
+    "task/choc_jelly/item/isorropia:jelly": "46859F0DA4AB587F",
+    "task/choc_milk/item/isorropia:chocolate_milk_bucket": "5CE0D87AE48B7E2C",
     "task/iso_alchemite/item/isorropia:alchemite": "048319AA59F9D684",
     "task/iso_blood_infuser/item/isorropia:blood_infuser": "217D72FA8049FDC2",
     "task/iso_corpse_effigy/item/isorropia:corpse_effigy": "7475C810D9D59F88",
@@ -114,208 +147,278 @@
     "task/nm_attuned/check": "0836AA6C305E5F85",
     "task/nm_intro/check": "0CCC5D783B015588",
     "task/nm_matrix/item/nodalmechanics:matrix": "02852D2EE0A2EF4D",
+    "task/nm_matrix/item/nodalmechanics:node_matrix": "00F904471BE0286A",
     "task/nm_unattuned/check": "6CA41600D4F2E94C",
+    "task/ta_cake/item/thaumadds:cake": "35B9E1573A8D0148",
+    "task/ta_puriflower/item/thaumadds:puriflower": "59DD652941C64773",
+    "task/ta_salt/item/thaumadds:salt_essence": "224C3A8A1D72CFB6",
+    "task/ta_vis_pod/item/thaumadds:vis_pod": "15FB411C1B8527C5",
+    "task/ta_vis_seeds/check": "6C163F03D2A04D3B",
+    "task/ta_void_fruit/item/thaumadds:void_fruit": "1522F69D6409550F",
+    "task/ta_void_seed/item/thaumadds:void_seed": "757D8B841C645816",
     "task/wt_amulet/item/warptheory:amulet": "71F6815F0DDA95F6",
+    "task/wt_amulet/item/warptheory:purification_talisman": "56CA08639D10B4BA",
     "task/wt_cleanser/item/warptheory:cleanser": "22EBEAF4884DC07C",
+    "task/wt_cleanser/item/warptheory:pure_tear": "1C11973BCBC1E660",
     "task/wt_cleanser_minor/item/warptheory:cleanser_minor": "45E0B625987FB8E7",
+    "task/wt_cleanser_minor/item/warptheory:lesser_pure_tear": "4EB034248B1FC6FB",
     "task/wt_complete/check": "5560EB95724298CD",
     "task/wt_intro/check": "2EC318F009F3C159",
     "task/wt_oblivion/item/warptheory:oblivion_potion": "09DAD6F686862FAA",
+    "task/wt_paper/item/warptheory:litmus_paper": "03FBBD9A6DA61E63",
     "task/wt_paper/item/warptheory:paper": "64F8B8E6A52F3141",
+    "task/wt_something/item/warptheory:eldritch_meat": "4A9632BEC0CED5BE",
     "task/wt_something/item/warptheory:something": "159BCE17B656738E",
     "task/wt_vanish/check": "1AE9D0DB1F957B80",
+    "task/wt_ward_amulet/item/warptheory:portable_shower": "61CA0763AA0417A2",
     "task/wt_ward_amulet/item/warptheory:warp_ward_amulet": "3451240D95DC5A7C"
   },
   "item_evidence": {
     "isorropia:alchemite": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/alchemite.json"
     },
     "isorropia:blood_infuser": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/blood_infuser.json"
     },
+    "isorropia:chocolate": {
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
+      "model": "assets/isorropia/models/item/chocolate.json"
+    },
+    "isorropia:chocolate_bar": {
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
+      "model": "assets/isorropia/models/item/chocolate_bar.json"
+    },
+    "isorropia:chocolate_cow_spawn_egg": {
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
+      "model": "assets/isorropia/models/item/chocolate_cow_spawn_egg.json"
+    },
+    "isorropia:chocolate_cream": {
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
+      "model": "assets/isorropia/models/item/chocolate_cream.json"
+    },
+    "isorropia:chocolate_milk_bucket": {
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
+      "model": "assets/isorropia/models/item/chocolate_milk_bucket.json"
+    },
     "isorropia:corpse_effigy": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/corpse_effigy.json"
     },
     "isorropia:crystal_wand": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/crystal_wand.json"
     },
     "isorropia:dust": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/dust.json"
     },
     "isorropia:essentia_dynamo": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/essentia_dynamo.json"
     },
     "isorropia:ethereal_shard": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/ethereal_shard.json"
     },
     "isorropia:flesh": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/flesh.json"
     },
     "isorropia:focus_animation": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/focus_animation.json"
     },
     "isorropia:focus_containment": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/focus_containment.json"
     },
     "isorropia:focus_disintegration": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/focus_disintegration.json"
     },
     "isorropia:focus_illumination": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/focus_illumination.json"
     },
     "isorropia:focus_liquefaction": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/focus_liquefaction.json"
     },
     "isorropia:gateway": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/gateway.json"
     },
+    "isorropia:gold_egg": {
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
+      "model": "assets/isorropia/models/item/gold_egg.json"
+    },
     "isorropia:golem_powder": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/golem_powder.json"
     },
     "isorropia:jar_soul": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/jar_soul.json"
     },
+    "isorropia:jelly": {
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
+      "model": "assets/isorropia/models/item/jelly.json"
+    },
     "isorropia:lens": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/lens.json"
     },
     "isorropia:lens_air": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/lens_air.json"
     },
     "isorropia:lens_envy": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/lens_envy.json"
     },
     "isorropia:lens_fire": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/lens_fire.json"
     },
     "isorropia:lens_ordo": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/lens_ordo.json"
     },
     "isorropia:node_monitor": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/node_monitor.json"
     },
     "isorropia:portal": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/portal.json"
     },
     "isorropia:recombinator": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/recombinator.json"
     },
     "isorropia:somatic_brain": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/somatic_brain.json"
     },
     "isorropia:soul_beacon": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/soul_beacon.json"
     },
     "isorropia:transduction_amplifier": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/transduction_amplifier.json"
     },
     "isorropia:vis_dynamo": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/vis_dynamo.json"
     },
     "isorropia:void_putty": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/void_putty.json"
     },
     "isorropia:vortex": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/vortex.json"
     },
     "isorropia:vortex_stabilizer": {
-      "jar": "thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar",
+      "jar": "ThaumicHorizons-1.20.1-1.0.5-alpha.jar",
       "model": "assets/isorropia/models/item/vortex_stabilizer.json"
     },
-    "nodalmechanics:matrix": {
-      "jar": "nodalmechanics-1.20.1-forge-1.0.0-dev.jar",
-      "model": "assets/nodalmechanics/models/item/matrix.json"
+    "nodalmechanics:node_matrix": {
+      "jar": "nodal-mechanics-forge-1.0.7-port.0.1.0-20740.jar",
+      "model": "assets/nodalmechanics/models/item/node_matrix.json"
     },
     "numismatics:cog": {
       "jar": "CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
       "model": "assets/numismatics/models/item/cog.json",
       "sha256": "f37d91367b2adecdae67cc27b15fa902584d1241607990809d6388d3c59014fd"
     },
-    "warptheory:amulet": {
-      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
-      "model": "assets/warptheory/models/item/amulet.json"
+    "thaumadds:cake": {
+      "jar": "(59+)神秘领域 Thaumic Additions-1.20.1-0.1.0.jar",
+      "model": "assets/thaumadds/models/item/cake.json"
     },
-    "warptheory:cleanser": {
-      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
-      "model": "assets/warptheory/models/item/cleanser.json"
+    "thaumadds:puriflower": {
+      "jar": "(59+)神秘领域 Thaumic Additions-1.20.1-0.1.0.jar",
+      "model": "assets/thaumadds/models/item/puriflower.json"
     },
-    "warptheory:cleanser_minor": {
-      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
-      "model": "assets/warptheory/models/item/cleanser_minor.json"
+    "thaumadds:salt_essence": {
+      "jar": "(59+)神秘领域 Thaumic Additions-1.20.1-0.1.0.jar",
+      "model": "assets/thaumadds/models/item/salt_essence.json"
+    },
+    "thaumadds:vis_pod": {
+      "jar": "(59+)神秘领域 Thaumic Additions-1.20.1-0.1.0.jar",
+      "model": "assets/thaumadds/models/item/vis_pod.json"
+    },
+    "thaumadds:vis_seeds": {
+      "jar": "(59+)神秘领域 Thaumic Additions-1.20.1-0.1.0.jar",
+      "model": "assets/thaumadds/models/item/vis_seeds.json"
+    },
+    "thaumadds:void_fruit": {
+      "jar": "(59+)神秘领域 Thaumic Additions-1.20.1-0.1.0.jar",
+      "model": "assets/thaumadds/models/item/void_fruit.json"
+    },
+    "thaumadds:void_seed": {
+      "jar": "(59+)神秘领域 Thaumic Additions-1.20.1-0.1.0.jar",
+      "model": "assets/thaumadds/models/item/void_seed.json"
+    },
+    "warptheory:eldritch_meat": {
+      "jar": "warp-theory-forge-1.5.8-GTNH-1.20.1-port.0.1.0-20740.jar",
+      "model": "assets/warptheory/models/item/eldritch_meat.json"
+    },
+    "warptheory:lesser_pure_tear": {
+      "jar": "warp-theory-forge-1.5.8-GTNH-1.20.1-port.0.1.0-20740.jar",
+      "model": "assets/warptheory/models/item/lesser_pure_tear.json"
+    },
+    "warptheory:litmus_paper": {
+      "jar": "warp-theory-forge-1.5.8-GTNH-1.20.1-port.0.1.0-20740.jar",
+      "model": "assets/warptheory/models/item/litmus_paper.json"
     },
     "warptheory:oblivion_potion": {
-      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
+      "jar": "warp-theory-forge-1.5.8-GTNH-1.20.1-port.0.1.0-20740.jar",
       "model": "assets/warptheory/models/item/oblivion_potion.json"
     },
-    "warptheory:paper": {
-      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
-      "model": "assets/warptheory/models/item/paper.json"
+    "warptheory:portable_shower": {
+      "jar": "warp-theory-forge-1.5.8-GTNH-1.20.1-port.0.1.0-20740.jar",
+      "model": "assets/warptheory/models/item/portable_shower.json"
     },
-    "warptheory:something": {
-      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
-      "model": "assets/warptheory/models/item/something.json"
+    "warptheory:pure_tear": {
+      "jar": "warp-theory-forge-1.5.8-GTNH-1.20.1-port.0.1.0-20740.jar",
+      "model": "assets/warptheory/models/item/pure_tear.json"
     },
-    "warptheory:warp_ward_amulet": {
-      "jar": "warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar",
-      "model": "assets/warptheory/models/item/warp_ward_amulet.json"
+    "warptheory:purification_talisman": {
+      "jar": "warp-theory-forge-1.5.8-GTNH-1.20.1-port.0.1.0-20740.jar",
+      "model": "assets/warptheory/models/item/purification_talisman.json"
     }
   },
   "order_index": 22,
   "salt": "thaumicaddons",
   "schema": 2,
   "validation": {
-    "chapter_sha256": "faed78558b6f4b50d63ec9d151e2b1039907a4c6355e3564d328dfcc4febcb2e",
+    "chapter_sha256": "961d6ef029b3d84fcecf8ff88b906083f819ded58845ab4786b9d31974f9fbb4",
     "group": "4A46A5E1358A80A6",
     "layout": {
       "center_bounds": [
-        24,
-        16
+        24.0,
+        26.0
       ],
-      "clusters": 6,
+      "clusters": 8,
       "crossings": 0,
       "edge_node_hits": 0,
-      "edges": 36,
+      "edges": 48,
       "icon_bounds": [
         24.9,
-        16.9
+        26.9
       ],
       "max_edge": 2.828427,
       "min_spacing": 2,
       "overlaps": 0
     },
-    "objectives": 47,
+    "objectives": 61,
     "order_index": 22,
-    "quests": 42,
-    "rewards": 34,
-    "unique_items": 40
+    "quests": 56,
+    "rewards": 46,
+    "unique_items": 54
   }
 }

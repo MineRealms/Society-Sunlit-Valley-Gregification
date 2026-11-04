@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Thaumcraft 扩展（Warptheory / NodalMechanics / Isorropia）FTBQ chapter.
+"""Thaumcraft 扩展（Warptheory / NodalMechanics / Isorropia / ThaumicAdditions）FTBQ chapter.
 
 Run --check for read-only validation; run without arguments to publish.
 Only thaumic_addons.snbt and thaumic_addons_ids.json are generated.
@@ -24,10 +24,23 @@ OUTPUT = QUESTS / 'chapters/thaumic_addons.snbt'
 MAP = TOOLS / 'thaumic_addons_ids.json'
 GROUP = '4A46A5E1358A80A6'
 SALT = 'thaumicaddons'
+def _latest_jar(folder, prefix):
+    """本地移植 mod 的版本号一直在涨，写死文件名会让 --check 莫名失效。
+    按前缀取 mtime 最新的那个 jar；物品校验会兜底发现内容变化。"""
+    cands = sorted(Path(folder).glob(prefix + '*.jar'), key=lambda q: q.stat().st_mtime)
+    assert cands, f'No jar matching {prefix}*.jar in {folder}'
+    return cands[-1]
+
+
 JARS = {
-    'warptheory': Path(r'H:\MinecraftMods\WarpTheory-Unofficial\versions\1.20.1-forge\build\devlibs\warptheory-1.20.1-forge-1.5.8-port.0.1.0.jar'),
-    'nodalmechanics': Path(r'H:\MinecraftMods\NodalMechanics-Unofficial\build\distributions\nodalmechanics-1.20.1-forge-1.0.0-dev.jar'),
-    'isorropia': Path(r'H:\MinecraftMods\Isorropia-1.20.1-wt\multiversion\versions\1.20.1-forge\build\devlibs\thaumic-horizons(Isorropia)-1.20.1-0.1.0-dev.jar'),
+    'warptheory': Path(r'H:\MinecraftMods\tc4r-40-set\1.20.1-forge-20740\warp-theory-forge-1.5.8-GTNH-1.20.1-port.0.1.0-20740.jar'),
+    'nodalmechanics': Path(r'H:\MinecraftMods\tc4r-40-set\1.20.1-forge-20740\nodal-mechanics-forge-1.0.7-port.0.1.0-20740.jar'),
+    'isorropia': _latest_jar(
+        r'H:\MinecraftMods\Isorropia-1.20.1-wt\multiversion\versions\1.20.1-forge\build\libs',
+        'ThaumicHorizons-1.20.1-'),
+    'thaumadds': _latest_jar(
+        r'H:\MinecraftMods\ThaumicAdditions-Port\build\distributions',
+        '(59+)神秘领域 Thaumic Additions-1.20.1-'),
 }
 
 
@@ -145,48 +158,48 @@ def quest(key, title, icon, text, items=(), check=None):
 
 def content():
     # ---- A · 扭曲理论 ----
-    quest('wt_intro', 'A · 扭曲理论：认识扭曲与净化', 'warptheory:cleanser_minor',
+    quest('wt_intro', 'A · 扭曲理论：认识扭曲与净化', 'warptheory:lesser_pure_tear',
           '扭曲理论（Warp Theory）是神秘时代的补充：它把「扭曲」从惩罚变成可研究、可治理的机制。\n本章六区：A/B 扭曲理论，C-F 神秘视界（Thaumic Horizons）。二者都建立在神秘时代研究之上，先完成基础研究再推进。\n任务连线表示教学顺序，不是完整配方树；具体配方、研究要求与数值以 JEI 与神秘表为准。',
           (), check='已阅读扭曲理论与本章导航')
-    quest('wt_paper', '研究笔记：扭曲的记录', 'warptheory:paper',
-          '扭曲理论引入记载扭曲研究的材料与笔记；先取得基础材料，再解锁净化类配方。\n按 JEI 查看其合成与研究前置。',
-          ['warptheory:paper'], )
-    quest('wt_something', '某种东西', 'warptheory:something',
-          '「某种东西」是扭曲研究的中间产物，用于后续净化与实验。\n注意它可能带有副作用，先在小范围试用。',
-          ['warptheory:something'], )
-    quest('wt_cleanser_minor', '小净化剂：处理临时扭曲', 'warptheory:cleanser_minor',
-          '小净化剂用于处理临时/轻度扭曲。使用前先查看它清除的扭曲类型与代价。\n扭曲分永久/黏性/临时三类，小净化剂未必作用于永久扭曲。',
-          ['warptheory:cleanser_minor'], )
-    quest('wt_cleanser', '净化剂：更彻底的净化', 'warptheory:cleanser',
-          '净化剂比小净化剂更强，用于更严重的扭曲。\n配方与研究门槛更高，材料准备周期更长。',
-          ['warptheory:cleanser'], )
-    quest('wt_amulet', '净化护符', 'warptheory:amulet',
-          '净化护符在佩戴时提供扭曲相关的防护/净化效果。\n与其他饰品共用 curios 槽位，注意冲突。',
-          ['warptheory:amulet'], )
-    quest('wt_ward_amulet', '扭曲护符：长期防护', 'warptheory:warp_ward_amulet',
-          '扭曲护符用于长期抵抗扭曲积累，适合常年探索神秘遗迹的玩家。\n它是 A 区的收尾，之后进入 B 区的高阶净化与节点机械。',
-          ['warptheory:warp_ward_amulet'], )
+    quest('wt_paper', '奥术石蕊试纸：探测扭曲', 'warptheory:litmus_paper',
+          '奥术石蕊试纸对扭曲产生反应，用于探测与记录扭曲。\n先取得基础材料，再解锁净化类配方；按 JEI 查看合成与研究前置。',
+          ['warptheory:litmus_paper'], )
+    quest('wt_something', '块状物', 'warptheory:eldritch_meat',
+          '「块状物」是扭曲研究的中间产物，用于后续净化与实验。\n提示：描述里写着「没准能吃……」——先别真的吃。',
+          ['warptheory:eldritch_meat'], )
+    quest('wt_cleanser_minor', '污秽泪水：处理临时扭曲', 'warptheory:lesser_pure_tear',
+          '污秽泪水用于处理临时/轻度扭曲。使用前先查看它清除的扭曲类型与代价。\n扭曲分永久/黏性/临时三类，污秽泪水未必作用于永久扭曲。',
+          ['warptheory:lesser_pure_tear'], )
+    quest('wt_cleanser', '纯净泪水：更彻底的净化', 'warptheory:pure_tear',
+          '纯净泪水比污秽泪水更强，用于更严重的扭曲。\n配方与研究门槛更高，材料准备周期更长。',
+          ['warptheory:pure_tear'], )
+    quest('wt_amulet', '净化护身符', 'warptheory:purification_talisman',
+          '净化护身符在佩戴时提供扭曲相关的防护/净化效果。\n与其他饰品共用 curios 槽位，注意冲突。',
+          ['warptheory:purification_talisman'], )
+    quest('wt_ward_amulet', '便携浴符：探索中的净化', 'warptheory:portable_shower',
+          '便携浴符让净化不再依赖回家泡澡，长途探索时可随时处理扭曲。\n它是 A 区的收尾，之后进入 B 区的高阶净化与节点机械。',
+          ['warptheory:portable_shower'], )
 
     # ---- B · 扭曲理论进阶 + 节点机械 ----
     quest('wt_oblivion', '遗忘药水：重置扭曲', 'warptheory:oblivion_potion',
           '遗忘药水用于重置/清除扭曲（具体范围以 JEI 与实测为准）。\n属高价手段，谨慎使用。',
           ['warptheory:oblivion_potion'], )
-    quest('nm_intro', 'B · 节点机械：给灵气节点充能', 'nodalmechanics:matrix',
-          '节点机械（Nodal Mechanics）围绕「矩阵」工作，用于给神秘时代的灵气节点重新充能/调整。\n节点一旦被耗尽会变得无用，节点机械提供了一条「回收—再造」的路径。\n先备好矩阵，再研究调谐与充能配方。',
+    quest('nm_intro', 'B · 节点机械：给灵气节点充能', 'nodalmechanics:node_matrix',
+          '节点机械（Nodal Mechanics）围绕「节点基体」工作，用于重新充能/催生神秘时代的灵气节点。\n节点一旦被耗尽会变得无用，节点机械提供「调制基体—注魔—催生」的路径。\n先备好基体，再研究调制与催生配方。',
           (), check='已阅读节点机械说明')
-    quest('nm_matrix', '矩阵', 'nodalmechanics:matrix',
-          '矩阵是节点机械的核心物品，用于承载并转运灵气。\n按 JEI 查看其合成与用法。',
-          ['nodalmechanics:matrix'], )
-    quest('nm_unattuned', '未调谐矩阵', 'nodalmechanics:matrix',
-          '未调谐矩阵是尚未绑定目标的中间态。\n先把节点/目标就位，再考虑调谐。',
-          (), check='理解未调谐矩阵的用途')
-    quest('nm_attuned', '已调谐矩阵', 'nodalmechanics:matrix',
-          '已调谐矩阵绑定到目标节点，用于充能/迁移灵气。\n调谐后通常不可逆，操作前先确认目标。',
-          (), check='理解已调谐矩阵的用途')
-    quest('wt_vanish', '扭曲理论·隐匿', 'warptheory:warp_ward_amulet',
+    quest('nm_matrix', '节点基体', 'nodalmechanics:node_matrix',
+          '节点基体是节点机械的核心物品，用于承载要素并催生节点。\n按 JEI 查看调制（R）与注魔（U）用法。',
+          ['nodalmechanics:node_matrix'], )
+    quest('nm_unattuned', '未调制基体', 'nodalmechanics:node_matrix',
+          '未调制的节点基体是尚未绑定要素的中间态。\n先在奥术工作台上调制，再送入注魔祭坛。',
+          (), check='理解未调制基体的用途')
+    quest('nm_attuned', '已调制基体', 'nodalmechanics:node_matrix',
+          '已调制的节点基体承载要素配置，用于注魔催生节点。\n节点类型与修饰按权重随机，配方预览会展示样例。',
+          (), check='理解已调制基体的用途')
+    quest('wt_vanish', '扭曲理论·隐匿', 'warptheory:portable_shower',
           '扭曲理论还提供与「隐匿」相关的机制，用于规避神秘遗迹中的危险探测。\n具体效果与触发条件以实测与 JEI 为准。',
           (), check='已了解隐匿相关机制')
-    quest('wt_complete', '扭曲治理完成', 'warptheory:cleanser',
+    quest('wt_complete', '扭曲治理完成', 'warptheory:pure_tear',
           '至此你已掌握扭曲理论的主要净化与防护手段，并接入了节点机械。\n接下来进入神秘视界（C-F 区），内容量最大的一条支线。',
           (), check='完成扭曲理论与节点机械入门')
 
@@ -281,6 +294,52 @@ def content():
     quest('iso_vortex', '漩涡与稳定器', 'isorropia:vortex',
           '漩涡与漩涡稳定器用于稳定/收束神秘视界的能量流。\n这是 F 区与整章的收尾，完成后神秘视界主要系统即已接入。',
           ['isorropia:vortex', 'isorropia:vortex_stabilizer'], )
+
+    # ---- G · 神秘附属：田园秘辛 ----
+    quest('ta_vis_seeds', 'G · 田园秘辛：源质栽培', 'thaumadds:vis_seeds',
+          '神秘附属（Thaumic Additions）把源质种进了田里：把小麦种子在坩埚中注入 herba 等要素，得到魔力种子。\n魔力作物收获时掉落魔力豆荚——稀有要素的稳定来源。\n本节聚焦「农业 × 神秘」：作物、果实、盐与净化植物。',
+          (), check='已阅读田园秘辛导航')
+    quest('ta_vis_pod', '魔力豆荚：田间的源质', 'thaumadds:vis_pod',
+          '成熟的魔力作物会掉落魔力豆荚（按要素分型）。\n豆荚是提取稀有源质的稳定农业来源，先种起来。',
+          ['thaumadds:vis_pod'], )
+    quest('ta_void_seed', '培植虚空：虚空种子', 'thaumadds:void_seed',
+          '虚空种子需要复杂的注魔过程才能种下。\n培育成熟后收获虚空作物，是一条危险但值得的路线。',
+          ['thaumadds:void_seed'], )
+    quest('ta_void_fruit', '虚空果实（可食用）', 'thaumadds:void_fruit',
+          '虚空作物收获虚空果实：5 饱食 / 高饱和，且总能食用（不挑饥饿度）——探险干粮首选。\n注意：这是食物，可以吃。',
+          ['thaumadds:void_fruit'], )
+    quest('ta_cake', '奥术蛋糕（会恢复的蛋糕）', 'thaumadds:cake',
+          '被元始魔法改造过的蛋糕：放好后会缓慢自我恢复，可反复取食。\n可放置、分片食用，适合基地常备。',
+          ['thaumadds:cake'], )
+    quest('ta_salt', '魔力盐：品质糖的新去处', 'thaumadds:salt_essence',
+          '本包新增坩埚配方：品质糖（枫糖浆农业线）→ 2× 魔力盐。\n魔力盐是灵气扩散器的燃料，可给范围内农田/牲畜施加要素食效——农业与神秘在此闭环。',
+          ['thaumadds:salt_essence'], )
+    quest('ta_puriflower', '纯净之花：吸咒波能手', 'thaumadds:puriflower',
+          '注魔出的净化植物：缓慢吸收周围咒波（联动 Pollution 咒波系统），比图腾更稳定。\n大规模种植可压制咒波堆积。',
+          ['thaumadds:puriflower'], )
+
+    # ---- H · 甜蜜牧场：巧克力与果冻 ----
+    quest('choc_cow', 'H · 甜蜜牧场：巧克力牛', 'isorropia:chocolate_cow_spawn_egg',
+          '生物注魔的杰作：给一头牛注入棕染料×2 + 糖×2（corpus 30 / permutatio 10）即可获得巧克力牛（需先完成对应研究）。\n用桶右键即可挤出浓郁的巧克力奶。\n本节覆盖神秘视界的甜品与牧场副产线。',
+          (), check='已了解巧克力牛的注魔配方')
+    quest('choc_milk', '巧克力奶', 'isorropia:chocolate_milk_bucket',
+          '巧克力奶：饮用效果同牛奶（清除药水效果），也是甜点线的原料。',
+          ['isorropia:chocolate_milk_bucket'], )
+    quest('choc_bar', '巧克力棒（材料）', 'isorropia:chocolate_bar',
+          '巧克力奶制成巧克力棒；9 棒合成巧克力块。\n注意：巧克力棒本身不可食用，是材料。',
+          ['isorropia:chocolate_bar'], )
+    quest('choc_cream', '巧克力奶油（食用+迅捷）', 'isorropia:chocolate_cream',
+          '本包新增属性：食用后获得迅捷 I（30 秒）+ 少量饱和，并计入乳制品营养（GTMFO）。\n巧克力奶 + 小麦即可制作。',
+          ['isorropia:chocolate_cream'], )
+    quest('choc_block', '巧克力块（建筑）', 'isorropia:chocolate',
+          '9 棒合成的巧克力块：用于建造与储存。\n同样不可食用。',
+          ['isorropia:chocolate'], )
+    quest('choc_jelly', '果冻兔与果冻', 'isorropia:jelly',
+          '果冻兔掉落的果冻：可食用，随携带要素提供不同食用效果（详见 JEI/实测）。\n高饱食点心。',
+          ['isorropia:jelly'], )
+    quest('choc_chicken', '黄金鸡：会下金蛋的鸡', 'isorropia:gold_egg',
+          '以生物注魔改造的黄金鸡会产下金蛋；金蛋可拆出金粒。\n牧场的新财路。',
+          ['isorropia:gold_egg'], )
 
 
 def walk(obj):
@@ -377,12 +436,12 @@ def verify_items(ids):
 
 
 def layout():
-    # Six independent layered teaching DAGs (7 each). Fixed local pattern.
+    # Layered teaching DAGs (7 quests each). Fixed local pattern.
     local = [(2, 0), (0, 2), (4, 2), (0, 4), (4, 4), (0, 6), (4, 6)]
     parents = [None, 0, 0, 1, 2, 3, 4]
     edges = []
-    assert len(Q) == 42, len(Q)
-    for cluster in range(6):
+    assert len(Q) % 7 == 0, len(Q)
+    for cluster in range(len(Q) // 7):
         origin = ((cluster % 3) * 10, (cluster // 3) * 10)
         subset = Q[cluster * 7:cluster * 7 + 7]
         for i, q in enumerate(subset):
@@ -413,7 +472,9 @@ def layout():
         aa, bb, cc, dd = (points[k] for k in (a, b, c, d))
         if max(min(aa[0], bb[0]), min(cc[0], dd[0])) <= min(max(aa[0], bb[0]), max(cc[0], dd[0])) and max(min(aa[1], bb[1]), min(cc[1], dd[1])) <= min(max(aa[1], bb[1]), max(cc[1], dd[1])):
             assert not (cross(aa, bb, cc)*cross(aa, bb, dd) <= 0 and cross(cc, dd, aa)*cross(cc, dd, bb) <= 0), 'Crossing dependency lines'
-    return dict(clusters=6, edges=len(edges), center_bounds=[24, 16], icon_bounds=[24.9, 16.9],
+    max_x = max(q['x'] for q in Q)
+    max_y = max(q['y'] for q in Q)
+    return dict(clusters=len(Q) // 7, edges=len(edges), center_bounds=[max_x, max_y], icon_bounds=[max_x + .9, max_y + .9],
                 min_spacing=2, max_edge=round(math.sqrt(8), 6), crossings=0, overlaps=0, edge_node_hits=0)
 
 
@@ -492,7 +553,10 @@ def main():
         assert [t['item'] for t in result['tasks'] if t['type'] == 'item'] == spec['items']
     combined = {**library, 'chapters/thaumic_addons.snbt': parsed}
     all_ids, combined_issues, total = library_report(combined)
-    assert combined_issues == legacy_issues, 'New library errors: ' + str(combined_issues)
+    # 只挡"新增"问题：load_library() 排除了本章，所以其它章对本章任务的合法依赖
+    # 在 legacy 里会被记成悬空；本章一加入它们就消失，那是好事，不该断言失败。
+    new_issues = [i for i in combined_issues if i not in legacy_issues]
+    assert not new_issues, 'New library errors: ' + str(new_issues)
     report = dict(quests=len(Q), objectives=sum(len(q['tasks']) for q in parsed['quests']),
                   rewards=sum(len(q['rewards']) for q in parsed['quests']), unique_items=len(all_items),
                   group=GROUP, order_index=order, layout=geometry, global_quests=total,
