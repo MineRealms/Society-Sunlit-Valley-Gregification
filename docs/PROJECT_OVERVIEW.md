@@ -1,5 +1,7 @@
 # Society: Sunlit Valley Gregification — 整合包总览
 
+> **AI/新协作者先读**：[AGENTS.md](../AGENTS.md)（入口）+ [KUBEJS.md](KUBEJS.md) + [TOOLS.md](TOOLS.md) + [STATUS.md](STATUS.md)（最新状态 2026-11-01）。
+
 > **2026-09-27 增量**：已更新 Pollution 并安装 Astral Sorcery；当前 403 JAR、54 章节。新增 Pollution 42 任务、AS 69 任务及 39 个 AS 物品/设备的 TC4 要素。两章采用三列两行主题分区，详见 `config/ftbquests/tools/pollution_quest_plan.md`、`astral_sorcery_quest_plan.md`。仅完成静态验证，未启动游戏。下方表格保留 9/25 快照。
 
 > 核对日期：2026-09-25。依据本地文件、当前提交 `70b2b98` 及其前序提交。
@@ -103,10 +105,19 @@ GCYR 的 EUt 会参与引擎等级判断，不能把 EUt 数值 1/2/3 直接当�
 | 当前整合包是什么、各系统如何连接 | 本文 |
 | 当前缺口、待验收事项、Git 状态 | [STATUS.md](STATUS.md) |
 | FTBQ ID、生成器、旧进度、内联文本 | [FTBQ_GUIDE.md](FTBQ_GUIDE.md) |
+| 中州 Middle-earth 1.4.2 新手流程、派系与农业证据 | [MIDDLE_EARTH_GUIDE.md](MIDDLE_EARTH_GUIDE.md) |
+| Sunlit Market NPC 交易/声望 mod 与 Connector 兼容 | [SUNLIT_MARKET.md](SUNLIT_MARKET.md) |
 | KubeJS、配方、日志、打包、HMCL、Git | [MAINTENANCE_GUIDE.md](MAINTENANCE_GUIDE.md) |
 | GT/Create/Mek 专项记录 | [GT_INTEGRATION.md](GT_INTEGRATION.md) |
 | 食品与营养 | [GTMFO_INTEGRATION.md](GTMFO_INTEGRATION.md) |
 | 魔法与探索 | [TC4_INTEGRATION.md](TC4_INTEGRATION.md)、[TF_INTEGRATION.md](TF_INTEGRATION.md)、[BOTANIA_INTEGRATION.md](BOTANIA_INTEGRATION.md) |
 | 太空 | [SPACE_INTEGRATION.md](SPACE_INTEGRATION.md) |
+| 生物培养、神秘脑素材、Pollution与GT湿件的设计基线 | [BIO_LINE_PLAN.md](BIO_LINE_PLAN.md) |
+| 生物线第一批实现、emoney隔离服验证与交付限制 | [BIO_LINE_IMPLEMENTATION.md](BIO_LINE_IMPLEMENTATION.md) |
+| GT附属范围：UV主体、少量UHV收尾及后续验证 | [GT_ADDON_LINE_PLAN.md](GT_ADDON_LINE_PLAN.md) |
+| GT附属第二批：GCYR燃料修正、三台实用设备、食品回收的执行与验收记录 | [GT_ADDON_PHASE2_EXECUTION.md](GT_ADDON_PHASE2_EXECUTION.md) |
+| 神秘电路（7 级）、四块祭坛模板、工业注魔 19 条与标签语义 | [THAUMIC_CIRCUITS.md](THAUMIC_CIRCUITS.md) |
+| 源质/要素流体/vis 的换算表、材料要素表路径铁律、守恒边界 | [MAGIC_GT_SCALING.md](MAGIC_GT_SCALING.md) |
+| 生物湿件章（血肉→肉粉→培养基→iPS 脑→干细胞→湿件电路） | [BIO_LINE_IMPLEMENTATION.md](BIO_LINE_IMPLEMENTATION.md) |
 | 二进制历史快照 | [MODS_BASELINE.md](MODS_BASELINE.md) |
 | 历史调研与最初实施 | [MODPACK_REPORT.md](MODPACK_REPORT.md)、[TASK_GUIDE.md](TASK_GUIDE.md)；旧计数不代表当前状态 |
