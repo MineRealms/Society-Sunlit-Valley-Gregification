@@ -2,7 +2,7 @@
 
 ## 2026-11-04：第三批（源质估值 / 神秘电路 / 工业注魔 / 生物湿件 / 神秘工业章）
 
-- **章节**：62 个 `*.snbt`。本批新增/重写 6 章：`trade`(23)、`aspect_bridge`(7)、`ae2_addons`、`middle_earth`(19)、`bio_wetware`(23)、`thaumic_industry`(20)。
+- **章节**：62 个 `*.snbt`。本批新增/重写 6 章：`trade`(21 任务)、`aspect_bridge`(6)、`ae2_addons`(15)、`middle_earth`(19)、`bio_wetware`(23)、`thaumic_industry`(20)。
   后两章为 2026-11-04 新增，生成器 + `*_ids.json` 在 `config/ftbquests/tools/`，均通过 `--check` 与 `--verify-repeat`。
 - **源质估值（A）**：审计 4,118 → 2,883 个 flag，修复 2,244 条；残余 9 条全部 triage 为 GT 配方颗粒度导致的有界单次放大，无可重复闭环。
   规则统一为「1 点 = 144mB = 1 个本模组元素粉/宝石」，返造不再产 TC 晶簇（晶簇放置/破坏可绕过多点赋值）。见 [MAGIC_GT_SCALING.md](MAGIC_GT_SCALING.md)。

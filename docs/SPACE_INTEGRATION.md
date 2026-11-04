@@ -4,6 +4,8 @@
 > 内容：太空任务章（30 任务）+ 火箭硬化（GT-- 重型合金）+ GCYR×Mek / GCYR×GT-- 联动
 > 事实来源：`mods/gcyr-1.20.1-0.2.9.jar`、`mods/gtnn-1.20.1-1.3.10.jar`、`mods/Mekanism-1.20.1-10.4.16.80.jar`（CFR/javap 反编译 + 数据文件核对）
 
+> **2026-11-04 更正（GT附属第二批）**：下文“EUt=最低发动机等级 1/2/3”的写法**是错的**。GCYR 用 `getRecipeEUtTier` 把 EUt 先换成 GT 电压档，1/2/3 都是 ULV，等级限制从未生效；另有全局燃料缓存串火箭、小于 1 mB 的耗油被截断为 0 两个机制问题。现以 32/128/512 编码基础/先进/精英，并由 `sunlitindustry` 兼容 mod 修机制。权威燃料表与实测见 [GT_ADDON_PHASE2_EXECUTION.md](GT_ADDON_PHASE2_EXECUTION.md)。
+
 ---
 
 ## 1. 太空任务章（space.snbt）
@@ -65,7 +67,7 @@ GTNN 原重型锭配方位于 `AdAstraRecipes`（依赖 ad_astra，本包未装�
 |---|---|---|
 | 宇航服氧气 | GCYR 灌装检查 `forge:oxygen` 标签；Mek 液态氧已挂该标签 | **天然兼容，零改动**（电解分离器→旋转冷凝器→灌宇航服） |
 | 氧扩散器 | GCYR 配方写死 `gtceu:oxygen` | `mekLinks.js` 补 6 档 Mek 氧气配方（750~750000 mB） |
-| 火箭氢燃料 | GCYR 配方写死 `gtceu:hydrogen` | `mekLinks.js` 补 `mekanism:hydrogen` 燃料（1mB/10t/EUt 1） |
+| 火箭氢燃料 | GCYR 配方写死 `gtceu:hydrogen` | `mekLinks.js` 补 `mekanism:hydrogen` 燃料（duration 10，EUt 32 = 基础发动机） |
 | MekaSuit 温度 | GCYR 检查物品标签 `gcyr:heat_resistant`/`freeze_resistant` | 数据标签加入全套 MekaSuit（`kubejs/data/gcyr/tags/items/`） |
 | 跨行星物流 | Mek 量子纠缠器原生跨维度 | 任务章提示（无脚本） |
 | 绕过检查 | Mek 传送器需两端配对（首次仍需火箭） | 无绕过 |
@@ -77,7 +79,7 @@ GTNN 原重型锭配方位于 `AdAstraRecipes`（依赖 ad_astra，本包未装�
 | 方向 | 内容 | 实现 |
 |---|---|---|
 | B1 引擎发电 | GTNN 火箭引擎（EV/IV/LuV）燃烧 GCYR 燃料：`gtceu:rocket_fuel`(1mB/4t)、汽油(4mB/3t)、柴油(3mB/3t)、Mek 氢(8mB/3t)，EUt=-2048 发电 | `gtnnLinks.js` |
-| B2 高级燃料 | GTNN 燃料驱动 GCYR 火箭（每 mB 燃烧时长）：RP-1 50 / 稠密肼 60 / UDMH 90 / MHN 100；EUt=最低发动机等级 1/2/2/3 | `gtnnLinks.js` |
+| B2 高级燃料 | GTNN 燃料驱动 GCYR 火箭（每 mB 燃烧时长）：RP-1 50 / 稠密肼 60 / UDMH 90 / MHN 100；最低发动机等级 1/2/2/3，按 GT 电压编码为 EUt 32/128/128/512 | `gtnnLinks.js` |
 | 硬化 | 火箭部件需要 T1~T3 重型合金板 | `hardenRockets.js` |
 | 进度关系 | GTNN 机器本身为 EV+（GT 电压自然门槛），本次通过重型合金链把 GTNN 变成火箭必经之路 | — |
 
@@ -111,7 +113,7 @@ GTNN 原重型锭配方位于 `AdAstraRecipes`（依赖 ad_astra，本包未装�
 
 ## 6. 已知问题与备注
 
-1. 服务器日志中 `gcyr:gasoline`/`gcyr:diesel` 的 "EUt can't be explicitly set to 0" 为 GCYR 自身配方问题（装饰性），本批不改动。
+1. 服务器日志中 `gcyr:gasoline`/`gcyr:diesel` 的 "EUt can't be explicitly set to 0" 为 GCYR 自身配方问题；这两条原配方因此不注册，汽油/柴油由 `fixRocketFuels.js` 以基础发动机等级重建（第二批已实测）。
 2. `gcyr:passes_flood_fill` 标签含 UEV+ 氧扩散器（普通模式不存在）→ 标签警告；IV~UV 正常。
 3. GTNN 重型锭/板在没有 Ad Astra 时原本不可获得，本批已补全（见 §2）。
 4. 太空章依赖 EV 章任务 `7A55CC71442CC854`；若 EV 章被重生成需确认该 ID 仍存在。

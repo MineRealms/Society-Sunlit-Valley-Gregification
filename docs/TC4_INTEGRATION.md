@@ -331,3 +331,50 @@ KubeJS 用法（schema 已核对）：`e.recipes.thaumcraft.crucible(result, cat
   （铜 `minecraft:copper_ingot`、锡/铅/银 `gtceu:*_ingot`，各 ×2；JSON 依据 `ForgeRecipeItemCodec`：`{"id":...,"count":...}`，count 1..99）；
   同时去掉仅对标签输出有意义的 `forge:tag_empty` 条件。
 - **预期与验收**：固定输出绕开动态标签解析；需在同步后分别检查最终配方、普通熔炉和 GT 炉子的 2 锭产物，以及是否仍有空输出错误。此前“报错消失”的文字没有修补后运行日志支撑，现改为待验收。
+
+---
+
+## 9. 魔法模组要素桥扩展 + GT 预处理桥（2026-11-03）
+
+> 起因：盘点包内魔法模组（Botania / Astral Sorcery / TC4R 全家 / Technomancy / Relics）找联动点。
+> 既有事实：`tcGtCompat.js`（辰砂/琥珀/水银进 GT 机）、`bridgeTechnomGt.js`（神秘科技组件 GT 组装）、
+> `gateBotania.js`（植物魔法阶段锁）、`pack_bridge_aspects.json`（GT/Create/Mek 机器已带要素）。
+
+**9.1 要素桥扩展（`kubejs/data/thaumcraft/object_aspects/pack_bridge_aspects.json`）**
+
+- direct 条目 15 → 38：新增 Botania 14 条（活石/活木/三种金属锭/魔力珍珠·钻石·线/符文祭坛/魔力池/散布器/
+  通量场/纯华蓑菊/精灵门核心）+ Astral Sorcery 8 条（星辉锭/大理石/照尘/调谐岩晶/幽灵中继/共鸣法杖/
+  唤醒祭坛）+ 包自定义 `society:star_shards`；
+- tags 条目 6 → 8：`#forge:ingots/manasteel`、`#forge:ingots/terrasteel`；
+- 效果：神秘侧的扫视/炼金/注魔/研究从此"认识"两个魔法模组的材料（要素名全部是 TC4 真实要素，
+  与 svDepositRates.js 的要素分档表同源核对）。
+
+**9.2 GT 预处理桥（新脚本 `kubejs/server_scripts/magic/gtMagicBridge.js`）**
+
+| 配方 | 产出 | 备注 |
+|---|---|---|
+| 活石 → 研磨机 | `gtceu:talc_dust` | 纯华蓑菊可再生滑石，GT 化学/脱硫用 |
+| 活木 → 研磨机 | `2x gtceu:wood_dust`（Wood Pulp） | 可再生木浆 |
+| AS 大理石 → 研磨机 | `2x gtceu:talc_dust` | 大理石在 GT 化学=滑石 |
+| 星辉金属锭 → 研磨机 | `1x gtceu:iron_dust` | **产量核对过**：星辉矿→1 锭，回收 1 铁粉=净亏魔法投入；给 2 就成刷铁机 |
+
+- 设计原则不变：GT 只做物理预处理，魔力/星光/源质核心循环不被绕过；
+- `node --check` 通过；已同步 main / mirror / -DEV / 服务器包 delta。
+
+### 9.3 第二批：暮色 / 中洲入桥 + 「要素桥」任务章节（2026-11-03）
+
+- `pack_bridge_aspects.json` direct 条目 38 → 71：
+  - 暮色森林 14 条（铁木/炽热/钢叶/骑士金属/绯红/火把浆果/肝根/两极毛皮/纪元粉/反工作台/三奖杯）；
+  - 中洲 20 条（秘银/魔古尔/布尔兹/乌克/精灵两系/卡扎德/矮人/奥克/青铜/银/王室苜蓿/韭葱/烟斗草/三宝石/三种硬币）；
+  - 修正：`botania:elven_gateway_core` 不存在（Botania 454 无此物品，精灵门是多方块结构），已删除；
+  - 所有 id 从各 mod jar 的 models/item 提取核对；要素名与 svDepositRates.js 分档表同源。
+
+- 新 FTBQ 章节 `aspect_bridge.snbt`「魔法 - 要素桥」：6 任务（扫视植物魔法/暮色/中洲 →
+  GT 研磨桥 → 魔法变现闭环），前置挂神秘章节首任务 `35F501BCCBED6EC4`，
+  收尾挂贸易章接受仓源质/魔力两通道；生成器 `build_aspect_bridge_chapter.py`
+  （salt `society-aspect-bridge-chapter-v1`，14 ID，--verify-repeat 双验）。
+
+
+### 9.4 HV-EV 电路 × 魔法替代配方（已撤销）
+
+2026-11-03 曾实施 HV（星辉锭）/ EV（虚空锭+元素锭）电路组装机替代配方，同日按包主决定整体撤销（gtMagicCircuits.js 已删、aspect_bridge 章节回到 6 题、配方与任务均不生效）。字节码核实结论（GTItems 字段名≠注册 id、TagPrefix 模式、电路 tag 分层）仍有效，见记忆与本文 §9.4 之前的内容。

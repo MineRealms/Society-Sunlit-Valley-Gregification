@@ -105,3 +105,34 @@ assert candidate not in used_ids
 | `b7f7919`、`84889b0` | 游戏重存格式与服务端任务书可成为新的基线，生成器不得直接覆盖 |
 | `7b130e4` | 太空章与资源背景、多目标输出，需同时核对图像路径和任务数据 |
 | `f9ebcb4`、`70b2b98` | 58 任务章节/配方锁和生成器分属不同提交；发布要同时检查两者，且二次生成风险仍待修 |
+
+## 8. 生成器清单与检索（2026-11 更新）
+
+| 生成器 | 章节 | ID 登记表 | 校验 |
+|---|---|---|---|
+| `build_thaumic_addons_chapter.py` | `thaumic_addons.snbt`（56 任务/8 集群） | `thaumic_addons_ids.json` | `--check` / `--verify-repeat` |
+| `build_middle_earth_chapter.py` | `middle_earth.snbt`（19 任务） | `middle_earth_ids.json` | `--check` / `--verify-repeat` |
+| `build_astral_sorcery_chapter.py` | `astral_sorcery.snbt`（69 任务） | `astral_sorcery_ids.json` | `--check` / `--self-test` |
+| `build_pollution_chapter.py` | `pollution.snbt`（42 任务） | `pollution_ids.json` | `--check` / `--verify-repeat` |
+| `build_technomancy_chapter.py` | `technomancy.snbt` | `technomancy_ids.json` | `--check` / `--verify-repeat` |
+| `build_space_chapter.py` | `space.snbt` | — | 生成后目检 |
+| `build_mek_chapter.py` | `mekanism.snbt` | — | 生成后目检 |
+| `build_twilight_forest_chapter.py` | `twilight_forest.snbt` | `twilightforest_ids.md` | 生成后目检 |
+| `build_thaumcraft_chapter.py` | `thaumcraft.snbt` | — | 生成后目检 |
+
+标准流程：改脚本/登记表 → `--check`（只校验）→ `--verify-repeat`（两次字节一致）→ 无参数生成写盘。
+
+检索技巧：
+
+```powershell
+# 按物品/配方 id
+Select-String -Path config\ftbquests\quests\chapters\*.snbt -Pattern 'me:starlight_phial'
+# 按标题（中/英）
+Select-String -Path config\ftbquests\quests\chapters\*.snbt -Pattern '星光水晶瓶'
+# 章节内任务数
+(Select-String -Path config\ftbquests\quests\chapters\luv__ludicrous_voltage.snbt -Pattern '^\s*id: "').Count
+# 任务 id 归属哪个章节
+Select-String -Path config\ftbquests\quests\chapters\*.snbt -Pattern '5E4D3C2B1A090807'
+```
+
+注意：`--check` 会同时比对**已发布字节**，所以新增章节/任务前必须先登记 ID，否则校验必然失败。修改后同步服务器只传 `config/ftbquests/**`（见 `TOOLS.md` §5）。
