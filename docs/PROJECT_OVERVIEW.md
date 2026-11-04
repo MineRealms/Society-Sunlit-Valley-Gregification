@@ -119,5 +119,6 @@ GCYR 的 EUt 会参与引擎等级判断，不能把 EUt 数值 1/2/3 直接当�
 | 神秘电路（7 级）、四块祭坛模板、工业注魔 19 条与标签语义 | [THAUMIC_CIRCUITS.md](THAUMIC_CIRCUITS.md) |
 | 源质/要素流体/vis 的换算表、材料要素表路径铁律、守恒边界 | [MAGIC_GT_SCALING.md](MAGIC_GT_SCALING.md) |
 | 生物湿件章（血肉→肉粉→培养基→iPS 脑→干细胞→湿件电路） | [BIO_LINE_IMPLEMENTATION.md](BIO_LINE_IMPLEMENTATION.md) |
+| 第三批总览：从魔法到科技（L0 地基 → L1 桥 → L2 产能 → L3 生物 → L4 引导） | [BATCH_PHASE3_SUMMARY.md](BATCH_PHASE3_SUMMARY.md) |
 | 二进制历史快照 | [MODS_BASELINE.md](MODS_BASELINE.md) |
 | 历史调研与最初实施 | [MODPACK_REPORT.md](MODPACK_REPORT.md)、[TASK_GUIDE.md](TASK_GUIDE.md)；旧计数不代表当前状态 |
