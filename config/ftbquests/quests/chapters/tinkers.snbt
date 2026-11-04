@@ -1,0 +1,338 @@
+{
+	default_hide_dependency_lines: false,
+	default_quest_shape: "",
+	filename: "tinkers",
+	group: "4A46A5E1358A80A6",
+	icon: "tconstruct:smeltery_controller",
+	id: "0271C1EA5E9304B3",
+	order_index: 31,
+	quest_links: [ ],
+	quests: [
+		{
+			description: [
+				"原版工具一次成型、坏了重做；匠魂把工具拆成部件：镐头、手柄、绑定结各自选材料，属性相加，坏了只换部件。",
+				"它还有一套强化系统：石英加伤害、红石加速度、青金石加时运、钻石加耐久，强化数量受工具种类限制。",
+				"本章只讲前中期怎么从零做出一把能用的工具和一座冶炼炉。高阶材料与强化另开章节。"
+			],
+			dependencies: [ ],
+			icon: "tconstruct:tinkers_anvil",
+			id: "1C412338B12D1BB8",
+			tasks: [
+				{
+					id: "582CA879DEBECE4B",
+					title: "已了解匠魂和原版工具的区别",
+					type: "checkmark"
+				}
+			],
+			title: "匠魂入门：为什么用它",
+			x: 0.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"先做空白图案：一个木板 + 一个木棍，做出 2 个图案。",
+				"把图案放进合成站（8 个木板围一圈），选择你要做的部件形状，得到对应的木质模具，这叫图案。",
+				"图案只决定形状，不决定材料。同一张镐头图案，可以浇铜、浇铁，也可以浇玛玉灵。"
+			],
+			dependencies: [
+				"1C412338B12D1BB8"
+			],
+			icon: "tconstruct:pattern",
+			id: "32EB2AD11BF0BD80",
+			tasks: [
+				{
+					id: "6660F0AE72DC1311",
+					type: "item",
+					item: "tconstruct:pattern",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "图案与合成站",
+			x: 2.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"工具装配站是组装工具的地方：4 个木板 + 2 个原木 + 1 个铁锭。",
+				"把部件按槽位放进去：镐 = 镐头 + 手柄 + 绑定结，每换一个部件的材料，成品属性就变一次。",
+				"装配站还能修补工具、替换单个部件，不用整把重做。"
+			],
+			dependencies: [
+				"32EB2AD11BF0BD80"
+			],
+			icon: "tconstruct:tinker_station",
+			id: "354DA1A3CD5A9ACB",
+			tasks: [
+				{
+					id: "6232744E4B1A6CFD",
+					type: "item",
+					item: "tconstruct:tinker_station",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "工具装配站",
+			x: 4.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"石头镐头 + 木手柄 + 木绑定结，是最便宜的一套。石头的挖掘等级够挖铁，木头给速度和耐久。",
+				"做完先别急着升级——把工具拿在手里按 Shift 看属性面板，你会看到挖掘速度 / 耐久 / 挖掘等级三个值分别由哪个部件贡献。",
+				"这一步的意义：以后想换材料，只要换一个部件，不用重新做整把。"
+			],
+			dependencies: [
+				"354DA1A3CD5A9ACB"
+			],
+			icon: "tconstruct:pickaxe",
+			id: "5E8793FCA5400108",
+			tasks: [
+				{
+					id: "52B385014B05AC40",
+					title: "已装配出第一把匠魂工具",
+					type: "checkmark"
+				}
+			],
+			title: "第一把镐",
+			x: 6.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"冶炼炉是匠魂的心脏，用焦黑砖搭：先烧砂砾得焦黑砖，再围成 3x3 底座。",
+				"结构：一层焦黑砖做底，四周砌墙，正面放冶炼炉控制器，任意一面放排液口，上面接焦黑储罐存熔融金属。",
+				"控制器右键打开界面，左边是熔炼槽，右边显示储罐里的液体。至少 3x3x3 才能开始熔炼。"
+			],
+			dependencies: [
+				"1C412338B12D1BB8"
+			],
+			icon: "tconstruct:smeltery_controller",
+			id: "24E8E547A9E3A64C",
+			tasks: [
+				{
+					id: "719A06C5196D0915",
+					type: "item",
+					item: "tconstruct:smeltery_controller",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "冶炼炉：焦黑砖与控制器",
+			x: 0.0d,
+			y: 3.0d
+		},
+		{
+			description: [
+				"铸造台（浇小件，如锭、部件）和铸造盆（浇大块，如方块）要用焦黑砖做。",
+				"第一次浇铸需要铸模：金铸模最耐用（blank_cast 打底再浇金），沙铸模一次性（红沙或普通沙）。",
+				"流程：把图案放进铸造台，浇一次金得到金铸模，以后直接浇金属成型，不用再消耗图案。"
+			],
+			dependencies: [
+				"24E8E547A9E3A64C"
+			],
+			icon: "tconstruct:seared_table",
+			id: "742EF05FD655B3F9",
+			tasks: [
+				{
+					id: "70D5865D465A704E",
+					type: "item",
+					item: "tconstruct:seared_table",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "铸造：铸模与铸造台",
+			x: 2.0d,
+			y: 3.0d
+		},
+		{
+			description: [
+				"钴矿石只在下界生成，挖回来直接丢进冶炼炉熔成熔融钴。",
+				"钴的特点是挖掘速度快，但耐久一般，适合做镐头，不适合做手柄。",
+				"浇铸时注意：熔融金属要够量。一个镐头需要 1 锭的量（144 mB），不够会卡在铸造台里。"
+			],
+			dependencies: [
+				"742EF05FD655B3F9",
+				"5E8793FCA5400108"
+			],
+			icon: "tconstruct:cobalt_ingot",
+			id: "2CB98EDE054FC9A9",
+			tasks: [
+				{
+					id: "4BA0DBFCE73593DD",
+					type: "item",
+					item: "tconstruct:cobalt_ingot",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "第一块匠魂金属：钴",
+			x: 4.0d,
+			y: 3.0d
+		},
+		{
+			description: [
+				"匠魂砧是强化工作台：2 个焦黑砖 + 1 个铁块。比装配站多一个强化槽。",
+				"把工具放进去，再加强化材料：石英（+伤害）、红石（+速度）、青金石（+时运）、钻石（+耐久）、下界合金（+等级）。",
+				"每种工具能装的强化数量有限，界面右下角会显示已用与上限。超了就得先用强化工作台扩容。"
+			],
+			dependencies: [
+				"2CB98EDE054FC9A9"
+			],
+			icon: "tconstruct:tinkers_anvil",
+			id: "7B7FE9D2B2775508",
+			tasks: [
+				{
+					id: "77335E171D629FA4",
+					type: "item",
+					item: "tconstruct:tinkers_anvil",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "匠魂砧与强化",
+			x: 6.0d,
+			y: 3.0d
+		},
+		{
+			description: [
+				"匠魂工具不会凭空消失，耐久归零只是损坏（变红、不能挖）。",
+				"修补两种方式：一是在装配站里放同材料部件；二是在冶炼炉里浇同种熔融金属。",
+				"粘液钢（slimesteel）自带自修复特性，适合做长期用的手柄。"
+			],
+			dependencies: [
+				"7B7FE9D2B2775508"
+			],
+			icon: "tconstruct:slimesteel_ingot",
+			id: "690267156C51914F",
+			tasks: [
+				{
+					id: "5EFF73EA31EE0EAC",
+					title: "已修补过一次工具",
+					type: "checkmark"
+				}
+			],
+			title: "修补：让工具活得久",
+			x: 8.0d,
+			y: 3.0d
+		},
+		{
+			description: [
+				"下界石英是最容易拿到的强化材料：一个石英 = +0.5 伤害，可以叠。",
+				"近战武器优先堆石英，尤其是劈刀、长剑这类高基础伤害的。",
+				"注意：石英只加攻击伤害，不加挖掘速度。挖矿工具堆石英没用。"
+			],
+			dependencies: [
+				"7B7FE9D2B2775508"
+			],
+			icon: "minecraft:quartz",
+			id: "3F1FE4130B77F8B5",
+			tasks: [
+				{
+					id: "559ADBDE72081E10",
+					type: "item",
+					item: "minecraft:quartz",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "石英强化：直接加伤害",
+			x: 4.0d,
+			y: 6.0d
+		},
+		{
+			description: [
+				"红石强化加挖掘速度，每个 +0.1，堆满能到原版的 3 倍以上。",
+				"镐、铲、斧这类采集工具优先堆红石；武器不用。",
+				"速度和耐久是跷跷板：堆太多红石会占掉强化槽，导致装不下钻石（耐久）。"
+			],
+			dependencies: [
+				"690267156C51914F"
+			],
+			icon: "minecraft:redstone",
+			id: "2E4CFB5A6171C63B",
+			tasks: [
+				{
+					id: "21DCECF2337F6C8C",
+					type: "item",
+					item: "minecraft:redstone",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "红石强化：直接加速度",
+			x: 6.0d,
+			y: 6.0d
+		},
+		{
+			description: [
+				"三种粘液各有用途：天蓝粘液（天空岛）、末影粘液（末地）、血粘液（下界）。",
+				"粘液能做粘液工具（自带弹性、摔不死）、粘液靴（弹跳）、粘液史莱姆（会走的存储）。",
+				"粘液木还能做手柄，给工具加弹性特性——用坏了会弹一下，不容易断。"
+			],
+			dependencies: [
+				"24E8E547A9E3A64C"
+			],
+			icon: "tconstruct:sky_slime_ball",
+			id: "3D3AF07635FFBE4A",
+			tasks: [
+				{
+					id: "563AAF9C86932847",
+					type: "item",
+					item: "tconstruct:sky_slime_ball",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "粘液：匠魂的另一种材料",
+			x: 2.0d,
+			y: 6.0d
+		},
+		{
+			description: [
+				"玛玉灵 = 钴 + 下界合金，是匠魂的中期天花板：高伤害、高耐久。",
+				"冶炼炉里按比例熔：4 钴 + 1 下界合金 得到 1 玛玉灵。合金要在冶炼炉控制器的合金页里配比。",
+				"再往上是女皇史莱姆（末影粘液 + 岩浆）和灵魂钢（灵魂沙 + 铁），属于后期内容。"
+			],
+			dependencies: [
+				"7B7FE9D2B2775508"
+			],
+			icon: "tconstruct:manyullyn_ingot",
+			id: "7C14C2BAC46CE906",
+			tasks: [
+				{
+					id: "73D8CA7FAF10763E",
+					type: "item",
+					item: "tconstruct:manyullyn_ingot",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "高阶材料：玛玉灵",
+			x: 8.0d,
+			y: 6.0d
+		}
+	],
+	title: "&b&l匠魂&r · 部件与强化"
+}

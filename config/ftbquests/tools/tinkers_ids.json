@@ -1,0 +1,32 @@
+{
+  "salt": "society-tinkers-chapter-v1",
+  "ids": {
+    "chapter": "0271C1EA5E9304B3",
+    "quest/advanced": "7C14C2BAC46CE906",
+    "quest/anvil": "7B7FE9D2B2775508",
+    "quest/casting": "742EF05FD655B3F9",
+    "quest/first_tool": "5E8793FCA5400108",
+    "quest/intro": "1C412338B12D1BB8",
+    "quest/mend": "690267156C51914F",
+    "quest/metal": "2CB98EDE054FC9A9",
+    "quest/pattern": "32EB2AD11BF0BD80",
+    "quest/quartz": "3F1FE4130B77F8B5",
+    "quest/redstone": "2E4CFB5A6171C63B",
+    "quest/slime": "3D3AF07635FFBE4A",
+    "quest/smeltery": "24E8E547A9E3A64C",
+    "quest/station": "354DA1A3CD5A9ACB",
+    "task/advanced/item/tconstruct:manyullyn_ingot": "73D8CA7FAF10763E",
+    "task/anvil/item/tconstruct:tinkers_anvil": "77335E171D629FA4",
+    "task/casting/item/tconstruct:seared_table": "70D5865D465A704E",
+    "task/first_tool/check": "52B385014B05AC40",
+    "task/intro/check": "582CA879DEBECE4B",
+    "task/mend/check": "5EFF73EA31EE0EAC",
+    "task/metal/item/tconstruct:cobalt_ingot": "4BA0DBFCE73593DD",
+    "task/pattern/item/tconstruct:pattern": "6660F0AE72DC1311",
+    "task/quartz/item/minecraft:quartz": "559ADBDE72081E10",
+    "task/redstone/item/minecraft:redstone": "21DCECF2337F6C8C",
+    "task/slime/item/tconstruct:sky_slime_ball": "563AAF9C86932847",
+    "task/smeltery/item/tconstruct:smeltery_controller": "719A06C5196D0915",
+    "task/station/item/tconstruct:tinker_station": "6232744E4B1A6CFD"
+  }
+}
