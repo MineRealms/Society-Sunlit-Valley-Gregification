@@ -68,4 +68,71 @@ ServerEvents.recipes((e) => {
   e.replaceInput({ output: "mekanism:advanced_control_circuit" }, "#forge:circuits/basic", "gtceu:good_electronic_circuit");
   e.replaceInput({ output: "mekanism:elite_control_circuit" }, "#forge:circuits/advanced", "gtceu:advanced_integrated_circuit");
   e.replaceInput({ output: "mekanism:ultimate_control_circuit" }, "#forge:circuits/elite", "gtceu:micro_processor_computer");
+
+  // ============================================================
+  // 深度融合补锁（2026-11-03，方案 A–D，经配方逐条核对）
+  // ============================================================
+
+  // ---- A. 数字矿机：GT EV + Create 精密构件 ----
+  // 原配方 ["ACA","SRS","TXT"] 只用 1 个 #forge:circuits/basic（LV 档），
+  // LV 一过就能掏整块区块，绕过 GT 矿脉与矿石处理线。重做配方：
+  // 电路升为 EV 微处理器；撤掉便宜的物流分拣器，换入 2 个精密构件。
+  e.remove({ output: "mekanism:digital_miner" });
+  e.recipes.minecraft.crafting_shaped("mekanism:digital_miner",
+    ["ACA", "MRM", "TXT"],
+    { A: "#mekanism:alloys/atomic",
+      C: "gtceu:micro_processor_computer",
+      M: "create:precision_mechanism",
+      R: "mekanism:robit",
+      T: "mekanism:teleportation_core",
+      X: "mekanism:steel_casing" });
+
+  // ---- B1. 钢外壳：居中锇锭 → GT MV 电子电路 ----
+  // 6.4 节推荐方案第 1 处（此前未实施）：钢外壳是所有中后期 MEK 机器的底盘。
+  e.replaceInput({ output: "mekanism:steel_casing" }, "#forge:ingots/osmium", "gtceu:good_electronic_circuit");
+
+  // ---- B2. MEK 钢锭必须走 GT 电弧炉 ----
+  // MEK 钢尘 = 铁尘+碳（灌注机）本来普通熔炉就能烧成钢锭，绕过 GT EBF。
+  // 撤掉熔炉/高炉两条路（输入是 #forge:dusts/steel 标签，只影响产出 mekanism:ingot_steel 的两条），
+  // 另给 EBF 加专属配方。GT 自己的 gtceu:steel_ingot 不受影响。
+  e.remove({ output: "mekanism:ingot_steel", type: "minecraft:smelting" });
+  e.remove({ output: "mekanism:ingot_steel", type: "minecraft:blasting" });
+  e.recipes.gtceu.electric_blast_furnace("kubejs:mek_steel_ingot_ebf")
+    .itemInputs("mekanism:dust_steel")
+    .itemOutputs("mekanism:ingot_steel")
+    .blastFurnaceTemp(1000)
+    .duration(800)
+    .EUt(120);
+
+  // ---- C. 工厂税：四级工厂的金属锭位 → Create 精密构件（各 ×2）----
+  // 36 台工厂配方核对：basic I=铁锭 / advanced I=锇锭 / elite I=金锭 / ultimate I=钻石，均出现 2 次。
+  const FACTORY_TIERS = [
+    ["basic", "#forge:ingots/iron"],
+    ["advanced", "#forge:ingots/osmium"],
+    ["elite", "#forge:ingots/gold"],
+    ["ultimate", "#forge:gems/diamond"],
+  ];
+  const FACTORY_KINDS = [
+    "combining", "compressing", "crushing", "enriching", "infusing",
+    "injecting", "purifying", "sawing", "smelting",
+  ];
+  FACTORY_TIERS.forEach(([tier, ing]) => {
+    FACTORY_KINDS.forEach((kind) => {
+      e.replaceInput({ output: "mekanism:" + tier + "_" + kind + "_factory" }, ing, "create:precision_mechanism");
+    });
+  });
+
+  // ---- D. 发电税 ----
+  // 燃气发电机：灌注合金×4 → GT MV 电子电路×4（原配方无电路）
+  e.replaceInput({ output: "mekanismgenerators:gas_burning_generator" }, "#mekanism:alloys/infused", "gtceu:good_electronic_circuit");
+  // 风力 / 生物发电机：基础电路 → GT MV 电子电路
+  e.replaceInput({ output: "mekanismgenerators:wind_generator" }, "#forge:circuits/basic", "gtceu:good_electronic_circuit");
+  e.replaceInput({ output: "mekanismgenerators:bio_generator" }, "#forge:circuits/basic", "gtceu:good_electronic_circuit");
+  // 太阳能 / 高级太阳能：灌注合金×2 → GT MV 电子电路×2
+  e.replaceInput({ output: "mekanismgenerators:solar_generator" }, "#mekanism:alloys/infused", "gtceu:good_electronic_circuit");
+  e.replaceInput({ output: "mekanismgenerators:advanced_solar_generator" }, "#mekanism:alloys/infused", "gtceu:good_electronic_circuit");
+  // 加热发电机：熔炉 → GT LV 微处理器（镜像灌注机锁）
+  e.replaceInput({ output: "mekanismgenerators:heat_generator" }, "minecraft:furnace", "gtceu:microchip_processor");
+  // 电解分离器：铁锭×4 → Create 精密构件×4（水电解开局税）
+  e.replaceInput({ output: "mekanism:electrolytic_separator" }, "#forge:ingots/iron", "create:precision_mechanism");
 });

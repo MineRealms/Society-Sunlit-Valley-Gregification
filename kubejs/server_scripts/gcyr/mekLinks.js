@@ -12,21 +12,21 @@
 //     → 本脚本为两者补 Mek 流体配方（GCYR 自定义 GT 配方类型经 KubeJS 注册）
 //   - 参数镜像 GCYR 原配方：
 //       氧扩散器：750mB 氧气/10L 档（circuit 1），同理 1500/3750/7500/75000/750000
-//       氢燃料：1mB / 燃烧时长 10t / EUt 1
+//       氢燃料：duration 10 / EUt 32 编码基础发动机tier=1
 // ============================================================
 console.info("[GCYR-MEK] mekLinks.js loaded");
 
 ServerEvents.recipes((e) => {
   if (!Platform.isLoaded("gcyr") || !Platform.isLoaded("mekanism")) return;
 
-  // ---- 火箭燃料：Mek 液态氢（镜像 gtceu:hydrogen：1mB / 10t / EUt 1）----
+  // ---- 火箭燃料：Mek 液态氢（基础发动机，GT电压编码32）----
   e.recipes.gcyr.rocket_fuel("kubejs:rocket_fuel_mek_hydrogen")
     .inputFluids(Fluid.of("mekanism:hydrogen", 1))
     .duration(10)
-    .EUt(1, 1);
+    .EUt(32, 1);
 
   // ---- 氧扩散器：Mek 液态氧（镜像 GCYR 氧气档位）----
-  const sizes = [
+  let sizes = [
     [1, 750],      // 10L
     [2, 1500],     // 20L
     [3, 3750],     // 50L

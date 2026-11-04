@@ -1,0 +1,44 @@
+{
+	"id": "sunlitmarket_blacksmith_choice",
+	"title": "blacksmith choice",
+	"description": "dialog.npc.blacksmith.name",
+	"entries": [
+		{
+			"id": "start",
+			"text": [
+				{
+					"text": "你需要点什么？"
+				}
+			],
+			"options": [
+				{
+					"text": {
+						"text": "看看你的货"
+					},
+					"target": "end",
+					"command": [
+						"openshop @p blacksmith"
+					]
+				},
+				{
+					"text": {
+						"text": "看看市场行情"
+					},
+					"target": "end",
+					"command": [
+						"sunlitmarket chart"
+					]
+				},
+				{
+					"text": {
+						"text": "没什么事"
+					},
+					"target": "end"
+				}
+			]
+		},
+		{
+			"id": "end"
+		}
+	]
+}
