@@ -1,122 +1,89 @@
-# 神秘电路与工业注魔（Phase 3）
+# 神秘电路与工业注魔
 
-> 事实基线：2026-11-04。源码在 `H:/MinecraftMods/Pollution-Unofficial-1.20.1`
-> （`loaders/recipes/ThaumicCircuitRecipes.java`、`ThaumicIndustrialRecipes.java`），
-> 运行时证据来自 `G:/emoney-bio-test` 的 RecipeManager dump。
-> 任务章节：`config/ftbquests/quests/chapters/thaumic_industry.snbt`（科技组，order 25，20 任务）。
+> 2026-11-04 第四批修订。下表来自当前 Pollution 源码；完整隔离副本运行时验收仍在进行，结果统一见 [PHASE4_ACCEPTANCE.md](PHASE4_ACCEPTANCE.md)。第三批的 19 条配方/普通组装机实现不是当前规格。
+> 任务章节 `thaumic_industry.snbt` 保持 20 个任务和原有 ID。
 
-## 1. 设计边界
+## 1. 边界与平衡
 
-- 工业主线做到 **UV**；`.7`~ `.12`（UHV~MAX）不规划，无配方、无标签、JEI 隐藏，只保留 ID 让老存档不丢物品。
-- 17 个血魔法遗留 ID 全部保留（老存档的机器与物品不受影响），但语义改成神秘主题。
-- 原版 GT 电路一个都没删：神秘电路是**并行来源**，靠标签与原版电路并列。
+- 保留全部 17 个 `blood_circuit*` 旧 ID；MV～UV 七个成品进入同级 GT 通用电路标签。
+- `.7`～`.12` 共 **6** 个 UHV～MAX 神秘电路停用：无配方、无标签、JEI 隐藏；老存档物品不删。
+- 原有 `magic_circuit` 蕴魔电路是另一条专用件路线；该族 UEV～MAX 板/电路继续停用。
+- 魔法替换的是芯片、存储芯片、贴片元件；**不替换基板、下级电路、生物前置、线材、金属结构件与研究设备**。
+- “同级”是结构性约束：与选定 GT 参考配方保持同一机器、能耗、时间、产出、洁净室、下级电路数量。魔法材料不与电子元件宣称等价原料成本，仍须监测量产后的实际经济成本。
 
-## 2. 四块模板（TC 侧）
+## 2. 四个模板
 
-| 模板 | 产物 | 做法 | 投入 | 要素 / vis | 不稳定度 |
-|---|---|---|---|---|---|
-| 1 | `pollution:blood_circuit` | 奥术工作台 `thaumcraft:arcane_shaped` | `TQT` / ` B `；T 神秘锭、Q 水银、B 基础集成电路 | vis 气 16 + 秩序 8 | — |
-| 2 | `pollution:blood_circuit_advanced` | 注魔祭坛 | 中心 模板1 + 虚空锭 + 水晶精华×2 + 水银 | 源质16 / 金属8 / 虚空8 | 3 |
-| 3 | `pollution:blood_circuit_ultimate` | 注魔祭坛 | 中心 模板2 + 秘银锭 + 影金锭 + 以太碎片×2 | 源质24 / 异界16 / 金属12 | 5 |
-| 4 | `pollution:blood_circuit_supreme` | 注魔祭坛 | 中心 模板3 + 秘银锂 + 创造碎片 + 原始珍珠 | 源质32 / 异界24 / 灵气24 | 8 |
+模板是消耗品，不是永久催化剂。模板 2～4 都消耗上一块模板。
 
-**坑（2026-11-04 实测）**：TC4R 的 `arcane_shaped` 只接受六个**原始 vis 通道**
-（`aer/ignis/aqua/terra/ordo/perditio`）。vis 里写复合要素（如 `auram`）会抛
-`Arcane recipe cost is not a vis channel: auram`，配方被**静默丢弃**——构建不报错，
-只有服务器日志里有一行 KubeJS WARN。模板 1 曾因此整条链不可达，见 §5。
+| 模板 ID（pollution:） | 原始制作 | 材料 | 要素 / vis | 不稳定度 |
+|---|---|---|---|---|
+| blood_circuit | 奥术工作台 | 神秘锭×2、水银×1、gtceu:basic_integrated_circuit×1 | vis aer 16、ordo 8 | — |
+| blood_circuit_advanced | 注魔 | 模板1、虚空锭×1、水晶精华×2、水银×1 | praecantatio 16、metallum 8、vacuos 8 | 3 |
+| blood_circuit_ultimate | 注魔 | 模板2、thaumadds:mithrillium_ingot、影金锭、以太碎片×2 | praecantatio 24、alienis 16、metallum 12 | 5 |
+| blood_circuit_supreme | 注魔 | 模板3、thaumictinkerer:ichorium×2、创造碎片、下界之星 | praecantatio 32、alienis 24、auram 24 | 8 |
 
-## 3. 七级神秘电路（GT 侧）
+- 两颗水晶精华/以太碎片用两个独立 Ingredient/基座；`Ingredient.of(a,a)` 是候选列表，不能表达数量 2。
+- 模板1研究为空；模板2～4挂 `INFUSION`。
+- 创造碎片的原配方已消耗原始珍珠，模板4不再额外消耗第二颗。
+- 四模板均有工业孪生：保持相同实物投入；源质 144mB/点、vis 36mB/点。
 
-全部在 **电路组装机** 里做，配方 id `pollution:assembler/thaumic_circuit/0`~`6`。
+## 3. 成品与 GT 参考配方逐级对照
 
-| 级 | 产物 | 模板 | 神秘金属 | 基板 / 线材 / 框架 | 焊锡 | EU/t | 时长 | 产出 | 洁净室 |
-|---|---|---|---|---|---|---|---|---|---|
-| MV | `blood_circuit.0` | 1 | 神秘锭 | 塑料 PCB / 4 细红合金线 | 72 | 60 | 200t | 2 | 否 |
-| HV | `blood_circuit.1` | 1 | 水晶精华 | 环氧 PCB / 8 细金银合金线 | 72 | 600 | 200t | 2 | 是 |
-| EV | `blood_circuit.2` | 2 | 虚空锭 | 纤维增强 PCB / 12 细铂线 | 72 | 2400 | 200t | 2 | 是 |
-| IV | `blood_circuit.3` | 2 | 秘银锭 | 多层纤维增强 PCB / 8 细铌钛线 | 72 | 9600 | 200t | 2 | 是 |
-| LuV | `blood_circuit.4` | 3 | adaminite | — / 8 细钇钡铜氧线 | 72 | 38400 | 200t | 2 | 是 |
-| ZPM | `blood_circuit.5` | 3 | 秘银锂 | — / 48 退火铜单线 / 2 HSS-G 框架 | 288 | 7680 | 800t | 1 | 是 |
-| UV | `blood_circuit.6` | 4 | 灵液 | — / 8 铌钛单线 / 2 HSS-E 框架 | 1440 | 30720 | 800t | 1 | 否 |
+以下线材、基板和焊锡均是 GT 物品/流体。焊锡指 `gtceu:soldering_alloy`。
 
-「同级」的含义：电压、时长、产出数量都对齐原版 GT 同级电路配方，只把芯片／SMD 栈换成
-模板 + 神秘金属。成本不优于原版，产出不多于原版。
+| 级 | 魔法投入 | 保留的科技投入 | 焊锡mB | EU/t | tick | 产出 | 机器 / 附加条件 | GT参考配方 |
+|---|---|---|---:|---:|---:|---:|---|---|
+| MV .0 | 模板1、神秘锭 | 塑料PCB、细红合金线×4 | 72 | 60 | 200 | 2 | 电路组装机 | processor_mv |
+| HV .1 | 模板1、水晶精华 | 环氧PCB、细金银合金线×8 | 72 | 600 | 200 | 2 | 电路组装机、洁净室 | nano_processor_hv |
+| EV .2 | 模板2、虚空锭 | 纤维增强PCB、细铂线×12 | 72 | 2400 | 200 | 2 | 电路组装机、洁净室 | quantum_processor_ev |
+| IV .3 | 模板2、mithrillium_ingot | 多层纤维增强PCB、细铌钛线×8 | 72 | 9600 | 200 | 2 | 电路组装机、洁净室 | crystal_processor_iv |
+| LuV .4 | 模板3、ichorium | **神经处理单元**、细钇钡铜氧线×8 | 72 | 38400 | 200 | 2 | 电路组装机、洁净室 | wetware_processor_luv |
+| ZPM .5 | 模板3、adaminite_ingot | 湿件PCB、**神秘LuV电路×2**、细钇钡铜氧线×16 | 144 | 38400 | 400 | 2 | 电路组装机、洁净室 | wetware_processor_assembly_zpm |
+| UV .6 | 模板4、mithminite_ingot | 湿件PCB、**神秘ZPM电路×2**、细钇钡铜氧线×24、PBI箔×32、铕板×4 | 1152 | 38400 | 400 | 1 | **装配线、研究站16 CWU/t研究神秘ZPM电路** | wetware_super_computer_uv |
 
-### 标签
+配方 ID：
+- `.0`～`.5`：`pollution:circuit_assembler/thaumic_circuit/<N>`。
+- `.6`：`pollution:assembly_line/thaumic_circuit/6`。
+- 原来的 `pollution:assembler/thaumic_circuit/*` 不再注册。物品 ID 不变；已存储旧机器配方的行为仍需运行时/存档测试，不承诺旧批次自动迁移。
 
-七个产物写进 `data/gtceu/tags/items/circuits/{mv,hv,ev,iv,luv,zpm,uv}.json`。
-标签只影响**配方匹配**：写 `gtceu:circuits/mv` 的配方同时接受原版与神秘电路。
-它是「可替代」，不是「自动替换」——原版路线一直有效。
+### 材料顺序与不可绕过的门槛
 
-## 4. 工业注魔（TC 配方 → GT 配方）
+神秘领域的实际合成顺序是 `mithrillium → adaminite → mithminite`，不是按模糊中文名称推定高低。LuV保留神经处理单元，因此前一批生物线、无菌洁净室和培养材料仍有作用。ZPM不能再用IV电压直接得到；UV不能再在普通组装机跳过研究造出。
 
-多方块 `pollution:industrial_infusion`，配方类型 `gtceu:industrial_infusion_recipes`。
+## 4. 后期珍珠供应
 
-转换规则：
+只把注魔祭坛变成并行机器不能解决 Boss 掉落材料瓶颈。因此新增**独立的晚期工业替代**，原始掉落与附属配方不删除：
 
-- 只转**白名单产物**（默认 16 个 id；`EXTRA_THAUMIC_INDUSTRIAL_WHITELIST` 可追加）。
-- 物品输入 = 原配方中心物／催化剂／组件；`tag` 转 tag ingredient；带 NBT 的跳过。
-- 要素 → 对应注魔流体，**每点 144mB**；奥术 vis **每点 36mB**（灵气可再生，比源质便宜）。
-- EUt 固定 **HV 档**；时长 = `max(100, 要素总量 × 5)` tick。
-- 原研究键写进 `MagicRecipeProperties.THAUMCRAFT_RESEARCH`，机主必须持有该研究。
-- 不转：附魔、法杖装配、生物注魔；未映射要素、流体种类 > 8、物品 > 25 的配方跳过并计数。
-- 确定性 id：`pollution:industrial_infusion_recipes/industrial_infusion/thaumic/<ns>/<原路径>`。
+- 设备：工业注魔；电压 `VA[LuV]`；耗时 1200 tick；产出原始珍珠×1。
+- 实物：下界之星×1、平衡碎片×4、以太碎片×2，全部消耗。
+- 流体：praecantatio / auram / alienis / vacuos 各32点，即各4608mB。
+- 机主必须持有 `PRIMPEARL` 研究；只缓存该机主已在线验证的研究供离线继续生产。无机主/新机主未验证/非法键不放行，拆机掉落不携带授权。
+- 配方：`pollution:industrial_infusion_recipes/industrial_infusion/thaumic/primordial_pearl_synthesis`。
 
-### 已注册的 19 条（运行时 dump）
+这不是免费复制，也不是拿一颗珍珠永远循环；每颗都有能源、材料与源质投入。adaminite、mithminite、创造碎片继续照原配方消耗珍珠。并行仓与超频提供后期产能。
 
-| 产物 | 时长 |
+## 5. 工业转换规则与本轮修复
+
+- 仅转换白名单的 infusion / crucible / arcane_shaped / arcane_shapeless；常规转换HV起，时间 `max(100, 总要素×5)`。
+- 遍历 Forge 模组资源文件系统，兼容内嵌 jar；不再对虚拟路径直接 `new ZipFile(...)`。
+- 每个有序合成格都计数；相同符号出现四次就消耗四份，而非按 key 只算一次。
+- 流体换算只进行一次：1点源质=144mB，1点vis=36mB。旧转换代码的重复×144已去除。
+- 工业模板2～4保留中心模板；旧代码漏掉中心模板会绕过前级供应。
+- 遇到不存在的实物、特殊自定义 Ingredient、NBT、特殊产物变换、不支持的研究格式，跳过整条并记录原因，禁止静默删输入。
+- 白名单可通过 `EXTRA_THAUMIC_INDUSTRIAL_WHITELIST` 扩展，但必须先检查转换边界与守恒。
+- 配方条数取决于模组组合，不能把最小测试服19条或正式服20条当固定验收目标。验收逐条看配方内容和可执行性。
+
+## 6. 维护与验证
+
+源码：`H:/MinecraftMods/Pollution-Unofficial-1.20.1/src/main/java/meowmel/pollution/loaders/recipes/` 下 `ThaumicCircuitRecipes`、`ThaumicIndustrialRecipes`、`ThaumicRecipeData`。
+
+| 修改项 | 必须同步 |
 |---|---|
-| 平衡碎片 ×6（气/火/水/地/秩序/熵） | 100t |
-| 神秘锭 / 虚空锭 | 100t |
-| 以太碎片 | 360t |
-| 秘银锂 | 475t |
-| 灵液注魔 | 640t |
-| 秘银 | 1350t |
-| 创造碎片 | 1650t |
-| adaminite | 2150t |
-| 灵液 | 3000t |
-| 模板 2 / 3 / 4（代码孪生） | 160t / 260t / 400t |
+| 模板 | 祭坛原配方与工业孪生、数量测试、任务描述 |
+| 电路阶级 | GT运行时参考、机器/研究条件、标签、生成器文案 |
+| 转换规则 | 源质/vis单测、重复符号单测、缺失输入拒绝测试、运行时dump |
+| 发布 | jar SHA256、服务端差分包、客户端同版要求、旧jar删除清单 |
 
-启动日志会打印
-`[thaumic-industrial] scan: 16 whitelisted TC recipes, 16 converted, skipped (...)`
-与 `registered 19 industrial infusion recipes from TC JSONs`。**N 变小说明有配方被跳过**，
-先看跳过计数再改白名单。
+2026-11-04：Pollution `test build` 成功，11项单测通过，其中5项覆盖本轮转换规则。完整服机器运行、研究正反例和长期产能尚待 [第四批验收](PHASE4_ACCEPTANCE.md)，不能用此构建结果替代。
 
-## 5. 验证记录与已修缺陷
-
-运行时（2026-11-04，新 jar 部署后）：
-
-- `pollution:arcane/blood_circuit_template_1` → `ArcaneRecipe`，
-  `result = 1 blood_circuit`，`vis = {ORDO=8, AER=16}`，`research = Optional.empty`。
-- `pollution:assembler/thaumic_circuit/0..6` 全部存在（200t×5、800t×2）。
-- `pollution:infusion/blood_circuit_template_2..4` 全部存在。
-- 工业注魔 19 条，扫描 16/16 转换、0 跳过。
-
-修复的缺陷（Pollution `15d35f6`）：模板 1 原本
-
-1. 产物写成 `thaumcraft:thaumium_ingot`（复制粘贴残留）；
-2. `vis` 用了 `auram`（复合要素，不是 vis 通道）。
-
-结果：配方被 TC4R 拒绝加载，而 `pollution:blood_circuit` 在全量 recipe manager 里
-**0 个产出源**——模板 2/3/4 与 MV 电路全部断链。构建与单测都不会发现这类问题，
-只能靠「配方是否真的加载」的运行时断言。
-
-## 6. 维护
-
-| 想改什么 | 改哪里 |
-|---|---|
-| 电路数值／材料 | `ThaumicCircuitRecipes.TierSpec`（每级一行） |
-| 模板配方 | `ThaumicCircuitRecipes.templates()` |
-| 工业注魔白名单 | `ThaumicIndustrialRecipes.DEFAULT_WHITELIST` 或配置项 |
-| 任务文案／依赖 | `config/ftbquests/tools/build_thaumic_industry_chapter.py` |
-
-生成器命令：
-
-```
-python config/ftbquests/tools/build_thaumic_industry_chapter.py --check
-python config/ftbquests/tools/build_thaumic_industry_chapter.py --verify-repeat
-python config/ftbquests/tools/build_thaumic_industry_chapter.py
-```
-
-**加一级电路必须同时**：改 TierSpec、确认金属在包里存在（缺物品时该级会被跳过并只留一行 WARN）、
-补 `data/gtceu/tags/items/circuits/<tier>.json`、补任务。
+任务生成流程：`build_thaumic_industry_chapter.py --verify-repeat` → 生成 → `--check`。本轮20个任务业务键与ID保持不变。

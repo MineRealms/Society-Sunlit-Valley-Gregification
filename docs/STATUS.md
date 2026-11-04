@@ -1,5 +1,15 @@
 # 项目状态快照
 
+## 2026-11-04：第四批修复（进行中，不代表已上线）
+
+- AS 143项、Pollution 11项单测及完整构建通过；完整隔离副本运行时验收尚未完成。
+- 高阶电路保留生物线、下级电路、研究站和装配线；工业模板保留全部材料，补珍珠晚期供给。
+- 修复工业转换重复×144与重复材料漏算；SunlitIndustryCompat 0.2.0补酿造反射注册。
+- 神秘工业20任务ID不变，生成器检查通过。
+- 全流程、环境差异与失败记录：[PHASE4_ACCEPTANCE.md](PHASE4_ACCEPTANCE.md)。
+- 当前规范：[THAUMIC_CIRCUITS.md](THAUMIC_CIRCUITS.md)、[MAGIC_GT_SCALING.md](MAGIC_GT_SCALING.md)、[AS_LUMEN_BINDING.md](AS_LUMEN_BINDING.md)。
+
+
 ## 2026-11-04：第三批（源质估值 / 神秘电路 / 工业注魔 / 生物湿件 / 神秘工业章）
 
 - **章节**：62 个 `*.snbt`。本批新增/重写 6 章：`trade`(21 任务)、`aspect_bridge`(6)、`ae2_addons`(15)、`middle_earth`(19)、`bio_wetware`(23)、`thaumic_industry`(20)。

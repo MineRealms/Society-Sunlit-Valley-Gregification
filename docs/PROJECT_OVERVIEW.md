@@ -1,5 +1,7 @@
 # Society: Sunlit Valley Gregification — 整合包总览
 
+> **2026-11-04 第四批更正**：当前正在进行第四批完整服审查修复，见验收记录。高阶电路规范与魔法量产原则已更新，AS流明绑定采用完整补全方案。以下旧日期总览保留为历史。 [PHASE4_ACCEPTANCE.md](PHASE4_ACCEPTANCE.md)。
+
 > **AI/新协作者先读**：[AGENTS.md](../AGENTS.md)（入口）+ [KUBEJS.md](KUBEJS.md) + [TOOLS.md](TOOLS.md) + [STATUS.md](STATUS.md)（最新状态 2026-11-01）。
 
 > **2026-09-27 增量**：已更新 Pollution 并安装 Astral Sorcery；当前 403 JAR、54 章节。新增 Pollution 42 任务、AS 69 任务及 39 个 AS 物品/设备的 TC4 要素。两章采用三列两行主题分区，详见 `config/ftbquests/tools/pollution_quest_plan.md`、`astral_sorcery_quest_plan.md`。仅完成静态验证，未启动游戏。下方表格保留 9/25 快照。

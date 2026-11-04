@@ -1,5 +1,7 @@
 # 第三批总结：从魔法到科技
 
+> **2026-11-04 第四批更正**：第三批历史记录。高阶电路、工业孪生、换算错误和遗漏部署项已由第四批修订；下面的旧数值和“全部完成”判断不可直接作为现状。 [PHASE4_ACCEPTANCE.md](PHASE4_ACCEPTANCE.md)。
+
 > 时间：2026-11-03 ~ 2026-11-04。范围：源质估值、神秘电路、工业注魔、生物湿件、
 > 六章任务与 kubejs 补交。**主体到 UV，少量 UHV 选修，不规划 UEV~MAX。**
 > 详细规则见 [THAUMIC_CIRCUITS.md](THAUMIC_CIRCUITS.md)、[MAGIC_GT_SCALING.md](MAGIC_GT_SCALING.md)、

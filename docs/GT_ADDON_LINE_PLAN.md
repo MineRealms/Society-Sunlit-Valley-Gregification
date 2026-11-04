@@ -1,5 +1,7 @@
 # GT 附属线：UV 主体、少量 UHV 收尾
 
+> **2026-11-04 第四批更正**：第四批已修订电路与工业量产规格。第12节的19条配方、旧assembler ID和旧部署状态仅代表第三批快照；以当前THAUMIC_CIRCUITS与验收记录为准。 [PHASE4_ACCEPTANCE.md](PHASE4_ACCEPTANCE.md)。
+
 > 设计基线：2026-11-03。后续已完成生物线第一批及GTNN启动兼容的隔离服验证，见 [BIO_LINE_IMPLEMENTATION.md](BIO_LINE_IMPLEMENTATION.md)；第二批（GCYR燃料机制、化工厂/HV脱水机/EV火箭发电机、GTMFO食品回收）已在隔离服验收，见 [GT_ADDON_PHASE2_EXECUTION.md](GT_ADDON_PHASE2_EXECUTION.md)；其余候选仍未实施，无生产部署。
 > 配套：[生物线详细方案](BIO_LINE_PLAN.md)。旧报告 [RESEARCH_LINES.md](RESEARCH_LINES.md) 只作历史，不作为实施规格。
 > 本轮按包主要求停止无限扩展调查；GTNN全部机器、GCYR全部目标、GTMFO全部药物未穷举。未核实部分明确列为待验，不用推测补齐。

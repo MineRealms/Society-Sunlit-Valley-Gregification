@@ -1,5 +1,7 @@
 # GT附属第二批：详细执行记录
 
+> **2026-11-04 第四批更正**：第二批历史验收仍有效，但用户提供的正式服快照没有加载SunlitIndustryCompat。第四批以0.2.0修正遗漏并补VintageDelight酿造；完整服复验与部署状态另记，不把旧测试通过当成生产已部署。 [PHASE4_ACCEPTANCE.md](PHASE4_ACCEPTANCE.md)。
+
 > 批次目标：GCYR燃料语义/缓存/小数耗油、GTNN三台实用设备、GTMFO培养原料及明胶回收。
 > **当前状态（2026-11-04）：已在隔离emoney测试服完成验收，候选交付见 `H:/MinecraftMods/dist/gt-addon-phase2-validated`。** 未部署生产服、未发布更新器；第9节列出未覆盖项。
 > 范围：UV以内主体、少量UHV收尾；不做UEV～MAX。不得自动发布更新器或操作生产服。
