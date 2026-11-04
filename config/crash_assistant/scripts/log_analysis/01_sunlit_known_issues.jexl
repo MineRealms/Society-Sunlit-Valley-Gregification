@@ -1,0 +1,39 @@
+// Sunlit Valley · Gregification — 本包常见崩溃的自动诊断
+// 放在 config/crash_assistant/scripts/log_analysis/，由 Crash Assistant 每次崩溃时执行。
+// 文案走 crash_assistant_localization_overrides/zh_cn.json 里的 custom.sunlit.* 键。
+
+var logs = LogsList.getLogs(LOG, CRASH_REPORT, STDERR_STREAM);
+
+for (log : logs) {
+    var text = log.getReader().getAllLinesString();
+
+    // 1. TC4R 复合要素写进 vis 通道 / 20759 套件版本不齐
+    if (text.contains("Arcane recipe cost is not a vis channel")) {
+        var w1 = Analysis.addWarning(log, LanguageProvider.get("custom.sunlit.tc4r_vis"));
+        w1.withDontShowAgain("sunlit_tc4r_vis");
+        w1.withPriority(900);
+    }
+
+    // 2. Mohist × Connector 的 mixin 冲突（常伪装成无关类的 NCDFE）
+    if (text.contains("Mixin apply failed") || text.contains("Critical injection failure")) {
+        if (text.contains("connectormod") || text.contains("Connector") || text.contains("org.sinytra")) {
+var w2 = Analysis.addWarning(log, LanguageProvider.get("custom.sunlit.connector_mixin"));
+            w2.withDontShowAgain("sunlit_connector_mixin");
+            w2.withPriority(880);
+        }
+    }
+
+    // 3. WorldEdit 状态表把堆吃满
+    if (text.contains("OutOfMemoryError") && text.contains("WorldEdit")) {
+        var w3 = Analysis.addWarning(log, LanguageProvider.get("custom.sunlit.worldedit_oom"));
+        w3.withDontShowAgain("sunlit_worldedit_oom");
+        w3.withPriority(860);
+    }
+
+    // 4. 服务端误装客户端专用 mod
+    if (text.contains("NoClassDefFoundError") && text.contains("net/minecraft/client/")) {
+        var w4 = Analysis.addWarning(log, LanguageProvider.get("custom.sunlit.client_class"));
+        w4.withDontShowAgain("sunlit_client_class");
+        w4.withPriority(840);
+    }
+}

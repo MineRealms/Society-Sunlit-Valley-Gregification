@@ -1,0 +1,8 @@
+{
+  "gui.comment_under_title.github": "请点击「$LANG.gui.upload_all_comment$」把日志发到 $CONFIG.text.support_name$ 的新 issue，\n并说明崩溃前正在做什么、是否刚更新过整合包。\n窗口里的诊断提示会直接给出本包常见崩溃的原因。",
+  "gui.simple_mode.prompt_question": "是否始终显示日志列表？（专家模式）",
+  "custom.sunlit.tc4r_vis": "<strong>TC4R / 要素配置不匹配</strong><br>日志里出现 <code>Arcane recipe cost is not a vis channel</code>，说明配方把复合要素写进了 vis 通道，或 TC4R 版本与整合包不一致。<br>请确认使用的是 <strong>TC4R 0.1.0-20759</strong> 整套（本体 + forbidden_magic / nodalmechanics / tainted_magic / thaumic-bases / thaumic-tinkerer / warp-theory），不要只换其中一个。",
+  "custom.sunlit.connector_mixin": "<strong>Mohist × Connector 兼容问题</strong><br>日志里出现 Mixin 应用失败且涉及 <code>connectormod</code> 或 <code>Connector</code>。<br>这是 Fabric mod 经 Connector 转译时与 Mohist 的接口注入冲突，通常伴随 <code>NoClassDefFoundError</code>，且报错里看不出具体 mod。<br>请检查最近新增的 Fabric mod，或改用纯 Forge 服务端验证。",
+  "custom.sunlit.worldedit_oom": "<strong>内存被 WorldEdit 状态表吃满</strong><br>崩溃前后出现 <code>OutOfMemoryError</code> 且日志里有 WorldEdit。<br>本包已把状态表改成共享索引；如果仍复现，请把堆提到 <strong>11G 以上</strong>，并确认没有同时运行第二个 8G 的客户端。",
+  "custom.sunlit.client_class": "<strong>服务端加载了客户端专用类</strong><br>日志里出现 <code>NoClassDefFoundError: net/minecraft/client/...</code>。<br>这通常是把客户端 mod 放进了服务端 mods，或某个 S2C 包直接引用了 Screen / Minecraft。<br>请对照整合包的 mods 清单排查，不要把这个报错当成缺依赖。"
+}
