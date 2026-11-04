@@ -110,44 +110,8 @@
 			id: "21FD7614E314BA14"
 			tasks: [{
 				id: "7D036618EBB21410"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:chainmail_helmet"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:chainmail_chestplate"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:chainmail_leggings"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:chainmail_boots"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest21FD7614E314BA14.task.9008155936890688528.title}"
-				type: "item"
+				title: "已开始使用匠魂护甲板"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.armor_weapons__tools.quest21FD7614E314BA14.title}"
 			x: -6.0d
@@ -166,44 +130,8 @@
 			id: "7A5974D470C5AA9C"
 			tasks: [{
 				id: "6E8880D4D8EB4DF5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:golden_helmet"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:golden_chestplate"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:golden_leggings"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:golden_boots"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest7A5974D470C5AA9C.task.7964757592665443829.title}"
-				type: "item"
+				title: "已熔出一炉玛玉灵"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.armor_weapons__tools.quest7A5974D470C5AA9C.title}"
 			x: -2.0d
@@ -221,44 +149,8 @@
 			id: "0ACB2E342421B74E"
 			tasks: [{
 				id: "487C30F04C7295E0"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:iron_helmet"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:iron_chestplate"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:iron_leggings"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:iron_boots"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.armor_weapons__tools.questACB2E342421B74E.task.5223103476475794912.title}"
-				type: "item"
+				title: "已用铁做出一件匠魂护甲"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.armor_weapons__tools.questACB2E342421B74E.title}"
 			x: -4.0d
@@ -276,44 +168,8 @@
 			id: "38A0B8D54F85B846"
 			tasks: [{
 				id: "3E0453D9C60A9B8C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:diamond_helmet"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:diamond_chestplate"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:diamond_leggings"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:diamond_boots"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest38A0B8D54F85B846.task.4468788925053967244.title}"
-				type: "item"
+				title: "已给护甲装上强化"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.armor_weapons__tools.quest38A0B8D54F85B846.title}"
 			x: 0.0d
@@ -509,51 +365,8 @@
 			id: "43C52E202277C5AA"
 			tasks: [{
 				id: "0E5D7529339C2A99"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:stone_shovel"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:stone_pickaxe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:stone_axe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:stone_hoe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:stone_sword"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest43C52E202277C5AA.task.1035112309185063577.title}"
-				type: "item"
+				title: "已用石质材料做出一把匠魂工具"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.armor_weapons__tools.quest43C52E202277C5AA.title}"
 			x: -6.0d
@@ -572,51 +385,8 @@
 			id: "32FE1F4EF913EADA"
 			tasks: [{
 				id: "4D916A97F18FCE61"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:golden_shovel"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:golden_pickaxe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:golden_axe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:golden_hoe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:golden_sword"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest32FE1F4EF913EADA.task.5589365813368835681.title}"
-				type: "item"
+				title: "已浇出一个金铸模"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.armor_weapons__tools.quest32FE1F4EF913EADA.title}"
 			x: -2.0d
@@ -634,51 +404,8 @@
 			id: "08241E18191275AE"
 			tasks: [{
 				id: "18CE25FAB2D5E7FE"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:iron_shovel"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:iron_pickaxe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:iron_axe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:iron_hoe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:iron_sword"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest8241E18191275AE.task.1787407860785080318.title}"
-				type: "item"
+				title: "已用铁做出一把匠魂工具"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.armor_weapons__tools.quest8241E18191275AE.title}"
 			x: -4.0d
@@ -696,51 +423,8 @@
 			id: "54301E900FFA56D7"
 			tasks: [{
 				id: "0A266FA5E2FD2103"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:diamond_shovel"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:diamond_pickaxe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:diamond_axe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:diamond_hoe"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "minecraft:diamond_sword"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				title: "{ftbquests.chapter.armor_weapons__tools.quest54301E900FFA56D7.task.731394747762811139.title}"
-				type: "item"
+				title: "已用钻石强化过一件工具"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.armor_weapons__tools.quest54301E900FFA56D7.title}"
 			x: 0.0d
