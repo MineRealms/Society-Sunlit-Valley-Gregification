@@ -68,7 +68,7 @@
     "suppressProjectileParticleTrails": false
   },
   "compassAndClockOptions": {
-    "enableClock": true,
+    "enableClock": false,
     "enableCompass": true,
     "compassStyle": "TRANSPARENT_WITH_INDICATOR",
     "scale": 1.0
