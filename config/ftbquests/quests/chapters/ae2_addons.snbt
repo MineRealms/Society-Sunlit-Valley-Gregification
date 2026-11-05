@@ -1,455 +1,388 @@
 {
-	default_hide_dependency_lines: false,
-	default_quest_shape: "square",
-	filename: "ae2_addons",
-	group: "4A46A5E1358A80A6",
-	icon: "ae2:controller",
-	id: "35E684890227E6A2",
-	order_index: 23,
-	quest_links: [ ],
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "ae2_addons"
+	group: "4A46A5E1358A80A6"
+	icon: "ae2:controller"
+	id: "35E684890227E6A2"
+	order_index: 20
+	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["55DE6BB7C9DF4ACE"]
 			description: [
-				"本包在 AE2 15.4.10 之上装了 7 个附属：",
-				"ae2wtlib（无线终端）、MAE2（多路 P2P 与合成加速）、Applied Botanics（魔力）、",
-				"Applied Mekanistics（化学气体）、Applied Greg（GT 能量 EU）、Applied Astral Sorcery（星光）、Thaumic Energistics（源质）。",
-				"它们的共同思路：让 ME 网络不只存物品和流体，还能存魔法与能量，并把整条产线接进同一个终端。",
+				"本包在 AE2 15.4.10 之上装了 7 个附属："
+				"ae2wtlib（无线终端）、MAE2（多路 P2P 与合成加速）、Applied Botanics（魔力）、"
+				"Applied Mekanistics（化学气体）、Applied Greg（GT 能量 EU）、Applied Astral Sorcery（星光）、Thaumic Energistics（源质）。"
+				"它们的共同思路：让 ME 网络不只存物品和流体，还能存魔法与能量，并把整条产线接进同一个终端。"
 				"前置：先看完 ae2_overview 章节的自动合成，再回来。"
-			],
-			dependencies: [
-				"55DE6BB7C9DF4ACE"
-			],
-			icon: "ae2:controller",
-			id: "0018681F5CDCAFEF",
-			tasks: [
-				{
-					id: "2C04D564CE792A57",
-					title: "已了解本包的 AE2 附属清单",
-					type: "checkmark"
-				}
-			],
-			title: "AE2 附属总览：这包里装了哪些扩展",
-			x: 0.0d,
+			]
+			icon: "ae2:controller"
+			id: "0018681F5CDCAFEF"
+			tasks: [{
+				id: "2C04D564CE792A57"
+				title: "已了解本包的 AE2 附属清单"
+				type: "checkmark"
+			}]
+			title: "AE2 附属总览：这包里装了哪些扩展"
+			x: 0.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["0018681F5CDCAFEF"]
 			description: [
-				"ae2wtlib 的看家货：无线通用终端 = 终端 + 合成终端 + 样板访问 + 物流终端四合一。",
-				"前提是你在 ME 网络里插过一张对应能力的卡，再配合无线访问点覆盖。",
+				"ae2wtlib 的看家货：无线通用终端 = 终端 + 合成终端 + 样板访问 + 物流终端四合一。"
+				"前提是你在 ME 网络里插过一张对应能力的卡，再配合无线访问点覆盖。"
 				"升级卡可以扩无线范围与功耗档位；出门挖矿也能查库存、下单自动合成。"
-			],
-			dependencies: [
-				"0018681F5CDCAFEF"
-			],
-			icon: "ae2wtlib:wireless_universal_terminal",
-			id: "105DCCA704EF659C",
-			tasks: [
-				{
-					id: "60CFA3613684079F",
-					type: "item",
-					item: "ae2wtlib:wireless_universal_terminal",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "无线通用终端：全网络揣兜里",
-			x: 2.0d,
+			]
+			icon: "ae2wtlib:wireless_universal_terminal"
+			id: "105DCCA704EF659C"
+			tasks: [{
+				consume_items: false
+				id: "60CFA3613684079F"
+				item: "ae2wtlib:wireless_universal_terminal"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "无线通用终端：全网络揣兜里"
+			x: 2.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["105DCCA704EF659C"]
 			description: [
-				"样板访问终端的无线版：把家里样板供应器上的合成方案全部拉到手上。",
-				"配量子桥可以把两个基地的 ME 网络并成一个，样板互相可见。",
+				"样板访问终端的无线版：把家里样板供应器上的合成方案全部拉到手上。"
+				"配量子桥可以把两个基地的 ME 网络并成一个，样板互相可见。"
 				"和 ae2wtlib 的无线编码终端搭配，远程改样板也不用跑回主机房。"
-			],
-			dependencies: [
-				"105DCCA704EF659C"
-			],
-			icon: "ae2wtlib:wireless_pattern_access_terminal",
-			id: "0B2392C240F20335",
-			tasks: [
-				{
-					id: "3E1A749CC167E1F4",
-					type: "item",
-					item: "ae2wtlib:wireless_pattern_access_terminal",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "无线样板访问终端：远程下单",
-			x: 4.0d,
+			]
+			icon: "ae2wtlib:wireless_pattern_access_terminal"
+			id: "0B2392C240F20335"
+			tasks: [{
+				consume_items: false
+				id: "3E1A749CC167E1F4"
+				item: "ae2wtlib:wireless_pattern_access_terminal"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "无线样板访问终端：远程下单"
+			x: 4.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["0B2392C240F20335"]
 			description: [
-				"原版 P2P 一路信号就要一对隧道；MAE2 的 multi P2P 一对隧道可以挂 8 路。",
-				"全家桶：物品 / 流体 / FE / EU / 样板 / 红石都有 multi 版，EU 和 FE 还互转。",
+				"原版 P2P 一路信号就要一对隧道；MAE2 的 multi P2P 一对隧道可以挂 8 路。"
+				"全家桶：物品 / 流体 / FE / EU / 样板 / 红石都有 multi 版，EU 和 FE 还互转。"
 				"大网络里先上 multi P2P，再考虑加控制器，频道压力小得多。"
-			],
-			dependencies: [
-				"0B2392C240F20335"
-			],
-			icon: "mae2:item_multi_p2p_tunnel",
-			id: "6301F319E19B8E06",
-			tasks: [
-				{
-					id: "5E17C62B0760BAD2",
-					type: "item",
-					item: "mae2:item_multi_p2p_tunnel",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "MAE2 多路 P2P：一根线当八根",
-			x: 6.0d,
+			]
+			icon: "mae2:item_multi_p2p_tunnel"
+			id: "6301F319E19B8E06"
+			tasks: [{
+				consume_items: false
+				id: "5E17C62B0760BAD2"
+				item: "mae2:item_multi_p2p_tunnel"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "MAE2 多路 P2P：一根线当八根"
+			x: 6.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["6301F319E19B8E06"]
 			description: [
-				"4x / 16x / 64x / 256x 合成加速器直接叠在分子装配室旁，一次并行抓八个任务。",
-				"大规模自动合成（GT 电路板、神秘注魔材料）靠它把等待时间压到秒级。",
+				"4x / 16x / 64x / 256x 合成加速器直接叠在分子装配室旁，一次并行抓八个任务。"
+				"大规模自动合成（GT 电路板、神秘注魔材料）靠它把等待时间压到秒级。"
 				"云室（cloud_chamber）是 MAE2 的另一个小玩具：给协作处理器提供概率侧输出，前期缺粒崽时有用。"
-			],
-			dependencies: [
-				"6301F319E19B8E06"
-			],
-			icon: "mae2:256x_crafting_accelerator",
-			id: "4AAF71D3CE693552",
-			tasks: [
-				{
-					id: "4972DBF244205D9B",
-					type: "item",
-					item: "mae2:256x_crafting_accelerator",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "MAE2 合成加速器与云室",
-			x: 8.0d,
+			]
+			icon: "mae2:256x_crafting_accelerator"
+			id: "4AAF71D3CE693552"
+			tasks: [{
+				consume_items: false
+				id: "4972DBF244205D9B"
+				item: "mae2:256x_crafting_accelerator"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "MAE2 合成加速器与云室"
+			x: 8.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["0018681F5CDCAFEF"]
 			description: [
-				"所有附属细胞的套路都一样：外壳 + 对应组件在工作台合成，再用细胞工作台分区、改优先级。",
-				"ME 物品细胞（1k~64k）只认“分区里的物品”，全空分区 = 什么都收。",
+				"所有附属细胞的套路都一样：外壳 + 对应组件在工作台合成，再用细胞工作台分区、改优先级。"
+				"ME 物品细胞（1k~64k）只认“分区里的物品”，全空分区 = 什么都收。"
 				"后面五张卡片：魔力 / 气体 / 星光 / EU / 源质，全是同一套逻辑，学会一次就会全部。"
-			],
-			dependencies: [
-				"0018681F5CDCAFEF"
-			],
-			icon: "ae2:item_storage_cell_1k",
-			id: "79CE4FDAE17D0234",
+			]
+			icon: "ae2:item_storage_cell_1k"
+			id: "79CE4FDAE17D0234"
 			tasks: [
 				{
-					id: "34BE03152EAC0640",
-					type: "item",
-					item: "ae2:item_cell_housing",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "34BE03152EAC0640"
+					item: "ae2:item_cell_housing"
+					match_nbt: false
 					only_from_crafting: false
-				},
-				{
-					id: "0F30DD63879CCC34",
-					type: "item",
-					item: "ae2:cell_workbench",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
+					type: "item"
 				}
-			],
-			title: "存储细胞：外壳、组件与工作台",
-			x: 2.0d,
+				{
+					consume_items: false
+					id: "0F30DD63879CCC34"
+					item: "ae2:cell_workbench"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "存储细胞：外壳、组件与工作台"
+			x: 2.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["79CE4FDAE17D0234"]
 			description: [
-				"Applied Botanics 把魔力池变成 ME 网络的存储节点：魔力细胞放进驱动器，魔力池旁接上网络即可。",
-				"fluix_mana_pool 是它的专属池子，直接以 ME 流体/魔力接口对接蓟花与精灵。",
+				"Applied Botanics 把魔力池变成 ME 网络的存储节点：魔力细胞放进驱动器，魔力池旁接上网络即可。"
+				"fluix_mana_pool 是它的专属池子，直接以 ME 流体/魔力接口对接蓟花与精灵。"
 				"魔力进 ME 后， Mana P2P 也能远距离传魔力，不用再拉魔力中继器长龙。"
-			],
-			dependencies: [
-				"79CE4FDAE17D0234"
-			],
-			icon: "appbot:mana_storage_cell_1k",
-			id: "4CE1BEED5AAB97C5",
-			tasks: [
-				{
-					id: "25AEC9D6C1B2ACEA",
-					type: "item",
-					item: "appbot:mana_storage_cell_1k",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "魔力细胞：植物魔法入库",
-			x: 4.0d,
+			]
+			icon: "appbot:mana_storage_cell_1k"
+			id: "4CE1BEED5AAB97C5"
+			tasks: [{
+				consume_items: false
+				id: "25AEC9D6C1B2ACEA"
+				item: "appbot:mana_storage_cell_1k"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "魔力细胞：植物魔法入库"
+			x: 4.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["79CE4FDAE17D0234"]
 			description: [
-				"Applied Mekanistics 给 Mekanism 的气体 / 矿泥 / 渗液做了 ME 存储：化学细胞 1k~256k。",
-				"机械爪、化学注射器产线接上网络后，气体直接进细胞，不用一排排气罐。",
+				"Applied Mekanistics 给 Mekanism 的气体 / 矿泥 / 渗液做了 ME 存储：化学细胞 1k~256k。"
+				"机械爪、化学注射器产线接上网络后，气体直接进细胞，不用一排排气罐。"
 				"化学 P2P 也能远距离输气，跨厂房走一根线。"
-			],
-			dependencies: [
-				"79CE4FDAE17D0234"
-			],
-			icon: "appmek:chemical_storage_cell_1k",
-			id: "7D8CF9295E021196",
-			tasks: [
-				{
-					id: "7644AEEA05DA308E",
-					type: "item",
-					item: "appmek:chemical_storage_cell_1k",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "化学细胞：气体入库",
-			x: 6.0d,
+			]
+			icon: "appmek:chemical_storage_cell_1k"
+			id: "7D8CF9295E021196"
+			tasks: [{
+				consume_items: false
+				id: "7644AEEA05DA308E"
+				item: "appmek:chemical_storage_cell_1k"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "化学细胞：气体入库"
+			x: 6.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["79CE4FDAE17D0234"]
 			description: [
-				"Applied Astral Sorcery 把星光（Illumination）变成 ME 存储资源：lumen 细胞系列。",
-				"星光晶体在祭坛聚光后灌进网络，自动祭坛从此不用人守着看进度。",
+				"Applied Astral Sorcery 把星光（Illumination）变成 ME 存储资源：lumen 细胞系列。"
+				"星光晶体在祭坛聚光后灌进网络，自动祭坛从此不用人守着看进度。"
 				"astral_fluix 晶体系列是它的专属荧光材料，配合荧光簇（cluster）方块布置聚光。"
-			],
-			dependencies: [
-				"79CE4FDAE17D0234"
-			],
-			icon: "appliedas:lumen_storage_cell_1k",
-			id: "33022E6F16589F12",
-			tasks: [
-				{
-					id: "00B1D34D9D5A55C7",
-					type: "item",
-					item: "appliedas:lumen_storage_cell_1k",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "星光细胞：星辉入库",
-			x: 8.0d,
+			]
+			icon: "appliedas:lumen_storage_cell_1k"
+			id: "33022E6F16589F12"
+			tasks: [{
+				consume_items: false
+				id: "00B1D34D9D5A55C7"
+				item: "appliedas:lumen_storage_cell_1k"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "星光细胞：星辉入库"
+			x: 8.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["79CE4FDAE17D0234"]
 			description: [
-				"Applied Greg 让 ME 网络直接当 GT 的电池：EU 细胞（最高 256M）存电。",
-				"ME 能量输入/输出舱（EV/HV/IV 各档，4a/16a）把 GT 电网和网络双向接通。",
+				"Applied Greg 让 ME 网络直接当 GT 的电池：EU 细胞（最高 256M）存电。"
+				"ME 能量输入/输出舱（EV/HV/IV 各档，4a/16a）把 GT 电网和网络双向接通。"
 				"ME 二极管（diode）用来单向限流，防止两个电网互相倒灌。"
-			],
-			dependencies: [
-				"79CE4FDAE17D0234"
-			],
-			icon: "applied_greg:eu_storage_cell_1k",
-			id: "2F4A2FA44B7828F8",
+			]
+			icon: "applied_greg:eu_storage_cell_1k"
+			id: "2F4A2FA44B7828F8"
 			tasks: [
 				{
-					id: "0CA7246842AB4B65",
-					type: "item",
-					item: "applied_greg:eu_storage_cell_1k",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "0CA7246842AB4B65"
+					item: "applied_greg:eu_storage_cell_1k"
+					match_nbt: false
 					only_from_crafting: false
-				},
-				{
-					id: "078B963E689BFDCB",
-					type: "item",
-					item: "applied_greg:ev_me_energy_input_hatch",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
+					type: "item"
 				}
-			],
-			title: "EU 细胞与 GT 能量舱：格雷电力入网",
-			x: 10.0d,
+				{
+					consume_items: false
+					id: "078B963E689BFDCB"
+					item: "applied_greg:ev_me_energy_input_hatch"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "EU 细胞与 GT 能量舱：格雷电力入网"
+			x: 10.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["79CE4FDAE17D0234"]
 			description: [
-				"Thaumic Energistics 把源质变成 ME 物品：源质细胞 1k~64k，装进驱动器即用。",
-				"源质管从蒸馏器 / 陶罐接到网络任意接口，源质按要素自动入库。",
+				"Thaumic Energistics 把源质变成 ME 物品：源质细胞 1k~64k，装进驱动器即用。"
+				"源质管从蒸馏器 / 陶罐接到网络任意接口，源质按要素自动入库。"
 				"它是后面所有神秘自动化的地基：没有源质细胞，就没有源质终端。"
-			],
-			dependencies: [
-				"79CE4FDAE17D0234"
-			],
-			icon: "thaumicenergistics:essentia_cell_1k",
-			id: "375A05E5C69F11CE",
-			tasks: [
-				{
-					id: "796FC2DF26E53845",
-					type: "item",
-					item: "thaumicenergistics:essentia_cell_1k",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "源质细胞：神秘时代入库",
-			x: 12.0d,
+			]
+			icon: "thaumicenergistics:essentia_cell_1k"
+			id: "375A05E5C69F11CE"
+			tasks: [{
+				consume_items: false
+				id: "796FC2DF26E53845"
+				item: "thaumicenergistics:essentia_cell_1k"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "源质细胞：神秘时代入库"
+			x: 12.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["375A05E5C69F11CE"]
 			description: [
-				"源质终端：在网络任何终端上直接看全网络源质存量，按要素搜索。",
-				"奥术合成终端：站在原地做奥术合成台的一切，材料源质从网络里扣。",
+				"源质终端：在网络任何终端上直接看全网络源质存量，按要素搜索。"
+				"奥术合成终端：站在原地做奥术合成台的一切，材料源质从网络里扣。"
 				"无线版（wireless_essentia_terminal / wireless_arcane_crafting_terminal）配合 ae2wtlib 的访问点随处可用。"
-			],
-			dependencies: [
-				"375A05E5C69F11CE"
-			],
-			icon: "thaumicenergistics:arcane_crafting_terminal",
-			id: "090AA762AB251061",
+			]
+			icon: "thaumicenergistics:arcane_crafting_terminal"
+			id: "090AA762AB251061"
 			tasks: [
 				{
-					id: "0236DD76D826AD54",
-					type: "item",
-					item: "thaumicenergistics:essentia_terminal",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "0236DD76D826AD54"
+					item: "thaumicenergistics:essentia_terminal"
+					match_nbt: false
 					only_from_crafting: false
-				},
-				{
-					id: "6EAF660FEAF96122",
-					type: "item",
-					item: "thaumicenergistics:arcane_crafting_terminal",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
+					type: "item"
 				}
-			],
-			title: "神秘终端与奥术合成终端",
-			x: 14.0d,
+				{
+					consume_items: false
+					id: "6EAF660FEAF96122"
+					item: "thaumicenergistics:arcane_crafting_terminal"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "神秘终端与奥术合成终端"
+			x: 14.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["090AA762AB251061"]
 			description: [
-				"源质导出总线把网络里的源质按要素定量喂给注魔祭坛、聚能晶块；导入总线反过来回收余量。",
-				"essentia_provider / infusion_provider 是方块形态的大流量接口，接祭坛和蒸馏器用。",
+				"源质导出总线把网络里的源质按要素定量喂给注魔祭坛、聚能晶块；导入总线反过来回收余量。"
+				"essentia_provider / infusion_provider 是方块形态的大流量接口，接祭坛和蒸馏器用。"
 				"奥术装配器（arcane_assembler）+ 蒸馏编码器（distillation_encoder）能把奥术配方写成样板全自动跑。"
-			],
-			dependencies: [
-				"090AA762AB251061"
-			],
-			icon: "thaumicenergistics:essentia_export_bus",
-			id: "4BCDDF1868A10598",
+			]
+			icon: "thaumicenergistics:essentia_export_bus"
+			id: "4BCDDF1868A10598"
 			tasks: [
 				{
-					id: "0565E078B302A4E3",
-					type: "item",
-					item: "thaumicenergistics:essentia_export_bus",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "0565E078B302A4E3"
+					item: "thaumicenergistics:essentia_export_bus"
+					match_nbt: false
 					only_from_crafting: false
-				},
-				{
-					id: "27F4B3731F22479D",
-					type: "item",
-					item: "thaumicenergistics:essentia_import_bus",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				},
-				{
-					id: "3201C4A1BA086324",
-					type: "item",
-					item: "thaumicenergistics:essentia_provider",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
+					type: "item"
 				}
-			],
-			title: "源质总线：进出口与供应器",
-			x: 16.0d,
+				{
+					consume_items: false
+					id: "27F4B3731F22479D"
+					item: "thaumicenergistics:essentia_import_bus"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3201C4A1BA086324"
+					item: "thaumicenergistics:essentia_provider"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "源质总线：进出口与供应器"
+			x: 16.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["33022E6F16589F12"]
 			description: [
-				"appliedas:altar_automation_interface 装在星空祭坛旁，祭坛的进料出料全走 ME。",
-				"constellation_relay / constellation_core 把星座仪式的锁链拉进网络，配合样板做全套自动注星。",
+				"appliedas:altar_automation_interface 装在星空祭坛旁，祭坛的进料出料全走 ME。"
+				"constellation_relay / constellation_core 把星座仪式的锁链拉进网络，配合样板做全套自动注星。"
 				"me_celestial_gateway 是它的终局玩具：网络直接开星光传送门。"
-			],
-			dependencies: [
-				"33022E6F16589F12"
-			],
-			icon: "appliedas:altar_automation_interface",
-			id: "18685624C77A96DD",
+			]
+			icon: "appliedas:altar_automation_interface"
+			id: "18685624C77A96DD"
 			tasks: [
 				{
-					id: "0FDF566314683CAF",
-					type: "item",
-					item: "appliedas:altar_automation_interface",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "0FDF566314683CAF"
+					item: "appliedas:altar_automation_interface"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "6124F93184078549",
-					type: "item",
-					item: "appliedas:constellation_relay",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "6124F93184078549"
+					item: "appliedas:constellation_relay"
+					match_nbt: false
 					only_from_crafting: false
+					type: "item"
 				}
-			],
-			title: "星辉祭坛自动化",
-			x: 8.0d,
-			y: 2.0d
-		},
-		{
-			description: [
-				"接受仓（SunlitMarket）对外就是五个口：物品、流体、FE、源质、魔力——全都能从 ME 网络直接灌。",
-				"FE 50000 = 1 spur；魔力 2000 点 = 1 spur；源质按要素分三档（4/2/1 点 = 1 spur）。",
-				"EU 先经 Applied Greg 的 ME 能量舱转成 FE 再卖；多余的细胞耗材别乱卖，先看价目表。",
-				"详见「贸易」章节的接受仓五路。"
-			],
-			dependencies: [
-				"375A05E5C69F11CE",
-				"543AB0B2A093F8B6",
-				"4040D45BF06D0973",
-				"7160EA5E15705A84"
-			],
-			icon: "sunlitmarket:deposit_bin",
-			id: "2959A17B2E98AEA7",
-			tasks: [
-				{
-					id: "1B4CF4F7D129E214",
-					title: "已把网络里的能量或魔法卖进接受仓",
-					type: "checkmark"
-				}
-			],
-			title: "把能量和魔法换成钱",
-			x: 12.0d,
+			]
+			title: "星辉祭坛自动化"
+			x: 8.0d
 			y: 2.0d
 		}
-	],
+		{
+			dependencies: [
+				"375A05E5C69F11CE"
+				"543AB0B2A093F8B6"
+				"4040D45BF06D0973"
+				"7160EA5E15705A84"
+			]
+			description: [
+				"接受仓（SunlitMarket）对外就是五个口：物品、流体、FE、源质、魔力——全都能从 ME 网络直接灌。"
+				"FE 50000 = 1 spur；魔力 2000 点 = 1 spur；源质按要素分三档（4/2/1 点 = 1 spur）。"
+				"EU 先经 Applied Greg 的 ME 能量舱转成 FE 再卖；多余的细胞耗材别乱卖，先看价目表。"
+				"详见「贸易」章节的接受仓五路。"
+			]
+			icon: "sunlitmarket:deposit_bin"
+			id: "2959A17B2E98AEA7"
+			tasks: [{
+				id: "1B4CF4F7D129E214"
+				title: "已把网络里的能量或魔法卖进接受仓"
+				type: "checkmark"
+			}]
+			title: "把能量和魔法换成钱"
+			x: 12.0d
+			y: 2.0d
+		}
+	]
 	title: "&b&l科技&r - AE2 附属联动"
 }

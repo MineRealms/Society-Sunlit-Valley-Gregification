@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "gtceu:crushed_gold_ore"
 	id: "72E9EAAA24C77C22"
-	order_index: 16
+	order_index: 17
 	quest_links: [ ]
 	quests: [
 		{
@@ -477,6 +477,78 @@
 			title: "子网基础入门"
 			x: -1.5d
 			y: -1.125d
+		}
+		{
+			dependencies: ["730043448A9ADBB6"]
+			description: [
+				"不想下洞还有另一条路:&b矿物提取器&r."
+				""
+				"它不挖方块,而是往外&e扫描&r目标,按间隔把矿产物&e直接产出来&r.代价是持续消耗两种源质:&5混沌/熵&r 与 &d魔法&r."
+				""
+				"所以它必须接在源质网络上:&e源质仓&r要有货,邻接的&e源质传输&r要通.机器一直&c搜索矿物中&r却没产出,先查源质供给,别急着怀疑配方."
+				""
+				"把它并进&a一矿入,众粉出&r那条线,它就是一台&e人造矿脉&r:前期比满世界找矿脉稳,后期比不过大型采矿场,但胜在随时能开."
+			]
+			icon: "pollution:mineral_extractor"
+			id: "A1DF4FA432E28B3F"
+			size: 1.25d
+			subtitle: "矿物提取器"
+			tasks: [{
+				id: "7EDDFE260D0329FB"
+				title: "让提取器跑起来"
+				type: "checkmark"
+			}]
+			title: "机器自己去挖"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["A1DF4FA432E28B3F"]
+			description: [
+				"面板上能切三种模式,换的不是配方,是&e工作对象&r:"
+				""
+				"&e0 实体采矿&r:对扫描到的目标直接结算产物,不开挖、不破坏地形."
+				"&e1 生成草方块&r:往世界里铺草方块."
+				"&e2 生成石头&r:往世界里铺石头."
+				""
+				"后两种本质是&e造地形&r:补平台、填坑、给刷怪塔铺底都行,但会改世界,别在基地正下方乱开."
+				""
+				"建议&c停机&r后再切换模式,别让一个周期按旧模式跑完."
+			]
+			icon: "minecraft:grass_block"
+			id: "FD59F767FBF0EA31"
+			size: 1.0d
+			subtitle: "三种模式"
+			tasks: [{
+				id: "00B0A2214FB8F8CA"
+				title: "三种模式各试一次"
+				type: "checkmark"
+			}]
+			title: "实体采矿 / 草 / 石头"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["FD59F767FBF0EA31"]
+			description: [
+				"提取器吐出来的是&e普通矿产物&r,和挖出来的原矿没有任何区别:直接并进&a破碎 → 洗矿 → 离心&r主线,该磨就磨."
+				""
+				"但&c别把晶种和培育水晶当矿物处理&r.那两个是&d数据载体&r,丢进粉碎机只会把数据磨没;它们的用法是进培养阵列、进透镜仓光学槽."
+				""
+				"一句话区分:&e挖出来的追产量,种出来的追品质&r."
+			]
+			icon: "pollution:cultivated_crystal"
+			id: "7D3A972EDBBE1EE6"
+			size: 1.0d
+			subtitle: "别把数据磨成粉"
+			tasks: [{
+				id: "C604831A6546E141"
+				title: "想清楚再动粉碎机"
+				type: "checkmark"
+			}]
+			title: "产物并线,水晶留手"
+			x: 0.0d
+			y: -8.0d
 		}
 	]
 	subtitle: ["如何实现最大化提取..."]

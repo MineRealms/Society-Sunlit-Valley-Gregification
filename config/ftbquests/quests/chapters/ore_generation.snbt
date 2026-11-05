@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "minecraft:iron_ore"
 	id: "6A809CAE287B97BA"
-	order_index: 15
+	order_index: 16
 	quest_links: [
 		{
 			id: "4B68740C721D04D5"
@@ -1351,6 +1351,104 @@
 			title: "沥青铀矿"
 			x: 11.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["0269FCDE2628904A"]
+			description: [
+				"&8地底世界&r 是 Pollution 自带的一个独立维度,靠 &bPollution 传送门&r 进出."
+				""
+				"维度参数先记住:&c无天光&r、&c有天花板&r、固定时间 &e18000(永夜)&r、环境光只有 &e0.1&r;床不能睡,重生锚也无效——这里没有昼夜,也没有临时复活点."
+				""
+				"能挖的:&d下界石英&r(连带成根的&d石英柱&r)、&8灵魂沙矿&r、吊在顶上的&e荧石&r、钟乳石,以及蘑菇和藤蔓;部分群系还会长&5地底花园&r."
+				""
+				"生物是六种&5源质史莱姆&r(气/火/水/土/秩序/混沌),顺手刷源质比专门搭聚灵阵划算."
+				""
+				"&c注意&r:传送门目的地若落在世界安全边界之外,会直接拒绝传送."
+				""
+				"定位:一条&e短平快&r的石英/灵魂沙/荧石补给线,不是第二个下界."
+			]
+			icon: "pollution:portal"
+			id: "23FFE71510307F82"
+			size: 1.1d
+			subtitle: "地底世界"
+			tasks: [{
+				id: "864823BAE4CE93DE"
+				title: "下去看一眼"
+				type: "checkmark"
+			}]
+			title: "石英不止下界有"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["23FFE71510307F82"]
+			description: [
+				"格雷的矿是&e长在岩层里&r的;Pollution 的矿是&e种出来&r的."
+				""
+				"先在&b魔导组装机&r里筛选&d原生岩石水晶&r,得到 &a岩石水晶晶种&r.晶种会把原始水晶的&e属性、纯度、稳定度&r一并带过来——品质在你筛出它的那一刻就定了."
+				""
+				"&c只有携带完整晶体数据的晶种才能进入培育&r,数据不全的只能当废料."
+			]
+			icon: "pollution:rock_crystal_seed"
+			id: "7DF8F47455A5EBAD"
+			size: 1.0d
+			subtitle: "岩石水晶晶种"
+			tasks: [{
+				id: "9BF852A057D7EA6B"
+				title: "筛出一枚合格晶种"
+				type: "checkmark"
+			}]
+			title: "矿脉换成种子"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7DF8F47455A5EBAD"]
+			description: [
+				"晶种继续加工成 &a天体晶体培养胚&r,原始水晶的数据仍然跟着它走."
+				""
+				"把培养胚和配方原料一起放进 &b天体晶体培养阵列&r;再给 &b高级星辉透镜仓&r 装上 &d星座数据晶圆&r.透镜仓要求&c保持露天&r,别给它盖顶."
+				""
+				"星座决定方向:&6晶金座&r是&e矿物共鸣&r,&b寒冰座&r是&e冷却与结晶&r.晶圆来自&b天体观测阵列&r加对应星座纸;空白晶圆只能造机器,给不了增幅."
+				""
+				"&c空白培养胚不能顶替带属性的培养胚&r."
+			]
+			icon: "pollution:celestial_crystal_embryo"
+			id: "60A20DDA3851DBCA"
+			size: 1.0d
+			subtitle: "天体晶体培养胚"
+			tasks: [{
+				id: "B8905BD75770D61C"
+				title: "让阵列跑一个周期"
+				type: "checkmark"
+			}]
+			title: "在阵列里长矿"
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["60A20DDA3851DBCA"]
+			description: [
+				"阵列跑完,你拿到的不是矿石,是 &a培育水晶&r."
+				""
+				"&c培育水晶不能再次选种&r——作者刻意堵死了循环提纯,别指望反复回炉把品质堆到天上."
+				""
+				"它还能插进&b高级透镜仓&r的&e光学槽&r当增幅,给同一台多方块再加一层强度."
+				""
+				"整条链:&7原生水晶 → 晶种 → 培养胚 → 培育水晶&r.全程在机器里,一步都不用下洞."
+			]
+			icon: "pollution:cultivated_crystal"
+			id: "6263540B0332E697"
+			size: 1.0d
+			subtitle: "培育水晶"
+			tasks: [{
+				id: "3BAF76EDAF824FB6"
+				title: "产出一枚培育水晶"
+				type: "checkmark"
+			}]
+			title: "矿的终点是作物"
+			x: 6.0d
+			y: -9.0d
 		}
 	]
 	subtitle: ["丰富矿藏及其他资源"]

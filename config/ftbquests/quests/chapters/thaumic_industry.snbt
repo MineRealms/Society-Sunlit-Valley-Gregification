@@ -1,594 +1,536 @@
 {
-	default_hide_dependency_lines: false,
-	default_quest_shape: "square",
-	filename: "thaumic_industry",
-	group: "4A46A5E1358A80A6",
-	icon: "pollution:industrial_infusion",
-	id: "3351C934AB877A2F",
-	order_index: 25,
-	quest_links: [ ],
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "thaumic_industry"
+	group: "14AB86BD08B253EC"
+	icon: "pollution:industrial_infusion"
+	id: "3351C934AB877A2F"
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["769ADA236C630FC7"]
 			description: [
-				"魔法×GT 的总原则：前期用神秘手段（坩埚／奥术／注魔祭坛）打基础，高级阶段解锁工业化批量生产。",
-				"本章三件事：① &6奥术电路&r——神秘主题的 GT 电路梯，MV 到 UV 七级；② &6工业注魔&r——把 TC 配方批量转写成 GT 配方；③ &6源质估值&r——1 点源质到底等于多少。",
-				"工业化是&e杠杆&r，不是替代：所有手工祭坛配方都保留，老存档的研究、机器、物品 ID 不变。",
+				"魔法×GT 的总原则：前期用神秘手段（坩埚／奥术／注魔祭坛）打基础，高级阶段解锁工业化批量生产。"
+				"本章三件事：① &6奥术电路&r——神秘主题的 GT 电路梯，MV 到 UV 七级；② &6工业注魔&r——把 TC 配方批量转写成 GT 配方；③ &6源质估值&r——1 点源质到底等于多少。"
+				"工业化是&e杠杆&r，不是替代：所有手工祭坛配方都保留，老存档的研究、机器、物品 ID 不变。"
 				"本章的产物直接进 gtceu:circuits/mv..uv 标签，所以 GT 主线里写「电路」的地方都能吃。"
-			],
-			dependencies: [
-				"769ADA236C630FC7"
-			],
-			icon: "pollution:industrial_infusion",
-			id: "5C7D3316B7F5E5A8",
-			tasks: [
-				{
-					id: "52E142308B23DE5C",
-					title: "已了解本章的三条主线",
-					type: "checkmark"
-				}
-			],
-			title: "神秘工业：祭坛搬进车间",
-			x: 0.0d,
+			]
+			icon: "pollution:industrial_infusion"
+			id: "5C7D3316B7F5E5A8"
+			tasks: [{
+				id: "52E142308B23DE5C"
+				title: "已了解本章的三条主线"
+				type: "checkmark"
+			}]
+			title: "神秘工业：祭坛搬进车间"
+			x: 0.0d
 			y: 0.0d
-		},
+		}
 		{
-			description: [
-				"TC 奥术工作台：&7T Q T / 空格 B 空格&r，T = 神秘锭、Q = 水银、B = 基础集成电路。",
-				"vis 消耗：&6气 16 + 秩序 8&r。TC4R 的奥术配方只认六个原始 vis 通道，写成复合要素（如灵气）会被静默丢弃，配方根本不会加载。",
-				"产物是 &6奥术电路基底（pollution:blood_circuit）&r——整条神秘电路梯的起点，也是模板 2 的中心物。",
-				"这条配方没有研究门槛，拿到材料就能做；后面的模板 2／3／4 才是注魔。"
-			],
 			dependencies: [
-				"5C7D3316B7F5E5A8",
+				"5C7D3316B7F5E5A8"
 				"4F15F9F6021B0AF8"
-			],
-			icon: "pollution:blood_circuit",
-			id: "4059099200CF38AC",
+			]
+			description: [
+				"TC 奥术工作台：&7T Q T / 空格 B 空格&r，T = 神秘锭、Q = 水银、B = 基础集成电路。"
+				"vis 消耗：&6气 16 + 秩序 8&r。TC4R 的奥术配方只认六个原始 vis 通道，写成复合要素（如灵气）会被静默丢弃，配方根本不会加载。"
+				"产物是 &6奥术电路基底（pollution:blood_circuit）&r——整条神秘电路梯的起点，也是模板 2 的中心物。"
+				"这条配方没有研究门槛，拿到材料就能做；后面的模板 2／3／4 才是注魔。"
+			]
+			icon: "pollution:blood_circuit"
+			id: "4059099200CF38AC"
 			tasks: [
 				{
-					id: "590D2D61606A41C2",
-					type: "item",
-					item: "pollution:blood_circuit",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "590D2D61606A41C2"
+					item: "pollution:blood_circuit"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "332DA847D3D7F3E4",
-					title: "已在奥术工作台做出奥术电路基底",
+					id: "332DA847D3D7F3E4"
+					title: "已在奥术工作台做出奥术电路基底"
 					type: "checkmark"
 				}
-			],
-			title: "模板 1：奥术工作台造出奥术电路基底",
-			x: 2.0d,
+			]
+			title: "模板 1：奥术工作台造出奥术电路基底"
+			x: 2.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["4059099200CF38AC"]
 			description: [
-				"注魔祭坛：中心物 &6奥术电路基底&r，组件 &7虚空锭 1 + 水晶精华 2 + 水银 1&r。",
-				"要素：&6源质 16 / 金属 8 / 虚空 8&r；不稳定度 3。",
+				"注魔祭坛：中心物 &6奥术电路基底&r，组件 &7虚空锭 1 + 水晶精华 2 + 水银 1&r。"
+				"要素：&6源质 16 / 金属 8 / 虚空 8&r；不稳定度 3。"
 				"产物 &6奥术电路进阶基底&r 是 EV／IV 两级神秘电路的模板。"
-			],
-			dependencies: [
-				"4059099200CF38AC"
-			],
-			icon: "pollution:blood_circuit_advanced",
-			id: "3E981A3FFE0ADA0D",
+			]
+			icon: "pollution:blood_circuit_advanced"
+			id: "3E981A3FFE0ADA0D"
 			tasks: [
 				{
-					id: "4B91026B7A8A17AA",
-					type: "item",
-					item: "pollution:blood_circuit_advanced",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "4B91026B7A8A17AA"
+					item: "pollution:blood_circuit_advanced"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "1625F5D5BBAE2BB5",
-					title: "已注魔出奥术电路进阶基底",
+					id: "1625F5D5BBAE2BB5"
+					title: "已注魔出奥术电路进阶基底"
 					type: "checkmark"
 				}
-			],
-			title: "模板 2：虚空锭 + 水晶精华",
-			x: 4.0d,
+			]
+			title: "模板 2：虚空锭 + 水晶精华"
+			x: 4.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["3E981A3FFE0ADA0D"]
 			description: [
-				"注魔祭坛：中心物 &6奥术电路进阶基底&r，组件 &7thaumadds:mithrillium_ingot 1 + 影金锭 1 + 以太碎片 2&r。",
-				"要素：&6源质 24 / 异界 16 / 金属 12&r；不稳定度 5。",
+				"注魔祭坛：中心物 &6奥术电路进阶基底&r，组件 &7thaumadds:mithrillium_ingot 1 + 影金锭 1 + 以太碎片 2&r。"
+				"要素：&6源质 24 / 异界 16 / 金属 12&r；不稳定度 5。"
 				"终极基底用于 LuV／ZPM；以太碎片要放两个独立的基座，不是一个材料的两种替代品。"
-			],
-			dependencies: [
-				"3E981A3FFE0ADA0D"
-			],
-			icon: "pollution:blood_circuit_ultimate",
-			id: "6A00CFFB2D650AD2",
+			]
+			icon: "pollution:blood_circuit_ultimate"
+			id: "6A00CFFB2D650AD2"
 			tasks: [
 				{
-					id: "7D1089E85FA134F3",
-					type: "item",
-					item: "pollution:blood_circuit_ultimate",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "7D1089E85FA134F3"
+					item: "pollution:blood_circuit_ultimate"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "559D8ECB0EFE3AA9",
-					title: "已注魔出奥术电路终极基底",
+					id: "559D8ECB0EFE3AA9"
+					title: "已注魔出奥术电路终极基底"
 					type: "checkmark"
 				}
-			],
-			title: "模板 3：秘银锂 + 影金",
-			x: 6.0d,
+			]
+			title: "模板 3：秘银锂 + 影金"
+			x: 6.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["6A00CFFB2D650AD2"]
 			description: [
-				"中心物 &6奥术电路终极基底&r；组件 &7灵宝（thaumictinkerer:ichorium）2 + 创造碎片 1 + 下界之星 1&r。",
-				"要素：源质 32 / 异界 24 / 灵气 24；不稳定度 8。创造碎片已经消耗原始珍珠，这一步不再重复加一颗。",
+				"中心物 &6奥术电路终极基底&r；组件 &7灵宝（thaumictinkerer:ichorium）2 + 创造碎片 1 + 下界之星 1&r。"
+				"要素：源质 32 / 异界 24 / 灵气 24；不稳定度 8。创造碎片已经消耗原始珍珠，这一步不再重复加一颗。"
 				"至尊基底用于 UV；后期先完成原始珍珠研究，再用工业注魔合成珍珠供整条材料线使用。"
-			],
-			dependencies: [
-				"6A00CFFB2D650AD2"
-			],
-			icon: "pollution:blood_circuit_supreme",
-			id: "3FC12A8C1AF2DACE",
+			]
+			icon: "pollution:blood_circuit_supreme"
+			id: "3FC12A8C1AF2DACE"
 			tasks: [
 				{
-					id: "454C3436754B0B68",
-					type: "item",
-					item: "pollution:blood_circuit_supreme",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "454C3436754B0B68"
+					item: "pollution:blood_circuit_supreme"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "7FAA5ACAD5A41059",
-					title: "已注魔出奥术电路至尊基底",
+					id: "7FAA5ACAD5A41059"
+					title: "已注魔出奥术电路至尊基底"
 					type: "checkmark"
 				}
-			],
-			title: "模板 4：灵宝 + 创造碎片",
-			x: 8.0d,
+			]
+			title: "模板 4：灵宝 + 创造碎片"
+			x: 8.0d
 			y: 0.0d
-		},
+		}
 		{
+			dependencies: ["4059099200CF38AC"]
 			description: [
-				"GT 电路组装机：&7模板 1 + 神秘锭 + 塑料印刷电路板 + 4 细红合金线 + 72mB 焊锡 → 2 个&r，60 EU/t、200t，无洁净室。",
-				"配方 id：pollution:circuit_assembler/thaumic_circuit/0。",
-				"严格同级：电压、时长、产量都对齐原版 MV 电路配方，只把芯片组换成模板 + 神秘金属。",
+				"GT 电路组装机：&7模板 1 + 神秘锭 + 塑料印刷电路板 + 4 细红合金线 + 72mB 焊锡 → 2 个&r，60 EU/t、200t，无洁净室。"
+				"配方 id：pollution:circuit_assembler/thaumic_circuit/0。"
+				"严格同级：电压、时长、产量都对齐原版 MV 电路配方，只把芯片组换成模板 + 神秘金属。"
 				"从这一级起，配方写 gtceu:circuits/mv 的地方都会接受它。"
-			],
-			dependencies: [
-				"4059099200CF38AC"
-			],
-			icon: "pollution:blood_circuit.0",
-			id: "4D863AE0AF3E2B76",
+			]
+			icon: "pollution:blood_circuit.0"
+			id: "4D863AE0AF3E2B76"
 			tasks: [
 				{
-					id: "5456062512545DE4",
-					type: "item",
-					item: "pollution:blood_circuit.0",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "5456062512545DE4"
+					item: "pollution:blood_circuit.0"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "6DB446218734190D",
-					title: "已做出 MV 神秘电路",
+					id: "6DB446218734190D"
+					title: "已做出 MV 神秘电路"
 					type: "checkmark"
 				}
-			],
-			title: "神秘电路 MV：模板 1 + 神秘锭",
-			x: 4.0d,
+			]
+			title: "神秘电路 MV：模板 1 + 神秘锭"
+			x: 4.0d
 			y: -6.0d
-		},
+		}
 		{
+			dependencies: ["4D863AE0AF3E2B76"]
 			description: [
-				"电路组装机：&7模板 1 + 水晶精华 + 环氧印刷电路板 + 8 细金银合金线 + 72mB 焊锡 → 2 个&r，600 EU/t、200t，&e普通洁净室&r。",
-				"配方 id：pollution:circuit_assembler/thaumic_circuit/1。",
+				"电路组装机：&7模板 1 + 水晶精华 + 环氧印刷电路板 + 8 细金银合金线 + 72mB 焊锡 → 2 个&r，600 EU/t、200t，&e普通洁净室&r。"
+				"配方 id：pollution:circuit_assembler/thaumic_circuit/1。"
 				"从 HV 起进入洁净室时代：没有洁净室直接不开机。"
-			],
-			dependencies: [
-				"4D863AE0AF3E2B76"
-			],
-			icon: "pollution:blood_circuit.1",
-			id: "4F170E3E97D5DFCB",
+			]
+			icon: "pollution:blood_circuit.1"
+			id: "4F170E3E97D5DFCB"
 			tasks: [
 				{
-					id: "2EA99C15001DD17A",
-					type: "item",
-					item: "pollution:blood_circuit.1",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "2EA99C15001DD17A"
+					item: "pollution:blood_circuit.1"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "20003F2151916520",
-					title: "已做出 HV 神秘电路",
+					id: "20003F2151916520"
+					title: "已做出 HV 神秘电路"
 					type: "checkmark"
 				}
-			],
-			title: "神秘电路 HV：水晶精华",
-			x: 6.0d,
+			]
+			title: "神秘电路 HV：水晶精华"
+			x: 6.0d
 			y: -6.0d
-		},
+		}
 		{
+			dependencies: ["4F170E3E97D5DFCB"]
 			description: [
-				"电路组装机：&7模板 2 + 虚空锭 + 纤维增强印刷电路板 + 12 细铂线 + 72mB 焊锡 → 2 个&r，2400 EU/t、200t，洁净室。",
-				"配方 id：pollution:circuit_assembler/thaumic_circuit/2。",
+				"电路组装机：&7模板 2 + 虚空锭 + 纤维增强印刷电路板 + 12 细铂线 + 72mB 焊锡 → 2 个&r，2400 EU/t、200t，洁净室。"
+				"配方 id：pollution:circuit_assembler/thaumic_circuit/2。"
 				"模板从这一级换成奥术电路进阶基底——电路梯与祭坛模板是同步升级的。"
-			],
-			dependencies: [
-				"4F170E3E97D5DFCB"
-			],
-			icon: "pollution:blood_circuit.2",
-			id: "0951AD22DCA82DBB",
+			]
+			icon: "pollution:blood_circuit.2"
+			id: "0951AD22DCA82DBB"
 			tasks: [
 				{
-					id: "667A0B2EF6694A70",
-					type: "item",
-					item: "pollution:blood_circuit.2",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "667A0B2EF6694A70"
+					item: "pollution:blood_circuit.2"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "2B7EFBB4E4270DE0",
-					title: "已做出 EV 神秘电路",
+					id: "2B7EFBB4E4270DE0"
+					title: "已做出 EV 神秘电路"
 					type: "checkmark"
 				}
-			],
-			title: "神秘电路 EV：虚空锭",
-			x: 8.0d,
+			]
+			title: "神秘电路 EV：虚空锭"
+			x: 8.0d
 			y: -6.0d
-		},
+		}
 		{
+			dependencies: ["0951AD22DCA82DBB"]
 			description: [
-				"电路组装机：模板 2 + thaumadds:mithrillium_ingot + 多层纤维增强印刷电路板 + 8 细铌钛线 + 72mB 焊锡 → 2 个；9600 EU/t、200t、洁净室。",
-				"配方 id：pollution:circuit_assembler/thaumic_circuit/3。",
+				"电路组装机：模板 2 + thaumadds:mithrillium_ingot + 多层纤维增强印刷电路板 + 8 细铌钛线 + 72mB 焊锡 → 2 个；9600 EU/t、200t、洁净室。"
+				"配方 id：pollution:circuit_assembler/thaumic_circuit/3。"
 				"神秘领域的实际顺序是 mithrillium → adaminite → mithminite，不再按旧译名把顺序排反。"
-			],
-			dependencies: [
-				"0951AD22DCA82DBB"
-			],
-			icon: "pollution:blood_circuit.3",
-			id: "384F6B0FEC022B77",
+			]
+			icon: "pollution:blood_circuit.3"
+			id: "384F6B0FEC022B77"
 			tasks: [
 				{
-					id: "10256DC264A9C74B",
-					type: "item",
-					item: "pollution:blood_circuit.3",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "10256DC264A9C74B"
+					item: "pollution:blood_circuit.3"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "4FAF7AAA0F2C7B3B",
-					title: "已做出 IV 神秘电路",
+					id: "4FAF7AAA0F2C7B3B"
+					title: "已做出 IV 神秘电路"
 					type: "checkmark"
 				}
-			],
-			title: "神秘电路 IV：秘银锂",
-			x: 10.0d,
+			]
+			title: "神秘电路 IV：秘银锂"
+			x: 10.0d
 			y: -6.0d
-		},
+		}
 		{
+			dependencies: ["384F6B0FEC022B77"]
 			description: [
-				"电路组装机：模板 3 + 灵宝（thaumictinkerer:ichorium）+ 神经处理单元 + 8 细钇钡铜氧线 + 72mB 焊锡 → 2 个；38400 EU/t、200t、洁净室。",
-				"配方 id：pollution:circuit_assembler/thaumic_circuit/4。",
+				"电路组装机：模板 3 + 灵宝（thaumictinkerer:ichorium）+ 神经处理单元 + 8 细钇钡铜氧线 + 72mB 焊锡 → 2 个；38400 EU/t、200t、洁净室。"
+				"配方 id：pollution:circuit_assembler/thaumic_circuit/4。"
 				"保留神经处理单元，因此生物培养与无菌洁净室前置不可绕过；只替换 GT 的芯片／贴片元件部分。"
-			],
-			dependencies: [
-				"384F6B0FEC022B77"
-			],
-			icon: "pollution:blood_circuit.4",
-			id: "3F1E7E417BE3C425",
+			]
+			icon: "pollution:blood_circuit.4"
+			id: "3F1E7E417BE3C425"
 			tasks: [
 				{
-					id: "466E137DE0C5F7A1",
-					type: "item",
-					item: "pollution:blood_circuit.4",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "466E137DE0C5F7A1"
+					item: "pollution:blood_circuit.4"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "37640C9ED437081D",
-					title: "已做出 LuV 神秘电路",
+					id: "37640C9ED437081D"
+					title: "已做出 LuV 神秘电路"
 					type: "checkmark"
 				}
-			],
-			title: "神秘电路 LuV：灵宝与神经处理单元",
-			x: 12.0d,
+			]
+			title: "神秘电路 LuV：灵宝与神经处理单元"
+			x: 12.0d
 			y: -6.0d
-		},
+		}
 		{
+			dependencies: ["3F1E7E417BE3C425"]
 			description: [
-				"电路组装机：模板 3 + adaminite + 湿件印刷电路板 + 2 个神秘 LuV 电路 + 16 细钇钡铜氧线 + 144mB 焊锡 → 2 个；38400 EU/t、400t、洁净室。",
-				"配方 id：pollution:circuit_assembler/thaumic_circuit/5。",
+				"电路组装机：模板 3 + adaminite + 湿件印刷电路板 + 2 个神秘 LuV 电路 + 16 细钇钡铜氧线 + 144mB 焊锡 → 2 个；38400 EU/t、400t、洁净室。"
+				"配方 id：pollution:circuit_assembler/thaumic_circuit/5。"
 				"对标 GT 湿件处理器组件：低一级电路和基板必须投入。adaminite 消耗的珍珠可在工业注魔中晚期合成，不必每次刷 Boss。"
-			],
-			dependencies: [
-				"3F1E7E417BE3C425"
-			],
-			icon: "pollution:blood_circuit.5",
-			id: "1B731F2B77F14BFB",
+			]
+			icon: "pollution:blood_circuit.5"
+			id: "1B731F2B77F14BFB"
 			tasks: [
 				{
-					id: "104992DA504F6B2D",
-					type: "item",
-					item: "pollution:blood_circuit.5",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "104992DA504F6B2D"
+					item: "pollution:blood_circuit.5"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "7E58F5A316AFCEF3",
-					title: "已做出 ZPM 神秘电路",
+					id: "7E58F5A316AFCEF3"
+					title: "已做出 ZPM 神秘电路"
 					type: "checkmark"
 				}
-			],
-			title: "神秘电路 ZPM：LuV 电路组件升级",
-			x: 14.0d,
+			]
+			title: "神秘电路 ZPM：LuV 电路组件升级"
+			x: 14.0d
 			y: -6.0d
-		},
+		}
 		{
+			dependencies: ["1B731F2B77F14BFB"]
 			description: [
-				"装配线：湿件印刷电路板 + 2 个神秘 ZPM 电路 + 24 细钇钡铜氧线 + 32 PBI 箔 + 4 铕板 + 模板 4 + mithminite + 1152mB 焊锡 → 1 个；38400 EU/t、400t。",
-				"配方 id：pollution:assembly_line/thaumic_circuit/6。",
+				"装配线：湿件印刷电路板 + 2 个神秘 ZPM 电路 + 24 细钇钡铜氧线 + 32 PBI 箔 + 4 铕板 + 模板 4 + mithminite + 1152mB 焊锡 → 1 个；38400 EU/t、400t。"
+				"配方 id：pollution:assembly_line/thaumic_circuit/6。"
 				"必须在研究站研究神秘 ZPM 电路（16 CWU/t），并把数据带入装配线；不再允许普通组装机越过研究制造 UV 电路。"
-			],
-			dependencies: [
-				"1B731F2B77F14BFB"
-			],
-			icon: "pollution:blood_circuit.6",
-			id: "01732EC2C310F323",
+			]
+			icon: "pollution:blood_circuit.6"
+			id: "01732EC2C310F323"
 			tasks: [
 				{
-					id: "00AEC5955B6912CF",
-					type: "item",
-					item: "pollution:blood_circuit.6",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "00AEC5955B6912CF"
+					item: "pollution:blood_circuit.6"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "003DDF1B8009268E",
-					title: "已做出 UV 神秘电路",
+					id: "003DDF1B8009268E"
+					title: "已做出 UV 神秘电路"
 					type: "checkmark"
 				}
-			],
-			title: "神秘电路 UV：研究站与装配线",
-			x: 16.0d,
+			]
+			title: "神秘电路 UV：研究站与装配线"
+			x: 16.0d
 			y: -6.0d
-		},
+		}
 		{
+			dependencies: ["01732EC2C310F323"]
 			description: [
-				"七个电路已写进 gtceu:circuits/mv..uv 物品标签（数据包 data/gtceu/tags/items/circuits/*.json）。",
-				"GT 配方按标签匹配：写 circuits/mv 的配方同时接受原版 MV 电路与神秘 MV 电路。",
-				"所以它们是&e并行来源&r，不是替代品——用哪条取决于你手上的材料，原版路线一直有效。",
+				"七个电路已写进 gtceu:circuits/mv..uv 物品标签（数据包 data/gtceu/tags/items/circuits/*.json）。"
+				"GT 配方按标签匹配：写 circuits/mv 的配方同时接受原版 MV 电路与神秘 MV 电路。"
+				"所以它们是&e并行来源&r，不是替代品——用哪条取决于你手上的材料，原版路线一直有效。"
 				"标签只影响配方匹配，不改物品本身的用途。"
-			],
-			dependencies: [
-				"01732EC2C310F323"
-			],
-			icon: "gtceu:circuit_assembler",
-			id: "12463F267C5264E8",
-			tasks: [
-				{
-					id: "6A95770517564936",
-					title: "已确认标签的作用方式",
-					type: "checkmark"
-				}
-			],
-			title: "标签是「可替代」，不是「自动替换」",
-			x: 8.0d,
+			]
+			icon: "gtceu:circuit_assembler"
+			id: "12463F267C5264E8"
+			tasks: [{
+				id: "6A95770517564936"
+				title: "已确认标签的作用方式"
+				type: "checkmark"
+			}]
+			title: "标签是「可替代」，不是「自动替换」"
+			x: 8.0d
 			y: -12.0d
-		},
+		}
 		{
+			dependencies: ["01732EC2C310F323"]
 			description: [
-				"blood_circuit.7 到 .12 对应 UHV ~ MAX。本包不规划这些时代：没有配方、没有标签、JEI 里隐藏。",
-				"保留 ID 只是为了让老存档的物品不变成「空气」——它们不会消失，但也不再有用途。",
+				"blood_circuit.7 到 .12 对应 UHV ~ MAX。本包不规划这些时代：没有配方、没有标签、JEI 里隐藏。"
+				"保留 ID 只是为了让老存档的物品不变成「空气」——它们不会消失，但也不再有用途。"
 				"不要为它们补配方或标签：一旦某个奖励或合成发出占位物品，就可能直接绕过整段工业链。"
-			],
-			dependencies: [
-				"01732EC2C310F323"
-			],
-			icon: "pollution:blood_circuit.7",
-			id: "6EDE196CE96492BF",
-			tasks: [
-				{
-					id: "7C6BB6D4165C8D6F",
-					title: "已了解退役电路的处理方式",
-					type: "checkmark"
-				}
-			],
-			title: "退役的 6 个 ID：.7 ~ .12",
-			x: 12.0d,
+			]
+			icon: "pollution:blood_circuit.7"
+			id: "6EDE196CE96492BF"
+			tasks: [{
+				id: "7C6BB6D4165C8D6F"
+				title: "已了解退役电路的处理方式"
+				type: "checkmark"
+			}]
+			title: "退役的 6 个 ID：.7 ~ .12"
+			x: 12.0d
 			y: -12.0d
-		},
+		}
 		{
+			dependencies: [
+				"5C7D3316B7F5E5A8"
+				"4F9A048DEAAA894C"
+			]
 			description: [
-				"工业注魔多方块的控制器需要高级材料，前期仍用坩埚、奥术工作台和注魔祭坛。后期通过并行仓与超频扩大产能。",
-				"只转精选白名单：神秘锭、虚空锭、平衡碎片、神秘领域金属、影金、创造碎片、以太碎片、灵液和灵宝等；四个电路模板也有工业孪生。",
-				"源质每点 144mB，奥术 vis 每点 36mB。转换保留全部材料数量、中心物和研究条件，不能跳过不认识的材料降低成本。",
-				"通常为 HV 配方；原始珍珠工业合成单独需要 LuV 电压与 PRIMPEARL 研究，详见下一任务。",
+				"工业注魔多方块的控制器需要高级材料，前期仍用坩埚、奥术工作台和注魔祭坛。后期通过并行仓与超频扩大产能。"
+				"只转精选白名单：神秘锭、虚空锭、平衡碎片、神秘领域金属、影金、创造碎片、以太碎片、灵液和灵宝等；四个电路模板也有工业孪生。"
+				"源质每点 144mB，奥术 vis 每点 36mB。转换保留全部材料数量、中心物和研究条件，不能跳过不认识的材料降低成本。"
+				"通常为 HV 配方；原始珍珠工业合成单独需要 LuV 电压与 PRIMPEARL 研究，详见下一任务。"
 				"原始手工路线全部保留；研究与工业设备是解锁门槛，并行和超频负责产量。"
-			],
-			dependencies: [
-				"5C7D3316B7F5E5A8",
-				"4F9A048DEAAA894C"
-			],
-			icon: "pollution:industrial_infusion",
-			id: "53FBB10FAC25CC72",
+			]
+			icon: "pollution:industrial_infusion"
+			id: "53FBB10FAC25CC72"
 			tasks: [
 				{
-					id: "01EADF1C5475569A",
-					type: "item",
-					item: "pollution:industrial_infusion",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "01EADF1C5475569A"
+					item: "pollution:industrial_infusion"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "6B6E7A7BCD29B82C",
-					title: "已搭建工业注魔多方块",
+					id: "6B6E7A7BCD29B82C"
+					title: "已搭建工业注魔多方块"
 					type: "checkmark"
 				}
-			],
-			title: "工业注魔：把 TC 配方批量转写",
-			x: 2.0d,
+			]
+			title: "工业注魔：把 TC 配方批量转写"
+			x: 2.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["53FBB10FAC25CC72"]
 			description: [
-				"模板 1～4 都可工业生产：模板 1 仍消耗 2 神秘锭、水银、LV 电路和对应 vis 流体；模板 2～4 必须消耗上一块模板。",
-				"原始珍珠工业替代：1 下界之星 + 4 平衡碎片 + 2 以太碎片；源质／灵气／异界／虚空各 32 点（各 4608mB）；LuV 电压、1200t，机主须完成 PRIMPEARL。",
-				"高级神秘金属和创造碎片继续消耗珍珠，但供应改由工业线承担。配方仍耗材料与能量，不是免费复制或可回收催化。",
+				"模板 1～4 都可工业生产：模板 1 仍消耗 2 神秘锭、水银、LV 电路和对应 vis 流体；模板 2～4 必须消耗上一块模板。"
+				"原始珍珠工业替代：1 下界之星 + 4 平衡碎片 + 2 以太碎片；源质／灵气／异界／虚空各 32 点（各 4608mB）；LuV 电压、1200t，机主须完成 PRIMPEARL。"
+				"高级神秘金属和创造碎片继续消耗珍珠，但供应改由工业线承担。配方仍耗材料与能量，不是免费复制或可回收催化。"
 				"转换配方数受已安装模组影响，以启动日志的 registered 数量和 JEI 为准，不把旧测试环境的 19 条当固定值。"
-			],
-			dependencies: [
-				"53FBB10FAC25CC72"
-			],
-			icon: "thaumcraft:thaumium_ingot",
-			id: "6FFBE4482494273E",
+			]
+			icon: "thaumcraft:thaumium_ingot"
+			id: "6FFBE4482494273E"
 			tasks: [
 				{
-					id: "043653AFA5973A57",
-					type: "item",
-					item: "thaumcraft:thaumium_ingot",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "043653AFA5973A57"
+					item: "thaumcraft:thaumium_ingot"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "47AEB5712DA0DAB7",
-					title: "已用工业注魔量产至少一种白名单产物",
+					id: "47AEB5712DA0DAB7"
+					title: "已用工业注魔量产至少一种白名单产物"
 					type: "checkmark"
 				}
-			],
-			title: "工业量产：四模板与原始珍珠",
-			x: 4.0d,
+			]
+			title: "工业量产：四模板与原始珍珠"
+			x: 4.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: ["6FFBE4482494273E"]
 			description: [
-				"附魔、法杖装配、生物注魔（活体注魔）一律不转——它们不是「产物 + 要素」的简单结构。",
-				"带 NBT 的输入或输出跳过；未映射要素、或流体种类超过 8 的配方也跳过并计数。",
-				"转换日志在启动时打印：「registered N industrial infusion recipes from TC JSONs」。N 变小说明有配方被跳过，先看日志再改白名单。",
+				"附魔、法杖装配、生物注魔（活体注魔）一律不转——它们不是「产物 + 要素」的简单结构。"
+				"带 NBT 的输入或输出跳过；未映射要素、或流体种类超过 8 的配方也跳过并计数。"
+				"转换日志在启动时打印：「registered N industrial infusion recipes from TC JSONs」。N 变小说明有配方被跳过，先看日志再改白名单。"
 				"想加产物：改配置项 EXTRA_THAUMIC_INDUSTRIAL_WHITELIST，不要动默认白名单。"
-			],
-			dependencies: [
-				"6FFBE4482494273E"
-			],
-			icon: "thaumcraft:infusion_altar",
-			id: "0812F63B567A2F97",
-			tasks: [
-				{
-					id: "17D66759D1102818",
-					title: "已了解转换的边界",
-					type: "checkmark"
-				}
-			],
-			title: "不转什么：附魔、法杖、生物注魔",
-			x: 6.0d,
+			]
+			icon: "thaumcraft:infusion_altar"
+			id: "0812F63B567A2F97"
+			tasks: [{
+				id: "17D66759D1102818"
+				title: "已了解转换的边界"
+				type: "checkmark"
+			}]
+			title: "不转什么：附魔、法杖、生物注魔"
+			x: 6.0d
 			y: 6.0d
-		},
+		}
 		{
+			dependencies: [
+				"5C7D3316B7F5E5A8"
+				"4F9A048DEAAA894C"
+			]
 			description: [
-				"六原始要素的闭环规则：&61 点源质 = 144mB 对应流体 = 1 个本模组原始元素粉／宝石中的源质&r。",
-				"转换矩阵每 10t 最多转 1 点，不额外扣 EU；高压釜返造保持原配方 ID 与 144mB 投入，但输出改为 Pollution 自身元素宝石。",
-				"为什么不再产出 TC 晶簇：晶簇放置／破坏可得多个碎片，会绕过 1 点赋值，形成放大链。",
+				"六原始要素的闭环规则：&61 点源质 = 144mB 对应流体 = 1 个本模组原始元素粉／宝石中的源质&r。"
+				"转换矩阵每 10t 最多转 1 点，不额外扣 EU；高压釜返造保持原配方 ID 与 144mB 投入，但输出改为 Pollution 自身元素宝石。"
+				"为什么不再产出 TC 晶簇：晶簇放置／破坏可得多个碎片，会绕过 1 点赋值，形成放大链。"
 				"这条规则只覆盖已枚举的六原始闭环，不声称穷尽整包所有跨 mod 转换。"
-			],
-			dependencies: [
-				"5C7D3316B7F5E5A8",
-				"4F9A048DEAAA894C"
-			],
-			icon: "pollution:infused_exchange",
-			id: "464F3466721E0144",
+			]
+			icon: "pollution:infused_exchange"
+			id: "464F3466721E0144"
 			tasks: [
 				{
-					id: "5E1EAEDAA65370B9",
-					type: "item",
-					item: "pollution:infused_exchange",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
+					consume_items: false
+					id: "5E1EAEDAA65370B9"
+					item: "pollution:infused_exchange"
+					match_nbt: false
 					only_from_crafting: false
-				},
+					type: "item"
+				}
 				{
-					id: "790D9E6A43395BB0",
-					title: "已理解源质与流体的换算",
+					id: "790D9E6A43395BB0"
+					title: "已理解源质与流体的换算"
 					type: "checkmark"
 				}
-			],
-			title: "源质估值：1 点 = 144mB = 1 元素粉",
-			x: 2.0d,
-			y: 12.0d
-		},
-		{
-			description: [
-				"材料要素来自数据包 &6data/pollution/thaumcraft/object_aspects/*.json&r，当前 5,965 条 direct 定义。",
-				"路径必须在&e自己 mod 的命名空间&r下：TC4R 自己用 data/thaumcraft/thaumcraft/object_aspects/，你放 data/thaumcraft/object_aspects/ 会被&c静默忽略、不报错&r。",
-				"条件 schema 用 Forge 的 &6{\"type\":\"forge:mod_loaded\",\"modid\":...}&r；NeoForge 的 {\"condition\":...,\"values\":[...]} 会抛 JsonSyntaxException 并崩启动。",
-				"要素表只影响「扫视」与炼金分解的取值，不改物品本身。"
-			],
-			dependencies: [
-				"464F3466721E0144"
-			],
-			icon: "thaumcraft:thaumonomicon",
-			id: "55D5653A580E1C1A",
-			tasks: [
-				{
-					id: "5CAB23210BD2BB32",
-					title: "已确认要素表的路径与条件写法",
-					type: "checkmark"
-				}
-			],
-			title: "数据包：材料要素表放在哪",
-			x: 4.0d,
-			y: 12.0d
-		},
-		{
-			description: [
-				"TC 源质炉按容器&e实际接受量&r扣减；GT 源质炉遍历输出仓，余量按 mB 保存，17mB 这类零头不截断。",
-				"满罐／满输出仓时保留 pending：不继续消费下一批，也不为等输出反复扣燃料。",
-				"结构失效、仓缺失时&e暂停&r而不是清空已消耗原料的批次；控制器保存／恢复批次进度。",
-				"别把源质炉当成无限缓冲：产出上限由罐与仓的容量决定，规划产线时按最慢的一环算。"
-			],
-			dependencies: [
-				"464F3466721E0144",
-				"4F9A048DEAAA894C"
-			],
-			icon: "pollution:essence_smelter",
-			id: "566A35905285BABC",
-			tasks: [
-				{
-					id: "3EF9AFD141A30C67",
-					title: "已确认源质炉的记账行为",
-					type: "checkmark"
-				}
-			],
-			title: "两种源质炉：按实际接受量记账",
-			x: 6.0d,
+			]
+			title: "源质估值：1 点 = 144mB = 1 元素粉"
+			x: 2.0d
 			y: 12.0d
 		}
-	],
+		{
+			dependencies: ["464F3466721E0144"]
+			description: [
+				"材料要素来自数据包 &6data/pollution/thaumcraft/object_aspects/*.json&r，当前 5,965 条 direct 定义。"
+				"路径必须在&e自己 mod 的命名空间&r下：TC4R 自己用 data/thaumcraft/thaumcraft/object_aspects/，你放 data/thaumcraft/object_aspects/ 会被&c静默忽略、不报错&r。"
+				"条件 schema 用 Forge 的 &6{\"type\":\"forge:mod_loaded\",\"modid\":...}&r；NeoForge 的 {\"condition\":...,\"values\":[...]} 会抛 JsonSyntaxException 并崩启动。"
+				"要素表只影响「扫视」与炼金分解的取值，不改物品本身。"
+			]
+			icon: "thaumcraft:thaumonomicon"
+			id: "55D5653A580E1C1A"
+			tasks: [{
+				id: "5CAB23210BD2BB32"
+				title: "已确认要素表的路径与条件写法"
+				type: "checkmark"
+			}]
+			title: "数据包：材料要素表放在哪"
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"464F3466721E0144"
+				"4F9A048DEAAA894C"
+			]
+			description: [
+				"TC 源质炉按容器&e实际接受量&r扣减；GT 源质炉遍历输出仓，余量按 mB 保存，17mB 这类零头不截断。"
+				"满罐／满输出仓时保留 pending：不继续消费下一批，也不为等输出反复扣燃料。"
+				"结构失效、仓缺失时&e暂停&r而不是清空已消耗原料的批次；控制器保存／恢复批次进度。"
+				"别把源质炉当成无限缓冲：产出上限由罐与仓的容量决定，规划产线时按最慢的一环算。"
+			]
+			icon: "pollution:essence_smelter"
+			id: "566A35905285BABC"
+			tasks: [{
+				id: "3EF9AFD141A30C67"
+				title: "已确认源质炉的记账行为"
+				type: "checkmark"
+			}]
+			title: "两种源质炉：按实际接受量记账"
+			x: 6.0d
+			y: 12.0d
+		}
+	]
 	title: "&6&l神秘工业&r · 奥术电路与工业注魔"
 }
