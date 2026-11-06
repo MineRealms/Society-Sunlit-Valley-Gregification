@@ -53,46 +53,58 @@ BlockEvents.placed("society:villager_home", (e) => {
         .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
 
       if (player && nearbyNPCs.length == 0) {
-        server.runCommandSilent(
-          `execute in ${level.dimension} run easy_npc preset import_new custom easy_npc:preset/${npcMap.get(
-            String(villagerType)
-          )}.npc.nbt ${x} ${y + 0.25} ${z}`
-        );
-        nearbyNPCs = level
-          .getEntitiesWithin(AABB.ofBlock(block).inflate(2))
-          .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
-
-        level.spawnParticles(
-          "ribbits:spell",
-          true,
-          nearbyNPCs[0].x,
-          nearbyNPCs[0].y + 1.5,
-          nearbyNPCs[0].z,
-          0.2 * rnd(1, 2),
-          0.2 * rnd(1, 2),
-          0.2 * rnd(1, 2),
-          20,
-          0.05
-        );
-        server.runCommandSilent(
-          `playsound botania:starcaller block @a ${player.x} ${player.y} ${player.z}`
-        );
-        server.runCommandSilent(`easy_npc navigation set home ${nearbyNPCs[0].getUuid()} ${x} ${y + 0.25} ${z}`)
-        nbt.merge({
-          data: {
-            type: villagerType,
-            boundNpc: nearbyNPCs[0].getUuid().toString(),
-            placer: player.getUuid().toString(),
-          },
-        });
-        global.setBlockEntityData(block, nbt)
-        player.tell(
-          Text.translatable(
-            "society.villager_home.moved_in",
-            Text.translatable(`dialog.npc.${villagerType}.name`).gold()
-          )
-        );
-        npcData.dayLastPlaced = day
+        const preset = npcMap.get(String(villagerType));
+        if (!preset) {
+          player.tell(Text.translatable("society.villager_home.error").red());
+          player.inventoryMenu.broadcastFullState();
+          e.cancel();
+        } else {
+          server.runCommandSilent(
+            `execute in ${level.dimension} run easy_npc preset import_new custom easy_npc:preset/${preset}.npc.nbt ${x} ${y + 0.25} ${z}`
+          );
+          server.scheduleInTicks(1, () => {
+            let spawned = level
+              .getEntitiesWithin(AABB.ofBlock(block).inflate(4))
+              .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
+            if (spawned.length == 0) {
+              console.warn("[SOCIETY] villager home: no bindable NPC after import_new at " + x + "," + y + "," + z);
+              player.tell(Text.translatable("society.villager_home.error").red());
+              return;
+            }
+            let npc = spawned[0];
+            level.spawnParticles(
+              "ribbits:spell",
+              true,
+              npc.x,
+              npc.y + 1.5,
+              npc.z,
+              0.2 * rnd(1, 2),
+              0.2 * rnd(1, 2),
+              0.2 * rnd(1, 2),
+              20,
+              0.05
+            );
+            server.runCommandSilent(
+              `playsound botania:starcaller block @a ${player.x} ${player.y} ${player.z}`
+            );
+            server.runCommandSilent(`easy_npc navigation set home ${npc.getUuid()} ${x} ${y + 0.25} ${z}`)
+            nbt.merge({
+              data: {
+                type: villagerType,
+                boundNpc: npc.getUuid().toString(),
+                placer: player.getUuid().toString(),
+              },
+            });
+            global.setBlockEntityData(block, nbt)
+            player.tell(
+              Text.translatable(
+                "society.villager_home.moved_in",
+                Text.translatable(`dialog.npc.${villagerType}.name`).gold()
+              )
+            );
+            npcData.dayLastPlaced = day
+          });
+        }
       } else {
         player.tell(Text.translatable("society.villager_home.too_close").red());
         player.inventoryMenu.broadcastFullState();
@@ -112,7 +124,7 @@ BlockEvents.placed("society:villager_home", (e) => {
 BlockEvents.broken("society:villager_home", (e) => {
   const { block, player, level, server } = e;
   let nbt = block.getEntityData();
-  const { type, placer, boundNpc } = nbt.data;
+  const { type, placer, boundNpc } = nbt.data || {};
   if (player.getUuid().toString() !== placer && placer != -1 && !player.isCreative()) {
     player.tell(
       Text.translatable(
