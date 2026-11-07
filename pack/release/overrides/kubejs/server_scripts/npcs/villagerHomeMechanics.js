@@ -53,14 +53,15 @@ BlockEvents.placed("society:villager_home", (e) => {
         .filter((entityType) => entityType.type === "easy_npc:humanoid" || entityType.type === "easy_npc:humanoid_slim");
 
       if (player && nearbyNPCs.length == 0) {
-        const preset = npcMap.get(String(villagerType));
-        if (!preset) {
+        // Use var here: this callback runs in Rhino, where const redeclaration can disable the whole handler.
+        var selectedNpcPreset = npcMap.get(String(villagerType));
+        if (!selectedNpcPreset) {
           player.tell(Text.translatable("society.villager_home.error").red());
           player.inventoryMenu.broadcastFullState();
           e.cancel();
         } else {
           server.runCommandSilent(
-            `execute in ${level.dimension} run easy_npc preset import_new custom easy_npc:preset/${preset}.npc.nbt ${x} ${y + 0.25} ${z}`
+            `execute in ${level.dimension} run easy_npc preset import_new custom easy_npc:preset/${selectedNpcPreset}.npc.nbt ${x} ${y + 0.25} ${z}`
           );
           server.scheduleInTicks(1, () => {
             let spawned = level
