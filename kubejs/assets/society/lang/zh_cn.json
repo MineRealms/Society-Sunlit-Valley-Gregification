@@ -2,12 +2,10 @@
   "modpack.current_language_code": "zh_cn",
   "itemGroup.society": "社会",
   "itemGroup.society.creative_tab": "社会",
-
   "society.books.almanac.name": "农夫年鉴",
   "society.books.almanac.landing_text": "您的作物和农场动物指南。这是一个进行中的工作，大多数作物尚未列出。",
   "society.books.fish_finder.name": "渔夫宝典",
   "society.books.fish_finder.landing_text": "你能找到的最湿润的指南，告诉你每种鱼的秘密位置。",
-
   "entity.minecraft.villager.butcher": "屠夫",
   "entity.minecraft.villager.cartographer": "银行家",
   "entity.minecraft.villager.cleric": "牧师",
@@ -20,10 +18,8 @@
   "entity.minecraft.villager.shepherd": "牧羊人",
   "entity.minecraft.villager.toolsmith": "铁匠",
   "entity.minecraft.villager.weaponsmith": "储物匠",
-
   "advancements.husbandry.ride_sled_fast.description": "乘雪橇下坡",
   "advancements.husbandry.ride_sled_fast.title": "从这里开始一路下坡",
-
   "bountiful.decree.geologist.name": "§f🎣 §6地质学",
   "bountiful.decree.artisan.name": "§f✎ §6工艺品",
   "bountiful.decree.farming.name": "§f🔱 §6农产品",
@@ -33,15 +29,12 @@
   "bountiful.decree.summer.name": "§f߈ §e夏季",
   "bountiful.decree.autumn.name": "§fᘔ §6秋季",
   "bountiful.decree.winter.name": "§fƐ §b冬季",
-
   "curios.identifier.wireless_terminal": "无线终端",
   "curios.identifier.chat_color": "聊天颜色",
   "curios.identifier.bank_meter": "银行计量器",
   "curios.identifier.fish_radar": "鱼雷达",
-
   "entity.minecraft.villager.meadow.hermit": "动力机械师",
   "entity.minecraft.villager.hermit": "动力机械师",
-
   "block.furniture.sofa_black": "黑色豪华沙发",
   "block.furniture.sofa_blue": "蓝色豪华沙发",
   "block.furniture.sofa_brown": "棕色豪华沙发",
@@ -58,15 +51,11 @@
   "block.furniture.sofa_red": "红色豪华沙发",
   "block.furniture.sofa_white": "白色豪华沙发",
   "block.furniture.sofa_yellow": "黄色沙发",
-
   "item.supplementaries.candy": "荔枝糖",
   "item.supplementaries.wrench": "方块扳手",
   "item.society.glitched_vhs": "故障 VHS",
-
   "block.society.statue_endless_fortune": "无尽财富雕像",
-
   "advancements.husbandry.wrench.description": "使用方块扳手旋转方块",
-
   "effect.relics.stun.description": "禁用除退出按钮外的所有功能。",
   "effect.relics.confusion.description": "反转控制。",
   "effect.relics.paralysis.description": "禁用移动和鼠标左右键特殊功能。",
@@ -97,7 +86,6 @@
   "effect.vinery.improved_fire_resistance.description": "赋予火焰抗性和吸收效果。",
   "effect.vinery.improved_water_breathing.description": "赋予水下呼吸并提高游泳速度。",
   "effect.vinery.improved_night_vision.description": "赋予隐身效果。",
-
   "item.oreganized.lead_sheet": "铅板",
   "item.oreganized.silver_sheet": "银板",
   "item.herbalbrews.water_cup": "杯装水",
@@ -119,7 +107,6 @@
   "item.crabbersdelight.crab_trap_bait": "蟹笼饵料",
   "item.crabbersdelight.deluxe_crab_trap_bait": "豪华蟹笼饵料",
   "item.crabbersdelight.mana_crab_trap_bait": "魔力蟹笼饵料",
-
   "block.herbalbrews.coffee_beans_sack": "袋装咖啡豆",
   "block.herbalbrews.yerba_mate_leaf_block": "马黛茶叶块",
   "block.herbalbrews.rooibos_leaf_block": "红灌木茶叶块",
@@ -127,7 +114,6 @@
   "block.moreminecarts.greenhouse_glass_slab": "温室玻璃台阶",
   "block.whimsy_deco.statue_endless_fortune": "无尽财富雕像",
   "block.whimsy_deco.sunlit_singing_frog": "歌颂阳光蛙",
-
   "item.vinery.apple_juice_bucket": "苹果汁桶",
   "item.vinery.white_grape_juice_bucket": "白葡萄汁桶",
   "item.vinery.white_jungle_grape_juice_bucket": "丛林白葡萄汁桶",
@@ -140,7 +126,6 @@
   "item.nethervinery.crimson_grape_juice_bucket": "绯红红葡萄汁桶",
   "item.nethervinery.warped_grape_juice_bucket": "诡异白葡萄汁桶",
   "item.relics.relic_experience_bucket": "遗物经验桶",
-
   "fluid.vinery.apple_juice": "苹果汁",
   "fluid.vinery.white_grape_juice": "白葡萄汁",
   "fluid.vinery.white_jungle_grape_juice": "丛林白葡萄汁",
@@ -165,14 +150,12 @@
   "fluid.society.mana_fruit_juice": "魔力果汁",
   "fluid.society.mystic_syrup": "神秘糖浆",
   "fluid.society.mystic_jelly": "神秘果冻",
-
   "tag.item.society.sellable": "销售中",
   "tag.item.society.farmer_product": "农产品",
   "tag.item.society.artisan_product": "工艺品",
   "tag.item.society.geologist_product": "地质学",
   "tag.item.society.adventurer_product": "冒险家",
   "tag.item.society.villager_gift": "村民礼物",
-
   "society.advancement.obtain_crystalarium.description": "制作水晶机以种植宝石和矿物......不知怎么的。",
   "society.advancement.obtain_crystalarium.title": "附表 C",
   "society.advancement.obtain_charging_rod.description": "制作充电棒以从雷暴中制造电池。",
@@ -233,7 +216,6 @@
   "society.advancement.obtain_sun.title": "启动资金",
   "society.advancement.root.description": "开始你的农场，创造财富。",
   "society.advancement.root.title": "社会：阳光谷",
-
   "biome.society.cavern_top": "骷髅洞穴表层",
   "biome.society.skull_caves": ":pick: 骷髅洞穴",
   "biome.society.lush_caverns": ":pick: 茂盛洞穴",
@@ -243,19 +225,14 @@
   "biome.society.desert_fault": ":pick: 沙漠断层",
   "biome.society.blackstone_caves": ":pick: 黑石洞穴",
   "biome.society.umbra_barrens": ":pick: 暗影荒原",
-
   "affix.society.famine": "饥荒",
   "affix.society.partystarter": "派对发起者",
   "affix.society.slime_pinata": "史莱姆皮纳塔",
-
   "society.fancymenu.open_wiki": "阳光谷 Wiki",
   "society.fancymenu.open_wiki.hover": "内容建设中，欢迎参与贡献！",
   "society.fancymenu.credits": "致谢名单",
-
   "quark.jei.hint.preambl": "永远年轻 - ",
-
   "key.keyboard.shift": "Shift",
-
   "command.society.pig_race.no_active": "当前没有正在进行的赛猪活动！请从银行家处购买多人赛猪票！",
   "command.society.pig_race.invalid_pig": "你只能押注以下颜色：红色、蓝色、黄色或绿色。",
   "command.society.pig_race.no_bet": "请将金币或更高级的货币放置于副手以进行押注",
@@ -270,7 +247,6 @@
   "command.society.debt.remove": "已从 %s 的债务中扣除 %s §f●§r。剩余：%s §f●§r",
   "command.society.debt.invalid_amount_positive": "数额必须大于 0。",
   "command.society.debt.invalid_amount_non_negative": "数额必须大于等于 0。",
-
   "society.pig_race.red_pig": "红色",
   "society.pig_race.blue_pig": "蓝色",
   "society.pig_race.yellow_pig": "黄色",
@@ -473,7 +449,6 @@
   "society.invitation.place_home": "放置村民住宅来决定这名村民的居住地！你可以随时移动它。",
   "society.item_frame.rod": "在把它放上去之前，得先把浮标拆下来...",
   "society.new_villager.message": "有位新朋友想搬到你的小镇！去木匠的邀请函商店看看，向他们发出邀请吧。",
-
   "jei.society.category.seed_making": "种子制造",
   "jei.society.category.preserving": "腌制",
   "jei.society.category.wine_making": "酿酒",
@@ -524,7 +499,6 @@
   "jei.society.husbandry.pool.roll": " %s%% 几率判定物品池",
   "jei.society.husbandry.pool.select": " %s%% 几率选中",
   "jei.society.tea_drying": "放置方块并等待...",
-
   "jade.society.working_block_entity.progress": "进度: %s/%s",
   "jade.society.crop_growth": "生长进度：%s/%s 天",
   "jade.society.crop_growth.mature": "已成熟",
@@ -533,7 +507,6 @@
   "jade.society.crop_growth.need_lattice": "需要葡萄藤格架",
   "jade.society.crop_growth.need_farmland": "需要耕地",
   "jade.society.crop_growth.need_watered_farmland": "需要水下耕地",
-
   "tooltip.society.coins": "§f●§r %s",
   "tooltip.society.stack_value": "所有价值",
   "tooltip.society.multipliers": " + 倍率加成",
@@ -661,7 +634,6 @@
   "tooltip.society.cleavers": "从怪物身上搜刮烹饪食材",
   "tooltip.society.invitation": "邀请一位村民来到你的城镇，并在电话上解锁他们的店铺。 \n首次使用时会附赠一套房屋蓝图。",
   "tooltip.society.ripper_tooth": "用来威胁鱼塘里的鱼，迫使它们更换当前的需求。",
-
   "block.society.aging_cask.description": "在漫长的时光中陈酿。",
   "block.society.ancient_cask.description": "以极其缓慢的速度，让陈酿的物品进一步升华。",
   "block.society.ancient_cask.description.warn": "解锁 §f上古陈酿§r 技能后可用。",
@@ -765,7 +737,6 @@
   "block.society.villager_home.description": "将村民传送到你的城镇，并将附近区域设定为他们的家。 \n不能放置在其他村民附近。",
   "block.society.fish_pond_manager.description": "每天早上 7 点提交鱼塘任务所需的物品",
   "block.society.caterpillar_box.description": "每 5 分钟孵化一次放入其中的虫卵。飞蛾和蝴蝶会从蝴蝶孵化器顶部飞出。",
-
   "item.society.froggy_helm.description": "里面有一根大舌头",
   "item.society.ribbit_drum.description": "无业呱呱最喜欢对着这玩意敲敲打打",
   "item.society.ribbit_gadget.description": "某种生物湿件电路",
@@ -925,7 +896,6 @@
   "item.society.caterpillar_eggs.longwing.type": "类型：%s",
   "item.society.caterpillar_eggs.longwing.parents": "亲本：%s & %s",
   "item.society.caterpillar_eggs.longwing.size": "体型：%s",
-
   "society.item.plushie.trait.description": "使用阳光晶簇收纳动物时",
   "society.item.plushie.aquatic": "水生",
   "society.item.plushie.aquatic.description": "收获时有几率获得河流凝胶或海洋凝胶\n§6每级品质增加 5%% 几率",
@@ -979,7 +949,6 @@
   "society.trofers.autumn_mayhem": "建筑大赛奖杯 - 秋日狂欢",
   "society.trofers.community_center": "建筑大赛奖杯 - 社区之心",
   "society.trofers.train_station": "建筑大赛奖杯 - 中世纪火车站",
-
   "info.society.villager_unlock_condition.carpenter": "使用基础资源制作木匠邀请函",
   "info.society.villager_unlock_condition.shepherd": "邀请木匠村民后解锁牧羊人邀请函",
   "info.society.villager_unlock_condition.market": "邀请木匠村民后解锁市场邀请函",
@@ -990,7 +959,6 @@
   "info.society.villager_unlock_condition.trader": "进入骷髅洞穴后解锁交易商邀请函",
   "info.society.villager_unlock_condition.witch": "进入下界后解锁女巫邀请函",
   "info.society.villager_unlock_condition.wise_oak": "在野外找到智慧橡树和它交谈...",
-
   "block.society.aging_cask": "陈酿桶",
   "block.society.ancient_cask": "上古陈酿桶",
   "block.society.ancient_cider": "上古苹果酒",
@@ -1139,7 +1107,6 @@
   "block.society.onion": "洋葱",
   "block.society.peanut": "花生",
   "block.society.potato": "土豆",
-
   "item.society.aerinite": "青泥石",
   "item.society.aero_mono_bait": "气旋鲳鱼饵",
   "item.society.aero_mono_roe": "气旋鲳鱼籽",
@@ -2081,5 +2048,26 @@
   "item.society.zucchini_preserves": "西葫芦果酱",
   "item.society.red_glasses": "红色眼镜",
   "item.society.spiral_glasses": "螺旋眼镜",
-  "item.society.lemon_beignets": "柠檬甜甜圈"
+  "item.society.lemon_beignets": "柠檬甜甜圈",
+  "message.sunlitindustry.wanxiang_core_required": "需要一枚 LuV 万象笼成型核心。仅成型成功时消耗。",
+  "tc.research_category.CATACLYSMANCY": "灾变学",
+  "tc.research_name.CATACLYSM_ROOT": "观测虚渊",
+  "tc.research_text.CATACLYSM_ROOT": "自裂隙坠下之物，带着寻常透镜分辨不出的要素。",
+  "society.research_page.CATACLYSM_ROOT.1": "灾变遗迹并非死石。其核心、眼球与锭块里回荡着扭曲的原初要素，浓得即使物体本身早已冰冷，魔导透镜仍能读出来。去扫描它们。这里学到的知识不会让它们变安全，但至少让它们变得可读。",
+  "tc.research_name.CATACLYSM_OBSERVE": "裂隙之眼",
+  "tc.research_text.CATACLYSM_OBSERVE": "深渊之物的眼睛，记得它们看见过的一切。",
+  "society.research_page.CATACLYSM_OBSERVE.1": "从深渊巨物身上取下的每一枚眼球都残留着异界与感知的要素。虚空、深渊、烈焰与诅咒之眼的区别，只在于哪一项要素占主导。在把余下的都丢进坩埚之前，各留一枚样本：保存完好的眼球作为研究对象，比当燃料更有价值。",
+  "tc.research_name.CATACLYSM_CONTAIN": "缚锁与残渣",
+  "tc.research_text.CATACLYSM_CONTAIN": "锁链缚住的不只是金属。",
+  "society.research_page.CATACLYSM_CONTAIN.1": "缚魂锁链并不只是一件战利品。它的束缚要素足够在坩埚工作时镇住样本，而它携带的扭曲要素总要在别处付账。收容从来不是免费的。",
+  "society.research_page.CATACLYSM_CONTAIN.2": "即便不施法，接触虚空侵染的材料也会积累扭曲。工作台旁常备净化盐、便携浴符和一套干净的法袍。研究裂隙却不肯事后净化的神秘使，迟早会开始听见它。",
+  "tc.research_name.CATACLYSM_WARP": "窥视之价",
+  "tc.research_text.CATACLYSM_WARP": "有些知识也会回望你。",
+  "society.research_page.CATACLYSM_WARP.1": "虚空核心与诅咒之眼在异界之外还带着扭曲。蒸馏它们效率很高，残渣却会黏在观测者身上。这条研究线会给予永久扭曲；请把《扭曲理论》章里的净化工具当作装置的一部分，而不是善后手段。",
+  "tc.research_name.CATACLYSM_CRUCIBLE": "蒸馏残骸",
+  "tc.research_text.CATACLYSM_CRUCIBLE": "神明的遗骸也照样能烧。",
+  "society.research_page.CATACLYSM_CRUCIBLE.1": "焚天锭的热度足以抵上一整份炼金煤，虚空碎片加一点秩序要素就能稳定地析出平衡碎片。坩埚并不在乎这份燃料曾经属于某个庞然大物。",
+  "tc.research_name.CATACLYSM_INFUSION": "虚空透镜",
+  "tc.research_text.CATACLYSM_INFUSION": "一具敢于与虚空对视而不眩的仪器。",
+  "society.research_page.CATACLYSM_INFUSION.1": "将虚空之眼置于注魔祭坛中央，周围环以魔导透镜、远古金属与平衡碎片，整套装置会收敛成一具能读出扭曲之物、却不被其蒙蔽的透镜。成品只是一副寻常的揭示之护目镜，但通往它的路并不寻常。"
 }
