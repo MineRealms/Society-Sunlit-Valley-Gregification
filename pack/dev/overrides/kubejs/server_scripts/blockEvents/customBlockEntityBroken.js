@@ -10,7 +10,9 @@ const handleBrokenMachine = (block) => {
     block.popItem(machine.upgrade);
   }
   const nbt = block.getEntityData();
-  const currentRecipe = machine.recipes.get(nbt.data.recipe);
+  const currentRecipe = machine.id === "society:charging_rod"
+    ? { output: ["society:battery"] }
+    : machine.recipes.get(nbt.data.recipe);
   if (block.properties.get("mature").toLowerCase() == "true") {
     currentRecipe.output.forEach((element) => {
       block.popItem(element);
