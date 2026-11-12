@@ -32,6 +32,10 @@ BlockEvents.rightClicked(
     )
       return;
     if (Number(block.properties.get("age")) >= 7) {
+      // 防止右键连点在模组重置 age 前重复领取额外果实/经验（纵深防御，不影响单次收获）
+      let nowTick = server.getTickCount();
+      if (nowTick - (player.persistentData.pamFruitLootTick || 0) < 10) return;
+      player.persistentData.pamFruitLootTick = nowTick;
       if (player.stages.has("tree_whisperer")) {
         const weirdFruit = weirdFruits.get(String(block.id));
         if (weirdFruit) {

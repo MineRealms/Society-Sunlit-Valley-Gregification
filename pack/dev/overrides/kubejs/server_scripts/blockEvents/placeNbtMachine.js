@@ -6,7 +6,7 @@ BlockEvents.placed("society:prize_machine", (e) => {
   if (item.id !== "society:prize_machine") item = e.player.getHeldItem("off_hand");
   if (item.id !== "society:prize_machine") return;
   prizeNbt = item.getNbt();
-  if (!prizeNbt.isEmpty()) {
+  if (prizeNbt && !prizeNbt.isEmpty()) {
     let nbt = e.block.getEntityData();
     nbt.merge({
       data: {
