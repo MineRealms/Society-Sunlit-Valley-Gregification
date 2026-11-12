@@ -4,8 +4,8 @@
 // Quest stages remain the source of truth; SunlitMarket.unlock only mirrors
 // them into its per-player SavedData so offer.unlock can use stable ids.
 // ============================================================
-if (typeof SunlitMarket !== 'undefined' && typeof global !== 'undefined' && !global.SV_MASTERY_INSTALLED) {
-  global.SV_MASTERY_INSTALLED = true
+// Server listeners are cleared on script reload, so always register this bridge again.
+if (typeof SunlitMarket !== 'undefined') {
   let STAGES = [
     ['mastery_unlocked', 'sv.mastery'],
     ['farming_mastery', 'sv.farming.master'],

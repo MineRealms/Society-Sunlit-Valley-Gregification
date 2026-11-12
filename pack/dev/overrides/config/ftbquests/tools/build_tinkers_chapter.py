@@ -24,6 +24,7 @@ JAR = ROOT / 'mods/TConstruct-1.20.1-3.12.0.220.jar'
 GROUP = '4A46A5E1358A80A6'
 SALT = 'society-tinkers-chapter-v1'
 ORDER = 31
+THEME_UNLOCKS = {'advanced': 'theme.tinkers.adept'}
 
 Q = [
     dict(key='intro', title='匠魂入门：为什么用它', icon='tconstruct:tinkers_anvil',
@@ -133,6 +134,8 @@ def get_keys():
             keys.append('task/%s/item/%s' % (q['key'], item))
         if q.get('check'):
             keys.append('task/%s/check' % q['key'])
+        if q['key'] in THEME_UNLOCKS:
+            keys.append('reward/%s/unlock/%s' % (q['key'], THEME_UNLOCKS[q['key']]))
     return keys
 
 
@@ -214,16 +217,28 @@ def build(ids):
             tasks.append(dict(id=ids['task/%s/check' % q['key']], title=q['check'], type='checkmark'))
         if not tasks:
             raise SystemExit('quest needs an objective: ' + q['key'])
-        doc['quests'].append(dict(description=q['desc'], dependencies=[ids['quest/' + d] for d in q['deps']],
+        node = dict(description=list(q['desc']), dependencies=[ids['quest/' + d] for d in q['deps']],
                                   icon=q['icon'], id=ids['quest/' + q['key']], tasks=tasks,
-                                  title=q['title'], x=float(q['xy'][0]), y=float(q['xy'][1])))
+                                  title=q['title'], x=float(q['xy'][0]), y=float(q['xy'][1]))
+        if q['key'] in THEME_UNLOCKS:
+            unlock = THEME_UNLOCKS[q['key']]
+            node['description'].append('完成后解锁匠魂主题商人的高阶材料报价；声望和每日库存限制仍然生效。')
+            node['rewards'] = [dict(id=ids['reward/%s/unlock/%s' % (q['key'], unlock)],
+                                    type='command', command='execute as {p} run sunlitmarket unlock ' + unlock,
+                                    title='解锁匠魂高阶材料贸易', elevate_perms=True, silent=True,
+                                    team_reward=False, auto='no_toast')]
+        doc['quests'].append(node)
     return doc
 
 
 def validate(doc):
-    ids = [doc['id']] + [q['id'] for q in doc['quests']]
-    if len(ids) != len(set(ids)):
-        raise SystemExit('duplicate ids inside chapter')
+    ids = [doc['id']]
+    for quest in doc['quests']:
+        ids.append(quest['id'])
+        ids.extend(target['id'] for target in quest['tasks'])
+        ids.extend(reward['id'] for reward in quest.get('rewards', ()))
+    if len(ids) != len(set(ids)) or not all(valid_id(value) for value in ids):
+        raise SystemExit('invalid or duplicate ids inside chapter')
     for q in doc['quests']:
         if not q['tasks']:
             raise SystemExit('quest without task: ' + q['title'])

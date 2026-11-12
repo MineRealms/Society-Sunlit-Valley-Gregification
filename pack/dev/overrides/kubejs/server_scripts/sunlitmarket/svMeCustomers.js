@@ -3,6 +3,8 @@
 // Middle-earth faction customers for the pawn counter.
 // Native NpcData.Type already supplies faction + rank; this file only adds
 // faction-specific request pools. Prices use Shipping Bin values as the floor.
+// Tagged shopkeepers are overridden to MERCHANT by the priority-0 merchant
+// scripts; untagged civilians keep these customer identities.
 // ============================================================
 if (typeof SunlitMarket !== 'undefined' && typeof global !== 'undefined' && global.trades && Platform.isLoaded('me')) {
   let valueOf = (id, fallback) => {
@@ -107,12 +109,6 @@ if (typeof SunlitMarket !== 'undefined' && typeof global !== 'undefined' && glob
     ['lead', 'oreganized:raw_lead', 4, 0.90, 48],
     ['silver', 'oreganized:raw_silver', 2, 0.90, 64]
   ])
-  // Some builds report Erebor as the parent faction.
-  addMany('me:longbeards', [
-    ['flax', 'me:flax', 4, 0.92, 16],
-    ['iron', 'minecraft:raw_iron', 8, 0.90, 8],
-    ['coal', 'minecraft:coal', 16, 0.92, 8]
-  ])
 
   // Dale: trade goods and prepared food.
   addMany('me:dale', [
@@ -120,14 +116,6 @@ if (typeof SunlitMarket !== 'undefined' && typeof global !== 'undefined' && glob
     ['string', 'minecraft:string', 8, 0.92, 4],
     ['cabbage', 'farmersdelight:cabbage', 2, 0.92, 70],
     ['berry', 'society:blueberry', 4, 0.92, 24]
-  ])
-
-  // Neutral / travelling folk: convenience goods.
-  addMany('me:neutral', [
-    ['paper', 'minecraft:paper', 16, 0.92, 4],
-    ['book', 'minecraft:book', 4, 0.92, 16],
-    ['sparkstone', 'society:sparkstone', 2, 0.90, 16],
-    ['canvas', 'society:canvas', 1, 0.90, 80]
   ])
 
   // Hostile / outlaw factions: cheap stolen stock with real consequences.

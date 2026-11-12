@@ -89,7 +89,14 @@
   }
   rows.push({ type: 'text', source: 'light', label: '光照', hideAbove: 7, color: '#FFE066' })
 
-  SunlitHud.panels([{
+  let panels = []
+  try {
+    let current = JSON.parse(SunlitHud.json())
+    if (Array.isArray(current)) panels = current.filter((panel) => panel && panel.id !== 'sunlit_status')
+  } catch (err) {
+    console.warn('[Sunlit] 读取现有 HUD 面板失败，重新声明状态面板: ' + err)
+  }
+  panels.push({
     id: 'sunlit_status',
     anchor: 'top_left',
     x: 4,
@@ -97,7 +104,8 @@
     width: 118,
     scale: 1.0,
     rows: rows
-  }])
+  })
+  SunlitHud.panels(panels)
 
   console.info('[Sunlit] HUD 面板已声明')
 })()

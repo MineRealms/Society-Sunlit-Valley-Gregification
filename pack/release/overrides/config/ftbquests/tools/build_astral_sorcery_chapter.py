@@ -29,6 +29,7 @@ JAVA = SOURCE / 'src/main/java/hellfirepvp/astralsorcery/common'
 JAR = SOURCE / 'build/libs/AstralSorcery-1.20.1.0.jar'
 GROUP = '04716B2F19F75F08'
 SALT = 'astral_sorcery'
+THEME_UNLOCKS = {'metal': 'theme.astral.attuned'}
 
 
 def digest(data):
@@ -559,6 +560,8 @@ def keys_for(groups):
             keys.append('task/'+k+'/check')
         if k in roots:
             keys.append('reward/'+k+'/item/astralsorcery:aquamarine')
+        if k in THEME_UNLOCKS:
+            keys.append('reward/'+k+'/unlock/'+THEME_UNLOCKS[k])
     assert len(keys) == len(set(keys))
     return keys
 
@@ -598,6 +601,13 @@ def model(ids, order, groups, positions, deps, panel_of):
                     dependencies=[ids['quest/'+d] for d in deps[k]], tasks=tasks, rewards=[])
         if k in roots:
             node['rewards'] = [dict(id=ids['reward/'+k+'/item/astralsorcery:aquamarine'], type='item', item='astralsorcery:aquamarine', count=1)]
+        if k in THEME_UNLOCKS:
+            unlock = THEME_UNLOCKS[k]
+            node['description'].append('完成后解锁星辉主题商人的星辉锭报价；声望和每日库存限制仍然生效。')
+            node['rewards'].append(dict(id=ids['reward/'+k+'/unlock/'+unlock], type='command',
+                                        command='execute as {p} run sunlitmarket unlock '+unlock,
+                                        title='解锁星辉金属贸易', elevate_perms=True, silent=True,
+                                        team_reward=False, auto='no_toast'))
         doc['quests'].append(node)
     return doc
 

@@ -5,8 +5,8 @@
 // Requires the optional SunlitMarket mod. If it is missing, this script is
 // skipped and the pack keeps working unchanged.
 //
-// Natural Middle-earth NPCs are matched by their NpcData.Type in config JSON;
-// for player-placed merchants use entity tags:
+// Merchants require explicit entity tags; untagged Middle-earth civilians remain
+// pawn-counter customers, even when their NpcData.Type is the same:
 //   /summon me:npc ~ ~ ~ {Tags:["sunlitmarket.me.shire_farmer"],InitializationData:{Type:"me:shire.peasant"}}
 //
 // All prices are in "spur" (Numismatics base value). `buy` is what the player
@@ -21,6 +21,12 @@ if (typeof SunlitMarket !== 'undefined') {
 }
 
 if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('me')) {
+  let registerMerchant = (spec) => {
+    SunlitMarket.merchant(spec)
+    // Customer rules load at priority 9; these tag overrides load afterwards.
+    SunlitMarket.rule({ type: 'npc', id: 'sv.me.merchant.' + spec.id,
+      faction: spec.faction, tag: spec.tag, rank: 'MERCHANT' })
+  }
   // The Shipping Bin table is the pack-wide price anchor. These sell-only
   // offers pay 102% of that value, so a counter purchase has a small but
   // real margin without creating a buy-low/sell-high loop.
@@ -36,12 +42,11 @@ if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('me')) {
   SunlitMarket.coinValue('me:silver_coin', 8)
   SunlitMarket.coinValue('me:gold_coin', 64)
 
-  SunlitMarket.merchant({
+  registerMerchant({
     id: 'me_shire_farmer',
     name: '夏尔农户',
     faction: 'me:shire',
     tag: 'sunlitmarket.me.shire_farmer',
-    npcType: 'me:shire.peasant',
     offers: [
       { item: 'me:leek', count: 1, buy: 14, sell: 8, stock: 16 },
       { item: 'me:cucumber', count: 1, buy: 16, sell: 10, stock: 24 },
@@ -57,12 +62,11 @@ if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('me')) {
     ]
   })
 
-  SunlitMarket.merchant({
+  registerMerchant({
     id: 'me_gondor_quartermaster',
     name: '刚铎军需官',
     faction: 'me:gondor',
     tag: 'sunlitmarket.me.gondor_quartermaster',
-    npcType: 'me:gondor.peasant',
     offers: [
       // Shipping Bin value is 16; buying at 8 used to allow risk-free resale.
       { item: 'minecraft:bread', count: 1, buy: 22, sell: 14 },
@@ -76,14 +80,11 @@ if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('me')) {
     ]
   })
 
-  SunlitMarket.merchant({
+  registerMerchant({
     id: 'me_rohan_hunter',
     name: '洛汗猎手',
     faction: 'me:rohan',
     tag: 'sunlitmarket.me.rohan_hunter',
-    // No unambiguous civilian type in this shipped ME build. Require the explicit
-    // merchant tag; matching all rohan.militia would also make soldiers immune to AI targets.
-    npcType: '',
     offers: [
       { item: 'me:cooked_goose', count: 1, buy: 40, sell: 28 },
       { item: 'me:cooked_duck', count: 1, buy: 40, sell: 28 },
@@ -96,12 +97,11 @@ if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('me')) {
     ]
   })
 
-  SunlitMarket.merchant({
+  registerMerchant({
     id: 'me_lothlorien_herbalist',
     name: '萝林草药师',
     faction: 'me:lothlorien',
     tag: 'sunlitmarket.me.lothlorien_herbalist',
-    npcType: 'me:lothlorien.sentinel',
     offers: [
       { item: 'me:strawberries', count: 1, buy: 22, sell: 15, stock: 16 },
       { item: 'me:ghostshroom', count: 1, buy: 20, sell: 12, stock: 12 },
@@ -113,12 +113,11 @@ if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('me')) {
     ]
   })
 
-  SunlitMarket.merchant({
+  registerMerchant({
     id: 'me_erebor_smith',
     name: '孤山矿商',
     faction: 'me:longbeards',
     tag: 'sunlitmarket.me.erebor_smith',
-    npcType: 'me:longbeards.erebor.miner',
     offers: [
       { item: 'me:flax', count: 1, buy: 24, sell: 16, stock: 16 },
       { item: 'minecraft:string', count: 1, buy: 8, sell: 4, stock: 32 },
@@ -139,10 +138,11 @@ if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('me')) {
     ]
   })
 
-  SunlitMarket.merchant({
+  registerMerchant({
     id: 'me_moneychanger',
     name: '中州钱庄',
     faction: 'me:neutral',
+    // Legacy SunlitMarket-only reputation bucket; ME has no native neutral faction.
     tag: 'sunlitmarket.me.moneychanger',
     offers: [
       { item: 'me:copper_coin', count: 1, buy: 1, sell: 1 },

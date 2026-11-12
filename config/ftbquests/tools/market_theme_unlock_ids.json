@@ -1,0 +1,33 @@
+{
+  "ids": {
+    "reward/botania/terrasteel/unlock/theme.botania.adept": "7E3A44505EBCC135"
+  },
+  "milestones": [
+    {
+      "chapter": "tinkers.snbt",
+      "quest": "7C14C2BAC46CE906",
+      "reward": "23D636FA82B73C71",
+      "unlock": "theme.tinkers.adept"
+    },
+    {
+      "chapter": "astral_sorcery.snbt",
+      "quest": "28626DC2C0B74311",
+      "reward": "563925996F567D70",
+      "unlock": "theme.astral.attuned"
+    },
+    {
+      "chapter": "thaumic_industry.snbt",
+      "quest": "3E981A3FFE0ADA0D",
+      "reward": "63B1F1C33D5739DA",
+      "unlock": "theme.thaumcraft.adept"
+    },
+    {
+      "chapter": "botania.snbt",
+      "quest": "46F86152B5B36A3B",
+      "reward": "7E3A44505EBCC135",
+      "unlock": "theme.botania.adept"
+    }
+  ],
+  "salt": "sunlitmarket-theme-unlocks-v1",
+  "schema": 1
+}

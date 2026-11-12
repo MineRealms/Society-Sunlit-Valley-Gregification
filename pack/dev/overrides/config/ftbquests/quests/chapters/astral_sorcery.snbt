@@ -557,9 +557,10 @@
 		{
 			dependencies: ["03544644108D10CF"]
 			description: [
-				"把聚能水晶连接到铁矿石，持续星能照射会将其转化为星辉矿石，再熔炼取得星辉锭。取得矿石后先完成检测，再投入熔炼；不是用普通铁锭直接照射。"
-				""
-				"手册阶段：C 共鸣·光路；参照页面：STARMETAL_ORE。"
+				"把聚能水晶连接到铁矿石，持续星能照射会将其转化为星辉矿石，再熔炼取得星辉锭。取得矿石后先完成检测，再投入熔炼；不是用普通铁锭直接照射。",
+				"",
+				"手册阶段：C 共鸣·光路；参照页面：STARMETAL_ORE。",
+				"完成后解锁星辉主题商人的星辉锭报价；声望和每日库存限制仍然生效。"
 			]
 			icon: "astralsorcery:starmetal_ingot"
 			id: "28626DC2C0B74311"
@@ -581,6 +582,18 @@
 			title: "铁矿石到星辉锭"
 			x: 30.0d
 			y: 4.5d
+			rewards: [
+				{
+					id: "563925996F567D70",
+					type: "command",
+					command: "execute as {p} run sunlitmarket unlock theme.astral.attuned",
+					title: "解锁星辉金属贸易",
+					elevate_perms: true,
+					silent: true,
+					team_reward: false,
+					auto: "no_toast"
+				}
+			]
 		}
 		{
 			dependencies: ["28626DC2C0B74311"]
@@ -754,8 +767,6 @@
 				"用二阶合成祭坛与星辉锭制作独立的共鸣祭坛。源码的中心炭黑大理石为 15×15，含外侧角部的结构总占地为 19×19；占地不是施工图，请按宝典分层放柱与横梁。"
 				""
 				"手册阶段：D 共鸣·仪式；参照页面：ATT_PLAYER。"
-				""
-				"整合包改动：唤醒祭坛配方右上角需要&6星尘碎片&r（矿脉与万能晶洞的稀有掉落）——采矿的运气决定你何时踏入共鸣阶段。"
 			]
 			icon: "astralsorcery:attunement_altar"
 			id: "00A1BB0311CB11B1"

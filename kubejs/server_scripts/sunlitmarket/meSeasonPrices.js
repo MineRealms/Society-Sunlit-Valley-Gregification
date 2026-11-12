@@ -12,15 +12,12 @@
 // NOTE: KubeJS/Rhino rejects array destructuring in arrow parameters, so this
 // file uses plain index access everywhere.
 // ============================================================
-// KubeJS evaluates server scripts more than once per boot, and it hoists every
-// top-level "const" into the shared script scope, so the second evaluation dies
-// with "redeclaration of var X". Use "let" (not hoisted) and keep the global
-// guard so tick handlers are only registered once.
-if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('sereneseasons') && !global.SM_SEASON_INSTALLED) {
-  global.SM_SEASON_INSTALLED = true
+// KubeJS clears server listeners before reloading scripts. Register fresh
+// handlers for each script load, even when diagnostic globals survive it.
+if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('sereneseasons')) {
   {
     // KubeJS also declares a var named after the class, so do not reuse the simple name.
-  let SM_SEASON_API = Java.loadClass('sereneseasons.api.season.SeasonHelper')
+    let SM_SEASON_API = Java.loadClass('sereneseasons.api.season.SeasonHelper')
     let ORDER = ['spring', 'summer', 'autumn', 'winter']
 
     // [merchant, item, spring, summer, autumn, winter]
@@ -82,13 +79,15 @@ if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('sereneseasons') &&
         }
       }
       let key = season + '@' + Math.round(progress * 100) + '% ' + sample
-    global.SM_LAST_SEASON = key
-    return key
+      global.SM_LAST_SEASON = key
+      return key
     }
 
     let lastKey = ''
+    let initialApply = true
     ServerEvents.tick((event) => {
-      if (event.server.getTickCount() % 200 !== 0) return
+      if (!initialApply && event.server.getTickCount() % 200 !== 0) return
+      initialApply = false
       let key = apply(event.server)
       if (key && key !== lastKey) {
         lastKey = key
@@ -96,10 +95,14 @@ if (typeof SunlitMarket !== 'undefined' && Platform.isLoaded('sereneseasons') &&
       }
     })
 
-    // Reapply immediately after /reload so an open shop keeps the right prices.
+    // loaded is startup-only; after script reload the first safe tick applies prices.
     ServerEvents.loaded((event) => {
       let key = apply(event.server)
-      if (key) console.info('[SunlitMarket] seasonal multipliers (load): ' + key)
+      initialApply = !key
+      if (key) {
+        lastKey = key
+        console.info('[SunlitMarket] seasonal multipliers (load): ' + key)
+      }
     })
   }
 

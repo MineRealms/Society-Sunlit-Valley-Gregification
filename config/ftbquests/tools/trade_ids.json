@@ -45,8 +45,8 @@
     "task/merchant_unlock/check": "443E203867D72AB8",
     "task/stages/check": "63B6F3DFA719C9C5"
   },
-  "order_index": 23,
-  "output_sha256": "ea5609a374b48f4c7c514376f336332851b74e0fab530b5d8fc411531d814fb3",
+  "order_index": 0,
+  "output_sha256": "e60b1097f5dcb67fd514e05ebb6d716be8074e32edf219de5302399f1b916799",
   "salt": "society-trade-chapter-v1",
   "schema": 1
 }

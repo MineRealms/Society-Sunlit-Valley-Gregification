@@ -5,7 +5,7 @@
 	group: "7B3E5A9C1D2F4068",
 	icon: "numismatics:spur",
 	id: "554C7A7B2AB4F1B1",
-	order_index: 23,
+	order_index: 0,
 	quest_links: [ ],
 	quests: [
 		{
@@ -53,7 +53,7 @@
 		},
 		{
 			description: [
-				"装了对应模组就会出现四位：匠魂铸师、神秘材料商、星辉商人、植物魔法材料商。",
+				"装了对应模组后，管理员可通过专用标签放置四位商人：匠魂铸师、神秘材料商、星辉商人、植物魔法材料商。",
 				"他们卖的是别的章节要用的高阶材料（钴、玛玉灵、琥珀、水银、星辉锭、魔力珍珠……）。价格按本包经济定，比自造省时间但更贵。",
 				"他们同时也收货：把多余的钴、琥珀、星辉锭卖回去，比接受仓更划算。"
 			],
@@ -75,9 +75,10 @@
 		},
 		{
 			description: [
-				"高阶货带 unlock id（theme.tinkers.adept、theme.astral.attuned 等），没解锁时看不到也买不了。",
-				"解锁来源是 FTBQ 奖励里的 /sunlitmarket unlock <id>（以控制台身份执行），或 KubeJS 的 SunlitMarket.unlock(player, id)。",
-				"本章不发这些 unlock——去对应模组的章节拿。"
+				"高阶货带 unlock id（theme.tinkers.adept、theme.astral.attuned 等），未解锁时不能购买，货架会标出门槛。",
+				"匠魂「高阶材料：玛玉灵」→ theme.tinkers.adept；星辉「铁矿石到星辉锭」→ theme.astral.attuned。",
+				"神秘工业「模板 2：虚空锭 + 水晶精华」→ theme.thaumcraft.adept；植物魔法的泰拉钢锭任务 → theme.botania.adept。神秘锭入门任务不会解锁虚空锭。",
+				"奖励命令以领奖玩家身份、临时提升权限执行；队友分别领取。本章不发这些 unlock；旧存档已完成里程碑的玩家，也可在对应任务领取新增的个人奖励，用 /sunlitmarket locks 查看结果。"
 			],
 			dependencies: [
 				"7F1E21F216C6084F"
@@ -125,7 +126,8 @@
 			description: [
 				"每 10 秒扫描一次，最多同时挂 3 个需求，每个需求存活 1 分钟。",
 				"每个 NPC 冷却 60 秒、每天最多提 12 次，防止一个村民被反复薅。",
-				"需求按 sv.npc.* 规则和货池生成；价格锚是出货箱价，顾客出价 = 出货箱价 × 分类系数（低于 1.0，所以你有差价可赚）。"
+				"需求按 sv.npc.* 规则和货池生成；价格锚是出货箱价，顾客出价 = 出货箱价 × 分类系数（低于 1.0，所以你有差价可赚）。",
+				"带 sunlitmarket.me.* 或 sunlitmarket.theme.* 专用商人标签的 NPC 只开商店，不再兼任柜台顾客。没有这些标签的自然平民仍可提出需求。"
 			],
 			dependencies: [
 				"17615DA1A84B3B41"
@@ -215,7 +217,7 @@
 		},
 		{
 			description: [
-				"价目表在 config/sunlitmarket/deposit_values.json，共 2337 项——出货箱能卖的物品全部标成 -1（拒收），否则「按 102% 收购价即时付钱」就是套利机。",
+				"出货箱已收购物品的拒收边界，由 svAcceptBoundary.js 按 global.trades 中的有效价格生成；每次脚本重载重新建立，不是 deposit_values.json 中固定数量的物品表。",
 				"没有单独定价的物品，回落到商人货架的收购价。当前真正能卖进接受仓的，主要是主题模组材料（星辉、植物魔法、匠魂、神秘）与中州硬币。",
 				"svDepositItems.js 另外给 16 种采石/挖矿废料开了最低价（圆石、深板岩、下界岩、凝灰岩、方解石、砂砾、安山岩 / 闪长岩 / 花岗岩、玄武岩、黑石、末地石、沙、红沙、土、燧石），1 spur/件。",
 				"一句话：接受仓收的是「出货箱不要的东西」，别指望拿它当第二台出货箱。"

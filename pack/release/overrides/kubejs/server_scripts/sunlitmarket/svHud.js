@@ -53,8 +53,8 @@ if (typeof SunlitHud !== 'undefined' && typeof SunlitMarket !== 'undefined') {
     SunlitHud.panels(panels)
   }
 
-  // 加载时先声明一次（脚本重载即刻生效），loaded 再声明一次，
-  // 保证和 sunlitHud.js 的加载顺序无关。
+  // 每次脚本加载都会合并声明；loaded 仅在服务器启动时补一次同步。
+  // sunlitHud.js 也只替换自己的面板，因此重载顺序不影响共存。
   if (hasProviders) {
     declare()
     ServerEvents.loaded((event) => declare())

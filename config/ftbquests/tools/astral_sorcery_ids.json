@@ -81,6 +81,7 @@
     "reward/constellation/item/astralsorcery:aquamarine": "7669AEE3671D088E",
     "reward/explore/item/astralsorcery:aquamarine": "24A9F14D2C168206",
     "reward/light/item/astralsorcery:aquamarine": "139A1721A70CFEFB",
+    "reward/metal/unlock/theme.astral.attuned": "563925996F567D70",
     "reward/radiance/item/astralsorcery:aquamarine": "7606570C7E6E82D3",
     "reward/ritual/item/astralsorcery:aquamarine": "34B08B73F65D830D",
     "reward/welcome/item/astralsorcery:aquamarine": "24EA71B1BD41F907",
@@ -176,7 +177,7 @@
     "task/wood/item/astralsorcery:infused_wood": "366ADC8F0F7C2128"
   },
   "order_index": 0,
-  "output_sha256": "170ef9432a1efd6fff2a654c76d84f3817580b9f392521acf9f3ea408f926282",
+  "output_sha256": "ee41e53a8f75d46b44dafa317cc87832c83516e8ad90efd12209d82090f070eb",
   "salt": "astral_sorcery",
   "schema": 1
 }

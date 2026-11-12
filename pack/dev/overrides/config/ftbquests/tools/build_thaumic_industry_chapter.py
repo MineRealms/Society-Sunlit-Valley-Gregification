@@ -33,6 +33,7 @@ MAP = TOOLS / 'thaumic_industry_ids.json'
 GROUP = '4A46A5E1358A80A6'
 SALT = 'society-thaumic-industry-chapter-v1'
 ORDER = 25
+THEME_UNLOCKS = {'template_2': 'theme.thaumcraft.adept'}
 
 EXT_TC_INTRO = '4F15F9F6021B0AF8'        # thaumcraft: 神秘学的起点：魔导透镜
 # 4F15F9F6021B0AF8 才是魔导透镜的 quest id；35F501BCCBED6EC4 是它那条 8 cog 奖励的 id，
@@ -232,6 +233,8 @@ def get_keys():
         keys.extend('task/' + q['key'] + '/item/' + i for i in q.get('items', ()))
         if q.get('check'):
             keys.append('task/' + q['key'] + '/check')
+        if q['key'] in THEME_UNLOCKS:
+            keys.append('reward/' + q['key'] + '/unlock/' + THEME_UNLOCKS[q['key']])
     return keys
 
 
@@ -331,9 +334,17 @@ def build(ids):
         if not tasks:
             raise ValueError('Quest must have at least one objective: ' + q['key'])
         deps = [ids['quest/' + d] for d in q['deps']] + list(q.get('ext', ()))
-        doc['quests'].append(dict(description=q['desc'], dependencies=deps,
+        node = dict(description=list(q['desc']), dependencies=deps,
                                   icon=q['icon'], id=ids['quest/' + q['key']], tasks=tasks,
-                                  title=q['title'], x=float(q['xy'][0]), y=float(q['xy'][1])))
+                                  title=q['title'], x=float(q['xy'][0]), y=float(q['xy'][1]))
+        if q['key'] in THEME_UNLOCKS:
+            unlock = THEME_UNLOCKS[q['key']]
+            node['description'].append('完成后解锁神秘主题商人的虚空锭报价；先取得虚空金属并完成本模板，不会在神秘锭入门阶段提前开放。')
+            node['rewards'] = [dict(id=ids['reward/' + q['key'] + '/unlock/' + unlock],
+                                    type='command', command='execute as {p} run sunlitmarket unlock ' + unlock,
+                                    title='解锁神秘虚空金属贸易', elevate_perms=True, silent=True,
+                                    team_reward=False, auto='no_toast')]
+        doc['quests'].append(node)
     return doc
 
 
@@ -345,6 +356,8 @@ def validate(doc, external):
         refs.update(q['dependencies'])
         for task in q['tasks']:
             definitions.append(task['id'])
+        for reward in q.get('rewards', ()):
+            definitions.append(reward['id'])
     if len(definitions) != len(set(definitions)) or not all(valid_id(i) for i in definitions):
         raise ValueError('Invalid or duplicate definition ID')
     if set(definitions) & external:

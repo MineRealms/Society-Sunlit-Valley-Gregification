@@ -179,24 +179,34 @@
 		{
 			dependencies: ["3B0A3083FFE1416B"]
 			description: [
-				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description1}"
-				""
-				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description2}"
-				""
-				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description3}"
-				""
-				"&6阶段锁&r：第四种材料是神秘时代的&6虚空锭&r——需要研究出虚空金属（VOIDMETAL）。"
-				""
-				"虚空锭路线：扫描积累要素 → 研究&6神秘锭（THAUMIUM）&r与&6初级异界（ELDRITCHMINOR）&r → 解锁&6虚空金属（VOIDMETAL）&r；坩埚配方：虚空种子 + metallum 8，虚空种子 = 小麦种子 + tenebrae 8 / vacuos 8 / alienis 2。"
-				""
-				"整合包改动：泰拉钢还需要长翼蝴蝶养殖的&6蝴蝶琥珀&r——炼金术士与养蜂人必须握手。"
+				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description1}",
+				"",
+				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description2}",
+				"",
+				"{ftbquests.chapter.botania.quest46F86152B5B36A3B.description3}",
+				"",
+				"&6阶段锁&r：第四种材料是神秘时代的&6虚空锭&r——需要研究出虚空金属（VOIDMETAL）。",
+				"",
+				"虚空锭路线：扫描积累要素 → 研究&6神秘锭（THAUMIUM）&r与&6初级异界（ELDRITCHMINOR）&r → 解锁&6虚空金属（VOIDMETAL）&r；坩埚配方：虚空种子 + metallum 8，虚空种子 = 小麦种子 + tenebrae 8 / vacuos 8 / alienis 2。",
+				"取得泰拉钢后解锁植物魔法主题商人的高阶材料报价；声望和每日库存限制仍然生效。"
 			]
 			id: "46F86152B5B36A3B"
 			rewards: [{
 				id: "1C966091E6B2B450"
 				item: "society:botanical_tribute"
 				type: "item"
-			}]
+			},
+				{
+					id: "7E3A44505EBCC135",
+					type: "command",
+					command: "execute as {p} run sunlitmarket unlock theme.botania.adept",
+					title: "解锁植物魔法高阶材料贸易",
+					elevate_perms: true,
+					silent: true,
+					team_reward: false,
+					auto: "no_toast"
+				}
+			]
 			tasks: [{
 				id: "32E84BAD2E411D78"
 				item: "botania:terrasteel_ingot"

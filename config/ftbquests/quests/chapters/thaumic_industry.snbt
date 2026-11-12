@@ -62,9 +62,10 @@
 		{
 			dependencies: ["4059099200CF38AC"]
 			description: [
-				"注魔祭坛：中心物 &6奥术电路基底&r，组件 &7虚空锭 1 + 水晶精华 2 + 水银 1&r。"
-				"要素：&6源质 16 / 金属 8 / 虚空 8&r；不稳定度 3。"
-				"产物 &6奥术电路进阶基底&r 是 EV／IV 两级神秘电路的模板。"
+				"注魔祭坛：中心物 &6奥术电路基底&r，组件 &7虚空锭 1 + 水晶精华 2 + 水银 1&r。",
+				"要素：&6源质 16 / 金属 8 / 虚空 8&r；不稳定度 3。",
+				"产物 &6奥术电路进阶基底&r 是 EV／IV 两级神秘电路的模板。",
+				"完成后解锁神秘主题商人的虚空锭报价；先取得虚空金属并完成本模板，不会在神秘锭入门阶段提前开放。"
 			]
 			icon: "pollution:blood_circuit_advanced"
 			id: "3E981A3FFE0ADA0D"
@@ -86,6 +87,18 @@
 			title: "模板 2：虚空锭 + 水晶精华"
 			x: 4.0d
 			y: 0.0d
+			rewards: [
+				{
+					id: "63B1F1C33D5739DA",
+					type: "command",
+					command: "execute as {p} run sunlitmarket unlock theme.thaumcraft.adept",
+					title: "解锁神秘虚空金属贸易",
+					elevate_perms: true,
+					silent: true,
+					team_reward: false,
+					auto: "no_toast"
+				}
+			]
 		}
 		{
 			dependencies: ["3E981A3FFE0ADA0D"]

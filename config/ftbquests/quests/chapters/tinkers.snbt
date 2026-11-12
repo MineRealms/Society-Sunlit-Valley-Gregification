@@ -263,9 +263,10 @@
 		{
 			dependencies: ["7B7FE9D2B2775508"]
 			description: [
-				"玛玉灵 = 钴 + 下界合金，是匠魂的中期天花板：高伤害、高耐久。"
-				"冶炼炉里按比例熔：4 钴 + 1 下界合金 得到 1 玛玉灵。合金要在冶炼炉控制器的合金页里配比。"
-				"再往上是女皇史莱姆（末影粘液 + 岩浆）和灵魂钢（灵魂沙 + 铁），属于后期内容。"
+				"玛玉灵 = 钴 + 下界合金，是匠魂的中期天花板：高伤害、高耐久。",
+				"冶炼炉里按比例熔：4 钴 + 1 下界合金 得到 1 玛玉灵。合金要在冶炼炉控制器的合金页里配比。",
+				"再往上是女皇史莱姆（末影粘液 + 岩浆）和灵魂钢（灵魂沙 + 铁），属于后期内容。",
+				"完成后解锁匠魂主题商人的高阶材料报价；声望和每日库存限制仍然生效。"
 			]
 			icon: "tconstruct:manyullyn_ingot"
 			id: "7C14C2BAC46CE906"
@@ -280,6 +281,18 @@
 			title: "高阶材料：玛玉灵"
 			x: 8.0d
 			y: 6.0d
+			rewards: [
+				{
+					id: "23D636FA82B73C71",
+					type: "command",
+					command: "execute as {p} run sunlitmarket unlock theme.tinkers.adept",
+					title: "解锁匠魂高阶材料贸易",
+					elevate_perms: true,
+					silent: true,
+					team_reward: false,
+					auto: "no_toast"
+				}
+			]
 		}
 	]
 	title: "&b&l匠魂&r · 部件与强化"

@@ -1,21 +1,26 @@
 // priority: 0
 // ============================================================
-// Themed merchants for Tinkers' Construct / Thaumcraft / Astral Sorcery.
+// Themed merchants for Tinkers' Construct / Thaumcraft / Astral Sorcery / Botania.
 //
 // Use an entity tag when spawning the shopkeeper, e.g.:
 //   /summon me:npc ~ ~ ~ {Tags:["sunlitmarket.theme.tinkers"],InitializationData:{Type:"me:dale.peasant"}}
 // The mod matches any entity with the tag, not only me:npc.
 //
-// High-tier goods carry an "unlock" id. A player only sees/pays for them once
-// the id is granted, which keeps progression gated behind quests:
+// High-tier goods carry an "unlock" id. Purchase requires the matching unlock:
 //   KubeJS:      SunlitMarket.unlock(player, 'theme.tinkers.adept')
-//   FTBQ reward: /sunlitmarket unlock theme.tinkers.adept   (reward command runs as console)
+//   FTBQ reward: execute as {p} run sunlitmarket unlock theme.tinkers.adept
+//                (per-player reward with elevated permissions)
 //   Manual test: /sunlitmarket unlock theme.astral.attuned
-// Unlock ids are free-form strings; nothing else in the pack needs to know them.
+// FTBQ milestones: manyullyn / blood template II / starmetal / terrasteel.
 // ============================================================
 if (typeof SunlitMarket !== 'undefined') {
+  let registerMerchant = (spec) => {
+    SunlitMarket.merchant(spec)
+    SunlitMarket.rule({ type: 'npc', id: 'sv.theme.merchant.' + spec.id,
+      faction: spec.faction, tag: spec.tag, rank: 'MERCHANT' })
+  }
   if (Platform.isLoaded('tconstruct')) {
-    SunlitMarket.merchant({
+    registerMerchant({
       id: 'theme_tinkers_smith',
       name: '匠魂铸师',
       faction: 'theme:tinkers',
@@ -30,7 +35,7 @@ if (typeof SunlitMarket !== 'undefined') {
   }
 
   if (Platform.isLoaded('thaumcraft')) {
-    SunlitMarket.merchant({
+    registerMerchant({
       id: 'theme_thaumcraft_curio',
       name: '神秘材料商',
       faction: 'theme:thaumcraft',
@@ -48,7 +53,7 @@ if (typeof SunlitMarket !== 'undefined') {
   }
 
   if (Platform.isLoaded('astralsorcery')) {
-    SunlitMarket.merchant({
+    registerMerchant({
       id: 'theme_astral_merchant',
       name: '星辉商人',
       faction: 'theme:astral',
@@ -66,7 +71,7 @@ if (typeof SunlitMarket !== 'undefined') {
   }
 
   if (Platform.isLoaded('botania')) {
-    SunlitMarket.merchant({
+    registerMerchant({
       id: 'theme_botania_merchant',
       name: '植物魔法材料商',
       faction: 'theme:botania',

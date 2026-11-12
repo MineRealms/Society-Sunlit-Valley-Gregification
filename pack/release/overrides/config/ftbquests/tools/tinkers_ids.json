@@ -1,5 +1,4 @@
 {
-  "salt": "society-tinkers-chapter-v1",
   "ids": {
     "chapter": "0271C1EA5E9304B3",
     "quest/advanced": "7C14C2BAC46CE906",
@@ -15,6 +14,7 @@
     "quest/slime": "3D3AF07635FFBE4A",
     "quest/smeltery": "24E8E547A9E3A64C",
     "quest/station": "354DA1A3CD5A9ACB",
+    "reward/advanced/unlock/theme.tinkers.adept": "23D636FA82B73C71",
     "task/advanced/item/tconstruct:manyullyn_ingot": "73D8CA7FAF10763E",
     "task/anvil/item/tconstruct:tinkers_anvil": "77335E171D629FA4",
     "task/casting/item/tconstruct:seared_table": "70D5865D465A704E",
@@ -28,5 +28,6 @@
     "task/slime/item/tconstruct:sky_slime_ball": "563AAF9C86932847",
     "task/smeltery/item/tconstruct:smeltery_controller": "719A06C5196D0915",
     "task/station/item/tconstruct:tinker_station": "6232744E4B1A6CFD"
-  }
+  },
+  "salt": "society-tinkers-chapter-v1"
 }
