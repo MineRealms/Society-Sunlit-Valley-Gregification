@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "minecraft:iron_ore"
 	id: "6A809CAE287B97BA"
-	order_index: 15
+	order_index: 16
 	quest_links: [
 		{
 			id: "4B68740C721D04D5"
@@ -1201,7 +1201,7 @@
 			description: [
 				"资深科幻迷可能从&d《星际之门》&r系列认得&2Naquadah&r!你会发现这是&d卢瓦级&r之后的核心材料."
 				""
-				"Naquadah可在&d卢瓦级&r处理获得钛、Trinium、钡、镓、铟、磷、&a富集硅岩&f及Naquadria,用途广泛!"
+				"本包启用GTNN困难硅岩线:矿石加工先得到氧化物混合物,再经氟锑酸浸出、中子活化器及后续分离获取Naquadah、&a富集硅岩&r和Naquadria.副产与回流请查JEI."
 				""
 				"另一种矿石&c钚&r用于启动氡循环,&9中压&r阶段必需."
 			]
@@ -1229,7 +1229,7 @@
 			description: [
 				"铂在&5高压&r阶段开始使用."
 				""
-				"&a铂系矿泥渣&r处理链是&1中压&r阶段必备,而谢尔顿矿是启动处理的最佳矿石."
+				"谢尔顿矿脉仍可采到&a原铂矿与原钯矿&r;加工时GTNN把对应金属粉产物改为&dPlatinumMetal/PalladiumMetal&r,需继续精炼.&a铂系矿泥渣&r也可启动后续铂族处理线."
 				"{@pagebreak}符"
 				"&l&3考据:&r&o 现实中谢尔顿矿真名为Cooperite.GregoriusT觉得引用谢尔顿·库珀“哈哈,有趣“很逗趣,尽管&l并非&r&o实际命名由来!我们延续了这个“哈哈,有趣“的玩笑."
 			]
@@ -1351,6 +1351,276 @@
 			title: "沥青铀矿"
 			x: 11.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["0269FCDE2628904A"]
+			description: [
+				"&8地底世界&r 是 Pollution 自带的独立维度,由 &bPollution 传送门&r 进出.它不是下界的变种,而是一套自己的区块生成器."
+				""
+				"参数先记住:&c无天光&r、&c有天花板&r、&c固定时间 18000&r、环境光只有 &e0.1&r.&c床不能睡,重生锚也无效&r——这里没有昼夜循环,也没有临时复活点,下洞前把物资一次带够."
+				""
+				"矿物结构也和主世界不一样:&d下界石英矿&r 与 &8灵魂沙矿&r 是主产物,还常成根地长&d石英柱&r;顶上吊着&e荧石&r,洞穴里有钟乳石、藤蔓、蘑菇,部分群系会生成&5地底花园&r."
+				""
+				"&c传送门目的地若落在世界安全边界之外会直接拒绝传送&r,那不是卡了,是它不肯把你丢出去."
+			]
+			icon: "minecraft:deepslate"
+			id: "495C89E615F24EDF"
+			size: 1.1d
+			subtitle: "石英不止下界有"
+			tasks: [{
+				id: "13F4F91D0773C2A3"
+				title: "下到底再回来"
+				type: "checkmark"
+			}]
+			title: "地底世界"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["495C89E615F24EDF"]
+			description: [
+				"地底最值得顺路带走的两样东西:&e荧石&r 和 &8灵魂沙&r."
+				""
+				"荧石吊在洞顶,不需要下界也能刷;灵魂沙以矿脉形式埋在岩层里,产量比主世界稳定得多."
+				""
+				"两者都不是格雷矿物,但都进魔法侧配方:荧石支撑光照与催化类工序,灵魂沙在源质/炼金线上长期有需求."
+				""
+				"&7建议&r:第一次下去带大背包,荧石整块带走,回来再分."
+			]
+			icon: "minecraft:glowstone"
+			id: "5BB66A3B569B05B3"
+			size: 1.0d
+			subtitle: "顺手带走,别专门跑一趟"
+			tasks: [
+				{
+					id: "4B08FE57556FE7E9"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "148D763E13A97AB2"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+			]
+			title: "荧石与灵魂沙"
+			x: 8.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"地底世界的刷怪表里没有普通僵尸骷髅,只有六种&5源质史莱姆&r:气、火、水、土、秩序、混沌."
+				""
+				"它们对应六种原始源质,是前期最便宜的源质来源之一——比专门搭聚灵阵省事得多,代价只是要在地底熬."
+				""
+				"&c注意&r:地底没有天光,刷怪不受昼夜限制,别在原地挂机刷,量会失控."
+			]
+			icon: "minecraft:slime_ball"
+			id: "4F42455F68CA1967"
+			size: 1.0d
+			subtitle: "地底特产源质"
+			tasks: [{
+				id: "4C75E2B3F66FA38D"
+				title: "清掉一只源质史莱姆"
+				type: "checkmark"
+			}]
+			title: "六属源质史莱姆"
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["495C89E615F24EDF"]
+			description: [
+				"Pollution 的矿物分两条线:一条是格雷的矿脉,一条是&d水晶&r."
+				""
+				"&d原生岩石水晶&r 是水晶线的起点.它不是普通矿石方块,而是带&e属性、纯度、稳定度&r的原料,采到的那一刻数值就已经随机定好了."
+				""
+				"&c别拿破水晶凑数&r:这三项会被下一步的晶种原样继承,原料拉稀,后面整条链都救不回来."
+			]
+			icon: "minecraft:amethyst_shard"
+			id: "059D0232D9767E1F"
+			size: 1.0d
+			subtitle: "矿物的另一种形态"
+			tasks: [{
+				id: "1AC01F135D135B71"
+				title: "采到一份原生岩石水晶"
+				type: "checkmark"
+			}]
+			title: "原生岩石水晶"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"在&b魔导组装机&r里筛选原生岩石水晶,得到 &a岩石水晶晶种&r."
+				""
+				"晶种会把原始水晶的&e属性、纯度、稳定度&r原样带过来——&c品质在你筛出它的那一刻就锁死了&r,后面所有工序只是继承,不会提升."
+				""
+				"所以这步真正要做的是&e挑原料&r,不是刷产量.同一批原生水晶,先看面板数值再决定拿哪块去筛."
+				""
+				"&c只有携带完整晶体数据的晶种才能培育&r,数据不全的只能当废料."
+			]
+			icon: "pollution:rock_crystal_seed"
+			id: "5EC3FBA8377BBD8C"
+			size: 1.0d
+			subtitle: "矿脉换成种子"
+			tasks: [{
+				id: "59B8EC2F4CE7B338"
+				item: "pollution:rock_crystal_seed"
+				type: "item"
+			}]
+			title: "岩石水晶晶种"
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5EC3FBA8377BBD8C"]
+			description: [
+				"晶种继续加工成 &a天体晶体培养胚&r,原始水晶数据仍然跟着它走."
+				""
+				"把培养胚和配方原料一起放进&b天体晶体培养阵列&r,再给&b高级星辉透镜仓&r装上&d星座数据晶圆&r.透镜仓要求&c保持露天&r——盖了顶就不出增幅."
+				""
+				"培养产物会保留原生属性,品质则由&e星座&r和&e工序&r共同决定."
+				""
+				"&c空白培养胚不能顶替带属性的培养胚&r,这是这一环最常见的卡壳点."
+			]
+			icon: "pollution:celestial_crystal_embryo"
+			id: "345419B5E0478F8B"
+			size: 1.0d
+			subtitle: "在阵列里长矿"
+			tasks: [{
+				id: "1377654A1D87F4DE"
+				item: "pollution:celestial_crystal_embryo"
+				type: "item"
+			}]
+			title: "天体晶体培养胚"
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["345419B5E0478F8B"]
+			description: [
+				"晶圆分两种:&8空白晶圆&r 只能拿去造机器,&d星座数据晶圆&r 才带增幅.有效晶圆在&b天体观测阵列&r里用对应星座纸制作,星座纸作为参照保留,不消耗."
+				""
+				"十四种星座各管一段工序.矿物这条线只关心两个:&6晶金座(矿物共鸣)&r 决定产出方向,&b寒冰座(冷却与结晶)&r 管结晶环节.装错星座不报错,只是没有增幅."
+				""
+				"&7提示&r:机器星座面板能看到当前晶圆、塔罗与工序的实际增幅,装完先看一眼再开机,别拿产能试错."
+			]
+			icon: "pollution:constellation_data_wafer"
+			id: "02F9DC42605AD827"
+			size: 1.0d
+			subtitle: "晶圆决定方向"
+			tasks: [{
+				id: "69BF972DFEF1653F"
+				item: "pollution:constellation_data_wafer"
+				type: "item"
+			}]
+			title: "星座增幅"
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["345419B5E0478F8B"]
+			description: [
+				"阵列跑完,产物是 &a培育水晶&r——不是矿石,更像作物."
+				""
+				"&c培育水晶不能再次选种&r:作者刻意堵死了循环提纯,别指望反复回炉把品质堆上去.想要更好的,只能回到原生水晶那一步重挑原料."
+				""
+				"它还能插进&b高级透镜仓&r的&e光学槽&r当增幅,给同一台多方块再加一层强度."
+				""
+				"整条链:&7原生水晶 → 晶种 → 培养胚 → 培育水晶&r.全程在机器里,一步都不用下洞."
+			]
+			icon: "pollution:cultivated_crystal"
+			id: "358BBDE6A16B4A30"
+			size: 1.0d
+			subtitle: "矿的终点是作物"
+			tasks: [{
+				id: "774319E33CD1A64F"
+				item: "pollution:cultivated_crystal"
+				type: "item"
+			}]
+			title: "培育水晶"
+			x: 6.0d
+			y: -11.0d
+		}
+		{
+			description: [
+				"塔罗不是装饰.&6大阿卡纳&r 用来&e授权对应的魔法工序&r,塔罗仓保留卡牌,加工时&c不消耗&r."
+				""
+				"授权要成对看:&e塔罗定工序类别&r,&e星座晶圆定增幅方向&r,两边都对上才生效.矿物线上最多用到&7星星(天体共鸣)&r 和&7世界(跨体系合成)&r."
+				""
+				"&c装错不报错,只是没增幅&r,所以顺序永远是先核对面板、再开机."
+			]
+			icon: "pollution:the_star"
+			id: "23888A7683A6146A"
+			size: 1.0d
+			subtitle: "工序要先被授权"
+			tasks: [{
+				id: "763B436DC38BC8F7"
+				title: "把一张塔罗放进塔罗仓"
+				type: "checkmark"
+			}]
+			title: "塔罗授权"
+			x: 4.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["495C89E615F24EDF"]
+			description: [
+				"传送门&c不是合成出来的,是搭出来的&r:&bPollution 传送门&r 没有物品形式,也没有工作台配方."
+				""
+				"&e第一步&r:在主世界挖一个 &e2×2 或更大的静水池&r,池底每一格都必须是可承重的实心方块."
+				"&e第二步&r:池子四周用&e泥土/草方块&r围一圈,并在&c每一格上面都摆上 &dBotania 聚宝花 (botania:loonium)&r.&c原版任意花朵不算&r——那是暮色森林的仪式."
+				"&e第三步&r:往水里丢一枚 &d神秘锭 (thaumcraft:thaumium_ingot)&r,掉落物形态,别放进箱子.玩家留在 32 格内,每 20 刻检查一次."
+				""
+				"条件满足时会劈下一道&e只有视觉效果、不造成伤害的闪电&r,消耗 1 枚神秘锭,整片水变成 &bpollution:portal&r."
+				""
+				"&c和暮色森林彻底分开&r:暮色门用&e原版任意花朵 + 闪耀之光 (thaumcraft:nitor)&r;地底门用&e聚宝花 + 神秘锭&r.花和激活物都不一样,不会再互相抢."
+				""
+				"硬条件:&e水量 4~64 格&r、下方全部实心、四邻全部是「草/泥土 + 上面 loonium」;任何一格不对,仪式失败且&c不会消耗神秘锭&r,玩家会收到提示."
+				""
+				"踩进去 → &8地底世界&r;从地底那头踩回去 → 回主世界.抵达时会自动把重生点设在落地点;落点已改为&e门旁的实心地台&r,不会再无限传送."
+			]
+			icon: "thaumcraft:thaumium_ingot"
+			id: "0BDB7AE0BBC6806B"
+			size: 1.1d
+			subtitle: "仪式,不是配方"
+			tasks: [{
+				id: "21CE35C5BFA21472"
+				item: "thaumcraft:thaumium_ingot"
+				type: "item"
+			}]
+			title: "造一扇门：聚宝花与神秘锭"
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"门成型之后框架还在被监控:&e每格传送门方块的四邻&r 必须是 泥土/草、石头,或另一个传送门方块,且下方承重."
+				""
+				"&c挖掉一格边框,整块门会当场变回水&r,得再丢一枚&e神秘锭&r重开.所以别把门修在会被机器/爆炸碰到的地方."
+				""
+				"&e注意区分&r:成型时严格要求边框上方是&d聚宝花&r;成型后的框架维护只认泥土/草/石头,所以把花收走不会立刻塌门,但下次重建仍需要聚宝花."
+				""
+				"相关配置(都是默认值):"
+				"&7portalOriginDimension = minecraft:overworld&r、&7allowPortalsInOtherDimensions = false&r → 仪式只在主世界或地底生效."
+				"&7checkPortalDestination = false&r → 每 20 刻检查一次、不判世界边界;设成 &etrue&r 后改成每 100 刻检查,落点超出目的地世界边界 16 格会提示 &c目的地位于世界安全边界之外&r 并拒绝生成."
+				"&7shouldReturnPortalBeUsable = true&r → 抵达端的门是双向的;设成 false 会把抵达门标成 &eone_way&r,需要再丢一枚&e神秘锭&r才能启用回程."
+				""
+				"&7one_way&r 还有一层意思:它有碰撞地板、不把玩家送回去,常被用来做单向落点."
+			]
+			icon: "botania:loonium"
+			id: "3891240E375D0107"
+			size: 1.0d
+			subtitle: "门会自己塌"
+			tasks: [{
+				id: "2F581E484BC86DB9"
+				title: "把回程规则看完"
+				type: "checkmark"
+			}]
+			title: "边框、回程与配置"
+			x: 10.0d
+			y: -7.0d
 		}
 	]
 	subtitle: ["丰富矿藏及其他资源"]

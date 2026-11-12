@@ -1201,7 +1201,7 @@
 			description: [
 				"资深科幻迷可能从&d《星际之门》&r系列认得&2Naquadah&r!你会发现这是&d卢瓦级&r之后的核心材料."
 				""
-				"Naquadah可在&d卢瓦级&r处理获得钛、Trinium、钡、镓、铟、磷、&a富集硅岩&f及Naquadria,用途广泛!"
+				"本包启用GTNN困难硅岩线:矿石加工先得到氧化物混合物,再经氟锑酸浸出、中子活化器及后续分离获取Naquadah、&a富集硅岩&r和Naquadria.副产与回流请查JEI."
 				""
 				"另一种矿石&c钚&r用于启动氡循环,&9中压&r阶段必需."
 			]
@@ -1229,7 +1229,7 @@
 			description: [
 				"铂在&5高压&r阶段开始使用."
 				""
-				"&a铂系矿泥渣&r处理链是&1中压&r阶段必备,而谢尔顿矿是启动处理的最佳矿石."
+				"谢尔顿矿脉仍可采到&a原铂矿与原钯矿&r;加工时GTNN把对应金属粉产物改为&dPlatinumMetal/PalladiumMetal&r,需继续精炼.&a铂系矿泥渣&r也可启动后续铂族处理线."
 				"{@pagebreak}符"
 				"&l&3考据:&r&o 现实中谢尔顿矿真名为Cooperite.GregoriusT觉得引用谢尔顿·库珀“哈哈,有趣“很逗趣,尽管&l并非&r&o实际命名由来!我们延续了这个“哈哈,有趣“的玩笑."
 			]
@@ -1367,13 +1367,11 @@
 			id: "495C89E615F24EDF"
 			size: 1.1d
 			subtitle: "石英不止下界有"
-			tasks: [
-				{
-					id: "13F4F91D0773C2A3"
-					title: "下到底再回来"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "13F4F91D0773C2A3"
+				title: "下到底再回来"
+				type: "checkmark"
+			}]
 			title: "地底世界"
 			x: 6.0d
 			y: -3.0d
@@ -1390,12 +1388,12 @@
 				"&7建议&r:第一次下去带大背包,荧石整块带走,回来再分."
 			]
 			icon: "minecraft:glowstone"
-			id: "B4DFBF7382568805"
+			id: "5BB66A3B569B05B3"
 			size: 1.0d
 			subtitle: "顺手带走,别专门跑一趟"
 			tasks: [
 				{
-					id: "E8DB06ED1E8EED84"
+					id: "4B08FE57556FE7E9"
 					item: "minecraft:glowstone"
 					type: "item"
 				}
@@ -1410,7 +1408,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["B4DFBF7382568805"]
 			description: [
 				"地底世界的刷怪表里没有普通僵尸骷髅,只有六种&5源质史莱姆&r:气、火、水、土、秩序、混沌."
 				""
@@ -1422,13 +1419,11 @@
 			id: "4F42455F68CA1967"
 			size: 1.0d
 			subtitle: "地底特产源质"
-			tasks: [
-				{
-					id: "4C75E2B3F66FA38D"
-					title: "清掉一只源质史莱姆"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "4C75E2B3F66FA38D"
+				title: "清掉一只源质史莱姆"
+				type: "checkmark"
+			}]
 			title: "六属源质史莱姆"
 			x: 8.0d
 			y: -7.0d
@@ -1443,22 +1438,19 @@
 				"&c别拿破水晶凑数&r:这三项会被下一步的晶种原样继承,原料拉稀,后面整条链都救不回来."
 			]
 			icon: "minecraft:amethyst_shard"
-			id: "F5902376D511710A"
+			id: "059D0232D9767E1F"
 			size: 1.0d
 			subtitle: "矿物的另一种形态"
-			tasks: [
-				{
-					id: "1AC01F135D135B71"
-					title: "采到一份原生岩石水晶"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "1AC01F135D135B71"
+				title: "采到一份原生岩石水晶"
+				type: "checkmark"
+			}]
 			title: "原生岩石水晶"
 			x: 4.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["F5902376D511710A"]
 			description: [
 				"在&b魔导组装机&r里筛选原生岩石水晶,得到 &a岩石水晶晶种&r."
 				""
@@ -1472,13 +1464,11 @@
 			id: "5EC3FBA8377BBD8C"
 			size: 1.0d
 			subtitle: "矿脉换成种子"
-			tasks: [
-				{
-					id: "B7E1FE5B484478AC"
-					item: "pollution:rock_crystal_seed"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "59B8EC2F4CE7B338"
+				item: "pollution:rock_crystal_seed"
+				type: "item"
+			}]
 			title: "岩石水晶晶种"
 			x: 6.0d
 			y: -7.0d
@@ -1498,13 +1488,11 @@
 			id: "345419B5E0478F8B"
 			size: 1.0d
 			subtitle: "在阵列里长矿"
-			tasks: [
-				{
-					id: "8BEC521191C2FFB1"
-					item: "pollution:celestial_crystal_embryo"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1377654A1D87F4DE"
+				item: "pollution:celestial_crystal_embryo"
+				type: "item"
+			}]
 			title: "天体晶体培养胚"
 			x: 6.0d
 			y: -9.0d
@@ -1519,16 +1507,14 @@
 				"&7提示&r:机器星座面板能看到当前晶圆、塔罗与工序的实际增幅,装完先看一眼再开机,别拿产能试错."
 			]
 			icon: "pollution:constellation_data_wafer"
-			id: "C7852D8F309304B1"
+			id: "02F9DC42605AD827"
 			size: 1.0d
 			subtitle: "晶圆决定方向"
-			tasks: [
-				{
-					id: "69BF972DFEF1653F"
-					item: "pollution:constellation_data_wafer"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "69BF972DFEF1653F"
+				item: "pollution:constellation_data_wafer"
+				type: "item"
+			}]
 			title: "星座增幅"
 			x: 4.0d
 			y: -9.0d
@@ -1545,22 +1531,19 @@
 				"整条链:&7原生水晶 → 晶种 → 培养胚 → 培育水晶&r.全程在机器里,一步都不用下洞."
 			]
 			icon: "pollution:cultivated_crystal"
-			id: "8DA79099CA6089E1"
+			id: "358BBDE6A16B4A30"
 			size: 1.0d
 			subtitle: "矿的终点是作物"
-			tasks: [
-				{
-					id: "9BB33C6F6210BF8C"
-					item: "pollution:cultivated_crystal"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "774319E33CD1A64F"
+				item: "pollution:cultivated_crystal"
+				type: "item"
+			}]
 			title: "培育水晶"
 			x: 6.0d
 			y: -11.0d
 		}
 		{
-			dependencies: ["C7852D8F309304B1"]
 			description: [
 				"塔罗不是装饰.&6大阿卡纳&r 用来&e授权对应的魔法工序&r,塔罗仓保留卡牌,加工时&c不消耗&r."
 				""
@@ -1569,16 +1552,14 @@
 				"&c装错不报错,只是没增幅&r,所以顺序永远是先核对面板、再开机."
 			]
 			icon: "pollution:the_star"
-			id: "83FBCE62F70EB5EF"
+			id: "23888A7683A6146A"
 			size: 1.0d
 			subtitle: "工序要先被授权"
-			tasks: [
-				{
-					id: "8749EDC0344E1C8A"
-					title: "把一张塔罗放进塔罗仓"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "763B436DC38BC8F7"
+				title: "把一张塔罗放进塔罗仓"
+				type: "checkmark"
+			}]
 			title: "塔罗授权"
 			x: 4.0d
 			y: -11.0d
@@ -1601,22 +1582,19 @@
 				"踩进去 → &8地底世界&r;从地底那头踩回去 → 回主世界.抵达时会自动把重生点设在落地点;落点已改为&e门旁的实心地台&r,不会再无限传送."
 			]
 			icon: "thaumcraft:thaumium_ingot"
-			id: "B4675286FBC62AB5"
+			id: "0BDB7AE0BBC6806B"
 			size: 1.1d
 			subtitle: "仪式,不是配方"
-			tasks: [
-				{
-					id: "21CE35C5BFA21472"
-					item: "thaumcraft:thaumium_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "21CE35C5BFA21472"
+				item: "thaumcraft:thaumium_ingot"
+				type: "item"
+			}]
 			title: "造一扇门：聚宝花与神秘锭"
 			x: 10.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["B4675286FBC62AB5"]
 			description: [
 				"门成型之后框架还在被监控:&e每格传送门方块的四邻&r 必须是 泥土/草、石头,或另一个传送门方块,且下方承重."
 				""
@@ -1635,13 +1613,11 @@
 			id: "3891240E375D0107"
 			size: 1.0d
 			subtitle: "门会自己塌"
-			tasks: [
-				{
-					id: "2F581E484BC86DB9"
-					title: "把回程规则看完"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "2F581E484BC86DB9"
+				title: "把回程规则看完"
+				type: "checkmark"
+			}]
 			title: "边框、回程与配置"
 			x: 10.0d
 			y: -7.0d
