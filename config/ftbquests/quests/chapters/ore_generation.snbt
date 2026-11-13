@@ -123,11 +123,13 @@
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"该矿脉是主世界少数直接获取黄金的渠道之一."
+				"该矿脉是少数直接获取黄金的渠道之一."
 				""
 				"&d格雷科技&f中虽存在其他黄金来源,但通过加工其他资源通常可获得更高产量."
 				""
 				"&a钒磁铁矿&f在&bMV阶段&r变得更重要,可通过离心提取钒元素制造钒钢."
+				""
+				"&c注意:&r主世界已移除该矿脉,现在只可在&a暮色森林&f找到."
 			]
 			icon: "gtceu:magnetite_ore"
 			id: "260E516A219825A2"
@@ -387,6 +389,8 @@
 				"从中期开始,该矿脉的镁元素产出逐渐凸显价值."
 				""
 				"橄榄石还有多种用途,可在部分合成配方中替代&a绿宝石&r."
+				""
+				"&c注意:&r主世界已移除该矿脉,现在只可在&a暮色森林&f找到."
 			]
 			icon: "gtceu:olivine_ore"
 			id: "7C1B5559A03F6E02"
@@ -658,6 +662,8 @@
 				"软锰矿是多数玩家在此的主要目标.它可直接冶炼成锰,而你将需要大量锰来制造&e高压&r设备."
 				""
 				"钽铁矿因其副产品铌以及制作&bSMD元件&r时的实用性,最终会变得极其珍贵."
+				""
+				"&c注意:&r主世界的锰矿已改到&a暮色森林&f;下界仍保留锰矿脉."
 			]
 			icon: "gtceu:pyrolusite_ore"
 			id: "2C75A50B17AA9AF1"
@@ -723,6 +729,8 @@
 				"唯一可靠的镍来源."
 				""
 				"钴矿还能制作相当实用的早期物品管道!"
+				""
+				"&c注意:&r主世界已移除该矿脉,现在只可在&a暮色森林&f找到."
 			]
 			icon: "gtceu:nickel_ore"
 			id: "38C955F6CBDD95BD"
@@ -836,8 +844,10 @@
 				"&5电动时代&r及后续阶段实际意义上的&a稀土&f矿脉."
 				""
 				"&l&3背景故事:&r&o该矿脉曾长期存在错误——其实从未含任何独居石,但多月以来无人察觉(也无人提出!).你发现了吗？"
+				""
+				"&c注意:&r该矿脉已改到&5亚尔夫海姆&f生成."
 			]
-			icon: "gtceu:netherrack_bastnasite_ore"
+			icon: "gtceu:bastnasite_ore"
 			id: "2171AF09E76A5968"
 			size: 0.9d
 			subtitle: "&a稀土&f、钕、氟的来源"
@@ -898,8 +908,10 @@
 				"&8(至少...本该很稀有.)&r"
 				""
 				"可将本矿脉内容视为“&7&o主要是钼,附带其他物质&r“.没错,钼才是重点."
+				""
+				"&c注意:&r该矿脉已改到&d中洲&f的洞穴群系生成."
 			]
-			icon: "gtceu:netherrack_molybdenum_ore"
+			icon: "gtceu:molybdenum_ore"
 			id: "63CB3C9F5A61E0C4"
 			size: 0.9d
 			subtitle: "钼的来源"
@@ -1166,8 +1178,10 @@
 				"抵达此处时你可能已拥有大量&a铁&f,但别忽视此矿脉的实用性."
 				""
 				"铬铁矿是铬的绝佳来源,而钒在游戏后期需求量极大."
+				""
+				"&c注意:&r末地已移除该矿脉,现在只可在&a暮色森林&f找到."
 			]
-			icon: "gtceu:endstone_magnetite_ore"
+			icon: "gtceu:magnetite_ore"
 			id: "4FC668EF2BF294ED"
 			subtitle: "&a铁&f、钒、金、铬来源"
 			tasks: [
@@ -1204,8 +1218,10 @@
 				"本包启用GTNN困难硅岩线:矿石加工先得到氧化物混合物,再经氟锑酸浸出、中子活化器及后续分离获取Naquadah、&a富集硅岩&r和Naquadria.副产与回流请查JEI."
 				""
 				"另一种矿石&c钚&r用于启动氡循环,&9中压&r阶段必需."
+				""
+				"&c注意:&r该矿脉已改到&5亚尔夫海姆&f生成."
 			]
-			icon: "gtceu:endstone_naquadah_ore"
+			icon: "gtceu:naquadah_ore"
 			id: "143B1AE1F3CF53EF"
 			subtitle: "大量资源来源"
 			tasks: [
@@ -1232,8 +1248,10 @@
 				"谢尔顿矿脉仍可采到&a原铂矿与原钯矿&r;加工时GTNN把对应金属粉产物改为&dPlatinumMetal/PalladiumMetal&r,需继续精炼.&a铂系矿泥渣&r也可启动后续铂族处理线."
 				"{@pagebreak}符"
 				"&l&3考据:&r&o 现实中谢尔顿矿真名为Cooperite.GregoriusT觉得引用谢尔顿·库珀“哈哈,有趣“很逗趣,尽管&l并非&r&o实际命名由来!我们延续了这个“哈哈,有趣“的玩笑."
+				""
+				"&c注意:&r该矿脉已改到&d中洲&f的魔多/阴影群系生成."
 			]
-			icon: "gtceu:endstone_cooperite_ore"
+			icon: "gtceu:cooperite_ore"
 			id: "4D76C334B251EB3A"
 			subtitle: "又是大量资源来源"
 			tasks: [
@@ -1265,11 +1283,13 @@
 		{
 			dependencies: ["41D32C5178760F47"]
 			description: [
-				"唯一&9钨&r来源!虽然理论上可通过粉碎&e末地石&r获取钨酸盐,但产量极低.建议直接处理这些矿石!"
+				"唯一&9钨&r来源!虽然理论上可通过粉碎&e石头&r获取钨酸盐,但产量极低.建议直接处理这些矿石!"
 				""
 				"重要矿脉,钨在&9中压&r及之后阶段消耗量巨大."
+				""
+				"&c注意:&r该矿脉已改到&d中洲&f的魔多/阴影群系生成."
 			]
-			icon: "gtceu:endstone_scheelite_ore"
+			icon: "gtceu:scheelite_ore"
 			id: "5AA98D1298FD90BA"
 			subtitle: "钨、锂来源"
 			tasks: [
@@ -1299,8 +1319,10 @@
 				"心智健全者采集&b铝&r和&d钛&r的&a首选矿脉&f."
 				""
 				"抛弃那些云母矿脉——铝土矿才是未来!"
+				""
+				"&c注意:&r该矿脉已改到&a暮色森林&f生成."
 			]
-			icon: "gtceu:endstone_bauxite_ore"
+			icon: "gtceu:bauxite_ore"
 			id: "40B40DF0D1295A90"
 			subtitle: "铝、钛、镓来源"
 			tasks: [
@@ -1332,8 +1354,10 @@
 				"铀在&5高压&r及之后阶段有些次要用途."
 				""
 				"可知&a核反应堆&f未来可能加入&bGTCEu&r？"
+				""
+				"&c注意:&r该矿脉已改到&d中洲&f的魔多/阴影群系生成."
 			]
-			icon: "gtceu:endstone_pitchblende_ore"
+			icon: "gtceu:pitchblende_ore"
 			id: "5ED483A04095EFA3"
 			subtitle: "铀、钍、铅来源"
 			tasks: [
