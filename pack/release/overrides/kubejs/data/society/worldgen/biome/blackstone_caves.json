@@ -58,6 +58,18 @@
         "weight": 10,
         "minCount": 1,
         "maxCount": 4
+      },
+      {
+        "type": "cataclysm:the_watcher",
+        "weight": 180,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "cataclysm:ignited_berserker",
+        "weight": 45,
+        "minCount": 1,
+        "maxCount": 1
       }
     ],
     "creature": [],
