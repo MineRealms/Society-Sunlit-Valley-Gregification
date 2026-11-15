@@ -12,15 +12,15 @@
 // ============================================================
 console.info("[GT-ORES] oreVeins.js loaded")
 
-const $UniformInt = Java.loadClass("net.minecraft.util.valueproviders.UniformInt")
-
 // 维度配置：layer 对应 worldGenLayers.js 中注册的层名
 const GT_ORE_DIMENSIONS = [
   {
     key: "tf",
     layer: "twilight_forest",
     // 暮色森林：min_y=-32, height=288
-    remap: (y, deep) => Math.max(-31, Math.min(250, y + (deep ? 20 : 0))),
+    remap: (y, deep) => deep
+      ? Math.max(-31, Math.min(31, y + 20))
+      : Math.max(-31, Math.min(31, y - 30)),
   },
   {
     key: "skull",
@@ -285,7 +285,7 @@ GTCEuServerEvents.oreVeins(event => {
       event.add(`kubejs:${dim.key}_${v.name}_vein`, vein => {
         vein.weight(v.weight)
         vein.density(v.density)
-        vein.clusterSize($UniformInt.of(v.size[0], v.size[1]))
+        vein.clusterSize([v.size[0], v.size[1]])
         vein.layer(dim.layer)
         vein.heightRangeUniform(
           v.deep ? remapDeep(v.height[0]) : remap(v.height[0]),
@@ -304,5 +304,16 @@ GTCEuServerEvents.oreVeins(event => {
       })
     })
   })
-  console.info(`[GT-ORES] registered ${GT_ORE_VEINS.length * GT_ORE_DIMENSIONS.length} veins for ${GT_ORE_DIMENSIONS.length} dimensions`)
+  // 取消 GTNN 的暮色森林矿脉（gtnn:*_vein_tf，与本包 kubejs:tf_* 重复）
+  // GTNN 通过 GTCEu addon API 注册，早于本 KubeJS 事件，故可 remove。
+  const GTNN_TF_VEINS = [
+    "gtnn:lapis_vein_tf", "gtnn:molybdenite_vein_tf", "gtnn:galena_vein_tf",
+    "gtnn:apatite_vein_tf", "gtnn:coal_vein_tf", "gtnn:diamond_vein_tf",
+    "gtnn:lubricant_vein_tf", "gtnn:sapphire_vein_tf", "gtnn:nickel_vein_tf",
+    "gtnn:cassiterite_vein_tf", "gtnn:olivine_vein_tf", "gtnn:salts_vein_tf",
+    "gtnn:iron_vein_tf", "gtnn:gold_vein_tf",
+  ]
+  GTNN_TF_VEINS.forEach(id => event.remove(id))
+
+  console.info(`[GT-ORES] registered ${GT_ORE_VEINS.length * GT_ORE_DIMENSIONS.length} veins for ${GT_ORE_DIMENSIONS.length} dimensions; removed ${GTNN_TF_VEINS.length} GTNN twilight veins`)
 })

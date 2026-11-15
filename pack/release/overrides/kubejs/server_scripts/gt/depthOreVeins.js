@@ -46,13 +46,13 @@ const HEIGHT_BANDS = {
   'gtceu:mica_vein': [-64, -32],
   'gtceu:sapphire_vein': [-64, -32],
 
-  // ---- 暮色森林：HV 中档 16..40 ----
-  'kubejs:tf_bauxite_vein': [16, 40],
-  'kubejs:tf_magnetite_end_vein': [16, 40],
-  'kubejs:tf_magnetite_vein': [16, 40],
-  'kubejs:tf_nickel_vein': [16, 40],
-  'kubejs:tf_manganese_vein': [16, 40],
-  'kubejs:tf_olivine_vein': [16, 40],
+  // ---- 暮色森林：HV 中档 16..31（暮色森林实际石头只到 Y≈31） ----
+  'kubejs:tf_bauxite_vein': [16, 31],
+  'kubejs:tf_magnetite_end_vein': [16, 31],
+  'kubejs:tf_magnetite_vein': [16, 31],
+  'kubejs:tf_nickel_vein': [16, 31],
+  'kubejs:tf_manganese_vein': [16, 31],
+  'kubejs:tf_olivine_vein': [16, 31],
 
   // ---- 中洲：EV 深档 13..31 ----
   'gtceu:pitchblende_vein_end': [13, 31],
@@ -66,8 +66,16 @@ const HEIGHT_BANDS = {
 }
 
 GTCEuServerEvents.oreVeins(event => {
+  let applied = 0
+  const missing = []
   Object.entries(HEIGHT_BANDS).forEach(([id, [min, max]]) => {
-    event.modify(id, vein => vein.heightRangeUniform(min, max))
+    try {
+      event.modify(id, vein => vein.heightRangeUniform(min, max))
+      applied++
+    } catch (e) {
+      missing.push(id)
+    }
   })
-  console.info(`[GT-ORES] applied depth bands to ${Object.keys(HEIGHT_BANDS).length} veins`)
+  console.info(`[GT-ORES] applied depth bands to ${applied}/${Object.keys(HEIGHT_BANDS).length} veins`
+    + (missing.length ? ` (not registered: ${missing.join(', ')})` : ''))
 })

@@ -13,8 +13,6 @@
 // ============================================================
 console.info("[GT-ORES] tfHvOreVeins.js loaded")
 
-const $UniformInt = Java.loadClass("net.minecraft.util.valueproviders.UniformInt")
-
 // 末地 HV 矿脉的暮色森林副本（去掉宿主层，由 twilight_forest 层决定宿主）
 const TF_END_VEINS = [
   {
@@ -43,9 +41,12 @@ GTCEuServerEvents.oreVeins(event => {
     event.add(`kubejs:${v.name}`, vein => {
       vein.weight(v.weight)
       vein.density(v.density)
-      vein.clusterSize($UniformInt.of(v.size[0], v.size[1]))
+      vein.clusterSize([v.size[0], v.size[1]])
       vein.layer("twilight_forest")
-      vein.heightRangeUniform(v.height[0], v.height[1])
+      vein.heightRangeUniform(
+        Math.max(-31, Math.min(31, v.height[0] - 30)),
+        Math.max(-31, Math.min(31, v.height[1] - 30))
+      )
       v.gen(vein)
       if (v.indicator) {
         vein.surfaceIndicatorGenerator(indicator => indicator.surfaceRock(v.indicator))
