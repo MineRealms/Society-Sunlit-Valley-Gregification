@@ -8,7 +8,7 @@ PlayerEvents.loggedIn((e) => {
 
     if (Number(chunkDay) > Number(player.persistentData.skullCavernEnterDay)) {
       player.persistentData.skullCavernEnterDay = -1;
-      global.teleportHome(player, server, player.level);
+      global.teleportSkullCavernHome(player, server);
       server.runCommandSilent(
         global.getEmbersTextAPICommand(player.username,
           `{anchor:"BOTTOM_CENTER",background:1,align:"BOTTOM_CENTER",color:"#AAAAAA",offsetY:-60}`,

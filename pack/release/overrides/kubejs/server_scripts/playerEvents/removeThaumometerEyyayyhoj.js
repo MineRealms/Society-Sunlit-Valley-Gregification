@@ -8,7 +8,7 @@ PlayerEvents.loggedIn(event => {
         // Remove Thaumometer from all inventory slots
         let removed = 0
         for (let i = 0; i < player.inventory.size(); i++) {
-            const stack = player.inventory.getStackInSlot(i)
+            let stack = player.inventory.getStackInSlot(i)
             if (!stack.isEmpty() && stack.id == "thaumcraft:thaumometer") {
                 player.inventory.setStackInSlot(i, ItemStack.EMPTY)
                 removed++
@@ -22,7 +22,7 @@ PlayerEvents.loggedIn(event => {
         }
         // Also check armor slots
         for (let i = 0; i < player.armor.length; i++) {
-            const stack = player.armor[i]
+            let stack = player.armor[i]
             if (!stack.isEmpty() && stack.id == "thaumcraft:thaumometer") {
                 player.armor[i] = ItemStack.EMPTY
                 removed++

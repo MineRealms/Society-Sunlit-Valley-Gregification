@@ -309,14 +309,68 @@ global.handleFee = (server, player, reason) => {
 
 global.teleportHome = (player, server, level) => {
   var respawnPosition = player.getRespawnPosition();
-  var destinationDimension = player.getRespawnDimension().location().toString();
+  var respawnDimension = player.getRespawnDimension();
+  var destinationDimension = respawnDimension == null
+    ? String(level.dimension)
+    : respawnDimension.location().toString();
   if (respawnPosition == null) {
     respawnPosition = level.getSharedSpawnPos();
-    destinationDimension = level.dimension;
+    destinationDimension = String(level.dimension);
   }
   // KubeJS's string-dimension overload avoids Mohist's ambiguous Java
   // ServerPlayer.teleportTo overloads (Set<RelativeMovement> vs TeleportCause).
   player.teleportTo(destinationDimension, respawnPosition.x, respawnPosition.y, respawnPosition.z, 0, 0);
+  server.runCommandSilent(`experience add ${player.username} 1`);
+};
+
+global.teleportSkullCavernHome = (player, server) => {
+  var overworld = server.overworld();
+  var respawnPosition = player.getRespawnPosition();
+  var respawnDimension = player.getRespawnDimension();
+  var respawnIsOverworld = respawnDimension != null
+    && String(respawnDimension.location()) === "minecraft:overworld";
+
+  // Fainting is a fixed safety return: a bed or anchor in Pollution must not
+  // turn a Skull Cavern faint into a trip to pollution:underground.
+  if (respawnPosition == null || !respawnIsOverworld) {
+    respawnPosition = overworld.getSharedSpawnPos();
+  }
+
+  // getRespawnPosition()/getSharedSpawnPos() point at the floor block. Find
+  // two clear blocks above it so the player does not arrive inside a bed,
+  // solid spawn platform, or another block after the dimension transfer.
+  const isOpen = (block) => block != null
+    && ["minecraft:air", "minecraft:cave_air", "minecraft:void_air"].includes(String(block.id));
+  let destination = null;
+  const offsets = [
+    [0, 0], [1, 0], [-1, 0], [0, 1], [0, -1],
+    [1, 1], [-1, 1], [1, -1], [-1, -1],
+  ];
+  // Rhino: const/let re-declared inside a loop body throws
+  // "redeclaration of var x" on the second iteration, so keep these as let
+  // (let works, const does not) — verified on rhino-forge-2001.2.3.
+  for (const offset of offsets) {
+    let x = Number(respawnPosition.x) + offset[0];
+    let z = Number(respawnPosition.z) + offset[1];
+    for (let feetY = Number(respawnPosition.y) + 1; feetY >= Number(respawnPosition.y) - 1; feetY--) {
+      let feet = overworld.getBlock(x, feetY, z);
+      let head = overworld.getBlock(x, feetY + 1, z);
+      let floor = overworld.getBlock(x, feetY - 1, z);
+      if (isOpen(feet) && isOpen(head) && !isOpen(floor)) {
+        destination = { x: x + 0.5, y: feetY, z: z + 0.5 };
+        break;
+      }
+    }
+    if (destination != null) break;
+  }
+  if (destination == null) {
+    destination = {
+      x: Number(respawnPosition.x) + 0.5,
+      y: Number(respawnPosition.y) + 1,
+      z: Number(respawnPosition.z) + 0.5,
+    };
+  }
+  player.teleportTo("minecraft:overworld", destination.x, destination.y, destination.z, 0, 0);
   server.runCommandSilent(`experience add ${player.username} 1`);
 };
 

@@ -39,7 +39,7 @@ PlayerEvents.tick((e) => {
     // 6AM
     if (timeModulo >= 23800) {
       player.persistentData.skullCavernEnterDay = -1;
-      global.teleportHome(player, server, player.level);
+      global.teleportSkullCavernHome(player, server);
       server.runCommandSilent(
         global.getEmbersTextAPICommand(
           player.username,
