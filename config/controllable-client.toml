@@ -34,7 +34,7 @@ inputLibrary = "SDL2"
 		radialThumbstick = "RIGHT"
 		# If enabled, the game will use a virtual cursor instead of the real cursor. This must be turned on to be able to run multiple instances!
 		# Valid values: true, false
-		virtualMouse = true
+		virtualMouse = false
 		# The speed which the cursor or virtual mouse moves around the screen
 		# Valid range: 0 to 50 (inclusive)
 		mouseSpeed = 15.0

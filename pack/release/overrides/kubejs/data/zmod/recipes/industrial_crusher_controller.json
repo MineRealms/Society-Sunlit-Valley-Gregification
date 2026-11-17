@@ -1,0 +1,22 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:INDUSTRIAL_CRUSHER",
+  "item_inputs": [
+    { "ingredient": { "tag": "gtceu:circuits/ev" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:ultimate_crushing_factory" }, "amount": 1 },
+    { "ingredient": { "item": "zmod:xuanxiang_circuit" }, "amount": 1 },
+    { "ingredient": { "item": "zmod:precision_servo_component" }, "amount": 2 },
+    { "ingredient": { "item": "zmod:drive_unit_t2" }, "amount": 1 },
+    { "ingredient": { "item": "zmod:bearing_unit_t2" }, "amount": 2 },
+    { "ingredient": { "item": "zmod:crusher_wear_lining" }, "amount": 4 },
+    { "ingredient": { "item": "mekanism:steel_casing" }, "amount": 2 }
+  ],
+  "output": { "id": "zmod:industrial_crusher_controller", "count": 1 },
+  "duration": 80,
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mekanism" },
+    { "type": "forge:mod_loaded", "modid": "thaumcraft" },
+    { "type": "zmod:optional_environment", "modid": "tainted_magic" },
+    { "type": "zmod:optional_environment", "modid": "thaumictinkerer" }
+  ]
+}

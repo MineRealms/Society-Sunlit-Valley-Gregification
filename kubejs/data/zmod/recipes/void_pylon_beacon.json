@@ -1,0 +1,99 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:VOID_CRYSTAL_TOWER",
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "zmod:pylon_beacon"
+      },
+      "amount": 1
+    },
+    {
+      "ingredient": {
+        "item": "zmod:xuanxiang_circuit"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:magnetic_confinement_unit"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:phase_coupler"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:energy_coupler_t2"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:high_purity_kaydarin_crystal"
+      },
+      "amount": 4
+    },
+    {
+      "ingredient": {
+        "item": "thaumcraft:void_ingot"
+      },
+      "amount": 8
+    },
+    {
+      "ingredient": {
+        "item": "minecraft:nether_star"
+      },
+      "amount": 2
+    }
+  ],
+  "essentia_inputs": [
+    {
+      "aspect": "potentia",
+      "amount": 96
+    },
+    {
+      "aspect": "vinculum",
+      "amount": 64
+    },
+    {
+      "aspect": "tutamen",
+      "amount": 64
+    },
+    {
+      "aspect": "praecantatio",
+      "amount": 48
+    },
+    {
+      "aspect": "alienis",
+      "amount": 32
+    }
+  ],
+  "output": {
+    "id": "society:assembly_core_zmod_void_pylon_beacon",
+    "count": 1
+  },
+  "duration": 80,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

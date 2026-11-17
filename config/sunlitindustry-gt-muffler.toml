@@ -1,0 +1,3 @@
+#Replace native muffler recovery streams with an ordered loop. RNG and inventory handling stay native.
+mufflerRecoveryLoop = false
+

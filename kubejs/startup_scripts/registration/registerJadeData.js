@@ -1,11 +1,11 @@
-let $BlockEntity = Java.loadClass(
-  "net.minecraft.world.level.block.entity.BlockEntity"
+let $BlockEntityJS = Java.loadClass(
+  "dev.latvian.mods.kubejs.block.entity.BlockEntityJS"
 );
 
 const registerKey = (blockEntity, tag, key) => {
   if (blockEntity.data != null) {
     if (blockEntity.data[key] != null && !Number.isNaN(blockEntity.data[key])) {
-      if (typeof blockEntity.data[key] == Number) {
+      if (typeof blockEntity.data[key] === "number") {
         tag.putInt(key, blockEntity.data[key]);
       } else {
         tag.putString(key, blockEntity.data[key]);
@@ -15,7 +15,7 @@ const registerKey = (blockEntity, tag, key) => {
 };
 JadeEvents.onCommonRegistration((e) => {
   const artisanMachineNbtKeys = ["stage", "recipe"];
-  e.blockDataProvider("society:artisan_machine_jade", $BlockEntity).setCallback(
+  e.blockDataProvider("society:artisan_machine_jade", $BlockEntityJS).setCallback(
     (tag, accessor) => {
       const { blockEntity } = accessor;
       artisanMachineNbtKeys.forEach((key) => {
@@ -25,7 +25,7 @@ JadeEvents.onCommonRegistration((e) => {
   );
 
   const plushieNbtKeys = ["type", "quality", "affection"];
-  e.blockDataProvider("society:plushie_jade", $BlockEntity).setCallback(
+  e.blockDataProvider("society:plushie_jade", $BlockEntityJS).setCallback(
     (tag, accessor) => {
       const { blockEntity } = accessor;
 
@@ -39,7 +39,7 @@ JadeEvents.onCommonRegistration((e) => {
   );
 
   const fishPondNbtKeys = ["type", "population", "max_population"];
-  e.blockDataProvider("society:fish_pond_jade", $BlockEntity).setCallback(
+  e.blockDataProvider("society:fish_pond_jade", $BlockEntityJS).setCallback(
     (tag, accessor) => {
       const { blockEntity } = accessor;
 
@@ -49,7 +49,7 @@ JadeEvents.onCommonRegistration((e) => {
     }
   );
 
-  e.blockDataProvider("kubejs:shipping_bin_jade", $BlockEntity).setCallback(
+  e.blockDataProvider("kubejs:shipping_bin_jade", $BlockEntityJS).setCallback(
     (tag, accessor) => {
       const { blockEntity } = accessor;
       if (blockEntity.data != null && blockEntity.data.customName != null) {

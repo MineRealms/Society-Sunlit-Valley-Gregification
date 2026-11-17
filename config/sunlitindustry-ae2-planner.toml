@@ -1,0 +1,8 @@
+enabled = true
+#Experimental: two-entry initialized-primary shortcut. Previously slower than native in the local probe.
+hotSimulationPrimaries = false
+#Accumulate per-pattern craft counts without allocating boxed Long values on every merge.
+primitiveCraftCounts = true
+#Reuse tree metadata between planning attempts until lazy child-pattern expansion changes the tree.
+graphMetadataCache = true
+

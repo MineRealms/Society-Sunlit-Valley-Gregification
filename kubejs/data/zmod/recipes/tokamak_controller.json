@@ -1,0 +1,81 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:TOKAMAK",
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "mekanismgenerators:fusion_reactor_controller"
+      },
+      "amount": 1
+    },
+    {
+      "ingredient": {
+        "item": "society:industrial_matrix_zpm"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:magnetic_confinement_unit"
+      },
+      "amount": 4
+    },
+    {
+      "ingredient": {
+        "item": "zmod:phase_coupler"
+      },
+      "amount": 4
+    },
+    {
+      "ingredient": {
+        "item": "zmod:tokamak_magnetic_coil"
+      },
+      "amount": 8
+    },
+    {
+      "ingredient": {
+        "item": "mekanism:ultimate_control_circuit"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:high_purity_kaydarin_crystal"
+      },
+      "amount": 8
+    },
+    {
+      "ingredient": {
+        "item": "mekanism:steel_casing"
+      },
+      "amount": 4
+    }
+  ],
+  "output": {
+    "id": "society:assembly_core_zmod_tokamak_controller",
+    "count": 1
+  },
+  "duration": 120,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanismgenerators"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

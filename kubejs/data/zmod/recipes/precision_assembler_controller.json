@@ -1,0 +1,64 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "zmod:PRECISION_ASSEMBLER",
+  "central": {
+    "item": "zmod:lattice_control_core"
+  },
+  "components": [
+    {
+      "item": "mekanism:ultimate_infusing_factory"
+    },
+    {
+      "item": "zmod:transcendence_key"
+    },
+    {
+      "item": "mekanism:robit"
+    },
+    {
+      "item": "mekanism:teleportation_core"
+    },
+    {
+      "item": "zmod:drive_unit_t2"
+    },
+    {
+      "item": "zmod:bearing_unit_t2"
+    },
+    {
+      "item": "zmod:mystic_circuit"
+    },
+    {
+      "item": "zmod:mystic_circuit"
+    }
+  ],
+  "result": {
+    "item": "society:assembly_core_zmod_precision_assembler_controller",
+    "count": 1
+  },
+  "instability": 5,
+  "aspects": {
+    "machina": 96,
+    "ordo": 64,
+    "vinculum": 48,
+    "praecantatio": 32,
+    "motus": 32,
+    "cognitio": 32
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

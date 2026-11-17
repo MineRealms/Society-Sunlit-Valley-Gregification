@@ -1,5 +1,108 @@
 {
+  "accept": {
+    "item": true,
+    "fluid": true,
+    "energy": true,
+    "essentia": true,
+    "mana": true
+  },
+  "items": {
+    "minecraft:cobblestone": 1,
+    "minecraft:deepslate": 1,
+    "minecraft:netherrack": 1,
+    "minecraft:tuff": 1,
+    "minecraft:calcite": 1,
+    "minecraft:gravel": 1,
+    "minecraft:andesite": 1,
+    "minecraft:diorite": 1,
+    "minecraft:granite": 1,
+    "minecraft:basalt": 1,
+    "minecraft:blackstone": 1,
+    "minecraft:end_stone": 1,
+    "minecraft:sand": 1,
+    "minecraft:red_sand": 1,
+    "minecraft:dirt": 1,
+    "minecraft:flint": 1
+  },
+  "fluids": {
+    "default": 1,
+    "gtceu:diesel": 8,
+    "gtceu:gasoline": 10,
+    "gtceu:oil": 6,
+    "gtceu:sulfuric_acid": 3,
+    "gtceu:creosote": 2,
+    "gtceu:heavy_fuel": 7,
+    "gtceu:light_fuel": 7,
+    "gtceu:naphtha": 6,
+    "gtceu:refinery_gas": 4
+  },
+  "energy": {
+    "fePerSpur": 50000
+  },
+  "essentia": {
+    "pointsPerSpur": 4,
+    "aspects": {
+      "aer": 4,
+      "terra": 4,
+      "ignis": 4,
+      "aqua": 4,
+      "ordo": 4,
+      "perditio": 4,
+      "herba": 4,
+      "arbor": 4,
+      "victus": 4,
+      "messis": 4,
+      "meto": 4,
+      "perfodio": 4,
+      "pannus": 4,
+      "instrumentum": 4,
+      "telum": 4,
+      "fames": 4,
+      "limus": 4,
+      "metallum": 4,
+      "lucrum": 4,
+      "corpus": 4,
+      "gelum": 2,
+      "lux": 2,
+      "motus": 2,
+      "permutatio": 2,
+      "potentia": 2,
+      "praecantatio": 2,
+      "vitreus": 2,
+      "sano": 2,
+      "sensus": 2,
+      "bestia": 2,
+      "humanus": 2,
+      "exanimis": 2,
+      "mortuus": 2,
+      "spiritus": 2,
+      "machina": 2,
+      "iter": 2,
+      "volatus": 2,
+      "tutamen": 2,
+      "vinculum": 2,
+      "fabrico": 2,
+      "venenum": 2,
+      "auram": 1,
+      "alienis": 1,
+      "cognitio": 1,
+      "vitium": 1,
+      "tempestas": 1,
+      "vacuos": 1,
+      "tenebrae": 1
+    }
+  },
+  "mana": {
+    "manaPerSpur": 2000
+  },
   "wallet": {
-    "enabled": false
+    "enabled": false,
+    "exchangeFeePercent": 5,
+    "minWithdraw": 10
+  },
+  "buyback": {
+    "enabled": true,
+    "dailyCap": 100000,
+    "playerCap": 20000
   }
 }

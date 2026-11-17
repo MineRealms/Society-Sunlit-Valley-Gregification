@@ -1,0 +1,7 @@
+#Enable /sunlitindustry dump oregen
+oreGenDump = true
+#Also dump forge:ores / raw_materials tag members (can be large).
+includeTags = true
+#Also dump per-biome feature lists (can be very large).
+includeBiomeFeatures = false
+

@@ -491,13 +491,11 @@
 			id: "074AFA65F6E84F82"
 			size: 1.25d
 			subtitle: "机器自己去挖"
-			tasks: [
-				{
-					id: "B0F154F5D32FE44B"
-					item: "pollution:mineral_extractor"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2140BE23C75961A8"
+				item: "pollution:mineral_extractor"
+				type: "item"
+			}]
 			title: "矿物提取器"
 			x: 0.0d
 			y: -4.0d
@@ -519,13 +517,11 @@
 			id: "4C0D3BC69798787C"
 			size: 1.0d
 			subtitle: "实体采矿 / 草 / 石头"
-			tasks: [
-				{
-					id: "E83E0F670C77671C"
-					title: "三种模式各试一次"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "65C7E3BA4B613865"
+				title: "三种模式各试一次"
+				type: "checkmark"
+			}]
 			title: "三种模式"
 			x: 0.0d
 			y: -6.0d
@@ -543,19 +539,20 @@
 			id: "1922016EAC9F3265"
 			size: 1.0d
 			subtitle: "混沌与魔法"
-			tasks: [
-				{
-					id: "907B73E7C2428562"
-					item: "pollution:lv_aspect_tank"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2E47F32F2CA910A7"
+				item: "pollution:lv_aspect_tank"
+				type: "item"
+			}]
 			title: "源质供给"
 			x: 2.0d
 			y: -6.0d
 		}
 		{
-			dependencies: ["4C0D3BC69798787C", "1922016EAC9F3265"]
+			dependencies: [
+				"4C0D3BC69798787C"
+				"1922016EAC9F3265"
+			]
 			description: [
 				"提取器吐出来的是&e普通矿产物&r,和挖出来的原矿没有区别:直接并进&a破碎 → 洗矿 → 离心&r主线,该磨就磨,该洗就洗."
 				""
@@ -567,13 +564,11 @@
 			id: "47166998D80257BC"
 			size: 1.0d
 			subtitle: "小批量怎么接主线"
-			tasks: [
-				{
-					id: "85CECD26B66ECE84"
-					title: "让提取器的产物进主线"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "14C3F3068C412ED6"
+				title: "让提取器的产物进主线"
+				type: "checkmark"
+			}]
 			title: "产物并线"
 			x: 0.0d
 			y: -8.0d
@@ -588,16 +583,14 @@
 				"一句话:&e挖出来的追产量,种出来的追品质&r.两条线的产物长得像,处理方式完全相反."
 			]
 			icon: "pollution:cultivated_crystal"
-			id: "A85C7BFFB21449EA"
+			id: "19E83588B3B6BB39"
 			size: 1.0d
 			subtitle: "两条线分流"
-			tasks: [
-				{
-					id: "79F24A3A45425543"
-					title: "定下两条线的分流规则"
-					type: "checkmark"
-				}
-			]
+			tasks: [{
+				id: "79F24A3A45425543"
+				title: "定下两条线的分流规则"
+				type: "checkmark"
+			}]
 			title: "别把数据磨成粉"
 			x: 2.0d
 			y: -8.0d

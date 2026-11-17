@@ -1,0 +1,51 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:SAINTLY_ASCENSION",
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "mekanism:chemical_infuser"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "society:industrial_matrix_zpm"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:field_generator_t2"
+      },
+      "amount": 4
+    },
+    {
+      "ingredient": {
+        "item": "zmod:energy_coupler_t2"
+      },
+      "amount": 4
+    },
+    {
+      "ingredient": {
+        "item": "zmod:high_purity_kaydarin_crystal"
+      },
+      "amount": 8
+    }
+  ],
+  "output": {
+    "id": "society:assembly_core_zmod_warped_polymerizer_controller",
+    "count": 1
+  },
+  "duration": 100,
+  "conditions": [
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

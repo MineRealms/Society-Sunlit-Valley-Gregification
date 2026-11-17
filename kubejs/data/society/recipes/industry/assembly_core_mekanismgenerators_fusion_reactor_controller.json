@@ -1,0 +1,53 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:SAINTLY_ASCENSION",
+  "item_inputs": [
+    {
+      "ingredient": {
+        "tag": "gtceu:circuits/luv"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "tag": "forge:glass_panes"
+      },
+      "amount": 1
+    },
+    {
+      "ingredient": {
+        "item": "mekanismgenerators:fusion_reactor_frame"
+      },
+      "amount": 5
+    },
+    {
+      "ingredient": {
+        "item": "mekanism:basic_chemical_tank"
+      },
+      "amount": 1
+    }
+  ],
+  "output": {
+    "id": "society:assembly_core_mekanismgenerators_fusion_reactor_controller",
+    "count": 1
+  },
+  "duration": 80,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "zmod"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "gtceu"
+    }
+  ]
+}

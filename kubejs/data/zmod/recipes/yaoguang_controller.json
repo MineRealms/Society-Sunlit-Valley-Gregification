@@ -1,0 +1,64 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "zmod:YAOGUANG",
+  "central": {
+    "item": "mekanism:ultimate_energy_cube"
+  },
+  "components": [
+    {
+      "item": "zmod:transcendence_key"
+    },
+    {
+      "item": "mekanism:ultimate_induction_cell"
+    },
+    {
+      "item": "thaumcraft:void_jar"
+    },
+    {
+      "item": "zmod:mystic_circuit"
+    },
+    {
+      "item": "zmod:energy_coupler_t2"
+    },
+    {
+      "item": "mekanism:ultimate_induction_provider"
+    },
+    {
+      "item": "zmod:field_generator_t2"
+    },
+    {
+      "item": "zmod:mystic_circuit"
+    }
+  ],
+  "result": {
+    "item": "society:assembly_core_zmod_yaoguang_controller",
+    "count": 1
+  },
+  "instability": 5,
+  "aspects": {
+    "potentia": 64,
+    "ordo": 48,
+    "vinculum": 32,
+    "machina": 32,
+    "praecantatio": 32,
+    "zmod:yaoguang": 8
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

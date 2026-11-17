@@ -1,0 +1,45 @@
+{
+  "type": "thaumcraft:arcane_shaped",
+  "pattern": [
+    "ICI",
+    "WAW",
+    "ICI"
+  ],
+  "key": {
+    "I": {
+      "item": "thaumcraft:thaumium_ingot"
+    },
+    "C": {
+      "item": "ae2:engineering_processor"
+    },
+    "W": {
+      "item": "ae2:wireless_receiver"
+    },
+    "A": {
+      "item": "ae2:interface"
+    }
+  },
+  "result": {
+    "item": "society:assembly_core_zmod_tongxuan_wireless_connector"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ae2"
+    }
+  ],
+  "research": "zmod:TONGXUAN",
+  "vis": {
+    "aer": 20,
+    "ordo": 20,
+    "perditio": 10
+  }
+}

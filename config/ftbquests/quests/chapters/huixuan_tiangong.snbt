@@ -1,0 +1,2027 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "huixuan_tiangong"
+	group: "14AB86BD08B253EC"
+	icon: "zmod:precision_assembler_controller"
+	id: "032B544623386CA1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"本章按 IV、LuV、ZPM、UV 至 UHV 展开。原生 TC4R 研究与魔法材料负责装配原核，GT 扫描仪/研究站与装配线负责最终制造；完成任务不会授予任何配方研究。"
+				"IV/LuV 使用扫描仪与数据棒；ZPM 使用研究站、16 CWU/t 与数据球；UV 工业设施使用 64 CWU/t、数据模块和数据银行光学传输。UHV 虚空 MekaSuit 使用独立的觉醒灵宝样品与 32 CWU/t 数据球路线。每台机器或护甲都有独立研究数据。"
+				"阶段不是只看电路：仍需虚空金属、原始珍珠衍生物、钋与原生研究。基础 T1 机器保持原路线；超越之钥的实际制造现已进入 IV 装配线。"
+				"核燃料、点火与净发电验收见《GT 核工业》。本章所有物品目标均不扣物品；手动勾选仅记录调试结果。"
+			]
+			icon: "zmod:configurator_focus"
+			id: "7BD444BDE6668201"
+			tasks: [
+				{
+					consume_items: false
+					id: "36CD5AEDCD86EC05"
+					item: "zmod:configurator_focus"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "6F9FE466B5FF82B1"
+					title: "已在研究书核对天工的制造与工业研究位置"
+					type: "checkmark"
+				}
+			]
+			title: "总图 | 神秘研究 × 格雷工业"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BD444BDE6668201"]
+			description: [
+				"凯达林晶体在 MEK 富集仓中成为高纯凯达林晶体；原子合金与对应凯达林灌注资源制造晶体导电合金。分别看 JEI 中的物品输入和灌注资源。"
+				"平衡、扭曲、末影、下界结晶体是不同材料，后续分别用于能量、场、驱动、轴承组件。不要把名字相似的结晶体统一丢进同一条无过滤管道。"
+				"先制作样品确认物品 ID/资源类别，再备批量库存。灌注材料与流体、气体、源质并不是可互换的四个名字。"
+			]
+			icon: "zmod:high_purity_kaydarin_crystal"
+			id: "70B0E58202BA6A2F"
+			tasks: [
+				{
+					consume_items: false
+					id: "0567324E7700078D"
+					item: "zmod:high_purity_kaydarin_crystal"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5E1A34E6A577524E"
+					item: "zmod:crystal_conductive_alloy"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "晶体材料：先建立分流库存"
+			x: 1.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70B0E58202BA6A2F"]
+			description: [
+				"按 JEI/研究书准备 T1 驱动单元、轴承单元、能量耦合器和场发生器。先手工完成基础链，给 T2 升级保留对应 T1 原件。"
+				"不同组件承担不同用途：机械件进入伺服与耐磨衬里，能量/场组件进入磁约束和相位耦合。不要只囤电路而忽视结构部件。"
+				"一开始不必追求并行；用一套完整物料链做出首台精密组装机，后面再迁移自动化配方。"
+			]
+			icon: "zmod:drive_unit_t1"
+			id: "3FFEC51E4678BB7A"
+			tasks: [
+				{
+					consume_items: false
+					id: "7E1E6F83CC1C7D07"
+					item: "zmod:drive_unit_t1"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3537AA8BFBCD5C4F"
+					item: "zmod:bearing_unit_t1"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3630F1B53882ACB8"
+					item: "zmod:energy_coupler_t1"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "45AEBF4F6791AFCE"
+					item: "zmod:field_generator_t1"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "基础组件：驱动、轴承与能量"
+			x: 3.6d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FFEC51E4678BB7A"]
+			description: [
+				"完成原生 TRANSCENDENCE_KEY 研究后，T2 驱动/轴承/能量/场组件可走奥术工作台路线；这一步要求研究，不要求先制造完成超越之钥。"
+				"保留 T1 原件与对应末影、下界、平衡、扭曲结晶体。首台精密组装机前，使用原生奥术配方和注魔配方启动，不必依赖尚未建成的精密机器。"
+				"机器建成后可改用带源质的自动化路线。原生源质、vis 与研究条件仍全部有效。"
+			]
+			icon: "zmod:drive_unit_t2"
+			id: "6896D21AE145519E"
+			tasks: [
+				{
+					consume_items: false
+					id: "427676611C5BEB57"
+					item: "zmod:drive_unit_t2"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2BB5AC05C802B6B3"
+					item: "zmod:bearing_unit_t2"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "56D422E4A689F4B9"
+					item: "zmod:energy_coupler_t2"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "64E53544B2927D6B"
+					item: "zmod:field_generator_t2"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "T2 升级：保留四种结晶体分工"
+			x: 5.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["70B0E58202BA6A2F"]
+			description: [
+				"完成 TRANSCENDENCE_KEY 研究，以晶体控制电路和平衡/扭曲/末影/下界结晶体进行注魔，制得神秘电路。"
+				"这条原生注魔路线可用于启动首台精密组装机；不会要求先有工业矩阵或反物质。神秘电路、分阶段工业矩阵、玄相电路是不同物品。"
+			]
+			icon: "zmod:mystic_circuit"
+			id: "357D98AE103FE444"
+			tasks: [{
+				consume_items: false
+				id: "702693B623DC268F"
+				item: "zmod:mystic_circuit"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "神秘电路：首台机器前的注魔"
+			x: 3.6d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7B4B138101ADEAB6"
+				"357D98AE103FE444"
+				"6896D21AE145519E"
+			]
+			description: [
+				"先在 TC4R 注魔祭坛制造精密组装机装配原核，再进行 GT IV 装配。原核保留超越之钥、终极灌注工厂、晶格控制核心、机器人、传送核心、T2 组件、神秘电路与原生源质。"
+				"首台原核不在精密组装机内制作，也不需要尚未出现的工业矩阵；按注魔配方启动即可。最终控制器需要本机独立的扫描数据。"
+				"zmod:precision_assembler_controller：IV 装配线，7,680 EU/t，1200 ticks；研究方式：扫描仪数据棒，消耗样品 zmod:lattice_control_core。电路接受 #gtceu:circuits/iv 同档标签。"
+			]
+			icon: "zmod:precision_assembler_controller"
+			id: "5F9020878DECE44F"
+			tasks: [
+				{
+					consume_items: false
+					id: "542FE2CB73E09739"
+					item: "zmod:lattice_control_core"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "01610D51F6376F33"
+					item: "zmod:precision_assembler_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0F778E0EDCBA77F3"
+					item: "society:assembly_core_zmod_precision_assembler_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&bIV | 首台精密组装机&r"
+			x: 7.2d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5F9020878DECE44F"]
+			description: [
+				"按 5×4×5 外框建立：基础方案含 75 个框架位置、6 个观察窗、1 个控制器和 18 个内部空气格。框架使用高级机器框架，观察窗不能用普通玻璃代替。"
+				"两侧共 8 个指定框架位置可放通玄/样板/并行接口；其余框架、前方观察窗和内部空气不能随意改。端口替换会减少所需框架数量。"
+				"按研究书或机器预览核对朝向和缺失位置，先形成空结构，再接物流。结构跨未加载区块会显示未就绪，不应靠自动强加载掩盖布置错误。"
+			]
+			icon: "zmod:precision_assembler_window"
+			id: "5F3044CD7D98AE42"
+			tasks: [
+				{
+					consume_items: false
+					id: "58FC2BF86DBB6433"
+					item: "zmod:advanced_machine_frame"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "118C70A84F79BA8C"
+					item: "zmod:precision_assembler_window"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "3A39CDC81E9242D2"
+					title: "结构形成、朝向和内部空气已核对"
+					type: "checkmark"
+				}
+			]
+			title: "&bIV | 精密组装结构与投运&r"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F3044CD7D98AE42"]
+			description: [
+				"在允许的结构口位置放通玄输入口与输出口。输入口接收原料/能量，输出口供外部提取产物；输出口拒绝外部插入是正常设计。"
+				"先测试投入少量同种物品，再尝试 17 个或一组，并从输出提取；同物品不同数量应能合并，NBT 不同的物品不能随意视为同一种。"
+				"端口必须绑定已形成的结构，不能由两个控制器共享。插上管道而控制器没有识别该位置时，不会凭空获得资源访问。"
+			]
+			icon: "zmod:tongxuan_input_port"
+			id: "7EB3CA480BD659E2"
+			tasks: [
+				{
+					consume_items: false
+					id: "3431876488AAE488"
+					item: "zmod:tongxuan_input_port"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "046B138B6C86858D"
+					item: "zmod:tongxuan_output_port"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "通玄基本口：输入与输出是两种方向"
+			x: 10.8d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7EB3CA480BD659E2"]
+			description: [
+				"精密组装配方支持最多 16 种物品输入、4 种 MEK 化学品输入和 32 种源质输入。各类上限分别计算，不是把源质和流体也挤进四种通用资源里。"
+				"逐条分清 JEI 的 ingredient、chemical_inputs 与 essentia_inputs：MEK 气体/灌注资源走对应能力，TC 源质走源质接口，普通流体不能直接冒充源质。"
+				"先用最简单的一条配方确认物品、资源、研究权限和 FE 供电全部满足；一次塞满许多无关材料会让缺项更难定位。"
+			]
+			icon: "zmod:precision_assembler_controller"
+			id: "7FACA41B0AA7C500"
+			tasks: [{
+				id: "0D7B62328AA571AF"
+				title: "已逐项核对一条配方的物品与资源类别"
+				type: "checkmark"
+			}]
+			title: "四类输入：物品、化学品、流体、源质"
+			x: 12.6d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7FACA41B0AA7C500"]
+			description: [
+				"例如 T2 轴承的精密组装路线：T1 轴承 1、下界结晶体 4、下界合金锭 4，外加 ordo 16、terra 16、aer 8 源质，得到 1 个 T2 轴承。"
+				"精密组装还承接可用的 MEK 灌注与 TC 注魔配方；不同配方类型的资源、研究与处理规则不同，应在 JEI/机器当前批次中确认所选配方。"
+				"首批验证正常后再迁移自动化。取消批次只退还仍预留的材料，已经消耗的能量/逐 tick 化学品不是免费返还。"
+			]
+			icon: "zmod:bearing_unit_t2"
+			id: "33DE427A4DA3CE07"
+			tasks: [{
+				id: "622D3B5CD1294C73"
+				title: "已验证一种带源质的组件自动化配方"
+				type: "checkmark"
+			}]
+			title: "精密制造：源质路线与注魔路线"
+			x: 14.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33DE427A4DA3CE07"]
+			description: [
+				"精密组装机最多允许一个并行接口；多个并行接口会使结构无效。模块是整机批量能力，不是把两个 2× 叠成 4×。"
+				"提高倍率会放大单批原料、资源预留与用电。先在无模块下验证配方，再装 2× 或 4×，同时核查输入、输出和供电。"
+				"工业粉碎最多 4×，天选最多 2×，综合矿处理厂不接受并行模块；这些是不同机器的规则，不能把精密组装机可用模块照搬到所有外壳。"
+			]
+			icon: "zmod:precision_assembler_parallel_2x"
+			id: "12A86055BFFEE927"
+			tasks: [{
+				consume_items: false
+				id: "6E1BC9C113B46BE1"
+				item: "zmod:precision_assembler_parallel_2x"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "可选 | 基础 2× 并行"
+			x: 16.2d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"431514B6912520EA"
+				"7EB3CA480BD659E2"
+			]
+			description: [
+				"ME 通玄输入与输出分别制造装配原核，再分别扫描和装配。两个方向可以互转，但普通通玄口不能直接升级成 ME 口以绕过制造。"
+				"安装 tc_energy 与未安装时保留互斥的原核配方变体；物品 ID 相同。源质输入与 ME 物品物流仍需分别安排。"
+				"先设过滤和库存阈值，再测试一份样板、一批输入和产物回网。ME 网络不会授予 TC4R 研究权限。"
+				"zmod:tongxuan_me_input_port：IV 装配线，7,680 EU/t，1200 ticks；研究方式：扫描仪数据棒，消耗样品 ae2:interface。电路接受 #gtceu:circuits/iv 同档标签。"
+				"zmod:tongxuan_me_output_port：IV 装配线，7,680 EU/t，1200 ticks；研究方式：扫描仪数据棒，消耗样品 ae2:interface。电路接受 #gtceu:circuits/iv 同档标签。"
+			]
+			icon: "zmod:tongxuan_me_input_port"
+			id: "368F4FECC0B64DF7"
+			tasks: [
+				{
+					consume_items: false
+					id: "257ACCA9EDDDF7DF"
+					item: "zmod:tongxuan_me_input_port"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "240D50CE12E1BCE8"
+					item: "zmod:tongxuan_me_output_port"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "127F9587B8F88D19"
+					item: "society:assembly_core_zmod_tongxuan_me_input_port"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3F9C7F075530C66B"
+					item: "society:assembly_core_zmod_tongxuan_me_output_port"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&bIV | ME 通玄输入与输出&r"
+			x: 18.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"368F4FECC0B64DF7"
+				"7033A24F37F9B9B9"
+			]
+			description: [
+				"无线连接器用于已有通玄网络的连接配置，不是把未形成结构变成可用机器。先验证近距离有线端口，再按连接器说明绑定目标。"
+				"网络所有者与配置权限需一致；不属于自己的网络或接口不能仅靠放一个连接器取得管理权。"
+				"控制器、端口或目标区块未加载时，先查区块状态与绑定；不要用无线连接来推断远端机器正在 tick。"
+				"zmod:tongxuan_wireless_connector：LuV 装配线，30,720 EU/t，1600 ticks；研究方式：扫描仪数据棒，消耗样品 ae2:wireless_receiver。电路接受 #gtceu:circuits/luv 同档标签。"
+			]
+			icon: "zmod:tongxuan_wireless_connector"
+			id: "4B7853A84D1B75E2"
+			tasks: [
+				{
+					consume_items: false
+					id: "69F6008742671FD5"
+					item: "zmod:tongxuan_wireless_connector"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3B6693652B572034"
+					item: "society:assembly_core_zmod_tongxuan_wireless_connector"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&dLuV | 通玄无线连接&r"
+			x: 19.8d
+			y: -8.0d
+		}
+		{
+			dependencies: ["33DE427A4DA3CE07"]
+			description: [
+				"SAINTLY_ASCENSION 下的精密组装：T2 驱动 1 + T2 轴承 1 + 晶体导电合金 2 + 锇锭 2 → 精密伺服组件 2，基础配方 duration=20。"
+				"供料之前先确认研究已经被机器识别；原料齐全但缺研究时，它不会变成普通无条件机械合成。"
+				"按控制器用量准备伺服，同时保留 T2 驱动与轴承给其它结构件，避免单个自动合成订单吃空全线启动库存。"
+			]
+			icon: "zmod:precision_servo_component"
+			id: "7657E2898B66E619"
+			tasks: [{
+				consume_items: false
+				id: "0D5C30D036E8D491"
+				item: "zmod:precision_servo_component"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "精密伺服：两种机械件合一"
+			x: 16.2d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33DE427A4DA3CE07"]
+			description: [
+				"T2 场发生器 1 + T2 能量耦合器 1 + 原子合金 2 + 扭曲结晶体 2 → 磁约束单元 2；需要 SAINTLY_ASCENSION。"
+				"磁约束进入炼油厂、天选及托卡马克相关制造链。预留足够的 T2 场/能量组件，不要把整批全部组装成单一成品。"
+				"duration 是配方基准，不是保证机器在缺电、缺料或输出堵塞时也按那个 tick 数完成。观察真实批次状态再估算吞吐。"
+			]
+			icon: "zmod:magnetic_confinement_unit"
+			id: "45B95F17D94E7EE3"
+			tasks: [{
+				consume_items: false
+				id: "5E90CDB4B63EE80E"
+				item: "zmod:magnetic_confinement_unit"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "磁约束：能量与场组件的汇合"
+			x: 16.2d
+			y: 2.0d
+		}
+		{
+			dependencies: ["33DE427A4DA3CE07"]
+			description: [
+				"T2 能量耦合器 1 + MEK 传送核心 1 + 末影结晶体 2 + 晶体导电合金 2 → 相位耦合器 2；需要 SAINTLY_ASCENSION。"
+				"相位耦合器用于天选腔体与综合矿处理腔体。组件虽能批量制造，但其中的 MEK 原件与魔法材料仍应纳入成本。"
+				"先按一批材料运行，确认产物回到正确输出仓，再挂大订单。回收/返还区有材料时先核查，不要误当作复制品或普通产物。"
+			]
+			icon: "zmod:phase_coupler"
+			id: "19279EEF28126550"
+			tasks: [{
+				consume_items: false
+				id: "328A1BFE888C6CAA"
+				item: "zmod:phase_coupler"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "相位耦合：传送核心也要生产"
+			x: 16.2d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2D80AEA356964D9D"]
+			description: [
+				"玄相电路原配方保持不变：神秘电路、高纯凯达林晶体、辐照晶体核心、虚空介电板各 1，加 100 单位 MEK 反物质，产出 1。"
+				"它属于 UV 之后的终局材料；IV/LuV/ZPM 工业配方改用各自阶段的奥术工业矩阵，因此不会要求先用 SPS 反物质制造 SPS 的上游机器。"
+				"矩阵只在指定原核配方中替代玄相电路，不会成为全局通用替代品。反物质装备与终局超越核心仍需原版玄相链。"
+			]
+			icon: "zmod:xuanxiang_circuit"
+			id: "22BFCC4890D6C419"
+			tasks: [{
+				consume_items: false
+				id: "085D2D3083A78933"
+				item: "zmod:xuanxiang_circuit"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&cUV | 真正的玄相电路&r"
+			x: 25.2d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"515385814B9A2F6F"
+				"7657E2898B66E619"
+			]
+			description: [
+				"完成 INDUSTRIAL_PUMP 研究，精密组装原核后进行 LuV 扫描与装配。原核使用 LuV 工业矩阵，并保留电动泵、T2 组件、精密伺服、泵压腔与钢外壳。"
+				"无过滤升级时使用水→盐水、盐水→锂路线；这是一台消耗资源和电力的流体加工设施，不是虚空免费水源。按机器预览布置泵压腔、观察窗和通玄口。"
+				"先用普通口验证一批，分别观察水、盐水、锂和 FE 变化，再接入连续生产。"
+				"zmod:industrial_pump_controller：LuV 装配线，30,720 EU/t，1600 ticks；研究方式：扫描仪数据棒，消耗样品 zmod:pump_pressure_chamber。电路接受 #gtceu:circuits/luv 同档标签。"
+			]
+			icon: "zmod:industrial_pump_controller"
+			id: "6B53FA34103AA47E"
+			tasks: [
+				{
+					consume_items: false
+					id: "1E8B742B0489591E"
+					item: "zmod:industrial_pump_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "081F43F44346609E"
+					item: "zmod:pump_pressure_chamber"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "07003153714285BA"
+					item: "society:assembly_core_zmod_industrial_pump_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&dLuV | 工业泵与流体分流&r"
+			x: 21.6d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6B53FA34103AA47E"]
+			description: [
+				"工业泵的原生过滤升级槽只接受 MEK 过滤升级。装上后，水的加工路线切为重水，不会同时运行原来的水→盐水路线；盐水→锂路线仍保留。"
+				"当前默认一操作 800 mB 水 → 8 mB 重水，能耗随服务器 FluidWorks 配置。调整过滤模式前先看输出和缓冲，避免误以为盐水凭空停产是机器故障。"
+				"这是泵的物料转换模式，不是并行模块。该数值属于流体工业配置，不由四类工业机的能耗倍率统一控制。"
+			]
+			icon: "mekanism:upgrade_filter"
+			id: "587A4A88C489CD2A"
+			tasks: [
+				{
+					consume_items: false
+					id: "3DF44A188EA6D129"
+					item: "mekanism:upgrade_filter"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "1A2EE85ED1507492"
+					title: "已分别确认无过滤与有过滤的水处理产物"
+					type: "checkmark"
+				}
+			]
+			title: "过滤模式：重水替代盐水水线"
+			x: 23.4d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"515385814B9A2F6F"
+				"45B95F17D94E7EE3"
+			]
+			description: [
+				"完成 FLUID_PROCESSING_PLANT 研究，精密组装原核后进行 LuV 扫描与装配。它与工业泵是可并行建设的设施，不要求先安装泵的过滤升级。"
+				"重水→氘/氧气、液态锂→氚，运行时读取当前 MEK 对应配方。输入液体和输出 MEK 气体必须用对应接口，氧气也需出口。"
+				"该厂不会自动制造预混 D-T；持续 D-T 混合仍需 ZPM GT 化反。TOKAMAK 的原生研究同时要求泵与流体厂研究。"
+				"zmod:fluid_processing_plant_controller：LuV 装配线，30,720 EU/t，1600 ticks；研究方式：扫描仪数据棒，消耗样品 zmod:plant_reaction_chamber。电路接受 #gtceu:circuits/luv 同档标签。"
+			]
+			icon: "zmod:fluid_processing_plant_controller"
+			id: "3D91BC5EFC5198C3"
+			tasks: [
+				{
+					consume_items: false
+					id: "30721176DD7E1E82"
+					item: "zmod:fluid_processing_plant_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7D5022A13FA2AE89"
+					item: "zmod:plant_reaction_chamber"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6C546B9737517207"
+					item: "society:assembly_core_zmod_fluid_processing_plant_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&dLuV | 流体厂与氘氚&r"
+			x: 21.6d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7B7D3A6A49995CA3"
+				"24366846FDA52CE3"
+				"370FC1CDF5F9A9CC"
+			]
+			description: [
+				"完成 TOKAMAK 研究；它的原生父研究是 INDUSTRIAL_PUMP 与 FLUID_PROCESSING_PLANT。先制造磁线圈，再以 8 个成品磁线圈、LuV MEK 聚变控制器和原生组件精密组装控制器原核。"
+				"最终 ZPM 装配线额外消耗恰好 1 台 GT MK II：gtceu:zpm_fusion_reactor。GT 原生 MK II 的更高阶电路与材料要求继续存在，不能只看本条配方的 ZPM 电压。"
+				"控制器研究样品是磁约束单元，不额外吃第二台 MK II。磁线圈和控制器各有独立研究数据；环形结构、预热、D-T 供给和产物空间分别验收。"
+				"zmod:tokamak_controller：ZPM 装配线，122,880 EU/t，2000 ticks；研究方式：研究站数据球（16 CWU/t），消耗样品 zmod:magnetic_confinement_unit。电路接受 #gtceu:circuits/zpm 同档标签。"
+				"zmod:tokamak_magnetic_coil：ZPM 装配线，122,880 EU/t，2000 ticks；研究方式：研究站数据球（16 CWU/t），消耗样品 zmod:field_generator_t2。电路接受 #gtceu:circuits/zpm 同档标签。"
+			]
+			icon: "zmod:tokamak_controller"
+			id: "68CF44C1AA2A0DC1"
+			tasks: [
+				{
+					consume_items: false
+					id: "2DFBC00DB59D1730"
+					item: "zmod:tokamak_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3FBA0DBC4EE5C29F"
+					item: "zmod:tokamak_magnetic_coil"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6AA848C5838BA2F8"
+					item: "society:assembly_core_zmod_tokamak_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "55594379C9C81975"
+					item: "society:assembly_core_zmod_tokamak_magnetic_coil"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0EFB8481B319DE55"
+					item: "gtceu:zpm_fusion_reactor"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0A1745F1A6846F7C"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&6ZPM | 托卡马克 × GT MK II&r"
+			x: 25.2d
+			y: 2.0d
+		}
+		{
+			dependencies: ["68CF44C1AA2A0DC1"]
+			description: [
+				"托卡马克要先形成结构、输入 D-T、提供 FE 预热并启用反应；温度达到点火阈值后才会燃烧。启用开关关闭会停止整个反应，不只是关闭加热器。"
+				"产物空间会限制实际燃烧。等离子输出满、燃料不足或温度未达阈值时，不能靠加大上游管道就保证启动。"
+				"天工托卡马克使用独立配置；MEK 原生聚变的 2 mB/t 限流不能直接当作它的燃烧上限。应独立计量燃料、输出和净能耗，再设置供料与产物缓冲。"
+			]
+			icon: "zmod:tokamak_controller"
+			id: "5B110233690B6690"
+			tasks: [{
+				id: "54B37746BB038D46"
+				title: "已核对托卡马克预热、开关、D-T 和产物空间"
+				type: "checkmark"
+			}]
+			title: "托卡马克投运：预热、燃料、产物空间"
+			x: 27.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B110233690B6690"]
+			description: [
+				"当前天工托卡马克的新等离子产物走真实流体输出；旧 zmod:plasma 气体只保留用于旧资源回收兼容。不要照旧教程把新产物按 MEK 气体接线。"
+				"用匹配的流体管/接口把等离子送到炼油厂。先运行少量燃料，确认一端减少、另一端增加，再启用大批量熔炼。"
+				"等离子消耗与 D-T 混合、预热和输电全部属于炼油成本。托卡马克有能量输出不等于整条等离子链净赚电。"
+			]
+			icon: "zmod:refinery_heat_lining"
+			id: "6B7C328170ABC554"
+			tasks: [{
+				id: "342EEF789DC60C04"
+				title: "已确认实际等离子资源类型、流向和缓冲"
+				type: "checkmark"
+			}]
+			title: "等离子物流：新产物走流体输出"
+			x: 28.8d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"431514B6912520EA"
+				"7657E2898B66E619"
+			]
+			description: [
+				"工业粉碎机原核改用 IV 工业矩阵，保留终极粉碎工厂、耐磨衬里、精密伺服、T2 轴承与原生研究/源质。它已从电路门槛改为实际 IV 制造。"
+				"先备齐原核和专用耐磨衬里，再用扫描数据和 IV GT 部件完成装配。不可用旧的直接控制器配方跳过装配线。"
+			]
+			icon: "zmod:crusher_wear_lining"
+			id: "4470AF8DF7811295"
+			tasks: [{
+				id: "05765E89189CC2DC"
+				title: "已按当前配方核对粉碎控制器和衬里物料"
+				type: "checkmark"
+			}]
+			title: "&bIV | 粉碎原核与衬里&r"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4470AF8DF7811295"]
+			description: [
+				"本机采用 7×4×5 结构：超越机器框架、超越观察窗、控制器与四个指定底部位置的耐磨衬里；精确摆法用机器预览核对，内部空气要保留。"
+				"四个前侧指定框架位置可作为接口，最多一处并行模块。不要把衬里、观察窗或其它普通框架格随意换为通玄口。"
+				"现行基础并行 8，模块上限 4×；能耗倍率 4、额外耗时倍率 2。EV 是最低电路档位，玄相电路/反物质与研究条件仍保留。"
+				"zmod:industrial_crusher_controller：IV 装配线，7,680 EU/t，1200 ticks；研究方式：扫描仪数据棒，消耗样品 zmod:crusher_wear_lining。电路接受 #gtceu:circuits/iv 同档标签。"
+			]
+			icon: "zmod:industrial_crusher_controller"
+			id: "1B5DF2BB27287255"
+			tasks: [
+				{
+					consume_items: false
+					id: "5DA756559C3DC19B"
+					item: "zmod:industrial_crusher_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0441AF7B50830FD6"
+					item: "zmod:crusher_wear_lining"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "00C00339D87DACA7"
+					item: "society:assembly_core_zmod_industrial_crusher_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&bIV | 工业粉碎机&r"
+			x: 19.8d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1B5DF2BB27287255"]
+			description: [
+				"先投入 64 个确定有粉碎配方的原料，观察输入下降、实际批次、FE 库存与输出数量；不要默认每条粉碎路线都能增殖矿物。"
+				"无模块跑通后再上 2×/4×。模块扩大批次需求，供电不足时大并行可能停在等待态；先查实际能量流入，再怀疑配方没注册。"
+				"圆石/碎石等简单路线适合先排查物流；它们的产量不能代表矿物增殖收益。生产线应按目标配方重新验收。"
+			]
+			icon: "zmod:precision_assembler_parallel_4x"
+			id: "01F9B8D579C545CA"
+			tasks: [{
+				id: "373DBD273D88072B"
+				title: "已完成一批粉碎并记录投入、产出与能耗"
+				type: "checkmark"
+			}]
+			title: "粉碎验收：先单路线，再装模块"
+			x: 21.6d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"16C6F1EFE6E6A838"
+				"6B7C328170ABC554"
+			]
+			description: [
+				"等离子炼油原核使用 ZPM 工业矩阵，并保留原先 MEK 冶炼/灌注设施、耐热衬里与磁约束组件。PLASMA_REFINERY 仍以 TOKAMAK 为父研究。"
+				"原核、研究站成果、ZPM 装配部件、等离子流体是不同准备项。控制器造出不等于上游已持续供料。"
+			]
+			icon: "zmod:refinery_heat_lining"
+			id: "7544FBD2308F9B42"
+			tasks: [{
+				id: "354039D1A5D90FF6"
+				title: "已核对炼油材料、研究与等离子来源"
+				type: "checkmark"
+			}]
+			title: "&6ZPM | 炼油原核与热衬&r"
+			x: 30.6d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7544FBD2308F9B42"]
+			description: [
+				"采用 5×5×5 结构，超越框架/观察窗、控制器与四块指定底部热衬里。精确端口位置和空气格以预览为准。"
+				"本机扩展常规熔炼路线，并额外消耗等离子；当前普通物品每件 1 mB。基础并行 8，能耗倍率 6、额外耗时倍率 2。"
+				"机器支持单个最高 256× 并行模块，不能把基础并行 8 理解为最终上限；实际批次还受材料、等离子、能量和容量限制。扩大模块前先核算全线供给。"
+				"zmod:plasma_refinery_controller：ZPM 装配线，122,880 EU/t，2000 ticks；研究方式：研究站数据球（16 CWU/t），消耗样品 zmod:refinery_heat_lining。电路接受 #gtceu:circuits/zpm 同档标签。"
+			]
+			icon: "zmod:plasma_refinery_controller"
+			id: "23654BEC29AA7E78"
+			tasks: [
+				{
+					consume_items: false
+					id: "3BC52810EC437AA1"
+					item: "zmod:plasma_refinery_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3F7234B83039CA26"
+					item: "zmod:refinery_heat_lining"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "406D971D1F4496B6"
+					item: "society:assembly_core_zmod_plasma_refinery_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&6ZPM | 等离子炼油厂&r"
+			x: 32.4d
+			y: 2.0d
+		}
+		{
+			dependencies: ["23654BEC29AA7E78"]
+			description: [
+				"固定一种常规熔炼配方，记录 N 个输入、N 对应产出、等离子减少量、能量减少量和 ticks。副产物或特殊配方仍需分别验证。"
+				"当前默认普通路线 N 件对应 N mB 等离子。缓冲不够时机器会等待，不要把半批输入未处理误认为物品丢失。"
+				"对比 GT/MEK 时把托卡马克与燃料制备一并计入，而不只比较炼油厂内部耗电。高吞吐是整线能力，不是免费效率。"
+			]
+			icon: "mekanism:energized_smelter"
+			id: "27C3EF671E24FF5E"
+			tasks: [{
+				id: "6DE2329CB8327A2B"
+				title: "已有炼油投入、产出、等离子和能量记录"
+				type: "checkmark"
+			}]
+			title: "炼油验收：逐件等离子成本"
+			x: 34.2d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"16C6F1EFE6E6A838"
+				"19279EEF28126550"
+			]
+			description: [
+				"用 ZPM 工业矩阵和原有 MEK/天工材料精密组装天选原核；天选控制器需独立研究站数据球和 ZPM 装配线制造。"
+				"专用天选腔体仍是实际结构成本。装配研究只允许制造控制器，不会代替 SAINTLY_ASCENSION 或机器内部配方的研究。"
+			]
+			icon: "zmod:tianxuan_chamber"
+			id: "1ED6143489E41B7A"
+			tasks: [{
+				id: "0887CA18901615EC"
+				title: "天选控制器、腔体与 ZPM 电路已核对"
+				type: "checkmark"
+			}]
+			title: "&6ZPM | 天选原核与腔体&r"
+			x: 23.4d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1ED6143489E41B7A"]
+			description: [
+				"采用 7×6×5 结构，超越框架/观察窗和四个指定底部天选腔体；通过预览核对窗带、空气与端口位置。"
+				"当前基础并行 2，模块最多 2×；能耗倍率 4、额外耗时倍率 2。4× 及更高模块不属于本包天选的允许范围。"
+				"天选的富集不是全 MEK 配方无条件搬运，实际允许哪些加工取决于配置与已加载配方。先用白名单样例验收。"
+				"zmod:tianxuan_controller：ZPM 装配线，122,880 EU/t，2000 ticks；研究方式：研究站数据球（16 CWU/t），消耗样品 zmod:tianxuan_chamber。电路接受 #gtceu:circuits/zpm 同档标签。"
+			]
+			icon: "zmod:tianxuan_controller"
+			id: "445BAB57B40BC70A"
+			tasks: [
+				{
+					consume_items: false
+					id: "07E790FD1925B328"
+					item: "zmod:tianxuan_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "714FECC9F44F12ED"
+					item: "zmod:tianxuan_chamber"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6973E78C7050B089"
+					item: "society:assembly_core_zmod_tianxuan_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&6ZPM | 天选工业设施&r"
+			x: 25.2d
+			y: -2.0d
+		}
+		{
+			dependencies: ["445BAB57B40BC70A"]
+			description: [
+				"当前允许的富集配方 ID 为 zmod:materials/high_purity_kaydarin_crystal 和 mekanism:enriching/hdpe_sheet。配置匹配的是配方 ID，不是物品显示名，也不是任意含 HDPE 的配方。"
+				"先用凯达林晶体或对应 HDPE 路线验证；其它富集原料被拒绝可能正是白名单生效，不应随意移除限制。"
+				"普通 MEK/GT 处理线仍负责未开放路线。管理员修改白名单后检查新批次与真实配方 ID，避免让旧测试库存误导判断。"
+			]
+			icon: "zmod:high_purity_kaydarin_crystal"
+			id: "28FCC5EEB4E11A4E"
+			tasks: [{
+				id: "54D188069DF5D570"
+				title: "已验证白名单允许项与一个拒绝项"
+				type: "checkmark"
+			}]
+			title: "天选白名单：用配方 ID 判定"
+			x: 27.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"22BFCC4890D6C419"
+				"7E2AC9C011CEF490"
+			]
+			description: [
+				"矿处理原核继续使用真正的玄相电路与完整 MEK 矿链设备，并保留原生 TC4R 研究和源质；此处不再使用前期矩阵替代。"
+				"先做 UV 数据模块，再通过数据银行光学网络提供研究；最终装配还需 UV 电路标签、部件与液体，不能只插入一个 UV 电路完成。"
+			]
+			icon: "zmod:ore_processing_chamber"
+			id: "6C0648F8CF1FCD7A"
+			tasks: [{
+				id: "2C533A698BF95E0D"
+				title: "已列出 UV 控制器的整组 MEK 与天工材料"
+				type: "checkmark"
+			}]
+			title: "&cUV | 综合矿处理原核&r"
+			x: 27.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6C0648F8CF1FCD7A"]
+			description: [
+				"采用 9×6×7 结构，超越框架/观察窗、控制器及四块指定底部矿处理腔体。端口仍只能放在指定框架位置，内部应留空。"
+				"当前基础并行 8、路线最高 2 倍、能耗倍率 8、额外耗时倍率 2；不接受并行模块。不是把 MEK 五倍矿链无条件折叠成免费终局机器。"
+				"每种物品容量 32768，资源槽容量 4,000,000，储能 128,000,000 FE。容量是缓冲上限，不是每 tick 吞吐或持续供电能力。"
+				"zmod:integrated_ore_processing_plant_controller：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 zmod:ore_processing_chamber。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "zmod:integrated_ore_processing_plant_controller"
+			id: "536076EF8FB42373"
+			tasks: [
+				{
+					consume_items: false
+					id: "35DB9102AA5AADD7"
+					item: "zmod:integrated_ore_processing_plant_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "54B05A1889668DF6"
+					item: "zmod:ore_processing_chamber"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "798FE28F9400E563"
+					item: "society:assembly_core_zmod_integrated_ore_processing_plant_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 综合矿处理终局工厂&r"
+			x: 28.8d
+			y: -4.0d
+		}
+		{
+			dependencies: ["536076EF8FB42373"]
+			description: [
+				"分别测试铁矿石、粗铁与粗铁块，记录归一化原料数量和产物。粗矿块是打包原料，不能把一块直接当一份矿石比较倍率。"
+				"当前识别兼容 forge:/c: 材料标签；其它模组矿石没有预期标签或没有可用产物映射时，仍可能没有路线。不要仅凭名称包含矿字判断它必能处理。"
+				"管理员可按 route、item、input tag 阻止路线；当前最高倍率为 2。以实际 JEI 路线和服务器配置验收，不引用旧默认 22000 并行或高倍矿结果。"
+			]
+			icon: "minecraft:raw_iron"
+			id: "4CC29A78EFCFA98D"
+			tasks: [{
+				id: "2CC6D45751C17C4C"
+				title: "已对照普通矿石、粗矿与粗矿块的实际产出"
+				type: "checkmark"
+			}]
+			title: "矿路线验收：矿石、粗矿和粗矿块"
+			x: 30.6d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7BD444BDE6668201"]
+			description: [
+				"四类工业机配置文件为 zmod-industrial-machines.toml：基础并行粉碎/炼油/矿处理各 8，天选 2；能耗倍率分别 4/6/8/4；额外耗时倍率都为 2。"
+				"普通工业机每种物品容量 32768、资源槽 256000、储能 64000000 FE；矿处理资源与储能更大。满槽拒收与输出等待是正常保护，不代表材料消失。"
+				"还有 MEK 满速时间基准 fullSpeedDurationMultiplier=0.5 和全局 energyUseMultiplier=1。计算实际耗时/能耗应看所选路线与机器批次，不只拿一个倍率相乘。"
+				"泵/流体厂与托卡马克使用各自配置。管理员不能只调整四类工业机文件便宣称全部天工机器已按同一比例削弱。"
+			]
+			icon: "zmod:transcendent_machine_frame"
+			id: "0B7BE058B0320A25"
+			tasks: [{
+				id: "28F3D14F21063483"
+				title: "已按本服配置记录各机的并行、成本与容量"
+				type: "checkmark"
+			}]
+			title: "全厂配置：并行、能耗与容量一起看"
+			x: 1.8d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0B7BE058B0320A25"]
+			description: [
+				"defaultconfigs 只用于新世界；已有世界实际数值读取该存档 serverconfig。修改之后，新批次才采用新值，已预订的批次保留原数值。"
+				"本次保留所有旧章节、任务与目标 ID。已造好的机器不会被收回；万象笼仅在新的法杖成型成功时消耗一枚 LuV 成型核心，已成型笼继续运行。"
+				"新增装配原核需要客户端和服务器都完成更新并重启。现存物品与研究数据仍应按实际 ID 核对，任务勾选不代替数据载体。"
+			]
+			icon: "minecraft:writable_book"
+			id: "7E9EB808C9682F19"
+			tasks: [{
+				id: "2915CA4D414D3BFF"
+				title: "已确认本服使用的是存档配置而非仅新世界模板"
+				type: "checkmark"
+			}]
+			title: "旧世界迁移：默认文件不会追写存档"
+			x: 3.6d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7E9EB808C9682F19"]
+			description: [
+				"结构不形成：查朝向、机器尺寸、专用底部部件、观察窗、空气格、允许端口位置、模块数量、模块等级与区块是否加载；不同机器的外壳不能凭相似外形互换。"
+				"配方不出现/不启动：先查服务端是否加载 JSON、研究与可选依赖，再查真实配方 ID/白名单、GT 等级标签、物品/NBT、资源类别、FE 实收与输出空间。JEI 只显示本地页面不证明服务器已注册。"
+				"自动化失效：普通输入/输出先各测一批，随后再查 ME 过滤、样板、网络权限与无线绑定。气体、流体、灌注资源和源质要分别检查，输出口拒绝插入是预期行为。"
+				"吞吐偏低：同时记录实际 tick、输入/产物数量、等离子/其它资源和能量变化，注明是否有外部补能。整座基地的长期净收益要把辅助系统纳入同一窗口计量。"
+			]
+			icon: "minecraft:book"
+			id: "1E64F903DBE29BC5"
+			tasks: [{
+				id: "2EDE8FF406C273E2"
+				title: "已有一条可复现的结构、配方和整线产能检查记录"
+				type: "checkmark"
+			}]
+			title: "天工排错：从结构到真实批次"
+			x: 5.4d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"7BD444BDE6668201"
+				"77B7B1EDD19831E0"
+			]
+			description: [
+				"从这一层开始，高阶天工不再只检查一枚 GT 电路。魔法原核→研究数据→真实 GT 装配，三段都要完成。"
+				"使用普通物品输入总线和流体输入仓。服务器启用了装配线物品/流体顺序；总线顺序按 JEI 摆放，数量、输出空间、能量和数据均需满足。"
+				"普通电路按 #gtceu:circuits/iv 等标签匹配，同档其他电路有效；研究数据必须对应具体成品。"
+			]
+			icon: "gtceu:assembly_line"
+			id: "6A8276D063652A72"
+			tasks: [{
+				consume_items: false
+				id: "6B184748CEDA510B"
+				item: "gtceu:assembly_line"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&bIV | 装配线制造平台&r"
+			x: 1.8d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6A8276D063652A72"]
+			description: [
+				"扫描仪投入 JEI 指定研究样品与空数据棒，消耗样品并生成带本条研究 ID 的数据棒；研究按真实机器时间和能量运行。"
+				"把完成的数据棒放入装配线数据仓。空棒、其他机器的数据、缺失数据都不能开工；正确研究棒在装配时不消耗，可重复使用。"
+				"IV 与 LuV 使用这条物理数据流程。FTBQ 完成状态、原生 TC4R 研究与 GT 数据分别负责不同条件。"
+			]
+			icon: "gtceu:iv_scanner"
+			id: "0A308A905FD90677"
+			tasks: [
+				{
+					consume_items: false
+					id: "427C94DADC94B936"
+					item: "gtceu:iv_scanner"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2DB8D9E4C25F911F"
+					item: "gtceu:data_stick"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&bIV | 扫描仪与数据棒&r"
+			x: 3.6d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"357D98AE103FE444"
+				"0A308A905FD90677"
+			]
+			description: [
+				"原生 TC4R 注魔先制造钥匙装配原核，再用独立扫描成果和 IV 装配线制成超越之钥。扫描样品为银树杖芯。"
+				"已完成 TRANSCENDENCE_KEY 研究不等于已有钥匙。钥匙让原有七星基础控制器进入相应强化模式，并用于精密组装与后续制造。"
+				"zmod:transcendence_key：IV 装配线，7,680 EU/t，1200 ticks；研究方式：扫描仪数据棒，消耗样品 thaumcraft:silverwood_staff_core。电路接受 #gtceu:circuits/iv 同档标签。"
+			]
+			icon: "zmod:transcendence_key"
+			id: "7B4B138101ADEAB6"
+			tasks: [
+				{
+					consume_items: false
+					id: "1EBC6A1B2C67F524"
+					item: "zmod:transcendence_key"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5C44C5DAC78159FC"
+					item: "society:assembly_core_zmod_transcendence_key"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&bIV | 制造超越之钥&r"
+			x: 5.4d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33DE427A4DA3CE07"]
+			description: [
+				"精密组装机投运后制造 IV 奥术工业矩阵，供粉碎、ME 通玄和 4× 并行等原核使用。它不要求反物质，也不消耗成品玄相电路。"
+				"辐照晶体核心仍需要钋，虚空介电板仍含原始尘。前者来自核废料链，后者保留污染魔法的原始珍珠/原始微粒研究；不要把 IV 当作唯一条件。"
+			]
+			icon: "society:industrial_matrix_iv"
+			id: "431514B6912520EA"
+			tasks: [{
+				consume_items: false
+				id: "0F476466BD0708BA"
+				item: "society:industrial_matrix_iv"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&bIV | 无反物质工业矩阵&r"
+			x: 16.2d
+			y: -6.5d
+		}
+		{
+			dependencies: ["431514B6912520EA"]
+			description: [
+				"4× 模块独立走原核、扫描、IV 装配；2× 基础模块不会自动绕过这道工艺。精密组装机只能有一个并行口。"
+				"更大批次同步增加原料、资源预留和电力需求。没有新增 8× 至 256× 的生存配方。"
+				"zmod:precision_assembler_parallel_4x：IV 装配线，7,680 EU/t，1200 ticks；研究方式：扫描仪数据棒，消耗样品 zmod:precision_assembler_parallel_2x。电路接受 #gtceu:circuits/iv 同档标签。"
+			]
+			icon: "zmod:precision_assembler_parallel_4x"
+			id: "0436067AF6B7ABCA"
+			tasks: [
+				{
+					consume_items: false
+					id: "730CED19097601C6"
+					item: "zmod:precision_assembler_parallel_4x"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1850D52F15EA727C"
+					item: "society:assembly_core_zmod_precision_assembler_parallel_4x"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&bIV | 独立制造 4× 并行&r"
+			x: 18.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"431514B6912520EA"
+				"7033A24F37F9B9B9"
+			]
+			description: [
+				"LuV 最终装配使用 LuV 部件、电路标签、焊锡合金、润滑油和聚苯并咪唑；仍由扫描仪生成每台机器的数据棒。"
+				"泵与流体厂、太乙矩阵、样板/无线、线程与万象成型进入本阶段。原生研究照常保留，不会因为装配完成而自动解锁。"
+			]
+			icon: "gtceu:luv_robot_arm"
+			id: "1B1F004CE154163F"
+			tasks: [{
+				id: "2E2AD83F85A1B42E"
+				title: "已核对 LuV 材料与扫描仪平台"
+				type: "checkmark"
+			}]
+			title: "&dLuV | 自动化设施升级&r"
+			x: 18.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1B1F004CE154163F"]
+			description: [
+				"LuV 工业矩阵保留辐照核心和虚空介电板等魔法材料，以 LuV 工业部件替代这条指定配方的反物质瓶颈。"
+				"用于 LuV 设施原核，不能替代 ZPM 矩阵，也不能全局替代玄相电路。"
+			]
+			icon: "society:industrial_matrix_luv"
+			id: "515385814B9A2F6F"
+			tasks: [{
+				consume_items: false
+				id: "5D82B09730FCDF25"
+				item: "society:industrial_matrix_luv"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&dLuV | LuV 工业矩阵&r"
+			x: 19.8d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"515385814B9A2F6F"
+				"7033A24F37F9B9B9"
+			]
+			description: [
+				"先用带 IV 钥匙的穹历达到功能 T2，取得太乙专属研究手稿；再按原生祭坛配方制造原核，经 LuV 装配得到太乙矩阵。"
+				"研究所需机器功率与 GT 装配电压不是同一指标。太乙成型保留原有结构与法杖要求，不会从普通符文矩阵免费升级出成品。"
+				"zmod:taiyi_matrix：LuV 装配线，30,720 EU/t，1600 ticks；研究方式：扫描仪数据棒，消耗样品 thaumcraft:runic_matrix。电路接受 #gtceu:circuits/luv 同档标签。"
+			]
+			icon: "zmod:taiyi_matrix"
+			id: "297185DD225D83CE"
+			tasks: [
+				{
+					consume_items: false
+					id: "7F6E338E382F817C"
+					item: "zmod:taiyi_matrix"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "523825CAA2C2177D"
+					item: "zmod:transcendence_key"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3D56B2F1BDBC4CA4"
+					item: "society:assembly_core_zmod_taiyi_matrix"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&dLuV | 太乙矩阵&r"
+			x: 21.6d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"368F4FECC0B64DF7"
+				"7033A24F37F9B9B9"
+			]
+			description: [
+				"以 ME 通玄输入口等原料注魔为原核，再用 LuV 研究数据和装配线制成样板供应器。无 tc_energy 的环境同样有对应原核路线。"
+				"先验证单配方与回网，再上大订单。供应器不是自动补研究、跨区块强加载或无限资源入口。"
+				"zmod:tongxuan_pattern_provider：LuV 装配线，30,720 EU/t，1600 ticks；研究方式：扫描仪数据棒，消耗样品 ae2:pattern_provider。电路接受 #gtceu:circuits/luv 同档标签。"
+			]
+			icon: "zmod:tongxuan_pattern_provider"
+			id: "1993CA52702D6B99"
+			tasks: [
+				{
+					consume_items: false
+					id: "1A0CB7AC588203F8"
+					item: "zmod:tongxuan_pattern_provider"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "342498AADF3E723A"
+					item: "society:assembly_core_zmod_tongxuan_pattern_provider"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&dLuV | 通玄样板供应器&r"
+			x: 19.8d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"431514B6912520EA"
+				"7033A24F37F9B9B9"
+			]
+			description: [
+				"2× 线程仓的原核和 LuV 装配独立制作。线程数与单批并行倍率是两种能力，分别检查机器允许的仓口、线程和供电。"
+				"本次没有为更高注册倍率新增便宜生存配方；以当前机器支持和 JEI 实际配方为准。"
+				"zmod:thread_hatch_2x：LuV 装配线，30,720 EU/t，1600 ticks；研究方式：扫描仪数据棒，消耗样品 zmod:precision_assembler_parallel_4x。电路接受 #gtceu:circuits/luv 同档标签。"
+			]
+			icon: "zmod:thread_hatch_2x"
+			id: "1021CDD669A9C2EC"
+			tasks: [
+				{
+					consume_items: false
+					id: "1083839D4B83C84D"
+					item: "zmod:thread_hatch_2x"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "095B3C47DB6D54E9"
+					item: "society:assembly_core_zmod_thread_hatch_2x"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&dLuV | 2× 线程仓&r"
+			x: 18.0d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"515385814B9A2F6F"
+				"7033A24F37F9B9B9"
+			]
+			description: [
+				"用原生愤怒之笼、已完成的 IV 超越之钥与 LuV 工业材料，通过扫描仪和装配线制造一枚万象笼成型核心。"
+				"核心放在操作者背包。法杖成型仍检查 WANXIANG_CAGE 研究、原生笼结构和 vis；仅成型成功消耗 1 枚，缺研究、缺 vis、结构错误均不扣核心。"
+				"已成型的旧笼继续工作，拆除后重新成型需新核心。一次性核心不是每次刷怪燃料；刷怪仍消耗原有资源与 FE。"
+				"society:wanxiang_formation_core：LuV 装配线，30,720 EU/t，1600 ticks；研究方式：扫描仪数据棒，消耗样品 forbidden_magic:wrath_cage。电路接受 #gtceu:circuits/luv 同档标签。"
+			]
+			icon: "society:wanxiang_formation_core"
+			id: "5AC38C4080EBC74D"
+			tasks: [
+				{
+					consume_items: false
+					id: "287EFD78A839CA82"
+					item: "society:wanxiang_formation_core"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "641466D5CAD35D92"
+					item: "zmod:transcendence_key"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&dLuV | 万象笼成型核心&r"
+			x: 21.6d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"431514B6912520EA"
+				"7033A24F37F9B9B9"
+			]
+			description: [
+				"用聚变框架、玻璃、化学储罐等原料制作 LuV 聚变原核，再用扫描数据与 LuV 装配线制造控制器。保留钋及原生部件成本。"
+				"这台控制器同时是后续天工托卡马克原核材料。分离供氘氚与点火见核工业；持续燃烧上限仍为 2 mB/t。"
+				"mekanismgenerators:fusion_reactor_controller：LuV 装配线，30,720 EU/t，1600 ticks；研究方式：扫描仪数据棒，消耗样品 mekanism:basic_chemical_tank。电路接受 #gtceu:circuits/luv 同档标签。"
+			]
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "624F5DF95175517B"
+			tasks: [
+				{
+					consume_items: false
+					id: "6BA3D8CF243DA5EC"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "16B150EA88B400D4"
+					item: "society:assembly_core_mekanismgenerators_fusion_reactor_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&dLuV | MEK 聚变控制器&r"
+			x: 18.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"1B1F004CE154163F"
+				"370FC1CDF5F9A9CC"
+				"468EEFD9D2F69014"
+				"1D6CC3C7F6BE4055"
+			]
+			description: [
+				"研究站投入指定样品和空数据球。光学计算网络必须提供至少 16 CWU/t，同时保持电力、样品架和冷却有效，才能产生本机研究成果。"
+				"由 HPCA 提供计算，经光学计算仓/网络分配给研究站；数据球是物理成果，不是任务奖励或免费解锁。正确数据球供装配线重复使用。"
+				"电路、材料、研究站制造本身继续使用 GT 原有门槛；现成 GT 附属机器不会免除这些条件。"
+			]
+			icon: "gtceu:research_station"
+			id: "2E889A8323909C71"
+			tasks: [
+				{
+					consume_items: false
+					id: "691A12B0D925C943"
+					item: "gtceu:research_station"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "1A76B820AE393964"
+					title: "研究站可持续取得 16 CWU/t"
+					type: "checkmark"
+				}
+			]
+			title: "&6ZPM | 研究站与 16 CWU/t&r"
+			x: 19.8d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2E889A8323909C71"]
+			description: [
+				"此矩阵用于托卡马克、磁线圈、天选、炼油及相应高阶原核。它延续魔法材料链，以 ZPM 工业投入解除反物质前置。"
+				"原核完成后仍须研究站、每机独立数据球及最终装配；矩阵不等于成品控制器。"
+			]
+			icon: "society:industrial_matrix_zpm"
+			id: "16C6F1EFE6E6A838"
+			tasks: [{
+				consume_items: false
+				id: "4B5D68D783F35A28"
+				item: "society:industrial_matrix_zpm"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&6ZPM | ZPM 工业矩阵&r"
+			x: 21.6d
+			y: -6.0d
+		}
+		{
+			dependencies: ["16C6F1EFE6E6A838"]
+			description: [
+				"磁线圈原核精密配方按原生批量给出 4 枚原核，每枚再装配 1 个成品线圈；不要把原核批量误读成控制器成本已降低。"
+				"线圈不依赖已建成的托卡马克。先完成线圈独立研究与装配，再给控制器原核备 8 个成品线圈。"
+			]
+			icon: "zmod:tokamak_magnetic_coil"
+			id: "7B7D3A6A49995CA3"
+			tasks: [
+				{
+					consume_items: false
+					id: "7C10D9F7E966A784"
+					item: "zmod:tokamak_magnetic_coil"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2963C4CD70DD9976"
+					item: "zmod:magnetic_confinement_unit"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&6ZPM | 托卡马克磁线圈&r"
+			x: 23.4d
+			y: -1.5d
+		}
+		{
+			dependencies: ["16C6F1EFE6E6A838"]
+			description: [
+				"完成对应 TC4R 研究，以原有精密配方制造原核，再通过 ZPM 研究站和装配线制造控制器。"
+				"保留其原生物品、化学品与源质输入；GT 工艺是新增的一段制造成本，不会抹掉魔法工艺。"
+				"zmod:warped_polymerizer_controller：ZPM 装配线，122,880 EU/t，2000 ticks；研究方式：研究站数据球（16 CWU/t），消耗样品 zmod:polymerization_chamber。电路接受 #gtceu:circuits/zpm 同档标签。"
+			]
+			icon: "zmod:warped_polymerizer_controller"
+			id: "5F04A1B4F0253963"
+			tasks: [
+				{
+					consume_items: false
+					id: "17F4559EA3079273"
+					item: "zmod:warped_polymerizer_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0919153CF5B72777"
+					item: "society:assembly_core_zmod_warped_polymerizer_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&6ZPM | 扭曲聚合器&r"
+			x: 23.4d
+			y: -6.5d
+		}
+		{
+			dependencies: ["16C6F1EFE6E6A838"]
+			description: [
+				"瑶光控制器同样进入 ZPM 原核→研究站→装配线。源质、化学品和原生研究保持，机壳不能单独运行控制器功能。"
+				"先按原生结构说明投运，再检查输入、能量和产物；制造研究成果不替代机器内部配方权限。"
+				"zmod:yaoguang_controller：ZPM 装配线，122,880 EU/t，2000 ticks；研究方式：研究站数据球（16 CWU/t），消耗样品 mekanism:ultimate_energy_cube。电路接受 #gtceu:circuits/zpm 同档标签。"
+			]
+			icon: "zmod:yaoguang_controller"
+			id: "05AF240BDB480D1B"
+			tasks: [
+				{
+					consume_items: false
+					id: "7B7CC18C986DE321"
+					item: "zmod:yaoguang_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "42FAD2FAB3DC4733"
+					item: "society:assembly_core_zmod_yaoguang_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&6ZPM | 瑶光工业设施&r"
+			x: 23.4d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"2E889A8323909C71"
+				"3CDA855A045A9F4D"
+				"42760D3A86EFDCA3"
+			]
+			description: [
+				"UV 各目标使用 64 CWU/t 研究站配方和空数据模块。算力不足或样品/电力条件不满足时，不会得到可用成果。"
+				"研究完成的数据模块放入运行中的数据银行，经光学数据网络接入装配线的光学数据接收仓。普通数据仓不能直接读模块；计算网络与数据网络各司其职。"
+				"数据模块不能复制降级成数据球/数据棒以绕过数据银行；同模块复制仍可用。空模块、错研究 ID 或断开光学数据都会阻止新批次。"
+			]
+			icon: "gtceu:data_bank"
+			id: "7E2AC9C011CEF490"
+			tasks: [
+				{
+					consume_items: false
+					id: "1AE7457CF262ADD6"
+					item: "gtceu:data_bank"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "20FFA9FC628E1D3D"
+					item: "gtceu:data_module"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "208F403434959F33"
+					title: "已验证 64 CWU/t 及银行→装配线光学数据"
+					type: "checkmark"
+				}
+			]
+			title: "&cUV | 64 CWU/t 与数据银行&r"
+			x: 21.6d
+			y: -11.0d
+		}
+		{
+			dependencies: ["7E2AC9C011CEF490"]
+			description: [
+				"SPS 机壳和超级充能线圈各有原核、独立 64 CWU/t 研究和 UV 装配。机壳每枚原核对应 4 个成品；不是原先的普通组装机路线。"
+				"原核保留钋、钚、HDPE、激光/铜等输入，但不要求反物质、玄相电路或终局超越核心，因此不存在自举循环。"
+				"先确保钋气体和持续供电，再产反物质；完整核电、功率和供料验收见核工业。"
+				"mekanism:sps_casing：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 mekanism:pellet_polonium。电路接受 #gtceu:circuits/uv 同档标签。"
+				"mekanism:supercharged_coil：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 mekanism:laser。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "mekanism:sps_casing"
+			id: "2D80AEA356964D9D"
+			tasks: [
+				{
+					consume_items: false
+					id: "11689EDA1F7147D6"
+					item: "mekanism:sps_casing"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0065EACA4945B062"
+					item: "mekanism:supercharged_coil"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "30785A5BE12DC9F5"
+					item: "society:assembly_core_mekanism_sps_casing"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "511C59934CCDCD5D"
+					item: "society:assembly_core_mekanism_supercharged_coil"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 先建 SPS，再有反物质&r"
+			x: 23.4d
+			y: -10.5d
+		}
+		{
+			dependencies: ["22BFCC4890D6C419"]
+			description: [
+				"超越核心保留真正的反物质粒、原始结核、神秘锭与原生源质。先通过 SPS 建立反物质链，再注魔原核、完成 UV 研究并装配。"
+				"这枚核心与一次性万象成型核心、GT 研究数据不是同一种物品。不同机器不得混用同名核心。"
+				"zmod:transcendence_core：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 zmod:yuheng_furnace_core。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "zmod:transcendence_core"
+			id: "0B39944678CDFF07"
+			tasks: [
+				{
+					consume_items: false
+					id: "4B6DAA6070F7D664"
+					item: "zmod:transcendence_core"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5D514ADC6AD50C38"
+					item: "society:assembly_core_zmod_transcendence_core"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 超越核心与终局材料&r"
+			x: 27.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0B39944678CDFF07"]
+			description: [
+				"基础天枢与 IV 钥匙强化模式保留；独立 T3 控制器需原生至高研究、原核、UV 研究站及装配线。"
+				"依原生结构和研究书完成最终升级，不能用基础外壳或一枚钥匙冒充独立 T3 控制器。"
+				"zmod:tianshu_controller_t3：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 zmod:tianshu_controller_t1。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "zmod:tianshu_controller_t3"
+			id: "30E37F8C41E31A4E"
+			tasks: [
+				{
+					consume_items: false
+					id: "4AAC6A5CC3733D2F"
+					item: "zmod:tianshu_controller_t3"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "57CB502AA7B3BD31"
+					item: "society:assembly_core_zmod_tianshu_controller_t3"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 天枢至高控制器&r"
+			x: 28.8d
+			y: -14.0d
+		}
+		{
+			dependencies: ["0B39944678CDFF07"]
+			description: [
+				"玉衡 T3 需要其原生至高研究与超越核心链；保留源质和魔法材料，再完成 UV 数据模块研究与最终装配。"
+				"玉衡源质有 MEK 富集铁/钢等前期来源，不要求用已造出的同一 T3 控制器生产自身源质。"
+				"zmod:yuheng_controller_t3：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 zmod:yuheng_controller_t1。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "zmod:yuheng_controller_t3"
+			id: "0FC750E9F2E522C4"
+			tasks: [
+				{
+					consume_items: false
+					id: "23A41B0C22EFDC2A"
+					item: "zmod:yuheng_controller_t3"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "127A09509D380CB7"
+					item: "society:assembly_core_zmod_yuheng_controller_t3"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 玉衡至高控制器&r"
+			x: 28.8d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0B39944678CDFF07"]
+			description: [
+				"先用 IV 钥匙达到穹历功能 T2，完成穹历至高专属研究及相应远古研究，再制作原核并走 UV 研究与装配。"
+				"完成 T3 后才具备奇点提取器专属研究所需的穹历等级。功能 T2、研究手稿与最终 T3 实物是三步。"
+				"zmod:qiongli_controller_t3：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 zmod:qiongli_controller_t1。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "zmod:qiongli_controller_t3"
+			id: "05C8E894EE39ABEE"
+			tasks: [
+				{
+					consume_items: false
+					id: "43DDB19B8C274903"
+					item: "zmod:qiongli_controller_t3"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "657305D57BC7E76D"
+					item: "society:assembly_core_zmod_qiongli_controller_t3"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 穹历至高控制器&r"
+			x: 28.8d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0B39944678CDFF07"]
+			description: [
+				"原核保留原生精密配方和终局材料；最终控制器需要独立 UV 数据模块与装配线，不复用矿处理厂或 SPS 数据。"
+				"先核实选定物质路线的实际输入、产出和 FE 需求，再接自动化；更高档控制器不会让物质凭空产生。"
+				"zmod:matter_reconstructor_controller：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 zmod:reconstruction_chamber。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "zmod:matter_reconstructor_controller"
+			id: "44DBFEB968CA75E1"
+			tasks: [
+				{
+					consume_items: false
+					id: "7C9A0EA89DD364C9"
+					item: "zmod:matter_reconstructor_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2517EB9D1AAE5390"
+					item: "society:assembly_core_zmod_matter_reconstructor_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 物质重构器&r"
+			x: 28.8d
+			y: -8.0d
+		}
+		{
+			dependencies: ["05C8E894EE39ABEE"]
+			description: [
+				"先建成穹历 T3，取得奇点专属手稿，再按 SINGULARITY_EXTRACTOR 研究制作原核并完成独立 UV 数据研究和装配。"
+				"奇点源质可由 MEK 传送核心等既有来源提供，不需要先用奇点提取器制造它自己。仍需真实末端材料、源质与电力。"
+				"zmod:singularity_controller：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 mekanism:sps_port。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "zmod:singularity_controller"
+			id: "0B09BED14A978EE6"
+			tasks: [
+				{
+					consume_items: false
+					id: "1601BCB25ED7C921"
+					item: "zmod:singularity_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0B70503D233C0F1C"
+					item: "society:assembly_core_zmod_singularity_controller"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 奇点提取器&r"
+			x: 30.6d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0B39944678CDFF07"]
+			description: [
+				"虚空信标为独立高阶设施，按原生配方制造原核，使用自己的 UV 数据模块和装配配方。"
+				"范围、资源和运行条件按实际结构及配置检查；它不是因为占地小就保留免费直接制造。"
+				"zmod:void_pylon_beacon：UV 装配线，491,520 EU/t，2400 ticks；研究方式：研究站数据模块（64 CWU/t），消耗样品 zmod:pylon_beacon。电路接受 #gtceu:circuits/uv 同档标签。"
+			]
+			icon: "zmod:void_pylon_beacon"
+			id: "589B80936422C5F2"
+			tasks: [
+				{
+					consume_items: false
+					id: "78E55E6726B37E38"
+					item: "zmod:void_pylon_beacon"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1FD396C39DF4974A"
+					item: "society:assembly_core_zmod_void_pylon_beacon"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "&cUV | 虚空信标&r"
+			x: 28.8d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0B39944678CDFF07"
+				"468EEFD9D2F69014"
+			]
+			description: [
+				"四件虚空 MekaSuit 分别走 GT 装配线，电压 1,966,080 EU/t（UHV）。每条都消耗对应 MEK 原装护甲、UHV 电路标签、中子素装甲、硅岩合金和魔法材料；旧直接注魔配方已移除。"
+				"四份研究必须逐件完成：觉醒灵宝兜帽、长袍、护腿、靴子各自作为研究站样品，并分别配一个空数据球。研究会消耗样品；任意一份成果不能代替另三份。"
+				"研究电压 UV、32 CWU/t，数据球写好后放入装配线数据仓，装配时不消耗。研究耗时按部位为 200/300/250/200 秒；装配为 120/180/150/120 秒。"
+				"升级继承投入 MEK 护甲的模块、储能、附魔和自定义名称。天工禁止的重力/喷气模块仍受原有规则限制。数据球不存放在材料输入总线里。"
+			]
+			icon: "zmod:void_mekasuit_bodyarmor"
+			id: "6A1AB2C28559B273"
+			tasks: [{
+				id: "73C68B214E842BBE"
+				title: "已准备 UHV 装配电源与四份独立的数据球研究"
+				type: "checkmark"
+			}]
+			title: "&4UHV | 虚空 MekaSuit 终端制造&r"
+			x: 28.8d
+			y: -18.0d
+		}
+		{
+			dependencies: ["6A1AB2C28559B273"]
+			description: [
+				"先以觉醒灵宝兜帽完成本部位独立研究，使用写入对应成果的数据球。空球或其它护甲的研究球不能启动这条配方。"
+				"专用部件：4 个 UV 传感器、4 个 UV 发射器、2 个 UV 力场发生器，8 个 UHV 电路。中子素、魔法防具和其它材料数量以 JEI 装配线页面为准，按总线顺序逐项投入。"
+				"先拆除不需要的模块或确认保留内容，再投入对应部位的 MEK 护甲。装配后核对模块、附魔和储能，并用 UHV 或更高等级 GT 充电器补能。"
+			]
+			icon: "zmod:void_mekasuit_helmet"
+			id: "331C8E287899DDBE"
+			tasks: [{
+				consume_items: false
+				id: "58FF8F194F6E0D3E"
+				item: "zmod:void_mekasuit_helmet"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&4UHV | 冠冕：感知与控制&r"
+			x: 30.6d
+			y: -22.0d
+		}
+		{
+			dependencies: ["6A1AB2C28559B273"]
+			description: [
+				"先以觉醒灵宝长袍完成本部位独立研究，使用写入对应成果的数据球。空球或其它护甲的研究球不能启动这条配方。"
+				"专用部件：4 个 UV 力场发生器、终极能量立方、4 个 UV 电机与反物质，16 个 UHV 电路。中子素、魔法防具和其它材料数量以 JEI 装配线页面为准，按总线顺序逐项投入。"
+				"先拆除不需要的模块或确认保留内容，再投入对应部位的 MEK 护甲。装配后核对模块、附魔和储能，并用 UHV 或更高等级 GT 充电器补能。"
+			]
+			icon: "zmod:void_mekasuit_bodyarmor"
+			id: "65869C872A42158C"
+			tasks: [{
+				consume_items: false
+				id: "5C4CC58E5ECE3FB5"
+				item: "zmod:void_mekasuit_bodyarmor"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&4UHV | 躯壳：屏障与储能&r"
+			x: 30.6d
+			y: -20.0d
+		}
+		{
+			dependencies: ["6A1AB2C28559B273"]
+			description: [
+				"先以觉醒灵宝护腿完成本部位独立研究，使用写入对应成果的数据球。空球或其它护甲的研究球不能启动这条配方。"
+				"专用部件：8 个 UV 电机、4 个 UV 活塞、2 个 UV 力场发生器与相位耦合器，12 个 UHV 电路。中子素、魔法防具和其它材料数量以 JEI 装配线页面为准，按总线顺序逐项投入。"
+				"先拆除不需要的模块或确认保留内容，再投入对应部位的 MEK 护甲。装配后核对模块、附魔和储能，并用 UHV 或更高等级 GT 充电器补能。"
+			]
+			icon: "zmod:void_mekasuit_pants"
+			id: "2B9BD33ADB74EB26"
+			tasks: [{
+				consume_items: false
+				id: "5F36AC5A35B1E026"
+				item: "zmod:void_mekasuit_pants"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&4UHV | 胫甲：动力与相位&r"
+			x: 30.6d
+			y: -18.0d
+		}
+		{
+			dependencies: ["6A1AB2C28559B273"]
+			description: [
+				"先以觉醒灵宝靴子完成本部位独立研究，使用写入对应成果的数据球。空球或其它护甲的研究球不能启动这条配方。"
+				"专用部件：4 个 UV 电机、4 个 UV 活塞、2 个 UV 传感器与传送核心，8 个 UHV 电路。中子素、魔法防具和其它材料数量以 JEI 装配线页面为准，按总线顺序逐项投入。"
+				"先拆除不需要的模块或确认保留内容，再投入对应部位的 MEK 护甲。装配后核对模块、附魔和储能，并用 UHV 或更高等级 GT 充电器补能。"
+			]
+			icon: "zmod:void_mekasuit_boots"
+			id: "5FB9E420A0F8923C"
+			tasks: [{
+				consume_items: false
+				id: "5A6BC4AA8D226B85"
+				item: "zmod:void_mekasuit_boots"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "&4UHV | 战履：机动与定位&r"
+			x: 30.6d
+			y: -16.0d
+		}
+	]
+	title: "&5&l秽玄天工&r：当魔法使来玩通用机械.."
+}

@@ -1,0 +1,50 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "zmod:TONGXUAN_ME",
+  "central": {
+    "item": "zmod:tongxuan_me_input_port"
+  },
+  "components": [
+    {
+      "item": "ae2:pattern_provider"
+    },
+    {
+      "item": "ae2:annihilation_core"
+    },
+    {
+      "item": "ae2:formation_core"
+    },
+    {
+      "item": "thaumcraft:thaumium_ingot"
+    }
+  ],
+  "result": {
+    "item": "society:assembly_core_zmod_tongxuan_pattern_provider",
+    "count": 1
+  },
+  "instability": 3,
+  "aspects": {
+    "machina": 24,
+    "ordo": 16,
+    "permutatio": 16,
+    "praecantatio": 16
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ae2"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "tc_energy"
+    }
+  ]
+}

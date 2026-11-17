@@ -1,0 +1,964 @@
+{
+  "chapter_sha256": "602895651cc058309123225eaa8b9874966e375766aba07a90711790935ccfb6",
+  "ids": {
+    "chapter": "2FDEFD877475B84E",
+    "quest/altar": "34893A887F844DE3",
+    "quest/assembler": "6649AD10F37771F2",
+    "quest/battery": "7E7F00C084D53AD2",
+    "quest/botania": "4B3D808F04CD7A5F",
+    "quest/chemical": "6D294B87A3B2E038",
+    "quest/circuits": "780E4C70B5791970",
+    "quest/collector": "10481D3298436FAF",
+    "quest/commission": "5697C7FB46CDD317",
+    "quest/compound": "344E786DEC6B2D28",
+    "quest/daisy": "2BD54FE839130954",
+    "quest/essentia": "75E643DE6E72DA8C",
+    "quest/exchange": "5331C3EB36AFF7F1",
+    "quest/flowers": "33ED606ECD6F5784",
+    "quest/fluxcell": "0B798A10D0CC5E46",
+    "quest/fuel": "2DEE9BF510D7E490",
+    "quest/fusion": "4431754556A0AC47",
+    "quest/highcircuits": "32BF64424361B332",
+    "quest/hvev": "7A2160D8AE829718",
+    "quest/integration": "2BEF72F30F155D9E",
+    "quest/intro": "3F36ADE0B93865BC",
+    "quest/iv": "184B1AB9C30A2814",
+    "quest/luv": "040C6280E9025D5E",
+    "quest/lvmv": "5C1018261B95DEE8",
+    "quest/managen": "5128A7A21A4404AC",
+    "quest/manaplate": "0F09D85AAFAF0C90",
+    "quest/manaturbine": "15FEFB3412D07568",
+    "quest/mechanical": "062DE967367C9750",
+    "quest/muffler": "06AF4C74F184F70D",
+    "quest/nodeblast": "7E7BB48E81BFC162",
+    "quest/nodegen": "03A3E7072010762D",
+    "quest/nodes": "5FBB0B909D4BC3A7",
+    "quest/payment": "1297BEDB6F6F5E3D",
+    "quest/pollution": "61C6637DC96802F5",
+    "quest/processing": "769ADA236C630FC7",
+    "quest/producer": "0F2503C8A3ABC9AF",
+    "quest/scrubber": "3A0C4D9CFC3B52D5",
+    "quest/smelter": "4F9A048DEAAA894C",
+    "quest/tank": "0E0A3AE234175067",
+    "quest/tower": "2A8429CA1D042C20",
+    "quest/ulv": "51712A4A166860C4",
+    "quest/vis": "27DD874B7709BC29",
+    "quest/washer": "646B67F0D777C741",
+    "reward/altar/cog": "2974D35DE1BB0AED",
+    "reward/assembler/cog": "562EFBA4FE5F606E",
+    "reward/battery/cog": "518819CAC99E6928",
+    "reward/chemical/cog": "70121C4E4BD65BD0",
+    "reward/collector/cog": "30EE201C17E8D3D9",
+    "reward/daisy/cog": "7E309B31F6A838E1",
+    "reward/exchange/cog": "3AAF96F348209D2D",
+    "reward/flowers/cog": "453F5855E1ADC80C",
+    "reward/fuel/cog": "5400FE32CAB4191D",
+    "reward/fusion/cog": "49C92C911AAA17B5",
+    "reward/highcircuits/cog": "687F8D58FD4670FD",
+    "reward/hvev/cog": "3FC0BDDB2EDFEAB8",
+    "reward/iv/cog": "061E0767AE247A18",
+    "reward/luv/cog": "11BFC8BE28D88943",
+    "reward/lvmv/cog": "6034D19CB25FAE7B",
+    "reward/managen/cog": "555516949BF5325A",
+    "reward/manaplate/cog": "260DE628F36E9DA5",
+    "reward/manaturbine/cog": "7D83EE27A3191E80",
+    "reward/mechanical/cog": "72EDF4605B5A9D47",
+    "reward/muffler/cog": "12119497A88E8FBB",
+    "reward/nodeblast/cog": "6651FB72C14483F2",
+    "reward/nodegen/cog": "100BDB119D635F67",
+    "reward/producer/cog": "7D6116558007A881",
+    "reward/scrubber/cog": "4F86BB996B19AF03",
+    "reward/smelter/cog": "7EB46C536F530E7F",
+    "reward/tank/cog": "54ACB4785033E835",
+    "reward/tower/cog": "4581B68C23D48D74",
+    "reward/ulv/cog": "37448CC51B749129",
+    "reward/vis/cog": "5C6C198B534C124C",
+    "reward/washer/cog": "133AED9AB9D30983",
+    "task/altar/item/pollution:mana_infusion_reactor": "0FA1851DE7DD6306",
+    "task/altar/item/pollution:mana_rune_altar": "30DD0B3F1DCDC893",
+    "task/assembler/item/pollution:magic_assembler": "7E739A43D781A8B3",
+    "task/battery/item/pollution:magic_battery": "6D559EAA97D57534",
+    "task/botania/check": "3832D9B7D51D0D15",
+    "task/chemical/item/pollution:magic_chemical_reactor": "245C1F66ECF743EB",
+    "task/chemical/item/pollution:magic_distillery": "083A6D620AA2CE80",
+    "task/circuits/check": "6994026C32EA4A1E",
+    "task/collector/item/pollution:essence_collector": "5F9D200E57BBC09B",
+    "task/commission/check": "3963CFC2BC46256A",
+    "task/compound/check": "034193C66378F7BF",
+    "task/daisy/item/pollution:industrial_pure_daisy": "47E3C387074AC4F4",
+    "task/daisy/item/pollution:mana_petal_apothecary": "4462F218D104C2FE",
+    "task/essentia/check": "523EB336A9045F76",
+    "task/exchange/item/pollution:infused_exchange": "4B5B58C743368B31",
+    "task/flowers/item/botania:endoflame": "18D82958991BAD0B",
+    "task/flowers/item/pollution:endoflame_array": "26C941D10DA9B4DB",
+    "task/fluxcell/check": "38F3DE4868E0E4D7",
+    "task/fuel/item/pollution:lv_magic_turbine": "097FBA0A3B548368",
+    "task/fusion/item/pollution:luv_node_fusion_reactor": "0E5E9E775082941D",
+    "task/highcircuits/item/pollution:magic_circuit.zpm": "031780F1DFE1E639",
+    "task/highcircuits/item/pollution:magic_circuit_board.zpm": "732709B45B2E7CA1",
+    "task/hvev/item/pollution:magic_circuit.ev": "1E124FB9890B376D",
+    "task/hvev/item/pollution:magic_circuit.hv": "44F2E44718C84B05",
+    "task/hvev/item/pollution:magic_circuit_board.ev": "462B9D311E9B0BE5",
+    "task/hvev/item/pollution:magic_circuit_board.hv": "10840185D8B36647",
+    "task/integration/check": "145DBEAA3AB824ED",
+    "task/intro/check": "1E7AC2093D173BD8",
+    "task/iv/item/pollution:magic_circuit.iv": "50254F2B085FAE67",
+    "task/iv/item/pollution:magic_circuit_board.iv": "022896B54FB1210C",
+    "task/luv/item/pollution:magic_circuit.luv": "0EA7EB88B7ECEFAE",
+    "task/luv/item/pollution:magic_circuit_board.luv": "3AAEAE387350751C",
+    "task/lvmv/item/pollution:magic_circuit.lv": "38CC920FF47B85AF",
+    "task/lvmv/item/pollution:magic_circuit.mv": "5CF098F03D1D0D77",
+    "task/lvmv/item/pollution:magic_circuit_board.lv": "4CA15B4D63571024",
+    "task/lvmv/item/pollution:magic_circuit_board.mv": "52130070AF72E866",
+    "task/managen/item/pollution:lv_mana_generator": "4D2F073A8BF101E7",
+    "task/manaplate/item/pollution:mana_plate": "45ECA2B329D0CC30",
+    "task/manaturbine/item/pollution:mega_mana_turbine": "48FD979FCADC130D",
+    "task/mechanical/item/pollution:magic_bender": "6BCF94F697F81DE1",
+    "task/mechanical/item/pollution:magic_macerator": "167529CDE3216412",
+    "task/muffler/item/pollution:lv_flux_muffler": "71305D0F393629A7",
+    "task/nodeblast/item/pollution:node_blast_furnace": "67C880BA57F91B58",
+    "task/nodegen/item/pollution:large_node_generator": "5D94664D0EA4DC72",
+    "task/nodes/check": "40F17FFA220C9B2E",
+    "task/payment/check": "0DF53C5D20EE7128",
+    "task/pollution/check": "178B13620A3E7013",
+    "task/processing/check": "4B9D313E8BA8263C",
+    "task/producer/item/pollution:node_producer": "4B873A5EDEA993B2",
+    "task/producer/item/pollution:packaged_aura_node": "0C2A746675D906A1",
+    "task/scrubber/item/pollution:filter.i": "1F22713DCA30F225",
+    "task/scrubber/item/pollution:lv_flux_scrubber": "3A2C586B745491E0",
+    "task/smelter/item/pollution:essence_smelter": "5B2AEBD17B31705B",
+    "task/smelter/item/pollution:gt_essence_smelter": "125E12F418D19530",
+    "task/tank/item/pollution:lv_aspect_tank": "24117ED5B848F493",
+    "task/tank/item/pollution:lv_infused_fluid_hatch": "2050AF49E164D15D",
+    "task/tower/item/pollution:central_vis_tower": "29402270CDD17C39",
+    "task/ulv/item/pollution:magic_circuit.ulv": "56223949DA77A953",
+    "task/ulv/item/pollution:magic_circuit_board.ulv": "7FF8BBBAB963497B",
+    "task/vis/item/pollution:lv_vis_generator": "22549E57A9890A19",
+    "task/vis/item/pollution:lv_vis_provider": "149EADD8E1F7D89B",
+    "task/washer/item/pollution:node_washer": "6797E63B44C92AAA"
+  },
+  "item_evidence": {
+    "botania:endoflame": {
+      "compiled_name": "vazkii/botania/common/block/BotaniaFlowerBlocks.class",
+      "jar": "Botania-1.20.1-454-FORGE.jar",
+      "model": "assets/botania/models/item/endoflame.json",
+      "sha256": "4b12d7be6a6bc1e121a222ab8ea4f680306b1aaa2369cccd4a49441e3c2024c5"
+    },
+    "numismatics:cog": {
+      "compiled_name": "dev/ithundxr/createnumismatics/content/bank/TripleCoinSliderWidget.class",
+      "jar": "CreateNumismatics-1.1.0+forge-mc1.20.1.jar",
+      "model": "assets/numismatics/models/item/cog.json",
+      "sha256": "f37d91367b2adecdae67cc27b15fa902584d1241607990809d6388d3c59014fd"
+    },
+    "pollution:central_vis_tower": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/central_vis_tower.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:endoflame_array": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/endoflame_array.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:essence_collector": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/essence_collector.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:essence_smelter": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/essence_smelter.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:filter.i": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/filter.i.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:gt_essence_smelter": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/gt_essence_smelter.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:industrial_pure_daisy": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/industrial_pure_daisy.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:infused_exchange": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/infused_exchange.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:large_node_generator": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/large_node_generator.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:luv_node_fusion_reactor": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/luv_node_fusion_reactor.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_aspect_tank": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_aspect_tank.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_flux_fuel_cell": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_flux_fuel_cell.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_flux_muffler": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_flux_muffler.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_flux_scrubber": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_flux_scrubber.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_infused_fluid_hatch": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_infused_fluid_hatch.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_magic_turbine": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_magic_turbine.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_mana_generator": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_mana_generator.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_vis_generator": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_vis_generator.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_vis_hatch": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_vis_hatch.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:lv_vis_provider": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/lv_vis_provider.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:magic_assembler": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_assembler.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:magic_battery": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_battery.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:magic_bender": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_bender.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:magic_chemical_reactor": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_chemical_reactor.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:magic_circuit.ev": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit.ev.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit.hv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit.hv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit.iv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit.iv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit.luv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit.luv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit.lv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit.lv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit.mv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit.mv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit.ulv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit.ulv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit.zpm": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit.zpm.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit_board.ev": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit_board.ev.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit_board.hv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit_board.hv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit_board.iv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit_board.iv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit_board.luv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit_board.luv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit_board.lv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit_board.lv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit_board.mv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit_board.mv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit_board.ulv": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit_board.ulv.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_circuit_board.zpm": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_circuit_board.zpm.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    },
+    "pollution:magic_distillery": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_distillery.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:magic_macerator": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_macerator.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:magic_mixer": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/magic_mixer.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:mana_infusion_reactor": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/mana_infusion_reactor.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:mana_petal_apothecary": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/mana_petal_apothecary.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:mana_plate": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/mana_plate.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:mana_rune_altar": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/mana_rune_altar.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:mega_mana_turbine": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/mega_mana_turbine.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:node_blast_furnace": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/node_blast_furnace.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:node_producer": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/node_producer.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:node_washer": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/node_washer.json",
+      "registration": [
+        "common/machine/PollutionMachines.java"
+      ]
+    },
+    "pollution:packaged_aura_node": {
+      "jar": "pollution-1.20.1-1.0.0-1.20.1-port.0.1.0.jar",
+      "model": "assets/pollution/models/item/packaged_aura_node.json",
+      "registration": [
+        "common/item/PollutionItems.java"
+      ]
+    }
+  },
+  "order_index": 31,
+  "pollution_jar_sha256": "73c3b978087f06692d4cf5718559e745bdf13bbf371abd761a5895280d1a013f",
+  "quest_evidence": {
+    "altar": [
+      "loaders/recipes/BotaniaNativeRecipes.java",
+      "common/machine/multiblock/botania/BotaniaRecipeMaps.java"
+    ],
+    "assembler": [
+      "common/machine/PollutionMachines.java",
+      "loaders/recipes/AERecipes.java"
+    ],
+    "battery": [
+      "common/machine/multiblock/magic/MagicBatteryMachine.java",
+      "loaders/recipes/InfusionRecipes.java"
+    ],
+    "botania": [
+      "common/machine/single/ManaGeneratorMachine.java",
+      "common/machine/part/mana/ManaHatchMachine.java",
+      "common/machine/part/mana/ManaPoolHatchMachine.java"
+    ],
+    "chemical": [
+      "common/machine/PollutionMachines.java",
+      "common/machine/multiblock/magic/MagicChemicalBathMachine.java",
+      "common/machine/multiblock/LayeredMagicTowerMachine.java"
+    ],
+    "circuits": [
+      "loaders/recipes/MagicCircuitRecipes.java"
+    ],
+    "collector": [
+      "common/machine/multiblock/magic/EssenceCollectorMachine.java",
+      "common/machine/multiblock/magic/EssenceCollectorPatterns.java"
+    ],
+    "commission": [
+      "common/machine/multiblock/MagicRecipeLogic.java"
+    ],
+    "compound": [
+      "loaders/recipes/CompoundAspectRecipes.java"
+    ],
+    "daisy": [
+      "loaders/recipes/BotaniaNativeRecipes.java"
+    ],
+    "essentia": [
+      "loaders/recipes/InfusedProcessingRecipes.java",
+      "dimension/worldgen/PollutionOreVeins.java",
+      "dimension/PortalFormationEvents.java",
+      "common/block/tile/PortalBlock.java"
+    ],
+    "exchange": [
+      "common/machine/multiblock/magic/InfusedExchangeMachine.java",
+      "loaders/recipes/InfusionRecipes.java"
+    ],
+    "flowers": [
+      "common/machine/multiblock/botania/EndoflameArrayMachine.java",
+      "common/machine/multiblock/botania/EndoflameArrayPatterns.java"
+    ],
+    "fluxcell": [
+      "common/machine/single/FluxFuelCellMachine.java",
+      "common/item/VisCheckerItem.java"
+    ],
+    "fuel": [
+      "loaders/recipes/CompoundAspectRecipes.java",
+      "loaders/recipes/MagicFuelRecipes.java",
+      "common/machine/multiblock/magic/AbstractMagicTurbineMachine.java"
+    ],
+    "fusion": [
+      "common/machine/multiblock/node/NodeFusionReactorMachine.java",
+      "common/machine/multiblock/MagicRecipeLogic.java"
+    ],
+    "highcircuits": [
+      "loaders/recipes/MagicCircuitRecipes.java"
+    ],
+    "hvev": [
+      "loaders/recipes/MagicCircuitRecipes.java"
+    ],
+    "integration": [
+      "common/machine/PollutionMachines.java",
+      "loaders/recipes/AERecipes.java",
+      "loaders/recipes/AstralIntegrationRecipes.java"
+    ],
+    "intro": [
+      "common/machine/PollutionMachines.java",
+      "loaders/recipes/PollutionRecipes.java"
+    ],
+    "iv": [
+      "loaders/recipes/MagicCircuitRecipes.java"
+    ],
+    "luv": [
+      "loaders/recipes/MagicCircuitRecipes.java"
+    ],
+    "lvmv": [
+      "loaders/recipes/MagicCircuitRecipes.java"
+    ],
+    "managen": [
+      "common/machine/single/ManaGeneratorMachine.java",
+      "loaders/recipes/MachineRecipes.java"
+    ],
+    "manaplate": [
+      "common/machine/multiblock/botania/ManaPlateMachine.java",
+      "common/machine/multiblock/botania/ManaPlatePatterns.java"
+    ],
+    "manaturbine": [
+      "loaders/recipes/ManaToEuRecipes.java",
+      "common/machine/multiblock/botania/MegaManaTurbineMachine.java"
+    ],
+    "mechanical": [
+      "common/machine/PollutionMachines.java"
+    ],
+    "muffler": [
+      "common/machine/part/FluxMufflerMachine.java",
+      "loaders/recipes/HatchRecipes.java"
+    ],
+    "nodeblast": [
+      "common/machine/multiblock/node/NodeBlastFurnaceMachine.java",
+      "common/machine/multiblock/node/NodeBlastFurnacePatterns.java"
+    ],
+    "nodegen": [
+      "common/machine/multiblock/node/LargeNodeGeneratorMachine.java",
+      "common/machine/single/SmallNodeGeneratorMachine.java"
+    ],
+    "nodes": [
+      "common/item/PackagedAuraNode.java",
+      "common/machine/multiblock/node/NodeProducerMachine.java"
+    ],
+    "payment": [
+      "common/machine/multiblock/MagicRecipeLogic.java",
+      "common/machine/multiblock/MagicMultiblockController.java",
+      "common/machine/part/VisHatchMachine.java"
+    ],
+    "pollution": [
+      "api/pollution/PollutionEngine.java",
+      "api/pollution/PollutionData.java",
+      "mixin/gregtech/WorkableMultiblockPollutionMixin.java",
+      "mixin/gregtech/ExplosionPollutionMixin.java"
+    ],
+    "processing": [
+      "common/machine/PollutionMachines.java",
+      "loaders/recipes/InfusionRecipes.java"
+    ],
+    "producer": [
+      "common/machine/multiblock/node/NodeProducerMachine.java"
+    ],
+    "scrubber": [
+      "common/machine/single/FluxScrubberMachine.java",
+      "compat/tc4r/TC4RBridge.java",
+      "loaders/recipes/RemainingItemRecipes.java"
+    ],
+    "smelter": [
+      "common/machine/multiblock/magic/EssenceSmelterMachine.java",
+      "common/machine/multiblock/magic/GtEssenceSmelterMachine.java"
+    ],
+    "tank": [
+      "common/machine/single/AspectTankMachine.java",
+      "common/machine/part/InfusedFluidHatchMachine.java",
+      "loaders/recipes/HatchRecipes.java"
+    ],
+    "tower": [
+      "common/machine/multiblock/node/CentralVisTowerMachine.java",
+      "common/machine/multiblock/node/CentralVisTowerPatterns.java"
+    ],
+    "ulv": [
+      "loaders/recipes/MagicCircuitRecipes.java"
+    ],
+    "vis": [
+      "common/machine/VisGeneratorMachine.java",
+      "common/machine/single/VisProviderMachine.java",
+      "loaders/recipes/PollutionRecipes.java"
+    ],
+    "washer": [
+      "common/machine/multiblock/node/NodeWasherMachine.java"
+    ]
+  },
+  "salt": "pollution",
+  "schema": 2,
+  "source_evidence": {
+    "api/pollution/PollutionData.java": {
+      "class_sha256": "35e40086be7976e02d3c3e38198b9a5622580d5a897c146bc3b5dd1628731dfa",
+      "source_sha256": "8ba0774a0ae4fd060d18bb0a90720cb8e0497eda19ce2d7b82f798a1a1d17a4f"
+    },
+    "api/pollution/PollutionEngine.java": {
+      "class_sha256": "b849a6beb15622bd76a3f807fffebef03caa4afd543a558e9b7139b5de49a6dc",
+      "source_sha256": "40ec0eac57d18c0ed4d587331b0c28a314f03888f654d3ea8097f263850235b7"
+    },
+    "common/block/tile/PortalBlock.java": {
+      "class_sha256": "6f63700f2b4e79b1b18648bc595866adc5fa35324163c5cc2aca01896d456c53",
+      "source_sha256": "8aaf1a98c65e9b1acd94368f87b0f20ef9d4f5b837dd92654b99f27a1a980475"
+    },
+    "common/item/PackagedAuraNode.java": {
+      "class_sha256": "579c7b7d61b25e62724c7c74c8590bf24704cd96738f594ac84fc8d9635225ab",
+      "source_sha256": "d197a4dc84657292984c721d59dd6d09ec836de32a3bb4c927dea3d159c7fe17"
+    },
+    "common/item/VisCheckerItem.java": {
+      "class_sha256": "c235344e4555ee14a084968fe03fa4dc005be50bc6d7585fc4df7aa88abe2dff",
+      "source_sha256": "e0d2f796e40ea09d098b85269c93b17cb391372c01d257bbbd4409b3d125e253"
+    },
+    "common/machine/PollutionMachines.java": {
+      "class_sha256": "c1d5eee54d9e5797dcf43dce636b4c4c568466dd7c0fe5d3d99495704eb8669d",
+      "source_sha256": "11c8392cefeb3e17b142710bfbae2c417c61b48fe3a5ffa1f02cd8b403735e40"
+    },
+    "common/machine/VisGeneratorMachine.java": {
+      "class_sha256": "b73cd41525d45f2dcc75199cebe48ed82b9d959e7b18f0fbdc9212f225f295d7",
+      "source_sha256": "9a8593ad1eeec32971e0316baf755ad04d55507fc78c068821635b1ed550ad49"
+    },
+    "common/machine/multiblock/LayeredMagicTowerMachine.java": {
+      "class_sha256": "5ac16b618b3cc687c8d0c4bc23750d5c754d1204f96fc924197938df2b22a0eb",
+      "source_sha256": "87d23b0fbb0e47def339570f6fd89efe346b8b141c1dc8611f8989f4481acb04"
+    },
+    "common/machine/multiblock/MagicMultiblockController.java": {
+      "class_sha256": "04595cd53c6e661f46b8acd4a30d72c921c824370bb2aa1fd5289672d6e50964",
+      "source_sha256": "c363e5f424b03680737a34d990065f74e37e0a7ecafe46764d1d409c2dd40a22"
+    },
+    "common/machine/multiblock/MagicRecipeLogic.java": {
+      "class_sha256": "59bdd5a862f73a465ed52e1ebfdabdbca255eede705427e1682ef41c0d5bbe28",
+      "source_sha256": "36133eea18ed0c83722c6d2cf7036e76b019e4aa5228b61a21140c1e75c6b694"
+    },
+    "common/machine/multiblock/botania/BotaniaRecipeMaps.java": {
+      "class_sha256": "c528096a27b99fa50fe78cdcfce4efe68bca9a50de42e12359a531a074e8ea86",
+      "source_sha256": "031b92cf6070ff44be365a5b7332b563da049d593f6a863567e17fe4bc72b88f"
+    },
+    "common/machine/multiblock/botania/EndoflameArrayMachine.java": {
+      "class_sha256": "a79ac820bf367aba6d102f22bf7fd00a93a356300c330181f8736ededbaae6b5",
+      "source_sha256": "fd7ac9179c52c3f319a401976739d184bcbff7e113a4d7d6c0caa6a1f2649b7e"
+    },
+    "common/machine/multiblock/botania/EndoflameArrayPatterns.java": {
+      "class_sha256": "a4ce35d8f042c28937a5a900744a4d8b81fd3c4332eb3d7894ebf21cee72e97b",
+      "source_sha256": "009c112b53a859385eef89427d8a10f1849fbab0b12a191ccdcd7818669a10a5"
+    },
+    "common/machine/multiblock/botania/ManaPlateMachine.java": {
+      "class_sha256": "71600aad616b82d6c149f165a8ff25ae212a1aa68eaffbcfac3a1aa4d72270e9",
+      "source_sha256": "dccada72f022b13e8ff6363aa50b264a2fb462436b7801087e8556f9c5d32f3a"
+    },
+    "common/machine/multiblock/botania/ManaPlatePatterns.java": {
+      "class_sha256": "8d981123b6ae049a15a4fd70cad986047c52149170f5b7cfcfc29b854087318b",
+      "source_sha256": "e0041ad02fd651577331740d5ae933f10b474a836f3cc2157efc91175918e9d5"
+    },
+    "common/machine/multiblock/botania/MegaManaTurbineMachine.java": {
+      "class_sha256": "c5b47bcc27ee48e1284ce9794aed913757c815447f0a8c31cef8fbbfab3b6e58",
+      "source_sha256": "ad54277c8b0a1cfd86f3a0373b6463eb5ca0394a9cc4ff10f7709ea0a93fdffa"
+    },
+    "common/machine/multiblock/magic/AbstractMagicTurbineMachine.java": {
+      "class_sha256": "687b4766afcc93e064383d6bdfb1d7a869226210e6b9a74c4ccd47e1205d74fa",
+      "source_sha256": "a1ef1175b6e912f5f63783f4614696e02f138bc0fcc0fe6c77edc700917d61a9"
+    },
+    "common/machine/multiblock/magic/EssenceCollectorMachine.java": {
+      "class_sha256": "e509a2a7a193a06e7b452ef93f5124add1a0e82882b084fbd64e1c6ee2a183f0",
+      "source_sha256": "8c4a3600be81e0499642f6cf117e169bbc58e46a464323df68873644816ec81d"
+    },
+    "common/machine/multiblock/magic/EssenceCollectorPatterns.java": {
+      "class_sha256": "829a4d662aaa8080ebfa9dfaa83bf531d26af1588d061c7e381ccb11ae29af5a",
+      "source_sha256": "b686223e98877f9445ae0851a4b9a0cdcaf2fb6a03943288f2c0c121bece256a"
+    },
+    "common/machine/multiblock/magic/EssenceSmelterMachine.java": {
+      "class_sha256": "f2191f3f2d9dea48ab30b2aed03264463987b53dfe211b6322c90bd532624a0a",
+      "source_sha256": "00d3f1cbc6ee38e3523fc3310825edf0ab6589a159ce0f4aa40b02915d130d9d"
+    },
+    "common/machine/multiblock/magic/GtEssenceSmelterMachine.java": {
+      "class_sha256": "f25ca08a52d5b18b333237e38bbc7cc90e9d933fa134b9f7c457bd2a1df5beff",
+      "source_sha256": "99c2969e20f41c1e393c8c1102cee14119284d66d8ea32908083a5870917a898"
+    },
+    "common/machine/multiblock/magic/InfusedExchangeMachine.java": {
+      "class_sha256": "9a2499f4108710b6fdc7648aff9b8b7822f6c2129338725b754328b74d42aaf1",
+      "source_sha256": "06a3ce21a023b1d18772e835dc9afdbd2a02a0ee8c7592525262f8cf6bb3035c"
+    },
+    "common/machine/multiblock/magic/MagicBatteryMachine.java": {
+      "class_sha256": "afde434ef62cc36574a02e547bc2a07dfb80ccac37b583031e3399c35ff117f6",
+      "source_sha256": "c3c7f026634f362ab8a19b8f82bfadd3c9bf83335a599927e2e8c2f011325879"
+    },
+    "common/machine/multiblock/magic/MagicChemicalBathMachine.java": {
+      "class_sha256": "69943bff5a58ef6c6618052aae412b95456b7a7d4da34f4d1a91490215c530b8",
+      "source_sha256": "8aaa3514bbdeb46c4829b30a6f3d04bd4af82c3abfd95752f5b3e5a225344ca0"
+    },
+    "common/machine/multiblock/node/CentralVisTowerMachine.java": {
+      "class_sha256": "a8dd95b73204ea56c7a2cef7261773f3a2997505bffbdfc0c1fc197d2b6cbc4f",
+      "source_sha256": "6e2fe18c2dab4dd5c9805feab4fb13a2a09a2257353aa7bc3add996f1f016ea5"
+    },
+    "common/machine/multiblock/node/CentralVisTowerPatterns.java": {
+      "class_sha256": "cad29baafd99cfdf66328f35724905cb0c91234d5016a4c0219d6faafe290c5e",
+      "source_sha256": "85d90fea00d3c77d05d2921e7f62aa881d9b8b7c16b29a567fe63d0a09b77daf"
+    },
+    "common/machine/multiblock/node/LargeNodeGeneratorMachine.java": {
+      "class_sha256": "e120df65988578df86cdc7ed08f249528b733da531023a4335a110d7623fab0e",
+      "source_sha256": "2c42e19d223b0b8f250a32040d83e4232611170b84a9ccf1ccd5a36e770a2ab3"
+    },
+    "common/machine/multiblock/node/NodeBlastFurnaceMachine.java": {
+      "class_sha256": "3973519f3af60f5dc7ed16a66b81ed14fa0e8b04af722aebaf2074c26afd5f0e",
+      "source_sha256": "c5f34349cac9f1dc98b13f8ef7f89b817a1d23bf102fe9846f5f94354a5cb11a"
+    },
+    "common/machine/multiblock/node/NodeBlastFurnacePatterns.java": {
+      "class_sha256": "543cb52ebd4e8706942e200dc1c65b930f09670930846d4d97a7d444f76b5484",
+      "source_sha256": "bf842f02bf319495314060459522091a2bd20ae57a5ee775a1f5f8d9f990ea03"
+    },
+    "common/machine/multiblock/node/NodeFusionReactorMachine.java": {
+      "class_sha256": "4a2f89bedd6a0584ccf374fd18bee82d04321b4c4a1d7dfb95f43ac5a5b2dfa1",
+      "source_sha256": "c8395b0127fdc3cfed3f0af79e620fcf5e3bae3b1c1f900a0d310ff0563b5f42"
+    },
+    "common/machine/multiblock/node/NodeProducerMachine.java": {
+      "class_sha256": "129072f1d8cbe40b72f47d7aba94d0e97d0ebe1ee6db06da2fe4c68c93e7c7ca",
+      "source_sha256": "c2ad753f5db484f5744e457ba9764b2482388b66a55b455bb1f32ccfc82d9429"
+    },
+    "common/machine/multiblock/node/NodeWasherMachine.java": {
+      "class_sha256": "fd8239ce3ca9a02f174bccd1fc59104720d332d0c34654f3090e531d4071c40c",
+      "source_sha256": "bd60b921f97f5422fc9682661f7b7a4e4fd7f9c64d36a324263ce9334af1af47"
+    },
+    "common/machine/part/FluxMufflerMachine.java": {
+      "class_sha256": "574f30219e0f0d6b126fd592d416a9d38b509bd06ef70aeff26831e9a70cc872",
+      "source_sha256": "51879e022005c55e518df53e93f566cb86afdfb493b562b8d97d96004335effb"
+    },
+    "common/machine/part/InfusedFluidHatchMachine.java": {
+      "class_sha256": "f10d5acce3e0bde60f5b35db3734f9e367f99e04fe0d7277f492f682771895e7",
+      "source_sha256": "243ac95b5e88a8ada9ada090d7e7e276ab4289b7c9b278cba6593ac410dbde52"
+    },
+    "common/machine/part/VisHatchMachine.java": {
+      "class_sha256": "3eba8f883f01161e95fe52d0ca9ef80fd5b51e07fa0f13d9326bf13c69a95e4f",
+      "source_sha256": "2d7d3a78e1dc18ffc2b8e0aaaf4d414fe5c4bf9a160df4f104895b4f58c3f402"
+    },
+    "common/machine/part/mana/ManaHatchMachine.java": {
+      "class_sha256": "fca57b043d82f72efe4d6b9b88c460725df4526ad0c9dbba0665af1c3e35d003",
+      "source_sha256": "bd7fc5453f04e8519350bca4718364a9677c9604a9afaaf603f5a5dc13e1a225"
+    },
+    "common/machine/part/mana/ManaPoolHatchMachine.java": {
+      "class_sha256": "fdcdecfc2af06011313c6751b87eb85af4ac3b00e467b432688fa9e460c2a61d",
+      "source_sha256": "5be9e8e91278b279fa8b21558974f9677b98298e5422314c8e9ab7c0e62d91c4"
+    },
+    "common/machine/single/AspectTankMachine.java": {
+      "class_sha256": "25735954913641f2880be97fbb8ad8c2d18035eab1503956373226f89c9e92e3",
+      "source_sha256": "0e4341af4349e8779ae6384893559991d77cf83e08fe18b454b17912efdc635f"
+    },
+    "common/machine/single/FluxFuelCellMachine.java": {
+      "class_sha256": "ea1ca59e72d7a95e5e695df8507d0f35e48930457262822bc158d6c702a9ec4b",
+      "source_sha256": "3878d7ba3ed522297afd5e0121b96694bc457c359b591e2ad49fd6590cf67a80"
+    },
+    "common/machine/single/FluxScrubberMachine.java": {
+      "class_sha256": "3ccd4011a5f050595a9ebeb1385fe9fe4c9373719ca792f4c960e958d172cbd2",
+      "source_sha256": "3e0ac9831b951a172b35c9227316ef66d4d343dfbda84e6e8173df04504c32e2"
+    },
+    "common/machine/single/ManaGeneratorMachine.java": {
+      "class_sha256": "011868e2f6d926048a21e1ed7f18c7ef2201dc2c7f46453716f2e63029afbd7d",
+      "source_sha256": "0690e9b13551d6c33f445c9d3f54619f955f98d137787de97b1de06544ba4577"
+    },
+    "common/machine/single/SmallNodeGeneratorMachine.java": {
+      "class_sha256": "3ef06503a70cde4cead3d510f7d21ee9cbcee7bfd3743f622e5c9c9c91af6ebb",
+      "source_sha256": "007f55c5e120a786586a36d50d96dd66da221fb9a424a14540f7976d255508b0"
+    },
+    "common/machine/single/VisProviderMachine.java": {
+      "class_sha256": "724bdcc0a3b33df67e61374407c626957e90fb8ef5aae2165dcc920462e0f812",
+      "source_sha256": "f25d4e0090c03bb8adc03e7095c71b93ab98dbd6dbde6e716f0e2a3ec5fb844b"
+    },
+    "compat/tc4r/TC4RBridge.java": {
+      "class_sha256": "c68635bd13c704dec27b8d37e235164281755dcbbb877f5567ff591997a8eea3",
+      "source_sha256": "f4c3d51bc5ece92ace1eb075a8d8acd65a0bac4573f03ba878ae0605b9172ff1"
+    },
+    "dimension/PortalFormationEvents.java": {
+      "class_sha256": "c304c37a3d47661769080e8f0d6d425e5a249fd2399baeeafc5d90b9cc1c6974",
+      "source_sha256": "dab8d9952e6b8807290df7c4f0afba26e0732b7adf20fb371b63c16b995d8891"
+    },
+    "dimension/worldgen/PollutionOreVeins.java": {
+      "class_sha256": "54ac807d6ed22d6201edfaca757455cd96d23a8df25e46a64e3420e82cf78a80",
+      "source_sha256": "d4471691cd8d003dc953fa618f6369b92914501180190592f83b89075a2fbf78"
+    },
+    "loaders/recipes/AERecipes.java": {
+      "class_sha256": "6fdc22a05993b6bc9c32868c5d4e9772e4d8608a314c7d56b1464cbb93770edc",
+      "source_sha256": "795ed8e005f8c0ffd9a54580907cbaddcdad5258128ab5a8c583c8035ebf00d9"
+    },
+    "loaders/recipes/AstralIntegrationRecipes.java": {
+      "class_sha256": "f0d5a8fc625d5de240365f5313551904b15b72e27b1aeeb6da12961274479f5f",
+      "source_sha256": "d10f0926ee58555cffd2fd7c18c3f9825242ad10b2a0bf7aa55257329d034819"
+    },
+    "loaders/recipes/BotaniaNativeRecipes.java": {
+      "class_sha256": "461d8ac8324af61c22bf16ac103a8ada5342726825b668b01e1f2a067a42dc06",
+      "source_sha256": "7cacb2ac0bc7be08d885257946b3bdd7031acdbe5349c4d5d3e393eb09a18cf1"
+    },
+    "loaders/recipes/CompoundAspectRecipes.java": {
+      "class_sha256": "fbfe6239b0cf8a6f000b8e785792d6b70e1ae589632e192d088437c838dfa0f4",
+      "source_sha256": "06feff2a36b601c5e387fb2d97e17e28da6c56f403d9388aa27da4f55119149b"
+    },
+    "loaders/recipes/HatchRecipes.java": {
+      "class_sha256": "ae7be9a2d6760cd69fad94855d2026a233f10086ab8da90d639150b27ec9a616",
+      "source_sha256": "16908377cfc3e86a7414aacfa17ab4efd4929e35316c720c9695a6dca3359d7b"
+    },
+    "loaders/recipes/InfusedProcessingRecipes.java": {
+      "class_sha256": "23fa66e1268749f8d6cb4996fb7d532cd209901b9cc514d775c5dd63afac69f1",
+      "source_sha256": "f2cf85a64099cc3a726a065067e0d6e8ea3534578fad8ed1f44ea85d7b05c0a6"
+    },
+    "loaders/recipes/InfusionRecipes.java": {
+      "class_sha256": "45700fbe48ae6f763d6485b97e516a098a631bd6683c9120e5836cfe4dff70aa",
+      "source_sha256": "854706e04a77a0949ea6d36799f96c84b442eaaca708ac2ed388683a51dbc4ee"
+    },
+    "loaders/recipes/MachineRecipes.java": {
+      "class_sha256": "299c0ac1f6c378636f06c98187a2299b158dfe8ba0167110ae0017c918b4173b",
+      "source_sha256": "7c5811dbaa02c950d6f1d5a1d4a3d6a4bf0fc97a7a4f684987712ef5bb85f123"
+    },
+    "loaders/recipes/MagicCircuitRecipes.java": {
+      "class_sha256": "9be9656853f7f7bd17429d8956ed5d78d3a0b6e4509e004ea4bdc214a63ba9f3",
+      "source_sha256": "cc6a95ae36b1eed90e85029436be2f33d6ecb0601cab3e923250dc166c7959e8"
+    },
+    "loaders/recipes/MagicFuelRecipes.java": {
+      "class_sha256": "27e69b1eaf5170ef416437eb1feea7ed335205b6f3c5010092ac1101646be555",
+      "source_sha256": "6e80d9e580c8b17c886ac9fb82ab6d5a787eba335716a603660c656d60f7ff6f"
+    },
+    "loaders/recipes/ManaToEuRecipes.java": {
+      "class_sha256": "3631cb88ede2124c0a819db7b8ffa1ae0adcd7d07ddace418e3802cb19c13d52",
+      "source_sha256": "d67e0c852a75ddbef156a30f6d4e77e56fb6cb1faa497e8b9829b5484c78294c"
+    },
+    "loaders/recipes/PollutionRecipes.java": {
+      "class_sha256": "ed5ce8481ccfec49d13a8494766448a7c54ee7d38be9b7384373d81ec330e3ce",
+      "source_sha256": "5e8940bdf8aa6f9ef0d0a9aba93c6b46bb771ca3cf8f7f79dea0a7168f7cc75c"
+    },
+    "loaders/recipes/RemainingItemRecipes.java": {
+      "class_sha256": "942fdcd566aabfc1bd5ab9db5950d90880c6b5cb57405eeb0fe23fb10911580f",
+      "source_sha256": "a4b8171ad8a1c5010d8f5ed46bc781aa1f554ff157c160faace820e006554895"
+    },
+    "mixin/gregtech/ExplosionPollutionMixin.java": {
+      "class_sha256": "c7453badd9cf630ee63e9217d935f43888dbfb1c6aecb86b31c8bf8b90584e97",
+      "source_sha256": "aafece4e07e5f93bdc309eb69cbfd785f74ac2fbc826f774e25d7cc53fccdc50"
+    },
+    "mixin/gregtech/WorkableMultiblockPollutionMixin.java": {
+      "class_sha256": "11dfeb16a203e1b66052f56924431f82eeea1c88efc2ad3c63d04ba080524837",
+      "source_sha256": "4785e60be122b60d57f51ba56fe5ea9fe93bd493f278ae4bc4dd5789b74c0cc8"
+    }
+  },
+  "validation": {
+    "chapter_sha256": "602895651cc058309123225eaa8b9874966e375766aba07a90711790935ccfb6",
+    "group": "4A46A5E1358A80A6",
+    "layout": {
+      "center_bounds": [
+        24,
+        16
+      ],
+      "clusters": 6,
+      "crossings": 0,
+      "edge_node_hits": 0,
+      "edges": 36,
+      "icon_bounds": [
+        24.9,
+        16.9
+      ],
+      "max_edge": 2.828427,
+      "min_spacing": 2,
+      "overlaps": 0
+    },
+    "multi_objective_quests": 16,
+    "objectives": 62,
+    "order_index": 31,
+    "quests": 42,
+    "rewards": 30,
+    "unique_items": 54
+  }
+}

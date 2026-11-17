@@ -1,0 +1,15 @@
+#GTCEu 7.5.3 and AE2 15.4.10 dedicated-server runtime optimizations.
+enabled = true
+emptyRecipeIO = true
+fastSimulation = true
+cacheHandlerGroups = true
+fastAndConditions = true
+ae2DefaultItemKeyCache = true
+ae2DefaultFluidKeyCache = true
+ae2FuzzyBounds = true
+#Opt-in compressed in-item cell keys. Requires this mod on both client and server.
+ae2CompactCellNbt = false
+#Maximum handler lists per cached topology; larger inventories use the original path.
+#Range: 1 ~ 256
+maxCachedHandlers = 64
+

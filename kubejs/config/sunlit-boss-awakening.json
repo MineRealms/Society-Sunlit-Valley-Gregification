@@ -1,0 +1,69 @@
+{
+  "enabled": true,
+  "recipes": {
+    "thaumictinkerer:awakened_ichorcloth_cowl_infusion": {
+      "central": "thaumictinkerer:ichorcloth_cowl",
+      "output": "thaumictinkerer:awakened_ichorcloth_cowl",
+      "additions": [
+        {"item": "cataclysm:tidal_claws", "count": 1},
+        {"item": "cataclysm:cursium_ingot", "count": 1}
+      ]
+    },
+    "thaumictinkerer:awakened_ichorcloth_robe_infusion": {
+      "central": "thaumictinkerer:ichorcloth_robe",
+      "output": "thaumictinkerer:awakened_ichorcloth_robe",
+      "additions": [
+        {"item": "cataclysm:sandstorm_in_a_bottle", "count": 1},
+        {"item": "cataclysm:witherite_ingot", "count": 2}
+      ]
+    },
+    "thaumictinkerer:awakened_ichorcloth_leggings_infusion": {
+      "central": "thaumictinkerer:ichorcloth_leggings",
+      "output": "thaumictinkerer:awakened_ichorcloth_leggings",
+      "additions": [
+        {"item": "cataclysm:ignitium_ingot", "count": 2},
+        {"item": "cataclysm:monstrous_horn", "count": 1}
+      ]
+    },
+    "thaumictinkerer:awakened_ichorcloth_boots_infusion": {
+      "central": "thaumictinkerer:ichorcloth_boots",
+      "output": "thaumictinkerer:awakened_ichorcloth_boots",
+      "additions": [
+        {"item": "cataclysm:remnant_skull", "count": 1},
+        {"item": "cataclysm:ancient_metal_block", "count": 1}
+      ]
+    },
+    "thaumictinkerer:awakened_ichorium_sword_infusion": {
+      "central": "thaumictinkerer:ichorium_sword",
+      "output": "thaumictinkerer:awakened_ichorium_sword",
+      "additions": [
+        {"item": "cataclysm:gauntlet_of_guard", "count": 1},
+        {"item": "cataclysm:cursium_ingot", "count": 2}
+      ]
+    },
+    "thaumictinkerer:awakened_ichorium_pickaxe_infusion": {
+      "central": "thaumictinkerer:ichorium_pickaxe",
+      "output": "thaumictinkerer:awakened_ichorium_pickaxe",
+      "additions": [
+        {"item": "cataclysm:infernal_forge", "count": 1},
+        {"item": "cataclysm:witherite_ingot", "count": 2}
+      ]
+    },
+    "thaumictinkerer:awakened_ichorium_axe_infusion": {
+      "central": "thaumictinkerer:ichorium_axe",
+      "output": "thaumictinkerer:awakened_ichorium_axe",
+      "additions": [
+        {"item": "cataclysm:monstrous_horn", "count": 1},
+        {"item": "cataclysm:cursium_ingot", "count": 1}
+      ]
+    },
+    "thaumictinkerer:awakened_ichorium_shovel_infusion": {
+      "central": "thaumictinkerer:ichorium_shovel",
+      "output": "thaumictinkerer:awakened_ichorium_shovel",
+      "additions": [
+        {"item": "cataclysm:ancient_metal_block", "count": 1},
+        {"item": "cataclysm:lava_power_cell", "count": 4}
+      ]
+    }
+  }
+}

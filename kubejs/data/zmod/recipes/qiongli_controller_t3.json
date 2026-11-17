@@ -1,0 +1,58 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "zmod:QIONGLI_SUPREME",
+  "central": {
+    "item": "zmod:qiongli_controller_t1"
+  },
+  "components": [
+    {
+      "item": "thaumictinkerer:ichorium"
+    },
+    {
+      "item": "thaumictinkerer:ichorium"
+    },
+    {
+      "item": "mekanism:pellet_antimatter"
+    },
+    {
+      "item": "mekanism:pellet_antimatter"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    {
+      "item": "tainted_magic:primordial_nodule"
+    }
+  ],
+  "result": {
+    "item": "society:assembly_core_zmod_qiongli_controller_t3",
+    "count": 1
+  },
+  "instability": 5,
+  "aspects": {
+    "machina": 64,
+    "cognitio": 64,
+    "alienis": 32
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

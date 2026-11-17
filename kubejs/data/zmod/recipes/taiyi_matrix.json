@@ -1,0 +1,63 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "zmod:TAIYI_MATRIX",
+  "central": {
+    "item": "zmod:transcendence_key"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:runic_matrix"
+    },
+    {
+      "item": "thaumcraft:balanced_shard"
+    },
+    {
+      "item": "thaumcraft:void_ingot"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    {
+      "item": "thaumcraft:runic_matrix"
+    },
+    {
+      "item": "thaumcraft:balanced_shard"
+    },
+    {
+      "item": "thaumcraft:void_ingot"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    }
+  ],
+  "result": {
+    "item": "society:assembly_core_zmod_taiyi_matrix",
+    "count": 1
+  },
+  "instability": 5,
+  "aspects": {
+    "praecantatio": 64,
+    "ordo": 48,
+    "machina": 32,
+    "vinculum": 32,
+    "auram": 32
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

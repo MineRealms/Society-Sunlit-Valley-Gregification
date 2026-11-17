@@ -1,0 +1,57 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "zmod:TRANSCENDENCE_KEY",
+  "central": {
+    "item": "thaumcraft:silverwood_staff_core"
+  },
+  "components": [
+    {
+      "item": "thaumcraft:void_ingot"
+    },
+    {
+      "item": "thaumcraft:void_ingot"
+    },
+    {
+      "item": "thaumcraft:balanced_shard"
+    },
+    {
+      "item": "tainted_magic:warped_unbalanced_shard"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    }
+  ],
+  "result": {
+    "item": "society:assembly_core_zmod_transcendence_key",
+    "count": 1
+  },
+  "instability": 3,
+  "aspects": {
+    "praecantatio": 24,
+    "ordo": 16,
+    "machina": 16,
+    "vinculum": 16,
+    "auram": 8
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

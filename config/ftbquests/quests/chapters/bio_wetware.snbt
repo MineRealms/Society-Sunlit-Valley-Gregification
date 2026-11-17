@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "pollution:ips_human_brain"
 	id: "477CEB0A69B44295"
-	order_index: 21
+	order_index: 22
 	quest_links: [ ]
 	quests: [
 		{
@@ -687,5 +687,5 @@
 			y: 18.0d
 		}
 	]
-	title: "&2&l生物&r · 血肉与湿件"
+	title: "&2&l生物工程&r · 血肉与湿件、还有魔法"
 }

@@ -46,6 +46,12 @@
         "weight": 10,
         "minCount": 1,
         "maxCount": 4
+      },
+      {
+        "type": "cataclysm:endermaptera",
+        "weight": 158,
+        "minCount": 1,
+        "maxCount": 2
       }
     ],
     "creature": [],

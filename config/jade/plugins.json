@@ -106,10 +106,11 @@
     "wireless_energy_hatch_provider": true
   },
   "thaumicenergistics": {
-    "infusion_provider_grid_node_state": true,
-    "arcane_assembler_grid_node_state": true,
-    "essentia_interface_grid_node_state": true,
-    "vis_interface_grid_node_state": true
+    "infusion_monitor": true,
+    "brain_of_probability": true,
+    "assembler": true,
+    "provider_network": true,
+    "vibration_chamber": true
   },
   "society": {
     "plushie_jade": true,
@@ -132,6 +133,9 @@
   },
   "waystones": {
     "waystone": true
+  },
+  "technom": {
+    "machine_data": true
   },
   "gtceu": {
     "primitive_pump": true,
@@ -172,10 +176,14 @@
   "balm": {
     "jade": true
   },
+  "zmod": {
+    "taiyi_infusion": true
+  },
   "thaumcraft": {
     "node_info": true,
     "essentia_storage": true,
     "machine_info": true,
+    "golem_activity": true,
     "essentia_tube": true
   },
   "jadeaddons": {

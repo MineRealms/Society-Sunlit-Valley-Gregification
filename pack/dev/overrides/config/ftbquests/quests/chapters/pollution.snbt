@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "pollution"
-	group: "4A46A5E1358A80A6"
+	group: "14AB86BD08B253EC"
 	icon: "pollution:lv_vis_generator"
 	id: "2FDEFD877475B84E"
-	order_index: 20
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

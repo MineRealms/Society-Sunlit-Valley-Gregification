@@ -1,0 +1,18 @@
+#Expose GT electric-item capabilities over the original Mekanism energy containers.
+enabled = true
+#Minimum GT charger tier: ULV=0, LV=1, MV=2, HV=3, IV=5, UHV=9. Restart to apply.
+#Range: 0 ~ 14
+energyTabletTier = 1
+#Minimum GT charger tier: ULV=0, LV=1, MV=2, HV=3, IV=5, UHV=9. Restart to apply.
+#Range: 0 ~ 14
+basicEnergyCubeTier = 1
+#Minimum GT charger tier: ULV=0, LV=1, MV=2, HV=3, IV=5, UHV=9. Restart to apply.
+#Range: 0 ~ 14
+energizedToolTier = 3
+#Minimum GT charger tier: ULV=0, LV=1, MV=2, HV=3, IV=5, UHV=9. Restart to apply.
+#Range: 0 ~ 14
+mekaSuitTier = 5
+#Minimum GT charger tier: ULV=0, LV=1, MV=2, HV=3, IV=5, UHV=9. Restart to apply.
+#Range: 0 ~ 14
+voidMekaSuitTier = 9
+

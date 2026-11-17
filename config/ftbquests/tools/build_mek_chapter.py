@@ -20,10 +20,17 @@ MEK（通用机械）章节生成器 v2（Society: Sunlit Valley / 1.20.1 / Meka
     - 文本一律内联中文（不写 lang 文件）
 """
 
+import argparse
+import copy
 import json
+import math
 import os
 import random
 import re
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from build_astral_sorcery_chapter import SnbtParser
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))
 CHAPTERS_DIR = os.path.join(ROOT, "config", "ftbquests", "quests", "chapters")
@@ -61,8 +68,8 @@ QUESTS = [
         desc=[
             ("把 &7LV&r 阶段玩得差不多后，通用机械（&9MEK&r）的大门才会打开。",
              "Once you have mostly finished the &7LV&r stage, the gate to &9Mekanism&r opens."),
-            ("MEK 被 &d格雷科技&r 与 &6Create&r 双重锁住：基础机器需要 &bLV 微处理器&r（&3电路组装机&r 产物）与 &6Create 精密构件&r。",
-             "Mekanism is locked behind both &dGT&r and &6Create&r: basic machines require &bLV Microchips&r (made in the &3Circuit Assembler&r) and &6Create Precision Mechanisms&r."),
+            ("MEK 被 &d格雷科技&r 与 &6Create&r 双重锁住：基础机器需要 &b#gtceu:circuits/lv&r 电路与 &6Create 精密构件&r。同标签的基础电子电路、微处理器等均可使用，不强制先建电路组装机。",
+             "Basic machines require &b#gtceu:circuits/lv&r and &6Create Precision Mechanisms&r. Basic Electronic Circuits and other circuits in that tag are accepted; a Circuit Assembler is not a mandatory first step."),
             ("冶金灌注机是 MEK 的起点——用它把 &c红石&r、&8碳&r 等材料灌注进金属，做出合金、钢与电路。",
              "The Metallurgic Infuser is the entry point: infuse metals with &cRedstone&r, &8Carbon&r and more to make alloys, steel and circuits."),
         ],
@@ -120,8 +127,8 @@ QUESTS = [
         key="enrichment",
         title=("富集仓", "Enrichment Chamber"),
         desc=[
-            ("把矿石与材料富集为更高效的形态。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。",
-             "Enriches ores and materials into more efficient forms. Crafting requires &bLV Microchips&r and &6Create Precision Mechanisms&r (see JEI)."),
+            ("把矿石与材料富集为更高效的形态。合成需要 &b#gtceu:circuits/lv&r 电路与 &6Create 精密构件&r（详见 JEI）。",
+             "Enriches ores and materials. Crafting requires a circuit in &b#gtceu:circuits/lv&r and &6Create Precision Mechanisms&r (see JEI)."),
         ],
         icon="mekanism:enrichment_chamber",
         x=5.0, y=-2.5,
@@ -133,8 +140,8 @@ QUESTS = [
         key="crusher",
         title=("粉碎机", "Crusher"),
         desc=[
-            ("把矿石粉碎为两份粉尘。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。",
-             "Crushes ores into two dusts. Crafting requires &bLV Microchips&r and &6Create Precision Mechanisms&r (see JEI)."),
+            ("把支持的原料加工为对应粉尘，产量以实际配方为准。合成需要 &b#gtceu:circuits/lv&r 电路与 &6Create 精密构件&r（详见 JEI）。",
+             "Processes supported inputs into dust; output counts follow the actual recipe. Crafting requires &b#gtceu:circuits/lv&r and &6Create Precision Mechanisms&r."),
         ],
         icon="mekanism:crusher",
         x=5.0, y=0.0,
@@ -146,8 +153,8 @@ QUESTS = [
         key="smelter",
         title=("通电冶炼炉", "Energized Smelter"),
         desc=[
-            ("以能量双倍冶炼矿石。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。",
-             "Smelts ores at double output using energy. Crafting requires &bLV Microchips&r and &6Create Precision Mechanisms&r (see JEI)."),
+            ("用电执行熔炼配方；矿物增殖要靠上游处理链，不是冶炼炉自身自动双倍。合成需要 &b#gtceu:circuits/lv&r 电路与 &6Create 精密构件&r（详见 JEI）。",
+             "Runs smelting recipes using electricity; ore multiplication comes from upstream processing. Crafting requires &b#gtceu:circuits/lv&r and &6Create Precision Mechanisms&r."),
         ],
         icon="mekanism:energized_smelter",
         x=5.0, y=2.5,
@@ -159,8 +166,8 @@ QUESTS = [
         key="sawmill",
         title=("精密锯木机", "Precision Sawmill"),
         desc=[
-            ("高效切割木材与材料。合成需要 &bLV 微处理器&r 与 &6Create 精密构件&r（详见 JEI）。",
-             "Saws wood and materials efficiently. Crafting requires &bLV Microchips&r and &6Create Precision Mechanisms&r (see JEI)."),
+            ("高效切割木材与材料。合成需要 &b#gtceu:circuits/lv&r 电路与 &6Create 精密构件&r（详见 JEI）。",
+             "Saws wood and materials. Crafting requires &b#gtceu:circuits/lv&r and &6Create Precision Mechanisms&r (see JEI)."),
         ],
         icon="mekanism:precision_sawmill",
         x=7.5, y=0.0,
@@ -174,8 +181,8 @@ QUESTS = [
         desc=[
             ("工作台上用 &9灌注合金 ×2 + 基础控制电路 ×1&r 合成高级控制电路（配方形如「合金-电路-合金」）。",
              "Craft the Advanced Control Circuit from &92 Infused Alloys + 1 Basic Control Circuit&r (pattern: alloy-circuit-alloy)."),
-            ("&c阶段锁（MV）&r：配方中的“基础电路”已被替换为 &dGT 的 MV 电路（良好电子电路）&r —— 需要发展 &6MV&r 阶段。",
-             "&cStage gate (MV)&r: the Basic Circuit input is replaced with &dGT's MV circuit (Good Electronic Circuit)&r — you need the &6MV&r stage."),
+            ("&c阶段锁（MV）&r：输入按 &d#gtceu:circuits/mv&r 匹配，同等级标签的电路可替换，不限定单一种类。",
+             "&cStage gate (MV)&r: the input uses &d#gtceu:circuits/mv&r; any circuit in that tier tag is accepted."),
         ],
         icon="mekanism:advanced_control_circuit",
         x=0.0, y=5.0,
@@ -190,8 +197,8 @@ QUESTS = [
         desc=[
             ("工作台上用 &6强化合金 ×2 + 高级控制电路 ×1&r 合成精英控制电路。",
              "Craft the Elite Control Circuit from &62 Reinforced Alloys + 1 Advanced Control Circuit&r."),
-            ("&c阶段锁（HV）&r：配方中的“高级电路”已被替换为 &dGT 的 HV 集成电路（高级集成电路）&r —— 需要发展 &6HV&r 阶段。",
-             "&cStage gate (HV)&r: the Advanced Circuit input is replaced with &dGT's HV circuit (Advanced Integrated Circuit)&r — you need the &6HV&r stage."),
+            ("&c阶段锁（HV）&r：输入按 &d#gtceu:circuits/hv&r 匹配，同等级标签的电路可替换，不限定单一种类。",
+             "&cStage gate (HV)&r: the input uses &d#gtceu:circuits/hv&r; any circuit in that tier tag is accepted."),
         ],
         icon="mekanism:elite_control_circuit",
         x=-2.5, y=5.0,
@@ -206,8 +213,8 @@ QUESTS = [
         desc=[
             ("工作台上用 &5原子合金 ×2 + 精英控制电路 ×1&r 合成终极控制电路。",
              "Craft the Ultimate Control Circuit from &52 Atomic Alloys + 1 Elite Control Circuit&r."),
-            ("&c阶段锁（EV）&r：配方中的“精英电路”已被替换为 &dGT 的 EV 电路（微处理器计算机）&r —— 需要发展 &6EV&r 阶段。",
-             "&cStage gate (EV)&r: the Elite Circuit input is replaced with &dGT's EV circuit (Microprocessor Computer)&r — you need the &6EV&r stage."),
+            ("&c阶段锁（EV）&r：输入按 &d#gtceu:circuits/ev&r 匹配，同等级标签的电路可替换，不限定单一种类。",
+             "&cStage gate (EV)&r: the input uses &d#gtceu:circuits/ev&r; any circuit in that tier tag is accepted."),
             ("它也是绝大多数“终极”级机器的核心部件。",
              "It is the core component of nearly every \"Ultimate\"-tier machine."),
         ],
@@ -336,8 +343,8 @@ QUESTS = [
         desc=[
             ("把机器升级为「工厂」后，一台机器可同时处理多个配方：基础 3 并行 → 高级 5 → 精英 7 → 终极 9。",
              "Upgrading machines into Factories processes several recipes at once: Basic 3 → Advanced 5 → Elite 7 → Ultimate 9 parallel operations."),
-            ("富集/粉碎/冶炼/锯木/灌注/压射/提纯/混合 八种机器都有工厂版；后期产能核心。",
-             "All eight machine types (Enriching/Crushing/Smelting/Sawing/Infusing/Injecting/Purifying/Combining) have factory versions — the core of late-game throughput."),
+            ("富集/粉碎/冶炼/锯木/灌注/压射/提纯/混合/压缩九种机器都有工厂版。每级工厂合成与对应升级安装器都额外需要 &6Create 精密构件 ×2&r。",
+             "All nine machine types have factory versions. Crafting a factory or a tier installer at any tier requires &6two Create Precision Mechanisms&r."),
         ],
         icon="mekanism:basic_smelting_factory",
         x=10.0, y=7.5,
@@ -592,17 +599,17 @@ QUESTS = [
     ),
     dict(
         key="centrifuge",
-        title=("同位素离心机（铀浓缩）", "Isotopic Centrifuge"),
+        title=("铀浓缩：转入 GT 离心机", "Uranium Enrichment: GT Centrifuge"),
         desc=[
-            ("核燃料链的核心：把 &6六氟化铀&r 离心分离，得到 &a浓缩铀&r。",
-             "The core of the nuclear fuel chain: centrifuges &6Uranium Hexafluoride&r into &aFissile Fuel&r."),
-            ("配套链：铀 → 氢氟酸 → 六氟化铀 → 离心 → 裂变燃料。",
-             "Chain: Uranium → Hydrofluoric Acid → Uranium Hexafluoride → Centrifuge → Fissile Fuel."),
+            ("本包已移除 MEK 同位素离心机的直接裂变燃料配方；铀浓缩转入 GT 离心机。",
+             "The direct MEK fissile-fuel centrifuging recipe is removed. Enrichment now uses a GT centrifuge."),
+            ("GT HV 离心机设为 1 号电路分离铀同位素；GT EV 离心机设为 2 号电路，每 2000 mB 六氟化铀产一片燃料碎片，再经 MEK 氧化机产出 2000 mB 裂变燃料。",
+             "GT HV circuit 1 separates uranium isotopes. GT EV circuit 2 converts 2000 mB UF6 into one fragment; the MEK oxidizer makes 2000 mB fissile fuel."),
         ],
-        icon="mekanism:isotopic_centrifuge",
+        icon="gtceu:ev_centrifuge",
         x=17.5, y=5.0,
         deps=["chemical_infuser"],
-        tasks=[{"type": "item", "item": "mekanism:isotopic_centrifuge"}],
+        tasks=[{"type": "item", "item": "gtceu:ev_centrifuge"}],
         rewards=cog(16),
     ),
 
@@ -641,12 +648,12 @@ QUESTS = [
         key="fission",
         title=("裂变反应堆", "Fission Reactor"),
         desc=[
-            ("用&a裂变燃料&r驱动的多方块反应堆：产出热量与&7核废料&r。",
-             "A multiblock reactor powered by &aFissile Fuel&r: produces heat and &7Nuclear Waste&r."),
-            ("&c注意辐射&r：燃料温度过高会熔毁（可控核事故），废料要用&9放射性废料桶&r封存；废料正是&d钋&r的来源。",
-             "&cMind the radiation&r: overheating melts down; store waste in &9Radioactive Waste Barrels&r — that waste is the source of &dPolonium&r."),
-            ("结构：裂变机壳 + 端口 + 燃料组件（+ 控制棒组件调节反应）。",
-             "Structure: Fission Casing + Ports + Fuel Assemblies (Control Rod Assemblies regulate the reaction)."),
+            ("裂变支线：用&a裂变燃料&r驱动多方块反应堆，产出热量与&7核废料&r。",
+             "The fission branch turns &aFissile Fuel&r into heat and &7Nuclear Waste&r."),
+            ("&c注意辐射&r：过热会熔毁；本包把实际燃烧量限制为 0.2 mB/t，增加燃料组件不会继续放大吞吐。",
+             "&cMind the radiation&r: overheating melts down. This pack caps actual burn at 0.2 mB/t, so extra assemblies do not scale throughput."),
+            ("用旋转冷凝机液化六氟化铀，再经设为 2 号编程电路的 GT EV 离心机制成燃料碎片；MEK 氧化机把每片转成 2000 mB 裂变燃料。堆体制造电路使用 #gtceu:circuits/ev；操作详见《GT 核工业》。",
+             "Liquefy UF6, use selector circuit 2 in a GT EV Centrifuge, then oxidize each fragment into 2000 mB Fissile Fuel. Reactor crafting uses #gtceu:circuits/ev; see the GT Nuclear Industry chapter."),
         ],
         icon="mekanismgenerators:fission_reactor_casing",
         x=17.5, y=12.5,
@@ -664,7 +671,7 @@ QUESTS = [
              "The steam then feeds the Industrial Turbine for power."),
         ],
         icon="mekanism:boiler_casing",
-        x=15.0, y=15.0,
+        x=17.5, y=10.0,
         deps=["fission"],
         tasks=[{"type": "item", "item": "mekanism:boiler_casing", "count": 4}],
         rewards=cog(16),
@@ -679,7 +686,7 @@ QUESTS = [
              "Fission → Boiler → Turbine is the stable nuclear power triad."),
         ],
         icon="mekanismgenerators:turbine_rotor",
-        x=17.5, y=15.0,
+        x=20.0, y=10.0,
         deps=["boiler"],
         tasks=[
             {"type": "item", "item": "mekanismgenerators:turbine_casing", "count": 8},
@@ -691,32 +698,54 @@ QUESTS = [
         key="fusion",
         title=("聚变反应堆", "Fusion Reactor"),
         desc=[
-            ("核工业的顶点之一：用 &bD-T 燃料&r（氘 + 氚）与&c激光点火&r运行，输出巨量电力。",
-             "One of the peaks of nuclear engineering: runs on &bD-T Fuel&r (Deuterium + Tritium) ignited by a &cLaser&r, outputting enormous power."),
+            ("聚变与锅炉/涡轮是并行支线：用 &bD-T 燃料&r（氘 + 氚）和&c激光点火&r运行。",
+             "Fusion is a parallel branch to the boiler and turbine: it runs on &bD-T Fuel&r (Deuterium + Tritium) ignited by a &cLaser&r."),
             ("结构：聚变控制器 + 聚变框架 + 端口 + 激光聚焦矩阵。",
              "Structure: Fusion Controller + Frames + Ports + Laser Focus Matrix."),
-            ("聚变产出的电力足以支撑整个后期工厂；下一步是反物质。",
-             "Its power can run an entire late-game factory; next stop: Antimatter."),
+            ("先建蒸发塔供应锂，并完成激光和原子合金阶段；控制器/端口要求 #gtceu:circuits/luv。LuV 保留分开供氘氚，ZPM 才开放持续预混 D-T；实际燃烧上限 2 mB/t。操作与供料见《GT 核工业》。",
+             "Controllers/ports require #gtceu:circuits/luv. Separate D/T supply is retained at LuV; continuous premixed D-T production is gated to ZPM. Actual burn is capped at 2 mB/t; see GT Nuclear Industry."),
+            ("LuV 点火空腔由 GT 化反装填：空黑体辐射空腔 1 + 液态氘 5 mB + 液态氚 5 mB → 装有 10 mB D-T 的空腔；2000 ticks、32768 EU/t，共 65,536,000 EU。点火小份不取代 ZPM 大批混合。",
+             "LuV ignition charge: one empty Hohlraum + 5 mB liquid D + 5 mB liquid T -> Hohlraum containing 10 mB D-T; 2000 ticks at 32768 EU/t (65,536,000 EU). This startup charge does not replace ZPM bulk mixing."),
+            ("MEK 聚变控制器现在分三段制造：先在精密组装机用 2 个 #gtceu:circuits/luv、5 个聚变框架、玻璃板和化学储罐制作装配原核；原配方仍要求 SAINTLY_ASCENSION。",
+             "The MEK Fusion Controller now has three manufacturing steps: make its assembly core in the Precision Assembler from two #gtceu:circuits/luv, five fusion frames, a glass pane and a Chemical Tank; the recipe still requires SAINTLY_ASCENSION."),
+            ("再用化学储罐作为扫描样品生成专用数据棒，扫描耗 7680 EU/t、3200 ticks；最后以该数据和 LuV 装配线完成控制器。最终线要求 30720 EU/t、1600 ticks、LuV 部件、8 个同档标签电路以及焊锡合金、润滑油和 PBI。",
+             "Scan a Chemical Tank to make the dedicated data stick at 7680 EU/t for 3200 ticks, then finish the controller on the LuV Assembly Line. Final assembly uses 30720 EU/t for 1600 ticks, LuV parts, eight same-tier tagged circuits, soldering alloy, lubricant and PBI."),
+            ("数据棒记录此配方研究，可以重复使用；样品会被消耗。只做出聚变框架或完成 LuV 电路任务都不会绕过最后装配。",
+             "The researched data stick can be reused, but the sample is consumed. Fusion frames or a LuV-circuit quest do not bypass final assembly."),
         ],
         icon="mekanismgenerators:fusion_reactor_controller",
         x=20.0, y=15.0,
-        deps=["turbine", "laser"],
-        tasks=[{"type": "item", "item": "mekanismgenerators:fusion_reactor_controller"}],
+        deps=["thermal_evap", "laser", "alloy_atomic"],
+        tasks=[
+            {"type": "item", "item": "mekanismgenerators:fusion_reactor_controller"},
+            {"type": "item", "item": "society:assembly_core_mekanismgenerators_fusion_reactor_controller"},
+        ],
         rewards=cog(64),
     ),
     dict(
         key="sps",
         title=("超临界相移器（SPS）", "Supercritical Phase Shifter"),
         desc=[
-            ("用 &d钋&r + 巨量能量把物质相移，产出&5反物质&r（Antimatter）。",
-             "Phase-shifts matter using &dPolonium&r and massive energy to produce &5Antimatter&r."),
+            ("用裂变废料回收的 &d钋&r 和高压能量相移物质，产出&5反物质&r。",
+             "Phase-shift matter with &dPolonium&r recovered from fission waste and high-voltage energy to produce &5Antimatter&r."),
             ("结构：SPS 外壳 + 端口 + &c超级线圈&r（超导线圈需要激光与钋粒）。",
              "Structure: SPS Casing + Ports + &cSupercharged Coils&r (which need Lasers and Polonium)."),
+            ("SPS 机壳和超级充能线圈分别制作奥术装配原核，仍保留 SAINTLY_ASCENSION 与钋/钚/HDPE 或激光/铜成本。机壳原核每批在线上产 4 个；8 个机壳至少要两批。",
+             "SPS casings and supercharged coils each have a separate arcane assembly core, retaining SAINTLY_ASCENSION and their Polonium/Plutonium/HDPE or Laser/Copper costs. Each casing batch yields four, so eight casings need two batches."),
+            ("两种产物都需各自 UV 研究成果。研究站要持续得到 64 CWU/t；样品分别是钋粒和 Mekanism 激光，使用数据模块并经运行中的数据银行/光学网络送到装配线。模块不能降级复制成数据球或数据棒。",
+             "Each product has its own UV research. The Research Station needs 64 CWU/t; samples are Polonium Pellets and a Mekanism Laser. Use data modules routed through an operating Data Bank and optical network. Modules cannot be downgraded into copied data orbs or sticks."),
+            ("最终 UV 装配按 #gtceu:circuits/uv 标签接受同档电路，仍需 UV 机械部件、焊锡合金、润滑油与 PBI。SPS 供电、钋气体与净功率验收见《GT 核工业》。",
+             "Final UV assembly accepts same-tier #gtceu:circuits/uv items and still requires UV machine parts, soldering alloy, lubricant and PBI. See GT Nuclear Industry for SPS power, Polonium gas and net-output commissioning."),
         ],
         icon="mekanism:sps_casing",
         x=22.5, y=15.0,
-        deps=["fusion"],
-        tasks=[{"type": "item", "item": "mekanism:sps_casing", "count": 8}],
+        deps=["fission", "fusion", "laser"],
+        tasks=[
+            {"type": "item", "item": "mekanism:sps_casing", "count": 8},
+            {"type": "item", "item": "mekanism:supercharged_coil"},
+            {"type": "item", "item": "society:assembly_core_mekanism_sps_casing"},
+            {"type": "item", "item": "society:assembly_core_mekanism_supercharged_coil"},
+        ],
         rewards=cog(64),
     ),
     dict(
@@ -727,7 +756,7 @@ QUESTS = [
              "Compress Antimatter gas into &5Antimatter Pellets&r — Mekanism's ultimate material for endgame devices such as the Antiprotonic Nucleosynthesizer."),
         ],
         icon="mekanism:pellet_antimatter",
-        x=22.5, y=17.5,
+        x=25.0, y=15.0,
         deps=["sps"],
         tasks=[{"type": "item", "item": "mekanism:pellet_antimatter"}],
         rewards=cog(64),
@@ -945,8 +974,8 @@ QUESTS = [
         desc=[
             ("MEK 的钢尘（铁尘+碳，灌注机产物）原来用普通熔炉就能烧成钢锭，绕过了格雷科技的电弧炉。现在这条路已经拆掉。",
              "MEK steel dust used to smelt in any furnace, skipping the GregTech Electric Blast Furnace. That path is now removed."),
-            ("钢锭只能用 &dGT 电弧炉（EBF，1000K）&r 烧：钢外壳居中位置也换成了 &bGT MV 电子电路&r。",
-             "Steel ingots now require the &dGT EBF (1000K)&r; the Steel Casing's center slot is now a &bGT MV Circuit&r."),
+            ("钢材阶段门槛看本服实际 GT 配方；钢外壳居中位置使用 &b#gtceu:circuits/mv&r，同标签电路可替换。EBF 是电力高炉，不是电弧炉。",
+             "Check the actual GT steel recipes for the stage gate. The Steel Casing center uses &b#gtceu:circuits/mv&r; equivalent circuits are accepted. EBF means Electric Blast Furnace."),
             ("所以 MEK 中后期机器的实际门槛 = MV 电弧炉时代，和 GT 进度对齐。",
              "So the real gate for mid/late Mekanism machines = the MV-era EBF, aligned with GT progression."),
         ],
@@ -962,8 +991,8 @@ QUESTS = [
         desc=[
             ("数字矿机原来只要 &71 个基础电路&r——LV 时代就能掏整块区块，直接跳过 GT 矿脉和矿石处理。",
              "The Digital Miner used to cost just &71 basic circuit&r — chunk-mining at LV, skipping GT veins and ore processing entirely."),
-            ("现在合成需要 &bGT EV 微处理器&r（原终极电路位）+ &6Create 精密构件 ×2&r。",
-             "It now requires the &bGT EV Microprocessor&r (in the Ultimate Circuit slot) plus &62 Create Precision Mechanisms&r."),
+            ("现在合成需要 &b#gtceu:circuits/ev&r 电路（原终极电路位）+ &6Create 精密构件 ×2&r；同等级标签内的电路都可使用。",
+             "It now requires a &b#gtceu:circuits/ev&r circuit plus &62 Create Precision Mechanisms&r; equivalent circuits in that tier tag are accepted."),
             ("EV 之前，请老老实实跑 GT 矿脉 + GregMek 双线处理；矿脉章节有地图和指示矿说明。",
              "Before EV, work the GT veins and the GregMek dual processing chains; see the Ore Generation chapter for surface indicators."),
         ],
@@ -979,10 +1008,10 @@ QUESTS = [
         desc=[
             ("MEK 全家桶发电机的入门件被整体上税：",
              "Every entry-level Mekanism generator now pays a GT tax:"),
-            ("燃气发电机：灌注合金×4 → &bGT MV 电子电路×4&r；风力 / 生物发电机：基础电路 → &bGT MV 电子电路&r；",
-             "Gas-Burning: Infused Alloy×4 → &bGT MV Circuits×4&r; Wind / Bio: basic circuit → &bGT MV Circuit&r;"),
-            ("太阳能 / 高级太阳能：灌注合金 → &bGT MV 电子电路&r；加热发电机：熔炉 → &bLV 微处理器&r；电解分离器：铁锭 → &6Create 精密构件&r。",
-             "Solar / Advanced Solar: Infused Alloy → &bGT MV Circuit&r; Heat: furnace → &bLV Microchip&r; Electrolytic Separator: iron → &6Precision Mechanisms&r."),
+            ("燃气发电机：灌注合金×4 → &b#gtceu:circuits/mv ×4&r；风力 / 生物发电机：基础电路 → &b#gtceu:circuits/mv&r；",
+             "Gas-Burning: four Infused Alloys → four &b#gtceu:circuits/mv&r circuits; Wind / Bio: Basic Circuit → &b#gtceu:circuits/mv&r;"),
+            ("太阳能 / 高级太阳能：灌注合金 → &b#gtceu:circuits/mv&r；加热发电机：熔炉 → &b#gtceu:circuits/lv&r；电解分离器：铁锭 → &6Create 精密构件&r。同等级标签电路可替换。",
+             "Solar / Advanced Solar: Infused Alloy → &b#gtceu:circuits/mv&r; Heat: furnace → &b#gtceu:circuits/lv&r; Separator: iron → &6Precision Mechanisms&r. Equivalent tagged circuits are accepted."),
             ("乙烯链（生物质→乙烯）因此被推到 MV 之后，不会再出现 LV 白嫖电力。",
              "The ethene loop (biofuel → ethene) is therefore pushed past MV — no more free power at LV."),
         ],
@@ -995,18 +1024,104 @@ QUESTS = [
 ]
 
 
+# Columns follow prerequisites; rows separate processing, logistics, materials,
+# power and equipment. Keep the source order stable for existing player IDs.
+LAYOUT = {
+    "infuser": (0, 0),
+    "circuit": (4, 0),
+    "adv_circuit": (8, 0),
+    "elite_circuit": (12, 0),
+    "ultimate_circuit": (24, 0),
+    "gregmek": (4, -4),
+    "casing": (4, -12),
+    "steel_ebf": (8, -12),
+    "crusher": (8, -4),
+    "enrichment": (8, -8),
+    "smelter": (8, -16),
+    "sawmill": (8, -20),
+    "factories": (12, -12),
+    "upgrades": (12, -4),
+    "digital_miner": (28, -4),
+    "injection": (20, -8),
+    "purification": (24, -8),
+    "dissolution": (28, -8),
+    "washer_chem": (32, -8),
+    "crystallizer": (36, -8),
+    "pressurized_tube": (8, -24),
+    "logistical_sorter": (8, -28),
+    "entangloporter": (12, -24),
+    "qio": (22, -28),
+    "oredictionificator": (28, -32),
+    "appliedmek": (16, -20),
+    "enriched": (4, 4),
+    "alloy_infused": (4, 8),
+    "compressor": (12, 4),
+    "refined_obsidian": (16, 2),
+    "alloy_reinforced": (16, 8),
+    "alloy_atomic": (20, 6),
+    "laser": (24, 6),
+    "separator": (12, 12),
+    "oxidizer": (16, 12),
+    "chemical_infuser": (20, 12),
+    "prc": (24, 12),
+    "sodium": (28, 12),
+    "rotary": (16, 16),
+    "thermal_evap": (20, 16),
+    "centrifuge": (24, 16),
+    "fission": (28, 16),
+    "boiler": (32, 16),
+    "turbine": (36, 16),
+    "fusion": (32, 8),
+    "sps": (36, 8),
+    "antimatter": (40, 8),
+    "energy_cube": (8, 20),
+    "cables": (10, 24),
+    "heat_generator": (12, 20),
+    "gas_generator": (16, 20),
+    "solar_wind": (18, 24),
+    "power_lock": (20, 20),
+    "induction": (14, 24),
+    "osmium_tools": (4, 32),
+    "jetpack": (8, 36),
+    "atomic_disassembler": (12, 32),
+    "mekatool": (32, 32),
+    "modification_station": (36, 32),
+    "modules": (40, 32),
+    "mekasuit": (44, 32),
+}
+if set(LAYOUT) != {quest["key"] for quest in QUESTS}:
+    raise ValueError("Layout must cover every quest exactly once")
+for quest in QUESTS:
+    quest["x"], quest["y"] = map(float, LAYOUT[quest["key"]])
+
+
 def collect_existing_ids():
     """收集其它章节/奖励表里的全部 ID（保证全局唯一）。"""
-    ids = set()
-    pat = re.compile(r'\bid:\s*"([0-9A-Fa-f]{16})"')
+    return quest_library()[0]
+
+
+def walk_objects(value):
+    if isinstance(value, dict):
+        yield value
+        for child in value.values():
+            yield from walk_objects(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from walk_objects(child)
+
+
+def quest_library():
+    ids, quest_ids = set(), set()
     for d in (CHAPTERS_DIR, REWARD_TABLES_DIR):
         if not os.path.isdir(d):
             continue
-        for fn in os.listdir(d):
+        for fn in sorted(os.listdir(d)):
             if fn.endswith(".snbt") and fn != f"{CHAPTER_FILENAME}.snbt":
-                with open(os.path.join(d, fn), encoding="utf-8") as f:
-                    ids.update(m.upper() for m in pat.findall(f.read()))
-    return ids
+                with open(os.path.join(d, fn), encoding="utf-8-sig") as f:
+                    doc = SnbtParser(f.read()).parse()
+                ids.update(str(obj["id"]).upper() for obj in walk_objects(doc) if "id" in obj)
+                quest_ids.update(str(quest["id"]).upper() for quest in doc.get("quests", ()))
+    return ids, quest_ids
 
 
 def make_id(rng, used):
@@ -1016,49 +1131,6 @@ def make_id(rng, used):
         if i not in used:
             used.add(i)
             return i
-
-
-def split_quest_blocks(text):
-    """把 quests: [ ... ] 切成顶层 { } 块（按括号配平）。"""
-    m = re.search(r'\bquests:\s*\[', text)
-    assert m, "找不到 quests: ["
-    i = m.end()
-    depth = 1
-    blocks = []
-    start = None
-    while i < len(text):
-        c = text[i]
-        if c == '{':
-            if depth == 1:
-                start = i
-            depth += 1
-        elif c == '}':
-            depth -= 1
-            if depth == 1 and start is not None:
-                blocks.append(text[start:i + 1])
-                start = None
-        elif c == ']' and depth == 1:
-            break
-        i += 1
-    return blocks
-
-
-def parse_section_ids(block, section):
-    """取块内某一段（tasks/rewards）里按出现顺序的全部 id。"""
-    m = re.search(r'\b' + section + r':\s*\[', block)
-    if not m:
-        return []
-    j = m.end()
-    depth = 1
-    end = j
-    while end < len(block) and depth > 0:
-        if block[end] == '[':
-            depth += 1
-        elif block[end] == ']':
-            depth -= 1
-        end += 1
-    seg = block[m.end():end]
-    return [x.upper() for x in re.findall(r'\bid:\s*"([0-9A-Fa-f]{16})"', seg)]
 
 
 # 旧文件（v1）里的任务顺序 —— 用于把旧 ID 按 key 正确回填。
@@ -1075,6 +1147,7 @@ OLD_KEY_ORDER = [
     "fusion", "sps", "antimatter", "atomic_disassembler", "jetpack", "osmium_tools",
     "mekatool", "modification_station", "modules", "mekasuit", "pressurized_tube", "logistical_sorter",
     "entangloporter", "qio", "oredictionificator", "appliedmek",
+    "steel_ebf", "digital_miner", "power_lock",
 ]
 
 
@@ -1083,45 +1156,51 @@ def load_previous_ids():
     旧文件按 OLD_KEY_ORDER 的 key 对齐（而不是按新列表下标）。"""
     if not os.path.exists(CHAPTER_FILE):
         return None, {}
-    text = open(CHAPTER_FILE, encoding="utf-8").read()
-    cm = re.search(r'\bid:\s*"([0-9A-Fa-f]{16})"', text)
-    chapter_id = cm.group(1).upper() if cm else None
-    blocks = split_quest_blocks(text)
+    with open(CHAPTER_FILE, encoding="utf-8-sig") as f:
+        doc = SnbtParser(f.read()).parse()
+    chapter_id = str(doc["id"]).upper()
+    quests = doc["quests"]
+    if len(quests) > len(OLD_KEY_ORDER):
+        raise ValueError("Existing chapter contains unmapped quests; extend OLD_KEY_ORDER first")
     out = {}
-    for i, b in enumerate(blocks):
-        if i >= len(OLD_KEY_ORDER):
-            break
-        qid_m = re.search(r'\bid:\s*"([0-9A-Fa-f]{16})"', b)
-        if not qid_m:
-            break
-        key = OLD_KEY_ORDER[i]
+    for key, quest in zip(OLD_KEY_ORDER, quests):
         out[key] = {
-            "qid": qid_m.group(1).upper(),
-            "tasks": parse_section_ids(b, "tasks"),
-            "rewards": parse_section_ids(b, "rewards"),
+            "qid": str(quest["id"]).upper(),
+            "tasks": [str(task["id"]).upper() for task in quest.get("tasks", ())],
+            "rewards": [str(reward["id"]).upper() for reward in quest.get("rewards", ())],
         }
     return chapter_id, out
 
 
 def build_snbt():
+    quests = copy.deepcopy(QUESTS)
     rng = random.Random(SEED)
     used = collect_existing_ids()
     prev_chapter_id, prev = load_previous_ids()
+    reserved = set(used)
+    if prev_chapter_id:
+        reserved.add(prev_chapter_id)
+    for previous in prev.values():
+        reserved.add(previous["qid"])
+        reserved.update(previous["tasks"])
+        reserved.update(previous["rewards"])
 
     # 章节 ID：优先保持
     if prev_chapter_id:
         chapter_id = prev_chapter_id
         used.add(chapter_id)
     else:
-        chapter_id = make_id(rng, used)
+        chapter_id = make_id(rng, reserved)
+        used.add(chapter_id)
 
-    for q in QUESTS:
+    for q in quests:
         p = prev.get(q["key"])
         if p and p["qid"] and p["qid"] not in used:
             q["qid"] = p["qid"]
             used.add(q["qid"])
         else:
-            q["qid"] = make_id(rng, used)
+            q["qid"] = make_id(rng, reserved)
+            used.add(q["qid"])
         # 任务 ID
         pt = p["tasks"] if p else []
         for k, t in enumerate(q["tasks"]):
@@ -1129,7 +1208,8 @@ def build_snbt():
                 t["tid"] = pt[k]
                 used.add(pt[k])
             else:
-                t["tid"] = make_id(rng, used)
+                t["tid"] = make_id(rng, reserved)
+                used.add(t["tid"])
         # 奖励 ID
         pr = p["rewards"] if p else []
         for k, r in enumerate(q.get("rewards") or []):
@@ -1137,11 +1217,12 @@ def build_snbt():
                 r["rid"] = pr[k]
                 used.add(pr[k])
             else:
-                r["rid"] = make_id(rng, used)
+                r["rid"] = make_id(rng, reserved)
+                used.add(r["rid"])
 
-    key2id = {q["key"]: q["qid"] for q in QUESTS}
+    key2id = {q["key"]: q["qid"] for q in quests}
     # 校验依赖
-    for q in QUESTS:
+    for q in quests:
         for d in q["deps"]:
             assert d in key2id, "未定义的依赖 key: " + d
 
@@ -1157,7 +1238,7 @@ def build_snbt():
     lines.append("\tquest_links: [ ]")
     lines.append("\tquests: [")
 
-    for q in QUESTS:
+    for q in quests:
         lines.append("\t\t{")
         deps = [key2id[d] for d in q["deps"]] + list(q.get("ext_deps") or [])
         if deps:
@@ -1226,24 +1307,71 @@ def build_snbt():
 
 
 def validate(snbt, chapter_id):
-    # 1) 所有 16 位 ID 合规且唯一
-    ids = re.findall(r'\bid:\s*"([0-9A-Fa-f]{16})"', snbt)
-    bad = [i for i in ids if i[0] not in "01234567"]
-    assert not bad, "非法 ID（首位 ≥8）: " + str(bad)
-    dup = [i for i in set(ids) if ids.count(i) > 1]
-    assert not dup, "重复 ID: " + str(dup)
-    # 2) 括号配平
-    depth = 0
-    for c in snbt:
-        if c == '{':
-            depth += 1
-        elif c == '}':
-            depth -= 1
-        assert depth >= 0
-    assert depth == 0, "括号不配平"
-    # 3) 任务数
-    nq = snbt.count("\t\t{\n")
-    return len(ids), nq
+    doc = SnbtParser(snbt).parse()
+    if doc["id"] != chapter_id or doc["filename"] != CHAPTER_FILENAME or doc["group"] != CHAPTER_GROUP:
+        raise ValueError("Chapter identity changed")
+    ids = [obj["id"] for obj in walk_objects(doc) if "id" in obj]
+    if any(not isinstance(value, str) or re.fullmatch(r"[0-7][0-9A-F]{15}", value) is None
+           or int(value, 16) == 0 for value in ids):
+        raise ValueError("Invalid signed-long FTBQ ID")
+    if len(ids) != len(set(ids)):
+        raise ValueError("Duplicate chapter, quest, task or reward ID")
+    external_ids, external_quests = quest_library()
+    if set(ids) & external_ids:
+        raise ValueError("Global FTBQ ID collision: " + repr(sorted(set(ids) & external_ids)))
+    groups_file = os.path.join(os.path.dirname(CHAPTERS_DIR), "chapter_groups.snbt")
+    with open(groups_file, encoding="utf-8-sig") as f:
+        groups = SnbtParser(f.read()).parse()
+    if not any(group.get("id") == CHAPTER_GROUP for group in groups.get("chapter_groups", ())):
+        raise ValueError("GT chapter group is missing")
+    quests = doc["quests"]
+    if len(quests) != len(QUESTS):
+        raise ValueError("Rendered quest count changed")
+    graph = {quest["id"]: quest for quest in quests}
+    references = {dependency for quest in quests for dependency in quest.get("dependencies", ())}
+    missing = references - graph.keys() - external_quests
+    if missing:
+        raise ValueError("Dangling quest prerequisites: " + repr(sorted(missing)))
+    visiting, done = set(), set()
+
+    def visit(node):
+        if node in visiting:
+            raise ValueError("Quest dependency cycle: " + node)
+        if node in done:
+            return
+        visiting.add(node)
+        for dependency in graph[node].get("dependencies", ()):
+            if dependency in graph:
+                visit(dependency)
+        visiting.remove(node)
+        done.add(node)
+
+    for node in graph:
+        visit(node)
+    for index, quest in enumerate(quests):
+        position = (quest["x"], quest["y"])
+        if not all(isinstance(value, (int, float)) and math.isfinite(value) for value in position):
+            raise ValueError("Invalid quest position: " + quest["id"])
+        for other in quests[:index]:
+            if math.dist(position, (other["x"], other["y"])) < 2.5:
+                raise ValueError("Quest nodes overlap: " + quest["id"] + ", " + other["id"])
+        for dependency in quest.get("dependencies", ()):
+            if dependency in graph and graph[dependency]["x"] >= quest["x"]:
+                raise ValueError("Local prerequisite must be to the left: " + quest["id"])
+            if dependency not in graph:
+                continue
+            start = graph[dependency]
+            dx, dy = quest["x"] - start["x"], quest["y"] - start["y"]
+            for other in quests:
+                if other["id"] in (dependency, quest["id"]):
+                    continue
+                projection = ((other["x"] - start["x"]) * dx + (other["y"] - start["y"]) * dy) / (dx * dx + dy * dy)
+                if 0 < projection < 1 and math.dist(
+                    (other["x"], other["y"]),
+                    (start["x"] + projection * dx, start["y"] + projection * dy),
+                ) < 0.65:
+                    raise ValueError("Prerequisite line crosses a quest node: " + other["id"])
+    return len(ids), len(quests)
 
 
 def verify_preserved(snbt, prev):
@@ -1251,25 +1379,46 @@ def verify_preserved(snbt, prev):
     if not prev:
         print("ID 保持校验: 无既有文件（全量新建）")
         return
-    blocks = split_quest_blocks(snbt)
+    quests = SnbtParser(snbt).parse()["quests"]
     key2idx = {q["key"]: i for i, q in enumerate(QUESTS)}
     for key, p in prev.items():
         idx = key2idx.get(key)
         assert idx is not None, "旧任务 key 在新列表中缺失: " + key
-        assert idx < len(blocks), "任务块数量不足: " + key
-        m = re.search(r'\bid:\s*"([0-9A-Fa-f]{16})"', blocks[idx])
-        got = m.group(1).upper() if m else None
+        assert idx < len(quests), "任务块数量不足: " + key
+        got = quests[idx]["id"]
         assert got == p["qid"], "ID 未按 key 保持: %s 期望 %s 实得 %s" % (key, p["qid"], got)
+        for section in ("tasks", "rewards"):
+            got_ids = [entry["id"] for entry in quests[idx].get(section, ())]
+            assert got_ids[:len(p[section])] == p[section], "任务/奖励 ID 改变: " + key + "/" + section
     print("ID 保持校验: 通过（%d 个既有任务按 key 对齐）" % len(prev))
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Build or validate the Mekanism quest chapter")
+    parser.add_argument("--check", action="store_true", help="validate published bytes without writing")
+    parser.add_argument("--verify-repeat", action="store_true", help="compare two independent renders")
+    args = parser.parse_args()
     _, prev = load_previous_ids()
     snbt, chapter_id = build_snbt()
-    with open(CHAPTER_FILE, "w", encoding="utf-8", newline="\n") as f:
-        f.write(snbt)
     n_ids, n_quests = validate(snbt, chapter_id)
     verify_preserved(snbt, prev)
+    if args.verify_repeat:
+        repeat, repeat_id = build_snbt()
+        validate(repeat, repeat_id)
+        if (snbt, chapter_id) != (repeat, repeat_id):
+            raise ValueError("Repeated render differs")
+        print("Deterministic render: %d quests" % n_quests)
+    payload = snbt.encode("utf-8")
+    if args.check:
+        if not os.path.exists(CHAPTER_FILE):
+            raise SystemExit("Missing chapter: " + CHAPTER_FILE)
+        with open(CHAPTER_FILE, "rb") as f:
+            if f.read() != payload:
+                raise SystemExit("mekanism.snbt differs from validated render")
+        print("Read-only check passed")
+    else:
+        with open(CHAPTER_FILE, "wb") as f:
+            f.write(payload)
     print("chapter -> %s  (id=%s)" % (CHAPTER_FILE, chapter_id))
     print("quests: %d | 文件中 ID 总数: %d" % (len(QUESTS), n_ids))
     print("外部前置: %s" % EXT_DEP_LV_FINALE)

@@ -1,0 +1,24 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:INTEGRATED_ORE_PROCESSING_PLANT",
+  "item_inputs": [
+    { "ingredient": { "tag": "gtceu:circuits/uv" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:chemical_dissolution_chamber" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:chemical_washer" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:chemical_crystallizer" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:chemical_injection_chamber" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:purification_chamber" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:energized_smelter" }, "amount": 1 },
+    { "ingredient": { "item": "zmod:xuanxiang_circuit" }, "amount": 2 },
+    { "ingredient": { "item": "zmod:ore_processing_chamber" }, "amount": 4 },
+    { "ingredient": { "item": "zmod:drive_unit_t2" }, "amount": 2 }
+  ],
+  "output": { "id": "zmod:integrated_ore_processing_plant_controller", "count": 1 },
+  "duration": 100,
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mekanism" },
+    { "type": "forge:mod_loaded", "modid": "thaumcraft" },
+    { "type": "zmod:optional_environment", "modid": "tainted_magic" },
+    { "type": "zmod:optional_environment", "modid": "thaumictinkerer" }
+  ]
+}

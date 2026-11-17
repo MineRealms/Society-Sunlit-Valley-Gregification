@@ -1,0 +1,11 @@
+#Reuse bounded RecipeRunner working containers. Chance rolls and handler calls stay native.
+reuseRecipeRunner = true
+#Reuse parallel-calculation scratch maps; inventory amounts are rebuilt for every invocation.
+reuseParallelScratch = true
+#Experimental: formed GT parts without tick subscriptions omit their empty machine ticker.
+experimentalDormantPartTick = false
+#Experimental: cache native GT preview shape pages until reload or supplier replacement.
+experimentalShapeCache = false
+#Experimental: coalesce GT ME item/fluid hatch flushes at the end of the same server tick.
+experimentalDeferredMeFlush = false
+

@@ -5,7 +5,7 @@
 	group: "04716B2F19F75F08"
 	icon: "isorropia:recombinator"
 	id: "7BB658FE0A01DB8B"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -1464,5 +1464,5 @@
 			y: 26.0d
 		}
 	]
-	title: "&5Thaumic Addons&r · 神秘领域"
+	title: "&5&l拓展模组&r · 神秘视界比原版更邪术"
 }

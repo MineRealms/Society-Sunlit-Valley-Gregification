@@ -3,13 +3,13 @@
 	#Enable the mod?
 	#(true/false)
 	#Default is true.
-	enable_mod = false
+	enable_mod = true
 
 	[SeasonHUD.HUD]
 		#Where to display the Hud when no minimap is installed.
 		#Default is TOP_LEFT.
 		#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, CUSTOM
-		hud_location = "TOP_LEFT"
+		hud_location = "TOP_CENTER"
 		#The horizontal offset of the HUD when no minimap is installed (in pixels)
 		#'hudLocation' must be set to 'CUSTOM' to take effect
 		#Default is 2.
@@ -94,7 +94,7 @@
 		#Enable integration with minimap mods?
 		#(true/false)
 		#Default is true.
-		enable_minimap_integration = false
+		enable_minimap_integration = true
 		#Show the default SeasonHUD when the minimap is hidden?
 		#(true/false)
 		#Default is false.

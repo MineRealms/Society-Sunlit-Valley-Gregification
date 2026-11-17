@@ -1,6 +1,6 @@
 #Render Worldshaper's Looking Glass phantom block previews.
 show_placement_mirror_preview = true
-#Distance from the bottom of the screen to the Soul Heart bar; matches the maintained source default.
+#GUI pixels from the screen bottom to the top of the Soul Heart bar. Values below 39 have no effect; the native right-hand HUD layout may place it higher to respect rows already reserved by other mods.
 #Range: 0 ~ 256
 soul_heart_height = 39
 

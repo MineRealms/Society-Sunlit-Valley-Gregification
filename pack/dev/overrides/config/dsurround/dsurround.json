@@ -87,7 +87,7 @@
     "fogEndReduction": 0.4
   },
   "aurora": {
-    "enableAuroras": false,
+    "enableAuroras": true,
     "maxAuroras": 3,
     "useShaders": true
   },

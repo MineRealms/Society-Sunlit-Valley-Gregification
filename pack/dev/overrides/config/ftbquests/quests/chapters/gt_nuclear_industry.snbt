@@ -1,0 +1,784 @@
+{
+	default_hide_dependency_lines: false,
+	default_quest_shape: "square",
+	filename: "gt_nuclear_industry",
+	group: "4A46A5E1358A80A6",
+	icon: "mekanismgenerators:fission_reactor_casing",
+	id: "2B2EEA8F27B64684",
+	order_index: 19,
+	quest_links: [ ],
+	quests: [
+		{
+			description: [
+				"本章负责 GT 门槛下的 MEK 核工业：EV 裂变 → IV 废料/钋 → LuV 分离氘氚聚变 → ZPM 预混 D-T → UV SPS。天工设备见独立的《秽玄天工》章。",
+				"划出燃料区、反应堆区、冷却/蒸汽区、废料区与配电区。调试期间先保持低燃烧率，并为燃料、冷却和放射性废料各留可观察的缓冲。",
+				"任务勾选只记录操作检查，不会替你控制反应堆；先在世界里验证，再完成操作目标。电路门槛按 #gtceu:circuits/<等级> 匹配，可使用同标签的不同电路路线。"
+			],
+			dependencies: [ ],
+			icon: "mekanism:energy_tablet",
+			id: "55F75A0089E30F14",
+			tasks: [
+				{
+					id: "0AA93999B90282B5",
+					title: "已画出供料、冷却、废料和净输出的流向",
+					type: "checkmark"
+				}
+			],
+			title: "核电站总图：先算负载再点火",
+			x: 0.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"裂变堆壳、燃料组件、控制棒组件和裂变端口都使用 EV 档电路标签 #gtceu:circuits/ev。材料是否齐全应分别在 JEI 检查，不能只做一个机壳便宣布建堆完成。",
+				"备好 GT EV 离心机和稳定供电。HV 机器即使插入 2 号编程电路，也不能运行 2048 EU/t 的 EV 燃料配方。",
+				"先制作各类零件样件，再按实际堆形备料。不要把控制棒、燃料组件、堆壳的可替换位置混用。"
+			],
+			dependencies: [
+				"55F75A0089E30F14",
+				"7A55CC71442CC854"
+			],
+			icon: "mekanismgenerators:control_rod_assembly",
+			id: "3E02AE39655F927E",
+			tasks: [
+				{
+					id: "70F8EE34200BFCD9",
+					type: "item",
+					item: "mekanismgenerators:fission_fuel_assembly",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "7952D0B90C8260AC",
+					type: "item",
+					item: "mekanismgenerators:control_rod_assembly",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "4179B9A2FFB143AF",
+					type: "item",
+					item: "mekanismgenerators:fission_reactor_port",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "EV 制造：四种堆体零件",
+			x: 4.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"离心机设 1 号编程电路：1000 mB 六氟化铀 → 100 mB 富集六氟化铀 + 900 mB 贫化六氟化铀，160 ticks，480 EU/t。",
+				"这是 GT 自身的同位素分离路线，产物继续交给 GT 核材料链；它不直接输出本包 MEK 所需的再处理裂变碎片。",
+				"GT 与 MEK 六氟化铀通过 #forge:uranium_hexafluoride 共用输入标签。共用标签不意味着两个配方能同时执行，1/2 号电路负责确定路线。"
+			],
+			dependencies: [
+				"3E02AE39655F927E"
+			],
+			icon: "gtceu:hv_centrifuge",
+			id: "0DF7AEC8AE45C1AF",
+			tasks: [
+				{
+					id: "354B6B7952AE9B44",
+					title: "已确认 1 号模式的两种 GT 流体产物",
+					type: "checkmark"
+				}
+			],
+			title: "UF6 ①：保留 GT 原生铀分离",
+			x: 8.0d,
+			y: -6.0d
+		},
+		{
+			description: [
+				"把 MEK 气态 UF6 经旋转冷凝器液化，或直接使用标签匹配的 GT 六氟化铀流体。EV 离心机设 2 号编程电路。",
+				"每批 2000 mB UF6 → 1 片再处理裂变碎片；2000 ticks，2048 EU/t，即每批 4,096,000 EU。碎片再进入 MEK 化学氧化机，200 ticks、20,000 J，得到 2000 mB 裂变燃料。",
+				"单台未超频 EV 离心机平均只供 1 mB/t 燃料；实际还要扣除缺料、断电和氧化延迟。先让缓冲稳定，再开堆。不要继续寻找已经移除的原生 UF6 直接制燃料捷径。"
+			],
+			dependencies: [
+				"3E02AE39655F927E"
+			],
+			icon: "gtceu:ev_centrifuge",
+			id: "2CD20CE37A6366EC",
+			tasks: [
+				{
+					id: "281492D3EAE3DE07",
+					type: "item",
+					item: "gtceu:ev_centrifuge",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "3398B51F74FB6E9D",
+					type: "item",
+					item: "mekanism:chemical_oxidizer",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "UF6 ②：EV 离心 → MEK 氧化",
+			x: 8.0d,
+			y: -2.0d
+		},
+		{
+			description: [
+				"用堆壳/玻璃构成 MEK 裂变外壳，燃料组件竖直排列，组件列上方接控制棒；通过控制器界面确认多方块已形成，再接外部物流。尺寸和摆放以 MEK 结构说明为准。",
+				"至少明确四条连接：燃料输入、冷却剂输入、加热冷却剂/蒸汽输出、核废料输出。用配置器将各端口切换到对应模式，并为输出留空间。",
+				"加更多组件提高结构允许值，不会越过整合包实际 0.2 mB/t 燃烧上限。先建可调试的小堆，再决定是否扩容。"
+			],
+			dependencies: [
+				"3E02AE39655F927E"
+			],
+			icon: "mekanismgenerators:fission_fuel_assembly",
+			id: "4F097CA4AA86216F",
+			tasks: [
+				{
+					id: "424D900968B3ECF9",
+					title: "结构形成且四条连接方向已核对",
+					type: "checkmark"
+				}
+			],
+			title: "裂变结构：外壳、组件与控制棒",
+			x: 8.0d,
+			y: 2.0d
+		},
+		{
+			description: [
+				"水冷裂变把水变成蒸汽，蒸汽可直接送工业涡轮；钠冷路线则需要热钠进入热力锅炉，再由锅炉产汽，并把冷却后的钠送回。两种流程不能混接。",
+				"分别观察冷却输入、蒸汽出口与涡轮回水；出口堵塞同样会破坏冷却。先用低燃烧率观察库存变化，保持冷却供给有余量。",
+				"涡轮需要转子、叶片、压力分散器、电磁线圈及相应外壳/接口；外形形成不等于可消纳全部蒸汽。先验证汽水循环，再接基地负载。"
+			],
+			dependencies: [
+				"3E02AE39655F927E"
+			],
+			icon: "mekanismgenerators:reactor_glass",
+			id: "1A1D3CD842C9FB04",
+			tasks: [
+				{
+					id: "37D868B63E085664",
+					title: "已在低负载下确认冷却与蒸汽出口畅通",
+					type: "checkmark"
+				}
+			],
+			title: "冷却闭环：先通水，再通汽",
+			x: 8.0d,
+			y: 6.0d
+		},
+		{
+			description: [
+				"完成供料、堆体和冷却四项检查后再启动。本包裂变实际燃烧量封顶 0.2 mB/t；界面设置、组件数量和外部电脑都不能绕过实际燃烧限制。",
+				"以刚好可持续的低设定起步，连续检查温度、损伤、冷却库存、蒸汽排出和废料空间。出现任何持续恶化趋势先停堆，再查上游。",
+				"把本次启动的燃烧率、供水、蒸汽、废料与储能记录下来，给之后扩容和排错保留对照。"
+			],
+			dependencies: [
+				"0DF7AEC8AE45C1AF",
+				"2CD20CE37A6366EC",
+				"4F097CA4AA86216F",
+				"1A1D3CD842C9FB04",
+				"7A55CC71442CC854",
+				"7064726A8D7CA072"
+			],
+			icon: "mekanismgenerators:fission_reactor_casing",
+			id: "6481C227C166CC13",
+			tasks: [
+				{
+					id: "6EC938892924885E",
+					type: "item",
+					item: "mekanismgenerators:fission_reactor_casing",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "2A9FB5C46F17E68F",
+					title: "已建立受控裂变燃料链并验证堆体",
+					type: "checkmark"
+				}
+			],
+			title: "EV | 受控裂变投运",
+			x: 12.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"用反应堆逻辑适配器/红石控制建立停堆手段，并实测触发后是否确实停止燃烧。电脑控制也必须包含温度、损伤、冷却和废料异常判断。",
+				"监测重点是实际库存与趋势：冷却输入减少、蒸汽回压、废料快满都比能量缓冲还没空更早暴露风险。限制为 0.2 mB/t 不是移除了 MEK 熔毁与辐射机制。",
+				"先验证人工停堆，再接自动控制；不要在缺少冷却保护时把反应堆设为无人值守。"
+			],
+			dependencies: [
+				"6481C227C166CC13"
+			],
+			icon: "mekanismgenerators:fission_reactor_logic_adapter",
+			id: "3FC5AA836D3D16C8",
+			tasks: [
+				{
+					id: "2B41917EC71B082C",
+					title: "已验证人工及自动停堆路径",
+					type: "checkmark"
+				}
+			],
+			title: "运行控制：设定值不是安全保证",
+			x: 16.0d,
+			y: -4.0d
+		},
+		{
+			description: [
+				"停堆先切断反应，不要同时拆掉冷却循环。继续观察温度和库存，确认风险消退后再维护管道或结构。",
+				"放射性物质仍在管道、机器或废料桶内时，拆除不一定安全；不要依赖普通搬运或随手打碎来清空它们。以 MEK 的辐射提示和容器说明为准。",
+				"断电/重载后先核查结构、燃料、冷却、输出和废料空间，再允许重新启动，防止控制信号恢复时直接满负荷运行。"
+			],
+			dependencies: [
+				"6481C227C166CC13"
+			],
+			icon: "mekanism:radioactive_waste_barrel",
+			id: "5AB57A97015277C6",
+			tasks: [
+				{
+					id: "7E01F84A84704964",
+					type: "item",
+					item: "mekanism:radioactive_waste_barrel",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "停堆与重启：留住冷却和废料",
+			x: 16.0d,
+			y: 4.0d
+		},
+		{
+			description: [
+				"裂变废料经加压管道进入太阳能中子活化器转化为钋，再用加压反应室的相应配方制作钋粒。钋链需要稳定的照明/工作条件和副产物出口。",
+				"IV 是本章的废料工程里程碑；不要把 IV 进度误读成拆掉核废料便无辐射。保留桶、管道和应急空间，逐项核对放射性库存。",
+				"钋粒既服务后续聚变框架，也服务 SPS 与装备；要给各消费者分配供料，不能只看到一粒就关掉回收链。"
+			],
+			dependencies: [
+				"3FC5AA836D3D16C8",
+				"5AB57A97015277C6",
+				"52D952ADBEB67454"
+			],
+			icon: "mekanism:pellet_polonium",
+			id: "72CB47132FFBD5B6",
+			tasks: [
+				{
+					id: "0E6AA03A70A70E28",
+					type: "item",
+					item: "mekanism:pellet_polonium",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "IV | 核废料与钋闭环",
+			x: 20.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"反应堆出口 → 放射性废料缓冲 → 活化器 → 钋处理。单独规划废料与钋管道，避免模式错误或某个满库存容器把整线堵住。",
+				"在启动前记录可用容量和正常废料增长率，据此设置停堆预警；普通桶/普通流体管不能代替 MEK 放射性气体处理设施。",
+				"太阳能中子活化器依赖有效日照；昼夜、遮挡和工作条件变化要纳入缓冲设计。不要把临时晴天产量当作全天产量。"
+			],
+			dependencies: [
+				"72CB47132FFBD5B6"
+			],
+			icon: "mekanism:solar_neutron_activator",
+			id: "2DB50DB3E009550C",
+			tasks: [
+				{
+					id: "578A2420FA003427",
+					type: "item",
+					item: "mekanism:solar_neutron_activator",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "581D00AE9416B301",
+					title: "废料满载前能触发停堆，且已检查活化器工作条件",
+					type: "checkmark"
+				}
+			],
+			title: "废料物流：溢出之前就报警",
+			x: 24.0d,
+			y: -4.0d
+		},
+		{
+			description: [
+				"在 JEI 打开钋粒配方，备齐加压反应室要求的物品、流体和气体；钋不是把废料直接塞进物品槽就能获得的。",
+				"气体输出与物品输出分别配置。副产气体无去向时，主产物也可能停产；先清楚区分钋、钋粒与用过的核废料。",
+				"用一批物料验证后，再让上游持续供料。把库存目标定为可支撑后续制造的数量，并保留废料处理能力。"
+			],
+			dependencies: [
+				"72CB47132FFBD5B6"
+			],
+			icon: "mekanism:pressurized_reaction_chamber",
+			id: "4473EF56A109CFF2",
+			tasks: [
+				{
+					id: "0D61A8E195EC9968",
+					type: "item",
+					item: "mekanism:pressurized_reaction_chamber",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "499C767C3E7430D3",
+					title: "已验证钋粒的一批输入、产物和副产物去向",
+					type: "checkmark"
+				}
+			],
+			title: "钋粒：反应室的副产物也要接",
+			x: 24.0d,
+			y: 4.0d
+		},
+		{
+			description: [
+				"经典 MEK 路线：电动泵装过滤升级得到重水，重水进入电解分离器，得到氘与氧气。分别配置流体输入和两种气体输出。",
+				"过滤升级改变泵的产物；不要把普通水直接当重水使用。氧气即使不是当前目标，也要有缓冲或正确处理出口。",
+				"记录持续氘产量，并给聚变点火前留足缓冲。天工工业泵/流体处理厂另见独立章节，它们不自动授予 GT 聚变阶段。"
+			],
+			dependencies: [
+				"2DB50DB3E009550C"
+			],
+			icon: "mekanism:electric_pump",
+			id: "25473851F3B99192",
+			tasks: [
+				{
+					id: "7167E8FAABA024A2",
+					type: "item",
+					item: "mekanism:electric_pump",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "75417DB0DFF1007C",
+					type: "item",
+					item: "mekanism:upgrade_filter",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "氘线：泵的过滤升级不是速度升级",
+			x: 28.0d,
+			y: -6.0d
+		},
+		{
+			description: [
+				"经典 MEK 路线：水 → 热力蒸发盐水 → 继续蒸发为液态锂 → 旋转冷凝器转为锂气 → 太阳能中子活化器制氚。",
+				"蒸发塔温度、供水、盐水出口与昼夜变化都会影响连续氚产量。不要看到塔内有锂就假定已获得氚气。",
+				"把氘与氚分开储存，独立观察两条线。先用整日运行数据估算供给能力，再决定聚变负载。"
+			],
+			dependencies: [
+				"4473EF56A109CFF2"
+			],
+			icon: "mekanism:thermal_evaporation_controller",
+			id: "1E3EBABF65EEC95E",
+			tasks: [
+				{
+					id: "51539923D8A2FC4B",
+					type: "item",
+					item: "mekanism:thermal_evaporation_controller",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "3C838C5BBAA5A505",
+					type: "item",
+					item: "mekanism:rotary_condensentrator",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "氚线：蒸发、锂与日照",
+			x: 28.0d,
+			y: 6.0d
+		},
+		{
+			description: [
+				"聚变控制器与端口要求 #gtceu:circuits/luv。配方接受所有同档标签电路；晶体处理器是 IV，不能替代 LuV 门槛。",
+				"按 MEK 结构说明组装聚变框架、玻璃、控制器、端口与激光聚焦矩阵；氘和氚分别送入，并准备激光点火与充好 D-T 的黑体辐射空腔。",
+				"本包实际聚变燃烧上限 2 mB/t，GUI/电脑注入率上限也是 2。点火所需的准备不等于可以直接跳到预混 D-T 持续供料。"
+			],
+			dependencies: [
+				"25473851F3B99192",
+				"1E3EBABF65EEC95E",
+				"7033A24F37F9B9B9",
+				"63286F918DBB933E"
+			],
+			icon: "mekanismgenerators:fusion_reactor_controller",
+			id: "0B354D235EA0441A",
+			tasks: [
+				{
+					id: "7A30BF63354E8998",
+					type: "item",
+					item: "mekanismgenerators:fusion_reactor_controller",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "LuV | 分开供氘氚的聚变堆",
+			x: 32.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"LuV 点火装填：GT 化学反应釜投入空黑体辐射空腔 1 + 液态氘 5 mB + 液态氚 5 mB，输出装有 10 mB D-T 的黑体辐射空腔。每批 2000 ticks、32768 EU/t，共 65,536,000 EU。",
+				"氘/氚先通过旋转冷凝器转成所需液体。装填后的空腔放入聚变控制器；这条昂贵的小份点火路线支持 LuV 分离供氘氚，不取代 ZPM 的大批量 D-T 混合。",
+				"先检查氘/氚供给、红石控制、激光聚焦矩阵和激光放大器的能量积累，再用已装填空腔点火。",
+				"按 MEK 当前版本的点火要求储能并放电。激光对准矩阵且结构已经形成时再触发；任务书不硬写可能随配置变化的点火能量。",
+				"失败时分别检查空腔是否充满、激光方向、储能是否真正释放、气体是否正确；不要连续盲目加大发电输入。"
+			],
+			dependencies: [
+				"0B354D235EA0441A"
+			],
+			icon: "mekanism:laser_amplifier",
+			id: "3EA890F73EE436B5",
+			tasks: [
+				{
+					id: "27B79EF94CFAA2B6",
+					type: "item",
+					item: "mekanism:laser_amplifier",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "16C4D80F9B0BAA40",
+					title: "点火准备和失败排查项已逐一确认",
+					type: "checkmark"
+				}
+			],
+			title: "点火：空腔、激光与供给顺序",
+			x: 36.0d,
+			y: -6.0d
+		},
+		{
+			description: [
+				"兼容层直接限制 MEK 的实际燃烧方法；直接灌入 D-T、修改保存值或用电脑请求更高注入率，都不能越过每 tick 2 mB 的上限。",
+				"查看库存下降和实际能量变化，区分输入管道吞吐、缓冲容量、注入设定与实际燃烧量。它们不是同一个指标。",
+				"没有完整蒸汽/涡轮及全厂用电计量前，不把 2 mB/t 换算为已经验收的净 FE/t。"
+			],
+			dependencies: [
+				"0B354D235EA0441A"
+			],
+			icon: "mekanismgenerators:fusion_reactor_port",
+			id: "67744518EB6A45A0",
+			tasks: [
+				{
+					id: "07AF943A3930B04D",
+					title: "已区分燃料缓冲、注入设置与实际燃烧率",
+					type: "checkmark"
+				}
+			],
+			title: "限流：供料方式不能绕过堆芯",
+			x: 36.0d,
+			y: -2.0d
+		},
+		{
+			description: [
+				"聚变可直接热电发电，也可接入水冷蒸汽路线。选择水冷时，独立计算进水、产汽、蒸汽管道、涡轮与回水能力。",
+				"热电效率 generators.fusion_reactor.thermocoupleEfficiency 已下调为 0.01；水冷、涡轮和发电辅助系统仍要按完整负载计量，不能把热量显示当净电量。",
+				"一次只改变一项：先稳态燃烧，再接冷却水，再接涡轮负载；每一步记录燃料与能量库存，防止同时调整后失去对照。"
+			],
+			dependencies: [
+				"0B354D235EA0441A"
+			],
+			icon: "mekanismgenerators:turbine_casing",
+			id: "431686D8EA13596E",
+			tasks: [
+				{
+					id: "46AE06B9A1F0558C",
+					type: "item",
+					item: "mekanismgenerators:turbine_casing",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "5753386EA8C7E5DC",
+					title: "已选定并核对自己的聚变散热/发电路线",
+					type: "checkmark"
+				}
+			],
+			title: "水冷聚变：把蒸汽系统单独验收",
+			x: 36.0d,
+			y: 2.0d
+		},
+		{
+			description: [
+				"记录同一时间窗口内氘、氚各自的生产量与消耗量，特别检查夜间氚线。短时间靠大罐子点火成功，不能证明长期稳定。",
+				"按电解、蒸发、活化、泵和气体转换的耗电统计供料成本。辅助机器消耗的是全厂成本，不能只看反应堆输出口。",
+				"若任一库存持续下降，先修上游吞吐，再增加堆负载；不用额外储罐掩盖长期物料赤字。"
+			],
+			dependencies: [
+				"0B354D235EA0441A"
+			],
+			icon: "mekanism:basic_chemical_tank",
+			id: "680A8D95AEE8668E",
+			tasks: [
+				{
+					id: "13D5168160BE82E5",
+					title: "已记录氘氚两条线的生产/消耗与辅助用电",
+					type: "checkmark"
+				}
+			],
+			title: "燃料预算：氘氚必须同时可持续",
+			x: 36.0d,
+			y: 6.0d
+		},
+		{
+			description: [
+				"让相同负载运行足够覆盖日照变化的时间；记录燃料库存、产汽/回水、温度以及电池起止储量。",
+				"单次点火后能运转几分钟不是验收。停堆、断料恢复和重新点火的资源也应提前保留。",
+				"只有物料与能量趋势稳定，才进入下一阶段预混 D-T 的制造优化。"
+			],
+			dependencies: [
+				"3EA890F73EE436B5",
+				"67744518EB6A45A0",
+				"431686D8EA13596E",
+				"680A8D95AEE8668E"
+			],
+			icon: "mekanism:energy_tablet",
+			id: "1CE90D1954129642",
+			tasks: [
+				{
+					id: "6E8F02F9DF1E16CD",
+					title: "相同负载下的物料与能量趋势已记录",
+					type: "checkmark"
+				}
+			],
+			title: "稳态验收：跨过一次日夜变化",
+			x: 40.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"ZPM 才开放持续预混 D-T 路线：GT 化学反应釜混合液态氘和液态氚，再用 MEK 旋转冷凝器转成 D-T 气体。",
+				"直接 D-T 供料是物流与制造路线升级，仍受实际 2 mB/t 燃烧限制；不是新一档无限聚变发电率。",
+				"需要 ZPM 阶段设备和 #gtceu:circuits/zpm 进度。液态与气态要逐段标记，避免把两套流体/气体管道混为一谈。"
+			],
+			dependencies: [
+				"1CE90D1954129642",
+				"370FC1CDF5F9A9CC"
+			],
+			icon: "mekanismgenerators:fusion_fuel_bucket",
+			id: "3ECE720573541AE2",
+			tasks: [
+				{
+					id: "758C4EE660B52EC0",
+					type: "item",
+					item: "mekanismgenerators:fusion_fuel_bucket",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "ZPM | 预混 D-T 工程",
+			x: 44.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"GT 化反每批：1000 mB 氘 + 1000 mB 氚 → 2000 mB D-T；1000 ticks，131072 EU/t，共 131,072,000 EU。保留自动生成的大型化反配方。",
+				"确保设备电压、供电安培与输入流体正确；高容量电池不代表电缆或输入仓能提供该功率。",
+				"把这段混合能耗纳入净收益，不把复杂度减少解释成燃料免费。先验证一批产物，再放大并行。"
+			],
+			dependencies: [
+				"3ECE720573541AE2"
+			],
+			icon: "gtceu:zpm_chemical_reactor",
+			id: "326697980E40ABB0",
+			tasks: [
+				{
+					id: "5F8F12F99F798D88",
+					title: "已核对 D-T 一批配方及所需电压/能耗",
+					type: "checkmark"
+				}
+			],
+			title: "D-T 批次：131072 EU/t 的成本",
+			x: 48.0d,
+			y: -4.0d
+		},
+		{
+			description: [
+				"GT 化反输出流体 D-T；聚变堆接收 MEK D-T 气体。旋转冷凝器应切到流体转气体方向，并分别设置输入、气体输出和自动输出。",
+				"原生低成本混合路线已移除，不能继续用旧教程中的混合器捷径。JEI 有桶图标并不代表桶本身能直接用于所有气体接口。",
+				"空缓存、错方向和输出面不匹配要分别排查；直接供料也不改变聚变实际燃烧限制。"
+			],
+			dependencies: [
+				"3ECE720573541AE2"
+			],
+			icon: "mekanism:rotary_condensentrator",
+			id: "64C74E8B6DA3DC9F",
+			tasks: [
+				{
+					id: "712DE34B0AC53244",
+					title: "液态 D-T 已通过正确方向转换成气态供料",
+					type: "checkmark"
+				}
+			],
+			title: "D-T 相态：液体进，气体出",
+			x: 48.0d,
+			y: 4.0d
+		},
+		{
+			description: [
+				"SPS 机壳与超级充能线圈走 GT 组装机 UV 阶段配方，电路使用 #gtceu:circuits/uv。湿件处理器只是 LuV，湿件处理器主机是 UHV，都不能用名称猜 UV。",
+				"按 MEK SPS 结构说明布置机壳、端口与超级充能线圈；激光聚焦矩阵属于聚变点火结构。制造时保留配方原有钋、钚、HDPE、激光等材料要求。",
+				"SPS 是高耗电的反物质生产设施；先完成电站净输出测量，留出持续可供电力，再规划产量。"
+			],
+			dependencies: [
+				"326697980E40ABB0",
+				"64C74E8B6DA3DC9F",
+				"3CDA855A045A9F4D",
+				"64754396DDF4DDF6"
+			],
+			icon: "mekanism:sps_casing",
+			id: "4B1086FAF25E865A",
+			tasks: [
+				{
+					id: "3BFC59006E9D6DBD",
+					type: "item",
+					item: "mekanism:sps_casing",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				}
+			],
+			title: "UV | SPS 与反物质",
+			x: 52.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"确认 SPS 结构和线圈位置正确，再核查端口能否真实接收电力、传输网络上限与能量缓冲。线连上了，不代表功率足够。",
+				"GT EU 与 FE/MEK J 换算依服务器配置；比较时统一单位，记录每段转换前后读数。不要用单台机器的名义电压直接代替全厂 FE/t。",
+				"SPS 不应抢走泵、冷却和核废料处理的保底电力。先保辅助系统，再把剩余净功率交给反物质线。"
+			],
+			dependencies: [
+				"4B1086FAF25E865A"
+			],
+			icon: "mekanism:supercharged_coil",
+			id: "28088EF93D73560B",
+			tasks: [
+				{
+					id: "6AED22C9C2A4CC9F",
+					type: "item",
+					item: "mekanism:supercharged_coil",
+					count: 1,
+					consume_items: false,
+					match_nbt: false,
+					only_from_crafting: false
+				},
+				{
+					id: "21D2C0E1D67CD06F",
+					title: "SPS 实收功率与辅助系统保底供电已核查",
+					type: "checkmark"
+				}
+			],
+			title: "SPS 供电：看实收功率与缓冲",
+			x: 56.0d,
+			y: -4.0d
+		},
+		{
+			description: [
+				"SPS 消耗的是钋气体；钋粒是材料路线的物品。分别查看 JEI 的 SPS 转换与反物质粒子制作，按实际资源类型接管。",
+				"把反物质产量与钋消耗、SPS 耗电放在同一个采样窗口统计；先有稳定产物，再分配给装备、天工组件等消费者。",
+				"本任务用操作勾选记录验收，不要求把稀有反物质交给任务书。物品目标也均不消耗材料。"
+			],
+			dependencies: [
+				"4B1086FAF25E865A"
+			],
+			icon: "mekanism:pellet_antimatter",
+			id: "7067775E56F9E73A",
+			tasks: [
+				{
+					id: "58C2BE9FE2FDEBFF",
+					title: "已核对钋气体供给和反物质去向",
+					type: "checkmark"
+				}
+			],
+			title: "SPS 供料：钋气体与物品别混淆",
+			x: 56.0d,
+			y: 4.0d
+		},
+		{
+			description: [
+				"固定燃烧率与基地负载，记录电池期初/期末储能及采样 ticks。计入供料、化反、泵、电解、活化、激光补能与各类转换损耗。",
+				"净 FE/t =（期末储能 - 期初储能 + 窗口内对外供电）÷ ticks；若直接读各端口，还应扣除所有外来补能，避免把外部电池补电当作核电收益。",
+				"区分实测与估算。燃料限流不决定全部发电收益，完整水冷聚变/涡轮的长周期净收益仍需按本站配置测量。"
+			],
+			dependencies: [
+				"28088EF93D73560B",
+				"7067775E56F9E73A"
+			],
+			icon: "mekanism:induction_port",
+			id: "07521DFA6DBC5597",
+			tasks: [
+				{
+					id: "22881807E1364C79",
+					title: "已有同窗口的净功率、燃料和废料记录",
+					type: "checkmark"
+				}
+			],
+			title: "全厂验收：净电量才算收益",
+			x: 60.0d,
+			y: 0.0d
+		},
+		{
+			description: [
+				"离心机不启动：查 UF6 流体标签、1/2 号电路、机器电压、输出空间与可用能量；先辨别产物是 GT 富集 UF6 还是 MEK 裂变碎片。",
+				"MEK 机器不出料：流体、气体、物品的侧面配置相互独立；确认自动输出、工作方向和副产物库存。不要用输入槽里有东西来判断全部条件满足。",
+				"核电站运行不稳：按燃料 → 冷却 → 蒸汽 → 回水 → 废料 → 配电依次检查。仅修改客户端界面或本地 defaultconfigs 不会改变服务器正在使用的平衡值。",
+				"出现损伤/辐射风险先停堆，保留冷却与废料处理，定位后再恢复；不要为完成任务冒险拆除含放射性物质的容器。"
+			],
+			dependencies: [
+				"07521DFA6DBC5597"
+			],
+			icon: "minecraft:book",
+			id: "10485AC38C934E04",
+			tasks: [
+				{
+					id: "75BC6F9A598743CA",
+					title: "已为本站保留检查与停堆记录",
+					type: "checkmark"
+				}
+			],
+			title: "核工业排错清单",
+			x: 64.0d,
+			y: 0.0d
+		}
+	],
+	title: "&6&lGT 核工业&r：燃料、反应堆与净供电"
+}

@@ -1,0 +1,7 @@
+#Reuse one position/biome query per GT sunlight check; preserve native JAVD behavior.
+gtSunlightQuery = false
+#Dimensions using the optimized query. An empty list matches none; * matches every dimension.
+sunlightDimensions = ["minecraft:overworld"]
+#Dimensions always using native GT logic, even if sunlightDimensions contains *.
+sunlightExcludedDimensions = []
+

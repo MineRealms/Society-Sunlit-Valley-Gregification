@@ -1,0 +1,1987 @@
+{
+  "schema": 1,
+  "state": "candidate-not-runtime-validated",
+  "requiresGTEnableResearch": true,
+  "targets": [
+    {
+      "target": "zmod:transcendence_key",
+      "core": "society:assembly_core_zmod_transcendence_key",
+      "tier": "iv",
+      "recipeID": "society:industry/zmod_transcendence_key",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_transcendence_key",
+        "4x gtceu:iv_robot_arm",
+        "4x gtceu:iv_field_generator",
+        "4x gtceu:iv_electric_motor",
+        "2x gtceu:iv_sensor",
+        "4x gtceu:iv_emitter",
+        "8x #gtceu:circuits/iv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          576
+        ],
+        [
+          "gtceu:lubricant",
+          1000
+        ]
+      ],
+      "duration": 1200,
+      "EUt": 7680,
+      "research": {
+        "id": "sunlit_industry_zmod_transcendence_key_v1",
+        "sample": "thaumcraft:silverwood_staff_core",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 2400,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:transcendence_key",
+          "path": "kubejs/data/zmod/recipes/transcendence_key.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TRANSCENDENCE_KEY",
+          "originalResearch": "zmod:TRANSCENDENCE_KEY",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:taiyi_matrix",
+      "core": "society:assembly_core_zmod_taiyi_matrix",
+      "tier": "luv",
+      "recipeID": "society:industry/zmod_taiyi_matrix",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_taiyi_matrix",
+        "4x gtceu:luv_robot_arm",
+        "4x gtceu:luv_field_generator",
+        "4x gtceu:luv_electric_motor",
+        "2x gtceu:luv_sensor",
+        "4x gtceu:luv_emitter",
+        "8x #gtceu:circuits/luv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          1152
+        ],
+        [
+          "gtceu:lubricant",
+          2000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          1152
+        ]
+      ],
+      "duration": 1600,
+      "EUt": 30720,
+      "research": {
+        "id": "sunlit_industry_zmod_taiyi_matrix_v1",
+        "sample": "thaumcraft:runic_matrix",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 3200,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:taiyi_matrix",
+          "path": "kubejs/data/zmod/recipes/taiyi_matrix.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TAIYI_MATRIX",
+          "originalResearch": "zmod:TAIYI_MATRIX",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:transcendence_core",
+      "core": "society:assembly_core_zmod_transcendence_core",
+      "tier": "uv",
+      "recipeID": "society:industry/zmod_transcendence_core",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_transcendence_core",
+        "4x gtceu:uv_robot_arm",
+        "4x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_motor",
+        "2x gtceu:uv_sensor",
+        "4x gtceu:uv_emitter",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_zmod_transcendence_core_v1",
+        "sample": "zmod:yuheng_furnace_core",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:transcendence_core",
+          "path": "kubejs/data/zmod/recipes/transcendence_core.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:YUHENG_SUPREME",
+          "originalResearch": "zmod:YUHENG_SUPREME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:precision_assembler_controller",
+      "core": "society:assembly_core_zmod_precision_assembler_controller",
+      "tier": "iv",
+      "recipeID": "society:industry/zmod_precision_assembler_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_precision_assembler_controller",
+        "4x gtceu:iv_robot_arm",
+        "2x gtceu:iv_field_generator",
+        "4x gtceu:iv_electric_motor",
+        "2x gtceu:iv_sensor",
+        "8x #gtceu:circuits/iv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          576
+        ],
+        [
+          "gtceu:lubricant",
+          1000
+        ]
+      ],
+      "duration": 1200,
+      "EUt": 7680,
+      "research": {
+        "id": "sunlit_industry_zmod_precision_assembler_controller_v1",
+        "sample": "zmod:lattice_control_core",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 2400,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:precision_assembler_controller",
+          "path": "kubejs/data/zmod/recipes/precision_assembler_controller.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:PRECISION_ASSEMBLER",
+          "originalResearch": "zmod:PRECISION_ASSEMBLER",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:industrial_crusher_controller",
+      "core": "society:assembly_core_zmod_industrial_crusher_controller",
+      "tier": "iv",
+      "recipeID": "society:industry/zmod_industrial_crusher_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_industrial_crusher_controller",
+        "4x gtceu:iv_robot_arm",
+        "2x gtceu:iv_field_generator",
+        "4x gtceu:iv_electric_motor",
+        "2x gtceu:iv_sensor",
+        "8x #gtceu:circuits/iv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          576
+        ],
+        [
+          "gtceu:lubricant",
+          1000
+        ]
+      ],
+      "duration": 1200,
+      "EUt": 7680,
+      "research": {
+        "id": "sunlit_industry_zmod_industrial_crusher_controller_v1",
+        "sample": "zmod:crusher_wear_lining",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 2400,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:industrial_crusher_controller",
+          "path": "kubejs/data/zmod/recipes/industrial_crusher_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:INDUSTRIAL_CRUSHER",
+          "originalResearch": "zmod:INDUSTRIAL_CRUSHER",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:industrial_pump_controller",
+      "core": "society:assembly_core_zmod_industrial_pump_controller",
+      "tier": "luv",
+      "recipeID": "society:industry/zmod_industrial_pump_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_industrial_pump_controller",
+        "4x gtceu:luv_robot_arm",
+        "2x gtceu:luv_field_generator",
+        "4x gtceu:luv_electric_pump",
+        "2x gtceu:luv_sensor",
+        "8x #gtceu:circuits/luv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          1152
+        ],
+        [
+          "gtceu:lubricant",
+          2000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          1152
+        ]
+      ],
+      "duration": 1600,
+      "EUt": 30720,
+      "research": {
+        "id": "sunlit_industry_zmod_industrial_pump_controller_v1",
+        "sample": "zmod:pump_pressure_chamber",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 3200,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:industrial_pump_controller",
+          "path": "kubejs/data/zmod/recipes/industrial_pump_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:INDUSTRIAL_PUMP",
+          "originalResearch": "zmod:INDUSTRIAL_PUMP",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:fluid_processing_plant_controller",
+      "core": "society:assembly_core_zmod_fluid_processing_plant_controller",
+      "tier": "luv",
+      "recipeID": "society:industry/zmod_fluid_processing_plant_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_fluid_processing_plant_controller",
+        "4x gtceu:luv_robot_arm",
+        "2x gtceu:luv_field_generator",
+        "4x gtceu:luv_electric_pump",
+        "2x gtceu:luv_sensor",
+        "8x #gtceu:circuits/luv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          1152
+        ],
+        [
+          "gtceu:lubricant",
+          2000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          1152
+        ]
+      ],
+      "duration": 1600,
+      "EUt": 30720,
+      "research": {
+        "id": "sunlit_industry_zmod_fluid_processing_plant_controller_v1",
+        "sample": "zmod:plant_reaction_chamber",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 3200,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:fluid_processing_plant_controller",
+          "path": "kubejs/data/zmod/recipes/fluid_processing_plant_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:FLUID_PROCESSING_PLANT",
+          "originalResearch": "zmod:FLUID_PROCESSING_PLANT",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:tokamak_controller",
+      "core": "society:assembly_core_zmod_tokamak_controller",
+      "tier": "zpm",
+      "recipeID": "society:industry/zmod_tokamak_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_tokamak_controller",
+        "4x gtceu:zpm_robot_arm",
+        "4x gtceu:zpm_field_generator",
+        "4x gtceu:zpm_electric_motor",
+        "2x gtceu:zpm_sensor",
+        "4x gtceu:zpm_emitter",
+        "12x #gtceu:circuits/zpm",
+        "gtceu:zpm_fusion_reactor"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          2304
+        ],
+        [
+          "gtceu:lubricant",
+          4000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          2304
+        ]
+      ],
+      "duration": 2000,
+      "EUt": 122880,
+      "research": {
+        "id": "sunlit_industry_zmod_tokamak_controller_v1",
+        "sample": "zmod:magnetic_confinement_unit",
+        "type": "station",
+        "EUt": 122880,
+        "CWUt": 16,
+        "totalCWU": 64000,
+        "duration": 3200,
+        "carrier": "data_orb"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tokamak_controller",
+          "path": "kubejs/data/zmod/recipes/tokamak_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:TOKAMAK",
+          "originalResearch": "zmod:TOKAMAK",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:tokamak_magnetic_coil",
+      "core": "society:assembly_core_zmod_tokamak_magnetic_coil",
+      "tier": "zpm",
+      "recipeID": "society:industry/zmod_tokamak_magnetic_coil",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_tokamak_magnetic_coil",
+        "1x gtceu:zpm_field_generator",
+        "2x gtceu:zpm_electric_motor",
+        "2x #gtceu:circuits/zpm"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          2304
+        ],
+        [
+          "gtceu:lubricant",
+          4000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          2304
+        ]
+      ],
+      "duration": 2000,
+      "EUt": 122880,
+      "research": {
+        "id": "sunlit_industry_zmod_tokamak_magnetic_coil_v1",
+        "sample": "zmod:field_generator_t2",
+        "type": "station",
+        "EUt": 122880,
+        "CWUt": 16,
+        "totalCWU": 64000,
+        "duration": 3200,
+        "carrier": "data_orb"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tokamak_magnetic_coil",
+          "path": "kubejs/data/zmod/recipes/tokamak_magnetic_coil.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:TOKAMAK",
+          "originalResearch": "zmod:TOKAMAK",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 4
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:tianxuan_controller",
+      "core": "society:assembly_core_zmod_tianxuan_controller",
+      "tier": "zpm",
+      "recipeID": "society:industry/zmod_tianxuan_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_tianxuan_controller",
+        "4x gtceu:zpm_robot_arm",
+        "2x gtceu:zpm_field_generator",
+        "4x gtceu:zpm_electric_pump",
+        "2x gtceu:zpm_sensor",
+        "12x #gtceu:circuits/zpm"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          2304
+        ],
+        [
+          "gtceu:lubricant",
+          4000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          2304
+        ]
+      ],
+      "duration": 2000,
+      "EUt": 122880,
+      "research": {
+        "id": "sunlit_industry_zmod_tianxuan_controller_v1",
+        "sample": "zmod:tianxuan_chamber",
+        "type": "station",
+        "EUt": 122880,
+        "CWUt": 16,
+        "totalCWU": 64000,
+        "duration": 3200,
+        "carrier": "data_orb"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tianxuan_controller",
+          "path": "kubejs/data/zmod/recipes/tianxuan_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:TIANXUAN_REFINERY",
+          "originalResearch": "zmod:TIANXUAN_REFINERY",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:plasma_refinery_controller",
+      "core": "society:assembly_core_zmod_plasma_refinery_controller",
+      "tier": "zpm",
+      "recipeID": "society:industry/zmod_plasma_refinery_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_plasma_refinery_controller",
+        "4x gtceu:zpm_robot_arm",
+        "2x gtceu:zpm_field_generator",
+        "4x gtceu:zpm_electric_motor",
+        "2x gtceu:zpm_sensor",
+        "12x #gtceu:circuits/zpm"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          2304
+        ],
+        [
+          "gtceu:lubricant",
+          4000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          2304
+        ]
+      ],
+      "duration": 2000,
+      "EUt": 122880,
+      "research": {
+        "id": "sunlit_industry_zmod_plasma_refinery_controller_v1",
+        "sample": "zmod:refinery_heat_lining",
+        "type": "station",
+        "EUt": 122880,
+        "CWUt": 16,
+        "totalCWU": 64000,
+        "duration": 3200,
+        "carrier": "data_orb"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:plasma_refinery_controller",
+          "path": "kubejs/data/zmod/recipes/plasma_refinery_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:PLASMA_REFINERY",
+          "originalResearch": "zmod:PLASMA_REFINERY",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:warped_polymerizer_controller",
+      "core": "society:assembly_core_zmod_warped_polymerizer_controller",
+      "tier": "zpm",
+      "recipeID": "society:industry/zmod_warped_polymerizer_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_warped_polymerizer_controller",
+        "4x gtceu:zpm_robot_arm",
+        "4x gtceu:zpm_field_generator",
+        "4x gtceu:zpm_electric_motor",
+        "2x gtceu:zpm_sensor",
+        "4x gtceu:zpm_emitter",
+        "12x #gtceu:circuits/zpm"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          2304
+        ],
+        [
+          "gtceu:lubricant",
+          4000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          2304
+        ]
+      ],
+      "duration": 2000,
+      "EUt": 122880,
+      "research": {
+        "id": "sunlit_industry_zmod_warped_polymerizer_controller_v1",
+        "sample": "zmod:polymerization_chamber",
+        "type": "station",
+        "EUt": 122880,
+        "CWUt": 16,
+        "totalCWU": 64000,
+        "duration": 3200,
+        "carrier": "data_orb"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tier_three/warped_polymerizer_controller",
+          "path": "kubejs/data/zmod/recipes/tier_three/warped_polymerizer_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:SAINTLY_ASCENSION",
+          "originalResearch": "zmod:SAINTLY_ASCENSION",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:yaoguang_controller",
+      "core": "society:assembly_core_zmod_yaoguang_controller",
+      "tier": "zpm",
+      "recipeID": "society:industry/zmod_yaoguang_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_yaoguang_controller",
+        "4x gtceu:zpm_robot_arm",
+        "4x gtceu:zpm_field_generator",
+        "4x gtceu:zpm_electric_motor",
+        "2x gtceu:zpm_sensor",
+        "4x gtceu:zpm_emitter",
+        "12x #gtceu:circuits/zpm"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          2304
+        ],
+        [
+          "gtceu:lubricant",
+          4000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          2304
+        ]
+      ],
+      "duration": 2000,
+      "EUt": 122880,
+      "research": {
+        "id": "sunlit_industry_zmod_yaoguang_controller_v1",
+        "sample": "mekanism:ultimate_energy_cube",
+        "type": "station",
+        "EUt": 122880,
+        "CWUt": 16,
+        "totalCWU": 64000,
+        "duration": 3200,
+        "carrier": "data_orb"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:yaoguang_controller",
+          "path": "kubejs/data/zmod/recipes/yaoguang_controller.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:YAOGUANG",
+          "originalResearch": "zmod:YAOGUANG",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:integrated_ore_processing_plant_controller",
+      "core": "society:assembly_core_zmod_integrated_ore_processing_plant_controller",
+      "tier": "uv",
+      "recipeID": "society:industry/zmod_integrated_ore_processing_plant_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_integrated_ore_processing_plant_controller",
+        "4x gtceu:uv_robot_arm",
+        "2x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_pump",
+        "2x gtceu:uv_sensor",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_zmod_integrated_ore_processing_plant_controller_v1",
+        "sample": "zmod:ore_processing_chamber",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:integrated_ore_processing_plant_controller",
+          "path": "kubejs/data/zmod/recipes/integrated_ore_processing_plant_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:INTEGRATED_ORE_PROCESSING_PLANT",
+          "originalResearch": "zmod:INTEGRATED_ORE_PROCESSING_PLANT",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:matter_reconstructor_controller",
+      "core": "society:assembly_core_zmod_matter_reconstructor_controller",
+      "tier": "uv",
+      "recipeID": "society:industry/zmod_matter_reconstructor_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_matter_reconstructor_controller",
+        "4x gtceu:uv_robot_arm",
+        "4x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_motor",
+        "2x gtceu:uv_sensor",
+        "4x gtceu:uv_emitter",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_zmod_matter_reconstructor_controller_v1",
+        "sample": "zmod:reconstruction_chamber",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tier_three/matter_reconstructor_controller",
+          "path": "kubejs/data/zmod/recipes/tier_three/matter_reconstructor_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:SAINTLY_ASCENSION",
+          "originalResearch": "zmod:SAINTLY_ASCENSION",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:tianshu_controller_t3",
+      "core": "society:assembly_core_zmod_tianshu_controller_t3",
+      "tier": "uv",
+      "recipeID": "society:industry/zmod_tianshu_controller_t3",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_tianshu_controller_t3",
+        "4x gtceu:uv_robot_arm",
+        "4x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_motor",
+        "2x gtceu:uv_sensor",
+        "4x gtceu:uv_emitter",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_zmod_tianshu_controller_t3_v1",
+        "sample": "zmod:tianshu_controller_t1",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tianshu_controller_t3",
+          "path": "kubejs/data/zmod/recipes/tianshu_controller_t3.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:TIANSHU_SUPREME",
+          "originalResearch": "zmod:TIANSHU_SUPREME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:yuheng_controller_t3",
+      "core": "society:assembly_core_zmod_yuheng_controller_t3",
+      "tier": "uv",
+      "recipeID": "society:industry/zmod_yuheng_controller_t3",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_yuheng_controller_t3",
+        "4x gtceu:uv_robot_arm",
+        "4x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_motor",
+        "2x gtceu:uv_sensor",
+        "4x gtceu:uv_emitter",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_zmod_yuheng_controller_t3_v1",
+        "sample": "zmod:yuheng_controller_t1",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:yuheng_controller_t3",
+          "path": "kubejs/data/zmod/recipes/yuheng_controller_t3.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:YUHENG_SUPREME",
+          "originalResearch": "zmod:YUHENG_SUPREME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:qiongli_controller_t3",
+      "core": "society:assembly_core_zmod_qiongli_controller_t3",
+      "tier": "uv",
+      "recipeID": "society:industry/zmod_qiongli_controller_t3",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_qiongli_controller_t3",
+        "4x gtceu:uv_robot_arm",
+        "4x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_motor",
+        "2x gtceu:uv_sensor",
+        "4x gtceu:uv_emitter",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_zmod_qiongli_controller_t3_v1",
+        "sample": "zmod:qiongli_controller_t1",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:qiongli_controller_t3",
+          "path": "kubejs/data/zmod/recipes/qiongli_controller_t3.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:QIONGLI_SUPREME",
+          "originalResearch": "zmod:QIONGLI_SUPREME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:singularity_controller",
+      "core": "society:assembly_core_zmod_singularity_controller",
+      "tier": "uv",
+      "recipeID": "society:industry/zmod_singularity_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_singularity_controller",
+        "4x gtceu:uv_robot_arm",
+        "4x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_motor",
+        "2x gtceu:uv_sensor",
+        "4x gtceu:uv_emitter",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_zmod_singularity_controller_v1",
+        "sample": "mekanism:sps_port",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:singularity_controller",
+          "path": "kubejs/data/zmod/recipes/singularity_controller.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:SINGULARITY_EXTRACTOR",
+          "originalResearch": "zmod:SINGULARITY_EXTRACTOR",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:void_pylon_beacon",
+      "core": "society:assembly_core_zmod_void_pylon_beacon",
+      "tier": "uv",
+      "recipeID": "society:industry/zmod_void_pylon_beacon",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_void_pylon_beacon",
+        "4x gtceu:uv_robot_arm",
+        "4x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_motor",
+        "2x gtceu:uv_sensor",
+        "4x gtceu:uv_emitter",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_zmod_void_pylon_beacon_v1",
+        "sample": "zmod:pylon_beacon",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:void_pylon_beacon",
+          "path": "kubejs/data/zmod/recipes/void_pylon_beacon.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:VOID_CRYSTAL_TOWER",
+          "originalResearch": "zmod:VOID_CRYSTAL_TOWER",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:tongxuan_me_input_port",
+      "core": "society:assembly_core_zmod_tongxuan_me_input_port",
+      "tier": "iv",
+      "recipeID": "society:industry/zmod_tongxuan_me_input_port",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_tongxuan_me_input_port",
+        "1x gtceu:iv_robot_arm",
+        "1x gtceu:iv_sensor",
+        "2x #gtceu:circuits/iv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          576
+        ],
+        [
+          "gtceu:lubricant",
+          1000
+        ]
+      ],
+      "duration": 1200,
+      "EUt": 7680,
+      "research": {
+        "id": "sunlit_industry_zmod_tongxuan_me_input_port_v1",
+        "sample": "ae2:interface",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 2400,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tongxuan_me_input_port",
+          "path": "kubejs/data/zmod/recipes/tongxuan_me_input_port.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TONGXUAN_ME",
+          "originalResearch": "zmod:TONGXUAN_ME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        },
+        {
+          "id": "zmod:tongxuan_me_input_port_batch",
+          "path": "kubejs/data/zmod/recipes/tongxuan_me_input_port_batch.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TONGXUAN_ME",
+          "originalResearch": "zmod:TONGXUAN_ME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 4
+        },
+        {
+          "id": "zmod:tongxuan_me_input_port_without_essentia",
+          "path": "kubejs/data/zmod/recipes/tongxuan_me_input_port_without_essentia.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TONGXUAN_ME",
+          "originalResearch": "zmod:TONGXUAN_ME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:tongxuan_me_output_port",
+      "core": "society:assembly_core_zmod_tongxuan_me_output_port",
+      "tier": "iv",
+      "recipeID": "society:industry/zmod_tongxuan_me_output_port",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_tongxuan_me_output_port",
+        "1x gtceu:iv_robot_arm",
+        "1x gtceu:iv_sensor",
+        "2x #gtceu:circuits/iv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          576
+        ],
+        [
+          "gtceu:lubricant",
+          1000
+        ]
+      ],
+      "duration": 1200,
+      "EUt": 7680,
+      "research": {
+        "id": "sunlit_industry_zmod_tongxuan_me_output_port_v1",
+        "sample": "ae2:interface",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 2400,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tongxuan_me_output_port",
+          "path": "kubejs/data/zmod/recipes/tongxuan_me_output_port.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TONGXUAN_ME",
+          "originalResearch": "zmod:TONGXUAN_ME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        },
+        {
+          "id": "zmod:tongxuan_me_output_port_batch",
+          "path": "kubejs/data/zmod/recipes/tongxuan_me_output_port_batch.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TONGXUAN_ME",
+          "originalResearch": "zmod:TONGXUAN_ME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 4
+        },
+        {
+          "id": "zmod:tongxuan_me_output_port_without_essentia",
+          "path": "kubejs/data/zmod/recipes/tongxuan_me_output_port_without_essentia.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TONGXUAN_ME",
+          "originalResearch": "zmod:TONGXUAN_ME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:tongxuan_pattern_provider",
+      "core": "society:assembly_core_zmod_tongxuan_pattern_provider",
+      "tier": "luv",
+      "recipeID": "society:industry/zmod_tongxuan_pattern_provider",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_tongxuan_pattern_provider",
+        "1x gtceu:luv_robot_arm",
+        "1x gtceu:luv_sensor",
+        "2x #gtceu:circuits/luv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          1152
+        ],
+        [
+          "gtceu:lubricant",
+          2000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          1152
+        ]
+      ],
+      "duration": 1600,
+      "EUt": 30720,
+      "research": {
+        "id": "sunlit_industry_zmod_tongxuan_pattern_provider_v1",
+        "sample": "ae2:pattern_provider",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 3200,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tongxuan_pattern_provider",
+          "path": "kubejs/data/zmod/recipes/tongxuan_pattern_provider.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TONGXUAN_ME",
+          "originalResearch": "zmod:TONGXUAN_ME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        },
+        {
+          "id": "zmod:tongxuan_pattern_provider_no_tc_energy",
+          "path": "kubejs/data/zmod/recipes/tongxuan_pattern_provider_no_tc_energy.json",
+          "type": "thaumcraft:infusion",
+          "research": "zmod:TONGXUAN_ME",
+          "originalResearch": "zmod:TONGXUAN_ME",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1,
+          "variant": "without-tc-energy"
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:tongxuan_wireless_connector",
+      "core": "society:assembly_core_zmod_tongxuan_wireless_connector",
+      "tier": "luv",
+      "recipeID": "society:industry/zmod_tongxuan_wireless_connector",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_tongxuan_wireless_connector",
+        "2x gtceu:luv_emitter",
+        "2x gtceu:luv_sensor",
+        "1x gtceu:luv_field_generator",
+        "4x #gtceu:circuits/luv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          1152
+        ],
+        [
+          "gtceu:lubricant",
+          2000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          1152
+        ]
+      ],
+      "duration": 1600,
+      "EUt": 30720,
+      "research": {
+        "id": "sunlit_industry_zmod_tongxuan_wireless_connector_v1",
+        "sample": "ae2:wireless_receiver",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 3200,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:tongxuan_wireless_connector",
+          "path": "kubejs/data/zmod/recipes/tongxuan_wireless_connector.json",
+          "type": "thaumcraft:arcane_shaped",
+          "research": "zmod:TONGXUAN",
+          "originalResearch": "zmod:TONGXUAN",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:precision_assembler_parallel_4x",
+      "core": "society:assembly_core_zmod_precision_assembler_parallel_4x",
+      "tier": "iv",
+      "recipeID": "society:industry/zmod_precision_assembler_parallel_4x",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_precision_assembler_parallel_4x",
+        "2x gtceu:iv_robot_arm",
+        "2x gtceu:iv_field_generator",
+        "4x #gtceu:circuits/iv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          576
+        ],
+        [
+          "gtceu:lubricant",
+          1000
+        ]
+      ],
+      "duration": 1200,
+      "EUt": 7680,
+      "research": {
+        "id": "sunlit_industry_zmod_precision_assembler_parallel_4x_v1",
+        "sample": "zmod:precision_assembler_parallel_2x",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 2400,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:precision_assembler_parallel_4x",
+          "path": "kubejs/data/zmod/recipes/precision_assembler_parallel_4x.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:PRECISION_ASSEMBLER",
+          "originalResearch": "zmod:PRECISION_ASSEMBLER",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "zmod:thread_hatch_2x",
+      "core": "society:assembly_core_zmod_thread_hatch_2x",
+      "tier": "luv",
+      "recipeID": "society:industry/zmod_thread_hatch_2x",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_zmod_thread_hatch_2x",
+        "2x gtceu:luv_robot_arm",
+        "2x gtceu:luv_field_generator",
+        "4x #gtceu:circuits/luv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          1152
+        ],
+        [
+          "gtceu:lubricant",
+          2000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          1152
+        ]
+      ],
+      "duration": 1600,
+      "EUt": 30720,
+      "research": {
+        "id": "sunlit_industry_zmod_thread_hatch_2x_v1",
+        "sample": "zmod:precision_assembler_parallel_4x",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 3200,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "zmod:thread_hatch_2x",
+          "path": "kubejs/data/zmod/recipes/thread_hatch_2x.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:FLUID_PROCESSING_PLANT",
+          "originalResearch": "zmod:FLUID_PROCESSING_PLANT",
+          "resourcesPreserved": {
+            "aspects": true,
+            "essentia_inputs": true,
+            "chemical_inputs": true,
+            "vis": true,
+            "instability": true
+          },
+          "coreCount": 1
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "mekanismgenerators:fusion_reactor_controller",
+      "core": "society:assembly_core_mekanismgenerators_fusion_reactor_controller",
+      "tier": "luv",
+      "recipeID": "society:industry/mekanismgenerators_fusion_reactor_controller",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_mekanismgenerators_fusion_reactor_controller",
+        "4x gtceu:luv_robot_arm",
+        "4x gtceu:luv_field_generator",
+        "4x gtceu:luv_electric_motor",
+        "2x gtceu:luv_sensor",
+        "4x gtceu:luv_emitter",
+        "8x #gtceu:circuits/luv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          1152
+        ],
+        [
+          "gtceu:lubricant",
+          2000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          1152
+        ]
+      ],
+      "duration": 1600,
+      "EUt": 30720,
+      "research": {
+        "id": "sunlit_industry_mekanismgenerators_fusion_reactor_controller_v1",
+        "sample": "mekanism:basic_chemical_tank",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 3200,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [
+        {
+          "id": "society:industry/assembly_core_mekanismgenerators_fusion_reactor_controller",
+          "path": "kubejs/data/society/recipes/industry/assembly_core_mekanismgenerators_fusion_reactor_controller.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:SAINTLY_ASCENSION",
+          "coreCount": 1,
+          "resourcesPreserved": {
+            "existing-material-costs": true
+          }
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "mekanism:sps_casing",
+      "core": "society:assembly_core_mekanism_sps_casing",
+      "tier": "uv",
+      "recipeID": "society:industry/mekanism_sps_casing",
+      "outputCount": 4,
+      "itemInputs": [
+        "society:assembly_core_mekanism_sps_casing",
+        "4x gtceu:uv_robot_arm",
+        "4x gtceu:uv_field_generator",
+        "4x gtceu:uv_electric_motor",
+        "2x gtceu:uv_sensor",
+        "4x gtceu:uv_emitter",
+        "16x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_mekanism_sps_casing_v1",
+        "sample": "mekanism:pellet_polonium",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "society:industry/assembly_core_mekanism_sps_casing",
+          "path": "kubejs/data/society/recipes/industry/assembly_core_mekanism_sps_casing.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:SAINTLY_ASCENSION",
+          "coreCount": 1,
+          "resourcesPreserved": {
+            "existing-material-costs": true
+          }
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "mekanism:supercharged_coil",
+      "core": "society:assembly_core_mekanism_supercharged_coil",
+      "tier": "uv",
+      "recipeID": "society:industry/mekanism_supercharged_coil",
+      "outputCount": 1,
+      "itemInputs": [
+        "society:assembly_core_mekanism_supercharged_coil",
+        "1x gtceu:uv_field_generator",
+        "2x gtceu:uv_electric_motor",
+        "4x #gtceu:circuits/uv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          4608
+        ],
+        [
+          "gtceu:lubricant",
+          8000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          4608
+        ]
+      ],
+      "duration": 2400,
+      "EUt": 491520,
+      "research": {
+        "id": "sunlit_industry_mekanism_supercharged_coil_v1",
+        "sample": "mekanism:laser",
+        "type": "station",
+        "EUt": 491520,
+        "CWUt": 64,
+        "totalCWU": 256000,
+        "duration": 3200,
+        "carrier": "data_module"
+      },
+      "coreRecipes": [
+        {
+          "id": "society:industry/assembly_core_mekanism_supercharged_coil",
+          "path": "kubejs/data/society/recipes/industry/assembly_core_mekanism_supercharged_coil.json",
+          "type": "zmod:precision_assembling",
+          "research": "zmod:SAINTLY_ASCENSION",
+          "coreCount": 1,
+          "resourcesPreserved": {
+            "existing-material-costs": true
+          }
+        }
+      ],
+      "formationGate": false
+    },
+    {
+      "target": "society:wanxiang_formation_core",
+      "core": null,
+      "tier": "luv",
+      "recipeID": "society:industry/society_wanxiang_formation_core",
+      "outputCount": 1,
+      "itemInputs": [
+        "forbidden_magic:wrath_cage",
+        "zmod:transcendence_key",
+        "4x gtceu:luv_robot_arm",
+        "4x gtceu:luv_field_generator",
+        "4x gtceu:luv_electric_motor",
+        "2x gtceu:luv_sensor",
+        "4x gtceu:luv_emitter",
+        "8x #gtceu:circuits/luv"
+      ],
+      "fluidInputs": [
+        [
+          "gtceu:soldering_alloy",
+          1152
+        ],
+        [
+          "gtceu:lubricant",
+          2000
+        ],
+        [
+          "gtceu:polybenzimidazole",
+          1152
+        ]
+      ],
+      "duration": 1600,
+      "EUt": 30720,
+      "research": {
+        "id": "sunlit_industry_society_wanxiang_formation_core_v1",
+        "sample": "forbidden_magic:wrath_cage",
+        "type": "scanner",
+        "EUt": 7680,
+        "CWUt": 0,
+        "totalCWU": 0,
+        "duration": 3200,
+        "carrier": "data_stick"
+      },
+      "coreRecipes": [],
+      "formationGate": true
+    }
+  ],
+  "registeredItems": [
+    {
+      "id": "society:industrial_matrix_iv",
+      "name": "IV \u5965\u672f\u5de5\u4e1a\u77e9\u9635",
+      "texture": "zmod:item/mystic_circuit"
+    },
+    {
+      "id": "society:industrial_matrix_luv",
+      "name": "LuV \u5965\u672f\u5de5\u4e1a\u77e9\u9635",
+      "texture": "zmod:item/mystic_circuit"
+    },
+    {
+      "id": "society:industrial_matrix_zpm",
+      "name": "ZPM \u5965\u672f\u5de5\u4e1a\u77e9\u9635",
+      "texture": "zmod:item/mystic_circuit"
+    },
+    {
+      "id": "society:assembly_core_zmod_transcendence_key",
+      "name": "[IV] \u5316\u5883\u7384\u94a5\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_taiyi_matrix",
+      "name": "[LuV] \u592a\u4e00\u7b26\u67a2\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_transcendence_core",
+      "name": "[UV] \u8d85\u8d8a\u6838\u5fc3\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_precision_assembler_controller",
+      "name": "[IV] \u7cbe\u5bc6\u88c5\u914d\u4eea\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_industrial_crusher_controller",
+      "name": "[IV] \u78c1\u51b2\u7c89\u788e\u673a\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_industrial_pump_controller",
+      "name": "[LuV] \u5de5\u4e1a\u6cf5\u7ad9\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_fluid_processing_plant_controller",
+      "name": "[LuV] \u6d41\u4f53\u5904\u7406\u5382\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_tokamak_controller",
+      "name": "[ZPM] \u6258\u5361\u9a6c\u514b\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_tokamak_magnetic_coil",
+      "name": "[ZPM] \u78c1\u7ea6\u675f\u7ebf\u5708\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_tianxuan_controller",
+      "name": "[ZPM] \u5316\u5b66\u53cd\u5e94\u7089\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_plasma_refinery_controller",
+      "name": "[ZPM] \u7b49\u79bb\u5b50\u7cbe\u70bc\u7089\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_warped_polymerizer_controller",
+      "name": "[ZPM] \u626d\u66f2\u805a\u5408\u5668\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_yaoguang_controller",
+      "name": "[ZPM] \u6447\u5149\u63a7\u5236\u6743\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_integrated_ore_processing_plant_controller",
+      "name": "[UV] \u96c6\u6210\u5f0f\u77ff\u7269\u5904\u7406\u5382\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_matter_reconstructor_controller",
+      "name": "[UV] \u7269\u8d28\u91cd\u6784\u4eea\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_tianshu_controller_t3",
+      "name": "[UV] \u8d85\u51e1\u5165\u5723\u00b7\u5929\u67a2\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_yuheng_controller_t3",
+      "name": "[UV] \u8d85\u51e1\u5165\u5723\u00b7\u7389\u8861\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_qiongli_controller_t3",
+      "name": "[UV] \u7edd\u9ad8\u65e0\u4e0a\u00b7\u795e\u79d8\u4e4b\u773c-\u7a77\u7406\u63a7\u5236\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_singularity_controller",
+      "name": "[UV] \u7edd\u9ad8\u65e0\u4e0a\u00b7\u5929\u6743\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_void_pylon_beacon",
+      "name": "[UV] \u865a\u7a7a\u6c34\u6676\u6298\u8d8a\u4fe1\u6807\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_tongxuan_me_input_port",
+      "name": "[IV] \u901a\u7384ME \u8f93\u5165\u7aef\u53e3\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_tongxuan_me_output_port",
+      "name": "[IV] \u901a\u7384ME \u8f93\u51fa\u7aef\u53e3\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_tongxuan_pattern_provider",
+      "name": "[LuV] \u901a\u7384\u6837\u677f\u4f9b\u5e94\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_tongxuan_wireless_connector",
+      "name": "[LuV] \u901a\u7384\u65e0\u7ebf\u8fde\u63a5\u5668\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_precision_assembler_parallel_4x",
+      "name": "[IV] \u5e76\u884c\u63a5\u53e3\uff084X\uff09\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_zmod_thread_hatch_2x",
+      "name": "[LuV] 2\u00d7\u7ebf\u7a0b\u4ed3\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_mekanismgenerators_fusion_reactor_controller",
+      "name": "[LuV] MEK \u805a\u53d8\u53cd\u5e94\u5806\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_mekanism_sps_casing",
+      "name": "[UV] MEK SPS \u5916\u58f3\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:assembly_core_mekanism_supercharged_coil",
+      "name": "[UV] MEK \u8d85\u7ea7\u5145\u80fd\u7ebf\u5708\u88c5\u914d\u539f\u6838",
+      "texture": "zmod:item/lattice_control_core"
+    },
+    {
+      "id": "society:wanxiang_formation_core",
+      "name": "[LuV] \u4e07\u8c61\u7b3c\u6210\u578b\u6838\u5fc3",
+      "texture": "zmod:item/lattice_control_core"
+    }
+  ],
+  "originalXuanxiangSHA256": "8963968e53a97ca8176a78d51c68a7ccc9ecc75cfc88c9b4262cb5c1a9b08582",
+  "notAddedSurvivalRecipes": [
+    "zmod:precision_assembler_parallel_8x",
+    "zmod:precision_assembler_parallel_16x",
+    "zmod:precision_assembler_parallel_32x",
+    "zmod:precision_assembler_parallel_64x",
+    "zmod:precision_assembler_parallel_128x",
+    "zmod:precision_assembler_parallel_256x"
+  ],
+  "bootstrapNotes": [
+    "Precision assembler core remains TC4 infusion and does not consume industrial matrices",
+    "SPS cores contain no antimatter/Xuanxiang",
+    "Tokamak consumes GT MK II once in final assembly",
+    "GT native station/HPCA/fusion bootstrap recipes are unchanged"
+  ],
+  "assertions": {
+    "targetCount": 30,
+    "registeredItems": 33,
+    "uniqueResearchIds": 30
+  }
+}

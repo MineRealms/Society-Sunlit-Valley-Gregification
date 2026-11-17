@@ -1,0 +1,21 @@
+
+[mekanism_generators]
+	enableNuclearRateLimits = true
+	#Maximum fusion fuel burned per reactor tick, including direct gas and Hohlraum input.
+	#Range: 0.001 ~ 1000.0
+	maxFusionFuelBurnPerTick = 2.0
+	#Maximum GUI/computer deuterium-tritium injection rate; the effective value is rounded down to an even number.
+	#Range: 0 ~ 98
+	maxFusionInjectionRate = 2
+	#Maximum fission fuel burned per reactor tick, regardless of assembly count or saved rate limit.
+	#Range: 0.001 ~ 1000000.0
+	maxFissionBurnPerTick = 0.2
+
+[gregtech]
+	#Prevent copying Data Bank-only research modules into data orbs/sticks. Same-module copies and upgrades remain allowed.
+	preventDataCarrierDowngrade = true
+
+[tiangong]
+	#Require one GT-assembled society:wanxiang_formation_core for each successful new Wanxiang Cage formation. Existing formed cages are unchanged.
+	requireWanxiangFormationCore = true
+

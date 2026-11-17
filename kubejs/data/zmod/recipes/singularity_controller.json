@@ -1,0 +1,62 @@
+{
+  "type": "thaumcraft:infusion",
+  "research": "zmod:SINGULARITY_EXTRACTOR",
+  "central": {
+    "item": "mekanism:sps_port"
+  },
+  "components": [
+    {
+      "item": "thaumictinkerer:ichorium"
+    },
+    {
+      "item": "thaumictinkerer:ichorium"
+    },
+    {
+      "item": "mekanism:pellet_antimatter"
+    },
+    {
+      "item": "mekanism:pellet_antimatter"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    {
+      "item": "mekanism:ultimate_control_circuit"
+    },
+    {
+      "item": "thaumcraft:primordial_pearl"
+    }
+  ],
+  "result": {
+    "item": "society:assembly_core_zmod_singularity_controller"
+  },
+  "instability": 14,
+  "aspects": {
+    "alienis": 256,
+    "vacuos": 256,
+    "machina": 192,
+    "potentia": 192,
+    "praecantatio": 128,
+    "vinculum": 128,
+    "perditio": 96,
+    "zmod:singularity_essentia": 64
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

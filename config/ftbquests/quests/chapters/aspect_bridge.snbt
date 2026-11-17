@@ -5,7 +5,7 @@
 	group: "04716B2F19F75F08"
 	icon: "thaumcraft:thaumonomicon"
 	id: "6E10B9AAE50F14F7"
-	order_index: 2
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{

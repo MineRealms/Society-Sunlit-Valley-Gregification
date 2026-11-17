@@ -153,6 +153,9 @@
 			nether = true
 			ender = true
 
+		[types.leaves_type.mythicbotany]
+			dreamwood = true
+
 	[types.wood_type]
 
 		[types.wood_type.autumnity]

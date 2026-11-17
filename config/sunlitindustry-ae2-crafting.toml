@@ -1,0 +1,7 @@
+enabled = true
+decodedPatternCache = true
+craftingProviderSortCache = true
+#Maximum successfully decoded native AE2 patterns retained by each server level.
+#Range: 1 ~ 16384
+maxDecodedPatternsPerLevel = 2048
+

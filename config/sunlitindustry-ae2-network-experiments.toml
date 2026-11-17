@@ -1,0 +1,7 @@
+#Experimental priority routing snapshots. Previous 256-store benchmark was slower than native.
+experimentalPriorityRouting = false
+#Experimental positive LazyOptional cache. Previous chest benchmark was slower than native.
+experimentalAdjacentCapabilityCache = false
+#Experimental primitive cell accounting. Previous benchmark had no allocation benefit.
+experimentalPrimitiveCellAccounting = false
+

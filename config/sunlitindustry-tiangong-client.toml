@@ -1,0 +1,20 @@
+#Emit the same Dyson sky primitives without temporary vector/array allocations.
+dysonPrimitiveAllocation = false
+#Reuse identical adjacent arcane ring endpoints without changing tessellation.
+arcaneRingTrigReuse = false
+#Compute effect Bezier points with one result vector instead of three vectors.
+effectBezierAllocation = false
+#Hide optional Tokamak/Industrial/FluidWorks plasma and bubbles beyond the effect distance.
+distantMachineEffectCulling = false
+#Distance from controller render bounds, in blocks. Machine shells stay visible.
+#Range: 16 ~ 256
+machineEffectDistance = 64
+#Reduce only Tokamak core/plasma/halo mesh tessellation at a distance.
+tokamakPlasmaLod = false
+#Nearest render-bounds distance for medium plasma detail, in blocks.
+#Range: 16 ~ 256
+tokamakPlasmaMidDistance = 48
+#Nearest render-bounds distance for low plasma detail; kept above the medium distance.
+#Range: 32 ~ 512
+tokamakPlasmaFarDistance = 96
+

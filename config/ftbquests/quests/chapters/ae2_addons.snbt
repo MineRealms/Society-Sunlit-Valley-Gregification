@@ -5,7 +5,7 @@
 	group: "4A46A5E1358A80A6"
 	icon: "ae2:controller"
 	id: "35E684890227E6A2"
-	order_index: 20
+	order_index: 21
 	quest_links: [ ]
 	quests: [
 		{
@@ -384,5 +384,5 @@
 			y: 2.0d
 		}
 	]
-	title: "&b&l科技&r - AE2 附属联动"
+	title: "&b&l自动工厂&r - 神秘/星辉/格雷... 自动化！"
 }

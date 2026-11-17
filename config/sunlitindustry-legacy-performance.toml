@@ -1,0 +1,5 @@
+#Share large WorldEdit state indexes. Restart after changing: existing states keep their representation.
+worldEditStateIndex = false
+#Return KubeJS's existing original recipe before it constructs a diagnostic Throwable.
+kubejsOriginalRecipeFastPath = true
+

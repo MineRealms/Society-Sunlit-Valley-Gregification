@@ -1,176 +1,151 @@
 {
-	default_hide_dependency_lines: false,
-	default_quest_shape: "square",
-	filename: "aspect_bridge",
-	group: "04716B2F19F75F08",
-	icon: "thaumcraft:thaumonomicon",
-	id: "6E10B9AAE50F14F7",
-	order_index: 30,
-	quest_links: [ ],
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "aspect_bridge"
+	group: "04716B2F19F75F08"
+	icon: "thaumcraft:thaumonomicon"
+	id: "6E10B9AAE50F14F7"
+	order_index: 2
+	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["4F15F9F6021B0AF8"]
 			description: [
-				"本包把各魔法模组的关键材料都登记进了神秘的要素表（object_aspects 数据桥）：",
-				"植物魔法、暮色森林、中洲的材料现在都能被 &6扫视仪&r 识别出要素。",
-				"这意味着：神秘炼金、注魔、研究任务的\"材料要素\"从此覆盖全部魔法产线。",
-				"例：植物魔力锭 = 金属 2 + 草药 2 + 能量 1；中洲秘银 = 金属 3 + 财富 2 + 光 1。",
+				"本包把各魔法模组的关键材料都登记进了神秘的要素表（object_aspects 数据桥）："
+				"植物魔法、暮色森林、中洲的材料现在都能被 &6扫视仪&r 识别出要素。"
+				"这意味着：神秘炼金、注魔、研究任务的\"材料要素\"从此覆盖全部魔法产线。"
+				"例：植物魔力锭 = 金属 2 + 草药 2 + 能量 1；中洲秘银 = 金属 3 + 财富 2 + 光 1。"
 				"数据文件：kubejs/data/thaumcraft/object_aspects/pack_bridge_aspects.json（可自行增补）。"
-			],
-			dependencies: [
-				"4F15F9F6021B0AF8"
-			],
-			icon: "thaumcraft:thaumonomicon",
-			id: "46BC12C9F957B69E",
-			tasks: [
-				{
-					id: "30A1978CB656D564",
-					title: "已了解要素桥的存在",
-					type: "checkmark"
-				}
-			],
-			title: "要素桥：让神秘侧认识魔法材料",
-			x: 0.0d,
-			y: 0.0d
-		},
-		{
-			description: [
-				"拿起魔力锭 / 泰拉钢 / 元素锭扫一遍，看要素构成。",
-				"泰拉钢 = 金属+草药+能量×3；元素锭带虚无 2（精灵侧材料）；魔力珍珠 = 水+能量+玻璃。",
-				"活石=大地、活木=树木——它们是后面 GT 研磨桥的原料。"
-			],
-			dependencies: [
-				"46BC12C9F957B69E"
-			],
-			icon: "botania:manasteel_ingot",
-			id: "11A4FE4E63EEA3D9",
-			tasks: [
-				{
-					id: "7059BCE6E196C2E7",
-					type: "item",
-					item: "botania:manasteel_ingot",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "扫视：植物魔法",
-			x: 2.0d,
-			y: 0.0d
-		},
-		{
-			description: [
-				"暮色的材料各有性格：铁木锭 = 金属+树木（铁与活的树杂交）。",
-				"炽热锭 = 火×3+金属；炽热之血带生命；纪元粉 = 转换×3（复制/反制的核心要素）。",
-				"战利品也是要素源：巫妖/九头蛇/娜迦奖杯各带专属要素组合。"
-			],
-			dependencies: [
-				"46BC12C9F957B69E"
-			],
-			icon: "twilightforest:torchberries",
-			id: "7B4BDB48948964AD",
-			tasks: [
-				{
-					id: "4E9F5C9C95C50947",
-					type: "item",
-					item: "twilightforest:torchberries",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "扫视：暮色森林",
-			x: 4.0d,
-			y: 0.0d
-		},
-		{
-			description: [
-				"中洲冶金全部入表：秘银（金属+财富+光）、魔古尔钢（黑暗×3+死亡）、",
-				"奥克钢（武器+野兽）、卡扎德钢（金属×3+大地，矮人钢）。",
-				"药材&0王室苜蓿&r = 康复×3+草药——注魔回复药水的优质材料。",
-				"三种硬币也带财富要素：把中洲硬币扫出来看，本身就是学要素的教材。"
-			],
-			dependencies: [
-				"46BC12C9F957B69E"
-			],
-			icon: "me:athelas",
-			id: "664ACBE7C68B1E03",
-			tasks: [
-				{
-					id: "29E97BA6FBFD814E",
-					type: "item",
-					item: "me:athelas",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "扫视：中洲",
-			x: 6.0d,
-			y: 0.0d
-		},
-		{
-			description: [
-				"GT 只做物理处理，魔法核心循环不被绕过（详见 JEI）：",
-				"活石 → 滑石粉（纯华蓑菊可再生，GT 化学用）；活木 → 木浆 ×2；",
-				"星辉大理石 → 滑石粉 ×2；星辉金属锭回收 → 铁粉 ×1（净亏，防刷铁）。",
-				"滑石/木浆都是 GT 中期的消耗品，纯华蓑菊农场可以稳定供货。"
-			],
-			dependencies: [
-				"11A4FE4E63EEA3D9"
-			],
-			icon: "gtceu:lv_macerator",
-			id: "39CD50C1F6CFF555",
-			tasks: [
-				{
-					id: "0693705EF84EACCF",
-					type: "item",
-					item: "gtceu:talc_dust",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				},
-				{
-					id: "5D0542E40483C8F2",
-					type: "item",
-					item: "gtceu:wood_dust",
-					count: 1,
-					consume_items: false,
-					match_nbt: false,
-					only_from_crafting: false
-				}
-			],
-			title: "GT 研磨桥：魔法材料的物理预处理",
-			x: 8.0d,
-			y: 0.0d
-		},
-		{
-			description: [
-				"要素桥的终点是经济：接受仓的源质/魔力通道直接吃神秘与植物魔法的产出",
-				"（源质按要素分三档 4/2/1 点 = 1 spur；魔力 2000 点 = 1 spur）。",
-				"结合当铺柜台与中洲商人，魔法产线可以稳定换钱——见「贸易」章节。"
-			],
-			dependencies: [
-				"39CD50C1F6CFF555",
-				"7160EA5E15705A84",
-				"4040D45BF06D0973"
-			],
-			icon: "sunlitmarket:deposit_bin",
-			id: "067824BBD6BD0AD4",
-			tasks: [
-				{
-					id: "39BAB6A74863A87E",
-					title: "已把魔法产出卖进接受仓",
-					type: "checkmark"
-				}
-			],
-			title: "魔法变现闭环",
-			x: 10.0d,
+			]
+			icon: "thaumcraft:thaumonomicon"
+			id: "46BC12C9F957B69E"
+			tasks: [{
+				id: "30A1978CB656D564"
+				title: "已了解要素桥的存在"
+				type: "checkmark"
+			}]
+			title: "要素桥：让神秘侧认识魔法材料"
+			x: 0.0d
 			y: 0.0d
 		}
-	],
+		{
+			dependencies: ["46BC12C9F957B69E"]
+			description: [
+				"拿起魔力锭 / 泰拉钢 / 元素锭扫一遍，看要素构成。"
+				"泰拉钢 = 金属+草药+能量×3；元素锭带虚无 2（精灵侧材料）；魔力珍珠 = 水+能量+玻璃。"
+				"活石=大地、活木=树木——它们是后面 GT 研磨桥的原料。"
+			]
+			icon: "botania:manasteel_ingot"
+			id: "11A4FE4E63EEA3D9"
+			tasks: [{
+				consume_items: false
+				id: "7059BCE6E196C2E7"
+				item: "botania:manasteel_ingot"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "扫视：植物魔法"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46BC12C9F957B69E"]
+			description: [
+				"暮色的材料各有性格：铁木锭 = 金属+树木（铁与活的树杂交）。"
+				"炽热锭 = 火×3+金属；炽热之血带生命；纪元粉 = 转换×3（复制/反制的核心要素）。"
+				"战利品也是要素源：巫妖/九头蛇/娜迦奖杯各带专属要素组合。"
+			]
+			icon: "twilightforest:torchberries"
+			id: "7B4BDB48948964AD"
+			tasks: [{
+				consume_items: false
+				id: "4E9F5C9C95C50947"
+				item: "twilightforest:torchberries"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "扫视：暮色森林"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46BC12C9F957B69E"]
+			description: [
+				"中洲冶金全部入表：秘银（金属+财富+光）、魔古尔钢（黑暗×3+死亡）、"
+				"奥克钢（武器+野兽）、卡扎德钢（金属×3+大地，矮人钢）。"
+				"药材&0王室苜蓿&r = 康复×3+草药——注魔回复药水的优质材料。"
+				"三种硬币也带财富要素：把中洲硬币扫出来看，本身就是学要素的教材。"
+			]
+			icon: "me:athelas"
+			id: "664ACBE7C68B1E03"
+			tasks: [{
+				consume_items: false
+				id: "29E97BA6FBFD814E"
+				item: "me:athelas"
+				match_nbt: false
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "扫视：中洲"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11A4FE4E63EEA3D9"]
+			description: [
+				"GT 只做物理处理，魔法核心循环不被绕过（详见 JEI）："
+				"活石 → 滑石粉（纯华蓑菊可再生，GT 化学用）；活木 → 木浆 ×2；"
+				"星辉大理石 → 滑石粉 ×2；星辉金属锭回收 → 铁粉 ×1（净亏，防刷铁）。"
+				"滑石/木浆都是 GT 中期的消耗品，纯华蓑菊农场可以稳定供货。"
+			]
+			icon: "gtceu:lv_macerator"
+			id: "39CD50C1F6CFF555"
+			tasks: [
+				{
+					consume_items: false
+					id: "0693705EF84EACCF"
+					item: "gtceu:talc_dust"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5D0542E40483C8F2"
+					item: "gtceu:wood_dust"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			title: "GT 研磨桥：魔法材料的物理预处理"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"39CD50C1F6CFF555"
+				"7160EA5E15705A84"
+				"4040D45BF06D0973"
+			]
+			description: [
+				"要素桥的终点是经济：接受仓的源质/魔力通道直接吃神秘与植物魔法的产出"
+				"（源质按要素分三档 4/2/1 点 = 1 spur；魔力 2000 点 = 1 spur）。"
+				"结合当铺柜台与中洲商人，魔法产线可以稳定换钱——见「贸易」章节。"
+			]
+			icon: "sunlitmarket:deposit_bin"
+			id: "067824BBD6BD0AD4"
+			tasks: [{
+				id: "39BAB6A74863A87E"
+				title: "已把魔法产出卖进接受仓"
+				type: "checkmark"
+			}]
+			title: "魔法变现闭环"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
 	title: "&5&l魔法&r - 要素桥"
 }

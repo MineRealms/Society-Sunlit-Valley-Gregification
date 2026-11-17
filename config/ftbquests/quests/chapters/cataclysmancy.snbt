@@ -1,0 +1,413 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "cataclysmancy"
+	group: "14AB86BD08B253EC"
+	icon: "cataclysm:void_core"
+	id: "1780B714C27E0F18"
+	images: [{
+		height: 14.4d
+		image: "society:textures/quests/cataclysm/cataclysm_temple.png"
+		rotation: 0.0d
+		width: 25.6d
+		x: 9.0d
+		y: 0.0d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["69C391B8091CE9CA"]
+			description: [
+				"灾变遗迹并非死石。它们的核心、眼球与锭块里回荡着扭曲的原初要素。"
+				"用魔导透镜扫描任意灾变掉落，开启《灾变学》研究类别。研究台里的六项研究对应本章各节。"
+				"本章只做认知与收容指引，不改动灾变 Boss 与祭坛的原有掉落和召唤条件。"
+			]
+			icon: "cataclysm:void_core"
+			id: "17B87C7676F1BB83"
+			tasks: [
+				{
+					consume_items: false
+					id: "39E7676A098E0B51"
+					item: "cataclysm:void_core"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "32F0A19FF47E8901"
+					title: "已用魔导透镜扫描过灾变掉落并在魔导手册中看到《灾变学》分类"
+					type: "checkmark"
+				}
+			]
+			title: "观测虚渊"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17B87C7676F1BB83"]
+			description: [
+				"虚空、深渊、烈焰、机械、巨兽与诅咒之眼，区别只在于哪一项要素占主导。"
+				"《灾变学·裂隙之眼》研究记录了各眼的要素构成。每类留一枚样本，余下的才是坩埚燃料。"
+			]
+			icon: "cataclysm:void_eye"
+			id: "012E6208AA5519DE"
+			tasks: [
+				{
+					consume_items: false
+					id: "2467D8BE7220C864"
+					item: "cataclysm:void_eye"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4DB7AFCD0DEF60F7"
+					item: "cataclysm:abyss_eye"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6FF54ADB2951CD42"
+					item: "cataclysm:flame_eye"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "01B105270904F51C"
+					title: "已记录至少三类眼睛的扫描结果"
+					type: "checkmark"
+				}
+			]
+			title: "裂隙之眼"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17B87C7676F1BB83"]
+			description: [
+				"焚天锭、凋灵锭、远古金属与诅锭是四条独立的材料链，不要混用。"
+				"要素表里它们分别以 ignis / mortuus / machina / vitium 为主导，蒸馏前先分好类。"
+			]
+			icon: "cataclysm:ancient_metal_ingot"
+			id: "57044E3F6C490B80"
+			tasks: [
+				{
+					consume_items: false
+					id: "39F1DEE45EA102AF"
+					item: "cataclysm:ignitium_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7DA2142364C22B74"
+					item: "cataclysm:witherite_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2AD6BDF981BB9BE7"
+					item: "cataclysm:ancient_metal_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "28ABE8F43B1C4D1B"
+					item: "cataclysm:cursium_ingot"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "2DF7A79A4D3139AB"
+					title: "已分别存放四系材料"
+					type: "checkmark"
+				}
+			]
+			title: "四系残骸"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["012E6208AA5519DE"]
+			description: [
+				"缚魂锁链的 vinculum 足够在坩埚工作时镇住样本，而它的 vitium 总要在别处付账。"
+				"《灾变学·缚锁与残渣》研究说明：收容从不是免费的，接触虚空材料本身就会积累扭曲。"
+			]
+			icon: "cataclysm:chain_of_soul_binding"
+			id: "4B62C8C9B124C153"
+			tasks: [
+				{
+					consume_items: false
+					id: "27669AE6CCFE8CCB"
+					item: "cataclysm:chain_of_soul_binding"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "78B8CF56D6FD09FC"
+					item: "cataclysm:remnant_skull"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "7C63D3D776924848"
+					title: "已在工作台旁备好净化盐、便携浴符与干净法袍"
+					type: "checkmark"
+				}
+			]
+			title: "缚锁与残渣"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57044E3F6C490B80"]
+			description: [
+				"焚天锭的热量足以抵上一整份炼金煤；虚空碎片加一点 ordo 就能析出平衡碎片。"
+				"两条坩埚配方见《灾变学·蒸馏残骸》研究页。坩埚不在乎这份燃料曾属于某个庞然大物。"
+			]
+			icon: "thaumcraft:alumentum"
+			id: "4A2291995480A824"
+			tasks: [
+				{
+					consume_items: false
+					id: "75FC533CF373E7F6"
+					item: "thaumcraft:alumentum"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2BB8CC984B061B2F"
+					item: "thaumcraft:balanced_shard"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "44FC93BD7F50561D"
+					title: "已实际完成至少一条灾变材料坩埚配方"
+					type: "checkmark"
+				}
+			]
+			title: "蒸馏残骸"
+			x: 8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4B62C8C9B124C153"]
+			description: [
+				"虚空核心与诅咒之眼在 alienis 之外还带着 vitium。蒸馏效率高，残渣却黏在观测者身上。"
+				"《灾变学·窥视之价》会给予永久扭曲。把《扭曲理论》章的纯净泪水、净化护身符、便携浴符当作装置的一部分。"
+				"这项研究有扭曲代价，进本条之前先确认净化链已经建好。"
+			]
+			icon: "thaumcraft:void_ingot"
+			id: "66942E5E50C70BED"
+			tasks: [
+				{
+					consume_items: false
+					id: "5041526A0E1AD6BE"
+					item: "cataclysm:void_core"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "51343033EC28BE23"
+					item: "cataclysm:cursed_eye"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "523DB0371874BD68"
+					title: "已验证净化道具可用并了解永久扭曲的后果"
+					type: "checkmark"
+				}
+			]
+			title: "窥视之价"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A2291995480A824"]
+			description: [
+				"虚空之眼置于注魔祭坛中央，环以魔导透镜、远古金属与平衡碎片。"
+				"成品是一副揭示之护目镜，注魔配方见《灾变学·虚空透镜》研究页。成品寻常，路径不寻常。"
+			]
+			icon: {
+				Count: 1
+				id: "thaumcraft:goggles_of_revealing"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4D4EFA9E397FC37B"
+			tasks: [
+				{
+					consume_items: false
+					id: "4169E136055B8CD0"
+					item: {
+						Count: 1
+						id: "thaumcraft:goggles_of_revealing"
+						tag: {
+							Damage: 0
+						}
+					}
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "3A5F09EDA8E9AC2D"
+					title: "已完成虚空之眼注魔并核对 instability 与源质消耗"
+					type: "checkmark"
+				}
+			]
+			title: "虚空透镜"
+			x: 12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["66942E5E50C70BED"]
+			description: [
+				"虚空、烈焰、深渊、紫水晶四座祭坛仍按灾变原有方式召唤，本章不修改它们的钥匙与掉落。"
+				"要素表给四座祭坛都挂了 alienis/ignis/aqua/vitreus 主导的高值要素，扫描它们可以补足研究要素。"
+			]
+			icon: "cataclysm:altar_of_void"
+			id: "273396B810886B4F"
+			tasks: [
+				{
+					consume_items: false
+					id: "3F9F5B4FCC38713B"
+					item: "cataclysm:altar_of_void"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "01CDE5DD70DB198E"
+					item: "cataclysm:altar_of_fire"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4072DB412FDD8076"
+					item: "cataclysm:altar_of_abyss"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "188C997DCC148BC0"
+					item: "cataclysm:altar_of_amethyst"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "5FC56C9A9F071919"
+					title: "已确认四座祭坛的召唤条件未被本章改动"
+					type: "checkmark"
+				}
+			]
+			title: "四座祭坛"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D4EFA9E397FC37B"]
+			description: [
+				"利维坦、先驱、末影守卫与伊格尼斯各有独立掉落。把它们当作研究材料，而不只是装备来源。"
+				"渊卵、潮汐之爪、守卫护手与残骸头骨都已在要素表里登记，扫描后可直接进研究台。"
+			]
+			icon: "cataclysm:abyssal_egg"
+			id: "317F21980A974EB5"
+			tasks: [
+				{
+					consume_items: false
+					id: "28AFE95C96BC3644"
+					item: "cataclysm:abyssal_egg"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "04F1B910E5A5225F"
+					item: "cataclysm:tidal_claws"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4D782B5C15892461"
+					item: "cataclysm:gauntlet_of_guard"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "27407AA705FAE89A"
+					title: "已扫描至少一件 Boss 掉落并核对要素"
+					type: "checkmark"
+				}
+			]
+			title: "渊薮之主"
+			x: 16.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"273396B810886B4F"
+				"317F21980A974EB5"
+			]
+			description: [
+				"观测、理解、收容、反制——四个动词走完一遍，灾变的力量才算被真正读懂。"
+				"本章与《秽玄天工》《GT 核工业》并列，不设立跨章硬锁；任务勾选只记录操作检查。"
+				"收容是持续状态，不是一次性成就。长期接触虚空材料请保持净化与扭曲监测。"
+			]
+			icon: "cataclysm:void_core"
+			id: "1E163B5860A8E65B"
+			tasks: [
+				{
+					consume_items: false
+					id: "501EA7EAF243CA50"
+					item: "cataclysm:void_core"
+					match_nbt: false
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "5F9EEBFF0A4E873F"
+					title: "已通读六项灾变学研究并完成本章全部操作检查"
+					type: "checkmark"
+				}
+			]
+			title: "灾变学大成"
+			x: 20.0d
+			y: -2.5d
+		}
+	]
+	title: "&5&l灾变学&r：观测、收容与虚空的代价"
+}

@@ -1,0 +1,71 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:PLASMA_REFINERY",
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "mekanism:ultimate_smelting_factory"
+      },
+      "amount": 1
+    },
+    {
+      "ingredient": {
+        "item": "society:industrial_matrix_zpm"
+      },
+      "amount": 1
+    },
+    {
+      "ingredient": {
+        "item": "zmod:magnetic_confinement_unit"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:field_generator_t2"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:refinery_heat_lining"
+      },
+      "amount": 4
+    },
+    {
+      "ingredient": {
+        "item": "mekanism:ingot_refined_obsidian"
+      },
+      "amount": 4
+    },
+    {
+      "ingredient": {
+        "item": "zmod:nether_crystalline"
+      },
+      "amount": 4
+    }
+  ],
+  "output": {
+    "id": "society:assembly_core_zmod_plasma_refinery_controller",
+    "count": 1
+  },
+  "duration": 80,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

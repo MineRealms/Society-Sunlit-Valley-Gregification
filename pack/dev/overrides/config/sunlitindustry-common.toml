@@ -1,0 +1,5 @@
+[mekanism_generators]
+enableNuclearRateLimits = true
+maxFusionFuelBurnPerTick = 2.0
+maxFusionInjectionRate = 2
+maxFissionBurnPerTick = 0.2

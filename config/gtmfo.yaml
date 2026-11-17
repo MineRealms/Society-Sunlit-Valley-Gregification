@@ -5,7 +5,7 @@ devConfigs:
   nutrientMode: false
 
   # Export every recipe JEI can display to a JSON file after the recipe set is loaded (client-side, for external recipe graph tooling).
-  exportJeiRecipes: true
+  exportJeiRecipes: false
 
   # Export path. Relative paths resolve against the game directory; absolute paths (e.g. H:/tools/jei_recipes.json) are used as-is.
   jeiRecipeExportPath: H:/tools/sunlit_jei_recipes.json
@@ -56,7 +56,7 @@ gtfoNutrientConfig:
   scoreboardMirror: true
 
   # Show the nutrient HUD while playing (client side).
-  hud: true
+  hud: false
 
   # Show a food item's nutrient values in its tooltip.
   foodTooltips: true

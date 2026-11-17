@@ -1,0 +1,36 @@
+
+[book]
+	#Show research and recipe-output search. Reopen the book after changing.
+	search = true
+	#Default search scope. The book also has an All / Tab toggle.
+	search_current_category = false
+	#Default research filter. The book also has a Done / Seen toggle; hidden entries stay excluded.
+	search_completed_only = true
+	#Paginate research category tabs; scroll over the tabs to change pages.
+	category_paging = true
+	#Use the mouse wheel to turn reader pages.
+	scroll_pages = true
+	#Reverse mouse-wheel page direction. Search result scrolling stays native.
+	invert_scrolling = false
+	#Show completed / visible research in the selected category. Hidden entries are not counted.
+	completion_counter = true
+	#Fit the research-tree frame independently to the window width and height; border, icons and text retain native GUI size.
+	auto_fit = true
+	#Manual panel scale when auto_fit is disabled, constrained by the available window.
+	#Range: 1.0 ~ 4.0
+	tree_scale = 1.0
+	#Maximum panel width and height as multiples of the original dimensions.
+	#Range: 1.0 ~ 16.0
+	maximum_scale = 4.0
+
+[research_table]
+	#Use the spacious research-table interface. Changes apply when the table is next opened; disabling restores the core screen.
+	replace_screen = true
+	#Fit the research-table interface to the available window. Disable for its original 342x279 GUI size, even when it extends beyond the window. Changes apply when the table is next opened.
+	auto_fit = true
+
+[nodes]
+	#Maximum radius of each world-node visual layer, in blocks. 0 disables the limit. Does not change node vis, behaviour or inventory models.
+	#Range: 0.0 ~ 64.0
+	maximum_visual_radius = 1.0
+

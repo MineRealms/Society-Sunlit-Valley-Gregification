@@ -1,0 +1,71 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:YUHENG_SUPREME",
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "zmod:yuheng_controller_t1"
+      },
+      "amount": 1
+    },
+    {
+      "ingredient": {
+        "item": "zmod:xuanxiang_circuit"
+      },
+      "amount": 1
+    },
+    {
+      "ingredient": {
+        "item": "thaumcraft:advanced_alchemical_construct"
+      },
+      "amount": 1
+    },
+    {
+      "ingredient": {
+        "item": "zmod:drive_unit_t2"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:energy_coupler_t2"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:nether_crystalline"
+      },
+      "amount": 4
+    },
+    {
+      "ingredient": {
+        "item": "zmod:transcendent_machine_frame"
+      },
+      "amount": 4
+    }
+  ],
+  "output": {
+    "id": "society:assembly_core_zmod_yuheng_controller_t3",
+    "count": 1
+  },
+  "duration": 80,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

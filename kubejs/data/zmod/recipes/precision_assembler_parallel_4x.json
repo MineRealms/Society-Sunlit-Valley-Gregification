@@ -1,0 +1,63 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:PRECISION_ASSEMBLER",
+  "item_inputs": [
+    {
+      "ingredient": {
+        "item": "zmod:mystic_circuit"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:energy_coupler_t2"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:precision_assembler_parallel_2x"
+      },
+      "amount": 2
+    },
+    {
+      "ingredient": {
+        "item": "zmod:drive_unit_t2"
+      },
+      "amount": 1
+    }
+  ],
+  "essentia_inputs": [
+    {
+      "aspect": "ordo",
+      "amount": 16
+    },
+    {
+      "aspect": "aer",
+      "amount": 8
+    }
+  ],
+  "output": {
+    "id": "society:assembly_core_zmod_precision_assembler_parallel_4x",
+    "count": 1
+  },
+  "duration": 20,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "thaumcraft"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "tainted_magic"
+    },
+    {
+      "type": "zmod:optional_environment",
+      "modid": "thaumictinkerer"
+    }
+  ]
+}

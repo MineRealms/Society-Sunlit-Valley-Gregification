@@ -1,0 +1,9 @@
+#Opt-in content-addressed snapshots of immutable mod archives. Dynamic packs and directories stay native.
+#Evicted archives use native resource access until the next server resource reload.
+immutableArchiveCache = false
+#Cache model JSON/metadata source bytes, never baked models. Disabled with ModernFix or Fusion.
+clientModelSourceCache = false
+#Maximum retained snapshot bytes; transient construction may require additional memory.
+#Range: 4 ~ 256
+memoryMiB = 32
+

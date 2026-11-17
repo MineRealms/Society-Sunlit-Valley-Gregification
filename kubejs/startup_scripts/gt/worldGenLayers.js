@@ -30,4 +30,10 @@ GTCEuStartupEvents.registry("gtceu:world_gen_layer", event => {
       "society:skull_permafrost"
     )
     .dimensions("society:skull_cavern")
+
+  // 中洲（Middle-earth）：ME 专属石头 + 原版石层
+  // 维度 min_y=-4, height=384；地形基础块见 kubejs:me_stone 标签
+  event.create("middle_earth")
+    .targets("#kubejs:me_stone")
+    .dimensions("me:middle-earth")
 })

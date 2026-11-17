@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "values": [
+    { "id": "#minecraft:fences", "required": false },
+    { "id": "minecraft:iron_bars", "required": false },
+    { "id": "minecraft:tnt", "required": false },
+    "gcyr:iv_oxygen_spreader",
+    "gcyr:luv_oxygen_spreader",
+    "gcyr:zpm_oxygen_spreader",
+    "gcyr:uv_oxygen_spreader",
+    "gcyr:uhv_oxygen_spreader",
+    { "id": "gcyr:uev_oxygen_spreader", "required": false },
+    { "id": "gcyr:uiv_oxygen_spreader", "required": false },
+    { "id": "gcyr:uxv_oxygen_spreader", "required": false },
+    { "id": "gcyr:opv_oxygen_spreader", "required": false }
+  ]
+}

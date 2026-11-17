@@ -1,0 +1,24 @@
+{
+  "type": "zmod:precision_assembling",
+  "research": "zmod:TIANXUAN_REFINERY",
+  "item_inputs": [
+    { "ingredient": { "tag": "gtceu:circuits/zpm" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:chemical_oxidizer" }, "amount": 1 },
+    { "ingredient": { "item": "mekanism:chemical_dissolution_chamber" }, "amount": 1 },
+    { "ingredient": { "item": "zmod:xuanxiang_circuit" }, "amount": 1 },
+    { "ingredient": { "item": "zmod:phase_coupler" }, "amount": 2 },
+    { "ingredient": { "item": "zmod:magnetic_confinement_unit" }, "amount": 1 },
+    { "ingredient": { "item": "zmod:energy_coupler_t2" }, "amount": 2 },
+    { "ingredient": { "item": "zmod:tianxuan_chamber" }, "amount": 4 },
+    { "ingredient": { "item": "zmod:mystic_circuit" }, "amount": 2 },
+    { "ingredient": { "item": "mekanism:steel_casing" }, "amount": 2 }
+  ],
+  "output": { "id": "zmod:tianxuan_controller", "count": 1 },
+  "duration": 80,
+  "conditions": [
+    { "type": "forge:mod_loaded", "modid": "mekanism" },
+    { "type": "forge:mod_loaded", "modid": "thaumcraft" },
+    { "type": "zmod:optional_environment", "modid": "tainted_magic" },
+    { "type": "zmod:optional_environment", "modid": "thaumictinkerer" }
+  ]
+}
